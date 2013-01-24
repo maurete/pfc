@@ -27,7 +27,7 @@ function [ error stddev mlp ] = mlp_train_kfold ( mlp, file, K=10, err=0.001, ra
 	 stddev = [];
 
 	 % para cada epoca
-	 for e=1:1000
+	 for e=1:100
 	 
 	   data = shuffle(data);
 	   epoch_err = zeros(size(data)(2),1);
