@@ -8,7 +8,7 @@ Cómo probar el clasificador
         sudo apt-get install git python3 libsvm-tools
 
 2.  Bajar el 'Vienna RNA package' (elegir debian, 32- o 64-bit) de
-    http://www.tbi.univie.ac.at/~ronny/RNA/index.html#download
+    [http://www.tbi.univie.ac.at/~ronny/RNA/index.html#download]
     en un terminal, hacer cd a la carpeta donde se bajó el archivo
     y ejecutar
 
