@@ -32,11 +32,14 @@ cat 5*train.svm >  6-train.svm
 echo -e "8. escalo train a train-scaled. guardo parametros de escalado"
 svm-scale -s 7-svm-scale 6-train.svm > 7-train-scaled.svm
 #
-echo -e "9. concateno conjunto de test"
-cat 5*test.svm >  6-test.svm
+#echo -e "9. concateno conjunto de test"
+#cat 5*test.svm >  6-test.svm
 #
-echo -e "10.escalo test a test-scaled usando params del punto 7"
-svm-scale -r 7-svm-scale 6-test.svm > 7-test-scaled.svm
+echo -e "9. escalo hsa-test a hsa-test-scaled usando params del punto 7"
+svm-scale -r 7-svm-scale 5-hsa-test.svm > 7-hsa-test-scaled.svm
+#
+echo -e "10.escalo random-test a random-test-scaled usando params del punto 7"
+svm-scale -r 7-svm-scale 5-random-test.svm > 7-random-test-scaled.svm
 #
 echo -e "11.entreno con svm-easy"
 svm-easy 7-train-scaled.svm
@@ -46,9 +49,11 @@ svm-easy 7-train-scaled.svm
 # Training...
 # Output model: 7-train-scaled.svm.model
 #
-echo -e "12.valido con svm-predict"
-svm-predict 7-test-scaled.svm 7-train-scaled.svm.model 8-test-results.svm
+echo -e "12.valido con svm-predict (miRNAs REALES):"
+svm-predict 7-hsa-test-scaled.svm 7-train-scaled.svm.model 8-hsa-test-results.svm
 # Accuracy = 92.7184% (955/1030) (classification)
+echo -e "13.valido con svm-predict (PSEUDO miRNAs):"
+svm-predict 7-random-test-scaled.svm 7-train-scaled.svm.model 8-random-test-results.svm
 
 
 
