@@ -32,3 +32,6 @@ Cómo probar el clasificador
 5. Probar el script:
 
 	./script.sh
+	
+Los datos originales se encuentran en la carpeta `original`, para
+ver cómo se usa `fautil` y `libsvm` ver el archivo `script.sh`.
