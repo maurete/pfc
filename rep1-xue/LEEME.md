@@ -13,9 +13,9 @@ Cómo probar el clasificador
    y ejecutar
 
        sudo dpkg -i <nombre de archivo>
-
-   por ejemplo,
-
+       
+       # por ejemplo:
+       
        cd Descargas
        sudo dpkg -i vienna-rna_2.1.1-1_amd64.deb
 
