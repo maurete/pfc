@@ -44,3 +44,4 @@ Replicar procedimiento de: Xue et al. - TripletSVM
 [wbm1]: http://web.archive.org/web/20120210235054/http://bioinfo.au.tsinghua.edu.cn/software/mirnasvm/
 [wbm2]: http://web.archive.org/web/20120210235054/http://bioinfo.au.tsinghua.edu.cn/software/mirnasvm/materials_for_duplicating_results_in_paper.tar.gz
 [wbm3]: http://web.archive.org/web/20120210235054/http://bioinfo.au.tsinghua.edu.cn/software/mirnasvm/triplet-svm-classifier.tar.gz
+[vie1]: http://www.tbi.univie.ac.at/~ronny/RNA/index.html
