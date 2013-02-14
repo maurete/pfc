@@ -11,8 +11,11 @@ Cómo probar el clasificador
    http://www.tbi.univie.ac.at/~ronny/RNA/index.html#download
    en un terminal, hacer cd a la carpeta donde se bajó el archivo
    y ejecutar
+   
          sudo dpkg -i <nombre de archivo>
+
    por ejemplo,
+
          cd Descargas
 	     sudo dpkg -i vienna-rna_2.1.1-1_amd64.deb
 	
