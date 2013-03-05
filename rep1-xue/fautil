@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import argparse
 import re
@@ -91,8 +92,8 @@ def load_file ( f ):
 
         # si no entiendo la linea, escribo una advertencia
         else:
-            print("WARNING: {}: ignoring line {:d}".format(f.name,lineno),
-                  file=sys.stderr)
+            print "WARNING: {}: ignoring line {:d}".format(
+                f.name,lineno) >> sys.stderr
 
     # si lei algo del for anterior, me queda
     # la ultima entrada sin guardar:
@@ -241,15 +242,15 @@ def compare( set1files, set2files ):
     
     # los dict se pueden restar: set1-set2 devuelve un nuevo dict
     # con los elementos de set1 que no estan en set2
-    entries_only_set1 = set1.keys() - set2.keys()
-    entries_only_set2 = set2.keys() - set1.keys()
+    entries_only_set1 = set(set1.keys()) - set(set2.keys())
+    entries_only_set2 = set(set2.keys()) - set(set1.keys())
 
     # en estas variables cuento diferencias de secuencia/estructura
     differing_sequences = 0
     differing_secondary = 0
 
     # para cada elemento de la interseccion
-    for key in set1.keys() & set2.keys():
+    for key in set(set1.keys()) & set(set2.keys()):
         # si coinciden, no hago nada
         if set1[key] == set2[key]:
             pass
@@ -397,6 +398,52 @@ def svmout ( infile, outfile, label, d=0 ):
 
 
 
+def fannout ( infile, outfile, label, d=0 ):
+    """
+    Genera el archivo de entrada para libsvm, etiquetando
+    a todos los elementos con la etiqueta 'label' (int)
+    @param infile: archivo(s) de entrada (formato FASTA)
+    @param outfile: archivo de salida (formato libsvm)
+    @param label: etiqueta para los elementos de salida (int)
+    @rtype: None
+    """
+
+    # si infile es una lista de archivos
+    # hago recursion con cada elem
+    if type(infile) is list:
+        for li in infile:
+            fannout(li,outfile,label,d+1)
+
+    else:
+        # leo el archivo
+        seq = load_file(infile)
+
+        # para cada elemento leido
+        for val in seq.values():
+            # si es multiloop, paso
+            if re.match( mult_fmt, val[2]):
+                pass
+            
+            else:
+                # obtengo el vector de frecuencias de triplets
+                v = triplet(val[1], val[2])
+                # escribo la etiqueta al arch. de salida
+                outfile.write("{:d}".format(label))
+                # para cada i de 1 a 32
+                for i in range(len(v)):
+                    # escribo i:v[i] 
+                    outfile.write( " {:d}:{:f}".format(i+1,v[i]) )
+
+                # escribo un retorno de linea
+                outfile.write('\n')
+
+    # si la llamada actual es top-level, cierro outfile y salgo
+    if d == 0:
+        outfile.close()
+        exit()
+
+
+
 
 def partition ( infile, outfile1, outfile2, s1=None, s2=None, d=0 ):
     """
@@ -491,19 +538,19 @@ parser.add_argument( '--verbose', '-v',
 
 subp   = parser.add_subparsers()
 countp = subp.add_parser('count',
-                         aliases=['contar'],
+                         #aliases=['contar'],
                          description="count entries in input files")
 cmppar = subp.add_parser('compare',
-                         aliases=['cmp', 'comparar'],
+                         #aliases=['cmp', 'comparar'],
                          description="compare two sets of files")
 strp   = subp.add_parser('strip',
-                         aliases=['singloop'],
+                         #aliases=['singloop'],
                          description="strip multiloop entries from input")
 svmp   = subp.add_parser('svm',
-                         aliases=['svmout'],
+                         #aliases=['svmout'],
                          description="convert to libsvm format")
 partp  = subp.add_parser('part',
-                         aliases=['partition'],
+                         #aliases=['partition'],
                          description="partition input file into two output sets")
 
 countp.add_argument('file',
