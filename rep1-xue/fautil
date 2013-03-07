@@ -45,69 +45,76 @@ def load_file ( f ):
     # en entries guardo cada entrada leida
     entries = dict()
 
-    # variables auxiliares
-    lineno = 0
-    cur_dsc = None
-    cur_seq = ""
-    cur_st2 = ""
-    id_ = ""
+    # si f es una lista de archivos
+    # hago recursion con cada elem
+    if type(f) is list:
+        for li in f:
+            entries.update(load_file(li))
+    else:
 
-    # leo cada linea del archivo
-    for line in f:
-        lineno += 1
-        # si leo una linea de descripcion
-        if re.match(desc_fmt, line):
-            # si no es la primera iteracion
-            if cur_dsc:
-                # obtengo el id
-                id_ = re.split(desc_fmt, cur_dsc)[1]
-                # guardo la entrada en el dict 
-                entries[id_] = (cur_dsc, cur_seq, cur_st2)
-                        
-            # asigno el valor actual a la
-            # linea de descripcion y reseteo las otras
-            lll = line.replace( '''''', '')
-            cur_dsc = lll[:-1]
-            cur_seq = ""
-            cur_st2 = ""
-            
-        # si leo una linea de secuencia
-        elif re.match(seqn_fmt, line):
-            # agrego el pedazo de secuencia
-            # al final de la variable cur_seq
-            cur_seq += re.split(seqn_fmt,line)[1]
-            
-        # si leo una linea de estructura secundaria
-        elif re.match(snds_fmt, line):
-            # separo la linea segun la regexp
-            split = re.split(snds_fmt, line)
-            # guardo al parte de estruct secund al
-            # final de la var cur_st2
-            cur_st2 += split[1]
-                
-            # si al final la linea contene la free energy
-            if split[3]:
-                # la agrego al final de la linea de descripcion
-                cur_dsc += " FREE_ENERGY {}".format(split[3])
-
-        # si no entiendo la linea, escribo una advertencia
-        else:
-            print "WARNING: {}: ignoring line {:d}".format(
-                f.name,lineno) >> sys.stderr
-
-    # si lei algo del for anterior, me queda
-    # la ultima entrada sin guardar:
-    if cur_dsc:
-        # obtengo el id
-        id_ = re.split(desc_fmt, cur_dsc)[1]
-        # guardo la entrada en el dict 
-        entries[id_] = (cur_dsc, cur_seq, cur_st2)
-        
-        # asigno el valor actual a la
-        # linea de descripcion y reseteo las otras
-        cur_dsc = line[:-1]
+        # variables auxiliares
+        lineno = 0
+        cur_dsc = None
         cur_seq = ""
         cur_st2 = ""
+        id_ = ""
+
+        # leo cada linea del archivo
+        for line in f:
+            lineno += 1
+            # si leo una linea de descripcion
+            if re.match(desc_fmt, line):
+                # si no es la primera iteracion
+                if cur_dsc:
+                    # obtengo el id
+                    id_ = re.split(desc_fmt, cur_dsc)[1]
+                    # guardo la entrada en el dict 
+                    entries[id_] = (cur_dsc, cur_seq, cur_st2)
+                        
+                # asigno el valor actual a la
+                # linea de descripcion y reseteo las otras
+                lll = line.replace( '''''', '')
+                cur_dsc = lll[:-1]
+                cur_seq = ""
+                cur_st2 = ""
+            
+            # si leo una linea de secuencia
+            elif re.match(seqn_fmt, line):
+                # agrego el pedazo de secuencia
+                # al final de la variable cur_seq
+                cur_seq += re.split(seqn_fmt,line)[1]
+            
+            # si leo una linea de estructura secundaria
+            elif re.match(snds_fmt, line):
+                # separo la linea segun la regexp
+                split = re.split(snds_fmt, line)
+                # guardo al parte de estruct secund al
+                # final de la var cur_st2
+                cur_st2 += split[1]
+                
+                # si al final la linea contene la free energy
+                if split[3]:
+                    # la agrego al final de la linea de descripcion
+                    cur_dsc += " FREE_ENERGY {}".format(split[3])
+
+            # si no entiendo la linea, escribo una advertencia
+            else:
+                sys.stderr.write("WARNING: {}: ignoring line {:d}\n".format(
+                        f.name,lineno))
+
+        # si lei algo del for anterior, me queda
+        # la ultima entrada sin guardar:
+        if cur_dsc:
+            # obtengo el id
+            id_ = re.split(desc_fmt, cur_dsc)[1]
+            # guardo la entrada en el dict 
+            entries[id_] = (cur_dsc, cur_seq, cur_st2)
+        
+            # asigno el valor actual a la
+            # linea de descripcion y reseteo las otras
+            cur_dsc = line[:-1]
+            cur_seq = ""
+            cur_st2 = ""
 
     return entries
 
@@ -124,28 +131,20 @@ def strip ( infile, outfile, d=0 ):
     @rtype: None
     """
 
-    # si infile es una lista de archivos
-    # hago recursion con cada elem
-    if type(infile) is list:
-        for li in infile:
-            strip(li,outfile,d+1)
+    # leo el archivo
+    seq = load_file(infile)
 
-    # si solo me pasaron un archivo
-    else:
-        # leo el archivo
-        seq = load_file(infile)
-
-        # para cada entrada
-        for val in seq.values():
-            # testeo multiples loops
-            if re.match( mult_fmt, val[2]):
-                pass
-            # si solo hay un loop
-            else:
-                # guardo la entrada en el archivo
-                outfile.write(val[0] + '\n' +
-                              val[1] + '\n' +
-                              val[2] + '\n')
+    # para cada entrada
+    for val in seq.values():
+        # testeo multiples loops
+        if re.match( mult_fmt, val[2]):
+            pass
+        # si solo hay un loop
+        else:
+            # guardo la entrada en el archivo
+            outfile.write(val[0] + '\n' +
+                          val[1] + '\n' +
+                          val[2] + '\n')
 
 
 
@@ -227,18 +226,9 @@ def compare( set1files, set2files ):
     set1 = dict()
     set2 = dict()
 
-    # si set1files, set2files no son
-    # listas entonces las creo
-    if type(set1files) is not list:
-        set1files = [set1files]
-    if type(set2files) is not list:
-        set2files = [set2files]
-
     # leo el contenido de los archivos
-    for fi in set1files:
-        set1.update(load_file(fi))
-    for fi in set2files:
-        set2.update(load_file(fi))
+    set1.update(load_file(set1files))
+    set2.update(load_file(set2files))
     
     # los dict se pueden restar: set1-set2 devuelve un nuevo dict
     # con los elementos de set1 que no estan en set2
@@ -297,7 +287,7 @@ def compare( set1files, set2files ):
 
 
 
-def triplet ( sequence, structure ):
+def triplet ( sequence, structure, normalize = True ):
     """
     Calcula el 32-vector de frecuencia de triplets según el
     procedimiento explicado en Xue et al.
@@ -314,6 +304,7 @@ def triplet ( sequence, structure ):
     # occur mapea triplet: nro de ocurrencias,
     # por ej: occur['G.(('] = 2
     occur = dict()
+    occur['total'] = 0
 
     # inicializo los elementos en 0
     for n in 'GCUA':
@@ -339,20 +330,25 @@ def triplet ( sequence, structure ):
     # recorro la secuencia: para cada triplet sumo 1 al bucket correspondiente
     for i in list(range(ll,lr)) + list(range(rl,rr)):
         occur[sequence[i] + structure[i-1:i+2]] += 1
+        occur['total'] += 1
 
     vector = []
+    tot = float(occur['total'])
 
     # finalmente genero el vector de ocurrencias
     for n in 'GCUA':
         for s in ['...', '..(', '.(.', '.((', '(..', '(.(', '((.', '(((']:
-            vector.append(occur[n + s])
+            if normalize:
+                vector.append(occur[n + s] / tot)
+            else:
+                vector.append(occur[n + s])
             
     return vector
 
 
 
 
-def svmout ( infile, outfile, label, d=0 ):
+def svmout ( infile, outfile, label ):
     """
     Genera el archivo de entrada para libsvm, etiquetando
     a todos los elementos con la etiqueta 'label' (int)
@@ -362,85 +358,63 @@ def svmout ( infile, outfile, label, d=0 ):
     @rtype: None
     """
 
-    # si infile es una lista de archivos
-    # hago recursion con cada elem
-    if type(infile) is list:
-        for li in infile:
-            svmout(li,outfile,label,d+1)
+    # leo el archivo
+    seq = load_file(infile)
 
-    else:
-        # leo el archivo
-        seq = load_file(infile)
-
-        # para cada elemento leido
-        for val in seq.values():
-            # si es multiloop, paso
-            if re.match( mult_fmt, val[2]):
-                pass
+    # para cada elemento leido
+    for val in seq.values():
+        # si es multiloop, paso
+        if re.match( mult_fmt, val[2]):
+            pass
             
-            else:
-                # obtengo el vector de frecuencias de triplets
-                v = triplet(val[1], val[2])
-                # escribo la etiqueta al arch. de salida
-                outfile.write("{:d}".format(label))
-                # para cada i de 1 a 32
-                for i in range(len(v)):
-                    # escribo i:v[i] 
-                    outfile.write( " {:d}:{:f}".format(i+1,v[i]) )
+        else:
+            # obtengo el vector de frecuencias de triplets
+            v = triplet(val[1], val[2])
+            # escribo la etiqueta al arch. de salida
+            outfile.write("{:d}".format(label))
+            # para cada i de 1 a 32
+            for i in range(len(v)):
+                # escribo i:v[i] 
+                outfile.write( " {:d}:{:f}".format(i+1,v[i]) )
 
-                # escribo un retorno de linea
-                outfile.write('\n')
-
-    # si la llamada actual es top-level, cierro outfile y salgo
-    if d == 0:
-        outfile.close()
-        exit()
+            # escribo un retorno de linea
+            outfile.write('\n')
 
 
 
-def fannout ( infile, outfile, label, d=0 ):
+
+def fannout ( infile, outfile, label ):
     """
-    Genera el archivo de entrada para libsvm, etiquetando
+    Genera el archivo de entrada para libfann, etiquetando
     a todos los elementos con la etiqueta 'label' (int)
     @param infile: archivo(s) de entrada (formato FASTA)
-    @param outfile: archivo de salida (formato libsvm)
+    @param outfile: archivo de salida (formato libfann)
     @param label: etiqueta para los elementos de salida (int)
     @rtype: None
     """
 
-    # si infile es una lista de archivos
-    # hago recursion con cada elem
-    if type(infile) is list:
-        for li in infile:
-            fannout(li,outfile,label,d+1)
+    # leo el archivo
+    seq = load_file(infile)
 
-    else:
-        # leo el archivo
-        seq = load_file(infile)
+    # escribo el número de patrones, entradas y salidas
+    outfile.write("{:d} {:d} {:d}\n".format(len(seq), 32, 1))
 
-        # para cada elemento leido
-        for val in seq.values():
-            # si es multiloop, paso
-            if re.match( mult_fmt, val[2]):
-                pass
+    # para cada elemento leido
+    for val in seq.values():
+        # si es multiloop, paso
+        if re.match( mult_fmt, val[2]):
+            pass
             
-            else:
-                # obtengo el vector de frecuencias de triplets
-                v = triplet(val[1], val[2])
-                # escribo la etiqueta al arch. de salida
-                outfile.write("{:d}".format(label))
-                # para cada i de 1 a 32
-                for i in range(len(v)):
-                    # escribo i:v[i] 
-                    outfile.write( " {:d}:{:f}".format(i+1,v[i]) )
+        else:
+            # obtengo el vector de frecuencias de triplets
+            v = triplet(val[1], val[2])
+            # para cada input de 1 a 32
+            for i in v:
+                # escribo v[i]
+                outfile.write( "{:f} ".format(i) )
 
-                # escribo un retorno de linea
-                outfile.write('\n')
-
-    # si la llamada actual es top-level, cierro outfile y salgo
-    if d == 0:
-        outfile.close()
-        exit()
+            # escribo la etiqueta (salida esperada) al arch. de salida
+            outfile.write("\n{:d}\n".format(label))
 
 
 
@@ -459,52 +433,38 @@ def partition ( infile, outfile1, outfile2, s1=None, s2=None, d=0 ):
     @rtype: None
     """
 
-    # aca guardo las entradas leidas
-    entries = dict()
+    # aca leo las entradas
+    entries = load_file(infile)
 
     random.seed()
 
-    # si infile es una lista de archivos
-    # cargo cada uno en entries
-    if type(infile) is list:
-        for li in infile:
-            entries.update(partition(li,outfile1,outfile2,d=d+1))
-    else:
-        # si no, cargo el unico archivo en entries
-        entries.update(load_file(infile))
+    # valores por defecto para s1, s2
+    if not s1:
+        s1 = math.floor(len(entries) * 0.7)
+    if not s2:
+        s2 = math.ceil(len(entries) * 0.3)
 
-    # si la llamada actual no es la top-level, simplemente devuelvo lo leido
-    if d > 0:
-        return entries
+    # sampleo elementos para part1
+    p1k = random.sample(entries.keys(), s1)
 
-    else:
-        # valores por defecto para s1, s2
-        if not s1:
-            s1 = math.floor(len(entries) * 0.7)
-        if not s2:
-            s2 = math.ceil(len(entries) * 0.3)
+    # sampleo elementos para part2 (que manera más guay de hacerlo :)
+    p2k = random.sample([k for k in entries.keys() if k not in p1k], s2)
 
-        # sampleo elementos para part1
-        p1k = random.sample(entries.keys(), s1)
-
-        # sampleo elementos para part2 (que manera más guay de hacerlo :)
-        p2k = random.sample([k for k in entries.keys() if k not in p1k], s2)
-
-        # mañas de python
-        if type(outfile1) is list:
-            outfile1 = outfile1[0]
-        if type(outfile2) is list:
-            outfile2 = outfile2[0]
+    # mañas de python
+    if type(outfile1) is list:
+        outfile1 = outfile1[0]
+    if type(outfile2) is list:
+        outfile2 = outfile2[0]
         
-        # escribo los archvos de salida
-        for k in p1k:
-            outfile1.write(entries[k][0] + '\n' +
-                           entries[k][1] + '\n' +
-                           entries[k][2] + '\n')
-        for k in p2k:
-            outfile2.write(entries[k][0] + '\n' +
-                           entries[k][1] + '\n' +
-                           entries[k][2] + '\n')
+    # escribo los archvos de salida
+    for k in p1k:
+        outfile1.write(entries[k][0] + '\n' +
+                       entries[k][1] + '\n' +
+                       entries[k][2] + '\n')
+    for k in p2k:
+        outfile2.write(entries[k][0] + '\n' +
+                       entries[k][1] + '\n' +
+                       entries[k][2] + '\n')
 
     outfile1.close()
     outfile2.close()
@@ -524,6 +484,9 @@ def wrap_compare(obj):
 
 def wrap_svmout (obj):
     svmout(obj.file, obj.outfile, obj.label)
+
+def wrap_fannout (obj):
+    fannout(obj.file, obj.outfile, obj.label)
 
 def wrap_part (obj):
     partition(obj.file, obj.outfile1, obj.outfile2, obj.size1, obj.size2)
@@ -549,6 +512,9 @@ strp   = subp.add_parser('strip',
 svmp   = subp.add_parser('svm',
                          #aliases=['svmout'],
                          description="convert to libsvm format")
+fannp  = subp.add_parser('fann',
+                         #aliases=['svmout'],
+                         description="convert to libfann format")
 partp  = subp.add_parser('part',
                          #aliases=['partition'],
                          description="partition input file into two output sets")
@@ -593,6 +559,21 @@ svmp.add_argument  ('--label', '-l',
                     nargs='?',
                     default=-1,
                     help="label for the dataset (default = -1)")
+fannp.add_argument ('file',
+                    type=argparse.FileType('r'),
+                    nargs='*',
+                    default=sys.stdin,
+                    help='file(s) to read from')
+fannp.add_argument ('--outfile', '-o',
+                    type=argparse.FileType('w'),
+                    nargs='?',
+                    default=sys.stdout,
+                    help="output file to write")
+fannp.add_argument ('--label', '-l',
+                    type=int,
+                    nargs='?',
+                    default=-1,
+                    help="label for the dataset (default = -1)")
 partp.add_argument ('file',
                     type=argparse.FileType('r'),
                     nargs='*',
@@ -622,6 +603,7 @@ partp.add_argument ('--size2', '-s2',
 
 strp.set_defaults(func=wrap_strip)
 svmp.set_defaults(func=wrap_svmout)
+fannp.set_defaults(func=wrap_fannout)
 countp.set_defaults(func=wrap_count)
 cmppar.set_defaults(func=wrap_compare)
 partp.set_defaults(func=wrap_part)
