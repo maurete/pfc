@@ -7,7 +7,7 @@ ln -fs ../fautil .
 echo -e "0. copio datos de miRNAS a hairpin.fa"
 cat ../original/1_download_pre-miRNAs_from_miRNA_registry/hairpin.fa > 1-hairpin.fa
 #
-echo -e "1. calculo plegados de hairpin, filtro los que no son humanos a 2-hsa-folded.fa"
+echo -e "1. calculo plegados de hairpin, filtro los que no son humanos y guardo en 2-hsa-folded.fa"
 cat 1-hairpin.fa | RNAfold --noPS | egrep -i -A2 "^>hsa-" > 2-hsa-folded.fa
 #
 echo -e "2. guardo entradas sigle-looped en 3-hsa-single-loop.fa"
