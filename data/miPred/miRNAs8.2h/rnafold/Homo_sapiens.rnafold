@@ -1,0 +1,969 @@
+>hsa-mir-17 MI0000071 Homo sapiens miR-17 stem-loop
+GUCAGAAUAAUGUCAAAGUGCUUACAGUGCAGGUAGUGAUAUGUGCAUCUACUGCAGUGAAGGCACUUGUAGCAUUAUGGUGAC
+((((..(((((((..((((((((.((.(((((.(((((.......)).)))))))).)).))))))))...)))))))..)))) (-34.30)
+>hsa-mir-19b-1 MI0000074 Homo sapiens miR-19b-1 stem-loop
+CACUGUUCUAUGGUUAGUUUUGCAGGUUUGCAUCCAGCUGUGUGAUAUUCUGCUGUGCAAAUCCAUGCAAAACUGACUGUGGUAGUG
+(((((..(((((((((((((((((((((((((..((((.............)))))))))).)).)))))))))))))))))))))) (-38.42)
+>hsa-mir-19b-2 MI0000075 Homo sapiens miR-19b-2 stem-loop
+ACAUUGCUACUUACAAUUAGUUUUGCAGGUUUGCAUUUCAGCGUAUAUAUGUAUAUGUGGCUGUGCAAAUCCAUGCAAAACUGAUUGUGAUAAUGU
+((((((....((((((((((((((((((((((((((....(((((((....)))))))....))))))).)).))))))))))))))))))))))) (-40.60)
+>hsa-mir-24-1 MI0000080 Homo sapiens miR-24/miR-189 stem-loop
+CUCCGGUGCCUACUGAGCUGAUAUCAGUUCUCAUUUUACACACUGGCUCAGUUCAGCAGGAACAGGAG
+((((.((.(((.(((((((((..(((((.............))))).))))))))).))).)).)))) (-26.32)
+>hsa-mir-24-2 MI0000081 Homo sapiens miR-24-2 stem-loop
+CUCUGCCUCCCGUGCCUACUGAGCUGAAACACAGUUGGUUUGUGUACACUGGCUCAGUUCAGCAGGAACAGGG
+(((((..(((..(((..(((((((((..((((((.....))))))....)))))))))...)))))).))))) (-27.30)
+>hsa-mir-25 MI0000082 Homo sapiens miR-25 stem-loop
+GGCCAGUGUUGAGAGGCGGAGACUUGGGCAAUUGCUGGACGCUGCCCUGGGCAUUGCACUUGUCUCGGUCUGACAGUGCCGGCC
+((((.(..(((..((((.(((((..(.(((((.(((((.......))..)))))))).)..))))).))))..)))..).)))) (-37.80)
+>hsa-mir-28 MI0000086 Homo sapiens miR-28 stem-loop
+GGUCCUUGCCCUCAAGGAGCUCACAGUCUAUUGAGUUACCUUUCUGACUUUCCCACUAGAUUGUGAGCUCCUGGAGGGCAGGCACU
+(((.(((((((((.((((((((((((((((.(((((((......)))))....)).)))))))))))))))).))))))))).))) (-50.60)
+>hsa-mir-32 MI0000090 Homo sapiens miR-32 stem-loop
+GGAGAUAUUGCACAUUACUAAGUUGCAUGUUGUCACGGCCUCAAUGCAAUUUAGUGUGUGUGAUAUUUUC
+((((((((..(((((.(((((((((((((..((....))..).)))))))))))))))))..)))))))) (-31.90)
+>hsa-mir-33 MI0000091 Homo sapiens miR-33 stem-loop
+CUGUGGUGCAUUGUAGUUGCAUUGCAUGUUCUGGUGGUACCCAUGCAAUGUUUCCACAGUGCAUCACAG
+((((((((((((((.(..((((((((((....((.....))))))))))))..).)))))))))))))) (-37.30)
+>hsa-mir-92-2 MI0000094 Homo sapiens miR-92-2 stem-loop
+UCAUCCCUGGGUGGGGAUUUGUUGCAUUACUUGUGUUCUAUAUAAAGUAUUGCACUUGUCCCGGCCUGUGGAAGA
+((.(((.(((((.(((((..((.(((.(((((((((...)))).))))).)))))..))))).))))).))).)) (-30.20)
+>hsa-mir-95 MI0000097 Homo sapiens miR-95 stem-loop
+AACACAGUGGGCACUCAAUAAAUGUCUGUUGAAUUGAAAUGCGUUACAUUCAACGGGUAUUUAUUGAGCACCCACUCUGUG
+.(((.((((((..((((((((((..((((((((((((......))).)))))))))..))))))))))..)))))).))). (-37.50)
+>hsa-mir-98 MI0000100 Homo sapiens miR-98 stem-loop
+AGGAUUCUGCUCAUGCCAGGGUGAGGUAGUAAGUUGUAUUGUUGUGGGGUAGGGAUAUUAGGCCCCAAUUAGAAGAUAACUAUACAACUUACUACUUUCCCUGGUGUGUGGCAUAUUCA
+.((((..((((((((((((((.(((((((((((((((((.((((((((((...........)))))).........)))).))))))))))))))))))))))))))).)))).)))). (-57.00)
+>hsa-mir-99a MI0000101 Homo sapiens miR-99a stem-loop
+CCCAUUGGCAUAAACCCGUAGAUCCGAUCUUGUGGUGAAGUGGACCGCACAAGCUCGCUUCUAUGGGUCUGUGUCAGUGUG
+..((((((((((.(((((((((..(((.((((((.((........)))))))).)))..))))))))).)))))))))).. (-39.60)
+>hsa-mir-100 MI0000102 Homo sapiens miR-100 stem-loop
+CCUGUUGCCACAAACCCGUAGAUCCGAACUUGUGGUAUUAGUCCGCACAAGCUUGUAUCUAUAGGUAUGUGUCUGUUAGG
+((((..(.((((.(((..(((((.(((.(((((((........).)))))).))).)))))..))).)))).)...)))) (-26.80)
+>hsa-mir-29b-1 MI0000105 Homo sapiens miR-29b-1 stem-loop
+CUUCAGGAAGCUGGUUUCAUAUGGUGGUUUAGAUUUAAAUAGUGAUUGUCUAGCACCAUUUGAAAUCAGUGUUCUUGGGGG
+(((((((((((((((((((.((((((..((((((.............)))))))))))).)))))))))).))))))))). (-34.02)
+>hsa-mir-29b-2 MI0000107 Homo sapiens miR-29b-2 stem-loop
+CUUCUGGAAGCUGGUUUCACAUGGUGGCUUAGAUUUUUCCAUCUUUGUAUCUAGCACCAUUUGAAAUCAGUGUUUUAGGAG
+(((((((((((((((((((.((((((.((.((((..............)))))))))))).)))))))))).))))))))) (-31.24)
+>hsa-mir-105-1 MI0000111 Homo sapiens miR-105-1 stem-loop
+UGUGCAUCGUGGUCAAAUGCUCAGACUCCUGUGGUGGCUGCUCAUGCACCACGGAUGUUUGAGCAUGUGCUACGGUGUCUA
+...(((((((((.((.((((((((((..((((((((.(.......)))))))))..)))))))))).)))))))))))... (-43.10)
+>hsa-mir-106a MI0000113 Homo sapiens miR-106a stem-loop
+CCUUGGCCAUGUAAAAGUGCUUACAGUGCAGGUAGCUUUUUGAGAUCUACUGCAAUGUAAGCACUUCUUACAUUACCAUGG
+((.(((..(((((((((((((((((.(((((.(((.((.....)).)))))))).))))))))))).))))))..))).)) (-34.70)
+>hsa-mir-192 MI0000234 Homo sapiens miR-192 stem-loop
+GCCGAGACCGAGUGCACAGGGCUCUGACCUAUGAAUUGACAGCCAGUGCUCUCGUCUCCCCUCUGGCUGCCAAUUCCAUAGGUCACAGGUAUGUUCGCCUCAAUGCCAGC
+.........(((.(((((.(.((.((((((((((((((.(((((((................))))))).))))).))))))))).)).).)))..)))))......... (-39.49)
+>hsa-mir-197 MI0000239 Homo sapiens miR-197 stem-loop
+GGCUGUGCCGGGUAGAGAGGGCAGUGGGAGGUAAGAGCUCUUCACCCUUCACCACCUUCUCCACCCAGCAUGGCC
+((((((((.((((.(((((((..((((..((((((....))).)))..))))..))))))).)))).)))))))) (-42.40)
+>hsa-mir-198 MI0000240 Homo sapiens miR-198 stem-loop
+UCAUUGGUCCAGAGGGGAGAUAGGUUCCUGUGAUUUUUCCUUCUUCUCUAUAGAAUAAAUGA
+(((((..((...((((((((.(((..............)))))))))))...))...))))) (-15.44)
+>hsa-mir-199a-1 MI0000242 Homo sapiens miR-199a-1 stem-loop
+GCCAACCCAGUGUUCAGACUACCUGUUCAGGAGGCUCUCAAUGUGUACAGUAGUCUGCACAUUGGUUAGGC
+(((...(((((((.((((((((.(((.((.(((...)))....)).))))))))))).)))))))...))) (-29.20)
+>hsa-mir-147 MI0000262 Homo sapiens miR-147 stem-loop
+AAUCUAAAGACAACAUUUCUGCACACACACCAGACUAUGGAAGCCAGUGUGUGGAAAUGCUUCUGCUAGAUU
+((((((.(((...((((((..(((((...(((.....)))......)))))..))))))..)))..)))))) (-24.10)
+>hsa-mir-7-1 MI0000263 Homo sapiens miR-7-1 stem-loop
+UUGGAUGUUGGCCUAGUUCUGUGUGGAAGACUAGUGAUUUUGUUGUUUUUAGAUAACUAAAUCGACAACAAAUCACAGUCUGCCAUAUGGCACAGGCCAUGCCUCUACAG
+.((((.((((((((.((.((((((((.(((((.(((((((.(((((((((((....)))))..)))))))))))))))))).)))))))).)))))))).)).))))... (-48.00)
+>hsa-mir-7-2 MI0000264 Homo sapiens miR-7-2 stem-loop
+CUGGAUACAGAGUGGACCGGCUGGCCCCAUCUGGAAGACUAGUGAUUUUGUUGUUGUCUUACUGCGCUCAACAACAAAUCCCAGUCUACCUAAUGGUGCCAGCCAUCGCA
+(((....))).((((...(((((((.((((..((.(((((.(.(((((.(((((((............))))))))))))).))))).))..)))).))))))).)))). (-46.90)
+>hsa-mir-7-3 MI0000265 Homo sapiens miR-7-3 stem-loop
+AGAUUAGAGUGGCUGUGGUCUAGUGCUGUGUGGAAGACUAGUGAUUUUGUUGUUCUGAUGUACUACGACAACAAGUCACAGCCGGCCUCAUAGCGCAGACUCCCUUCGAC
+......(((.((....(((((.((((((((.((..(.((.(((((((.((((((.((......)).))))))))))))))).)..)).))))))))))))))).)))... (-39.10)
+>hsa-mir-10a MI0000266 Homo sapiens miR-10a stem-loop
+GAUCUGUCUGUCUUCUGUAUAUACCCUGUAGAUCCGAAUUUGUGUAAGGAAUUUUGUGGUCACAAAUUCGUAUCUAGGGGAAUAUGUAGUUGACAUAAACACUCCGCUCU
+....(((.((((..((((((((.((((.(((((.((((((((((................)))))))))).))))))))).))))))))..))))...)))......... (-32.39)
+>hsa-mir-10b MI0000267 Homo sapiens miR-10b stem-loop
+CCAGAGGUUGUAACGUUGUCUAUAUAUACCCUGUAGAACCGAAUUUGUGUGGUAUCCGUAUAGUCACAGAUUCGAUUCUAGGGGAAUAUAUGGUCGAUGCAAAAACUUCA
+...((((((....(((((.((((((((.((((.(((((.((((((((((..(((....)))...)))))))))).))))))))).)))))))).)))))....)))))). (-45.00)
+>hsa-mir-181b-1 MI0000270 Homo sapiens miR-181b-1 stem-loop
+CCUGUGCAGAGAUUAUUUUUUAAAAGGUCACAAUCAACAUUCAUUGCUGUCGGUGGGUUGAACUGUGUGGACAAGCUCACUGAACAAUGAAUGCAACUGUGGCCCCGCUU
+.....((.((((.....))))....(((((((.....(((((((((...((((((((((...((....))...)))))))))).)))))))))....)))))))..)).. (-34.90)
+>hsa-mir-181c MI0000271 Homo sapiens miR-181c stem-loop
+CGGAAAAUUUGCCAAGGGUUUGGGGGAACAUUCAACCUGUCGGUGAGUUUGGGCAGCUCAGGCAAACCAUCGACCGUUGAGUGGACCCUGAGGCCUGGAAUUGCCAUCCU
+.(((.......(((.((.((..(((...((((((((..(((((((.(((((...........)))))))))))).))))))))..)))..)).)))))........))). (-44.66)
+>hsa-mir-183 MI0000273 Homo sapiens miR-183 stem-loop
+CCGCAGAGUGUGACUCCUGUUCUGUGUAUGGCACUGGUAGAAUUCACUGUGAACAGUCUCAGUCAGUGAAUUACCGAAGGGCCAUAAACAGAGCAGAGACAGAUCCACGA
+.......(((.((.(((((((((((.((((((..(((((..(((((((((((......)))..)))))))))))))....)))))).))))))))).))....))))).. (-41.90)
+>hsa-mir-187 MI0000274 Homo sapiens miR-187 stem-loop
+GGUCGGGCUCACCAUGACACAGUGUGAGACCUCGGGCUACAACACAGGACCCGGGCGCUGCUCUGACCCCUCGUGUCUUGUGUUGCAGCCGGAGGGACGCAGGUCCGCA
+.(.((((((.............((((...((((.((((.(((((((((((.((((.((......).).)).)).))))))))))).)))).))))..))))))))))). (-47.91)
+>hsa-mir-196a-2 MI0000279 Homo sapiens miR-196a-2 stem-loop
+UGCUCGCUCAGCUGAUCUGUGGCUUAGGUAGUUUCAUGUUGUUGGGAUUGAGUUUUGAACUCGGCAACAAGAAACUGCCUGAGUUACAUCAGUCGGUUUUCGUCGAGGGC
+..(((((..(((((((.((((((((((((((((((.((((((((((.(..(...)..).)))))))))).))))))))))))))))))...)))))))...).))))... (-51.20)
+>hsa-mir-199a-2 MI0000281 Homo sapiens miR-199a-2 stem-loop
+AGGAAGCUUCUGGAGAUCCUGCUCCGUCGCCCCAGUGUUCAGACUACCUGUUCAGGACAAUGCCGUUGUACAGUAGUCUGCACAUUGGUUAGACUGGGCAAGGGAGAGCA
+.....(((.((.....((((((((.(((...(((((((.((((((((.(((...((......)).....))))))))))).)))))))...))).)))).))))))))). (-43.20)
+>hsa-mir-199b MI0000282 Homo sapiens miR-199b stem-loop
+CCAGAGGACACCUCCACUCCGUCUACCCAGUGUUUAGACUAUCUGUUCAGGACUCCCAAAUUGUACAGUAGUCUGCACAUUGGUUAGGCUGGGCUGGGUUAGACCCUCGG
+...((((.....((((..(((((((.(((((((.(((((((.((((.((((....))....)).))))))))))).))))))).))))).))..))))......)))).. (-42.90)
+>hsa-mir-203 MI0000283 Homo sapiens miR-203 stem-loop
+GUGUUGGGGACUCGCGCGCUGGGUCCAGUGGUUCUUAACAGUUCAACAGUUCUGUAGCGCAAUUGUGAAAUGUUUAGGACCACUAGACCCGGCGGGCGCGGCGACAGCGA
+.(((((..(.(.(((.(((((((((.(((((((((.((((.((((.((((((......).))))))))).)))).))))))))).))))))))).))).).)..))))). (-56.40)
+>hsa-mir-204 MI0000284 Homo sapiens miR-204 stem-loop
+GGCUACAGUCUUUCUUCAUGUGACUCGUGGACUUCCCUUUGUCAUCCUAUGCCUGAGAAUAUAUGAAGGAGGCUGGGAAGGCAAAGGGACGUUCAAUUGUCAUCACUGGC
+(((....))).....(((((((((...(((((.((((((((((.(((((.((((...............))))))))).)))))))))).)))))...)))).)).))). (-42.26)
+>hsa-mir-205 MI0000285 Homo sapiens miR-205 stem-loop
+AAAGAUCCUCAGACAAUCCAUGUGCUUCUCUUGUCCUUCAUUCCACCGGAGUCUGUCUCAUACCCAACCAGAUUUCAGUGGAGUGAAGUUCAGGAGGCAUGGAGCUGACA
+........((((....(((((((....((((((..(((((((((((.((((((((.............)))))))).)))))))))))..))))))))))))).)))).. (-49.02)
+>hsa-mir-210 MI0000286 Homo sapiens miR-210 stem-loop
+ACCCGGCAGUGCCUCCAGGCGCAGGGCAGCCCCUGCCCACCGCACACUGCGCUGCCCCAGACCCACUGUGCGUGUGACAGCGGCUGAUCUGUGCCUGGGCAGCGCGACCC
+....((..((((.(((((((((((..(((((.(((..(((((((((.((.((((...))).).)).)))))).))).))).)))))..)))))))))))..))))..)). (-60.70)
+>hsa-mir-211 MI0000287 Homo sapiens miR-211 stem-loop
+UCACCUGGCCAUGUGACUUGUGGGCUUCCCUUUGUCAUCCUUCGCCUAGGGCUCUGAGCAGGGCAGGGACAGCAAAGGGGUGCUCAGUUGUCACUUCCCACAGCACGGAG
+((..(((.....(((((...(((((.(((((((((..(((((.((((...((.....)).)))))))))..))))))))).)))))...)))))......)))....)). (-45.80)
+>hsa-mir-181a-1 MI0000289 Homo sapiens miR-181a-1 stem-loop
+UGAGUUUUGAGGUUGCUUCAGUGAACAUUCAACGCUGUCGGUGAGUUUGGAAUUAAAAUCAAAACCAUCGACCGUUGAUUGUACCCUAUGGCUAACCAUCAUCUACUCCA
+.((((..((((((((((..((.(.(((.((((((..(((((((.((((.((.......)).))))))))))))))))).))).).))..))).)))).)))...)))).. (-38.30)
+>hsa-mir-214 MI0000290 Homo sapiens miR-214 stem-loop
+GGCCUGGCUGGACAGAGUUGUCAUGUGUCUGCCUGUCUACACUUGCUGUGCAGAACAUCCGCUCACCUGUACAGCAGGCACAGACAGGCAGUCACAUGACAACCCAGCCU
+.....((((((.....(((((((((((.((((((((((...((((((((((((.............))))))))))))...)))))))))).))))))))))))))))). (-67.62)
+>hsa-mir-216 MI0000292 Homo sapiens miR-216 stem-loop
+GAUGGCUGUGAGUUGGCUUAAUCUCAGCUGGCAACUGUGAGAUGUUCAUACAAUCCCUCACAGUGGUCUCUGGGAUUAUGCUAAACAGAGCAAUUUCCUAGCCCUCACGA
+((.(((((.((((((((.(((((((((..(((.((((((((.(((....)))....)))))))).))).))))))))).)))))..........))).))))).)).... (-40.70)
+>hsa-mir-217 MI0000293 Homo sapiens miR-217 stem-loop
+AGUAUAAUUAUUACAUAGUUUUUGAUGUCGCAGAUACUGCAUCAGGAACUGAUUGGAUAAGAAUCAGUCACCAUCAGUUCCUAAUGCAUUGCCUUCAGCAUCUAAACAAG
+.(((.......)))...((((..(((((.(.((.((.(((((.((((((((((.((((........))).).)))))))))).))))).)).)).).))))).))))... (-33.40)
+>hsa-mir-218-1 MI0000294 Homo sapiens miR-218-1 stem-loop
+GUGAUAAUGUAGCGAGAUUUUCUGUUGUGCUUGAUCUAACCAUGUGGUUGCGAGGUAUGAGUAAAACAUGGUUCCGUCAAGCACCAUGGAACGUCACGCAGCUUUCUACA
+(((..((.((.(((.(((.((((((.(((((((((..((((((((..((((.........)))).))))))))..))))))))).)))))).))).))).))))..))). (-42.90)
+>hsa-mir-218-2 MI0000295 Homo sapiens miR-218-2 stem-loop
+GACCAGUCGCUGCGGGGCUUUCCUUUGUGCUUGAUCUAACCAUGUGGUGGAACGAUGGAAACGGAACAUGGUUCUGUCAAGCACCGCGGAAAGCACCGUGCUCUCCUGCA
+...(((..((.((((.(((((((...(((((((((..((((((((..........((....))..))))))))..)))))))))...))))))).))))))....))).. (-46.30)
+>hsa-mir-219-1 MI0000296 Homo sapiens miR-219-2 stem-loop
+CCGCCCCGGGCCGCGGCUCCUGAUUGUCCAAACGCAAUUCUCGAGUCUAUGGCUCCGGCCGAGAGUUGAGUCUGGACGUCCCGAGCCGCCGCCCCCAAACCUCGAGCGGG
+((((.(.((((.(((((((..(((.(((((.((.(((((((((.(((.........)))))))))))).)).))))))))..))))))).)))).........).)))). (-54.50)
+>hsa-mir-221 MI0000298 Homo sapiens miR-221 stem-loop
+UGAACAUCCAGGUCUGGGGCAUGAACCUGGCAUACAAUGUAGAUUUCUGUGUUCGUUAGGCAACAGCUACAUUGUCUGCUGGGUUUCAGGCUACCUGGAAACAUGUUCUC
+.((((((((((((....(((.((((((..(((.(((((((((....(((((((.....))).))))))))))))).)))..)).)))).))))))))))....))))).. (-47.20)
+>hsa-mir-222 MI0000299 Homo sapiens miR-222 stem-loop
+GCUGCUGGAAGGUGUAGGUACCCUCAAUGGCUCAGUAGCCAGUGUAGAUCCUGUCUUUCGUAAUCAGCAGCUACAUCUGGCUACUGGGUCUCUGAUGGCAUCUUCUAGCU
+...(((((((((((......((.(((..(((((((((((((((((((...(((...........)))...))))).))))))))))))))..))).))))))))))))). (-54.10)
+>hsa-mir-223 MI0000300 Homo sapiens miR-223 stem-loop
+CCUGGCCUCCUGCAGUGCCACGCUCCGUGUAUUUGACAAGCUGAGUUGGACACUCCAUGUGGUAGAGUGUCAGUUUGUCAAAUACCCCAAGUGCGGCACAUGCUUACCAG
+.((((......((((((((.((((..(.((((((((((((((......(((((((.........))))))))))))))))))))).)..)))).))))).)))...)))) (-47.90)
+>hsa-mir-200b MI0000342 Homo sapiens miR-200b stem-loop
+CCAGCUCGGGCAGCCGUGGCCAUCUUACUGGGCAGCAUUGGAUGGAGUCAGGUCUCUAAUACUGCCUGGUAAUGAUGACGGCGGAGCCCUGCACG
+...((..((((..((((.(.((((((((..(((((.((((((.((.......)))))))).)))))..)))).)))).).)))).)))).))... (-44.30)
+>hsa-mir-15b MI0000438 Homo sapiens miR-15b stem-loop
+UUGAGGCCUUAAAGUACUGUAGCAGCACAUCAUGGUUUACAUGCUACAGUCAAGAUGCGAAUCAUUAUUUGCUGCUCUAGAAAUUUAAGGAAAUUCAU
+.((((.(((((((...(((.(((((((.((.((((((..(((.((.......)))))..)))))).)).))))))).)))...)))))))...)))). (-32.70)
+>hsa-mir-23b MI0000439 Homo sapiens miR-23b stem-loop
+CUCAGGUGCUCUGGCUGCUUGGGUUCCUGGCAUGCUGAUUUGUGACUUAAGAUUAAAAUCACAUUGCCAGGGAUUACCACGCAACCACGACCUUGGC
+.(((((.(.(((((.(((.(((((((((((((((.((((((..............)))))))).))))))))))..))).))).))).)))))))). (-36.04)
+>hsa-mir-27b MI0000440 Homo sapiens miR-27b stem-loop
+ACCUCUCUAACAAGGUGCAGAGCUUAGCUGAUUGGUGAACAGUGAUUGGUUUCCGCUUUGUUCACAGUGGCUAAGUUCUGCACCUGAAGAGAAGGUG
+((((((((....((((((((((((((((((....((((((((....(((...)))..))))))))..))))))))))))))))))..)))).)))). (-50.40)
+>hsa-mir-122a MI0000442 Homo sapiens miR-122a stem-loop
+CCUUAGCAGAGCUGUGGAGUGUGACAAUGGUGUUUGUGUCUAAACUAUCAAACGCCAUUAUCACACUAAAUAGCUACUGCUAGGC
+.((((((((((((((..(((((((.(((((((((((.((....))...))))))))))).)))))))..)))))).)))))))). (-46.60)
+>hsa-mir-124a-1 MI0000443 Homo sapiens miR-124a-1 stem-loop
+AGGCCUCUCUCUCCGUGUUCACAGCGGACCUUGAUUUAAAUGUCCAUACAAUUAAGGCACGCGGUGAAUGCCAAGAAUGGGGCUG
+.((((((..(((..((((((((.(((..((((((((.............))))))))..))).))))))))..)))..)))))). (-35.92)
+>hsa-mir-124a-2 MI0000444 Homo sapiens miR-124a-2 stem-loop
+AUCAAGAUUAGAGGCUCUGCUCUCCGUGUUCACAGCGGACCUUGAUUUAAUGUCAUACAAUUAAGGCACGCGGUGAAUGCCAAGAGCGGAGCCUACGGCUGCACUUGAA
+.(((((..(((((((((((((((..((((((((.(((..((((((((...........))))))))..))).))))))))..))))))))))))....)))..))))). (-51.20)
+>hsa-mir-124a-3 MI0000445 Homo sapiens miR-124a-3 stem-loop
+UGAGGGCCCCUCUGCGUGUUCACAGCGGACCUUGAUUUAAUGUCUAUACAAUUAAGGCACGCGGUGAAUGCCAAGAGAGGCGCCUCC
+.(((((((.(((((.((((((((.(((..((((((((............))))))))..))).))))))))).)))).))).)))). (-40.30)
+>hsa-mir-125b-1 MI0000446 Homo sapiens miR-125b-1 stem-loop
+UGCGCUCCUCUCAGUCCCUGAGACCCUAACUUGUGAUGUUUACCGUUUAAAUCCACGGGUUAGGCUCUUGGGAGCUGCGAGUCGUGCU
+.((((..(((.(((..((..(((.(((((((((((..(((((.....))))).))))))))))).)))..))..))).)))..)))). (-43.40)
+>hsa-mir-128a MI0000447 Homo sapiens miR-128a stem-loop
+UGAGCUGUUGGAUUCGGGGCCGUAGCACUGUCUGAGAGGUUUACAUUUCUCACAGUGAACCGGUCUCUUUUUCAGCUGCUUC
+.((((.((((((...(((((((...((((((..(((((((....)))))))))))))...)))))))...)))))).)))). (-35.90)
+>hsa-mir-130a MI0000448 Homo sapiens miR-130a stem-loop
+UGCUGCUGGCCAGAGCUCUUUUCACAUUGUGCUACUGUCUGCACCUGUCACUAGCAGUGCAAUGUUAAAAGGGCAUUGGCCGUGUAGUG
+.((((((((((((.((((((((.((((((..((.(((...((....))...))).))..)))))).)))))))).))))))).))))). (-42.60)
+>hsa-mir-132 MI0000449 Homo sapiens miR-132 stem-loop
+CCGCCCCCGCGUCUCCAGGGCAACCGUGGCUUUCGAUUGUUACUGUGGGAACUGGAGGUAACAGUCUACAGCCAUGGUCGCCCCGCAGCACGCCCACGCGC
+.(((....((((((.(.((((.(((((((((...((((((((((..(....)....))))))))))...))))))))).)))).).)).))))....))). (-48.40)
+>hsa-mir-133a-2 MI0000451 Homo sapiens miR-133a-2 stem-loop
+GGGAGCCAAAUGCUUUGCUAGAGCUGGUAAAAUGGAACCAAAUCGACUGUCCAAUGGAUUUGGUCCCCUUCAACCAGCUGUAGCUGUGCAUUGAUGGCGCCG
+.((.(((((((((...((((.(((((((..((.((.((((((((.(........).)))))))).)).))..))))))).))))...)))))..)))).)). (-47.50)
+>hsa-mir-135a-1 MI0000452 Homo sapiens miR-135a-1 stem-loop
+AGGCCUCGCUGUUCUCUAUGGCUUUUUAUUCCUAUGUGAUUCUACUGCUCACUCAUAUAGGGAUUGGAGCCGUGGCGCACGGCGGGGACA
+.(.(((((((((.(.((((((((((..((((((((((((.............)))))))))))).)))))))))).).))))))))).). (-44.72)
+>hsa-mir-135a-2 MI0000453 Homo sapiens miR-135a-2 stem-loop
+AGAUAAAUUCACUCUAGUGCUUUAUGGCUUUUUAUUCCUAUGUGAUAGUAAUAAAGUCUCAUGUAGGGAUGGAAGCCAUGAAAUACAUUGUGAAAAAUCA
+.(((...(((((....(((.((((((((((((.((((((((((((.(.(.....).).)))))))))))))))))))))))).)))...)))))..))). (-35.10)
+>hsa-mir-137 MI0000454 Homo sapiens miR-137 stem-loop
+GGUCCUCUGACUCUCUUCGGUGACGGGUAUUCUUGGGUGGAUAAUACGGAUUACGUUGUUAUUGCUUAAGAAUACGCGUAGUCGAGGAGAGUACCAGCGGCA
+.(.((.((((((((((((((..(((.(((((((((((..(.(((((((.....)).))))))..))))))))))).)))..)))))))))))..))).))). (-49.10)
+>hsa-mir-138-2 MI0000455 Homo sapiens miR-138-2 stem-loop
+CGUUGCUGCAGCUGGUGUUGUGAAUCAGGCCGACGAGCAGCGCAUCCUCUUACCCGGCUAUUUCACGACACCAGGGUUGCAUCA
+.(.(((.((..(((((((((((((...(((((..(((.((......)))))...)))))..))))))))))))).)).))).). (-36.00)
+>hsa-mir-140 MI0000456 Homo sapiens miR-140 stem-loop
+UGUGUCUCUCUCUGUGUCCUGCCAGUGGUUUUACCCUAUGGUAGGUUACGUCAUGCUGUUCUACCACAGGGUAGAACCACGGACAGGAUACCGGGGCACC
+.(((((((.....((((((((((.(((((((((((((.(((((((..(((......)))))))))).))))))))))))))).)))))))).))))))). (-55.00)
+>hsa-mir-141 MI0000457 Homo sapiens miR-141 stem-loop
+CGGCCGGCCCUGGGUCCAUCUUCCAGUACAGUGUUGGAUGGUCUAAUUGUGAAGCUCCUAACACUGUCUGGUAAAGAUGGCUCCCGGGUGGGUUC
+.((((.((((.(((.(((((((((((.(((((((((((...((.......))...))).))))))))))))..)))))))..))))))).)))). (-48.90)
+>hsa-mir-143 MI0000459 Homo sapiens miR-143 stem-loop
+GCGCAGCGCCCUGUCUCCCAGCCUGAGGUGCAGUGCUGCAUCUCUGGUCAGUUGGGAGUCUGAGAUGAAGCACUGUAGCUCAGGAAGAGAGAAGUUGUUCUGCAGC
+..((((.((....((((.(..((((((.(((((((((.((((((.((((......)).)).)))))).))))))))).))))))..).))))....)).))))... (-51.90)
+>hsa-mir-144 MI0000460 Homo sapiens miR-144 stem-loop
+UGGGGCCCUGGCUGGGAUAUCAUCAUAUACUGUAAGUUUGCGAUGAGACACUACAGUAUAGAUGAUGUACUAGUCCGGGCACCCCC
+.(((((((.((((((.((((((((.(((((((((.((((......))))..))))))))))))))))).)))))).)))).))).. (-44.40)
+>hsa-mir-145 MI0000461 Homo sapiens miR-145 stem-loop
+CACCUUGUCCUCACGGUCCAGUUUUCCCAGGAAUCCCUUAGAUGCUAAGAUGGGGAUUCCUGGAAAUACUGUUCUUGAGGUCAUGGUU
+.(((.((.(((((.((..((((.((.((((((((((((.............)))))))))))).)).))))..))))))).)).))). (-41.62)
+>hsa-mir-152 MI0000462 Homo sapiens miR-152 stem-loop
+UGUCCCCCCCGGCCCAGGUUCUGUGAUACACUCCGACUCGGGCUCUGGAGCAGUCAGUGCAUGACAGAACUUGGGCCCGGAAGGACC
+.((((..((.((((((((((((((.((.((((..((((...(((....))))))))))).)).)))))))))))))).))..)))). (-48.20)
+>hsa-mir-153-1 MI0000463 Homo sapiens miR-153-1 stem-loop
+CUCACAGCUGCCAGUGUCAUUUUUGUGAUCUGCAGCUAGUAUUCUCACUCCAGUUGCAUAGUCACAAAAGUGAUCAUUGGCAGGUGUGGC
+.(((((.((((((((((((((((((((((.((((((((((......)))..)))))))..))))))))))))).))))))))).))))). (-48.10)
+>hsa-mir-153-2 MI0000464 Homo sapiens miR-153-2 stem-loop
+AGCGGUGGCCAGUGUCAUUUUUGUGAUGUUGCAGCUAGUAAUAUGAGCCCAGUUGCAUAGUCACAAAAGUGAUCAUUGGAAACUGUG
+.(((((..(((((((((((((((((((..(((((((.((.......))..)))))))..))))))))))))).))))))..))))). (-41.30)
+>hsa-mir-191 MI0000465 Homo sapiens miR-191 stem-loop
+CGGCUGGACAGCGGGCAACGGAAUCCCAAAAGCAGCUGUUGUCUCCAGAGCAUUCCAGCUGCGCUUGGAUUUCGUCCCCUGCUCUCCUGCCU
+.(((.(((.((((((..(((((((((.((..(((((((..((((....)).))..)))))))..)))))))))))..)))))).))).))). (-49.00)
+>hsa-mir-9-1 MI0000466 Homo sapiens miR-9-1 stem-loop
+CGGGGUUGGUUGUUAUCUUUGGUUAUCUAGCUGUAUGAGUGGUGUGGAGUCUUCAUAAAGCUAGAUAACCGAAAGUAAAAAUAACCCCA
+.(((((((....(((..(((((((((((((((.((((((.((.......)))))))).)))))))))))))))..)))...))))))). (-42.00)
+>hsa-mir-9-2 MI0000467 Homo sapiens miR-9-2 stem-loop
+GGAAGCGAGUUGUUAUCUUUGGUUAUCUAGCUGUAUGAGUGUAUUGGUCUUCAUAAAGCUAGAUAACCGAAAGUAAAAACUCCUUCA
+.((((.(((((.(((..(((((((((((((((.((((((..(....)..)))))).)))))))))))))))..))).))))))))). (-40.10)
+>hsa-mir-9-3 MI0000468 Homo sapiens miR-9-3 stem-loop
+GGAGGCCCGUUUCUCUCUUUGGUUAUCUAGCUGUAUGAGUGCCACAGAGCCGUCAUAAAGCUAGAUAACCGAAAGUAGAAAUGAUUCUCA
+.((((..(((((((((.(((((((((((((((.(((((..((......))..))))).))))))))))))))))).)))))))..)))). (-41.10)
+>hsa-mir-125a MI0000469 Homo sapiens miR-125a stem-loop
+UGCCAGUCUCUAGGUCCCUGAGACCCUUUAACCUGUGAGGACAUCCAGGGUCACAGGUGAGGUUCUUGGGAGCCUGGCGUCUGGCC
+.(((((.(.(((((..((..(((.((((..((((((((((....))....)))))))))))).)))..))..))))).).))))). (-48.10)
+>hsa-mir-126 MI0000471 Homo sapiens miR-126 stem-loop
+CGCUGGCGACGGGACAUUAUUACUUUUGGUACGCGCUGUGACACUUCAAACUCGUACCGUGAGUAAUAAUGCGCCGUCCACGGCA
+.((((..((((((.(((((((((((.(((((((.(...(((....)))..).))))))).)))))))))))).)))))..)))). (-40.20)
+>hsa-mir-134 MI0000474 Homo sapiens miR-134 stem-loop
+CAGGGUGUGUGACUGGUUGACCAGAGGGGCAUGCACUGUGUUCACCCUGUGGGCCACCUAGUCACCAACCCUC
+.(((((..((((((((.((.(((.((((((((.....))))...)))).)))..)).))))))))..))))). (-35.20)
+>hsa-mir-138-1 MI0000476 Homo sapiens miR-138-1 stem-loop
+CCCUGGCAUGGUGUGGUGGGGCAGCUGGUGUUGUGAAUCAGGCCGUUGCCAAUCAGAGAACGGCUACUUCACAACACCAGGGCCACACCACACUACAGG
+.((((...((((((((((.(((..(((((((((((((...(((((((..(.....)..)))))))..))))))))))))).))).)))))))))))))) (-58.80)
+>hsa-mir-146a MI0000477 Homo sapiens miR-146a stem-loop
+CCGAUGUGUAUCCUCAGCUUUGAGAACUGAAUUCCAUGGGUUGUGUCAGUGUCAGACCUCUGAAAUUCAGUUCUUCAGCUGGGAUAUCUCUGUCAUCGU
+.(((((.((((((.(((((..((((((((((((.((.(((((.((.......))))))).)).)))))))))))).)))))))))))......))))). (-40.30)
+>hsa-mir-149 MI0000478 Homo sapiens miR-149 stem-loop
+GCCGGCGCCCGAGCUCUGGCUCCGUGUCUUCACUCCCGUGCUUGUCCGAGGAGGGAGGGAGGGACGGGGGCUGUGCUGGGGCAGCUGGA
+.(((((((((.(((.(.(.((((((.(((((.(((((.(.(((....))).))))))))))).)))))).).).))).)))).))))). (-55.80)
+>hsa-mir-150 MI0000479 Homo sapiens miR-150 stem-loop
+CUCCCCAUGGCCCUGUCUCCCAACCCUUGUACCAGUGCUGGGCUCAGACCCUGGUACAGGCCUGGGGGACAGGGACCUGGGGAC
+.((((((.((((((((((((((..(((.(((((((.((((....))).).))))))))))..)))))))))))).)))))))). (-57.50)
+>hsa-mir-154 MI0000480 Homo sapiens miR-154 stem-loop
+GUGGUACUUGAAGAUAGGUUAUCCGUGUUGCCUUCGCUUUAUUUGUGACGAAUCAUACACGGUUGACCUAUUUUUCAGUACCAA
+.(((((((.((((((((((((.((((((....(((((.........).))))....)))))).)))))))))))).))))))). (-37.50)
+>hsa-mir-184 MI0000481 Homo sapiens miR-184 stem-loop
+CCAGUCACGUCCCCUUAUCACUUUUCCAGCCCAGCUUUGUGACUGUAAGUGUUGGACGGAGAACUGAUAAGGGUAGGUGAUUGA
+.(((((((.(.(((((((((.((((((.(.(((((((((......)))).))))).))))))).))))))))).).))))))). (-37.90)
+>hsa-mir-185 MI0000482 Homo sapiens miR-185 stem-loop
+AGGGGGCGAGGGAUUGGAGAGAAAGGCAGUUCCUGAUGGUCCCCUCCCCAGGGGCUGGCUUUCCUCUGGUCCUUCCCUCCCA
+.(((((.(((((((..(((.(((((.(((((((((..((......)).))))))))).))))))))..))))))).))))). (-53.10)
+>hsa-mir-186 MI0000483 Homo sapiens miR-186 stem-loop
+UGCUUGUAACUUUCCAAAGAAUUCUCCUUUUGGGCUUUCUGGUUUUAUUUUAAGCCCAAAGGUGAAUUUUUUGGGAAGUUUGAGCU
+.(((((.(((((((((((((((((.(((((.((((((..............))))))))))).)))))))))))))))))))))). (-41.24)
+>hsa-mir-188 MI0000484 Homo sapiens miR-188 stem-loop
+UGCUCCCUCUCUCACAUCCCUUGCAUGGUGGAGGGUGAGCUUUCUGAAAACCCCUCCCACAUGCAGGGUUUGCAGGAUGGCGAGCC
+.((((((..(((..((..(((((((((..((((((....(.....).....))))))..)))))))))..))..))).)).)))). (-39.80)
+>hsa-mir-193a MI0000487 Homo sapiens miR-193a stem-loop
+CGAGGAUGGGAGCUGAGGGCUGGGUCUUUGCGGGCGAGAUGAGGGUGUCGGAUCAACUGGCCUACAAAGUCCCAGUUCUCGGCCCCCG
+.......(((.(((((((((((((.(((((..(((.((.(((..........))).)).)))..))))).))))))))))))).))). (-50.80)
+>hsa-mir-194-1 MI0000488 Homo sapiens miR-194-1 stem-loop
+AUGGUGUUAUCAAGUGUAACAGCAACUCCAUGUGGACUGUGUACCAAUUUCCAGUGGAGAUGCUGUUACUUUUGAUGGUUACCAA
+.(((((..((((((.(((((((((.((((((.((((..((......)).)))))))))).))))))))).))))))..).)))). (-38.30)
+>hsa-mir-195 MI0000489 Homo sapiens miR-195 stem-loop
+AGCUUCCCUGGCUCUAGCAGCACAGAAAUAUUGGCACAGGGAAGCGAGUCUGCCAAUAUUGGCUGUGCUGCUCCAGGCAGGGUGGUG
+.(((.(((((.((..((((((((((.((((((((((..............))))))))))..))))))))))..)).))))).))). (-46.44)
+>hsa-mir-206 MI0000490 Homo sapiens miR-206 stem-loop
+UGCUUCCCGAGGCCACAUGCUUCUUUAUAUCCCCAUAUGGAUUACUUUGCUAUGGAAUGUAAGGAAGUGUGUGGUUUCGGCAAGUG
+.((((.((((((((((((((((((((((((..(((((.(.(......).)))))).)))))))))))))))))))))))).)))). (-43.90)
+>hsa-mir-320 MI0000542 Homo sapiens miR-320 stem-loop
+GCUUCGCUCCCCUCCGCCUUCUCUUCCCGGUUCUUCCCGGAGUCGGGAAAAGCUGGGUUGAGAGGGCGAAAAAGGAUGAGGU
+((((((.(((....(((((((((..(((((((.((((((....)))))).)))))))..))))))))).....))))))))) (-46.40)
+>hsa-mir-181b-2 MI0000683 Homo sapiens miR-181b-2 stem-loop
+CUGAUGGCUGCACUCAACAUUCAUUGCUGUCGGUGGGUUUGAGUCUGAAUCAACUCACUGAUCAAUGAAUGCAAACUGCGGACCAAACA
+....((((((((.....(((((((((..(((((((((((.((.......)))))))))))))))))))))).....))))).))).... (-35.00)
+>hsa-mir-128b MI0000727 Homo sapiens miR-128b stem-loop
+UGUGCAGUGGGAAGGGGGGCCGAUACACUGUACGAGAGUGAGUAGCAGGUCUCACAGUGAACCGGUCUCUUUCCCUACUGUGUC
+.(..(((((((.((((((((((...((((((..((((.(........).))))))))))...)))))))))).)))))))..). (-39.40)
+>hsa-mir-194-2 MI0000732 Homo sapiens miR-194-2 stem-loop
+UGGUUCCCGCCCCCUGUAACAGCAACUCCAUGUGGAAGUGCCCACUGGUUCCAGUGGGGCUGCUGUUAUCUGGGGCGAGGGCCAG
+((((((.((((((..(((((((((..(((....)))....(((((((....)))))))..)))))))))..)))))).)))))). (-51.30)
+>hsa-mir-219-2 MI0000740 Homo sapiens miR-219-2 stem-loop
+ACUCAGGGGCUUCGCCACUGAUUGUCCAAACGCAAUUCUUGUACGAGUCUGCGGCCAACCGAGAAUUGUGGCUGGACAUCUGUGGCUGAGCUCCGGG
+.(((.(((((((.(((((.(((.(((((..(((((((((((...(.((.....)))...)))))))))))..)))))))).))))).)))))))))) (-49.90)
+>hsa-mir-296 MI0000747 Homo sapiens miR-296 stem-loop
+AGGACCCUUCCAGAGGGCCCCCCCUCAAUCCUGUUGUGCCUAAUUCAGAGGGUUGGGUGGAGGCUCUCCUGAAGGGCUCU
+((..((((((..(((((((.((.(((((((((.(((.........)))))))))))).)).)))))))..))))))..)) (-41.40)
+>hsa-mir-130b MI0000748 Homo sapiens miR-130b stem-loop
+GGCCUGCCCGACACUCUUUCCCUGUUGCACUACUAUAGGCCGCUGGGAAGCAGUGCAAUGAUGAAAGGGCAUCGGUCAGGUC
+((((((.((((..(((((((..(((((((((.((.(((....)))...)).)))))))))..)))))))..)))).)))))) (-36.40)
+>hsa-mir-361 MI0000760 Homo sapiens miR-361 stem-loop
+GGAGCUUAUCAGAAUCUCCAGGGGUACUUUAUAAUUUCAAAAAGUCCCCCAGGUGUGAUUCUGAUUUGCUUC
+(((((..(((((((((.((.((((.(((((..........))))).)))).))...)))))))))..))))) (-32.30)
+>hsa-mir-362 MI0000762 Homo sapiens miR-362 stem-loop
+CUUGAAUCCUUGGAACCUAGGUGUGAGUGCUAUUUCAGUGCAACACACCUAUUCAAGGAUUCAAA
+.(((((((((((((...((((((((.(..((.....))..)..))))))))))))))))))))). (-31.70)
+>hsa-mir-365-1 MI0000767 Homo sapiens miR-365-1 stem-loop
+ACCGCAGGGAAAAUGAGGGACUUUUGGGGGCAGAUGUGUUUCCAUUCCACUAUCAUAAUGCCCCUAAAAAUCCUUAUUGCUCUUGCA
+...((((((..((((((((..(((((((((((((((((.........))).)))....))))))))))).))))))))..)))))). (-35.40)
+>hsa-mir-302b MI0000772 Homo sapiens miR-302b stem-loop
+GCUCCCUUCAACUUUAACAUGGAAGUGCUUUCUGUGACUUUAAAAGUAAGUGCUUCCAUGUUUUAGUAGGAGU
+(((((.....(((..((((((((((..(((.((...........)).)))..))))))))))..))).))))) (-29.10)
+>hsa-mir-302c MI0000773 Homo sapiens miR-302c stem-loop
+CCUUUGCUUUAACAUGGGGGUACCUGCUGUGUGAAACAAAAGUAAGUGCUUCCAUGUUUCAGUGGAGG
+((((..((..(((((((((((((.((((.((.....))..)))).)))))))))))))..))..)))) (-32.00)
+>hsa-mir-302d MI0000774 Homo sapiens miR-302d stem-loop
+CCUCUACUUUAACAUGGAGGCACUUGCUGUGACAUGACAAAAAUAAGUGCUUCCAUGUUUGAGUGUGG
+((.(.((((.((((((((((((((((.(((......)))....)))))))))))))))).))))).)) (-29.20)
+>hsa-mir-367 MI0000775 Homo sapiens miR-367 stem-loop
+CCAUUACUGUUGCUAAUAUGCAACUCUGUUGAAUAUAAAUUGGAAUUGCACUUUAGCAAUGGUGAUGG
+((((((((((((((((..(((((.((((............)))).)))))..)))))))))))))))) (-28.90)
+>hsa-mir-371 MI0000779 Homo sapiens miR-371 stem-loop
+GUGGCACUCAAACUGUGGGGGCACUUUCUGCUCUCUGGUGAAAGUGCCGCCAUCUUUUGAGUGUUAC
+((((((((((((..((((.(((((((((.(((....)))))))))))).))))..)))))))))))) (-39.10)
+>hsa-mir-372 MI0000780 Homo sapiens miR-372 stem-loop
+GUGGGCCUCAAAUGUGGAGCACUAUUCUGAUGUCCAAGUGGAAAGUGCUGCGACAUUUGAGCGUCAC
+...((((((((((((.(((((((.((((...........)))))))))).).))))))))).))).. (-27.10)
+>hsa-mir-373 MI0000781 Homo sapiens miR-373 stem-loop
+GGGAUACUCAAAAUGGGGGCGCUUUCCUUUUUGUCUGUACUGGGAAGUGCUUCGAUUUUGGGGUGUCCC
+((((((((((((((.((((((((((((..............)))))))))))).))))).))))))))) (-35.94)
+>hsa-mir-374 MI0000782 Homo sapiens miR-374 stem-loop
+UACAUCGGCCAUUAUAAUACAACCUGAUAAGUGUUAUAGCACUUAUCAGAUUGUAUUGUAAUUGUCUGUGUA
+(((((.(((.((((((((((((.(((((((((((....))))))))))).)))))))))))).))).))))) (-35.20)
+>hsa-mir-375 MI0000783 Homo sapiens miR-375 stem-loop
+CCCCGCGACGAGCCCCUCGCACAAACCGGACCUGAGCGUUUUGUUCGUUCGGCUCGCGUGAGGC
+.((((((.((((((...((.(((((.((........)).))))).))...)))))))))).)). (-26.20)
+>hsa-mir-378 MI0000786 Homo sapiens miR-378/miR-422b stem-loop
+AGGGCUCCUGACUCCAGGUCCUGUGUGUUACCUAGAAAUAGCACUGGACUUGGAGUCAGAAGGCCU
+(((.((.((((((((((((((...((((((........)))))).)))))))))))))).)).))) (-39.20)
+>hsa-mir-380 MI0000788 Homo sapiens miR-380 stem-loop
+AAGAUGGUUGACCAUAGAACAUGCGCUAUCUCUGUGUCGUAUGUAAUAUGGUCCACAUCUU
+((((((...(((((((..(((((((.(((....))).)))))))..)))))))..)))))) (-24.80)
+>hsa-mir-381 MI0000789 Homo sapiens miR-381 stem-loop
+UACUUAAAGCGAGGUUGCCCUUUGUAUAUUCGGUUUAUUGACAUGGAAUAUACAAGGGCAAGCUCUCUGUGAGUA
+((((((.((.(((.((((((((.((((((((.(((....)))...)))))))))))))))).))).)).)))))) (-35.00)
+>hsa-mir-328 MI0000804 Homo sapiens miR-328 stem-loop
+UGGAGUGGGGGGGCAGGAGGGGCUCAGGGAGAAAGUGCAUACAGCCCCUGGCCCUCUCUGCCCUUCCGUCCCCUG
+.((..(((((((((((..(((((.(((((.(...((....))..)))))))))))..)))))))))))..))... (-46.30)
+>hsa-mir-148b MI0000811 Homo sapiens miR-148b stem-loop
+CAAGCACGAUUAGCAUUUGAGGUGAAGUUCUGUUAUACACUCAGGCUGUGGCUCUCUGAAAGUCAGUGCAUCACAGAACUUUGUCUCGAAAGCUUUCUA
+.......((..(((.(((((((..(((((((((.((.((((..((((....(.....)..)))))))).)).)))))))))..))))))).))).)).. (-35.00)
+>hsa-mir-338 MI0000814 Homo sapiens miR-338 stem-loop
+UCUCCAACAAUAUCCUGGUGCUGAGUGAUGACUCAGGCGACUCCAGCAUCAGUGAUUUUGUUGAAGA
+(((.((((((.(((((((((((((((.............))).))))))))).))).)))))).))) (-26.22)
+>hsa-mir-339 MI0000815 Homo sapiens miR-339 stem-loop
+CGGGGCGGCCGCUCUCCCUGUCCUCCAGGAGCUCACGUGUGCCUGCCUGUGAGCGCCUCGACGACAGAGCCGGCGCCUGCCCCAGUGUCUGCGC
+.(((((((.((((..(.(((((.((.(((.(((((((.((....)).))))))).))).)).))))).)..)))).))))))).(((....))) (-49.20)
+>hsa-mir-133b MI0000822 Homo sapiens miR-133b stem-loop
+CCUCAGAAGAAAGAUGCCCCCUGCUCUGGCUGGUCAAACGGAACCAAGUCCGUCUUCCUGAGAGGUUUGGUCCCCUUCAACCAGCUACAGCAGGGCUGGCAAUGCCCAGUCCUUGGAGA
+.(((.((.((..(.(((((((((((.((((((((..((.((.((((((.((.((((...)))))))))))).)).))..)))))))).)))))))..))))...)....)).)).))). (-48.40)
+>hsa-mir-345 MI0000825 Homo sapiens miR-345 stem-loop
+ACCCAAACCCUAGGUCUGCUGACUCCUAGUCCAGGGCUCGUGAUGGCUGGUGGGCCCUGAACGAGGGGUCUGGAGGCCUGGGUUUGAAUAUCGACAGC
+...(((((((.((((((.(.(((((((.((.(((((((((..(....)..))))))))).)).))))))).).)))))))))))))............ (-51.30)
+>hsa-mir-384 MI0001145 Homo sapiens miR-384 stem-loop
+UGUUAAAUCAGGAAUUUUAAACAAUUCCUAGACAAUAUGUAUAAUGUUCAUAAGUCAUUCCUAGAAAUUGUUCAUAAUGCCUGUAACA
+.((((...((((.(((...(((((((.((((((..((((.........)))).))).....))).)))))))...))).)))))))). (-15.00)
+>hsa-mir-422a MI0001444 Homo sapiens miR-422a stem-loop
+GAGAGAAGCACUGGACUUAGGGUCAGAAGGCCUGAGUCUCUCUGCUGCAGAUGGGCUCUCUGUCCCUGAGCCAAGCUUUGUCCUCCCUGG
+(((.(((((..(((.(((((((.((((..((((..(((((......).))))))))..)))).)))))))))).)))))...)))..... (-40.00)
+>hsa-mir-424 MI0001446 Homo sapiens miR-424 stem-loop
+CGAGGGGAUACAGCAGCAAUUCAUGUUUUGAAGUGUUCUAAAUGGUUCAAAACGUGAGGCGCUGCUAUACCCCCUCGUGGGGAAGGUAGAAGGUGGGG
+(((((((.((.((((((..(((((((((((((.(((.....))).)))))))))))))..)))))).)).)))))))..................... (-42.30)
+>hsa-mir-425 MI0001448 Homo sapiens miR-425 stem-loop
+GAAAGCGCUUUGGAAUGACACGAUCACUCCCGUUGAGUGGGCACCCGAGAAGCCAUCGGGAAUGUCGUGUCCGCCCAGUGCUCUUUC
+(((((.((.((((...(((((((((((((.....)))))....(((((.......)))))...))))))))...)))).)).))))) (-36.30)
+>hsa-mir-20b MI0001519 Homo sapiens miR-20b stem-loop
+AGUACCAAAGUGCUCAUAGUGCAGGUAGUUUUGGCAUGACUCUACUGUAGUAUGGGCACUUCCAGUACU
+(((((..(((((((((((.(((((..((((.......))))...))))).)))))))))))...))))) (-29.80)
+>hsa-mir-429 MI0001641 Homo sapiens miR-429 stem-loop
+CGCCGGCCGAUGGGCGUCUUACCAGACAUGGUUAGACCUGGCCCUCUGUCUAAUACUGUCUGGUAAAACCGUCCAUCCGCUGC
+...((((.((((((((..((((((((((..(((((((..........)))))))..))))))))))...)))))))).)))). (-40.30)
+>hsa-mir-449 MI0001648 Homo sapiens miR-449 stem-loop
+CUGUGUGUGAUGAGCUGGCAGUGUAUUGUUAGCUGGUUGAAUAUGUGAAUGGCAUCGGCUAACAUGCAACUGCUGUCUUAUUGCAUAUACA
+.((((((..(((((.(((((((((((.((((((((((....(((....)))..)))))))))))))).))))))).)))))..)))))).. (-39.00)
+>hsa-mir-450-1 MI0001652 Homo sapiens miR-450-1 stem-loop
+AAACGAUACUAAACUGUUUUUGCGAUGUGUUCCUAAUAUGCACUAUAAAUAUAUUGGGAACAUUUUGCAUGUAUAGUUUUGUAUCAAUAUA
+....(((((.(((((((...(((((.((((((((((((((.........)))))))))))))).)))))...))))))).)))))...... (-35.40)
+>hsa-mir-431 MI0001721 Homo sapiens miR-431 stem-loop
+UCCUGCUUGUCCUGCGAGGUGUCUUGCAGGCCGUCAUGCAGGCCACACUGACGGUAACGUUGCAGGUCGUCUUGCAGGGCUUCUCGCAAGACGACAUCCUCAUCACCAACGACG
+...((.(((((.(((((((.((((((((((.((.(.((((((((........)))....))))).).)).)))))))))).))))))).))))))).................. (-43.60)
+>hsa-mir-329-2 MI0001726 Homo sapiens miR-329-2 stem-loop
+GUGGUACCUGAAGAGAGGUUUUCUGGGUUUCUGUUUCUUUAUUGAGGACGAAACACACCUGGUUAACCUCUUUUCCAGUAUCAA
+.((((((..(((((((((((..(..(((...((((((.((......)).)))))).)))..)..)))))))))))..)))))). (-35.20)
+>hsa-mir-453 MI0001727 Homo sapiens miR-453 stem-loop
+GCAGGAAUGCUGCGAGCAGUGCCACCUCAUGGUACUCGGAGGGAGGUUGUCCGUGGUGAGUUCGCAUUAUUUAAUGAUGC
+(((.(((((.(((((((.((((((.....)))))).((((.(.....).))))......))))))).))))).....))) (-25.90)
+>hsa-mir-451 MI0001729 Homo sapiens miR-451 stem-loop
+CUUGGGAAUGGCAAGGAAACCGUUACCAUUACUGAGUUUAGUAAUGGUAAUGGUUCUCUUGCUAUACCCAGA
+.(((((.((((((((..(((((((((((((((((....)))))))))))))))))..)))))))).))))). (-44.70)
+>hsa-mir-452 MI0001733 Homo sapiens miR-452 stem-loop
+GCUAAGCACUUACAACUGUUUGCAGAGGAAACUGAGACUUUGUAACUAUGUCUCAGUCUCAUCUGCAAAGAAGUAAGUGCUUUGC
+((.((((((((((...(.((((((((.((.((((((((...........)))))))).)).)))))))).).)))))))))).)) (-40.90)
+>hsa-mir-412 MI0002464 Homo sapiens miR-412 stem-loop
+CUGGGGUACGGGGAUGGAUGGUCGACCAGUUGGAAAGUAAUUGUUUCUAAUGUACUUCACCUGGUCCACUAGCCGUCCGUAUCCGCUGCAG
+...((((((..((((((.((((.((((((.(((..((((((((....)))).))))))).)))))).)))).))))))))))))....... (-34.70)
+>hsa-mir-376b MI0002466 Homo sapiens miR-376b stem-loop
+CAGUCCUUCUUUGGUAUUUAAAACGUGGAUAUUCCUUCUAUGUUUACGUGAUUCCUGGUUAAUCAUAGAGGAAAAUCCAUGUUUUCAGUAUCAAAUGCUG
+((((.....(((((((((.(((((((((((.(((((.(((((......((((.....))))..)))))))))).))))))))))).))))))))).)))) (-34.00)
+>hsa-mir-483 MI0002467 Homo sapiens miR-483 stem-loop
+GAGGGGGAAGACGGGAGGAAAGAAGGGAGUGGUUCCAUCACGCCUCCUCACUCCUCUCCUCCCGUCUUCUCCUCUC
+(((((((((((((((((((.((.((.(((.(((........)))..))).)).)).))))))))))))).)))))) (-44.20)
+>hsa-mir-484 MI0002468 Homo sapiens miR-484 stem-loop
+AGCCUCGUCAGGCUCAGUCCCCUCCCGAUAAACCCCUAAAUAGGGACUUUCCCGGGGGGUGACCCUGGCUUUUUUGGCG
+.(((..((((((....(((.(((((((..(((.((((....))))..)))..))))))).)))))))))......))). (-33.80)
+>hsa-mir-486 MI0002470 Homo sapiens miR-486 stem-loop
+GUAUCCUGUACUGAGCUGCCCCGAGCUGGGCAGCAUGAAGGGCCUCGGGGCAGCUCAGUACAGGAUGC
+(((((((((((((((((((((((((((...(.....)...)).))))))))))))))))))))))))) (-53.00)
+>hsa-mir-487a MI0002471 Homo sapiens miR-487a stem-loop
+GGUACUUGAAGAGUGGUUAUCCCUGCUGUGUUCGCUUAAUUUAUGACGAAUCAUACAGGGACAUCCAGUUUUUCAGUAUC
+((((((.(((((.(((...((((((.((((((((.(((.....))))))).))))))))))...))).))))).)))))) (-30.30)
+>hsa-mir-489 MI0003124 Homo sapiens miR-489 stem-loop
+GUGGCAGCUUGGUGGUCGUAUGUGUGACGCCAUUUACUUGAACCUUUAGGAGUGACAUCACAUAUACGGCAGCUAAACUGCUAC
+(((((((.(((((.(((((((((((((.(.((((..(((((....))))))))).).))))))))))))).))))).))))))) (-38.40)
+>hsa-mir-490 MI0003125 Homo sapiens miR-490 stem-loop
+UGGAGGCCUUGCUGGUUUGGAAAGUUCAUUGUUCGACACCAUGGAUCUCCAGGUGGGUCAAGUUUAGAGAUGCACCAACCUGGAGGACUCCAUGCUGUUGAGCUGUUCACAAGCAGCGGACACUUCCA
+.(((((..((((((.(((((((........((((((((.(((((((((((((((.(((...(((....)))..))).)))))))))..)))))).))))))))..))).))))))))))...))))). (-54.40)
+>hsa-mir-511-1 MI0003127 Homo sapiens miR-511-1 stem-loop
+CAAUAGACACCCAUCGUGUCUUUUGCUCUGCAGUCAGUAAAUAUUUUUUUGUGAAUGUGUAGCAAAAGACAGAAUGGUGGUCCAUUG
+((((.(((..((((..(((((((((((..(((.(((.((((......))))))).)))..)))))))))))..))))..))).)))) (-33.00)
+>hsa-mir-202 MI0003130 Homo sapiens miR-202 stem-loop
+CGCCUCAGAGCCGCCCGCCGUUCCUUUUUCCUAUGCAUAUACUUCUUUGAGGAUCUGGCCUAAAGAGGUAUAGGGCAUGGGAAAACGGGGCGGUCGGGUCCUCCCCAGCG
+(((....(((..((((((((((((.(((((((((((.(((((((((((.(((......))))))))))))))..))))))))))).))))))).))))).)))....))) (-58.80)
+>hsa-mir-492 MI0003131 Homo sapiens miR-492 stem-loop
+CAACUACAGCCACUACUACAGGACCAUCGAGGACCUGCGGGACAAGAUUCUUGGUGCCACCAUUGAGAACGCCAGGAUUGUCCUGCAGAUCAACAAUGCUCAACUGGCUGCAGAUG
+...((.((((((.........((.(((.(..((.(((((((((((...((((((((.............))))))))))))))))))).))..).))).))...)))))).))... (-41.52)
+>hsa-mir-493 MI0003132 Homo sapiens miR-493 stem-loop
+CUGGCCUCCAGGGCUUUGUACAUGGUAGGCUUUCAUUCAUUCGUUUGCACAUUCGGUGAAGGUCUACUGUGUGCCAGGCCCUGUGCCAG
+(((((...((((((((.((((((((((((((((((((.....((....))....)))))))))))))))))))).)))))))).))))) (-47.70)
+>hsa-mir-432 MI0003133 Homo sapiens miR-432 stem-loop
+UGACUCCUCCAGGUCUUGGAGUAGGUCAUUGGGUGGAUCCUCUAUUUCCUUACGUGGGCCACUGGAUGGCUCCUCCAUGUCUUGGAGUAGAUCA
+.((((.(((((((.(.(((((..(((((((.(((((.(((.(((......)).).)))))))).))))))).))))).).))))))).)).)). (-42.10)
+>hsa-mir-495 MI0003135 Homo sapiens miR-495 stem-loop
+UGGUACCUGAAAAGAAGUUGCCCAUGUUAUUUUCGCUUUAUAUGUGACGAAACAAACAUGGUGCACUUCUUUUUCGGUAUCA
+.((((((.((((((((((.(((((((((..((((((.........).)))))..))))))).)))))))))))).)))))). (-35.60)
+>hsa-mir-496 MI0003136 Homo sapiens miR-496 stem-loop
+CCCAAGUCAGGUACUCGAAUGGAGGUUGUCCAUGGUGUGUUCAUUUUAUUUAUGAUGAGUAUUACAUGGCCAAUCUCCUUUCGGUACUCAAUUCUUCUUGGG
+((((((...(((((.((((.((((((((.(((((..(((((((((........)))))))))..))))).)))))))).)))))))))........)))))) (-43.10)
+>hsa-mir-193b MI0003137 Homo sapiens miR-193b stem-loop
+GUGGUCUCAGAAUCGGGGUUUUGAGGGCGAGAUGAGUUUAUGUUUUAUCCAACUGGCCCUCAAAGUCCCGCUUUUGGGGUCAU
+(((..(((((((.((((..(((((((((.((.((..(.........)..)).)).)))))))))..)))).)))))))..))) (-43.10)
+>hsa-mir-497 MI0003138 Homo sapiens miR-497 stem-loop
+CCACCCCGGUCCUGCUCCCGCCCCAGCAGCACACUGUGGUUUGUACGGCACUGUGGCCACGUCCAAACCACACUGUGGUGUUAGAGCGAGGGUGGGGGAGGCACCGCCGAGG
+((.(..(((((((.((((((((((((((.((((.(((((((((.(((((......)))..)).))))))))).)))).)))).....).)))))))))))).))))..).)) (-55.50)
+>hsa-mir-181d MI0003139 Homo sapiens miR-181d stem-loop
+GUCCCCUCCCCUAGGCCACAGCCGAGGUCACAAUCAACAUUCAUUGUUGUCGGUGGGUUGUGAGGACUGAGGCCAGACCCACCGGGGGAUGAAUGUCACUGUGGCUGGGCCAGACACGGCUUAAGGGGAAUGGGGAC
+(((((((((((((((((...(((..(((((((....(((((((((.(..((((((((((....((.(....))).))))))))))).)))))))))...))))))).))).......))))).))))))..)))))) (-69.10)
+>hsa-mir-512-2 MI0003141 Homo sapiens miR-512-2 stem-loop
+GGUACUUCUCAGUCUGUGGCACUCAGCCUUGAGGGCACUUUCUGGUGCCAGAAUGAAAGUGCUGUCAUAGCUGAGGUCCAAUGACUGAGGCGAGCACC
+(((.((((((((((..(((..((((((..(((.(((((((((((....))))....))))))).)))..))))))..)))..)))))))..))).))) (-49.40)
+>hsa-mir-498 MI0003142 Homo sapiens miR-498 stem-loop
+AACCCUCCUUGGGAAGUGAAGCUCAGGCUGUGAUUUCAAGCCAGGGGGCGUUUUUCUAUAACUGGAUGAAAAGCACCUCCAGAGCUUGAAGCUCACAGUUUGAGAGCAAUCGUCUAAGGAAGUU
+.....((((((((...((...(((((((((((((((((((((.(((((.(((((((...........))))))).))))).).)))))))).))))))))))))..))....)))))))).... (-57.50)
+>hsa-mir-520e MI0003143 Homo sapiens miR-520e stem-loop
+UCUCCUGCUGUGACCCUCAAGAUGGAAGCAGUUUCUGUUGUCUGAAAGGAAAGAAAGUGCUUCCUUUUUGAGGGUUACUGUUUGAGA
+((((..((.(((((((((((((.(((((((.(((((....(((....))).))))).))))))).))))))))))))).))..)))) (-49.00)
+>hsa-mir-515-1 MI0003144 Homo sapiens miR-515-1 stem-loop
+UCUCAUGCAGUCAUUCUCCAAAAGAAAGCACUUUCUGUUGUCUGAAAGCAGAGUGCCUUCUUUUGGAGCGUUACUGUUUGAGA
+(((((.(((((.((.(((((((((((.((((..((((((.......)))))))))).))))))))))).)).))))).))))) (-40.80)
+>hsa-mir-519e MI0003145 Homo sapiens miR-519e stem-loop
+UCUCAUGCAGUCAUUCUCCAAAAGGGAGCACUUUCUGUUUGAAAGAAAACAAAGUGCCUCCUUUUAGAGUGUUACUGUUUGAGA
+(((((.(((((.((.(((.((((((..((((((..(((((......)))))))))))..)))))).))).)).))))).))))) (-36.30)
+>hsa-mir-520f MI0003146 Homo sapiens miR-520f stem-loop
+UCUCAGGCUGUGACCCUCUAAAGGGAAGCGCUUUCUGUGGUCAGAAAGAAAAGCAAGUGCUUCCUUUUAGAGGGUUACCGUUUGGGA
+((((((((.((((((((((((((((((((((((.((....((.....))..)).)))))))))))))))))))))))).)))))))) (-52.60)
+>hsa-mir-519c MI0003148 Homo sapiens miR-519c/miR-526c stem-loop
+UCUCAGCCUGUGACCCUCUAGAGGGAAGCGCUUUCUGUUGUCUGAAAGAAAAGAAAGUGCAUCUUUUUAGAGGAUUACAGUUUGAGA
+((((((.((((((.((((((((((((.(((((((((....((.....))..))))))))).)))))))))))).)))))).)))))) (-45.20)
+>hsa-mir-520a MI0003149 Homo sapiens miR-520a stem-loop
+CUCAGGCUGUGACCCUCCAGAGGGAAGUACUUUCUGUUGUCUGAGAGAAAAGAAAGUGCUUCCCUUUGGACUGUUUCGGUUUGAG
+(((((((((.(((..((((((((((((((((((((.((.((...)).)).))))))))))))))))))))..))).))))))))) (-48.50)
+>hsa-mir-525 MI0003152 Homo sapiens miR-525 stem-loop
+CUCAAGCUGUGACUCUCCAGAGGGAUGCACUUUCUCUUAUGUGAAAAAAAAGAAGGCGCUUCCCUUUAGAGCGUUACGGUUUGGG
+(((((((((((((.(((.(((((((.((.((((((.((.........)).)))))).)).))))))).))).))))))))))))) (-40.40)
+>hsa-mir-518f MI0003154 Homo sapiens miR-518f stem-loop
+UCUCAUGCUGUGACCCUCUAGAGGGAAGCACUUUCUCUUGUCUAAAAGAAAAGAAAGCGCUUCUCUUUAGAGGAUUACUCUUUGAGA
+(((((....((((.(((((((((((((((.(((((((((......))))...))))).))))))))))))))).))))....))))) (-42.30)
+>hsa-mir-518b MI0003156 Homo sapiens miR-518b stem-loop
+UCAUGCUGUGGCCCUCCAGAGGGAAGCGCUUUCUGUUGUCUGAAAGAAAACAAAGCGCUCCCCUUUAGAGGUUUACGGUUUGA
+(((.((((((..((((.((((((.(((((((..((((.((.....)).))))))))))).)))))).))))..)))))).))) (-39.70)
+>hsa-mir-520c MI0003158 Homo sapiens miR-520c/miR-526a stem-loop
+UCUCAGGCUGUCGUCCUCUAGAGGGAAGCACUUUCUGUUGUCUGAAAGAAAAGAAAGUGCUUCCUUUUAGAGGGUUACCGUUUGAGA
+((((((((.((..(((((((((((((((((((((((....((.....))..)))))))))))))))))))))))..)).)))))))) (-51.30)
+>hsa-mir-518c MI0003159 Homo sapiens miR-518c stem-loop
+GCGAGAAGAUCUCAUGCUGUGACUCUCUGGAGGGAAGCACUUUCUGUUGUCUGAAAGAAAACAAAGCGCUUCUCUUUAGAGUGUUACGGUUUGAGAAAAGC
+.........(((((.((((((((.((((((((((((((.(((..((((.((.....)).))))))).)))))))))))))).)))))))).)))))..... (-46.40)
+>hsa-mir-524 MI0003160 Homo sapiens miR-524 stem-loop
+UCUCAUGCUGUGACCCUACAAAGGGAAGCACUUUCUCUUGUCCAAAGGAAAAGAAGGCGCUUCCCUUUGGAGUGUUACGGUUUGAGA
+(((((.((((((((.((.(((((((((((.((((((....(((...)))..)))))).))))))))))).)).)))))))).))))) (-46.60)
+>hsa-mir-519d MI0003162 Homo sapiens miR-519d stem-loop
+UCCCAUGCUGUGACCCUCCAAAGGGAAGCGCUUUCUGUUUGUUUUCUCUUAAACAAAGUGCCUCCCUUUAGAGUGUUACCGUUUGGGA
+(((((.((.(((((.(((.(((((((.((((((..((((((........)))))))))))).))))))).))).))))).)).))))) (-41.50)
+>hsa-mir-521-2 MI0003163 Homo sapiens miR-521-2 stem-loop
+UCUCGGGCUGUGACUCUCCAAAGGGAAGAAUUUUCUCUUGUCUAAAAGAAAAGAACGCACUUCCCUUUAGAGUGUUACCGUGUGAGA
+(((((.((.(((((.(((.(((((((((..((((.((((......)))).)))).....))))))))).))).))))).)).))))) (-34.70)
+>hsa-mir-520d MI0003164 Homo sapiens miR-520d stem-loop
+UCUCAAGCUGUGAGUCUACAAAGGGAAGCCCUUUCUGUUGUCUAAAAGAAAAGAAAGUGCUUCUCUUUGGUGGGUUACGGUUUGAGA
+(((((((((((((.((..(((((((((((.((((((....((.....))..)))))).)))))))))))..)).))))))))))))) (-44.50)
+>hsa-mir-520g MI0003166 Homo sapiens miR-520g stem-loop
+UCCCAUGCUGUGACCCUCUAGAGGAAGCACUUUCUGUUUGUUGUCUGAGAAAAAACAAAGUGCUUCCCUUUAGAGUGUUACCGUUUGGGA
+(((((.((.(((((.(((((((((((((((((..(((((.............))))))))))))).))))))))).))))).)).))))) (-41.62)
+>hsa-mir-518e MI0003169 Homo sapiens miR-518e/miR-526c stem-loop
+UCUCAGGCUGUGACCCUCUAGAGGGAAGCGCUUUCUGUUGGCUAAAAGAAAAGAAAGCGCUUCCCUUCAGAGUGUUAACGCUUUGAGA
+((((((((..((((.((((..(((((((((((((((...............)))))))))))))))..)))).))))..)).)))))) (-45.76)
+>hsa-mir-518d MI0003171 Homo sapiens miR-518d/miR-526a stem-loop
+UCCCAUGCUGUGACCCUCUAGAGGGAAGCACUUUCUGUUGUCUGAAAGAAACCAAAGCGCUUCCCUUUGGAGCGUUACGGUUUGAGA
+((.((.((((((((.((((((((((((((.((((..(((.((.....))))).)))).)))))))))))))).)))))))).)).)) (-41.20)
+>hsa-mir-516-4 MI0003172 Homo sapiens miR-516-4 stem-loop
+UCUCAGGCUGUGACCAUCUGGAGGUAAGAAGCACUUUCUGUUUUGUGAAAGAAAAGAAAGUGCUUCCUUUCAGAGGGUUACUCUUUGAGA
+(((((((..((((((.((((((((...((((((((((((.((((.....)))).)))))))))))))))))))).))))))..))))))) (-44.90)
+>hsa-mir-517c MI0003174 Homo sapiens miR-517c stem-loop
+GAAGAUCUCAGGCAGUGACCCUCUAGAUGGAAGCACUGUCUGUUGUCUAAGAAAAGAUCGUGCAUCCUUUUAGAGUGUUACUGUUUGAGAAAAUC
+.....((((((((((((((.(((((((.(((.((((.((((.............)))).)))).))).))))))).))))))))))))))..... (-44.02)
+>hsa-mir-499 MI0003183 Homo sapiens miR-499 stem-loop
+GCCCUGUCCCCUGUGCCUUGGGCGGGCGGCUGUUAAGACUUGCAGUGAUGUUUAACUCCUCUCCACGUGAACAUCACAGCAAGUCUGUGCUGCUUCCCGUCCCUACGCUGCCUGGGCAGGGU
+(((((((((.....((...(((((((.(((.((..((((((((.((((((((((.............)))))))))).))))))))..)).))).)))).)))...)).....))))))))) (-62.32)
+>hsa-mir-500 MI0003184 Homo sapiens miR-500 stem-loop
+GCUCCCCCUCUCUAAUCCUUGCUACCUGGGUGAGAGUGCUGUCUGAAUGCAAUGCACCUGGGCAAGGAUUCUGAGAGCGAGAGC
+((((.(.(((((.(((((((((...(..((((....(((.........)))...))))..))))))))))..))))).).)))) (-38.70)
+>hsa-mir-501 MI0003185 Homo sapiens miR-501 stem-loop
+GCUCUUCCUCUCUAAUCCUUUGUCCCUGGGUGAGAGUGCUUUCUGAAUGCAAUGCACCCGGGCAAGGAUUCUGAGAGGGUGAGC
+((((.(((((((.(((((((.(.(((.(((((....(((.........)))...))))))))))))))))..))))))).)))) (-43.10)
+>hsa-mir-450-2 MI0003187 Homo sapiens miR-450-2 stem-loop
+CCAAAGAAAGAUGCUAAACUAUUUUUGCGAUGUGUUCCUAAUAUGUAAUAUAAAUGUAUUGGGGACAUUUUGCAUUCAUAGUUUUGUAUCAAUAAUAUGG
+.........(((((.(((((((...(((((.(((((((((((((((.......))))))))))))))).)))))...))))))).))))).......... (-35.40)
+>hsa-mir-503 MI0003188 Homo sapiens miR-503 stem-loop
+UGCCCUAGCAGCGGGAACAGUUCUGCAGUGAGCGAUCGGUGCUCUGGGGUAUUGUUUCCGCUGCCAGGGUA
+((((((.((((((((((((((.((.((..(((((.....))))))).)).)))))))))))))).)))))) (-42.10)
+>hsa-mir-504 MI0003189 Homo sapiens miR-504 stem-loop
+GCUGCUGUUGGGAGACCCUGGUCUGCACUCUAUCUGUAUUCUUACUGAAGGGAGUGCAGGGCAGGGUUUCCCAUACAGAGGGC
+(((.((((((((((((((((.((((((((((.((.(((....))).))..)))))))))).)))))))))))).))))..))) (-52.30)
+>hsa-mir-513-1 MI0003191 Homo sapiens miR-513-1 stem-loop
+GGGAUGCCACAUUCAGCCAUUCAGCGUACAGUGCCUUUCACAGGGAGGUGUCAUUUAUGUGAACUAAAAUAUAAAUUUCACCUUUCUGAGAAGGGUAAUGUACAGCAUGCACUGCAUAUGUGGUGUCCC
+((((((((((((...((....(((((((((.((((((((.(((..(((((..((((((((........))))))))..)))))..))).)))))))).))))).)).))....))..)))))))))))) (-62.90)
+>hsa-mir-506 MI0003193 Homo sapiens miR-506 stem-loop
+GCCACCACCAUCAGCCAUACUAUGUGUAGUGCCUUAUUCAGGAAGGUGUUACUUAAUAGAUUAAUAUUUGUAAGGCACCCUUCUGAGUAGAGUAAUGUGCAACAUGGACAACAUUUGUGGUGGC
+((((((((......((((....((..((.(((.((((((((((.(((((..((((.(((((....)))))))))))))).)))))))))).))).))..))..)))).........)))))))) (-44.76)
+>hsa-mir-507 MI0003194 Homo sapiens miR-507 stem-loop
+GUGCUGUGUGUAGUGCUUCACUUCAAGAAGUGCCAUGCAUGUGUCUAGAAAUAUGUUUUGCACCUUUUGGAGUGAAAUAAUGCACAACAGAUAC
+((((((((((((.((.((((((((((((.((((...((((((........))))))...)))).)))))))))))).)).))))).)))).))) (-37.90)
+>hsa-mir-508 MI0003195 Homo sapiens miR-508 stem-loop
+CCACCUUCAGCUGAGUGUAGUGCCCUACUCCAGAGGGCGUCACUCAUGUAAACUAAAACAUGAUUGUAGCCUUUUGGAGUAGAGUAAUACACAUCACGUAACGCAUAUUUGGUGG
+(((((....((((((((((.(((.((((((((((((((..((.((((((........)))))).))..)))))))))))))).))).))))).)))......))......))))) (-49.80)
+>hsa-mir-509 MI0003196 Homo sapiens miR-509 stem-loop
+CAUGCUGUGUGUGGUACCCUACUGCAGACAGUGGCAAUCAUGUAUAAUUAAAAAUGAUUGGUACGUCUGUGGGUAGAGUACUGCAUGACACAUG
+((((.((((((..((((.((((..(((((.(((.(((((((.((....))...))))))).))))))))..).))).))))..))).))))))) (-40.90)
+>hsa-mir-510 MI0003197 Homo sapiens miR-510 stem-loop
+GUGGUGUCCUACUCAGGAGAGUGGCAAUCACAUGUAAUUAGGUGUGAUUGAAACCUCUAAGAGUGGAGUAACAC
+(((.((..((((((.((((.((..(((((((((.(....).)))))))))..))))))..))))))..)).))) (-29.60)
+>hsa-mir-514-1 MI0003198 Homo sapiens miR-514-1 stem-loop
+AACAUGUUGUCUGUGGUACCCUACUCUGGAGAGUGACAAUCAUGUAUAAUUAAAUUUGAUUGACACUUCUGUGAGUAGAGUAACGCAUGACACGUACG
+...((((.(((((((.(((.((((((((((.((((.((((((.((........)).)))))).)))))))).)))))).))).)))).)))))))... (-33.30)
+>hsa-mir-532 MI0003205 Homo sapiens miR-532 stem-loop
+CGACUUGCUUUCUCUCCUCCAUGCCUUGAGUGUAGGACCGUUGGCAUCUUAAUUACCCUCCCACACCCAAGGCUUGCAAAAAAGCGAGCCU
+.(.((((((((........((.((((((.((((.(((..((.............))..))).)))).)))))).))....)))))))).). (-25.72)
+>hsa-mir-539 MI0003514 Homo sapiens miR-539 stem-loop
+AUACUUGAGGAGAAAUUAUCCUUGGUGUGUUCGCUUUAUUUAUGAUGAAUCAUACAAGGACAAUUUCUUUUUGAGUAU
+(((((..((((((((((.((((((.(((((((((.........).)))).)))))))))).))))))))))..))))) (-29.20)
+>hsa-mir-544 MI0003515 Homo sapiens miR-544 stem-loop
+AUUUUCAUCACCUAGGGAUCUUGUUAAAAAGCAGAUUCUGAUUCAGGGACCAAGAUUCUGCAUUUUUAGCAAGUUCUCAAGUGAUGCUAAU
+.....((((((...((((.((((((((((((((((.(((..((....))...))).))))).))))))))))).))))..))))))..... (-32.60)
+>hsa-mir-545 MI0003516 Homo sapiens miR-545 stem-loop
+CCCAGCCUGGCACAUUAGUAGGCCUCAGUAAAUGUUUAUUAGAUGAAUAAAUGAAUGACUCAUCAGCAAACAUUUAUUGUGUGCCUGCUAAAGUGAGCUCCACAGG
+.....((((.(((.((((((((((.((((((((((((.((.(((((.............))))))).)))))))))))).).))))))))).))).......)))) (-37.52)
+>hsa-mir-487b MI0003530 Homo sapiens miR-487b stem-loop
+UUGGUACUUGGAGAGUGGUUAUCCCUGUCCUGUUCGUUUUGCUCAUGUCGAAUCGUACAGGGUCAUCCACUUUUUCAGUAUCAA
+.(((((((..((((((((....((((((.(.(((((............))))).).))))))....))))))))..))))))). (-34.80)
+>hsa-mir-551a MI0003556 Homo sapiens miR-551a stem-loop
+GGGGACUGCCGGGUGACCCUGGAAAUCCAGAGUGGGUGGGGCCAGUCUGACCGUUUCUAGGCGACCCACUCUUGGUUUCCAGGGUUGCCCUGGAAA
+(....)..(((((..((((((((((((.(((((((((...(((((...........)).))).))))))))).))))))))))))..))).))... (-55.30)
+>hsa-mir-552 MI0003557 Homo sapiens miR-552 stem-loop
+AACCAUUCAAAUAUACCACAGUUUGUUUAACCUUUUGCCUGUUGGUUGAAGAUGCCUUUCAACAGGUGACUGGUUAGACAAACUGUGGUAUAUACA
+..........((((((((((((((((((((((..(..((((((((..(.......)..))))))))..)..))))))))))))))))))))))... (-49.90)
+>hsa-mir-553 MI0003558 Homo sapiens miR-553 stem-loop
+CUUCAAUUUUAUUUUAAAACGGUGAGAUUUUGUUUUGUCUGAGAAAAUCUCGCUGUUUUAGACUGAGG
+.......((((.(((((((((((((((((((.((......)).))))))))))))))))))).)))). (-25.00)
+>hsa-mir-554 MI0003559 Homo sapiens miR-554 stem-loop
+ACCUGAGUAACCUUUGCUAGUCCUGACUCAGCCAGUACUGGUCUUAGACUGGUGAUGGGUCAGGGUUCAUAUUUUGGCAUCUCUCUCUGGGCAUCU
+.((.(((.......((((((((((((((((((((((.(((....)))))))))..))))))))))........)))))).....))).))...... (-33.50)
+>hsa-mir-92b MI0003560 Homo sapiens miR-92b stem-loop
+CGGGCCCCGGGCGGGCGGGAGGGACGGGACGCGGUGCAGUGUUGUUUUUUCCCCCGCCAAUAUUGCACUCGUCCCGGCCUCCGGCCCCCCCGGCCC
+.(((((..(((.((((.(((((..(((((((.((((((((((((.............))))))))))))))))))).))))).))))))).))))) (-66.12)
+>hsa-mir-555 MI0003561 Homo sapiens miR-555 stem-loop
+GGAGUGAACUCAGAUGUGGAGCACUACCUUUGUGAGCAGUGUGACCCAAGGCCUGUGGACAGGGUAAGCUGAACCUCUGAUAAAACUCUGAUCUAU
+(((((....(((((.((..(((..((((((.((..((((.((........))))))..)))))))).)))..)).)))))....)))))....... (-30.20)
+>hsa-mir-556 MI0003562 Homo sapiens miR-556 stem-loop
+GAUAGUAAUAAGAAAGAUGAGCUCAUUGUAAUAUGAGCUUCAUUUAUACAUUUCAUAUUACCAUUAGCUCAUCUUUUUUAUUACUACCUUCAACA
+..(((((((((((((((((((((.((.((((((((((..............)))))))))).)).)))))))))))))))))))))......... (-37.44)
+>hsa-mir-557 MI0003563 Homo sapiens miR-557 stem-loop
+AGAAUGGGCAAAUGAACAGUAAAUUUGGAGGCCUGGGGCCCUCCCUGCUGCUGGAGAAGUGUUUGCACGGGUGGGCCUUGUCUUUGAAAGGAGGUGGA
+....((..(....)..)).....((..(((((..(((((((.((((((.(((.....)))....))).))).))))))))))))..)).......... (-33.00)
+>hsa-mir-558 MI0003564 Homo sapiens miR-558 stem-loop
+GUGUGUGUGUGUGUGUGUGGUUAUUUUGGUAUAGUAGCUCUAGACUCUAUUAUAGUUUCCUGAGCUGCUGUACCAAAAUACCACAAACGGGCUG
+........((.(((.((((((.((((((((((((((((((..((..(((...)))..))..)))))))))))))))))))))))).))).)).. (-44.60)
+>hsa-mir-559 MI0003565 Homo sapiens miR-559 stem-loop
+GCUCCAGUAACAUCUUAAAGUAAAUAUGCACCAAAAUUACUUUUGGUAAAUACAGUUUUGGUGCAUAUUUACUUUAGGAUGUUACUGGAGCUCCCA
+((((((((((((((((((((((((((((((((((((((((.....)))......)))))))))))))))))))))))))))))))))))))..... (-59.10)
+>hsa-mir-560 MI0003566 Homo sapiens miR-560 stem-loop
+UCCCCUCUGGCGGCUGCGCACGGGCCGUGUGAGCUAUUGCGGUGGGCUGGGGCAGAUGACGCGUGCGCCGGCCGGCCGCCGAGGGGCUACCGUUC
+.((((((.((((((((.((.((((((((((.(.((.((.(((....))).)).)).).))))).)).)))))))))))))))))))......... (-53.10)
+>hsa-mir-561 MI0003567 Homo sapiens miR-561 stem-loop
+CUUCAUCCACCAGUCCUCCAGGAACAUCAAGGAUCUUAAACUUUGCCAGAGCUACAAAGGCAAAGUUUAAGAUCCUUGAAGUUCCUGGGGGAACCAU
+.............((((((((((((.(((((((((((((((((((((...........))))))))))))))))))))).))))))))))))..... (-57.60)
+>hsa-mir-562 MI0003568 Homo sapiens miR-562 stem-loop
+AGUGAAAUUGCUAGGUCAUAUGGUCAGUCUACUUUUAGAGUAAUUGUGAAACUGUUUUUCAAAGUAGCUGUACCAUUUGCACUCCCUGUGGCAAU
+......((((((((((((.((((((((.(((((((..(((.(((.(.....).))).))))))))))))).))))).)).))).....))))))) (-25.00)
+>hsa-mir-563 MI0003569 Homo sapiens miR-563 stem-loop
+AGCAAAGAAGUGUGUUGCCCUCUAGGAAAUGUGUGUUGCUCUGAUGUAAUUAGGUUGACAUACGUUUCCCUGGUAGCCA
+..........((.((((((.....((((((((((((((..(((((...)))))..))))))))))))))..)))))))) (-26.90)
+>hsa-mir-564 MI0003570 Homo sapiens miR-564 stem-loop
+CGGGCAGCGGGUGCCAGGCACGGUGUCAGCAGGCAACAUGGCCGAGAGGCCGGGGCCUCCGGGCGGCGCCGUGUCCGCGACCGCGUACCCUGAC
+.(((..((((.(((..(((((((((((.((((((....(((((....)))))..))))....))))))))))))).))).))))...))).... (-54.60)
+>hsa-mir-565 MI0003571 Homo sapiens miR-565 stem-loop
+CCAGUGGCGCAAUGGAUAACGCGUCUGACUACGGAUCAGAAGAUUCUAGGUUCGACUCCUGGCUGGCUCGCGAUGUCUGUUUUGCCACACUUGACCC
+...((((((.((((((((.((((((((((....).))))).....(((((.......)))))......)))).)))))))).))))))......... (-35.10)
+>hsa-mir-566 MI0003572 Homo sapiens miR-566 stem-loop
+GCUAGGCGUGGUGGCGGGCGCCUGUGAUCCCAACUACUCAGGAGGCUGGGGCAGCAGAAUCGCUUGAACCCGGGAGGCGAAGGUUGCAGUGAGC
+(((...((.(((..((((((.((((..(((((.((.(....).)).)))))..))))...)))))).))))).(..((....))..)....))) (-30.80)
+>hsa-mir-567 MI0003573 Homo sapiens miR-567 stem-loop
+GGAUUCUUAUAGGACAGUAUGUUCUUCCAGGACAGAACAUUCUUUGCUAUUUUGUACUGGAAGAACAUGCAAAACUAAAAAAAAAAAAAGUUAUUGCU
+.........(((....((((((((((((((.((((((((.....))...)))))).))))))))))))))....)))..................... (-27.80)
+>hsa-mir-568 MI0003574 Homo sapiens miR-568 stem-loop
+GAUAUACACUAUAUUAUGUAUAAAUGUAUACACACUUCCUAUAUGUAUCCACAUAUAUAUAGUGUAUAUAUUAUACAUGUAUAGGUGUGUAUAUG
+.(((((((((((((.((((((((.(((((((((......(((((((....)))))))....)))))))))))))))))))))).))))))))... (-32.00)
+>hsa-mir-551b MI0003575 Homo sapiens miR-551b stem-loop
+AGAUGUGCUCUCCUGGCCCAUGAAAUCAAGCGUGGGUGAGACCUGGUGCAGAACGGGAAGGCGACCCAUACUUGGUUUCAGAGGCUGUGAGAAUAA
+........((((.(((((..((((((((((..((((((...((((........))))....).)))))..))))))))))..))))).)))).... (-40.00)
+>hsa-mir-569 MI0003576 Homo sapiens miR-569 stem-loop
+GGUAUUGUUAGAUUAAUUUUGUGGGACAUUAACAACAGCAUCAGAAGCAACAUCAGCUUUAGUUAAUGAAUCCUGGAAAGUUAAGUGACUUUAUUU
+((((..((((..((((((((.((((((((((((...(((................)))...)))))))..))))).)))))))).))))..)))). (-22.19)
+>hsa-mir-570 MI0003577 Homo sapiens miR-570 stem-loop
+CUAGAUAAGUUAUUAGGUGGGUGCAAAGGUAAUUGCAGUUUUUCCCAUUAUUUUAAUUGCGAAAACAGCAAUUACCUUUGCACCAACCUGAUGGAGU
+.........(((((((((.(((((((((((((((((.((((((.(.((((...)))).).)))))).))))))))))))))))).)))))))))... (-44.10)
+>hsa-mir-571 MI0003578 Homo sapiens miR-571 stem-loop
+CCUCAGUAAGACCAAGCUCAGUGUGCCAUUUCCUUGUCUGUAGCCAUGUCUAUGGGCUCUUGAGUUGGCCAUCUGAGUGAGGGCCUGCUUAUUCUA
+....((((((.((..((((((((.((((.(((...((((((((......))))))))....))).)))))).))))))..)).....))))))... (-31.70)
+>hsa-mir-572 MI0003579 Homo sapiens miR-572 stem-loop
+GUCGAGGCCGUGGCCCGGAAGUGGUCGGGGCCGCUGCGGGCGGAAGGGCGCCUGUGCUUCGUCCGCUCGGCGGUGGCCCAGCCAGGCCCGCGGGA
+(.((.((((..(((((....).)))).(((((((((((((((((.(((((....)))))..))))))).)))))))))).....))))))).... (-58.30)
+>hsa-mir-573 MI0003580 Homo sapiens miR-573 stem-loop
+UUUAGCGGUUUCUCCCUGAAGUGAUGUGUAACUGAUCAGGAUCUACUCAUGUCGUCUUUGGUAAAGUUAUGUCGCUUGUCAGGGUGAGGAGAGUUUUUG
+...(((..((((.((((((((((((..((((((.((((((..(.((....)).)..))))))..))))))))))))..)))))).))))...))).... (-28.60)
+>hsa-mir-574 MI0003581 Homo sapiens miR-574 stem-loop
+GGGACCUGCGUGGGUGCGGGCGUGUGAGUGUGUGUGUGUGAGUGUGUGUCGCUCCGGGUCCACGCUCAUGCACACACCCACACGCCCACACUCAGG
+........(.((((((.(((((((((.(.(((((((((((((((((..((......))..))))))))))))))))))))))))))).)))))).) (-61.10)
+>hsa-mir-575 MI0003582 Homo sapiens miR-575 stem-loop
+AAUUCAGCCCUGCCACUGGCUUAUGUCAUGACCUUGGGCUACUCAGGCUGUCUGCACAAUGAGCCAGUUGGACAGGAGCAGUGCCACUCAACUC
+......((((((((((((((((((((((.(((((((((...))))))..))))).)).))))))))).))).)))).))............... (-36.10)
+>hsa-mir-576 MI0003583 Homo sapiens miR-576 stem-loop
+UACAAUCCAACGAGGAUUCUAAUUUCUCCACGUCUUUGGUAAUAAGGUUUGGCAAAGAUGUGGAAAAAUUGGAAUCCUCAUUCGAUUGGUUAUAACCA
+..(((((.((.((((((((((((((.((((((((((((.(((......))).)))))))))))).)))))))))))))).)).))))).......... (-46.60)
+>hsa-mir-577 MI0003584 Homo sapiens miR-577 stem-loop
+UGGGGGAGUGAAGAGUAGAUAAAAUAUUGGUACCUGAUGAAUCUGAGGCCAGGUUUCAAUACUUUAUCUGCUCUUCAUUUCCCCAUAUCUACUUAC
+(((((((((((((((((((((((.((((((.(((((.............))))).)))))).)))))))))))))))))))))))........... (-49.02)
+>hsa-mir-578 MI0003585 Homo sapiens miR-578 stem-loop
+AGAUAAAUCUAUAGACAAAAUACAAUCCCGGACAACAAGAAGCUCCUAUAGCUCCUGUAGCUUCUUGUGCUCUAGGAUUGUAUUUUGUUUAUAUAU
+.........(((((((((((((((((((..((..((((((((((...((((...))))))))))))))..))..)))))))))))))))))))... (-41.50)
+>hsa-mir-579 MI0003586 Homo sapiens miR-579 stem-loop
+CAUAUUAGGUUAAUGCAAAAGUAAUCGCGGUUUGUGCCAGAUGACGAUUUGAAUUAAUAAAUUCAUUUGGUAUAAACCGCGAUUAUUUUUGCAUCAAC
+........(((.((((((((((((((((((((((((((((((((..(((((......))))))))))))))))))))))))))))))))))))).))) (-49.30)
+>hsa-mir-580 MI0003587 Homo sapiens miR-580 stem-loop
+AUAAAAUUUCCAAUUGGAACCUAAUGAUUCAUCAGACUCAGAUAUUUAAGUUAACAGUAUUUGAGAAUGAUGAAUCAUUAGGUUCCGGUCAGAAAUU
+....((((((..((((((((((((((((((((((..((((((((((.........))))))))))..))))))))))))))))))))))..)))))) (-47.60)
+>hsa-mir-581 MI0003588 Homo sapiens miR-581 stem-loop
+GUUAUGUGAAGGUAUUCUUGUGUUCUCUAGAUCAGUGCUUUUAGAAAAUUUGUGUGAUCUAAAGAACACAAAGAAUACCUACACAGAACCACCUGC
+(((.((((.(((((((((((((((((.(((((((.(((.............)))))))))).))))))).)))))))))).)))).)))....... (-38.72)
+>hsa-mir-582 MI0003589 Homo sapiens miR-582 stem-loop
+AUCUGUGCUCUUUGAUUACAGUUGUUCAACCAGUUACUAAUCUAACUAAUUGUAACUGGUUGAACAACUGAACCCAAAGGGUGCAAAGUAGAAACAUU
+...((..(((((((....(((((((((((((((((((..............)))))))))))))))))))....)))))))..))............. (-44.04)
+>hsa-mir-583 MI0003590 Homo sapiens miR-583 stem-loop
+AACUCACACAUUAACCAAAGAGGAAGGUCCCAUUACUGCAGGGAUCUUAGCAGUACUGGGACCUACCUCUUUGGU
+.............((((((((((.((((((((.(((((((((...))).)))))).)))))))).)))))))))) (-41.40)
+>hsa-mir-584 MI0003591 Homo sapiens miR-584 stem-loop
+UAGGGUGACCAGCCAUUAUGGUUUGCCUGGGACUGAGGAAUUUGCUGGGAUAUGUCAGUUCCAGGCCAACCAGGCUGGUUGGUCUCCCUGAAGCAAC
+(((((.(((((((((...(((((.((((((((((((.(.(((......))).).)))))))))))).)))))...))))))))).)))))....... (-56.00)
+>hsa-mir-585 MI0003592 Homo sapiens miR-585 stem-loop
+UGGGGUGUCUGUGCUAUGGCAGCCCUAGCACACAGAUACGCCCAGAGAAAGCCUGAACGUUGGGCGUAUCUGUAUGCUAGGGCUGCUGUAACAA
+...........((.((((((((((((((((.((((((((((((((.(..........).)))))))))))))).)))))))))))))))).)). (-54.90)
+>hsa-mir-548a-1 MI0003593 Homo sapiens miR-548a-1 stem-loop
+UGCAGGGAGGUAUUAAGUUGGUGCAAAAGUAAUUGUGAUUUUUGCCAUUAAAAGUAACGACAAAACUGGCAAUUACUUUUGCACCAAACCUGGUAUU
+..((((...........(((((((((((((((((((.(.(((((.(.(((....))).).))))).).))))))))))))))))))).))))..... (-35.60)
+>hsa-mir-586 MI0003594 Homo sapiens miR-586 stem-loop
+AUGGGGUAAAACCAUUAUGCAUUGUAUUUUUAGGUCCCAAUACAUGUGGGCCCUAAAAAUACAAUGCAUAAUGGUUUUUCACUCUUUAUCUUCUUAU
+..((((((((((((((((((((((((((((((((.((((.......)))).)))))))))))))))))))))))))))..)))))............ (-47.90)
+>hsa-mir-587 MI0003595 Homo sapiens miR-587 stem-loop
+CUCCUAUGCACCCUCUUUCCAUAGGUGAUGAGUCACAGGGCUCAGGGAAUGUGUCUGCACCUGUGACUCAUCACCAGUGGAAAGCCCAUCCCAUAU
+....((((......((((((((.((((((((((((((((...((((.......))))..)))))))))))))))).)))))))).......)))). (-46.42)
+>hsa-mir-548b MI0003596 Homo sapiens miR-548b stem-loop
+CAGACUAUAUAUUUAGGUUGGCGCAAAAGUAAUUGUGGUUUUGGCCUUUAUUUUCAAUGGCAAGAACCUCAGUUGCUUUUGUGCCAACCUAAUACUU
+............(((((((((((((((((((((((.((((((.(((............))).)))))).)))))))))))))))))))))))..... (-48.60)
+>hsa-mir-588 MI0003597 Homo sapiens miR-588 stem-loop
+AGCUUAGGUACCAAUUUGGCCACAAUGGGUUAGAACACUAUUCCAUUGUGUUCUUACCCACCAUGGCCAAAAUUGGGCCUAAG
+..(((((((.((((((((((((...(((((.(((((((.........))))))).)))))...))))).)))))))))))))) (-42.90)
+>hsa-mir-548a-2 MI0003598 Homo sapiens miR-548a-2 stem-loop
+UGUGAUGUGUAUUAGGUUUGUGCAAAAGUAAUUGGGGUUUUUUGCCGUUAAAAGUAAUGGCAAAACUGGCAAUUACUUUUGCACCAAACUAAUAUAA
+.......((((((((....(((((((((((((((.(((((..((((((((....)))))))))))))..)))))))))))))))....)))))))). (-39.30)
+>hsa-mir-589 MI0003599 Homo sapiens miR-589 stem-loop
+UCCAGCCUGUGCCCAGCAGCCCCUGAGAACCACGUCUGCUCUGAGCUGGGUACUGCCUGUUCAGAACAAAUGCCGGUUCCCAGACGCUGCCAGCUGGCC
+....(((...((...(((((..(((.(((((.(((.((.(((((((.(((.....)))))))))).)).)))..))))).)))..)))))..)).))). (-41.40)
+>hsa-mir-550-1 MI0003600 Homo sapiens miR-550-1 stem-loop
+UGAUGCUUUGCUGGCUGGUGCAGUGCCUGAGGGAGUAAGAGCCCUGUUGUUGUAAGAUAGUGUCUUACUCCCUCAGGCACAUCUCCAACAAGUCUCU
+.((.((((.(.(((..(((...((((((((((((((((((.(.(((((.......))))).)))))))))))))))))))))).))).))))).)). (-46.00)
+>hsa-mir-590 MI0003602 Homo sapiens miR-590 stem-loop
+UAGCCAGUCAGAAAUGAGCUUAUUCAUAAAAGUGCAGUAUGGUGAAGUCAAUCUGUAAUUUUAUGUAUAAGCUAGUCUCUGAUUGAAACAUGCAGCA
+....((((((((.((.(((((((.(((((((.(((((..(((.....)))..))))).))))))).))))))).)).))))))))............ (-31.80)
+>hsa-mir-591 MI0003603 Homo sapiens miR-591 stem-loop
+UCUUAUCAAUGAGGUAGACCAUGGGUUCUCAUUGUAAUAGUGUAGAAUGUUGGUUAACUGUGGACUCCCUGGCUCUGUCUCAAAUCUACUGAUUC
+.........((((..((((((.((((((.((...((((.((.....))....))))..)).)))).)).))).)))..))))............. (-22.50)
+>hsa-mir-592 MI0003604 Homo sapiens miR-592 stem-loop
+UAUUAUGCCAUGACAUUGUGUCAAUAUGCGAUGAUGUGUUGUGAUGGCACAGCGUCAUCACGUGGUGACGCAACAUCAUGACGUAAGACGUCACAAC
+..(((((.(((((..((((((((.((((.((((((((..((((....)))))))))))).)))).))))))))..))))).)))))........... (-38.30)
+>hsa-mir-593 MI0003605 Homo sapiens miR-593 stem-loop
+CCCCCAGAAUCUGUCAGGCACCAGCCAGGCAUUGCUCAGCCCGUUUCCCUCUGGGGGAGCAAGGAGUGGUGCUGGGUUUGUCUCUGCUGGGGUUUCUCCU
+.((((((.......((((.((.((((.(((((..(((.....(((((((....)))))))...)))..))))).)))).)).))))))))))........ (-44.71)
+>hsa-mir-594 MI0003606 Homo sapiens miR-594 stem-loop
+CUAAUGGAUAAGGCAUUGGCCUCCUAAGCCAGGGAUUGUGGGUUCGAGUCCCAUCUGGGGUGGCCUGUGACUUUUGUCCUUUUUUCCCC
+.....(((((((((((.((((.(((.((...((((((.((....))))))))..)).))).)))).))).).))))))).......... (-30.40)
+>hsa-mir-595 MI0003607 Homo sapiens miR-595 stem-loop
+ACGGAAGCCUGCACGCAUUUAACACCAGCACGCUCAAUGUAGUCUUGUAAGGAACAGGUUGAAGUGUGCCGUGGUGUGUCUGGAGGAAGCGCCUGU
+..((...(((.((.((.....(((((((((((((((((.(..(((.....)))..).)))).)))))))..)))))))).)).))).....))... (-32.20)
+>hsa-mir-596 MI0003608 Homo sapiens miR-596 stem-loop
+AGCACGGCCUCUCCGAAGCCUGCCCGGCUCCUCGGGAACCUGCCUCCCGCAUGGCAGCUGCUGCCCUUCGGAGGCCG
+....(((((..(((((((...((.(((((((.(((((.......)))))...)).)))))..)).)))))))))))) (-36.50)
+>hsa-mir-597 MI0003609 Homo sapiens miR-597 stem-loop
+UACUUACUCUACGUGUGUGUCACUCGAUGACCACUGUGAAGACAGUAAAAUGUACAGUGGUUCUCUUGUGGCUCAAGCGUAAUGUAGAGUACUGGUC
+.(((((((((((((.((.(((((..((.(((((((((....(((......)))))))))))).))..))))).))......))))))))))..))). (-36.60)
+>hsa-mir-598 MI0003610 Homo sapiens miR-598 stem-loop
+GCUUGAUGAUGCUGCUGAUGCUGGCGGUGAUCCCGAUGGUGUGAGCUGGAAAUGGGGUGCUACGUCAUCGUUGUCAUCGUCAUCAUCAUCAUCCGAG
+(..((((((((..((....)).(((((((((..(((((..((.(((............)))))..)))))..)))))))))..))))))))..)... (-38.30)
+>hsa-mir-599 MI0003611 Homo sapiens miR-599 stem-loop
+AAAGACAUGCUGUCCACAGUGUGUUUGAUAAGCUGACAUGGGACAGGGAUUCUUUUCACUGUUGUGUCAGUUUAUCAAACCCAUACUUGGAUGAC
+...........(((((.((((((((((((((((((((((..((((((((.....))).))))))))))))))))))))))..))))))))))... (-39.00)
+>hsa-mir-548a-3 MI0003612 Homo sapiens miR-548a-3 stem-loop
+CCUAGAAUGUUAUUAGGUCGGUGCAAAAGUAAUUGCGAGUUUUACCAUUACUUUCAAUGGCAAAACUGGCAAUUACUUUUGCACCAACGUAAUACUU
+..........(((((.((.(((((((((((((((((.((((((.(((((......))))).)))))).))))))))))))))))).)).)))))... (-45.90)
+>hsa-mir-600 MI0003613 Homo sapiens miR-600 stem-loop
+AAGUCACGUGCUGUGGCUCCAGCUUCAUAGGAAGGCUCUUGUCUGUCAGGCAGUGGAGUUACUUACAGACAAGAGCCUUGCUCAGGCCAGCCCUGCCC
+.........((.(.((((...((((...((.(((((((((((((((.((............)).))))))))))))))).)).)))).))))).)).. (-40.20)
+>hsa-mir-601 MI0003614 Homo sapiens miR-601 stem-loop
+UGCAUGAGUUCGUCUUGGUCUAGGAUUGUUGGAGGAGUCAGAAAAACUACCCCAGGGAUCCUGAAGUCCUUUGGGUGGA
+........(((..((.((.((((((((.((((.(((((.......))).)))))).))))))..)).))...))..))) (-23.90)
+>hsa-mir-602 MI0003615 Homo sapiens miR-602 stem-loop
+UUCUCACCCCCGCCUGACACGGGCGACAGCUGCGGCCCGCUGUGUUCACUCGGGCCGAGUGCGUCUCCUGUCAGGCAAGGGAGAGCAGAGCCCCCCUG
+..(((.(((..((((((((.(((.(((.(((.(((((((..((....)).))))))))))..))))))))))))))..))).)))............. (-49.50)
+>hsa-mir-603 MI0003616 Homo sapiens miR-603 stem-loop
+GAUUGAUGCUGUUGGUUUGGUGCAAAAGUAAUUGCAGUGCUUCCCAUUUAAAAGUAAUGGCACACACUGCAAUUACUUUUGCUCCAACUUAAUACUU
+.........((((((.((((.((((((((((((((((((....(((((.......)))))....)))))))))))))))))).)))).))))))... (-40.50)
+>hsa-mir-604 MI0003617 Homo sapiens miR-604 stem-loop
+AGAGCAUCGUGCUUGACCUUCCACGCUCUCGUGUCCACUAGCAGGCAGGUUUUCUGACACAGGCUGCGGAAUUCAGGACAGUGCAUCAUGGAGA
+.((((((.((.(((((..((((.(((.((.(((((....(((......)))....))))))))).).)))).))))))).)))).))....... (-27.30)
+>hsa-mir-605 MI0003618 Homo sapiens miR-605 stem-loop
+GCCCUAGCUUGGUUCUAAAUCCCAUGGUGCCUUCUCCUUGGGAAAAACAGAGAAGGCACUAUGAGAUUUAGAAUCAAGUUAGG
+..(((((((((((((((((((.((((((((((((((..((.......)))))))))))))))).))))))))))))))))))) (-52.30)
+>hsa-mir-606 MI0003619 Homo sapiens miR-606 stem-loop
+UGUAUCCUUGGUUUUUAGUAGUUUUACUAUGAUGAGGUGUGCCAUCCACCCCAUCAUAGUAAACUACUGAAAAUCAAAGAUACAAGUGCCUGACCA
+((((((.(((((((((((((((((.(((((((((.((((.......)))).)))))))))))))))))))))))))).))))))............ (-45.20)
+>hsa-mir-607 MI0003620 Homo sapiens miR-607 stem-loop
+UUGCCUAAAGUCACACAGGUUAUAGAUCUGGAUUGGAACCCAGGGAGCCAGACUGCCUGGGUUCAAAUCCAGAUCUAUAACUUGUGUGACUUUGGG
+...(((((((((((((((((((((((((((((((.(((((((((.((.....)).))))))))).))))))))))))))))))))))))))))))) (-72.30)
+>hsa-mir-608 MI0003621 Homo sapiens miR-608 stem-loop
+GGGCCAAGGUGGGCCAGGGGUGGUGUUGGGACAGCUCCGUUUAAAAAGGCAUCUCCAAGAGCUUCCAUCAAAGGCUGCCUCUUGGUGCAGCACAGGUAGA
+..(((..(.((.((((((((..((.((.(((.(((((.....................))))))))....)).))..)).)))))).)).)...)))... (-34.50)
+>hsa-mir-609 MI0003622 Homo sapiens miR-609 stem-loop
+UGCUCGGCUGUUCCUAGGGUGUUUCUCUCAUCUCUGGUCUAUAAUGGGUUAAAUAGUAGAGAUGAGGGCAACACCCUAGGAACAGCAGAGGAACC
+..(((.(((((((((((((((((.((((((((((((..((((..........)))))))))))))))).))))))))))))))))).)))..... (-56.90)
+>hsa-mir-610 MI0003623 Homo sapiens miR-610 stem-loop
+UCUAUUUGUCUUAGGUGAGCUAAAUGUGUGCUGGGACACAUUUGAGCCAAAUGUCCCAGCACACAUUUAGCUCACAUAAGAAAAAUGGACUCUAGU
+(((((((.(((((.((((((((((((((((((((((((..((((...)))))))))))))))))))))))))))).))))).)))))))....... (-56.80)
+>hsa-mir-611 MI0003624 Homo sapiens miR-611 stem-loop
+AAAAUGGUGAGAGCGUUGAGGGGAGUUCCAGACGGAGAUGCGAGGACCCCUCGGGGUCUGACCCACA
+.....(((.(((.(.((((((((..(((((........)).)))..)))))))).)))).))).... (-25.60)
+>hsa-mir-612 MI0003625 Homo sapiens miR-612 stem-loop
+UCCCAUCUGGACCCUGCUGGGCAGGGCUUCUGAGCUCCUUAGCACUAGCAGGAGGGGCUCCAGGGGCCCUCCCUCCAUGGCAGCCAGGACAGGACUCUCA
+(((..(((((.((.((..(((.((((((((((((((((((.((....))..)))))))).)))))))))))))..)).))...)))))...)))...... (-51.00)
+>hsa-mir-613 MI0003626 Homo sapiens miR-613 stem-loop
+GGUGAGUGCGUUUCCAAGUGUGAAGGGACCCUUCCUGUAGUGUCUUAUAUACAAUACAGUAGGAAUGUUCCUUCUUUGCCACUCAUACACCUUUA
+((((.(((.((...((((...((((((((..((((((..((((..........))))..)))))).))))))))))))..)).))).)))).... (-28.40)
+>hsa-mir-614 MI0003627 Homo sapiens miR-614 stem-loop
+UCUAAGAAACGCAGUGGUCUCUGAAGCCUGCAGGGGCAGGCCAGCCCUGCACUGAACGCCUGUUCUUGCCAGGUGGCAGAAGGUUGCUGC
+..........(((((..((((((..(((((((((((((((((((.......)))...))))))))))).)))))..))).)))..))))) (-44.30)
+>hsa-mir-615 MI0003628 Homo sapiens miR-615 stem-loop
+CUCGGGAGGGGCGGGAGGGGGGUCCCCGGUGCUCGGAUCUCGAGGGUGCUUAUUGUUCGGUCCGAGCCUGGGUCUCCCUCUUCCCCCCAACCCCCC
+...(((..(((.((((((((((..(((((.((((((((..((((.(.......).)))))))))))))))))...)))))))))))))..)))... (-58.80)
+>hsa-mir-616 MI0003629 Homo sapiens miR-616 stem-loop
+UUAGGUAAUUCCUCCACUCAAAACCCUUCAGUGACUUCCAUGACAUGAAAUAGGAAGUCAUUGGAGGGUUUGAGCAGAGGAAUGACCUGUUUUAAAA
+.(((((.(((((((..((((((.((((((((((((((((((........)).))))))))))))))))))))))..))))))).)))))........ (-51.40)
+>hsa-mir-548c MI0003630 Homo sapiens miR-548c stem-loop
+CAUUGGCAUCUAUUAGGUUGGUGCAAAAGUAAUUGCGGUUUUUGCCAUUACUUUCAGUAGCAAAAAUCUCAAUUACUUUUGCACCAACUUAAUACUU
+..........(((((((((((((((((((((((((.(((((((((...(((.....)))))))))))).)))))))))))))))))))))))))... (-46.90)
+>hsa-mir-617 MI0003631 Homo sapiens miR-617 stem-loop
+CAUCAUAAGGAGCCUAGACUUCCCAUUUGAAGGUGGCCAUUUCCUACCACCUUCAAAUGGUAAGUCCAGGCUCCUUCUGAUUCAAUAAAUGAGGAGC
+.((((.(((((((((.(((((.((((((((((((((..........)))))))))))))).))))).))))))))).))))................ (-50.10)
+>hsa-mir-618 MI0003632 Homo sapiens miR-618 stem-loop
+CUCUUGUUCACAGCCAAACUCUACUUGUCCUUCUGAGUGUAAUUACGUACAUGCAGUAGCUCAGGAGACAAGCAGGUUUACCCUGUGGAUGAGUCUGA
+..((..(((((((..((((.((.((((((.((((((((.....(((((....)).))))))))))))))))).))))))...)))))))..))..... (-34.60)
+>hsa-mir-619 MI0003633 Homo sapiens miR-619 stem-loop
+CGCCCACCUCAGCCUCCCAAAAUGCUGGGAUUACAGGCAUGAGCCACUGCGGUCGACCAUGACCUGGACAUGUUUGUGCCCAGUACUGUCAGUUUGCAG
+.((..((..(((..........(((((((..((((((((((..(((....((((......))))))).))))))))))))))))))))...))..)).. (-31.20)
+>hsa-mir-620 MI0003634 Homo sapiens miR-620 stem-loop
+AUAUAUAUCUAUAUCUAGCUCCGUAUAUAUAUAUAUAUAUAUAUAGAUAUCUCCAUAUAUAUGGAGAUAGAUAUAGAAAUAAAACAAGCAAAGAA
+...(((.((((((((((.((((((((((((....((((........))))....)))))))))))).)))))))))).))).............. (-27.90)
+>hsa-mir-621 MI0003635 Homo sapiens miR-621 stem-loop
+UAGAUUGAGGAAGGGGCUGAGUGGUAGGCGGUGCUGCUGUGCUCUGAUGAAGACCCAUGUGGCUAGCAACAGCGCUUACCUUUUGUCUCUGGGUCC
+........(((((((((.(((.((((((((.((.(((((.(((...(((......)))..)))))))).)).))))))))))).))))))...))) (-35.80)
+>hsa-mir-622 MI0003636 Homo sapiens miR-622 stem-loop
+AGAGAAGCUGGACAAGUACUGGUCUCAGCAGAUUGAGGAGAGCACCACAGUGGUCAUCACACAGUCUGCUGAGGUUGGAGCUGCUGAGAUGACACU
+.......((((...(((.((..(((((((((((((.(((((.(((....))).)).)).).)))))))))))))..)).))).)).))........ (-35.50)
+>hsa-mir-623 MI0003637 Homo sapiens miR-623 stem-loop
+GUACACAGUAGAAGCAUCCCUUGCAGGGGCUGUUGGGUUGCAUCCUAAGCUGUGCUGGAGCUUCCCGAUGUACUCUGUAGAUGUCUUUGCACCUUCUG
+.......(((((..((((...(((((((..(((((((..((.(((..(((...))))))))..)))))))..)))))))))))..)))))........ (-34.60)
+>hsa-mir-624 MI0003638 Homo sapiens miR-624 stem-loop
+AAUGCUGUUUCAAGGUAGUACCAGUACCUUGUGUUCAGUGGAACCAAGGUAAACACAAGGUAUUGGUAUUACCUUGAGAUAGCAUUACACCUAAGUG
+((((((((((((((((((((((((((((((((((((..((....))..)..)))))))))))))))))))))))))))))))))))........... (-56.90)
+>hsa-mir-625 MI0003639 Homo sapiens miR-625 stem-loop
+AGGGUAGAGGGAUGAGGGGGAAAGUUCUAUAGUCCUGUAAUUAGAUCUCAGGACUAUAGAACUUUCCCCCUCAUCCCUCUGCCCU
+(((((((((((((((((((((((((((((((((((((...........))))))))))))))))))))))))))))))))))))) (-74.90)
+>hsa-mir-626 MI0003640 Homo sapiens miR-626 stem-loop
+ACUGAUAUAUUUGUCUUAUUUGAGAGCUGAGGAGUAUUUUUAUGCAAUCUGAAUGAUCUCAGCUGUCUGAAAAUGUCUUCAAUUUUAAAGGCUU
+............(((((...(((((..((((((.((((((((.(((..((((......)))).))).)))))))))))))).)))))))))).. (-22.00)
+>hsa-mir-627 MI0003641 Homo sapiens miR-627 stem-loop
+UACUUAUUACUGGUAGUGAGUCUCUAAGAAAAGAGGAGGUGGUUGUUUUCCUCCUCUUUUCUUUGAGACUCACUACCAAUAAUAAGAAAUACUACUA
+..(((((((.((((((((((((((.((((((((((((((..(....)..)))))))))))))).)))))))))))))).)))))))........... (-56.50)
+>hsa-mir-628 MI0003642 Homo sapiens miR-628 stem-loop
+AUAGCUGUUGUGUCACUUCCUCAUGCUGACAUAUUUACUAGAGGGUAAAAUUAAUAACCUUCUAGUAAGAGUGGCAGUCGAAGGGAAGGGCUCAU
+........((.(((.((((((..(((((.(((.(((((((((((((..........))))))))))))).))).))).))..))))))))).)). (-36.40)
+>hsa-mir-629 MI0003643 Homo sapiens miR-629 stem-loop
+UCCCUUUCCCAGGGGAGGGGCUGGGUUUACGUUGGGAGAACUUUUACGGUGAACCAGGAGGUUCUCCCAACGUAAGCCCAGCCCCUCCCCUCUGCCU
+..........(((((((((((((((((((((((((((((((((((..((....)).)))))))))))))))))))))))))))))))))))...... (-74.80)
+>hsa-mir-630 MI0003644 Homo sapiens miR-630 stem-loop
+AACUUAACAUCAUGCUACCUCUUUGUAUCAUAUUUUGUUAUUCUGGUCACAGAAUGACCUAGUAUUCUGUACCAGGGAAGGUAGUUCUUAACUAUAU
+.............(((((((((((((((.(((((..(((((((((....)))))))))..)))))...))).))))).)))))))............ (-27.30)
+>hsa-mir-631 MI0003645 Homo sapiens miR-631 stem-loop
+GUGGGGAGCCUGGUUAGACCUGGCCCAGACCUCAGCUACACAAGCUGAUGGACUGAGUCAGGGGCCACACUCUCC
+..((((((..((((....((((((.(((.((((((((.....)))))).)).))).)))))).))))..)))))) (-38.00)
+>hsa-mir-33b MI0003646 Homo sapiens miR-33b stem-loop
+GCGGGCGGCCCCGCGGUGCAUUGCUGUUGCAUUGCACGUGUGUGAGGCGGGUGCAGUGCCUCGGCAGUGCAGCCCGGAGCCGGCCCCUGGCACCAC
+(((((((((.(((.((((((((((((..(((((((((.(((.....))).)))))))))..)))))))))).))))).))).))))...))..... (-59.10)
+>hsa-mir-632 MI0003647 Homo sapiens miR-632 stem-loop
+CGCCUCCUACCGCAGUGCUUGACGGGAGGCGGAGCGGGGAACGAGGCCGUCGGCCAUUUUGUGUCUGCUUCCUGUGGGACGUGGUGGUAGCCGU
+((.((.(((((((.((.((..((((((((((((.((.((((...((((...)))).)))).)))))))))))))))).))))))))).)).)). (-43.40)
+>hsa-mir-633 MI0003648 Homo sapiens miR-633 stem-loop
+AACCUCUCUUAGCCUCUGUUUCUUUAUUGCGGUAGAUACUAUUAACCUAAAAUGAGAAGGCUAAUAGUAUCUACCACAAUAAAAUUGUUGUGAGGAUA
+..((((...((((....((((...(((((.((((((((((((((.(((.........))).)))))))))))))).))))))))).)))).))))... (-34.00)
+>hsa-mir-634 MI0003649 Homo sapiens miR-634 stem-loop
+AAACCCACACCACUGCAUUUUGGCCAUCGAGGGUUGGGGCUUGGUGUCAUGCCCCAAGAUAACCAGCACCCCAACUUUGGACAGCAUGGAUUAGUCU
+...........((((.((((..((..((.((((((((((.((((((((.((...)).))).)))))..)))))))))).))..))..)))))))).. (-28.50)
+>hsa-mir-635 MI0003650 Homo sapiens miR-635 stem-loop
+CAGAGAGGAGCUGCCACUUGGGCACUGAAACAAUGUCCAUUAGGCUUUGUUAUGGAAACUUCUCCUGAUCAUUGUUUUGUGUCCAUUGAGCUUCCAAU
+....(.((((((..((..(((((((.(((((((((...((((((....(((.....)))....)))))))))))))))))))))).)))))))))... (-32.10)
+>hsa-mir-636 MI0003651 Homo sapiens miR-636 stem-loop
+UGGCGGCCUGGGCGGGAGCGCGCGGGCGGGGCCGGCCCCGCUGCCUGGAAUUAACCCCGCUGUGCUUGCUCGUCCCGCCCGCAGCCCUAGGCGGCGUCG
+..((.(((((((.....((..(((((((((((.(((..(((.((..((......))..)).)))...))).))))))))))).))))))))).)).... (-55.80)
+>hsa-mir-637 MI0003652 Homo sapiens miR-637 stem-loop
+UGGCUAAGGUGUUGGCUCGGGCUCCCCACUGCAGUUACCCUCCCCUCGGCGUUACUGAGCACUGGGGGCUUUCGGGCUCUGCGUCUGCACAGAUACUUC
+((((..((..((.(((((((((.(((((.((((((.((((.......)).)).)))..))).))))))))..))))))..))..)))).))........ (-34.90)
+>hsa-mir-638 MI0003653 Homo sapiens miR-638 stem-loop
+GUGAGCGGGCGCGGCAGGGAUCGCGGGCGGGUGGCGGCCUAGGGCGCGGAGGGCGGACCGGGAAUGGCGCGCCGUGCGCCGCCGGCGUAACUGCGGCGCU
+.......(((((.((((..(.(((.((((((((((((((..((.(((.....)))..))......))).))))..)).))))).))))..)))).))))) (-54.90)
+>hsa-mir-639 MI0003654 Homo sapiens miR-639 stem-loop
+UGGCCGACGGGGCGCGCGCGGCCUGGAGGGGCGGGGCGGACGCAGAGCCGCGUUUAGUCUAUCGCUGCGGUUGCGAGCGCUGUAGGGAGCCUGUGCUG
+.((((...(.(((((.(((((((....(.((((((((((((((......)))))).))))..)))).)))))))).))))).)...).)))....... (-41.60)
+>hsa-mir-640 MI0003655 Homo sapiens miR-640 stem-loop
+GUGACCCUGGGCAAGUUCCUGAAGAUCAGACACAUCAGAUCCCUUAUCUGUAAAAUGGGCAUGAUCCAGGAACCUGCCUCUACGGUUGCCUUGGGG
+(..(((..(((((.(((((((..(((((....((((((((.....)))))....)))....)))))))))))).)))))....)))..)....... (-34.90)
+>hsa-mir-641 MI0003656 Homo sapiens miR-641 stem-loop
+UGGGUGAAAGGAAGGAAAGACAUAGGAUAGAGUCACCUCUGUCCUCUGUCCUCUACCUAUAGAGGUGACUGUCCUAUGUCUUUCCUUCCUCUUACCCCU
+.((((((.((((((((((((((((((((..((((((((((((.....(....).....)))))))))))))))))))))))))))))))).)))))).. (-61.80)
+>hsa-mir-642 MI0003657 Homo sapiens miR-642 stem-loop
+AUCUGAGUUGGGAGGGUCCCUCUCCAAAUGUGUCUUGGGGUGGGGGAUCAAGACACAUUUGGAGAGGGAACCUCCCAACUCGGCCUCUGCCAUCAUU
+..(((((((((((((.((((((((((((((((((((((.........)))))))))))))))))))))).))))))))))))).............. (-65.40)
+>hsa-mir-643 MI0003658 Homo sapiens miR-643 stem-loop
+ACCAAGUGAUAUUCAUUGUCUACCUGAGCUAGAAUACAAGUAGUUGGCGUCUUCAGAGACACUUGUAUGCUAGCUCAGGUAGAUAUUGAAUGAAAAA
+.........((((((.((((((((((((((((.((((((((.(((..(.......).))))))))))).)))))))))))))))).))))))..... (-45.90)
+>hsa-mir-644 MI0003659 Homo sapiens miR-644 stem-loop
+UUUUUUUUUAGUAUUUUUCCAUCAGUGUUCAUAAGGAAUGUUGCUCUGUAGUUUUCUUAUAGUGUGGCUUUCUUAGAGCAAAGAUGGUUCCCUA
+..................(((((..(((((.(((((((.((..(.((((((.....)))))).)..))))))))))))))..)))))....... (-28.80)
+>hsa-mir-645 MI0003660 Homo sapiens miR-645 stem-loop
+CAGUUCCUAACAGGCCUCAGACCAGUACCGGUCUGUGGCCUGGGGGUUGAGGACCCCUGCUCUAGGCUGGUACUGCUGAUGCUUAAAAAGAGAG
+...........((((.((((..(((((((((((((.(((..(((((((...)))))))))).))))))))))))))))).)))).......... (-42.90)
+>hsa-mir-646 MI0003661 Homo sapiens miR-646 stem-loop
+GAUCAGGAGUCUGCCAGUGGAGUCAGCACACCUGCUUUUCACCUGUGAUCCCAGGAGAGGAAGCAGCUGCCUCUGAGGCCUCAGGCUCAGUGGC
+..(((.(((((((((..(((((.((((.....((((((((.((((......)))).)).)))))))))).))))).)))...))))))..))). (-34.20)
+>hsa-mir-647 MI0003662 Homo sapiens miR-647 stem-loop
+AGGAAGUGUUGGCCUGUGGCUGCACUCACUUCCUUCAGCCCCAGGAAGCCUUGGUCGGGGGCAGGAGGGAGGGUCAGGCAGGGCUGGGGGCCUGAC
+(((...(.(..((((.((.(((.((.(.((((((((.(((((.....((....))..))))).)))))))))))))).))))))..).).)))... (-42.80)
+>hsa-mir-648 MI0003663 Homo sapiens miR-648 stem-loop
+AUCACAGACACCUCCAAGUGUGCAGGGCACUGGUGGGGGCCGGGGCAGGCCCAGCGAAAGUGCAGGACCUGGCACUUAGUCGGAAGUGAGGGUG
+..(((...(((.(((((((((.(((((((((..((.(((((......)))))..))..)))))....))))))))))....))).)))...))) (-39.70)
+>hsa-mir-649 MI0003664 Homo sapiens miR-649 stem-loop
+GGCCUAGCCAAAUACUGUAUUUUUGAUCGACAUUUGGUUGAAAAAUAUCUAUGUAUUAGUAAACCUGUGUUGUUCAAGAGUCCACUGUGUUUUGCUG
+....((((.((((((.((((((((((.((((((..((((....(((((....)))))....)))).)))))).))))))))..)).)))))).)))) (-27.00)
+>hsa-mir-650 MI0003665 Homo sapiens miR-650 stem-loop
+CAGUGCUGGGGUCUCAGGAGGCAGCGCUCUCAGGACGUCACCACCAUGGCCUGGGCUCUGCUCCUCCUCACCCUCCUCACUCAGGGCACAGGUGAU
+..((((((((((...((((((.((((..((((((.(((.......))).))))))...)))))))))).)))))..........)))))....... (-36.00)
+>hsa-mir-651 MI0003666 Homo sapiens miR-651 stem-loop
+AAUCUAUCACUGCUUUUUAGGAUAAGCUUGACUUUUGUUCAAAUAAAAAUGCAAAAGGAAAGUGUAUCCUAAAAGGCAAUGACAGUUUAAUGUGUUU
+...((.(((.((((((((((((((.((((..(((((((............)))))))..)))).)))))))))))))).))).))............ (-34.50)
+>hsa-mir-652 MI0003667 Homo sapiens miR-652 stem-loop
+ACGAAUGGCUAUGCACUGCACAACCCUAGGAGAGGGUGCCAUUCACAUAGACUAUAAUUGAAUGGCGCCACUAGGGUUGUGCAGUGCACAACCUACAC
+......((...((((((((((((((((((.....(((((((((((..((.....))..))))))))))).))))))))))))))))))...))..... (-55.20)
+>hsa-mir-548d-1 MI0003668 Homo sapiens miR-548d-1 stem-loop
+AAACAAGUUAUAUUAGGUUGGUGCAAAAGUAAUUGUGGUUUUUGCCUGUAAAAGUAAUGGCAAAAACCACAGUUUCUUUUGCACCAGACUAAUAAAG
+..........((((((.((((((((((((.((((((((((((((((............)))))))))))))))).)))))))))))).))))))... (-48.20)
+>hsa-mir-661 MI0003669 Homo sapiens miR-661 stem-loop
+GGAGAGGCUGUGCUGUGGGGCAGGCGCAGGCCUGAGCCCUGGUUUCGGGCUGCCUGGGUCUCUGGCCUGCGCGUGACUUUGGGGUGGCU
+.....((((..(((.(..((((.(((((((((.((((((.(((........))).))).))).))))))))).)).))..).))))))) (-49.30)
+>hsa-mir-662 MI0003670 Homo sapiens miR-662 stem-loop
+GCUGUUGAGGCUGCGCAGCCAGGCCCUGACGGUGGGGUGGCUGCGGGCCUUCUGAAGGUCUCCCACGUUGUGGCCCAGCAGCGCAGUCACGUUGC
+((...((.((((((((.((..((((.(((((.(((((.((((.(((.....)))..)))))))))))))).))))..)).)))))))).))..)) (-45.50)
+>hsa-mir-548d-2 MI0003671 Homo sapiens miR-548d-2 stem-loop
+GAGAGGGAAGAUUUAGGUUGGUGCAAAAGUAAUUGUGGUUUUUGCCAUUGAAAGUAAUGGCAAAAACCACAGUUUCUUUUGCACCAACCUAAUAAAA
+............(((((((((((((((((.((((((((((((((((((((....)))))))))))))))))))).)))))))))))))))))..... (-56.90)
+>hsa-mir-663 MI0003672 Homo sapiens miR-663 stem-loop
+CCUUCCGGCGUCCCAGGCGGGGCGCCGCGGGACCGCCCUCGUGUCUGUGGCGGUGGGAUCCCGCGGCCGUGUUUUCCUGGUGGCCCGGCCAUG
+....((((.((((((((.((.((((((((((((((((.(((......))).)))))..)))))))).))).))..))))).)))))))..... (-50.20)
+>hsa-mir-449b MI0003673 Homo sapiens miR-449b stem-loop
+UGACCUGAAUCAGGUAGGCAGUGUAUUGUUAGCUGGCUGCUUGGGUCAAGUCAGCAGCCACAACUACCCUGCCACUUGCUUCUGGAUAAAUUCUUCU
+...((.(((.(((((.(((((.(((..(((.(.((((((((.((......))))))))))))))))).)))))))))).))).))............ (-35.60)
+>hsa-mir-653 MI0003674 Homo sapiens miR-653 stem-loop
+UUCAUUCCUUCAGUGUUGAAACAAUCUCUACUGAACCAGCUUCAAACAAGUUCACUGGAGUUUGUUUCAAUAUUGCAAGAAUGAUAAGAUGGAAGC
+.((((((...((((((((((((((.(((((.(((((.............))))).))))).))))))))))))))...))))))............ (-32.82)
+>hsa-mir-411 MI0003675 Homo sapiens miR-411 stem-loop
+UGGUACUUGGAGAGAUAGUAGACCGUAUAGCGUACGCUUUAUCUGUGACGUAUGUAACACGGUCCACUAACCCUCAGUAUCAAAUCCAUCCCCGAG
+(((((((..(((.(.((((.((((((.(.((((((((.........).))))))).).)))))).)))).).)))))))))).............. (-30.70)
+>hsa-mir-654 MI0003676 Homo sapiens miR-654 stem-loop
+GGGUAAGUGGAAAGAUGGUGGGCCGCAGAACAUGUGCUGAGUUCGUGCCAUAUGUCUGCUGACCAUCACCUUUAGAAGCCC
+((((......((((.((((((.(.(((((.(((((((((....)).).))))))))))).).)))))).))))....)))) (-29.60)
+>hsa-mir-655 MI0003677 Homo sapiens miR-655 stem-loop
+AACUAUGCAAGGAUAUUUGAGGAGAGGUUAUCCGUGUUAUGUUCGCUUCAUUCAUCAUGAAUAAUACAUGGUUAACCUCUUUUUGAAUAUCAGACUC
+...........((((((..(((((((((((.((((((..((((((............))))))..)))))).)))))))))))..))))))...... (-35.10)
+>hsa-mir-656 MI0003678 Homo sapiens miR-656 stem-loop
+CUGAAAUAGGUUGCCUGUGAGGUGUUCACUUUCUAUAUGAUGAAUAUUAUACAGUCAACCUCUUUCCGAUAUCGAAUC
+..((((.((((((.(((((..(((((((...((.....)))))))))..))))).)))))).))))............ (-23.70)
+>hsa-mir-549 MI0003679 Homo sapiens miR-549 stem-loop
+AGACAUGCAACUCAAGAAUAUAUUGAGAGCUCAUCCAUAGUUGUCACUGUCUCAAAUCAGUGACAACUAUGGAUGAGCUCUUAAUAUAUCCCAGGC
+.................((((((((((((((((((((((((((((((((........))))))))))))))))))))))))))))))))....... (-53.20)
+>hsa-mir-657 MI0003681 Homo sapiens miR-657 stem-loop
+GUGUAGUAGAGCUAGGAGGAGAGGGUCCUGGAGAAGCGUGGACCGGUCCGGGUGGGUUCCGGCAGGUUCUCACCCUCUCUAGGCCCCAUUCUCCUCUG
+..............(((((((((((.((((((((.....(((....)))(((((((..((....))..))))))))))))))).)))..)))))))). (-47.80)
+>hsa-mir-658 MI0003682 Homo sapiens miR-658 stem-loop
+GCUCGGUUGCCGUGGUUGCGGGCCCUGCCCGCCCGCCAGCUCGCUGACAGCACGACUCAGGGCGGAGGGAAGUAGGUCCGUUGGUCGGUCGGGAACGAGG
+.((((.((.((((.(..(((((((((.(((..(((((...(((.((....))))).....))))).))).))..)))))))....).).))).)))))). (-42.00)
+>hsa-mir-659 MI0003683 Homo sapiens miR-659 stem-loop
+UACCGACCCUCGAUUUGGUUCAGGACCUUCCCUGAACCAAGGAAGAGUCACAGUCUCUUCCUUGGUUCAGGGAGGGUCCCCAACAAUGUCCUCAUGG
+...........(((...(((..(((((((((((((((((((((((((.......)))))))))))))))))))))))))..)))...)))....... (-55.00)
+>hsa-mir-660 MI0003684 Homo sapiens miR-660 stem-loop
+CUGCUCCUUCUCCCAUACCCAUUGCAUAUCGGAGUUGUGAAUUCUCAAAACACCUCCUGUGUGCAUGGAUUACAGGAGGGUGAGCCUUGUCAUCGUG
+..((((.((((((.....((((.((((((.((((.(((...........))).)))).))))))))))......)))))).))))............ (-33.10)
+>hsa-mir-421 MI0003685 Homo sapiens miR-421 stem-loop
+GCACAUUGUAGGCCUCAUUAAAUGUUUGUUGAAUGAAAAAAUGAAUCAUCAACAGACAUUAAUUGGGCGCCUGCUCUGUGAUCUC
+.((((..((((((((((...((((((((((((.(((.........)))))))))))))))...)))).))))))..))))..... (-35.20)
+>hsa-mir-542 MI0003686 Homo sapiens miR-542 stem-loop
+CAGAUCUCAGACAUCUCGGGGAUCAUCAUGUCACGAGAUACCAGUGUGCACUUGUGACAGAUUGAUAACUGAAAGGUCUGGGAGCCACUCAUCUUCA
+....((((((((...((((..((((...(((((((((.(((....)))..)))))))))...))))..))))...)))))))).............. (-35.90)

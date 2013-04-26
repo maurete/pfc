@@ -1,0 +1,456 @@
+>osa-MIR156a MI0000653 Oryza sativa miR156a stem-loop
+GGAGGGUGACAGAAGAGAGUGAGCACACGUGGUUGUUUCCUUGCAUAAAUGAUGCCUAUGCUUGGAGCUACGCGUGCUCACUUCUCUCUCUGUCACCUCC
+(((((.((((((((((((((((((((.((((((....(((..(((((.........)))))..))))))))).)))))))).))))).)))))))))))) (-57.80)
+>osa-MIR156b MI0000654 Oryza sativa miR156b stem-loop
+UUGUCUUGAGAGGGGAAGAGAUCUCUAUGGGUUUUGGAGGUCUGACAGAAGAGAGUGAGCACACACGGUGCUUUCUUAGCAUGCAAGAGCCAUGCUGGGAGCUGUGCGUGCUCACUCUCUAUCUGUCAGCCGUUCACCAUGCCCAAUAUGAUUAAUCUCCUUCUCUCAGUUGACAG
+.((((((((((((((.(((((((....(((((..(((.((.(((((((((((((((((((((.((((((....(((((((((((....).)))))))))))))))).))))))))))))).)))))))))).....))).)))))....))))..))).))))))))))..)))). (-94.20)
+>osa-MIR156c MI0000655 Oryza sativa miR156c stem-loop
+GGAGGAAGAGAGGGGUGAGAGGUGAGGCUGACAGAAGAGAGUGAGCACACAUGGUGACUUUCUUGCAUGCUGAAUGGACUCAUGCUUGAAGCUAUGUGUGCUCACUUCUCUCUCUGUCAGCCAUUUGAUCUCUCUUUCUCUCUUUCUCC
+((((((((((((..(.(((((((.(((((((((((((((((((((((((((((((....(((..(((((..(......).)))))..)))))))))))))))))).))))).))))))))))...).))))))))..)))))))))))) (-91.10)
+>osa-MIR156d MI0000656 Oryza sativa miR156d stem-loop
+GGAGAAGCUCUCAUGAGAUUGACAGAAGAGAGUGAGCACACGGCGUGAUGGCCGGCAUAAAAUCUAUCCCGUCCUCGCCGCGUGCUCACUCCUCUUUCUGUCACCCUCUUUCUCUCAGGGCUCAACUCC
+((((.((((((...((((.((((((((((((((((((((.(((((....((.(((.(((.....))).))).)).))))).))))))))).))).)))))))).......))))..))))))...)))) (-63.20)
+>osa-MIR156e MI0000657 Oryza sativa miR156e stem-loop
+GGCGCGAGGUGACAGAAGAGAGUGAGCACACGGCCGGGCGUGACGGCACCGGCGGGCGUGCCGUCGCGGCCGCGUGCUCACUGCUCUUUCUGUCAUCCGGUGCC
+(((((..((((((((((((((((((((((.(((((....(((((((((((.....).))))))))))))))).))))))))).))).))))))))))..))))) (-73.40)
+>osa-MIR156f MI0000658 Oryza sativa miR156f stem-loop
+AGUUGACAGAAGAGAGUGAGCACACAGCGGCCAGACUGCAUCGAUCUAUCAAUCUUCCCUUCGACAGGAUAGCUAGAUAGAAAGAAAGAGAGGCCGUCGGCGGCCAUGGAAGAGAGAGAGAGAGAGAGAUGAAAUGAUGAUGAUGAUACAGCUGCCGCUGCGUGCUCACUUCUCUUUCUGUCAGCU
+(((((((((((((((((((((((.(((((((.((.(((((((..(((.((..((((((.(((....)))......................(((((....)))))..))))))..)).....)))..))))..((.((....)).)).)))))))))))).)))))))).)))).))))))))))) (-81.30)
+>osa-MIR156g MI0000659 Oryza sativa miR156g stem-loop
+GGCUGACAGAAGAGAGUGAGCACACAGCGGGCAGACUGCAUCUGAAUUACCUGUUGCGACGAAGAAGACGACGGACGCAGCUUGCCGUUGCGUGCUCACUUCUCUCUCUGUCAGCU
+(((((((((((((((((((((((.((((((.((((.....))))........((((((.((..(....)..))..))))))...)))))).)))))))).))))).)))))))))) (-61.00)
+>osa-MIR156j MI0000662 Oryza sativa miR156j stem-loop
+UUGGGGCGGGGCGGGAUCGAGCAUAUGAAAGGCGAGAUUGUUGACAGAAGAGAGUGAGCACACGGCGCGGCGGCUAGCCAUCGGCGGGAUGCCUGCCCCCGCCGCGUGCUCGCUCCUCUUUCUGUCAGCAUCUCUCAUCACUCCCUCCCGCAUCCCCCGCCCCGA
+((((((((((((((((..(((...((((.....(((((.((((((((((((((((((((((.(((((.((.(((.((.((((.....)))).)))))))))))).))))))))).))).)))))))))))))))))))..)))..))))))....)))))))))) (-102.10)
+>osa-MIR160a MI0000663 Oryza sativa miR160a stem-loop
+GUGUGCCUGGCUCCCUGUAUGCCACACAUGUAGACCAACCCAUGGUGUCUGGUUGCCUACUGGGUGGCGUGCAAGGAGCCAAGCAUGC
+((((((.(((((((.((((((((((.((.((((..(((((..........))))).)))))).)))))))))).))))))).)))))) (-49.10)
+>osa-MIR160b MI0000664 Oryza sativa miR160b stem-loop
+AAGGUUUGGUUUUGAUCGGCUUGAGAGCGUGCCUGGCUCCCUGUAUGCCACUCAUGUAGCCCAAUCCAUGGUGUGUUUGGAUGCUGUGGGUGGCGUGCAAGGAGCCAAGCAUGCGUGCCAUGAUCUCUCUUUCUGCCUU
+(((((..((....(((((((......((((((.(((((((.((((((((((((((..(((...(((((.........)))))))))))))))))))))).))))))).))))))..)))..))))...))....))))) (-67.60)
+>osa-MIR160c MI0000665 Oryza sativa miR160c stem-loop
+GGAAUGUGCCUGGCUCCCUGUAUGCCACUCAUCUAGAGCAACAAACUUCUGCGAGAGGUUGCCUAUGAUGGAUGGCGUGCACGGAGCCAAGCAUAUUCC
+(((((((((.(((((((.(((((((((..(((((((.(((((...(((....)))..)))))))).))))..))))))))).))))))).))))))))) (-60.20)
+>osa-MIR160d MI0000666 Oryza sativa miR160d stem-loop
+GGGGAUAUGCCUGGCUCCCUGUAUGCCACUCGCGUAGCUGCCAAACUCAGUUGAAACAACUGCCUUCUCCCGGCGAGAUUCAGGCAUUGUGUUCGUACGUUUGGCUCUACUGCGGAUGGCGUGCGAGGAGCCAAGCAUGACC
+..((.(((((.(((((((.(((((((((..(((((((..(((((((.....((((((((.(((((((((.....))))...))))))))).))))...))))))).)))).)))..))))))))).))))))).))))).)) (-72.80)
+>osa-MIR162a MI0000667 Oryza sativa miR162a stem-loop
+GGUGAUGCCUGGGCGCAGUGGUUUAUCGAUCCCUUCCCUGCCUUGUGGCGCUGAUCCAGGAGCGGCGAAUUUCUUUGAGAGGGUGUUCUUUUUUUUUCUUCCUUUUGGUCCUUGUUGCAGCCAACGACAACGCGGGAAUCGAUCGAUAAACCUCUGCAUCCAGUUCUCGCC
+(((((...((((..((((.((((((((((((..(((((.((.(((((((.(((...)))..(((((((......(..((((((................))))))..)...))))))).)))....)))).)))))))..)))))))))))).))))..))))...))))) (-70.49)
+>osa-MIR164a MI0000668 Oryza sativa miR164a stem-loop
+GUGAGAAGGACCGCGUUGGAGAAGCAGGGCACGUGCAUGCAUAUGUUCAUCAUCAUCUUCUUCCUCCUCCUCUAGCUCCAGCCUUGUGUGGGUUGGAAGUUUAGAUAGAACUCGCACUGCACGUGGUCUCCUUCUCCAUCCCGGUCUUUUUCUCAC
+(((((((((((((.(.((((((((.(((.(((((((((((....((((......((((.(((((.((..(.(..((....))...).)..))..)))))...)))).))))..))).)))))))).))).)))))))).).))))))..))))))) (-69.30)
+>osa-MIR164b MI0000669 Oryza sativa miR164b stem-loop
+GUGCACGGUGGAGAAGCAGGGCACGUGCAUUACCAUCCACUCGCCUGCCGGCCGCCGGCCGCCAUUGCCAUGGAUGGUUCUUCAUGUGCCCGUCUUCUCCACCGAGCAC
+((((.(((((((((((..(((((((((....((((((((...((.((.(((((...))))).))..))..))))))))....)))))))))..))))))))))).)))) (-68.50)
+>osa-MIR166a MI0000670 Oryza sativa miR166a stem-loop
+UGAAGCUAUUUGCUUCUGAGUGGAAUGUUGUCUGGUUCAAGGUCUCAUGCACCUUGCGGUUUUGAGGAUGAUUUGUGCAAGGUUUUUCAUUCCUCUCAUCCGUGGGAUCUCGGACCAGGCUUCAUUCCCCUCAGAGAUAGCUUCA
+.(((((((((....((((((.((((((..(((((((((.((((((((((.(((....)))...((((((((...............))).))))).....)))))))))).)))))))))..)))))).))))))))))))))). (-67.16)
+>osa-MIR166b MI0000671 Oryza sativa miR166b stem-loop
+GGGAGCCUUUUCAUUUUGAGGGGAAUGUUGUCUGGCUCGGGGCUACUUUUAAUUUCUCUCUCUUUUGAUAUCUUCUUUUCUCGAUCUCCUAGCUUGAUCUUUUGAUCUCUCAAAUCGAUCUUAAGAAAAAGAUCAGUCAAAGAGAUGAGAGUAGAUGUCUGUAGAUCUCGGACCAGGCUUCAUUCCCCCCAAACAGAAGGGCUCCC
+(((((((((((...((((.((((((((..((((((..(((((((((.....(((((((((((((((((((((((..(((((.((((.........((((....)))).........))))...))))))))))..))).)))))).))))).))))....)))).)))))..))))))..)))))))).))))..))))))))))) (-87.27)
+>osa-MIR166c MI0000672 Oryza sativa miR166c stem-loop
+GGCAGUUGAGGGGAAUGUUGUCUGGUCCGAGACCUAACACCGGGCGGAAUGGCGGAUUCAGCUGCAGCUAAGCAAGCUAGGUGGGGGGUUUCGGACCAGGCUUCAUUCCCCCCAACUCAACUGUU
+.((((((((((((((((..((((((((((((((((..((((.(((.((((.....)))).(((.......)))..))).))))..))))))))))))))))..)))))))).....)))))))). (-73.40)
+>osa-MIR166d MI0000673 Oryza sativa miR166d stem-loop
+GAAGCUUUUUCACUUUGAGGGGAAUGUUGUCUGGCUCGAGGUGCAUGGAGAAACCUCUGAUCGAUCAGGUUUGAUCUGUAGAGACUGAUCUCGGACCAGGCUUCAUUCCCCUCAAGUAAAGCUCC
+..((((((...((((.((((((((((..((((((..((((((.((.((((....))))((((((......)))))).........))))))))..))))))..)))))))))))))))))))).. (-55.50)
+>osa-MIR166e MI0000674 Oryza sativa miR166e stem-loop
+UGUUUCUGGGUGGAAUGUUGUCUGGUUCAAGGCCCCUUAGGAUGUGUGAUUUUUGAUGGUUUAUGCAUUCAUCUUGAUGCGAACAUCUAUCUCGGAUCUUUGGGUUCUCGAACCAGGCUUCAUUCCCCUCAGAGAUA
+((((((((((.((((((..(((((((((.((..(((..(((((.((.(((....((((.....((((((......))))))..)))).))).)).))))).)))..)).)))))))))..)))))).)))))))))) (-62.20)
+>osa-MIR166f MI0000675 Oryza sativa miR166f stem-loop
+CGAUCAUCUUGUUGAGAGGAAUGUCGUCUGGCCUGAGAUCGUACCACAGUGGUGGGUACACGUGGACGGUCUCGGACCAGGCUUCAUUCCCCUCAACAACUCGUCGG
+((((....((((((((.((((((..((((((.((((((((((.((((.(((.......))))))))))))))))).))))))..)))))).))))))))...)))). (-59.80)
+>osa-MIR167a MI0000676 Oryza sativa miR167a stem-loop
+UAGUGUGAAUGAGUGAAGCUGCCAGCAUGAUCUAGCUCUGAUUAAUCGGCACUGUUGGCGUACAGUCGAUUGACUAAUCGUCAGAUCUGUGUGUGUAAAUCACUGUUAGAUCAUGCAUGACAGCCUCAUUUCUUCACACUG
+(((((((((.((((((.((((.((((((((((((((..(((((.((..((((..((((((...((((....))))...))))))....))))..)).)))))..)))))))))))).)).)))).)))))).))))))))) (-65.30)
+>osa-MIR167b MI0000677 Oryza sativa miR167b stem-loop
+GUGCCCAAGAGAAAGCGUGAAGCUGCCAGCAUGAUCUAACUUGCAGACAAGAAAUCAGCUCAGCUCGCUGGUUUCGAACAGGAAGGCGGCUAGCUGAGGCUUCUUCUGAGUACGUGAUGGUUAGAUCAUGCUGUGACAGUUUCACUCCUUCCCUGUUGGGCAC
+((((((((.((.(((.(((((((((((((((((((((((((.((..((.((((...(((((((((.((((.((((......)))).)))).)))))).)))..))))..))..))...))))))))))))))).).)))))))))..)))..)).)))))))) (-82.50)
+>osa-MIR167c MI0000678 Oryza sativa miR167c stem-loop
+UGUCCAAGGGAACGAGUGAAGCUGCCAGCAUGAUCUAGCUCUGAAUGAUCAACAAGAUGUGCUCCCACACUGCCUUCCUGUGGAUCUUGAGCUGUUGCUAGUCUUGUGGUCAUGCCUUGCUAGGUCAUGCUGCGGCAGCCUCACUUCUUCCCAUUGUUGGGCA
+.(((((((((((.((((((.(((((((((((((((((((.....(((((((.((((((..(((((((((.........))))).....))))........))))))))))))).....)))))))))))))..)))))).)))))).)))))....)))))). (-80.60)
+>osa-MIR169a MI0000679 Oryza sativa miR169a stem-loop
+CGCCGGCGGCCUGACAUUGGGAUCGGAGGCCAUGGUGCAGCCAAGGAUGACUUGCCGAUCGAUCGAUCUAUCUAUGAAGCUAAGCUAGCUGGCCAUGGAUCCAUCCAUCAAUUGGCAAGUUGUUCUUGGCUACAUCUUGGCCCCUGCUCCUCAUGUAAGGCCGGCCUGUGGCG
+((((((((((((.((((.((((.(((.(((((.((((.(((((((((..((((((((((.(((.(((..(((((((.(((((...)))))...)))))))..))).))).))))))))))..))))))))).)))).))))).))).)))).)))).))))).)))...)))) (-99.60)
+>osa-MIR171a MI0000680 Oryza sativa miR171a stem-loop
+GGAAAGAGCGAUAUUGGUGAGGUUCAAUCCGAUGAUUGGUUUUACAGCAGUGGUAAAAUCAGUAUCUGAUUGAGCCGCGCCAAUAUCUCUUCCUCU
+((((.((..((((((((((.(((((((((.(((.(((((((((((.......)))))))))))))).))))))))).))))))))))))))))... (-46.00)
+>osa-MIR393 MI0001026 Oryza sativa miR393 stem-loop
+UGGGGAAGCAUCCAAAGGGAUCGCAUUGAUCCUUCAUCGCUCUCGCUCGCUUCCAUGGCGGUCGUCGUCUACAAGCAGCUUGACGGAUCAUGCGAUCCUUUUGGAGGCUUCCUCU
+.((((((((.((((((((((((((((.(((((.(((..(((((((..((((.....))))..)).........)).))).))).))))))))))))))))))))).)))))))). (-61.60)
+>osa-MIR394 MI0001027 Oryza sativa miR394 stem-loop
+UACUGAGAGUUCUUUGGCAUUCUGUCCACCUCCUUGUCGAAUCCUCAGAGACAGAAAUCUCAUAUCUGUUGAUCUUGGAGGUGGGCAUACUGCCAAUGGAGCUGUGUAGG
+..((((.((((((((((((.(.(((((((((((..(((((.......((((......)))).......)))))...))))))))))).).)))))).)))))).).))). (-45.84)
+>osa-MIR395b MI0001028 Oryza sativa miR395b stem-loop
+GAGUCCCUAGGAGUUCCUUUCAAGCACUUUACGACACACUGUAUUGAGAGUUGUCGUGAAGUGUUUGGGGGAACUCUUAGUGUCGC
+..(.(.(((((((((((((.((((((((((((((((.(((.(....).)))))))))))))))))))))))))))))))).).).. (-45.60)
+>osa-MIR395d MI0001029 Oryza sativa miR395d stem-loop
+GUAUUGUCGUGAGUUCCCUUCAAGCACUUCACGUGGCACUAUCUCAAUGCCUACUAUGUGAAGUGUUUGGGGGAACUCUCGAUAUCAC
+((..(((((.(((((((((.((((((((((((((((((.........))))....))))))))))))))))))))))).)))))..)) (-45.70)
+>osa-MIR395g MI0001031 Oryza sativa miR395g stem-loop
+GUAUCACCGUGAGUUCCCUUCGAACACUUCACGUGGCACUAUUUCAAUGCCUAUUGUGAAGUGUUUGGGGGAACUCUCGAUGUCAU
+....((.((.(((((((((.(((((((((((((.((((.........))))...)))))))))))))))))))))).)).)).... (-42.50)
+>osa-MIR395h MI0001032 Oryza sativa miR395h stem-loop
+UUGUUACCUGGAGUUUCCUCAACACACUUCACAUCUGCUAGGCCCUAUUACAAUUGCGCAAUGUGGAGUCUGCAAUUGGUAGUGAAGUGUUUGGGGGAACUCUAGGUGGCAC
+.(((((((((((((((((((((.(((((((((((((((.((((((((((.(......).)))).)).)))))))...))).)))))))))))))))))))))))))))))). (-57.10)
+>osa-MIR395i MI0001033 Oryza sativa miR395i stem-loop
+GUUUUACCGGGAGUUCUCUUCAAGCACUUCACGUAGAGCUUUCUAUUGACAUGGAGCUUUAGAACAAUGUGAAGUGUUUGGGGGAACUCUUGGUACCAA
+....((((((((((((.((((((((((((((((((((((..(((((....))))))))))......))))))))))))))))))))))))))))).... (-47.30)
+>osa-MIR395j MI0001034 Oryza sativa miR395j stem-loop
+GUGUUCCCAAGAGUUCCUUGCAAGCACUUCACAUAGAACUUCUGUUACUCUCAUGUAACAUUGGGAACUUGAGAAGCUACUGUGAAGUGUUUGGGGGAACUCUAGGUGGCAC
+((((..((.((((((((((.((((((((((((((((..(((((.....(((((........))))).....)))))))).))))))))))))))))))))))).))..)))) (-52.90)
+>osa-MIR395l MI0001036 Oryza sativa miR395l stem-loop
+GCGUUCCUUCCAAGCACUUCACACAGAGCUUUUAUUUCUCUCACAUCGAUUGAGAACUUAAUUAGAAGCUUUUGUGAAGUGUUUGGGGGAACUC
+..((((((.((((((((((((((.((((((((((....(((((.......))))).......)))))))))))))))))))))))))))))).. (-44.80)
+>osa-MIR395t MI0001038 Oryza sativa miR395t stem-loop
+UUAUCCACUGGAGUUCUCCUCAAACCACUUCAGCAGAUAGCUAGCUAGGCCUCAUUGCAUUGCACCACUGUUGCAUAACUAUGAGCAUGGGGCCAAAAGUUAGCUGCUUAUAGUGAAGUGUUUGGGGAAACUCCGGUUGGCAA
+....(((((((((((.(((((((((.((((((..((.(((((((((.((((((((..(((((((.......)))).....)))...))))))))...))))))))))).....))))))))))))))))))))))).)))... (-61.60)
+>osa-MIR395c MI0001041 Oryza sativa miR395c stem-loop
+GUAUUAUCAAGAGUUCUCUUUAAGCACUUCAUACGACACCAUUAUUUAUAGGGUUGUUGUGAAGUGUUUGGAGGAACUCUCGGUGUCAU
+....((((.(((((((.((((((((((((((((((((.((..........)))))).))))))))))))))))))))))).)))).... (-38.90)
+>osa-MIR395a MI0001042 Oryza sativa miR395a stem-loop
+UUGUCCACUGGAGUUCUCCUCAAUCCACUUCAGUAGAUAGCUAUGGCUAGGCCUCAUUGCAUUGCACUGUUACAUAACUGUGAUCAUGGGGCCAAAAGCUAGCUAUGUAUAGUGAAGUGCUUGGGGGAACUCCAGUUGACAC
+.((((.(((((((((((((.(((..((((((((((.((((((..((((.((((((((.(.((..((..(((....)))))..)))))))))))...)))))))))).)))..))))))).)))))))))))))))).)))). (-69.20)
+>osa-MIR395f MI0001043 Oryza sativa miR395f stem-loop
+UUAUCGCGGGUUCCCUUCAAUCACUUCACAUGGUACUAUUUCAAGGCCUACUAUGUGAAUUGUUUGGGGGAACUCUCGAUGU
+.(((((.(((((((((.(((.((.(((((((((((((......))...))))))))))).)).)))))))))))).))))). (-36.00)
+>osa-MIR395u MI0001044 Oryza sativa miR395u stem-loop
+ACACUGCCAGGAAUUCCCUUCAAGCAAUUCAUGAAACAAUAUUUUGAGAGUUGUUGUGAAGCGUUUGGGGGAAAUCUCAGUGUCGC
+((((((...(((.((((((.(((((..(((((..((((((.........)))))))))))..))))))))))).)))))))))... (-28.70)
+>osa-MIR396a MI0001046 Oryza sativa miR396a stem-loop
+CUUUGUGAUCUUCCACAGCUUUCUUGAACUGCACGCAUGAUGAAUAAUCCCUUUGGUUAAUUGUGAUCUGGUCUCUGAGAGAUCGUAGUUAGACUCGAUCGGUUGCAUUGGCAUCAGAGAGAGCAGUUCAAUAAAGCUGUGGGAAAUUGCAGAG
+(((((..((.((((((((((((.(((((((((.((((((((.((........)).))))..))))......(((((((..(((((.((.....)))))))...(((....))))))))))..))))))))).)))))))))))).))..))))) (-64.70)
+>osa-MIR396b MI0001047 Oryza sativa miR396b stem-loop
+CUUUGUGGUCUUCCACAGCUUUCUUGAACUGCAUCUUUGAGAGAGAUUAGCAUCCCUAUGUGUGGAUUUUGCUUGCACGAGUGUGCAGUUCAAUAAAGCUGUGGGAAAUUACAGAG
+(((((((((.((((((((((((.((((((((((((((((((..(((((.((((......)))).)))))..))))...))).))))))))))).)))))))))))).))))))))) (-52.80)
+>osa-MIR396c MI0001048 Oryza sativa miR396c stem-loop
+UGCCAUGCCUUUCCACAGCUUUCUUGAACUUCUCUUGUGCCUCACUCACUUUCAUUACUGGAGAGAUAUGCAUCAUCAGUGGAAGCUUAUAGGGAGAGGAGUGCAAGAAGAGGGUCAAGAAAGCUGUGGGAAGAAAUGGCA
+.(((((..(((((((((((((((((((.((((((((((.((((.(((.(((((...((((..((........))..)))))))))......))).))))...))))).))))).)))))))))))))))))))..))))). (-68.80)
+>osa-MIR397a MI0001049 Oryza sativa miR397a stem-loop
+AUCAAAUGCAUCAUUGAGUGCAGCGUUGAUGAACAACGGUAACCGGUCCAUGUUGAUGCGCAUUUGGCCGGUGAUCUGAUCAUCAUCAGCGCUUCACUCAAUCAUGCGUUUGGC
+.((((((((((.((((((((.(((((((((((....(((..(((((((.((((......))))..)))))))...)))....))))))))))).)))))))).)))))))))). (-58.20)
+>osa-MIR397b MI0001050 Oryza sativa miR397b stem-loop
+AGGGAAGGCAUUAUUGAGUGCAGCGUUGAUGAACCUGCCGGCCGGCUAAAUUAAUUAGCAAGAAAGUCUGAAACUGGCUCAAAGGUUCACCAGCACUGCACCCAAUCACGCCUUUGCU
+((.((((((...((((.((((((.((((.(((((((...((((.(((((.....))))).((.....))......))))...))))))).)))).)))))).))))...)))))).)) (-50.60)
+>osa-MIR398a MI0001051 Oryza sativa miR398a stem-loop
+GCUGAACCCAGAGGAGUGGUACUGAGAACACAGGUGCCAAUACAAUGUAUGGUGAGCUACUGUAUAAUGGAGUAAUUCUGUAACUGUGUUCUCAGGUCACCCCUUUGGGUUUCUU
+...(((((((((((.(((...((((((((((((.(((........(((((((((...)))))))))..(((....))).))).))))))))))))..))).)))))))))))... (-49.80)
+>osa-MIR398b MI0001052 Oryza sativa miR398b stem-loop
+GGAGUUCCUACAGGGGCGAGCUGGGAACACACGGUGAUGAGGCGGUCUGGUCUUUCGUGUGUUCUCAGGUCGCCCCUGCCGGGACUCU
+((((((((..(((((((((.((((((((((((((.(((.((.....)).)))..)))))))))))))).)))))))))..)))))))) (-62.20)
+>osa-MIR399a MI0001053 Oryza sativa miR399a stem-loop
+CUGUGAAUUACAGGGCAGUUCACCUUUGGCACAAGGGCAAGCAGUAGAAACCAUGCGUGCUUGCUAGAGCUGGAAAUGAUGCUGGUAGCAUUGCAUGGUUCAGGGAUCACAGAUCUCGUGCCAAAGGAGAAUUGCCCUGCGAUUUUGUC
+....((((..(((((((((((.((((((((((..............(((.(((((((((((.(((((..(.......)...))))))))).)))))))))).((((((...)))))))))))))))).)))))))))))..)))).... (-69.50)
+>osa-MIR399b MI0001054 Oryza sativa miR399b stem-loop
+GUGAGAAUCACAGUGCGAUUCUCCUCUGGCAUGGCAUGAGAGGCCUAAAAAAGAGACGCACUGCCGUGCCAAAGGAGAAUUGCCCUGCCAUUCAGAA
+....((((..(((.(((((((((((.((((((((((((...(..((.......)).).)).)))))))))).))))))))))).)))..)))).... (-44.40)
+>osa-MIR399c MI0001055 Oryza sativa miR399c stem-loop
+CGGCGAAUUACAGGGCGGUUUCUCCUUUGGCACGUACGGAGGCAAGGCAUGCGGUGAAAAAUCUCUAGCUAGCCAUGCGUGCCAAAGGAGAAUUGCCCUGCGAUUCACCA
+.((.((((..((((((((((.(((((((((((((((....(((..(((..(.(((.....))).)..))).))).)))))))))))))))))))))))))..)))).)). (-61.00)
+>osa-MIR399d MI0001056 Oryza sativa miR399d stem-loop
+AAGACAGUAGUAGGCAGCUCUCCUCUGGCAGGUGCAUUCUAGGUGAUUUUGUAAUUGUAUAUGCAUCCAAGGUAUAUACAGUCCGGCCAUGGUGCUACAUUGCAAUCAUCCAUAUGUGAUUGCAUUGUGUAUAUAUAUACAUGGUGGCCUUUGAUAGACCAUCAUAUAUCGGUUGGUUAUGUGCAUGUAUGUAUAUACCAGCUGCUACUAGCUUUGAUCGAUCGCCAUGUAGCGAUUGAAUUCACCAAAACGGCCUGCCAAAGGAGAGUUGCCCUGCGACUGUCUU
+((((((((.(((((((((((((((.((((((((........(((((..........((((((((((.((..(((((((....((((((...((((.(((.(((((((((......))))))))).)))))))........(((((((.((.....)).))))))).....)))))).))))))).)).)))))))))).(((((....)))))....((((((((......))))))))..)))))......)))))))).)))))))))).))))).)))))))) (-124.14)
+>osa-MIR399e MI0001057 Oryza sativa miR399e stem-loop
+ACAUGCAUUACCGGGUGAGUCUUCCUUGGCAGUGUUCGAAUCGGCAGUACCGGUCUGCAAGUGAUCGGUCAAUCACCAGUUCACCGCUGCCAAAGGAGAUUUGCCCAGCAAUGCAACU
+...((((((.(.(((..(((((((.(((((((((...((((.((..(((((((((.......)))))))..))..)).))))..))))))))).)))))))..))).).))))))... (-55.30)
+>osa-MIR399f MI0001058 Oryza sativa miR399f stem-loop
+UGGUGGAUUACCGGGCCAUGUCUCCUUGGGCAGAGGUGAUCAGAUUGCACACUUCACUUCAACCUCUUGCUCUAGCUUGUUCUCUCUGCCAAAGGAGAUUUGCCCAGCAAUCCACAU
+..(((((((.(.((((...((((((((.(((((((..(((.((...(((..................))).....)).)))..))))))).))))))))..)))).).))))))).. (-48.87)
+>osa-MIR399g MI0001059 Oryza sativa miR399g stem-loop
+AUGUGCAUUGCAGGGCAACUACUCCAUUGGCAGAGGGAUGGAUUGGAUAUGGAUAUGGCUGAUGCUUCCAUUUGAUCCCAUCCCUAUCUGCCAAAGGAGAUUUGCCCAGCGAUUCACUC
+..(((.(((((.((((((...((((.(((((((((((((((((..((..((((...(((....)))))))))..)).)))))))..)))))))).))))..)))))).))))).))).. (-61.30)
+>osa-MIR399h MI0001060 Oryza sativa miR399h stem-loop
+CCAUGCAUUACUGGGCAGGUCUCCCUUGGCAGUGGCCGAUCGAGCUGAUCAAACCACGCAAAAGCCACUGCCAAAGGAGACUUGCCCAGCAAUGCAGAU
+...((((((.((((((((((((((.(((((((((((.((((.....)))).............))))))))))).)))))))))))))).))))))... (-59.84)
+>osa-MIR399i MI0001061 Oryza sativa miR399i stem-loop
+GUGAGAAUCACAGUGCAGUUCUCCUCUGGCAUGGAGGGCAAGAGGAGCUGAAUAGCUAAUGGAUGAUAAACUGCUAGCCUUUCCCUGCCAAAGGAGAGCUGCCCUGCCAUUCAGUG
+....((((..(((.(((((((((((.(((((.(((((((.((((.((((....)))).............)).)).))).)))).))))).))))))))))).)))..)))).... (-50.04)
+>osa-MIR399j MI0001062 Oryza sativa miR399j stem-loop
+AGUCCAGUUUCAGGGCUCCUCUCUCUUGGCAGGGAGCAUGUGAAGUCUUUUGUAGCUCACUCAUUUUCAGCCCUCUGCCAAAGGAGAGUUGCCCUAAAACUGGACU
+((((((((((.(((((..(((((..(((((((((.((..(((((((........)))...)))).....)).)))))))))..)))))..))))).)))))))))) (-55.60)
+>osa-MIR399k MI0001063 Oryza sativa miR399k stem-loop
+AGCUGCAUUGCUGGGCAAGUUGUCCUUUGGCAGAUGUUGCAGUUCAUCAUCGAUGCCUGGGGGUUACCAGACUACUGCCAAAGGAAAUUUGCCCCGGAAUUCAUCU
+((.((.(((.(.(((((((((.(((((((((((...........((((...)))).((((......))))....)))))))))))))))))))).).))).)).)) (-42.70)
+>osa-MIR156k MI0001090 Oryza sativa miR156k stem-loop
+UUGAGAGUGAUGACAGAAGAGAGAGAGCACAACCCGGCAGCAGCGACGACGGCGGUCGCUUCUGCCAGGGCCGUGUGCUCUCUGAUCUAUCUGUCAUUGCCGUCCA
+..((..(..(((((((((((.((((((((((.((((((((.((((((.......)))))).))))).)))...))))))))))..))).))))))))..)..)).. (-61.40)
+>osa-MIR156l MI0001091 Oryza sativa miR156l stem-loop
+GCUAGGGAGCCGACAGAAGAGAGUGAGCAUAUAUAGUUCUUUCCUUGCAUAUGUGGUCAUAUGUGUGUUGACUGAAGAGAUACAUAUAUAUAGAGAGAGAGAGUUCAUGUGCUUGAAGCUAUAUGUGCUCACUUCUCUUUCUGUCAGCAAAUUAUC
+........((.((((((((((((((((((((((((((...(((...(((((((.(.(((((((((((((.........)))))))))))...........)).).)))))))..)))))))))))))))))).)))).))))))).))........ (-59.70)
+>osa-MIR159a MI0001092 Oryza sativa miR159a stem-loop
+GUUGUGGACGUUGAGCUCCUUUCGGUCCAAAAAGGGGUGUUGCUGUGGGUCGAUUGAGCUGCUGGGUCAUGGAUCCCGUUAGCCUACUCCAUGUUCAUCAUUCAGCUCGAGAUCUGAAAGAAACUACUCCAAUUUAUACUAAUAGUAUGUGUGUAGAUAGGAAAAUGAUGGAGUACUCGUUGUUGGGAUAGGCUUAUGGCUUGCAUGCCCCAGGAGCUGCAUCAACCCUACAUGGACCCUCUUUGGAUUGAAGGGAGCUCUGCAUCUUUUGU
+.....(((.((.((((((((((((((((((..(((((.(((..(((((((.(((..((((.(((((.((((.(..((((.((((((..(((..((((((((((((........))))..........(((.((((((((...........)))))))).)))..))))))))..((.....)))))..)))))).))))..).)))).))))).))))..))).)))).)))..)))))))))))))))))))))))))).)).)))..... (-114.70)
+>osa-MIR159b MI0001093 Oryza sativa miR159b stem-loop
+GGUUAUGAAGUGGAGCUCCUUUCGUUCCAAUGAAAGGUUUAUCUGAAGGGUGAUACAGCUGCUUGUUCAUGGUUCCCACUAUUCUAUCUCAUAGGAAAAGAGAUAGGCUUGUGGUUUGCAUGACCAAGGAGCCGAAUCAACUCCUUGCUGACCACUCUUUGGAUUGAAGGGAGCUCUGCAUCUUGAUC
+(((((.((.(..((((((((((((.(((((.((..((((......(((((((((.(.(((.((((.(((((....((((...((((((((.........))))))))...))))....))))).)))).))).).))).)).))))...))))..)).))))).))))))))))))..).)).))))) (-79.30)
+>osa-MIR159c MI0001094 Oryza sativa miR159c stem-loop
+GAGGAGGAAGAGGAGCUCCUUUCGAUCCAAUUCAGGAGAGGAAGUGGUAGGAUGCAGCUGCCGAUUCAUGGAUACCUCUGGAGUGCAUGGCAGCAAUGCUGUAGGCCUGCACUUGCAUGGGUUUGCAUGACCCGGGAGAUGAACCCACCAUUGUCUUCCUCUAUUGAUUGGAUUGAAGGGAGCUCCACAUCUCUCUC
+(((..(((.(.((((((((((((((((((((.(((.((((((((((((.((...((.((.(((..(((((.(.((((.(((((((((.(((.(((....)))..)))))))))).)).)))).).)))))..))).)).))..)).))))....)))))))).))))))))))))))))))))))).).)))..))) (-103.10)
+>osa-MIR159d MI0001095 Oryza sativa miR159d stem-loop
+UGAUGUGAGGAGGAGCUCCUUUCGAUCCAAUUCAGGAGAGGAAGUGGUGGGAUGCAGCUGCCGGUUCAUGGAUACCUCUGCAGUUCAUGCCGGUAGGCCUGCACUUGCAUGGGUUUGCAUGACCUGGGAGAUGAACCUGCCAUUGUGUUCCUCUAUUGAUUGGAUUGAAGGGAGCUCCGGCUACACCUA
+....(((((..((((((((((((((((((((.(((.(((((((((((..((...((.((.((((.(((((.(.((((.((((((.((.(((....))).)).)).)))).)))).).))))).)))).)).))..))..))))....))))))).)))))))))))))))))))))))..)).)))... (-100.10)
+>osa-MIR159e MI0001096 Oryza sativa miR159e stem-loop
+GAUGAAGAAGAAGAGCUCCCUUUCGAUCCAAUUCAGGAGAGGAAGUGGUAGGAUGCAGCUGCCGGUUCAUGGAUACCUCUGGAGUGCAGGGCAAAUAGUCCUACCCUUUCAUGGGUUUGCAUGACUCGGGAGAUGAACCCGCCAUUGUCUUCCUCUAUUGAUUGGAUUGAAGGGAGCUCCUCUAGCUACAU
+.(((.((.(((.((((((((((.(((((((((.(((.(((((((((((..((...((.((.(((..(((((.(.((((.(((((.(.(((((.....))))).).).)))).)))).).)))))..))).)).))..))..)))....)))))))).)))))))))))))))))))))).)))..)).))) (-89.20)
+>osa-MIR319a MI0001098 Oryza sativa miR319a stem-loop
+UGUGUAAGAAGAGAGCUCUCUUCAGUCCACUCUCAGAUGGCUGUAGGGUUUUAUUAGCUGCCGAAUCAUCCAUUCACCUACCAAGAAAGUUGCAGGAGUGUAUCUCUUGGUAGCGGACUGGAUGACGCGGGAGCUAAAAUUUAGCUCUGCGCCGUUUGUGGUUGGACUGAAGGGUGCUCCCUUGCUCAAGC
+((.(((((..(.((((.((((((((((((..(.((((((((.((((((((...((((((.(((..(((((((.((..(((((((((....((((....))))..)))))))))..)).)))))))..))).)))))).....)))))))))))))))).)..)))))))))))).)))))))))).))... (-101.50)
+>osa-MIR319b MI0001099 Oryza sativa miR319b stem-loop
+GAUGGAUGGAAGAGAGCGUCCUUCAGUCCACUCAUGGGCGGUGCUAGGGUCGAAUUAGCUGCCGACUCAUUCACCCACAUGCCAAGCAAGAAACGCUUGAGAUAGCGAAGCUUAGCAGAUGAGUGAAUGAAGCGGGAGGUAACGUUCCGAUCUCGCGCCGUCUUUGCUUGGACUGAAGGGUGCUCCCUCCUCCUCGA
+((.(((.(((.(.((((..(((((((((((..((.(((((((((..(((((((((((.((.(((..((((((((.((..(((.((((......((((......))))..)))).)))..)).))))))))..))).)).))..))).)))))).))))))))).))..)))))))))))..))))).)))))))).. (-99.20)
+>osa-MIR160e MI0001100 Oryza sativa miR160e stem-loop
+GUAGGGGAUAUGCCUGGCUCCCUGUAUGCCGCUCGCAUGGCUGCCAACCCAAUGAACUCGAUCUCGUUGUUGGCCGCUGCGUACGGCGUGCGAGGUGCCAAGCAUGGCCCUCUU
+...((((.(((((.((((.((.(((((((((..((((..((.((((((..(((((........))))))))))).))))))..))))))))).)).)))).))))).))))... (-59.10)
+>osa-MIR160f MI0001101 Oryza sativa miR160f stem-loop
+GGAUUAACGCUGCCUGGCUCCCUGAAUGCCAUCCGAGAAGCGUGCCGCUGUGGCCGGCUGCUUCCUGGUUGGCAUUGAGGGAGUCAUGCAGGGUUUGCUC
+((...(((.((((.(((((((((.(((((((.(((.((((((.(((((....).)))))))))).))).))))))).))))))))).)))).)))..)). (-60.40)
+>osa-MIR162b MI0001102 Oryza sativa miR162b stem-loop
+UGGGUGAUGCCUGGGCGCAGUGGUUUAUCGAUCUCUUCCCUGCCUUGUGCUGCUCCGAUCGAUGCCCGUGCUGAUUCUUGAUAAUAUACAACGCAGGAAUCGAUCGAUAAGCCUCUGCAUCCAGAUCUCACUUU
+.((((((...((((..((((.((((((((((((..((((.(((.(((((....((.(((((..((....)))))))...)).....))))).)))))))..)))))))))))).))))..))))...)))))). (-52.70)
+>osa-MIR164c MI0001103 Oryza sativa miR164c stem-loop
+AGGUUCUUGUUGGAGAAGCAGGGUACGUGCAAAAUGCACACCGGUUGGUCGAGCUAAUUAACAAGCUCUGACGACCAUGGUGAUCGAAUGCACGUGCUCCCCUUCUCCACCAUGGCCUU
+(((((..((.((((((((..(((((((((((.......(((((((((.(((((((........))))).)))))))..))))......)))))))))))..)))))))).)).))))). (-55.32)
+>osa-MIR164d MI0001104 Oryza sativa miR164d stem-loop
+CAAACCGUGCUGGAGAAGCAGGGCACGUGCUCGACGGCGGGGCUGGCUGGCCGGCCGGCUUGCAGCAUGUGCGCUCCUUCUCCAGCAUGGCUUC
+....((((((((((((((.((.(((((((((.....(((((.((((((....)))))))))))))))))))).)).)))))))))))))).... (-61.10)
+>osa-MIR164e MI0001105 Oryza sativa miR164e stem-loop
+UUGUGCAGGGUGGAGAAGCAGGGCACGUGAGCGGCCAUCCAGUGUAGCUUCGCUGCGCGUCCAUGGCGGCGAACGCGCGUGAUCUGGAGUUUGGAUGGUCGUUCAUGUGUCCGUCUUCUCCACCGAGCACUG
+..((((..((((((((((..((((((((((((((((((((((((((((...))))))).(((((.(((((....)).))).)..))))...)))))))))))))))))))))..))))))))))..)))).. (-83.10)
+>osa-MIR166k MI0001107 Oryza sativa miR166k stem-loop
+AUUAGGUUAAGGGGUUUGUUGUCUGGCUCGAGGCAUCCGGGACUCCGGUUUCUCCUUUCCUACUGGAGGCGCCUAAUUUCCGGCGAGCUCGGAGCCUCGGACCAGGCUUCAAUCCCUUUAACCAUGC
+....((((((((((.(((..((((((..((((((.((((((.(((((((............))))))).((((........))))..))))))))))))..))))))..))).)))))))))).... (-69.40)
+>osa-MIR166l MI0001108 Oryza sativa miR166l stem-loop
+GUUAGGUUAAGGGGAUUGUUGUCUGGUUCAAGGUCUCCACAUUGUGCAAAAUGUUCAUUCAUGGAGGCACAGGAUGCUUGGUGAUCUCGGACCAGGCUUCAAUCCCUUUAACCAGCA
+(((.((((((((((((((..(((((((((.(((((.(((((((((((...(((......)))....)))))..)))..))).))))).)))))))))..))))))))))))))))). (-59.40)
+>osa-MIR167d MI0001109 Oryza sativa miR167d stem-loop
+CAUUAGGAGCUGAAGCUGCCAGCAUGAUCUGAUGAGUGCUUAUUAGGUGAGGGCAGAAUUGACUGCCAAAACAAAGAUCAGAUCAUGCUGUGCAGUUUCAUCUGCUUGUG
+(((.((.((.(((((((((((((((((((((((....(((.....)))...(((((......))))).........)))))))))))))).))))))))).)).)).))) (-52.30)
+>osa-MIR167e MI0001110 Oryza sativa miR167e stem-loop
+UGUGAGAGAAUGAAGCUGCCAGCAUGAUCUGGUUGUCAGGCAUGAGCCAAAUCUAUCCAUGGUGUUGGUGGUACUGAAAUUACCGCGUUUUCGAGGUUUUUCGUCGUGUCAACUUGCGAAGGGAAUUACGGGUUCUUGAUGAGCAUUGGUGAUAGGAGGUGUGGGCUUGGUUAGUAGAGGUAGAAUUAUGAUUGUUCUUGUGAGUUUCAGUAAGAGGUGGGAGUGAUUGGAAUUUGGCUCCAUCAGAUCAUGUUGCAGCUUCACUCUCUCACC
+.((((((((.(((((((((.(((((((((((((((.....)).((((((((((((..(((...........(((((((((((((.(.....(.((((((..(.((.(((((...(((...((((((.....)))))).....)))....))))).)).)...)))))).)......).))).((((.......)))).....))))))))))..........)))..))).))))))))).)))))))))))))))))))))).)))))))). (-100.30)
+>osa-MIR167f MI0001111 Oryza sativa miR167f stem-loop
+CACAAGUGGAUGAAGCUGCCAGCAUGAUCUGAUCACAGUAGUUCUCUAGCUGAUGAUGAUUUACAAAACCUAGAGACAUGCAUCAGAUCAUCUGGCAGUUUCAUCUUCUCAUG
+((..((.(((((((((((((((.((((((((((....(((..(((((((.(..((........))..).)))))))..)))))))))))))))))))))))))))).))..)) (-50.00)
+>osa-MIR167g MI0001112 Oryza sativa miR167g stem-loop
+CAUAAGCAGGUGAAGCUGCCAGCAUGAUCUGAAAGCAUCUCAAACCAGCGAUCAGAUCAUCCGGCAGCUUCAUCUUCUCAUG
+(((.((.(((((((((((((.(.(((((((((..((...........))..)))))))))).))))))))))))).)).))) (-40.50)
+>osa-MIR167h MI0001113 Oryza sativa miR167h stem-loop
+CACAAGUUGGUGAAGCUGCCAGCAUGAUCUGAUGAUGAUGAUGAUCCACCUCUCUCAUCUGUGUUCUUGAUUAAUUACGGAUCAAUCGAUCAGGUCAUGCUGUAGUUUCAUCUGCUGGUU
+.((.(((.(((((((((((.(((((((((((((..((((..((((((.......(((..........)))........)))))))))))))))))))))))))))))))))).))).)). (-47.16)
+>osa-MIR167i MI0001114 Oryza sativa miR167i stem-loop
+UGUGAGAGGCUGAAGCUGCCAGCAUGAUCUGGUCCAUGAGUUGCACUGCUGAAUAUAUUGAAUUCAGCCAGGAGCUGCUACUGCAGUUCUGAUCUCGAUCUGCAUUCGUUGUUCUGAGCUAUGUAUGGAUUUGAUCGGUUUGAAGGCAUCCAUGUCUUUAAUUUCAUCGAUCAGAUCAUGUUGCAGCUUCACUCUCUCACU
+.(((((((..(((((((((.((((((((((((((.(((((.......(((((((.......)))))))..((((((((....))))))))((((..(((((((((..(((......))).))))..))))).))))...(((((((((....))))))))).))))).)))))))))))))))))))))))..))))))). (-90.70)
+>osa-MIR168b MI0001116 Oryza sativa miR168b stem-loop
+UGGUCUUGUGAGGCUUGGUGCAGCUCGGGAACUGUUCUUGAUGGACUGGCAGGAACUCCAUGUCCACCACUGCCACUCCUGUGUUGUGGCAUUCCUCCUUGCCGUU
+.(((...(.((((..((.((((((.(((((...((...((.((((((((.((...))))).))))).))..))...))))).)))))).))..)))))..)))... (-38.20)
+>osa-MIR169b MI0001117 Oryza sativa miR169b stem-loop
+GAACGGAAUGCAGCCAAGGAUGACUUGCCGGUACGUGUAUGCAUGUUUCAAGGUACUAUAUGUGCCCCCAACUGUUUUAGAUCCAUGCUGACAUUUUCCGGCAAGUUGUCCUUGGCUACGUCUUGUUC
+(((((..(((.(((((((((..(((((((((...((((..(((((..((..(((((.....)))))..(....).....))..)))))..))))...)))))))))..))))))))).)))..))))) (-63.40)
+>osa-MIR169c MI0001118 Oryza sativa miR169c stem-loop
+GAACGGGAUGCAGCCAAGGAUGACUUGCCGGCUCCUGGUAUUGGGGGAAUCUCAGCUUUGCUGAAGCGCCUUGGAGUUAGCCGGCAAGUCUGUCCUUGGCUACACCUAGCUC
+....(((.((.((((((((((((((((((((((.......((.((((....(((((...)))))....)))).))...)))))))))))).)))))))))).)))))..... (-56.70)
+>osa-MIR169d MI0001119 Oryza sativa miR169d stem-loop
+AUUUAUCGUGUAGCCAAGGAUGAAUUGCCGGCGUUUCACGCUGUUGAUGGUGCGUGCAUAUAUAAGUUGGCGCCGGCAAGUCAUUUCAGGCUACAUGUUUGCC
+......(((((((((..((((((.(((((((((((.(((((..........)))))............))))))))))).))))))..)))))))))...... (-46.02)
+>osa-MIR169e MI0001120 Oryza sativa miR169e stem-loop
+GCUGGUUGUGUAGCCAAGGAUGACUUGCCGGCCUGGUUUGUGUUCAUCAGCAAUCCAGCAUAUGCUGUAUUGCCGUGUGUGAUCGAUCGAUGCAUGGACCGGCAAGUUAUUUUCUUUGGCUACAUUACAACC
+...((((((((((((((((((((((((((((((((..(((...(((((((((((.((((....)))).)))))..)).)))).....)))..)).)).)))))))))))...)))))))))))...)))))) (-59.50)
+>osa-MIR169f MI0001121 Oryza sativa miR169f stem-loop
+GCUGAUUCGGUAGCCAAGGAUGACUUGCCUAAUGCCUAUGUGCAUGUGUUUAUACGCUGCUCAUCUGCAUUUUGAUUAUCCCCUGAUCAGUCCUGUCGUCAAUUAUAUGUGUGUGUAGUACUCUGUACUCAUACAUAUAUAGGCAUGUCUUCCUUGGCUAUUCGGAGCGG
+.(((.(((((((((((((((.(((.((((.(((((..(((.(((.((((....))))))).)))..)))))(((((((.....))))))).............((((((((((((.(((((...))))))))))))))))))))).))).)))))))))).))))).))) (-68.70)
+>osa-MIR169g MI0001122 Oryza sativa miR169g stem-loop
+CUGCCUCUGGUAGCCAAGGAUGACUUGCCUAUUGUGCUCUUCUGAAUGAUGCAGUGCCAUGAUCAGUGUGGCCUGGCUGGUUCAGAUGAGCCGAGAUAGGCAGUCUCCUUGGCUAGCCUGAGUGGC
+..(((.((((((((((((((.((((.(((((((..((((.(((((((.(.((((.(((((.......))))))).))).))))))).))))...)))))))))))))))))))).)))..)).))) (-67.40)
+>osa-MIR169h MI0001123 Oryza sativa miR169h stem-loop
+UUAGCUCUGGUAGCCAAGGAUGACUUGCCUGUGUCCUUGUGUGUAAGGAUCAUUAAUUAUUAUUCAGAAAAUGAUCCUUUCAGCAGGUUUCAUGGGCAGUCUCCUUGGCUAGCCUGAGUGAU
+...((((.((((((((((((.((((.(((((((..(((((.((.((((((((((...............)))))))))).)))))))...)))))))))))))))))))).))).))))... (-58.36)
+>osa-MIR169i MI0001124 Oryza sativa miR169i stem-loop
+GUAGCUCUGGUAGCCAAGGAUGACUUGCCUGUGUCCUUGUGUAGAGGAUCAUUCAGAAAAUGAGCCUUGAACUGGUUCAUAGGCAGUCUCCUUGGCUAGUCUGAGUCG
+...((((.((((((((((((.((((.(((((((..((.((...((((.(((((.....))))).))))..)).))..))))))))))))))))))))).)).)))).. (-52.20)
+>osa-MIR169j MI0001125 Oryza sativa miR169j stem-loop
+UCGCAUCUGGUAGCCAAGGAUGACUUGCCUGUGUCUCUGCUCAUGUGCAGUAGAAGAAGAUGCAUUUCUAGCUGCUUUCUGCAUAUGUGAUCUCACAGGCAGUCUCCUUGGCUAGCCUGAGCGGC
+((((.((.((((((((((((.((((.(((((((......(.(((((((((.((.((.(((......)))..)).))..))))))))).)....)))))))))))))))))))).))).)))))). (-61.50)
+>osa-MIR169k MI0001126 Oryza sativa miR169k stem-loop
+UCUGUCUAGAUAGCCAAGGAUGACUUGCCUGUGGCCUCUUGGAGAGAGAGGUGUAGCUUAAUUAGCAGCAUGGUUUGAGCAUUGCUUGAUCGGUUGAUCGCUUCGCUUGCUCUGCAUGAGAUCUUACAGGCAGUCUCCUUGGCUAGUCUGGGCGGC
+.(((((((((((((((((((.((((.(((((((..(((.((.((((..(((((.(((........((((.(((.(..(((...)))..))))))))...))).))))).)))).)).)))..)..))))))))))))))))))).)))))))))). (-73.70)
+>osa-MIR169l MI0001127 Oryza sativa miR169l stem-loop
+UUAUCUCUGAUAGCCAAGGAUGACUUGCCUGUGUCCUCCCUGAAGGAUUAGCAAUUUAAUGAUCCUUUAAGCUGGUUCAUGGGCAGUCUCCUUGGCUAGCCUGAGUGG
+....(((...((((((((((.((((.(((((((.((..(.((((((((((.........)))))))))).)..))..)))))))))))))))))))))....)))... (-49.60)
+>osa-MIR169m MI0001128 Oryza sativa miR169m stem-loop
+UGAGUCCUGGUAGCCAAGGAUGACUUGCCUGUAUAUUUAUAUAUAUAUGUGUGUGUGAUCAAUGGAUGGAUUGAUCAAGCUGCUUGCAGGCUCAUGCAUAUAUAUGUACAGGCAGUCUCCUUGGCUAGCCCGGCUACC
+..((.((.((((((((((((.((((.((((((((......(((((((((((((.(((((((((......)))))))..((.....))..)).)))))))))))))))))))))))))))))))))).))).))))... (-64.40)
+>osa-MIR169n MI0001129 Oryza sativa miR169n stem-loop
+CUCCCUUUGGUAGCCAAGAAUGACUUGCCUAUGUGUUUUGCCUUGUGUUGGCUCAUCCAUCCAUCUAUCAGCCGUUGCAGAUUUGCAGUGGCAGAUUAAAGGGUUUCAGAAAGAAAUUCUUGUGAUGGAUGUGCAAUGUGGCUGCAUGGGCCGGUCUUCUUGGCUAGCCAGAGUGGC
+..((((((((((((((((((.((((.((((((((.....(((.(((....((.((((((((.....(((.((((((((......)))))))).)))..(((((((((.....)))))))))..)))))))).)).))).))).)))))))).))))))))))))).))))))).)). (-82.80)
+>osa-MIR169p MI0001131 Oryza sativa miR169p stem-loop
+GAGCAAGGUGUAGCCAAGGACAAACUUGCCGGAUCAACAGAGAAGGACUGCCAGUCUCCGGCCAAUUAAUUAACCUCGCCGUCGGCCAUCGCCGGCCGGCAAGUCAUCCUUGGCUGCAUCCUGCUC
+(((((.((((((((((((((...(((((((((.......((((.((....))..))))((((...............)))).((((....)))).)))))))))..)))))))))))))).))))) (-62.16)
+>osa-MIR169q MI0001132 Oryza sativa miR169q stem-loop
+CCACUCAGGCUAGCCAAGGAGACUGCCCAUGAACCAGCUUAAAGGAUCAUUAAAUUGCUAAUCCUUCAGGGAGGACACAGGCAAGUCAUCCUUGGCUAUCAGAGAUAA
+...(((.((.(((((((((((((((((..((..((..(((.((((((((......))...)))))).)))..)).))..))).)))).)))))))))))).))).... (-40.20)
+>osa-MIR171b MI0001133 Oryza sativa miR171b stem-loop
+GCGACGACGGGAUAUUGGGGCGGUUCAAUCAGAAAGCUUGUGCUCCGGAAGCGAGGAGCUCUACUCUUUUGAUUGAGCCGUGCCAAUAUCACGUCGCAUC
+((((((....((((((((.(((((((((((((((((...(.(((((........))))).)..)).))))))))))))))).)))))))).))))))... (-56.30)
+>osa-MIR171c MI0001134 Oryza sativa miR171c stem-loop
+GUGGGAACGGGAUAUUGGUGCGGUUCAAUCAGAAAGCUUGUGCUCCGAAGGCGAGGGGCUCCACUCUUUGAUUGAGCCGUGCCAAUAUCACGUCGCCUU
+..((..(((.((((((((..(((((((((((((.((...(.(((((........))))).)..)).)))))))))))))..)))))))).)))..)).. (-51.50)
+>osa-MIR171d MI0001135 Oryza sativa miR171d stem-loop
+UUGUAGCUAUGAUGUUGGCCCGGCUCACUCAGAUGGAUCAUCGGUGCAGAAGAGUGCAUGAAUCUGAUGCAGUCUCAGUGUAGUAUGCUCCAUGCUGGAACUUCUGAUUGAGCCGUGCCAAUAUCUCAGCACCAU
+.....(((..(((((((((.(((((((.(((((((((.(((.(.((((..(((.(((((.......))))).)))...)))).)))).))))..........))))).))))))).)))))))))..)))..... (-56.20)
+>osa-MIR171e MI0001136 Oryza sativa miR171e stem-loop
+UGGUAGCUAUGAUGUUGGCUCGGCUCACUCAGACGGCAUUGGCGUGAUGCAAAGCAUGCAUGCGUGCUUGCUAGCUCACUUGUGUUUCUGAUUGAGCCGUGCCAAUAUCUUAGUGCUCU
+.((((.(((.(((((((((.(((((((.(((((.(((((....((((.((.(((((((....)))))))....))))))..)))))))))).))))))).))))))))).))))))).. (-58.90)
+>osa-MIR171f MI0001137 Oryza sativa miR171f stem-loop
+GGGAGAGUGCGAUGUUGGCAUGGUUCAAUCAAACCGGGCAAACUUAUGCACUAGCUAAGCAAGAUGCAGGGAUAUGCAGUAUGGUUUUGUUUGGUCUGAUUGAGCCGUGCCAAUAUCACAAGCUUGC
+(.(((..((.(((((((((((((((((((((.((((((((((.((((((....((...))....((((......)))))))))).)))))))))).))))))))))))))))))))).))..))).) (-62.10)
+>osa-MIR171g MI0001138 Oryza sativa miR171g stem-loop
+GACAUGGCAUGGUAUUGACUUGGCUCAUCUCAGCAACAGCAAACUGCAUGCAGCGCUGGAGGUGAGCCGAGCCAAUAUCACUUCAUGUC
+(((((((..((((((((.(((((((((((((.....((((...(((....))).))))))))))))))))).))))))))..))))))) (-46.60)
+>osa-MIR172a MI0001139 Oryza sativa miR172a stem-loop
+GUGUUUGCGGGCGUGGCAUCAUCAAGAUUCACAUCCAUGCAUAUAUCACAAGACGCACAUAUACAUCCGAUUUGGCUGAGAAUCUUGAUGAUGCUGCAUCCGCAGACAA
+.(((((((((..(..(((((((((((((((.((.((((((..............)))...............))).)).)))))))))))))))..)..))))))))). (-49.20)
+>osa-MIR172b MI0001140 Oryza sativa miR172b stem-loop
+GUGAUUUCUGACGUGGCAUCAUCAAGAUUCACACAUUACAUUGCAUGCAUGCAUAUGUCUAUGCAUCUUUGAGCUUGUUGUUCUGAUCUCAACAACCUAGCUAGCUAAUAUUUCUCUCCUGGCCCUGACCUGCAUGAUGCAUGGUUGCACGCAUGGAGAGAGAAGAGAGAGAUCGAAGCUAAUUAAACGCAUGUGUAUAUAUGUGUGGGAAUCUUGAUGAUGCUGCAUCGGAAAUUAA
+.((((((((((.(..(((((((((((((((((((((.....(((((((.((((((....))))))......(((((.......(((((((.......(((....)))...(((((((((..((..((((((((.....))).)))))...))..))))))))).....))))))))))))........))))))).....))))))..)))))))))))))))..).)))))))))). (-96.81)
+>osa-MIR172c MI0001141 Oryza sativa miR172c stem-loop
+CUUGUUGCGGGUGCAGCGUCAUCAAGAUUCACGUGUGCCGCACGGCACACGUAUCGGUUUUCAAGUGUAGUCAUCGUGCGUGAAUCUUGAUGAUGCUGCACCAGCAAAGAG
+(((.((((.((((((((((((((((((((((((((((((....)))))................(((....)))...))))))))))))))))))))))))).)))).))) (-61.70)
+>osa-MIR166g MI0001142 Oryza sativa miR166g stem-loop
+AGCAUGGUGUCUGGAAUGGAGGCUGAUCCAAGAUCAUUGCUUGGUGCAAAAUACUAGGGCAUUGUUGUAAGUGCCAUUAGUUCUUUUUUGUUUCCGAGUUUGUUAUCGAGGAUCUCGGACCAGGCUUCAUUCCUCACACCGUGCU
+((((((((((..(((((((((.(((.(((.(((((...((((((.((((((.(((((((((((......)))))).)))))....))))))..))))))(((....))).))))).))).))).)))))))))..)))))))))) (-70.60)
+>osa-MIR166h MI0001143 Oryza sativa miR166h stem-loop
+GGUGGCUUGUGGGGAAUGUUGGCUGGCUCGAGGUAUCCACAUCUUAAUUCCUCUCCGGCGAUCGAGCCGGCUCGGGCGUGUGGAAGCGUCGGACCAGGCUUCAUUCCUCGCAAGCCGAU
+..((((((((((((((((..(.((((..(((.((.(((((((......(((...(((((......)))))...))).))))))).)).)))..)))).)..)))))))))))))))).. (-67.50)
+>osa-MIR166i MI0001144 Oryza sativa miR166i stem-loop
+AGAUAGGUGUUUGGAAUGCAGUUUGAUCCAAGAUCUGCCUAUAUAUAUGGUGUGUAUAUCAUAUCUUGUGAUAUGGGGGAUAUGCAACAGGUGUGUGACAGGGGUAGGUAGAUCUCGGAUCAGGCUUCAUUCCUCACACCAAUAC
+.....(((((..((((((.((((((((((.((((((((((((((((((.((((((((.(((((((....)))))))...)))))).))..)))))).......)))))))))))).)))))))))).))))))..)))))..... (-66.31)
+>osa-MIR171h MI0001147 Oryza sativa miR171h stem-loop
+AGAAGAAGAGGACAUGGUUUGGUAUUGUUUCGGCUCAUGUCGUUCACACAGAUGUGAGCCGAACCAAUAUCACUCAUGUAUUCUUCAUUCAGAGAACUUCU
+.(((((((((.((((((..((((((((.(((((((((((((.........))))))))))))).)))))))).)))))).)))))).)))........... (-44.50)
+>osa-MIR393b MI0001148 Oryza sativa miR393b stem-loop
+UCGGCCUGAGGAAACUAGUGGAGGACUCCAAAGGGAUCGCAUUGAUCUGGCUAGCUAUCUCGAUCGAUCGCCUCAUCGAUCGACGACGACGUGCGUGAUCGAUCAGUGCAAUCCCUUUGGAAUUUUCCUCUU
+........((....)).(.((((((.(((((((((((.(((((((((.(..((((..(((((.(((((((......)))))))))).))...)).))..)))))))))).))))))))))).)))))).).. (-58.50)
+>osa-MIR408 MI0001149 Oryza sativa miR408 stem-loop
+GGGAGUUCUGUGAUUGGAGAGGAGAGGAGACAGGGAUGAGGCAGAGCAUGGGAUGGGGCUAUCAACAGAUGUAGAUUAUUCCUUGCACAAGAGAUGAUGAUGAGCUGUGAAUGAGUUCUGAGAGAUGGCUGGUGUUGUUGUUGCUCCCUCCCCUGCACUGCCUCUUCCCUGGCUCCCCUGCACACCUCUCUCUCUCUCUCUCUCUCUCUGUGU
+(((((....(.((..((((((((((((...((((((.(((((((.(((.((((.(((((...((((((......(((((..(((....)))..))))).((.((((((...(.(....).)...)))))).)).))))))..))))).)))).))).))))))).))))))((......))...)))))).)))))).)).).)))))..... (-90.00)
+>osa-MIR172d MI0001154 Oryza sativa miR172d stem-loop
+AAACAGUCGGUGCUUGCAGGUGCAGCACCAUCAAGAUUCACAUCGAGUUCAUCCCUAAACGAGAUCGAGGUUGGCUGACUAUAUGUGAUGAGAAUCUUGAUGAUGCUGCAUCAGCAAACGCUCGACUACU
+....((((((((.((((.(((((((((.(((((((((((.((((((((.((.((.....((....)).....)).))))).....))))).))))))))))).))))))))).)))).))).)))))... (-56.90)
+>osa-MIR171i MI0001155 Oryza sativa miR171i stem-loop
+UAAAAAGAGGUAUUGGCGUGCCUCAAUCCGAAGGCAUGGCUGAUUACAGGCACCUCGACCGAUCUAGCGCAUGCAGCCAUGUUUCUUGGAUUGAGCCGCGUCAAUAUCUCUCCUUGCUUC
+.....(((((((((((((((.(((((((((((((((((((((.......((..((.((....)).)).))...))))))))))).)))))))))).)))))))))))))))......... (-55.40)
+>osa-MIR167j MI0001156 Oryza sativa miR167j stem-loop
+UUGUGAUGUGUGCACCUUAAGCAGCUGAAGCUGCCAGCAUGAUCUGAUCUUUUGCGAUCUCUUUUUUUAUCUGAAUAAGUUGAUGGAAAUAUUGGGUUCCUAAGAUUCAGAUCGUGCUGCGCAGUUUCAUCUGCUAAUCGAUGCACUACACUGUGAAUUU
+(..(..(((((((((..(.(((((.((((((((((((((((((((((((((..(.((.(((..((((((((..........))))))))....))).))).)))).))))))))))))).))))))))).))))).)..).))))).)))..)..).... (-65.50)
+>osa-MIR166m MI0001157 Oryza sativa miR166m stem-loop
+CUCUGCUUUGGUGGUUGGCUGAUGUUCUCGGUUAAGGGGUUUGUUGUCUGGUUCAAGGCCUCCUGCUGUCCUACAUCACAUUUUUUUUUCUUUGUUCUGAAUUUCUGAUGGAUGUGUGUGUGCAUGAUGCAUGGCUGGUGGUGACCUCGGACCAGGCUUCAUUCCCUUUAACCAGCAUUUGCGUUAAUACCAUCAGGCAU
+...(((((.((((((..((.((((((...((((((((((..((..(((((((((.(((((.((.(((....((((((.((((.....(((........))).....))))))))))...((((.....))))))).)).))...))).)))))))))..))..)))))))))))))))).))......))))))))))). (-76.70)
+>osa-MIR166n MI0001158 Oryza sativa miR166n stem-loop
+UGAUCCAUGGCUGUUGAGAGGAAUGACGUCCGGUCUGAAGAUCGCCGUCCCCAGGCGGUGGCUUCGGACCAGGCUUCAUUCCCCAUGACUCAUGGAACCC
+...(((((((..((((.(.(((((((.(((.(((((((((.((((((((....))))))))))))))))).))).))))))).).))))))))))).... (-52.30)
+>osa-MIR164f MI0001159 Oryza sativa miR164f stem-loop
+UGAGGAUGGCGAGGCGCGCGAGGUGGAGAAGCAGGGCACGUGCAUUCCUAGAGCUUCCGUCCAGCUCCCCGGCGGGCUAGCUAGCUCACUCCGCCGCCGCCGCCGCCGCCGCCGGCGCGCGCACGGCUGGCUGGCUCCGGCCGGCUGAGAUGCAUGCACGGAUGCAUGUGCCCUUCUUCUCCACCGUGCACGCCUCGCCUGCAGCAAGGA
+((..(..(((((((((.(((.((((((((((.(((((((((((((((...(.((...(((((((((..((((..((((((((((((.....(((((((((.((....)).).))))).)))...))))))))))))))))..))))).))))...)).)))))))))))))))).)))))))))).))).)))))))))..)..)).... (-131.10)
+>osa-MIR413 MI0001433 Oryza sativa MIR413 stem-loop
+ACGGCUAGUUUCACUUGUUCUGCACAUGUGGAAAACAGUUAGCACUCUAUCUGAGUCGUAAUCCCAAGCAUUAUUACAGAAAAAUAAAAGUGCAUUACAAAGAAGUCAGACAU
+..(.((..((((..((((..(((((.(((.....)))....((((((.....)))).))..............................)))))..)))).))))..)).).. (-19.80)
+>osa-MIR414 MI0001434 Oryza sativa MIR414 stem-loop
+GUUGCCGCUGCCGUCAUCCUCAUCAUCAUCGUCCUUGCAUGAAACCGCCAGCAAAUCCUUGCGCGGGGGGAGGGGGAAGGGGAGGGGGAGGGGUCGGAGGGGCGGC
+((((((.((.(((.(.(((((.((..(.((.(((((.(......((((..((((....)))))))).).))))).)).)..)).)))))...).))))).)))))) (-46.50)
+>osa-MIR415 MI0001435 Oryza sativa MIR415 stem-loop
+AGAGAGUUUUACAGAGCAGAAACAGAACAGAAGCAGAGCAGCUGUGUAUACACAACACUGCAACUAUCCCUAUCACUGAGGGACAAAGCAGAAACCAGCUGAGCUCUCCUUGGCUGUCUGUACAAGCAAAGCAAAAGCUUCAAG
+.....(((((........)))))......(((((...((((.((((....))))...)))).....(((((.......)))))....(((((...((((..((.....))..)))))))))...............)))))... (-38.80)
+>osa-MIR416 MI0001436 Oryza sativa MIR416 stem-loop
+GAUGAGGAGUAUGAAUAGAAAGAAUUAGAAAAGCUACGGUGGUUGUUGAGCAGCGCCAAAAAAAACUCUGCUUUGCUCUGUUUCUGUGUUCGUCCGUACACUGUUCAUC
+((((((.((((((((((...((((.(((((((((...(((..((.(((.((...))))).))..)))..)))))..)))).)))).)))))))......))).)))))) (-27.00)
+>osa-MIR417 MI0001437 Oryza sativa MIR417 stem-loop
+UUUGGUACAAAUUUGAAUUCUUAAAUCUCUUAUAUUAUGAUAUGAAUGUAGUGAAUUUGUUCCAUG
+..(((.(((((((((.((((....(((...........)))..))))....))))))))).))).. (-11.50)
+>osa-MIR418 MI0001438 Oryza sativa MIR418 stem-loop
+CGUUAGCUGUCUGCAAUCUGCCAUUCUUAUCAUCGCACAUUUAAUGUGAUGAUGAAAUGACGCAUUUCUGUCAAGUCUCACC
+.((.((((....(((...(((((((.(((((((((((.......)))))))))))))))..)))....)))..)).)).)). (-18.10)
+>osa-MIR419 MI0001439 Oryza sativa MIR419 stem-loop
+UCUUCUCUGUUCUCUGUGAUGAAUGCUGACGAUGUUGUAGAUGUGAACUUUUUUUUUCUCUGUUGUCUAUGAUGAAUGCUUGUUGUCCUGGAGAUAUUGUAGA
+...((((...((((((.((..(..((.......((..((((((.(((........))).....))))))..))....))...)..)).))))))....).))) (-16.80)
+>osa-MIR420 MI0001440 Oryza sativa MIR420 stem-loop
+UUCCAACUAAAUUAAUCACGGAAAUGAUCUUUGAAUUGUUAAAAAUACUUCCAAUGCUCAAAUAAUUCCAAGAAAAAUCUUGAAAAUACUUGGACACUCAAAGUACUUAACAAAAUUAUAAUUAGACCAUUUAAUGAUUAAUUUAAUAUGUGGGU
+.((((..(((((((((((...(((((.(((.(((.(((((((...(((((....((..(((.((.((.(((((....))))).)).)).)))..))....))))).)))))))..))).....))).)))))..))))))))))).....)))). (-29.80)
+>osa-MIR426 MI0001442 Oryza sativa miR426 stem-loop
+UCGCAUUUUUGGAAGUUUGUCCUUACGAAAAGGCUAGCAAAAUUUAGUGAGGCAAUGAAUGAAAAGACAUCUAGCGAUACUAAAAUUAAAAUUUGAUAACCCUAAAAUGUGUCAAACUUUGGCAUUUCGUGAAAAUCCUUCAAUGCGA
+(((((((....((((..(....((((((((..(((((.....(((((((..((.(((..(....)..)))...))..))))))).......(((((((...........)))))))..))))).))))))))..)..))))))))))) (-30.90)
+>osa-MIR435 MI0001687 Oryza sativa miR435 stem-loop
+UUCCACCUUCCCAAAAACUCCCCAGCAGACCUGGAGCGAAAAUUGCCUUGAAUUAGCUUCAGACCUAUAGUGUCGUUGAUAGUUUAGGGACAUGUUUUAUCCGGUAUUGGAGUUGAGGGAUGAAAAUUGGAC
+.((((...((((...((((((.......(((.(((...(((((((((((((((((......((((....).))).....)))))))))).)).))))).))))))...))))))..)))).......)))). (-38.30)
+>osa-MIR437 MI0001688 Oryza sativa miR437 stem-loop
+CCCUCUGUUUCAUAUUGUAUUGUGUUUUAGUUUUGUUGUAAGUCAAAAUUCUUUUACUUUGACCAAGUUUGUAGUAAAAUAAUUAACAUCUAAAAUACCAAAUAAAUACACUAUUGAGACAUAUUUCUUGGUUGAUUUUUCUAUAAACUUGGUCAAAGUUAGAGAAGUUUGACUUAGGACAAAACUAAACACCUUAUGAUAUGGAACAGAGGG
+(((((((((((((((..((..((((((.(((((((((.(((((((((.((((((.(((((((((((((((((((.(((((................(((((..(((((..((....))...))))).)))))..))))).))))))))))))))))))).)))))).))))))))).)))))))))))))))..))..))))))))))))))) (-96.07)
+>osa-MIR438 MI0001689 Oryza sativa miR438 stem-loop
+AACGUGUUUUGGGCAAACUUGUUUUCCCACGCGUUAUAGUGAAAACUUUUGGAAUAUGUUUGUUAUGGGAGUAUAUAUUAUUGAUAUUGGAUCUAGAAGCAUAAUUUUAUAUAACGUGUGUUACGGGUGGACAUGGUUUCAAAAGUUUUCACUUUAACGCGUGGGAUAUCAUCUACUUCCUCCGUU
+((((.(....(((......((...((((((((((((.(((((((((((((((((((((((..((...(((....(((((...)))))....)))...((((((..((.....))..))))))...))..))))).)))))))))))))))))).))))))))))))...))......))).))))) (-61.60)
+>osa-MIR390 MI0001690 Oryza sativa miR390 stem-loop
+GGUAUGGAACAAUCCUUGAAGCUCAGGAGGGAUAGCGCCUCGAAAUCAAACUAGGCGCUAUCUAUCCUGAGCUCCAUGGUUUGUUCUUACC
+((((.(((((((.((.((.(((((((((.(((((((((((.(........).))))))))))).))))))))).)).)).))))))))))) (-52.60)
+>osa-MIR439i MI0001699 Oryza sativa miR439i stem-loop
+CACCUACCCUGUCGAACUGACGCAGUUCGACAUGUACCUGUCGAACUGUGGUUGUUCGAUAGGUAUCCCUGUCGAACCGCGGUUGUUCGACAGGGUGCUAAAC
+....(((((((((((((...(((.((((((((.(((((((((((((.......)))))))))))))...)))))))).)))...)))))))))))))...... (-61.40)
+>osa-MIR439j MI0001700 Oryza sativa miR439j stem-loop
+GCAGGGACAUAUCCAACGGGCAGUGUUCGAUAGGGGCGUGGCUACAGUGACACUACAAUGUUUUUUUCUAUUUUUAAAAUUAUUUAAUCACAUGUCGAACCGCGGUUGUUCGAUAGGUACCCUGU
+((((((((.((((.(((((.(.(.((((((((..((.((.((....)).)).))...................(((((....))))).....)))))))))..).))))).)))).)).)))))) (-33.10)
+>osa-MIR440 MI0001701 Oryza sativa miR440 stem-loop
+AUUGCUAUUGUUGGUGCUGGGCUCGUCCUGAUCACUAGGAGACUCUGAUCAAGCUAGGCCUAAACUUAUGUAUUAGUGUCUCCUGAUGAUCGGGACAAGGCUAACACCGAUGAGAGCGAU
+((((((.(..((((((.(((.((.((((((((((.((((((((.(((((...((((((......)))).))))))).)))))))).)))))))))).)).))).))))))..).)))))) (-60.30)
+>osa-MIR396e MI0001703 Oryza sativa miR396e stem-loop
+GCGGGCAUGCUUUCCACAGGCUUUCUUGAACUGUGAACUCGUGGGGGUGUAUGUGCUCAUGUUGGGAUUGUGGUCGGUGGCCUCCAAUUCUCUGAAAAGAAAGCUGAAUUGUCGAGCUCCCCGUUCUGUCUUUGGUCGUCUCUACCUGUUGAUGGUUCAAGAAAGCCCAUGGAAACCAUGCCGC
+((((.((((.((((((..((((((((((((((((.(((..((((((..(((((....))))..(((((...(..(((.((.((((((((((((....))).....))))))..)))..)))))..).)))))....)..))))))..))).))))))))))))))))..)))))).)))))))) (-74.90)
+>osa-MIR441a MI0001704 Oryza sativa miR441a stem-loop
+AAAAUAUAUUAAUUGGUACUUUCUCUAUUUAACAAUGUAAGUCAUUUUAGCAUUUCACACAUUCAUAUUGAUCUAGAUUCAUUACCAUCAAUAUAAAUGUGGGAAAUGCUAAAAUGACUUACAUUGUGAAACGGAGGGAGUAGUAAUUCAAAA
+..........(((((.((((..(((..(((.(((((((((((((((((((((((((.((((((.((((((((..............)))))))).)))))).))))))))))))))))))))))))).)))..)))..)))).)))))..... (-67.84)
+>osa-MIR441b MI0001705 Oryza sativa miR441b stem-loop
+UUAUCACCACUGACAUACUUCCUCCGUUUCACAAUGUAAGUCAUUUUAGUAAUUUUCAUAUUCAUAUUGAUGUUAAUGAAUCUAGACUCAUGUACCAUCAAUAUAAAUGUGGGAAAUGGUAGAAUGACUUACAUUAUGAAACAUAGGGAGCA
+.................((((((..((((((.((((((((((((((((.((.((..((((((.(((((((((...((((........))))....))))))))).))))))..)).)).)))))))))))))))).))))))..)))))).. (-57.60)
+>osa-MIR441c MI0001706 Oryza sativa miR441c stem-loop
+UACUUCCUCUGUUUCAUAAUGUAAGUCAUUUUAGCAUUUUUCAUAUUUAUAUUGAUGGUAAUGAAUCUAGAUAGAUAUAUAUGUCUAGAUUCAUUACCAUCAAUAUAAAUGUGGGAAAUGCUAGAAUAACUUACAUUGUGAAACGGAGGAAGUA
+((((((((((((((((((((((((((.((((((((((((..((((((((((((((((((((((((((((((((........))))))))))))))))))))))))))))))))..)))))))))))).)))))))))))))))))))))))))) (-105.20)
+>osa-MIR442 MI0001707 Oryza sativa miR442 stem-loop
+CACAUAUAUGGAGUAUUAAAUAUAAAUGAAAAAAAUAACUAAUUAUACAGAUGACGUGUAAAUUGCGAGACGAAUCUUUUAAGCCUAAUUGCUCCAUGAUCUGACAAUGUGGUGCUACAGUAAACAUUUGCUAAUGACGGAUUAAUUAGGCUUAAUAAAUUCGUCUCGCAGUUUACAGACGGAUUCUGUAAUUUGUUUUGUUAUUAGUCUACGUUAAAUACUUCAAAUGUGUG
+(((((((.(((((((((.(((......((....((((((.(((..((((((...(((((((((((((((((((((...(((((((((((((.(((.(.((..(..(((((..(((....))).)))))..)..)).).))).)))))))))))))...))))))))))))))))))..)))...))))))....)))..))))))..))...))).))))))))).))))))) (-83.60)
+>osa-MIR443 MI0001708 Oryza sativa miR443 stem-loop
+CGUCCCAUAAAAACAAACCCAAAACUAGAUGUGAUAUAUCACAAUACAAUAAAUCUGGAUAGGAGUCUAUCCAGAUACUUCUAUCUAGAUUUAUUGUACUGGGAUAUGUCACAUAUAUUCAGUUUUAUAUUUGUUUUUUUUUUGGACG
+(((((...(((((((((...((((((..((((((((((((.((.((((((((((((((((((((((((....)))..))))))))))))))))))))).)).))))))))))))......))))))...))))))))).....))))) (-61.00)
+>osa-MIR445d MI0001712 Oryza sativa miR445d stem-loop
+UGGCCAAAAUUUAGUCCCUGUCACAUCAGAUGUUAUGACACUAAUUAAAAGUAUUAAACAUAGACUAAUGACAAACCCCAUUCCAUAACCCUGGAUUAAUUCGCGAGAUGAAUCUAUUGAGUCUAAUUAAUCAAUGAUUAGCCUAUGUGAUGCUACACUAAACAUGUGUUAAUUAUGGAUUAAUUAGGCUUAAAAAUUUUGUCUCACGAAUUAGCUCUCAUUUAUGCAAUUAUUAGUUUUGUAAGUAGUUUAUGUUUAAUAUCUAAAUUAGUGUAUAAACAUCCGAUGUGAUAGGGACUAAAGUUGGAUCCA
+.((((((..((((((((((((((((((.((((((...(((((((((....(((((((((((((((((...(((((.(..(((.(((((....(..((((((((.((((..((....((((((((((((((((.(((((((((.(((((.............))))).))))))))).))))))))))))))))....))..)))).))))))))..)....))))).))).....).)))))...)))))))))))))))))...)))))))))...)))))).)))))))))))))))))).))))..)). (-126.72)
+>osa-MIR445f MI0001714 Oryza sativa miR445f stem-loop
+AGAUGGGGCUAAAACUUUUUAGUCCGUGUCACAUCGAAUGUUUGACGCUAAUUUGGAGUAUUAAACAUAGACUAAUAAAAAAACUAAUUUCAUAAAUGAAAGCUAAUCUGCGGGACGAAUUUUUUAAGCCUAAUUAAUCCAUAAUUAUGAAAAGUUUACUAAUCAUGGUGUAAUUAGACUCAAAAGAUUCGUCUCGCGAAUUAGUCCAAGGUUAUAGAAUAGGUUUUAUAAUUAGUGUAUGUUUAAUACUCUAAAUUAGUGUAUAAACAUCCGAUGUGACAGGGACUUAAAAUAAGUCCCUGUUU
+....((((((.....((((.(((((.((((((((((.((((((((((((((((((((((((((((((((.((((((.(.((((((.(((..((((......((((((.(((((((((((((((((.((.(((((((..((((.(((((((.....))).)))).))))..))))))).)).))))))))))))))))).))))))......))))..))).)))))).).)))))).))))))))))))))))))))))))).))))))).)))))))))).))))).))))..))))))..... (-134.00)
+>osa-MIR445i MI0001717 Oryza sativa miR445i stem-loop
+ACUUUUUAGUCCGUGUCACAUCGAAUGUUUGACGCUAAUUUAGAGUAUUAAAUAUAGACUAAUAAAAAAACUAAUUUCAUAAAUGAAAGCUAAUCUGUGAGAUGAAUUUUUAAGCCUAAUUAAUCCAUAAUUAAAAGAUUCGUCUCGCGAAUUAGUCCAAGGUUAUAGAAUAGGUUUUAUAAUUAGUGUAUGUUUAAUACUUUAAAUUAGUGUAUAAACAUCCGAUGUGACAGGGACUUUAAGU
+((((...(((((.((((((((((.((((((((((((((((((((((((((((((((.((((((.(.((((((.(((..((((......((((((.((((((((((((((((.....((((((.....)))))))))))))))))))))).))))))......))))..))).)))))).).)))))).))))))))))))))))))))))))).))))))).)))))))))).)))))..)))) (-105.70)
+>osa-MIR446 MI0001718 Oryza sativa miR446 stem-loop
+AAAUAUGUACUUCCUUUGUUUCACAGUGUAAGUCAUUAUAAAAUUUCCCACAUUUAUAUUGAUGUUAAUGAAUCUAUAUAGAUAUAUAUGUCUAGAUUUAUUAACAUCAAUAUGAAUAUGGGAAAUGGUAGAAUAACUUACAUUGUGAAACGGAGGGAGUAUAUAGAACUUGAAC
+...((((((((((((((((((((((((((((((.(((.((..((((((((.(((((((((((((((((((((((((.(((........))).))))))))))))))))))))))))).))))))))..)).))).)))))))))))))))))))))))))))))).......... (-88.80)
+>osa-MIR444 MI0001719 Oryza sativa miR444 stem-loop
+AUGCAAUUGGGGGCAGCAAGCUAGAGGUGGCAACUGCAUAAUUUGCAAGAAAUUGUUGGCUGAAGAUCAUACCGAUGAUAUUCUUGCAAGUUAUGCAGUUGCUGCCUCAAGCUUGCUGCCUCCUGUUGCCA
+..(((((.((((((((((((((.((((..((((((((((((((((((((((((..((((.((.....))..))))..)).))))))))))))))))))))))..)))).)))))))))))))).))))).. (-90.80)
+>osa-MIR528 MI0003201 Oryza sativa MIR528 stem-loop
+AGUGGAAGGGGCAUGCAGAGGAGCAGGAGAUUCAGUUUGAAGCUGGACUUCACUUUUGCCUCUCUCUCCUGUGCUUGCCUCUUCCAUU
+(((((((((((((.(((.(((((..(((((..(((..(((((.....)))))...)))..)))))))))).))).))))))))))))) (-46.20)
+>osa-MIR529 MI0003202 Oryza sativa MIR529 stem-loop
+GAAGAAGAGAGAGAGUACAGCCUUAGUUCAGAUCACAUAUGACUAUCUUUUGCGAGUCUGAUCGAUACUCUGAUGAAGGCUGUACCCUCUCUCUUCUUC
+(((((((((((((.((((((((((...(((((........((((..(....)..))))..........)))))..)))))))))).))))))))))))) (-47.77)
+>osa-MIR530 MI0003203 Oryza sativa MIR530 stem-loop
+UGCAUUUGCACCUGCACCUACAGAGAGGAAGAUGAAGCAGCAAGCUAGCAAUACGUGCUUGAUCGCUAUACGCUAGCUUCUUGCACACAAUGUUGUUCCUGGUCUCUUCCUGAUCCCUAGGUGCAGAGGCAGAUGCAACUAUGUCAUAGA
+(((((((((..(((((((((..((.(((((((.((.((((.((((((((.(((.(((......))))))..)))))))).))))..(((....)))......)))))))))..))..)))))))))..)))))))))............. (-61.30)
+>osa-MIR531 MI0003204 Oryza sativa MIR531 stem-loop
+GGCGCCGCCGAGCCUUGCUCGCCGGGGCUGCGUGCCGCCAUAGCUGGCGCGCAUCCCCGUCGAGCGUUGCUCGACGGUGCC
+(((((((.(((((..((((((.(((((.((((((((((....)).)))))))).))))).))))))..))))).))))))) (-63.60)
+>osa-MIR535 MI0003505 Oryza sativa MIR535 stem-loop
+GGCGGUGACAACGAGAGAGAGCACGCCGGUGCGGCGGUCACGGUGAGCCGGCCCGCGGCGGCGUACCUGCGUGCUUUCUCCCGUUGUCACUGCC
+(((((((((((((.((((((((((((.((((((((((.(.(((....)))).)))).....)))))).)))))))))))).))))))))))))) (-68.30)
+>osa-MIR395v MI0005090 Oryza sativa MIR395v stem-loop
+GAAUUCUCUUUAAGCACUUCAUACGACACAAUUAUUUCAAGGGUUGUUGUGAAGUAUUUGGCGGAACUC
+((.((((..(((((.((((((((((((.(...........).)))).)))))))).))))).)))).)) (-13.60)
+>osa-MIR395w MI0005091 Oryza sativa MIR395w stem-loop
+GAGUUCUCUUUAAUCAUUUCACAUGGCACUAUUUUAAGGCCUACUGUGUGAAGUGUUUGGGGGAUUCUC
+(((((((((.....(((((((((((((.((......)))))....))))))))))...))))))))).. (-26.00)

@@ -1,0 +1,219 @@
+>dme-mir-1 MI0000116 Drosophila melanogaster miR-1 stem-loop
+UUCAGCCUUUGAGAGUUCCAUGCUUCCUUGCAUUCAAUAGUUAUAUUCAAGCAUAUGGAAUGUAAAGAAGUAUGGAGCGAAAUCUGGCGAG
+....(((...((..((((((((((((.((((((((.((((((.......))).))).)))))))).))))))))))))....)).)))... (-36.20)
+>dme-mir-2a-1 MI0000117 Drosophila melanogaster miR-2a-1 stem-loop
+GCUGGGCUCUCAAAGUGGUUGUGAAAUGCAUUUCCGCUUUGCGCGGCAUAUCACAGCCAGCUUUGAUGAGCUUAGC
+((((((((((((((((((((((((.((((.....(((.....))))))).))))))))).)))))).))))))))) (-41.90)
+>dme-mir-2a-2 MI0000118 Drosophila melanogaster miR-2a-2 stem-loop
+AUCUAAGCCUCAUCAAGUGGUUGUGAUAUGGAUACCCAACGCAUAUCACAGCCAGCUUUGAUGAGCUAGGAU
+((((.(((.((((((((((((((((((((((........).)))))))))))))..))))))))))).)))) (-32.90)
+>dme-mir-2b-1 MI0000119 Drosophila melanogaster miR-2b-1 stem-loop
+CUUCAACUGUCUUCAAAGUGGCAGUGACAUGUUGUCAACAAUAUUCAUAUCACAGCCAGCUUUGAGGAGCGUUGCGG
+((.((((..(((((((((((((.((((.((((((....)))))).....)))).)))).)))))))))..)))).)) (-27.90)
+>dme-mir-2b-2 MI0000120 Drosophila melanogaster miR-2b-2 stem-loop
+UUGUGUCAUUCUUCAAAGUGGUUGUGAAAUGUUUGCCUUUUUAUGCCUAUUCAUAUCACAGCCAGCUUUGAGGAGCGACGCGA
+(((((((.(((((((((((((((((((.(((...((........)).....))).))))))))).)))))))))).))))))) (-36.90)
+>dme-mir-3 MI0000121 Drosophila melanogaster miR-3 stem-loop
+GAUCCUGGGAUGCAUCUUGUGCAGUUAUGUUUCAAUCUCACAUCACUGGGCAAAGUGUGUCUCAAGAUC
+((((.(((((((((..((((.((((.((((.........)))).)))).))))..))))))))).)))) (-28.70)
+>dme-mir-4 MI0000122 Drosophila melanogaster miR-4 stem-loop
+UUGCAAUUAGUUUCUUUGGUCGUCCAGCCUUAGGUGAUUUUUCCGGUCAUAAAGCUAGACAACCAUUGAAGUUCGUUGUGG
+(..((((.(..(((..((((.(((.(((.....((((((.....))))))...))).))).))))..)))..).))))..) (-24.30)
+>dme-mir-6-1 MI0000124 Drosophila melanogaster miR-6-1 stem-loop
+UUUAAUGUAGAGGGAAUAGUUGCUGUGCUGUAAGUUAAUAUACCAUAUCUAUAUCACAGUGGCUGUUCUUUUUGUACCUAAA
+.......(((((((((((((..(((((.((((..(...........)..)))).)))))..)))))))))))))........ (-25.70)
+>dme-mir-6-2 MI0000125 Drosophila melanogaster miR-6-2 stem-loop
+UAACCCAAGGGAACUUCUGCUGCUGAUAUAUUAUUGAAAAACUACUAUAUCACAGUGGCUGUUCUUUUUGGUUG
+(((((.((((((((..(..(((.(((((((.((((....)).)).))))))))))..)..)))))))).))))) (-26.50)
+>dme-mir-6-3 MI0000126 Drosophila melanogaster miR-6-3 stem-loop
+CAAAAAGAAGGGAACGGUUGCUGAUGAUGUAGUUUGAAACUCUCACAAUUUAUAUCACAGUGGCUGUUCUUUUUUGUUUG
+((((.(((((((((((((..(((.((((((((.(((.........))).)))))))))))..))))))))))))).)))) (-32.10)
+>dme-mir-7 MI0000127 Drosophila melanogaster miR-7 stem-loop
+GAGUGCAUUCCGUAUGGAAGACUAGUGAUUUUGUUGUUUGGUCUUUGGUAAUAACAAUAAAUCCCUUGUCUUCUUACGGCGUGCAUUU
+((((((((.(((((.(((((((.((.(((((.((((((....(....)....))))))))))).)).)))))))))))).)))))))) (-33.90)
+>dme-mir-8 MI0000128 Drosophila melanogaster miR-8 stem-loop
+AAGGACAUCUGUUCACAUCUUACCGGGCAGCAUUAGAUCCUUUUUAUAACUCUAAUACUGUCAGGUAAAGAUGUCGUCCGUGUCCUU
+((((((((..(..(((((((((((.(((((.((((((.............)))))).))))).))).))))))).)..))))))))) (-31.42)
+>dme-mir-9a MI0000129 Drosophila melanogaster miR-9a stem-loop
+GCUAUGUUGUCUUUGGUUAUCUAGCUGUAUGAGUGAUAAAUAACGUCAUAAAGCUAGCUUACCGAAGUUAAUAUUAGC
+(((((((((.(((((((...((((((.(((((((........)).))))).))))))...))))))).))))).)))) (-29.00)
+>dme-mir-10 MI0000130 Drosophila melanogaster miR-10 stem-loop
+CCACGUCUACCCUGUAGAUCCGAAUUUGUUUUAUACUAGCUUUAAGGACAAAUUCGGUUCUAGAGAGGUUUGUGUGG
+(((((...(((((.((((.(((((((((((((............))))))))))))).)))).)).)))...))))) (-31.00)
+>dme-mir-11 MI0000131 Drosophila melanogaster miR-11 stem-loop
+GCACUUGUCAAGAACUUUCUCUGUGACCCGCGUGUACUUAAAAGCCGCAUCACAGUCUGAGUUCUUGCUGAGUGC
+(((((((.(((((((((...((((((...(((.((........))))).))))))...))))))))).))))))) (-32.60)
+>dme-mir-12 MI0000132 Drosophila melanogaster miR-12 stem-loop
+UACGGUUGAGUAUUACAUCAGGUACUGGUGUGCCUUAAAUCCAACAACCAGUACUUAUGUCAUACUACGCCGUG
+((((((..(((((.((((.((((((((((((............)).)))))))))))))).)))))..)))))) (-29.40)
+>dme-mir-13a MI0000133 Drosophila melanogaster miR-13a stem-loop
+UACGUAACUCCUCAAAGGGUUGUGAAAUGUCGACUAUUAUCUACUCAUAUCACAGCCAUUUUGAUGAGUUUCGUG
+((((.(((((.((((((((((((((.(((..((......))....))).)))))))).)))))).))))).)))) (-27.20)
+>dme-mir-13b-2 MI0000135 Drosophila melanogaster miR-13b-2 stem-loop
+UAUUAACGCGUCAAAAUGACUGUGAGCUAUGUGGAUUUGACUUCAUAUCACAGCCAUUUUGACGAGUUUG
+....(((.((((((((((.((((((....((((((......)))))))))))).)))))))))).))).. (-26.10)
+>dme-mir-14 MI0000136 Drosophila melanogaster miR-14 stem-loop
+UGUGGGAGCGAGACGGGGACUCACUGUGCUUAUUAAAUAGUCAGUCUUUUUCUCUCUCCUAUA
+((((((((.((((..((((((.(((((.........))))).))))))..)))).)))))))) (-28.30)
+>dme-mir-263a MI0000343 Drosophila melanogaster miR-263a stem-loop
+UAGAUCUCGGCACAGUUAAUGGCACUGGAAGAAUUCACGGGGUAAUUUUUAUACAACCCGUGAUCUCUUAGUGGCAUCUAUGGUGCGAGAAUAA
+....(((((.(((.((..(((.(((((..(((..(((((((...............))))))))))..))))).)))..)).)))))))).... (-36.26)
+>dme-mir-184 MI0000354 Drosophila melanogaster miR-184 stem-loop
+GGUUGGCCGGUGCAUUCGUACCCUUAUCAUUCUCUCGCCCCGUGUGCACUUAAAGACAACUGGACGGAGAACUGAUAAGGGCUCGUAUCACCAAUUCAUC
+........((((.((.((..((((((((((((((.((((...(((..........)))...)).))))))).)))))))))..)).))))))........ (-33.70)
+>dme-mir-274 MI0000355 Drosophila melanogaster miR-274 stem-loop
+UCCUGUGUUGCAGUUUCGUUUUGUGACCGACACUAACGGGUAAUUGUUUGGCCGCCAGGAUUACUCGUUUUUGCGAUCACAAAUUAUGAAAUUGCAGCAA
+.....(((((((((((((((((((((.((.((..(((((((((((..((((...)))))))))))))))..)))).)))))))..)))))))))))))). (-42.90)
+>dme-mir-275 MI0000356 Drosophila melanogaster miR-275 stem-loop
+UGUAAAGUCUCCUACCUUGCGCGCUAAUCAGUGACCGGGGCUGGUUUUUUAUAUACAGUCAGGUACCUGAAGUAGCGCGCGUGGUGGCAGACAUAUAU
+......((((.(((((.(((((((((.((((..(((..(((((............))))).)))..))))..))))))))).))))).))))...... (-46.40)
+>dme-mir-92a MI0000357 Drosophila melanogaster miR-92a stem-loop
+AAUAUGAAUUUCCCGUAGGACGGGAAGGUGUCAACGUUUUGCAUUUCGAAUAAACAUUGCACUUGUCCCGGCCUAUGGGCGGUUUGUAAUAAACA
+..((..(((..((((((((.((((((((((.(((.((((..(.....)...)))).)))))))).))))).))))))))..)))..))....... (-38.00)
+>dme-mir-219 MI0000358 Drosophila melanogaster miR-219 stem-loop
+UAAUUCGAUUUUUAGCUAUGAUUGUCCAAACGCAAUUCUUGUUGAUAUUCAAUAUUCAAGGGUUGCGACUGGGCAUCGCGGCUCGAAAUAAGAAUACAAC
+..((((.(((((.(((..((((.(((((..((((((((((((((.....)))....)))))))))))..)))))))))..))).)))))..))))..... (-34.60)
+>dme-mir-277 MI0000360 Drosophila melanogaster miR-277 stem-loop
+UUGAAGGUUUUGGGCUGCGUGUCAGGAGUGCAUUUGCACUGAAACUAUCUGAAGCAUGUAAAUGCACUAUCUGGUACGACAUUCCAGAACGUACAAUCUU
+(((.(.(((((((..(((((..((((((((((((((((.((...(.....)...)))))))))))))).))))..))).))..))))))).).))).... (-40.30)
+>dme-mir-278 MI0000361 Drosophila melanogaster miR-278 stem-loop
+GUAAUGGUACGGUGCGACCGGAUGAUGGUUCACAACGACCGUGUCAUUUAAACGGGUCGGUGGGACUUUCGUCCGUUUGUAACGCCAUUUGUCAACGA
+..((((((....(((((.(((((((.(((((.((.(((((.(((.......)))))))).))))))).))))))).)))))..))))))......... (-37.20)
+>dme-mir-133 MI0000362 Drosophila melanogaster miR-133 stem-loop
+ACCUGCAACACUGUGUGUAGCUGGUUGACAUCGGGUCAGAUCUGUUUUUCAAGCAUUUGGUCCCCUUCAACCAGCUGUAGCCAGUGGUUGAUGACAAC
+.....((((((((..(((((((((((((....((..(((((((........)).)))))..))...)))))))))))))..)))).))))........ (-37.30)
+>dme-mir-279 MI0000363 Drosophila melanogaster miR-279 stem-loop
+GGAAUUCAUACUACUGUUUUUAGUGGGUGGGGGUCCAGUGUUUCACAUUGAUUUUCUUAGUAUUUGUGACUAGAUCCACACUCAUUAAUAACGGUAGUUC
+.........(((((((((.((((((((((.(((((.((....(((((...(((.....)))...))))))).))))).)))))))))).))))))))).. (-36.40)
+>dme-mir-33 MI0000364 Drosophila melanogaster miR-33 stem-loop
+CUCUUCCUCUGGAGAUGACACGAAGGUGCAUUGUAGUCGCAUUGUCUGUCCCAAUUGCUUCAGGCAAUACAACUUCAGUGCAAGCUCUGUGCAUUUCAC
+...........((((((.((((.((.(((((((.(((.(.((((((((...(....)...)))))))).).))).)))))))..)).)))))))))).. (-33.20)
+>dme-mir-280 MI0000365 Drosophila melanogaster miR-280 stem-loop
+UGGCUUUUAUGUAUUUACGUUGCAUAUGAAAUGAUAUUUAUAGUAAACAGAUUAUUUUAUAUGCAGGUAUAUGCAAGUCGAGGUCCUCCACACUG
+.((((((..(((((.(((.((((((((((((((((.((((...))))...))))))))))))))))))).)))))....)))))).......... (-25.60)
+>dme-mir-281-1 MI0000366 Drosophila melanogaster miR-281-1 stem-loop
+CGAAUAAGUGAAUAAAGAGAGCUGUCCGUCGACAGUCCAGAAACUAUUUAAUAUCACUGUCAUGGAAUUGCUCUCUUUGUAUAAUAUUCG
+((((((..((.(((((((((((..(((((.((((((...................)))))))))))...))))))))))).)).)))))) (-32.51)
+>dme-mir-282 MI0000367 Drosophila melanogaster miR-282 stem-loop
+AGUUUCCUUCUAAAUCUAGCCUCUACUAGGCUUUGUCUGUGCAUUCGAAAGCCGAUCAGACAUAGCCUAUAAGAGGUUAGGUGUACCAAGGCGAACA
+.((((((((....(((((((((((..((((((.((((((.....(((.....))).)))))).))))))..))))))))))).....)))).)))). (-42.30)
+>dme-mir-283 MI0000368 Drosophila melanogaster miR-283 stem-loop
+CUCACACGAUUCUCAAAGGUAAAUAUCAGCUGGUAAUUCUGGGAGCUAAGCCUAAAUAUGAAACACUCGGAAUUUCAGUUGGUAUCGACUUUUUUGAAUU
+.......(((((..((((((..(((((((((((.(((((((((......................))))))))))))))))))))..))))))..))))) (-29.55)
+>dme-mir-284 MI0000369 Drosophila melanogaster miR-284 stem-loop
+GUUGCAGUUCCUGGAAUUAAGUUGACUGUGUAGCCUGUGAGGGCAAGGCUUGAAUAAUGCUCCUGAAGUCAGCAACUUGAUUCCAGCAAUUGCGGCCCGA
+(((((((((.((((((((((((((.(((....((((....))))..(((.........)))........))))))))))))))))).))))))))).... (-41.70)
+>dme-mir-281-2 MI0000370 Drosophila melanogaster miR-281-2 stem-loop
+CGAAUUGUGAAAUGAAGAGAGCUAUCCGUCGACAGUCAAGUUAAGACCGAUUGUAAUACUGUCAUGGAAUUGCUCUCUUUGUAUAACAUUCG
+(((((.((...(..((((((((..(((((.((((((..((((......)))).....)))))))))))...))))))))..)...))))))) (-32.60)
+>dme-mir-124 MI0000373 Drosophila melanogaster miR-124 stem-loop
+UCAUUUGGUACGUUUUUCUCCUGGUAUCCACUGUAGGCCUAUAUGUAUUUCCACCAUAAGGCACGCGGUGAAUGCCAAGAGCGAACGCAGUUCUACAAAU
+..........(((((..(((.((((((.((((((..((((.((((.........))))))))..)))))).)))))).))).)))))............. (-31.30)
+>dme-mir-79 MI0000374 Drosophila melanogaster miR-79 stem-loop
+UGAAGCUGACUUGCCAUUGCUUUGGCGCUUUAGCUGUAUGAUAGAUUUAAACUACUUCAUAAAGCUAGAUUACCAAAGCAUUGGCUUCUGCAGGUCA
+.((..(((....((((.((((((((...(((((((.((((((((.......)))..))))).)))))))...)))))))).)))).....))).)). (-36.10)
+>dme-mir-276b MI0000375 Drosophila melanogaster miR-276b stem-loop
+AAAACCGAAGUCUUUUUACCAUCAGCGAGGUAUAGAGUUCCUACGUUCCUAUAUUCAGUCGUAGGAACUUAAUACCGUGCUCUUGGAGGACUGUCGACC
+.....(((((((((....(((..((((.(((((.(((((((((((...((......)).))))))))))).))))).))))..))))))))).)))... (-39.50)
+>dme-mir-210 MI0000376 Drosophila melanogaster miR-210 stem-loop
+AAAGGUGCUUAUUGCAGCUGCUGGCCACUGCACAAGAUUAGACUUAAGACUCUUGUGCGUGUGACAGCGGCUAUUGUAAGAGGCCAUAGAAGCAACAGCC
+...(((.(((((...((((((((..((((((((((((.............))))))))).))).))))))))...)))))..)))......((....)). (-38.12)
+>dme-mir-100 MI0000378 Drosophila melanogaster miR-100 stem-loop
+CCAUUAACAGAAACCCGUAAAUCCGAACUUGUGCUGUUUUAUAUCUGUUACAAGACCGGCAUUAUGGGAGUCUGUCAAUGCAAACAACUGGUUUUUGGCA
+.((((.(((((..(((((((..(((..(((((((.(........).).))))))..)))..)))))))..))))).)))).................... (-27.10)
+>dme-mir-92b MI0000379 Drosophila melanogaster miR-92b stem-loop
+UAAAACGUCACCUGAUGUAGGCCGUGCCCAGUGCUUAUUUGUUGCAUUUUCGAAAUACAAAUUGCACUAGUCCCGGCCUGCAAUGAGUGUCGCAGUCGAC
+.....((.(((..(.(((((((((.(.(.(((((..((((((..(......)....)))))).))))).).).))))))))).)..))).))........ (-33.50)
+>dme-mir-286 MI0000380 Drosophila melanogaster miR-286 stem-loop
+UUAAAAUUGAAUGGCGAAUGUCGGUAUGGUCUCUUUUUCAAAGAAAGGUUUCGAUUAAGCGAAGUGACUAGACCGAACACUCGUGCUAUAAUUUUAAAAU
+(((((((((....((((.(((((((.(((((.(((((.....))))).(((((......))))).))))).)))).))).))))....)))))))))... (-27.30)
+>dme-mir-287 MI0000381 Drosophila melanogaster miR-287 stem-loop
+GGACGCCGGGGAUGUAUGGGUGUGUAGGGUCUGAAAUUUUGCACACAUUUACAAUAAUUGUAAAUGUGUUGAAAAUCGUUUGCACGACUGUGA
+..(((((.(.......).))))).((.(((((((((((((..(((((((((((.....)))))))))))...)))..)))).)).)))).)). (-23.80)
+>dme-mir-87 MI0000382 Drosophila melanogaster miR-87 stem-loop
+AACACAUUUCAUUCGCGCCUGUAUCUUGCUGAACCGCUGCCAUUAUGGCCAACGAUCCGGUUGAGCAAAAUUUCAGGUGUGUGAGAAAUGUGUUUAGCA
+((((((((((...((((((((.((.(((((.(((((..(((.....)))........))))).))))).))..))))))))...))))))))))..... (-40.90)
+>dme-mir-263b MI0000383 Drosophila melanogaster miR-263b stem-loop
+UUGCUGACUUUGAGUCUUGGCACUGGGAGAAUUCACAGUUGACUUUAUUAUUCUGUGGUUCUGCGGGUGCCAAAACUUAAAAACCGGCUU
+..((((..(((((((.((((((((.(.(((((.(((((.(((.....)))..)))))))))).).)))))))).)))))))...)))).. (-37.70)
+>dme-mir-288 MI0000384 Drosophila melanogaster miR-288 stem-loop
+CGGCCAUGUCGUAAUUAGCGGAGCACGGCAUCGCCGGCGAUAAUUAAUGACGGUGGUCACGUUGGUUUCAUGUCGAUUUCAUUUCAUGACACGGCCG
+(((((.((((((........(((..((((((.(((((((........((((....)))))))))))...))))))..))).....)))))).))))) (-33.12)
+>dme-mir-289 MI0000385 Drosophila melanogaster miR-289 stem-loop
+GAGUUUACAGUAAAAUAAAUAUUUAAGUGGAGCCUGCGACUUCAGUCCCUCUGACUGACUGGGGUAAGUCACUUGAGCGUUUGUUGGCACGUAAAAGAC
+...(((((.((..((((((..(((((((((.((((.((...((((((.....)))))).))))))...)))))))))..))))))...))))))).... (-27.00)
+>dme-bantam MI0000387 Drosophila melanogaster bantam stem-loop
+AUUUGACUACGAAACCGGUUUUCGAUUUGGUUUGACUGUUUUUCAUACAAGUGAGAUCAUUUUGAAAGCUGAUUUUGUCAA
+..(((((...((((.((((((((((..((((((.(((((.......)).))).))))))..)))))))))).))))))))) (-25.50)
+>dme-mir-303 MI0000409 Drosophila melanogaster miR-303 stem-loop
+UCUUGGUUUAGGUUUCACAGGAAACUGGUUUAAUAACGAAAACUAGUUUCCUCUAAAAUCCUAAUCAAGA
+((((((((..(((((.(.(((((((((((((........))))))))))))).).)))))..)))))))) (-26.90)
+>dme-mir-31b MI0000410 Drosophila melanogaster miR-31b stem-loop
+CAAAUAAUGAAUUUGGCAAGAUGUCGGAAUAGCUGAGAGCACAGCGGAUCGAACAUUUUAUCGUCCGAAAAAAUGUGAUUAUUUUUGAAAAGCGGCUAUGCCUCAUCUAGUCAAUUGCAUUACUUUG
+(((((((((...(((((.(((((..((.(((((((.........((((.(((........))))))).(((((((....)))))))......))))))).)).))))).)))))...))))).)))) (-36.60)
+>dme-mir-304 MI0000411 Drosophila melanogaster miR-304 stem-loop
+GCAGCAUUGAAUAAUCUCAAUUUGUAAAUGUGAGCGGUUUAAGCCAUUUGACGCACUCACUUUGCAAUUGGAGAUUGCUCGAGACUGC
+((((..((((.(((((((...(((((((.(((((.((((.((....)).))).).))))))))))))...))))))).))))..)))) (-32.90)
+>dme-mir-305 MI0000412 Drosophila melanogaster miR-305 stem-loop
+CAUGUCUAUUGUACUUCAUCAGGUGCUCUGGUGUGUCUCGUAACCCGGCACAUGUUGAAGUACACUCAAUAUG
+(((((..(.(((((((((.((.(((((..((.((........))))))))).)).))))))))).)..))))) (-24.50)
+>dme-mir-9c MI0000413 Drosophila melanogaster miR-9c stem-loop
+AUUUUUGCUGUUUCUUUGGUAUUCUAGCUGUAGAUUGUUUCACGCACAUUGUAUAUCAUCUAAAGCUUUUAUACCAAAGCUCCAGCUUAAAU
+((((..((((...(((((((((...((((.(((((.((...(((.....)))..)).))))).))))...)))))))))...))))..)))) (-27.30)
+>dme-mir-306 MI0000414 Drosophila melanogaster miR-306 stem-loop
+GUCCACUCGAUGGCUCAGGUACUUAGUGACUCUCAAUGCUUUUGACAUUUUGGGGGUCACUCUGUGCCUGUGCUGCCAGUGGGAC
+.((((((.(..(((.(((((((..(((((((((((((((....).)))..)))))))))))..))))))).)))..))))))).. (-43.50)
+>dme-mir-9b MI0000415 Drosophila melanogaster miR-9b stem-loop
+UGCAUAUUAUUUGCUCUUUGGUGAUUUUAGCUGUAUGGUGUUUAUGUAUAUUCCAUAGAGCUUUAUUACCAAAAACCAAAUGGUUUCUGCA
+.(((.((((((((...(((((((((...((((.(((((.((........)).))))).))))..)))))))))...))))))))...))). (-30.80)
+>dme-let-7 MI0000416 Drosophila melanogaster let-7 stem-loop
+UCUGGCAAAUUGAGGUAGUAGGUUGUAUAGUAGUAAUUACACAUCAUACUAUACAAUGUGCUAGCUUUCUUUGCUUGA
+((.((((((..(((.(((((.(((((((((((..............))))))))))).))))).)))..)))))).)) (-30.44)
+>dme-mir-125 MI0000417 Drosophila melanogaster miR-125 stem-loop
+GACAUGUGCAAAUGUUUGUAUGGCUGAUUCCCUGAGACCCUAACUUGUGACUUUUAAUACCAGUUUCACAAGUUUUGAUCUCCGGUAUUGGACGCAAACUUGCUGAUGUU
+(((((..((((..((((((....(..((..((.((((.(..(((((((((..((.......))..)))))))))..).)))).)).))..)..))))))))))..))))) (-31.70)
+>dme-mir-307 MI0000418 Drosophila melanogaster miR-307 stem-loop
+UGUCUUGCUUUGACUCACUCAACCUGGGUGUGAUGUUAUUUCGAUAUGGUAUCCAUCACAACCUCCUUGAGUGAGCGAUAGCAGGACA
+.(((((((((((.(((((((((...((.(((((((.((((.......))))..))))))).))...)))))))))))).)))))))). (-40.10)
+>dme-mir-308 MI0000419 Drosophila melanogaster miR-308 stem-loop
+CUCGCAGUAUAUUUUUGUGUUUUGUUUCGUUUUGCAAUCCAAAUCACAGGAUUAUACUGUGAG
+(((((((((((.(((((((.((((..(.(.....).)..)))).))))))).))))))))))) (-24.70)
+>dme-mir-31a MI0000420 Drosophila melanogaster miR-31a stem-loop
+UCCGUUGGUAAAUUGGCAAGAUGUCGGCAUAGCUGACGUUGAAAAGCGAUUUUGAAGAGCGCUAUGCUGCAUCUAGUCAGUUGUUCAAUGGA
+((((((((..(((((((.(((((.(((((((((...((((....))))..((....))..)))))))))))))).)))))))..)))))))) (-40.30)
+>dme-mir-309 MI0000421 Drosophila melanogaster miR-309 stem-loop
+AUUAUACGACAAACCUUGUUCGGUUUUGCCAAUUUCCAAGCCAGCACUGGGUAAAGUUUGUCCUAUAAU
+((((((.(((((((.(((..((((.(((.(.........).))).))))..))).))))))).)))))) (-20.10)
+>dme-mir-310 MI0000422 Drosophila melanogaster miR-310 stem-loop
+AACAUAAACAUUUGCAGGGCGGGUCGUGUGUCAGUGUAUUUAUAUCUUAGCUAUAUUGCACACUUCCCGGCCUUUAAAUGUCCAAUGUU
+(((((..(((((((.(((.((((..(((((.(((((((.(((.....))).))))))))))))..)))).))).)))))))...))))) (-36.40)
+>dme-mir-311 MI0000423 Drosophila melanogaster miR-311 stem-loop
+UCUAGAUCAUUUUUCGGACGGUAUAUGGGUUAAUAUUUCAUUUGUCGAAUAUAUUGCACAUUCACCGGCCUGAAAAUAUCAAGA
+(((.(((...(((((((.((((..(((.((.((((((((.......))).))))))).)))..))))..))))))).))).))) (-19.90)
+>dme-mir-312 MI0000424 Drosophila melanogaster miR-312 stem-loop
+GAUUUGGUUCGUCACAAGGGCAAUUCUGCAUUUUUUAACUAGUAUUGCACUUGAGACGGCCUGAUU
+((((.(((.((((.((((.(((((.(((...........))).))))).)))).))))))).)))) (-20.00)
+>dme-mir-313 MI0000425 Drosophila melanogaster miR-313 stem-loop
+AUUUUCUGCUGCGGAUGGGGGCAGUACUGUUUUUUUAACAUUGAGUAUUGCACUUUUCACAGCCCGAAAAU
+((((((.((((.(((.((..(((((((((((.....)))....)))))))).)).))).))))..)))))) (-21.60)
+>dme-mir-314 MI0000426 Drosophila melanogaster miR-314 stem-loop
+UCGUAACUUGUGUGGCUUCGAACUUACCUAGUUGAGGAAAACUCCCAUGUCGGAUUUUGUUACCUCUGGUAUUCGAGCCAAUAAGUUCGG
+.((.(((((((.(((((.((((..((((.....((((.(((.(((......))).)))....)))).)))))))))))))))))))))). (-29.80)
+>dme-mir-315 MI0000427 Drosophila melanogaster miR-315 stem-loop
+CACUUAUAUAAUUUUGAUUGUUGCUCAGAAAGCCCUCAUUGUUUACCAGUUGGCUUUCGAGCAAUAAUUGAAACCAGAUAAGUG
+(((((((....(((..((((((((((.(((((((...((((.....)))).)))))))))))))))))..)))....))))))) (-34.80)
+>dme-mir-316 MI0000428 Drosophila melanogaster miR-316 stem-loop
+AAAUUCUAGUCGAUUUGUCUUUUUCCGCUUACUGGCGUUUCAAUUCCACAACGACAGGAAAGGGAAAAAGGCGUAUUUACUAUGAGUUU
+((((((((((.(((.(((((((((((.(((.(((.((((..........)))).)))..)))))))))))))).))).)))).)))))) (-29.00)
+>dme-mir-317 MI0000429 Drosophila melanogaster miR-317 stem-loop
+AUGCAACUGCCAUUGGGAUACACCCUGUGCUCGCUUUGAAUGAAAUGCAAGCAAGUGAACACAGCUGGUGGUAUCCAGUGGCCGUUUGGCAU
+((((.((.(((((((((...(((((((((.((((((.(..((.....))..))))))).)))))..))))...))))))))).))...)))) (-38.60)
+>dme-mir-318 MI0000430 Drosophila melanogaster miR-318 stem-loop
+UUUAUGGGAUACACACAGUUCAGUUUUGUCACACUUCAAGCAUCACUGGGCUUUGUUUAUCUCAUGAG
+.((((((((((.(((.((((((((..(((..........)))..)))))))).))).)))))))))). (-24.90)
+>dme-mir-2c MI0000431 Drosophila melanogaster miR-2c stem-loop
+UCGUAUCUUACUUUCAAUGUCAUCAAAAAGGGCUGAAGAAAGAUAUUUCUGCAUUUGAAUCGUAUCACAGCCAGCUUUGAUGGGCAUUGCAAUGAGCAGCGA
+((((..((((.((.(((((((((((((...(((((.(((((....))))).....(((......))))))))...)))))).))))))).))))))..)))) (-28.60)
+>dme-mir-iab-4 MI0000432 Drosophila melanogaster miR-iab-4 stem-loop
+UCGUAAACGUAUACUGAAUGUAUCCUGAGUGUAUCCUAUCCGGUAUACCUUCAGUAUACGUAACACGA
+((((..((((((((((((.((((.(((..((.....))..))).)))).))))))))))))...)))) (-25.20)

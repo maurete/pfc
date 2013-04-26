@@ -1,0 +1,375 @@
+>xtr-let-7b MI0004787 Xenopus tropicalis let-7b stem-loop
+CUGGCUGAGGUAGUAGUUUGUGUAGUUAGGGGGCAGUGGUGUUUGCCCAUGGAGAUAACUAGACAAACUACUGCCUUGCCAG
+(((((.(((((((((((((((.((((((..((((((......)))))).......)))))).)))))))))))))))))))) (-47.90)
+>xtr-mir-1a-2 MI0004788 Xenopus tropicalis miR-1a-2 stem-loop
+UGGGAGACAUACUUCUUUAUAUGUCCAUAUGGAAGUGCCAAUGCUAUGGAAUGUAAAGAAGUAUGUAUCUC
+.((((.((((((((((((((((.(((((((((.....)))....)))))))))))))))))))))).)))) (-31.10)
+>xtr-mir-1a-1 MI0004789 Xenopus tropicalis miR-1a-1 stem-loop
+ACCUGUUUGGAGUACAUACUUCUUUAUGUACCCAUAUGAACAUACAAUGCUAUGGAAUGUAAAGAAGUAUGUAUUUUUAUCAGG
+.((((...(((((((((((((((((((((..(((((..............))))).)))))))))))))))))))))...)))) (-32.04)
+>xtr-mir-7-3 MI0004791 Xenopus tropicalis miR-7-3 stem-loop
+CUGGGUCGGUUUGGAAGACUAGUGAUUUUGUUGUUUUUAUAAAAGUUUGUCACAAACAGCAAAUCGUAGUCUCCACUCUGCCCCAGGA
+(((((.(((..((((.(((((.((((((.(((((((..((((....))))...))))))))))))))))))))))..))).))))).. (-34.60)
+>xtr-mir-7-2 MI0004792 Xenopus tropicalis miR-7-2 stem-loop
+GAGGUGCAGGCUGACUCUUUGUGGAAGACUAGUGAUUUUGUUGUUGUAAGCCUUAUUGCAUGACAACAAGUCACAGUCUGCCUCACAGUGCCCAGCAAUAUCA
+..((((...((((.(.((.((.((.(((((.(((((((.((((((((((......)))))..))))))))))))))))).)).)).)).)..))))..)))). (-35.90)
+>xtr-mir-9b MI0004795 Xenopus tropicalis miR-9b stem-loop
+GUUUCUGUCUUUGGUUACCUAGCUGUAUGAGUAUAACUAAUGUCAUAAAGCUAGACAACCGAACGUAUAAACCA
+((((.((..(((((((..((((((.(((((.(((.....)))))))).))))))..)))))))..)).)))).. (-22.10)
+>xtr-mir-10a MI0004796 Xenopus tropicalis miR-10a stem-loop
+GAUUUGCCUGUCCUCUGUAUGUACCCUGUAGAUCCGAAUUUGUGUGAGCGCAAUCAUAUCACAAAUUCGUGUCUGGGGGGAUAUGCAGUUGACACAAACG
+..((((..((((..((((((((.((((.((((..(((((((((((((......)))...))))))))))..)))).))))))))))))..)))))))).. (-43.80)
+>xtr-mir-10c MI0004798 Xenopus tropicalis miR-10c stem-loop
+UAUAUGCACCCUGUAGAAUCGAAUUUGUGUGAGUUCUGAACCACAGAUUCGUCUCUAGGGGGGUAUAUGGG
+(((((((.((((.((((..((((((((((............))))))))))..)))).))))))))))).. (-31.10)
+>xtr-mir-15a MI0004799 Xenopus tropicalis miR-15a stem-loop
+CCUUGACGUAAAGUAGCAGCACAUAAUGGUUUGUGGGUUACACAGAGGUGCAGGCCAUACUGUGCUGCCGCCAAAACACAAGG
+(((((.......(..((((((((..((((((((((..((.....))..))))))))))..))))))))..).......))))) (-30.94)
+>xtr-mir-15b MI0004800 Xenopus tropicalis miR-15b stem-loop
+UGUCCUAAAGAAGUGUAGCAGCACAUCAUGAUUUGCAUGCUGUAUUAUAGAUUCUAAUCAUUUUUUGCUGCUUCAUGAUAUUGGGAAA
+..((((((....(((.(((((((.(..((((((......((((...)))).....))))))..).))))))).)))....)))))).. (-25.70)
+>xtr-mir-16c MI0004801 Xenopus tropicalis miR-16c stem-loop
+UUUAGCAGCACGUAAAUACUGGAGUUCAUGACCAUAUCUGCACUCUCCAGUAUUACUUUGCUGCUAUAUU
+..((((((((.((((.((((((((.....((.....))......))))))))))))..)))))))).... (-26.20)
+>xtr-mir-16a MI0004802 Xenopus tropicalis miR-16a stem-loop
+GCCAGCAGUCCUUUAGCAGCACGUAAAUAUUGGUGUUAAAAUGGUCCCAAUAUUAACUGUGCUGCUAGAGUAAGGUUGGCCU
+((((((..(.((((((((((((((.((((((((..((.....))..)))))))).)).)))))))))))).)..)))))).. (-40.20)
+>xtr-mir-17 MI0004803 Xenopus tropicalis miR-17 stem-loop
+GUCAAGAGUAAUGUCAAAGUGCUUACAGUGCAGGUAGUGAUUUAACAGAACCUACUGCAGUGAAGGCACUUGUAGCAUUAUAUUGAC
+(((((..(((((((..((((((((.((.(((((.(((.(.(((....)))))))))))).)).))))))))...))))))).))))) (-33.10)
+>xtr-mir-19b-2 MI0004805 Xenopus tropicalis miR-19b-2 stem-loop
+UUCAUGGUUAGUUUUGCAGGUUUGCAUCCAGUUGUUCUUCUGGCUCACUGUGCAAAUCCAUGCAAAACUGAUUAUGGCA
+.((((((((((((((((((((((((((((((........))))......))))))).)).))))))))))))))))).. (-34.00)
+>xtr-mir-23a-2 MI0004806 Xenopus tropicalis miR-23a-2 stem-loop
+CUGUGGCUGGUAGGAUUCCUGGCAGAGUGAUUUGGAAAUGUAUGGUACAAAAUCACAUUGCCAGGGAUUUCCAAUCAGUCCCG
+..(.(((((((.(((((((((((((.(((((((.....((((...))))))))))).))))))))))..))).))))))).). (-35.70)
+>xtr-mir-26-1 MI0004807 Xenopus tropicalis miR-26-1 stem-loop
+GGCUGCUGCCUGGUUCAAGUAAUCCAGGAUAGGCUGUUUCCUCAAAGCACGGCCUACUCUUGAUUACUUGUUUCAGGAAGUAGCU
+(((((((.(((((..(((((((((.((..((((((((...........))))))))..)).)))))))))..))))).))))))) (-44.80)
+>xtr-mir-26-2 MI0004808 Xenopus tropicalis miR-26-2 stem-loop
+UGGGCGCUCGCUUCAAGUAAUCCAGGAUAGGCUGUAAUGUCUCCUGUCAGCCUUUUCUCGAUUACUUGGGACCAGAGCCA
+..(((.((.(..((((((((((.((((.((((((.............)))))).)))).))))))))))..).)).))). (-33.62)
+>xtr-mir-27a MI0004809 Xenopus tropicalis miR-27a stem-loop
+CGGCGGCCCAGGGCUUAGCUGUAUUGUGAGCACUGUCACUCUCGCACCUGUUCACAGUGGCUAAGUUCCGCGCCUC
+.((((.(...((((((((((..((((((((((.(((.......)))..)))))))))))))))))))).))))).. (-30.90)
+>xtr-mir-29d MI0004811 Xenopus tropicalis miR-29d stem-loop
+UCAGGAGGCUGGUUUCAUGUGGUGGUUUAGAUUUAACUGCACAAUGUCUAGCACCAUAUGAAAUCAGUGUCCUUA
+..((((.(((((((((((((((((..((((((.............))))))))))))))))))))))).)))).. (-35.72)
+>xtr-mir-29b MI0004812 Xenopus tropicalis miR-29b stem-loop
+UCCCGGAAGCUGGUUUCUUGUGGUGACUUAGAUUUAUCCAUCGCUGCAUCUAGCACCAUUUGAAAUCAGUGUUCUAGGAG
+(((..((((((((((((..((((((.((.((((.((........)).))))))))))))..))))))))).)))..))). (-31.00)
+>xtr-mir-30b MI0004814 Xenopus tropicalis miR-30b stem-loop
+GUAUUAGUCUAUGUAAACAUCCUACACUCAGCUCGUAUGUAUAACCUGACUGGGUGGGGGGUGUUUGCCUCGACUGAUCU
+..(((((((...((((((((((..(((((((.(((...........))))))))))..))))))))))...))))))).. (-33.30)
+>xtr-mir-30c-1 MI0004815 Xenopus tropicalis miR-30c-1 stem-loop
+ACCAUGCAGCAGUGAUUGUAAACAUCCUACACUCUCAGCUGUGAACAUAAGGUGGCUGGGAGAAGGGUGUUUACUCCCCCUGCCAUGGA
+.(((((..((((.(...(((((((((((...((((((((..(.........)..)))))))).)))))))))))...).))))))))). (-40.40)
+>xtr-mir-34a MI0004816 Xenopus tropicalis miR-34a stem-loop
+CUGUGAGUGUUUCUUUGGCAGUGUCUUAGCUGGUUGUUGUGGCACGUUAUAGAAGUAGCAAUCAGCAAAUAUACUGCCCUAGAAGUUCUGCACAUU
+.((((((..(((((..((((((((.((.((((((((((((..(........)..)))))))))))).)).))))))))..)))))..)).)))).. (-37.70)
+>xtr-mir-34b-2 MI0004817 Xenopus tropicalis miR-34b-2 stem-loop
+UUCAGGCAGUGUAGUUAGCUGAUUGUGUUAUAUCAAAUUUGCAAUCACUAGCUAAACUACCAUAAAA
+....((.(((.(((((((.((((((((............))))))))))))))).))).))...... (-20.20)
+>xtr-mir-92a-2 MI0004819 Xenopus tropicalis miR-92a-2 stem-loop
+UCCUCUGUGGGUGGGGAUUUGUUGCACUACUGUAUGUAUGAAAAGUAUUGCACUUGUCCCGGCCUGUGGGUGA
+((.((((..(((.(((((..((.(((.((((............)))).)))))..))))).)))..)))).)) (-28.70)
+>xtr-mir-98 MI0004820 Xenopus tropicalis miR-98 stem-loop
+UCUGCCCUCUUCAGGAUGAGGUAGUAAGUUGUAUUGUUGUGGGGGUUUUUAUUUCCCCAAAUUAGGAGAUAACUAUACAGCUUACUGCCUUCCCUGCAGCAUGGUAAU
+..((((..((.((((..(((((((((((((((((.((((((((((........))))))..........)))).))))))))))))))))).)))).))...)))).. (-45.10)
+>xtr-mir-99 MI0004821 Xenopus tropicalis miR-99 stem-loop
+UAACAUAAACCCGUAGAUCCGAUCUUGUGGUGAAUUCCUUUGCUCAAGCUCGUUUCUAUGGGUCUGUGUCA
+..(((((.(((((((((..(((.((((.((..((....))..)))))).)))..))))))))).))))).. (-30.60)
+>xtr-mir-106 MI0004822 Xenopus tropicalis miR-106 stem-loop
+UGCAAAAGUGCUUAUAGUGCAGGUAGAAUUUAAACCUACUGCACCAUAAGCACUUCCUGCAUC
+((((.((((((((((.((((((.(((.........))))))))).))))))))))..)))).. (-28.30)
+>xtr-mir-125b-1 MI0004825 Xenopus tropicalis miR-125b-1 stem-loop
+UGCACCCCUCUCAAUCCCUGAGACCCUAACUUGUGAUGUUUAGCUUUAAAAAUCCACGGGUUAGGCUCUUGGGAGCUGUGAGUUGUGC
+.((((..(((.((.((((.((((.(((((((((((((.((((....)))).)).))))))))))).))))))))..)).)))..)))) (-35.50)
+>xtr-mir-126 MI0004827 Xenopus tropicalis miR-126 stem-loop
+GGCUGUGCAUUAUUACUUUUGGUACGCGCUGUGUCACAUCAAACUCGUACCGUGAGUAAUAAUGCGCAG
+..((((((((((((((((.(((((((.(...((......))..).))))))).)))))))))))))))) (-33.40)
+>xtr-mir-129-1 MI0004829 Xenopus tropicalis miR-129-1 stem-loop
+GUCCUUCUCAAAUCUUUUUGCGGUCUGGGCUUGCUGUAUGUAAAUACCUAGCCGGGAAGCCCUUACCCCAAAAAGCAUUUGCGGAGGGCG
+(((((((.((((((((((((.(((..((((((.(((..((........))..))).))))))..))).))))))).))))).))))))). (-41.90)
+>xtr-mir-129-2 MI0004830 Xenopus tropicalis miR-129-2 stem-loop
+UCUCAAAGCUUUUUGCGGUCUGGGCUUGCUGUUCUCAAUCAAAGUAUCCAGGAAGCCCUUAUCCCAAAAAGAAUUUGCGAGG
+((.((((.(((((((.((...((((((.(((..((.......))....))).))))))....)))))))))..)))).)).. (-25.70)
+>xtr-mir-130a MI0004831 Xenopus tropicalis miR-130a stem-loop
+CUGUCCAGUGCCCUUUUUAUGUUGUACUACUAGUGGUCACACACAAAAAAAGCAGUGCAAUGUUAAAAGGGCAUUGGCCAGGG
+(((.(((((((((((((.((((((((((.((.(((......)))......)).)))))))))).))))))))))))).))).. (-37.80)
+>xtr-mir-130c MI0004832 Xenopus tropicalis miR-130c stem-loop
+AUCCGUGGCCCUUUUUCUGUUGUACUACUGGAAUUUGUAAUUAGCAGUGCAAUAUUAAAAGGGCAUUGGCU
+..(((..((((((((..(((((((((.((((.........)))).)))))))))..))))))))..))).. (-25.70)
+>xtr-mir-130b MI0004833 Xenopus tropicalis miR-130b stem-loop
+CCGCCUGACACUCUUUCCCUGUUGCACUACUGUGGCAGUGAAUAAAGCAGUGCAAUGAUGAAAGGGCAUCAGUCUG
+..(.((((..(((((((..(((((((((.((.((........)).)).)))))))))..)))))))..)))).).. (-23.60)
+>xtr-mir-132 MI0004834 Xenopus tropicalis miR-132 stem-loop
+CUGUCUCCAGGGCAACCGUGGCUUUAGAUUGUUACUGUAGUUCUGCAUUGGUAACAGUCUACAGCCAUGGUCGCUCGGGCAAGAUGC
+..((((((.((((.(((((((((.(((((((((((((((....)))...)))))))))))).))))))))).)))).))..)))).. (-43.30)
+>xtr-mir-133d MI0004836 Xenopus tropicalis miR-133d stem-loop
+CUGGUUGCGGCUGGUGAAAAGGAACCACAUCAACCCAGAAAAAGGAUUUGGUCCCCUUCAACCAGCCGCAACUGGU
+(..(((((((((((((((..(((.(((.(((.............))).))))))..))).))))))))))))..). (-37.92)
+>xtr-mir-138 MI0004839 Xenopus tropicalis miR-138 stem-loop
+CGGUGCGGAGCAGCAGCUGGUGUUGUGAAUCAGGCCGUGACCACUCAGAAAACGGCUACUUCACAACACCAGGGUUGCUUCUCAC
+..(((.((((((((..(((((((((((((...((((((.............))))))..))))))))))))).)))))))).))) (-45.92)
+>xtr-mir-139 MI0004840 Xenopus tropicalis miR-139 stem-loop
+UGUAUUCUACAGUGCAUGUGUCUCCAGUCAUAUAGAGGCACUGGGGAUACAGCUCUGUUGGAAUAAC
+..((((((((((.((.(((((((((((((........).)))))))))))))).))).))))))).. (-30.70)
+>xtr-mir-146 MI0004844 Xenopus tropicalis miR-146 stem-loop
+CAAUGAGUUCUUAGCUUUGAGAACUGAAUUCCAUAGGUUGUUAGAGGUUAGACCUAUGGUGCUUAGUUCCAUAGCUUGGAUCCCACUGGC
+((.((.(.(((.((((.((.(((((((...(((((((((...........)))))))))...))))))))).)))).))).).)).)).. (-31.80)
+>xtr-mir-148b MI0004845 Xenopus tropicalis miR-148b stem-loop
+UGAGGAACAGCGUUUGAGGUGAAGUUCUGUUAUACACUCCGGCUGUGAGUAAGUGGAAGUCAGUGCAUCACAGAACUUUGUCUCGAGGGCUUCACUA
+..((((..(((.(((((((..(((((((((.((.((((..((((.............)))))))).)).)))))))))..))))))).))))).)). (-36.12)
+>xtr-mir-150 MI0004846 Xenopus tropicalis miR-150 stem-loop
+CUCUCUCCCAACCCUUGUACCAGAGUGAUAAUGGGAACUCUGGUACAGAGGAUGGCUGAAAGGA
+((.((..(((.((.((((((((((((..........)))))))))))).)).)))..)).)).. (-27.80)
+>xtr-mir-153-1 MI0004847 Xenopus tropicalis miR-153-1 stem-loop
+CACGGCUGCCCUUGUCAUUUUUGUGAUUUGCAGCUUGUAAUUUUGGUCUCAGUUGCAUAGUCACAAAAGUGAUCAUGGGCAGGUGGG
+..((.((((((.(((((((((((((((((((((((.(..((....))..)))))))).)))))))))))))).)).)))))).)).. (-41.70)
+>xtr-mir-155 MI0004848 Xenopus tropicalis miR-155 stem-loop
+UAUUAAUGCUAAUCGUGAUAGGGGUUUUUUAAUACAUAUUGACUCCUACAUGUUAGCAUUAUUAUCAUG
+...(((((((((.((((.((((((((..(........)..)))))))))))))))))))))........ (-23.30)
+>xtr-mir-181b-1 MI0004849 Xenopus tropicalis miR-181b-1 stem-loop
+AAGGUCACAAUCAACAUUCAUUGCUGUCGGUGGGUUGAGUUAAGAACACAAGCUCGCUGAACGAUGAAUGCAACUGUGUCCCC
+..((.((((.....(((((((((...((((((((((..((.....))...)))))))))).)))))))))....)))).)).. (-29.40)
+>xtr-mir-181b-2 MI0004850 Xenopus tropicalis miR-181b-2 stem-loop
+AAUGGCUGCAAUAAACAUUCAUUGCUGUCGGUGGGUUGUAGUUUAGAAAAGCUCAUUGAUCAAUGAAUGCAAACUGCAGACCA
+..((((((((.....(((((((((..(((((((((((............)))))))))))))))))))).....))))).))) (-31.30)
+>xtr-mir-182 MI0004851 Xenopus tropicalis miR-182 stem-loop
+AGUGGCUUCUCUGGCAGUGUUUGGCAAUGGUAGAACUCACACUGGUGAGCUAUGAAGAUCCGGUGGUUCUAGACUUGCCAACUAUGGCCUGGGAAUAAAGCAGCA
+.((.(((((((.(((.(((.(((((((.(.((((((...((((((....((....))..))))))))))))..)))))))).))).))).))))....))).)). (-38.10)
+>xtr-mir-184 MI0004853 Xenopus tropicalis miR-184 stem-loop
+CCAGUAUCACUUCCUUAUCACUUUUCCAGCCCAGCUUUUCAUGACAAACUGUUGGACGGAGAACUGAUAAGGCUGUGUGACUG
+.((((..(((..((((((((.((((((.(.(((((...............))))).))))))).))))))))..)))..)))) (-30.56)
+>xtr-mir-187 MI0004854 Xenopus tropicalis miR-187 stem-loop
+UGGUAUACCUUUGGUUACAACACAGGACAUGGGAGCUUACUUGGAACCCUCGUGUCUUGUGUUGCAGCCAGUGGUGGCCAAA
+((((.((((.((((((.((((((((((((((((..((.....))..)))..))))))))))))).)))))).)))))))).. (-41.20)
+>xtr-mir-192 MI0004855 Xenopus tropicalis miR-192 stem-loop
+GAGUGUACGGGCCUAUGACCUAUGAAUUGACAGCCAGUGGAUGUGAAGUCUGCCUGUCAAUUCUGUAGGCCACAGGUUCGUCCACCU
+..(((.((((((((.((.(((((((((((((((...(..(((.....)))..))))))))))).))))).)).)))))))).))).. (-40.80)
+>xtr-mir-193 MI0004856 Xenopus tropicalis miR-193 stem-loop
+GUGGUUUCGGAGUCGGGAUUUUGGGGGCGAGAUGAGCUAAUGAUUUAUCCAACUGGCCCGCAAAGUCCCGCUUCUGGAAGUCA
+.(((((((((((.((((((((((.((((.((.((.(.(((....))).))).)).)))).)))))))))).)))))))).))) (-39.20)
+>xtr-mir-194-1 MI0004857 Xenopus tropicalis miR-194-1 stem-loop
+UAGUGUGUAUCAGGUGUAACAGCAACUCCAUGUGGACUUGUCCGUAUUCCAGUGGAGAUGCUGUUACUUUUGAUGGGCAC
+..((((.(((((((.(((((((((.((((((.((((...........)))))))))).))))))))).))))))).)))) (-38.70)
+>xtr-mir-194-2 MI0004858 Xenopus tropicalis miR-194-2 stem-loop
+UGAUGCUCAUAACCUGUAACAGCAACUCCAUGUGGAAGUAGAUAUAAUAUUCCGGUGGAGAUGCUGUUAUCUGUAAUGUGUAUCUA
+.(((((.(((.((..(((((((((.((((((.(((((.((....))...))))))))))).)))))))))..)).))).))))).. (-35.70)
+>xtr-mir-202-1 MI0004860 Xenopus tropicalis miR-202-1 stem-loop
+CUCGCUGUUCCUUUUUCCUAUGCAUAUACCUCUUUGAAAAAUGAAUGUAAAGGGGCAUAGGGCAUGGGAAAAUGGCGCAGCUGAGCC
+((((((((.((.(((((((((((.(((.((((((((...........)))))))).)))..))))))))))).)).))))).))).. (-38.40)
+>xtr-mir-205b MI0004862 Xenopus tropicalis miR-205b stem-loop
+UGCUGCUGUCCUUCAUUCCACCGGAUCCUGUGUAAAUAUAAUCCAGAUUCCCAGUGGCAUGAAGUGCAUUAG
+..(((.((..((((((.((((.(((..(((..(.......)..)))..)))..)))).))))))..)).))) (-22.80)
+>xtr-mir-210 MI0004864 Xenopus tropicalis miR-210 stem-loop
+UCCAGAUGCAGGUCAGCCACUGACUAACGCACAUUGCGCUGCUCCUAAAAUGCCACUGUGCGUGUGACAGCGGCUAACCAGCAUCUAGGAA
+(((((((((.(((.((((.(((....(((((((.((.((............)))).)))))))....))).)))).))).)))))).))). (-42.60)
+>xtr-mir-181a-1 MI0004865 Xenopus tropicalis miR-181a-1 stem-loop
+GGCUACUUUAGUGAACAUUCAACGCUGUCGGUGAGUUUGGUAUCUAAAGGCAAACCAUCGAUCGUUGACUGUACAUUACGGCAAUGCCAG
+(((..((.(((((.(((.((((((..(((((((.(((((.(.......).)))))))))))))))))).))).))))).))....))).. (-32.50)
+>xtr-mir-181a-2 MI0004866 Xenopus tropicalis miR-181a-2 stem-loop
+UUGAGGGCUUCAGAGAACAUUCAACGCUGUCGGUGAGUUUGAGAAAGUGUAAAAAUAUAAACCAUCGGCCGUUGACUGUACCCUGAGGCUUUUCA
+..(((((((((((.(.(((.((((((..(((((((.(((((................)))))))))))))))))).))).).))))))))))).. (-34.09)
+>xtr-mir-215 MI0004868 Xenopus tropicalis miR-215 stem-loop
+AACUGGUAACCAGGAGGAUGACCUAUGAAAUGACAGCCACUUCCAUACCAAACAUGUCUGUCAUUUCUGUAGGCCAAUAUUCUGAUUGCUUUGUUGA
+(((.(((((.(((((...((.(((((((((((((((.((...............)).)))))))))).))))).))...))))).)))))..))).. (-29.86)
+>xtr-mir-217 MI0004870 Xenopus tropicalis miR-217 stem-loop
+UUGAUGUUGUAGAUACUGCAUCAGGAACUGAUUGGAUCCCAGGGAGCAGCCAUCAGUUCCUAAUGCACUGCCUUCGGCAUCUA
+..(((((((.((.((.(((((.((((((((((.((.(((...)))....)))))))))))).))))).)).)).))))))).. (-35.80)
+>xtr-mir-218-1 MI0004871 Xenopus tropicalis miR-218-1 stem-loop
+UGGUAACAAGGCGAGAUUUUCUGUUGUGCUUGAUCUAACCAUGUGGUUGUGAGGUAUGAGUAAAACAUGGUUCUGUCAAGCACCAUGGAACGUCACGCAGCUUUCUACA
+..(((..((((((.(((.((((((.(((((((((..((((((((....................))))))))..))))))))).)))))).))).)))..)))..))). (-38.15)
+>xtr-mir-219 MI0004873 Xenopus tropicalis miR-219 stem-loop
+AUGGAGCUCUCGCCCUUGAUUGUCCAAACGCAAUUCUUGUUCCAAUAGAAAUAUCAAGCCAAGAAUUGUGCCUGGACAUCUGUGGCUGGUGAUCC
+..(((.(.((.(((...(((.(((((..(((((((((((.....(((....))).....)))))))))))..))))))))...))).)).).))) (-34.50)
+>xtr-mir-222 MI0004874 Xenopus tropicalis miR-222 stem-loop
+CGCUCAGUAAUCAGUGUAGAUCCUGUAUAUCUGUCAGCAGCUACAUCUGGCUACUGGGUCUCUA
+.((((((((..((((((((...(((.........)))...))))).)))..))))))))..... (-23.20)
+>xtr-mir-223 MI0004875 Xenopus tropicalis miR-223 stem-loop
+AGUGUGGCACUGAGUGUAUUUGACAAGCUGAGUCCGACACUCAAUGAGACAGAGUGUCAGUUUGUCAAAUACCCCAAGUGAGGCAC
+.((((..((((..(.((((((((((((((......(((((((.........))))))))))))))))))))).)..))))..)))) (-36.80)
+>xtr-mir-301-1 MI0004876 Xenopus tropicalis miR-301-1 stem-loop
+CUGCUAAUGUGUGCUCUGACUUUAUUGCACUACUGUACUAUACAGCUAGCAGUGCAAUAGUAUUGUCAAAGCAUCUGCAAGCAG
+(((((..((((((((.((((.((((((((((.(((((...))))).....))))))))))....)))).)))))..)))))))) (-30.70)
+>xtr-mir-301-2 MI0004877 Xenopus tropicalis miR-301-2 stem-loop
+GAAUUGCUCUGACAGUGUUGCACUACUGUGAUCUCAAAUGAAGCAGUGCAAUAGUAUUGUCAAAGCAUUUCAU
+(((.((((.(((((((((((((((.((.((....)).....)).))))))))...))))))).)))).))).. (-26.90)
+>xtr-mir-302 MI0004878 Xenopus tropicalis miR-302 stem-loop
+CCCCACUACUUUAACAUUGGUGUACUUUCUAUGUCUUUAAAAAGGGUAAGUGCUCCAAUGUUUUAGUGG
+..((((((....((((((((.(((((((((.............))).)))))).)))))))).)))))) (-23.72)
+>xtr-mir-367 MI0004880 Xenopus tropicalis miR-367 stem-loop
+UUACUGUUGCCUAUGUGCAAACUCUGUGCUAUAUUGUCUAGAAUUGCACUGUAGCAAUGGUGA
+((((((((((.(((((((((..((((.((......)).)))).)))))).))))))))))))) (-22.10)
+>xtr-mir-425 MI0004882 Xenopus tropicalis miR-425 stem-loop
+GCCUUGGAAUGACACGAUCACUCCCGUUGAGCCGAAACUCACAGCGCCAUCGGGAAUAUCGUGUCGCUCCAAAGCUC
+((.(((((.(((((((((...(((((.((.(((..........).)))).)))))..))))))))).))))).)).. (-33.60)
+>xtr-mir-489 MI0004884 Xenopus tropicalis miR-489 stem-loop
+GUGGUGGCUUAGUGGUCGUAUGUAUGACGUCAUUUACUGGAUUUUUUAGGAGUGACAUCAUAUGUACGGCUGCUAAACUGCUGC
+(..(..(.((((..(((((((((((((.(((((((.(((((...)))))))))))).)))))))))))))..)))).)..)..) (-41.00)
+>xtr-mir-499 MI0004885 Xenopus tropicalis miR-499 stem-loop
+GUGAGAGCGAGGCAGUUAAGACUUGCAGUGAUGUUUAGUUAAAAUCUUUUCAUGAACAUCACUUUAAGUCUGUACUGCUUCUCCCUC
+..(((.(.((((((((..(((((((.(((((((((((...............))))))))))).)))))))..)))))))).).))) (-36.96)
+>xtr-let-7f MI0004887 Xenopus tropicalis let-7f stem-loop
+UGCAGGAUGAGGUAGUAGAUUGUAUAGUUUUGGGGUCACACCCGAUCUGGGAGAUAACUAUACAGUUUACUGUCUUUCCUGCG
+.((((((.(((..(((((((((((((((((((((......)))))..........))))))))))))))))..))))))))). (-40.50)
+>xtr-let-7g MI0004888 Xenopus tropicalis let-7g stem-loop
+GGCUGAGGUAGUUGUUUGUACAGUUUAAGGGUCUGUGACACCACCCUCUGUUGGAGAUAACUGUACAGGCCACUGCCUUGCCUA
+(((.((((((((.((((((((((((.....((((.(((((........))))).)))))))))))))))).))))))))))).. (-38.80)
+>xtr-mir-9-3 MI0004891 Xenopus tropicalis miR-9-3 stem-loop
+GUUUCUAUCUUUGGUUAUCUAGCUGUAUGAGUGUAAAUAAGCCGUCAUAAAGCUAGAUAACCGAAAGUAGGAAUCA
+(((((((..(((((((((((((((.(((((..((......))..))))).)))))))))))))))..))))))).. (-34.50)
+>xtr-mir-15c MI0004892 Xenopus tropicalis miR-15c stem-loop
+CUUUGAGGUGAUCUAGCAGCACAUCAUGGUUUGUAGAAACAAGGAGAUACAGACCAUUCUGAGCUGCCUCUUGA
+...............(((((.((..((((((((((............))))))))))..)).)))))....... (-21.80)
+>xtr-mir-23a-1 MI0004894 Xenopus tropicalis miR-23a-1 stem-loop
+CUGACAGCGGGGGAUUCCUGGAGAUGGGAUUUUAUUUUGGCAGCCAAUAAAUCACAUUGCCAGGGAUUUCCAACUGUC
+..(((((..((..((((((((..(((.(((((....((((...)))).))))).)))..))))))))..))..))))) (-36.70)
+>xtr-mir-24a MI0004895 Xenopus tropicalis miR-24a stem-loop
+CUCUUGUGCCUACUGAACUGAUAUCAGUUCUAUUUCACACACUGGCUCAGUUCAGCAGGAACAGGAG
+(((((((.(((.(((((((((..(((((............))))).))))))))).))).))))))) (-28.30)
+>xtr-mir-24b MI0004896 Xenopus tropicalis miR-24b stem-loop
+CUCCCGUACCUACUGGGCUGAUAAUCAGUGGUUAUAUCUUCCCCUGGCUCAGUUCAGCAGGACAGGAG
+((((.((.(((.(((((((((...((((.((.........)).)))).))))))))).))))).)))) (-27.30)
+>xtr-mir-29a MI0004897 Xenopus tropicalis miR-29a stem-loop
+ACCCUUUUAAAGGAUGACUGAUUUCUUCUGGUGUUCAGAGUCUUUUGUUUUCUAGCACCAUUUGAAAUCGGUUAUAAUGAUGGGGUA
+(((((.(((....((((((((((((...(((((((.((((.........)))))))))))...))))))))))))..))).))))). (-33.30)
+>xtr-mir-30d MI0004898 Xenopus tropicalis miR-30d stem-loop
+AGUUUGUCGCUGUAAACAUCCCCGACUGGAAGCUGUGAGGCUGCAUUUGAGCUUUCAGUCUGGUGUUUGCUGCUACCGGCU
+(((..((.((.(((((((((...((((((((((((((......)))...))))))))))).))))))))).)).))..))) (-33.00)
+>xtr-mir-92b MI0004899 Xenopus tropicalis miR-92b stem-loop
+UACAGAAGGAUCGGGAUGUUGUGCACUGUUGUCCUUUCUCCUGCCAAUAUUGCACUCGUCCCGGCCUCCUGCG
+..(((.(((.((((((((..(((((.(((((..(........).))))).))))).))))))))))).))).. (-30.60)
+>xtr-mir-93a MI0004900 Xenopus tropicalis miR-93a stem-loop
+AUGGGCUUCAAAGUGCUGUUCGUGCAGGUAGCUUAAUAACAGACCUACUGCAUGGGCGGCACUUCCCAAGCCC
+..((((((..(((((((((((((((((.(((.((.......)).))))))))))))))))))))...)))))) (-37.10)
+>xtr-mir-103-1 MI0004904 Xenopus tropicalis miR-103-1 stem-loop
+UUCUCAUUUCCUUUGGCUUCUUUACAGUGCUGCCUUGUUGCAUAUGGAUCAAGCAGCAUUGUACAGGGCUAUGAAGGAUCUGAGA
+.(((((..((((((((((.((.(((((((((((.(((.(.(....).).)))))))))))))).))))))..))))))..))))) (-37.40)
+>xtr-mir-148a MI0004905 Xenopus tropicalis miR-148a stem-loop
+UAGUCUUUUAAAUCAAAGUUCUGUGACACUUAGACUCUGAAUAUGAUAGCAGUCAGUGCACUACAGAACUUUGUUUUGGGAGUCUG
+(((.((((((((.((((((((((((.((((..(((((((.......))).))))))))...)))))))))))).)))))))).))) (-30.40)
+>xtr-mir-338-1 MI0004906 Xenopus tropicalis miR-338-1 stem-loop
+GUCCCCUGGAACAAUAUCCUGAUGCUGAAUGAGUGGGACAUACAUGCUCCAGCAUCAGUGAUUUUGUUGCAGGCGGCA
+(((.((((.(((((.((((((((((((...((((((......).)))))))))))))).))).))))).)))).))). (-37.50)
+>xtr-let-7e-1 MI0004907 Xenopus tropicalis let-7e-1 stem-loop
+CCCUGUGGGAUGAGGUAGUAGGUUGUUUAGUUAUUGGGCCGCACCCACCAAUGGGAGAGAACUACACAACCUACUGUCUCUCCUAAAGUG
+..((.(((((.(((..((((((((((.(((((..((((.....))))((....))....))))).))))))))))..)))))))).)).. (-38.40)
+>xtr-let-7a MI0004908 Xenopus tropicalis let-7a stem-loop
+GUGGGCUCCAGGCUGAGGUAGUAGGUUGUAUAGUUGAGGAUAACACCAAAGGAGAUAACUGUACAGCCUCCUAUCUUUCCCUGGGGCUU
+..((((((((((..(((((((.((((((((((((((.(.....).((...))...)))))))))))))).)))))))..)))))))))) (-43.60)
+>xtr-let-7e-2 MI0004909 Xenopus tropicalis let-7e-2 stem-loop
+GCCCUUUGGGGUGAGGUAGUAGGUUGUUUAGUUGUGGGUUGCACCCUGACGUUUGGAUAACUAUACAAUCUACUGUCUUUCCUGAAGUGGCUG
+((((((..(((.(((..((((((((((.((((((((((.....)))..........))))))).))))))))))..))))))..))).))).. (-41.70)
+>xtr-mir-16b MI0004910 Xenopus tropicalis miR-16b stem-loop
+AAUUGCUCCGCAUUAGCAGCACGUAAAUAUUGGGUGAUAUGAUAUGGAGCCCCAGUAUUAUUGUACUGCUUAAGUGUGGCAAGG
+..((((..(((...(((((.(((..(((((((((.(.(((...)))...))))))))))..))).)))))...)))..)))).. (-28.20)
+>xtr-mir-20a MI0004911 Xenopus tropicalis miR-20a stem-loop
+GCUAAAGUGGUGCUAAAGUGCUUAUAGUGCAGGUAGUUUUUCUGUAUUCUACUGCAUAAUGAGCACUUAAAGUACUCCUAGCUG
+(((..((..(((((.((((((((((.((((((.(((..(......)..))))))))).))))))))))..)))))..))))).. (-33.30)
+>xtr-mir-22 MI0004912 Xenopus tropicalis miR-22 stem-loop
+CUGGCCCGCUAGAAGCAGUUCUUCAGUGGCAAGCUUUAUGUUGUUCCUCUGUGCUAAAGCUGCCAGUUGAAGAACUGUUGAAAGUGGCUACU
+.(((((.(((...((((((((((((((((((.((((((.((...........))))))))))))).)))))))))))))...)))))))).. (-41.10)
+>xtr-mir-23b MI0004913 Xenopus tropicalis miR-23b stem-loop
+CCGGUGUGGCUGUUUGGGUUCCUGGCAUGCUGAUUUGUGAGUUAAGAUUAAAAUCACAUUGCCAGGGAUUACCACACAACCAUGUCCU
+..((..(((.(((.(((((((((((((((.((((((...(((....))).)))))))).))))))))))..))).))).)))..)).. (-34.40)
+>xtr-mir-25-1 MI0004914 Xenopus tropicalis miR-25-1 stem-loop
+GCUGGUGUUGACAGGCAGAGACAGGAGCAACUGCUGGUGUGCCUUGGUAGCAUUGCACUUGUCUCGGUCUGACAGUGUCGGC
+(((((..(((.(((((.((((((((.((((.(((((.((.....)).))))))))).)))))))).))))).)))..))))) (-41.60)
+>xtr-mir-27c-1 MI0004916 Xenopus tropicalis miR-27c-1 stem-loop
+CUCUAGAGAGGCAGGACUUAGCUGGCUCUGUGAACAGGUCUUGUGUGUCAAUGUUCACAGUGGCUAAGUUCCACCCCACUGG
+..((((.(.((..((((((((((....(((((((((...(......)....))))))))).))))))))))..)).).)))) (-31.60)
+>xtr-mir-29c MI0004918 Xenopus tropicalis miR-29c stem-loop
+UCCCUUACACAGGAUGACCGAUCUCUCUUGGUGUUCAGAGGCUCAGGUCUUCAUCUAGCACCAUUUGAAAUCGGUUAUAAUGUAAGGUGA
+(((((((((....(((((((((.((...(((((((..(((((....))))).....)))))))...)).)))))))))..))))))).)) (-35.50)
+>xtr-mir-30e MI0004920 Xenopus tropicalis miR-30e stem-loop
+GGGCAGUUACAGCCUCUGUAAACAUCCUUGACUGGAAGCUGUGAAAUAAUGAUAGUAGCUUUCAGUCGGAUGUUUACAGCUGCUAGCUGC
+..(((((((((((...(((((((((((..((((((((((((..(........)..))))))))))))))))))))))))))).))))))) (-44.70)
+>xtr-mir-31 MI0004921 Xenopus tropicalis miR-31 stem-loop
+CCUAGUUCUAGAGAGGAGGCAAGAUGUUGGCAUAGCUGUUGCAUCUGAAACCAGUUGUGCCAACCUAUUGCCAUCUUUCUUGUCUACC
+..(((....((((((..(((((...(((((((((((((((........)).)))))))))))))...)))))..))))))...))).. (-37.40)
+>xtr-mir-33a MI0004922 Xenopus tropicalis miR-33a stem-loop
+CUGUGGUGCAUUGUAGUUGCAUUGCAUGUGAUAUCAGCGGUGUGCAAUGUGCCUGCAGUGCAACACAG
+(((((.((((((((((..((((((((..(..........)..))))))))..)))))))))).))))) (-34.40)
+>xtr-mir-33b MI0004923 Xenopus tropicalis miR-33b stem-loop
+CCCUGGUGCAUUGUUGUUGCAUUGCAUGUCACCUUGGACGUUGUGCAAUGUUUCUUCAGUGCAGUAUGG
+((.((.(((((((..(..((((((((((((......)))...)))))))))..)..))))))).)).)) (-26.90)
+>xtr-mir-34b-3 MI0004924 Xenopus tropicalis miR-34b-3 stem-loop
+UGUUGGGUUUUCAGGCAGUGUAGUUAGCUGAUUGUGUUAACAUAAGACUUGCAAUCACUAGCUAAACUACCAGCAAAACUAAACA
+.(((.(((((((.((.(((.(((((((.((((((((((.......)))..)))))))))))))).))).)).).)))))).))). (-26.60)
+>xtr-mir-92a-1 MI0004926 Xenopus tropicalis miR-92a-1 stem-loop
+CUUUCUGUAUAGGUUGGGAUUGGUUGCAAUGCUGUACUAUUUAUGUAGUAUUGCACUUGUCCCGGCCUGUUUAGGAUG
+..(((((.((((((((((((.(((.(((((((((((.......)))))))))))))).)))))))))))).))))).. (-36.00)
+>xtr-mir-100 MI0004927 Xenopus tropicalis miR-100 stem-loop
+GUUGCCAUAAACCCGUAGAUCCGAACUUGUGCUGUGCCCCUCUCACAAGCUCGAGUGUGCGGGUCUGUGUCGGCUU
+((((.((((.(((((((.(..(((.((((((..(.......).)))))).)))..).))))))).)))).)))).. (-30.90)
+>xtr-mir-124 MI0004930 Xenopus tropicalis miR-124 stem-loop
+UAAGUCUCUGACUCUCCGUGUUCACAGCGGACCUUGAUUUAAUGUCAUACAAUUAAGGCACGCGGUGAAUGCCAAGAGUGGAGCCUAC
+..((.((((.(((((..((((((((.(((..((((((((...........))))))))..))).))))))))..))))))))).)).. (-34.50)
+>xtr-mir-125a MI0004931 Xenopus tropicalis miR-125a stem-loop
+GUCCCUGAGACCCUUAACCUGUGAGGAAGACAUAUGUCACAGGUGAGGUUCUGAGGAGCUGG
+(..(((.(((.(((((.(((((((.(........).)))))))))))).))).)))..)... (-27.30)
+>xtr-mir-128-1 MI0004932 Xenopus tropicalis miR-128-1 stem-loop
+UGAGCGGCUGGAACCGGGCCCGGAGCGCUGUCUGAGAGGGUUUAAGUUUCUCACAGUGAACCGGUCUCUUUUUCAGUCUCUUC
+.(((.((((((((..(((.((((..((((((..((((((.......))))))))))))..)))).)))..)))))))).))). (-34.80)
+>xtr-mir-135-2 MI0004933 Xenopus tropicalis miR-135-2 stem-loop
+CCCCCUGCUGAGGUAUAUGGCUUUUUAUUCCUAUGUGAUUGCUUUCCUAAUUCACAUAGGGCAGAAAGCCAUGUGCUGCACAGGGGAC
+.((((((.((.(((((((((((((((..((((((((((.............)))))))))).))))))))))))))).)))))))).. (-47.32)
+>xtr-mir-137-1 MI0004934 Xenopus tropicalis miR-137-1 stem-loop
+GCUCUGUGGCUCUCUUCGGUGACGGGUAUUCUUGGGUGGAUAAUACGGAUUACGUUGUUAUUGCUUAAGAAUACGCGUAGUUGAGGAGAGUAUCUUCAGCA
+(((.....(((((((((((..(((.(((((((((((..(.(((((((.....)).))))))..))))))))))).)))..)))))))))))......))). (-45.70)
+>xtr-mir-143 MI0004937 Xenopus tropicalis miR-143 stem-loop
+UGUCUCCCAGCCCAAGGUGCAGUGCUGCAUCUCUGGUCAGUUGUGAGUCUGAGAUGAAGCACUGUAGCUCGGGAAGGGGGAAU
+..((((((..(((.((.(((((((((.((((((.(((((....))).)).)))))).))))))))).)).)))..)))))).. (-45.60)
+>xtr-mir-145 MI0004939 Xenopus tropicalis miR-145 stem-loop
+ACCUAUUCCUCAAGGUCCAGUUUUCCCAGGAAUCCCUUGGGUGCUGUGGUGGGGAUUCCUGGAAAUACUGUUCUUGGGGUGUAGGC
+.(((((.((((((((..((((.((.((((((((((((.............)))))))))))).)).)))).)))))))).))))). (-43.92)
+>xtr-mir-191 MI0004941 Xenopus tropicalis miR-191 stem-loop
+GGCGGUAGCUCUGACAACGGAAUCCCAAAAGCAGCUGUUGUGAAAAUGUUCAGCUGCAGUUGGGACCCGUUCACGGAUCUAUUGCC
+((((((((.((((..(((((..((((((..(((((((.(((....)))..)))))))..)))))).)))))..)))).)))))))) (-44.00)
+>xtr-mir-196a MI0004942 Xenopus tropicalis miR-196a stem-loop
+UUUGUAUCCAGCUGAUCUGUGGUUUAGGUAGUUUCAUGUUGUUGGGAUUGCUUUUUCUUAACGCGGCAACAAGAAACUGCCUUAAUUACGUCAGUUCGUCUUCAUC
+..((...(.(((((((..((((((.((((((((((.((((((((.(.(((........)))).)))))))).)))))))))).))))))))))))).)....)).. (-36.60)
+>xtr-mir-196b MI0004943 Xenopus tropicalis miR-196b stem-loop
+AGCCGCUGUGUGGUUUAGGUAGUUUUAUGUUGUUGGGCAUUCACCUUUCUCUCUACAACAAGAAACUGCCUUAAUUACAUCAGUGGG
+..(((((((((((((.((((((((((.((((((.(((.............))).)))))).)))))))))).))))))).)))))). (-37.92)
+>xtr-mir-199b MI0004944 Xenopus tropicalis miR-199b stem-loop
+AAGAUCCCGAGAGGUGGGUGGUCCCGUUCCCCCAGUGUUCAGACUACGUGUUCGUUGGACAGAACCUGAACAGUAGUCUACACACUGGUUAAACUGGGCCAUGCGGUCAA
+..((((((....)).(.(((((((.(((...(((((((..(((((((.((((((..((......)))))))))))))))..)))))))...))).))))))).))))).. (-46.70)
+>xtr-mir-200a MI0004945 Xenopus tropicalis miR-200a stem-loop
+UGGUCCUCUAUGGACAUCUUACUAGACAGUGCUGGAUUUAUUUUAUCUUUUCUAACACUGUCUGGUAACGAUGUUUAAAGAGUGAGCCA
+.((((((((.(((((((((((((((((((((.((((..............)))).))))))))))))).)))))))).)))).)).)). (-40.44)
+>xtr-mir-200b MI0004946 Xenopus tropicalis miR-200b stem-loop
+CUGUGGCGCUAUUGCCAUCUUACUGGGCAGCAUUGGAUUUUGUCUAUGUUUCUAAUACUGCCUGGUAAUGAUGAUUAUGGCGCCCCACA
+.((.((((((((...((((((((..(((((.((((((.............)))))).)))))..)))).))))...)))))))).)).. (-40.52)
+>xtr-mir-204-1 MI0004949 Xenopus tropicalis miR-204-1 stem-loop
+UAGAGGACUUCGACAUUGUGACCCAUGGGCUUCCCUUUGUCAUCCUAUGCCUGAGAAUGCUGGAGAGGCAGGGACAGCAAAGGGAUGCUCAGAUGUUACCUCUUG
+.(((((.....((((((........(((((.(((((((((..((((.(((((.............)))))))))..))))))))).))))))))))).))))).. (-40.12)
+>xtr-mir-205a MI0004950 Xenopus tropicalis miR-205a stem-loop
+CCACGUGUCCUGCUGUCCUUCAUUCCACCGGAGUCUGUCUCAUACAUAAUCAGAUUUCAGUGGAGUGAAGCACAAGAGGCAUGUAG
+..(((((.(((..(((.(((((((((((.((((((((.............)))))))).))))))))))).)))..)))))))).. (-39.02)
+>xtr-mir-208 MI0004951 Xenopus tropicalis miR-208 stem-loop
+UCCUUUCAACAGGCAAGCUUUUUGCUUGGAUUAUGUUUUCUGUUGUUGUAUAAGACGAGCAUAAAGCUUGUUUGUUAGAAG
+..(((..((((((((((((((.((((((..(((((....(....)...)))))..)))))).))))))))))))))..))) (-32.40)
+>xtr-mir-212 MI0004952 Xenopus tropicalis miR-212 stem-loop
+UGGUCAUUGCAUCGGCACCUUGGCUCUAGACUGCUUACUGUGAAACUGUGCUAUAGGAACAGUAACAGUCUACAGUCAUGGCUACUGACGUAUGAC
+..(((((.((.((((..((.(((((.(((((((.(((((((....((((...))))..)))))))))))))).))))).))...)))).))))))) (-36.90)
+>xtr-mir-221 MI0004953 Xenopus tropicalis miR-221 stem-loop
+ACCCAGACUUUGGCGUGCACCUGGCAUACAAUGUAGAAAACUGUGUUUGCAAAGCAACAGCUACAUUGUCUGCUGGGUUUCAUGCUGAAUGGA
+..(((...((..(((((.(((..(((.(((((((((....(((((((.....))).))))))))))))).)))..)))..)))))..))))). (-38.70)
+>xtr-mir-338-2 MI0004954 Xenopus tropicalis miR-338-2 stem-loop
+CAACAAUAUCCUGAUGCCGUCUGAGUGUGCGGGAAAGCUCCAGCAUCAGUGAUUUUGUUG
+((((((.((((((((((.(...((((..........))))).))))))).))).)))))) (-20.60)
+>xtr-mir-363 MI0004955 Xenopus tropicalis miR-363 stem-loop
+UUUUGUUGUUCGCGGGUGGAUCACGAUGCAAUUUUAUUUAGUUUGGUAGGAGAAAAAUUGCACGGUAUCCAUCUGUAAACCGCAGAA
+.(((((.(((..(((((((((..((.(((((((((.(((..........))).)))))))))))..)))))))))..))).))))). (-32.40)
+>xtr-mir-429 MI0004956 Xenopus tropicalis miR-429 stem-loop
+UGCCUGUUGACCAAUGUCUUACCAGACAAGGUUAGAUCUAGUUACUCUCGUCUAAUACUGUCUGGUAAUGCCGUUGGUCACAUUGGC
+.(((.(((((((((((.(((((((((((..(((((((..((.....)).)))))))..)))))))))).).))))))))).)).))) (-38.60)
+>xtr-mir-449 MI0004957 Xenopus tropicalis miR-449 stem-loop
+CUGUGUUUAGAAGGAAGGCAGUGUAAUGUUAGCUGGUUGGAAAAUAGCAGACACUGGUUAACUUACACCUGCCCCCCUUCUUUACAU
+..((((..((((((..((((((((((.((((((..((.(............)))..))))))))))).)))))..))))))..)))) (-36.10)
+>xtr-mir-451 MI0004958 Xenopus tropicalis miR-451 stem-loop
+GAGUGGCAAUGAAACCGUUACCAUUACUGAGUUUAGUAAUGGUAAGGGUUCUGUUGCUGCUC
+(((..(((((..((((.((((((((((((....)))))))))))).))))..)))))..))) (-36.40)

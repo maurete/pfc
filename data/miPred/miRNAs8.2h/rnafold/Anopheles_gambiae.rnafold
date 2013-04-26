@@ -1,0 +1,114 @@
+>aga-bantam MI0001599 Anopheles gambiae bantam stem-loop
+UGUGUGGAUGAAAUGUAAUCACAGAACCGGUUUUCAUUUUCGAUCUGACUUAUUUUUUUCACAAACAAGUGAGAUCACUUUGAAAGCUGAUUUUGUACAAUUAAUUCAACG
+.((.(((((.((.(((....((((((.(((((((((.....(((((.((((.(((.......))).)))).)))))....))))))))).))))))))).)).))))))). (-28.10)
+>aga-let-7 MI0001600 Anopheles gambiae let-7 stem-loop
+GCCUACUCCCGUGUUGAGGUAGUUGGUUGUAUAGUACCGUGGUUCCAAUACUCGACUAUACAAUCCGCUAACUUACCUCGUGGGUAGAGU
+((((((((.((.(.((((.((((.(((((((((((...(((.......)))...))))))))))).)))).)))).).)).)))))).)) (-32.60)
+>aga-mir-1 MI0001601 Anopheles gambiae miR-1 stem-loop
+GAAGCAAAGCUGCGAAAGUUCCAUGCUUCCUUGCAUUCAAUAGUAUGUUUGUAAAACCCUAUGGAAUGUAAAGAAGUAUGGAGCGAUUGGGCUAGUUC
+.......((((.(((..((((((((((((.((((((((.((((...(((.....))).)))).)))))))).))))))))))))..)))))))..... (-36.70)
+>aga-mir-10 MI0001602 Anopheles gambiae miR-10 stem-loop
+GUCGAUUUAUGUUCUACAUCCACCCUGUAGAUCCGAAUUUGUUUGAAUUUAUAUUAAUAACAAAUUCGGUUCUAGAGAGGUUUGUGUGGGGCAUUUGUUAAC
+((..((..(((((((((((..(((((.((((.(((((((((((..(((....)))...))))))))))).)))).)).)))..)))))))))))..))..)) (-41.70)
+>aga-mir-100 MI0001603 Anopheles gambiae miR-100 stem-loop
+GCCCCGUCUGUGGAAACCCGUAGAUCCGAACUUGUGCUGCACUGUACAACUGGACACAAGAACGGAUAUAUGGGAUUCUGUCGACGGUUGGC
+((((((((.(..(((.((((((.(((((..((((((((.............)).))))))..))))).)))))).)))..).)))))..))) (-40.12)
+>aga-mir-124 MI0001604 Anopheles gambiae miR-124 stem-loop
+CGUUUUUCUCCUGGUGUUCACUGUAGGCCUGUAUGUUCUAUUGCGGAUUUCAUAAGGCACGCGGUGAAUGCCAAGAGCGAACG
+(((((..(((.(((((((((((((..((((.((((.(((.....)))...))))))))..))))))))))))).))).))))) (-36.40)
+>aga-mir-125 MI0001605 Anopheles gambiae miR-125 stem-loop
+UAUUGUUUCGUUUUUUUGUAUCUGCUGAUUCCCUGAGACCCUAACUUGUGACUAUCGUUGCAAAGUUUCACAAGUUUUGAUCUCCGGUAUUAGCGGUUGAGAUGCAACGGUA
+(((((((.((((((.......((((((((..((.((((.(..(((((((((....(........)..)))))))))..).)))).)).))))))))..)))))).))))))) (-33.80)
+>aga-mir-133 MI0001606 Anopheles gambiae miR-133 stem-loop
+UGUUGACGCAAUAUUUUCCCUUUGCGAAUGCAUUUGGUCCCCUUCAACCAGCUGUAGCAGUGAUUGCAAUCAACAGU
+((((((.(((((.........((((...((((.(((((........))))).))))))))..)))))..)))))).. (-18.30)
+>aga-mir-13b MI0001607 Anopheles gambiae miR-13b stem-loop
+UGCUCGUGGUCAGGUCGUAAAAAUGGUUGUGCCGUGUCGAUUUAAGAAAAGUUCAUAUCACAGCCAUUUUGACGAGUUUGACCACUCUUGAGCA
+.(((((((((((((((((.((((((((((((..((((.(((((.....))))).)))))))))))))))).)))).)))))))))....)))). (-40.90)
+>aga-mir-14 MI0001608 Anopheles gambiae miR-14 stem-loop
+GCCCGAUAAGCCUGUGGGAGCGAGAUUAAGGCUUGCUGGUUAUCACGUUAAACGUAGUCAGUCUUUUUCUCUCUCCUAUCGGUACUAACGGUGC
+(((((.((.(((.(((((((.((((..((((((.(((((((.........))).)))).))))))..)))).))))))).)))..)).))).)) (-36.70)
+>aga-mir-184 MI0001609 Anopheles gambiae miR-184 stem-loop
+GGUGCACUCGAACCCUUAUCAUUCUUUCGCCCCGUGUGCUUUCUAACAACUGGACGGAGAACUGAUAAGGGCCCGGGUCACC
+((((.(((((..((((((((((((((.((((...(((........)))...)).))))))).)))))))))..))))))))) (-35.50)
+>aga-mir-210 MI0001610 Anopheles gambiae miR-210 stem-loop
+GAAAUUCAUUGCAGCUGCUGACCACUGCACAAGAUUAGAAUGCGACUCUUGUGCGUGUGACAACGGCUAUUAUGGGUUUU
+(((((((((...(((((.((..((((((((((((...(....)...))))))))).))).)).)))))...))))))))) (-27.60)
+>aga-mir-219 MI0001611 Anopheles gambiae miR-219 stem-loop
+UUUCUAGCUCUGAUUGUCCAAACGCAAUUCUUGUCCUGUGCUGGUUUAGCUACUCAAGAGUUGUGACUGGACAUCCGUGGCUCGGAA
+.((((((((.((..((((((..(((((((((((....((((((...)))).)).)))))))))))..))))))..)).)))).)))) (-34.30)
+>aga-mir-263 MI0001612 Anopheles gambiae miR-263 stem-loop
+CCCUGGUACAUGUAAUGGCACUGGAAGAAUUCACGGGAUUUUUUUCAACAUUCCCGUGUUCUCUUAGUGGCAUACCUAGUACAGGG
+(((((.(((..(((.((.(((((..((((..(((((((.............)))))))))))..))))).)))))...)))))))) (-34.02)
+>aga-mir-275 MI0001613 Anopheles gambiae miR-275 stem-loop
+UGAGCCGUCUAAUGACACGCGCUAAGCAGGAACCGGGACUUGGUACACAUUCGCUAGCAGUCAGGUACCUGAAGUAGCGCGCGUUAUUCGGCUCA
+.((((((...((((((.(((((((..((((.(((..((((((((........))))..)))).))).))))...))))))).)))))))))))). (-47.40)
+>aga-mir-276 MI0001614 Anopheles gambiae miR-276 stem-loop
+GGUGACUGCCAUCAGCGAGGUAUAGAGUUCCUACGGUAAUCGAUUGAAACUUUGUAGGAACUUCAUACCGUGCUCUUGGAUAGCCGUUUACC
+(((.....(((..((((.(((((..(((((((((((...((....))....)))))))))))..))))).))))..)))...)))....... (-36.00)
+>aga-mir-277 MI0001615 Anopheles gambiae miR-277 stem-loop
+GUUUUGGGGUACGUGUCAGAGGUGCAUUUACAUCGAACUAUUCCAGUUGAGGUAUUUGUAAAUGCACUAUCUGGUACGACAUUCCAGAAU
+((((((((((.(((..((((((((((((((((((.((((.....))))..))....)))))))))))).))))..)))..)))))))))) (-35.30)
+>aga-mir-278 MI0001616 Anopheles gambiae miR-278 stem-loop
+GGUACGGUACGGACGGACGAUAGUCUUCAACGACCGUUCCGUUUGACACGAGGUCGGUGGGACUUUCGUCCGUUUGUAAGGCC
+(((....(((((((((((((.(((((.((.(((((....(((.....))).))))).))))))).)))))))))))))..))) (-40.80)
+>aga-mir-279 MI0001617 Anopheles gambiae miR-279 stem-loop
+UUCCUAUCAGUGUAAAUGGGUGUGAAUCUAGUGAUUUCACAUGAAUUUUCGAUUGUGACUAGAUCCACACUCAUUAAUGUUGUUUGGAA
+.(((...(((..(.((((((((((.((((((.....((((((((....)))..))))))))))).)))))))))).)..)))...))). (-31.90)
+>aga-mir-281 MI0001618 Anopheles gambiae miR-281 stem-loop
+GCAAUCGAAUAUGAAAAUAAAGAGAGCUAUCCGUCGACAGUAGGGAUAUAAUUCACUGUCAUGGAAUUGCUCUCUUUAUGUACAAUUCGAUAUUCAACGUGC
+...(((((((.((...(((((((((((..(((((.((((((..(.......)..)))))))))))...)))))))))))...)))))))))........... (-37.60)
+>aga-mir-282 MI0001619 Anopheles gambiae miR-282 stem-loop
+GUAACAGAGCUAAUCUAGCCUCUUCUAGGCUUUGUCUGUACAGUUUCUGCAAACCAGACAUAGCCUGUCAGAGGUUAGGUGAAAUCUGCUAGC
+....((((....(((((((((((..((((((.((((((....((....))....)))))).))))))..)))))))))))....))))..... (-39.50)
+>aga-mir-283 MI0001620 Anopheles gambiae miR-283 stem-loop
+UUCGACCGAAAGGUAAAUAUCAGCUGGUAAUUCUAGGCUAUCAAUCCAUCGUGCAUCCCGGGAUUUCAGCUGAUAUCCACUUUUCCGUCGAG
+.(((((.(((((((..(((((((((((.(((((..((....((........))...))..))))))))))))))))..))))))).))))). (-36.70)
+>aga-mir-2-1 MI0001621 Anopheles gambiae miR-2-1 stem-loop
+GCGAAAGCGUCACACGGCCUAGCUCAUCAAAGCUGGCUGUGAUAUGAGAUAUCGGAUCGAAAGUGCACCAUUUCACAGCCACUUUGAGAGACAGGACAUGCGUUUGC
+(((((.((((.......(((..(((.((((((.(((((((((.(((.(....).(..(....)..)..))).))))))))))))))))))..)))..)))).))))) (-38.70)
+>aga-mir-2-2 MI0001622 Anopheles gambiae miR-2-2 stem-loop
+GUGACGCAUUGCUCAUCAAAGCUGGCUGUGAUAGCAACUAUCAAAGCAAGCUACAACAACCAAGUUUGAUGACAAUGCAUGGC
+.....((((((.((((((((..(((.(((..((((..((.....))...))))..))).)))..))))))))))))))..... (-28.60)
+>aga-mir-305 MI0001623 Anopheles gambiae miR-305 stem-loop
+UUUGUCACAUGUCUAUUGUACUUCAUCAGGUGCUCUGGUGGAUUUGAGAAAACCCGGCACAUGUUGGAGUACACUCUAUGUGCUGACAAG
+.(((((((((((....(((((((((.((.(((((..(((............))).))))).)).)))))))))....))))).)))))). (-31.30)
+>aga-mir-307 MI0001624 Anopheles gambiae miR-307 stem-loop
+UGGACUCAUUCUCUCGAUCACUCACUCAACCUGGGUGUGAUGCUUUUUUGAAUCAUCACAACCUCCUUGAGUGAGCGACCGCGGAUUGACUAAAACCA
+.....(((.((.(.((.((.(((((((((...((.(((((((.(((...))).))))))).))...))))))))).)).)).))).)))......... (-32.80)
+>aga-mir-308 MI0001625 Anopheles gambiae miR-308 stem-loop
+GCUUCUCGUGCGAUGUUUCGCAGUAUAUCCCUGUGAGUUUGCUACUUUUCAAUGGUCAAAUCACAGGAGUAUACUGUGAGAUGUUGCCGGUUACUUAGGC
+.....(((.((((((((((((((((((..(((((((.(((((((........))).)))))))))))..))))))))))))))))))))).......... (-43.70)
+>aga-mir-315 MI0001626 Anopheles gambiae miR-315 stem-loop
+UAUAAAAUUUUGAUUGUUGCUCAGAAAGCCGUGUCGAUUAAGCAAUUCGCUUUCGGGCAGUAAUCAAAGUCAAAUA
+......((((((((((((((((.((((((..(((.......)))....))))))))))))))))))))))...... (-24.20)
+>aga-mir-317 MI0001627 Anopheles gambiae miR-317 stem-loop
+CGUCUCUGCCACUGGGAUACUCCUUGUGCUCGCUGUGCAUAUCGAUUCAAACUAGUGAACACAUCUGGUGGUAUCUCAGUGGCCGGGAUG
+((((((.((((((((((((((((.((((.(((((((..............)).))))).))))...)).)))))))))))))).)))))) (-44.04)
+>aga-mir-7 MI0001628 Anopheles gambiae miR-7 stem-loop
+GGCAAAACAUUGUAUGGAAGACUAGUGAUUUUGUUGUUUGGCUUAUGAUACUAACAAUAAAUCUCUCGUCUUUCUACAAAGUUUGCC
+((((((...(((((.(((((((.((.(((((.((((((.(..........).))))))))))).)).))))))))))))..)))))) (-29.30)
+>aga-mir-79 MI0001629 Anopheles gambiae miR-79 stem-loop
+GUGCCCUUUUGUCCGCGCUUUGGCGCUUUAGCUGUAUGAUAGAAUUUGAACUAUUUCAUAAAGCUAGAUUACCAAAGCAUAGACGAAUUGGGAC
+...(((.((((((...(((((((...(((((((.((((((((........)))..))))).)))))))...)))))))...))))))..))).. (-33.20)
+>aga-mir-8 MI0001630 Anopheles gambiae miR-8 stem-loop
+GGGUGUCUGUUCACAUCUUACCGGGCAGCAUUAGAUAUGUUAUCGGAUAUUUCUAAUACUGUCAGGUAAAGAUGUCGUCCGAGCCC
+((((...((..(((((((((((.(((((.((((((.(((((....))))).)))))).))))).))).))))))).)..)).)))) (-33.10)
+>aga-mir-9a MI0001631 Anopheles gambiae miR-9a stem-loop
+GUCAAUGUUCUCUUUGGUUAUCUAGCUGUAUGAGUGUAUUUUAAACGUCAUAAAGCUAGCAUACCGAAGUUAAUAAUUGAC
+(((((((((..(((((((...((((((.(((((.(((.......)))))))).))))))...)))))))..))).)))))) (-28.60)
+>aga-mir-92a MI0001632 Anopheles gambiae miR-92a stem-loop
+UCAGGACUACGCGUCGGCCGGCUCAAGAGCAAAAUUGUGUUUCAUACUAAUAUUGCACUUGUCCCGGCCUAUGUGUGGUAAGGCCUGAA
+((((((((((((((.((((((..((((.((((.((((.((.....)))))).)))).))))..)))))).)))))))))....))))). (-42.80)
+>aga-mir-92b MI0001633 Anopheles gambiae miR-92b stem-loop
+GGGCUCCGGAUGUAGGACGUGACAGGUGCAUUAUUUGCUGAUUUUCAAUGUCAAAUUGCACUUGUCCCGGCCUGCAGCUUACCGCCC
+((((...((.((((((.((.((((((((((..((((((...........).))))))))))))))).)).)))))).))....)))) (-35.50)
+>aga-mir-9b MI0001634 Anopheles gambiae miR-9b stem-loop
+UGCCACUUAUUGGGACUUUGGUGAUUUUAGCUGUAUGUUGAAUGCAUUCCUAACCACAUAUAGCUUUAUCACCAAAAACCUAAUGUGUGUGUA
+((((((.(((((((..(((((((((...((((((((((.(.............).))))))))))..)))))))))..))))))).))).))) (-35.72)
+>aga-mir-9c MI0001635 Anopheles gambiae miR-9c stem-loop
+UUUCCGGCUGUAUCUUUGGUAUUCUAGCUGUAGAAUGUUGUUUUCAUUGUAAUAUCUCUAAAGCUUUAGUACCAGAGGUCCAACUGGGAA
+.((((((.((.((((((((((((..((((.((((((((((.........)))))).)))).))))..)))))))))))).)).)))))). (-34.40)
+>aga-mir-iab-4 MI0001636 Anopheles gambiae miR-iab-4 stem-loop
+GUGCCGCUUCAUGAACGUAUACUGAAUGUAUCCUGAGUGCUACUUAUCCGGUAUACCUUCAGUAUACGUAACAAGAGGCGACAC
+(((.((((((.((.((((((((((((.((((((((((.....))))...)).)))).))))))))))))..)).)))))).))) (-35.20)
