@@ -328,7 +328,7 @@ def triplet ( sequence, structure, normalize = True ):
     structure = structure.replace(')','(')
 
     # recorro la secuencia: para cada triplet sumo 1 al bucket correspondiente
-    for i in list(range(ll,lr)) + list(range(rl,rr)):
+    for i in list(range(ll,lr+1)) + list(range(rl,rr+1)):
         occur[sequence[i] + structure[i-1:i+2]] += 1
         occur['total'] += 1
 
