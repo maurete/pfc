@@ -1,367 +1,150 @@
-\documentclass[a4paper,11pt,oneside]{article}
+\documentclass[bibliography=openstyle]{scrartcl}
+\include{conf/preconfig}
 %
-% importar el archivo conf/packages.tex
 \include{conf/packages}
+%\usepackage[backend=biber]{biblatex}
 %
-% ===
-% === Propiedades del documento: título, autor, etc
-% ===
-%
-\newcommand{\titulo}{{\large FICH --- UNL}\\Métodos Numéricos y
-  Simulación -- 2012\\{Guía de Trabajos Prácticos 3}}
-\newcommand{\autor}{Torrez, Mauro}
-\newcommand{\fecha}{\today}
-\newcommand{\tituloPDF}{MNS GTP3}
-\newcommand{\autorPDF}{Mauro Torrez}
-\newcommand{\asuntoPDF}{MNS GTP3}
-\newcommand{\clavesPDF}{MNS GTP3}
-%
-% importar los archivos conf/config.tex y conf/comandos.tex
 \include{conf/config}
 \include{conf/comandos}
 \include{conf/fuentes}
-%
-% ===
-% === Inicio del documento
-% === 
+\addbibresource{biblio.bib}
 %
 \begin{document}
-% crear la página de título
+\selectlanguage{spanish}
+% pagina de titulo
+\begin{titlepage}
+\titlehead{\center Universidad Nacional del Litoral\\
+Facultad de Ingeniería y Ciencias Hídricas}
+\subject{Ingeniería en Informática\\Propuesta de Proyecto Final de Carrera}
+\title{Desarrollo de un clasificador de secuencias de pre-microRNA mediante
+  técnicas de Inteligencia Computacional}
+\author{Mauro Javier Torrez}
+%\subtitle{titulo extra}
+\publishers{\-\\[4em]{Director\\Dr. Diego H. Milone}\\[2em]
+  {Asesora temática\\Dra. Georgina S. Stegmayer}}
+\date{\-\\[2em]\today}
 \maketitle
-%
-\section*{Ejercicio 4}
-%
-Resuelvo el problema
-\begin{align*}
-  \begin{cases}
-    \dx{\phi}{2}-\phi=0, & 0\leq x\leq 1,\\
-    \phi(0)=0,\\
-    \phi(1)=1
-  \end{cases}
-\end{align*}
-mediante el método de elementos finitos, con una partición de M elementos en $x$.
-
-Planteo mediante residuos ponderados
-\begin{align*}
-  \int_0^1 W_l \left( \dx{\hfi}{2}-\hfi \right)dx=0,\qquad l=1,2,\ldots,M+1,\\
-%% \end{align*}
-%% donde 
-%% \begin{align*}
-  \hfi = \sum_{m=1}^{M+1}\phi_m N_m.
-\end{align*}
-%
-%\begin{nota}
-  Para este problema particular, ignoro explícitamente el residuo en el contorno, ya
-  que el valor de los nodos en los extremos es conocido, y las funciones de forma
-  que utilizaré son de soporte compacto.
-%\end{nota}
+\end{titlepage}
 %
 
-La forma débil de esta integral será entonces
-\begin{align*}
-  -\int_0^1 \left(\dx{W_l}{}\dx{\hfi}{}+W_l\hfi\right)dx + \left[W_l\dx{\hfi}{}\right]_0^1=0
-\end{align*}
-Otra vez, ignoro la evaluación en el contorno:
-\begin{align*}
-  -\int_0^1 \left(\dx{W_l}{}{}\sum\phi_m\dx{N_m}{}+W_l\sum\phi_mN_m\right)dx=0.
-\end{align*}
+\section{Justificación}
+lalalal
 %
-Expresando esto como $\B{K\phi=f}$, tengo las componentes de $\B{K}$ y $\B{f}$
-\begin{align*}
-  \B{K}_{lm}&=\int_0^1 \left(\dx{W_l}{}{}\dx{N_m}{}+W_lN_m\right)dx, &
-  \B{f}_{l}&=\left[
-    \begin{array}{c}
-      \left.-\dx{\hfi}{}\right|_{x=0}\\0\\\vdots\\0\\\left.\dx{\hfi}{}\right|_{x=1}
-    \end{array}
-    \right],&1\leq l,m\leq M+1.
-\end{align*}
-Uso Galerkin, entonces queda
-\begin{align*}
-  \B{K}_{lm}&=\int_0^1 \left(\dx{N_l}{}{}\dx{N_m}{}+N_lN_m\right)dx, &1\leq l,m\leq M+1.
-\end{align*}
-%
-%
-\subsection*{Assemble}
-Pasamos ahora a ver el problema desde el punto de vista elemental. Para cada elemento
-$e$, la matriz elemental correspondiente se define como
-\begin{align*}
-  \B{K}^e_{l'm'}&=\int_0^{h^e} \left(\dx{N^e_{l'}}{}{}\dx{N^e_{m'}}{}+N^e_{l'}N^e_{m'}\right)dx, &l',m'=1,2.
-\end{align*}
-La contribución de estas matrices elementales a la matriz global viene dada por
-\begin{align*}
-  \B{K}_{lm} = \bigwedge_{l'm'}\B{K}^e_{l'm'}
-\end{align*}
-donde $\bigwedge$ es el operador de ensamblaje.
-%
-\subsubsection*{Contribución elemental}
-Para el cálculo de la contribución elemental, defino las funciones de forma
-$N^e_1$ y $N^e_2$ en el dominio elemental normalizado
-\begin{align*}
-  \hat\Omega^e=\left\{\xi|\xi\in[-1,1]\right\}
-\end{align*}
-con
-\begin{align*}
-  \xi=\frac{2(x-x_c^e)}{h^e}
-\end{align*}
-donde $x_c^e$ es la coordenada central del elemento, $h^e$ la longitud del elemento, y entonces
-el elemento se define en el rango $-1\leq\xi\leq 1$.
-
-Ahora defino las $N^e_{l}$ según
-\begin{align*}
-  N_1^e &= \frac{1-\xi}{2},& N_2^e &= \frac{\xi+1}{2}.
-\end{align*}
-Teniendo en cuenta que
-\begin{align*}
-  \dx{N_{l'}^e}{}=\dvar{N_{l'}^e}{\xi}{}\dx{\xi}{}=\frac{2}{h^e}\dvar{N_{l'}^e}{\xi}{},\qquad dx=\frac{h^e}{2}d\xi
-\end{align*}
-calculo la matriz
-\begin{align*}
-  \B{K}^e_{l'm'}&=\int_0^{h^e} \left(\dx{N^e_{l'}}{}{}\dx{N^e_{m'}}{}+N^e_{l'}N^e_{m'}\right)dx\\
-  &=\int_{-1}^{1} \left(\frac{2}{h^e}\dvar{N^e_{l'}}{\xi}{}\frac{2}{h^e}\dvar{N^e_{m'}}{\xi}{}+N^e_{l'}N^e_{m'}\right)\frac{h^e}{2}d\xi\\
-  &=\int_{-1}^{1} \left(\frac{2}{h^e}\dvar{N^e_{l'}}{\xi}{}\dvar{N^e_{m'}}{\xi}{}+\frac{h^e}{2}N^e_{l'}N^e_{m'}\right)d\xi
-\end{align*}
-entonces
-\begin{align*}
-\B{K}^e_{11}&=\int_{-1}^{1} \left(\frac{2}{h^e}\frac{-1}{2}\frac{-1}{2}+\frac{h^e}{2}\frac{1-\xi}{2}\frac{1-\xi}{2}\right)d\xi=\int_{-1}^{1} \left(\frac{1}{2h^e}+\frac{h^e(1-2\xi+\xi^2)}{8}\right)d\xi\\
-&=\left(\frac{1}{2h^e}+\frac{h^e}{8}\right)\int_{-1}^{1}d\xi
-- \frac{h^e}{4}\int_{-1}^{1}\xi d\xi + \frac{h^e}{8} \int_{-1}^{1}\xi^2 d\xi\\
-&=\left(\frac{1}{2h^e}+\frac{h^e}{8}\right) (2)
-- \frac{h^e}{4}(0) + \frac{h^e}{8}\left( \frac{2}{3}\right)=\frac{1}{h^e}+\frac{h^e}{4}
-+ \frac{h^e}{12}\\%
-&=\frac{1}{h^e}
-+ \frac{h^e}{3}\\
-\B{K}^e_{22}&=\int_{-1}^{1} \left(\frac{2}{h^e}\frac{1}{2}\frac{1}{2}+\frac{h^e}{2}\frac{\xi+1}{2}\frac{\xi+1}{2}\right)d\xi=\int_{-1}^{1} \left(\frac{1}{2h^e}+\frac{h^e(1+2\xi+\xi^2)}{8}\right)d\xi\\
-&\;\;\vdots\\
-&=\frac{1}{h^e}+ \frac{h^e}{3}\\
-\B{K}^e_{12}=\B{K}^e_{21}&=\int_{-1}^{1} \left(\frac{2}{h^e}\frac{1}{2}\frac{-1}{2}+\frac{h^e}{2}\frac{1-\xi}{2}\frac{\xi+1}{2}\right)d\xi
-=\int_{-1}^{1} \left(\frac{-1}{2h^e}+\frac{h^e(1-\xi^2)}{8}\right)d\xi\\
-&=\left(\frac{-1}{2h^e}+\frac{h^e}{8}\right)\int_{-1}^{1}d\xi-\frac{h^e}{8}\int_{-1}^{1}\xi^2d\xi\\
-&=\left(\frac{-1}{2h^e}+\frac{h^e}{8}\right)(2)-\frac{h^e}{8}\left(\frac{2}{3}\right)=-\frac{1}{h^e}+\frac{h^e}{4}-\frac{h^e}{12}\\
-&=-\frac{1}{h^e}+\frac{h^e}{6}.
-\end{align*}
-%
-%
-\subsubsection*{Gather}
-La matriz global $\B{K}$ se forma sumando en la posición $(l,l), 1\leq l\leq M$ la
-contribución de la matriz elemental $\B{K}^l$, esto es, para cada $l=1\ldots M$:
-\begin{align*}
-  \B{K}_{l,l}&=\B{K}^l_{1,1},\\
-\B{K}_{l,l+1}&=\B{K}^l_{1,2},\\
-\B{K}_{l+1,l}&=\B{K}^l_{2,1},\\
-\B{K}_{l+1,l+1}&=\B{K}^l_{2,2}.
-\end{align*}
-\subsection*{Solve}
-La solución al sistema se obtiene resolviendo el sistema de ecuaciones armado
-en las secciones anteriores. Por ejemplo, para un M=4, tendremos
-\begin{align*}
-  \left[
-    \begin{array}{ccccc}
-      \frac{1}{h^e}+\frac{h^e}{3} & -\frac{1}{h^e}+\frac{h^e}{6} & 0 & 0 & 0 \\
-       -\frac{1}{h^e}+\frac{h^e}{6} & 2\left(\frac{1}{h^e}+\frac{h^e}{3}\right) &
-       -\frac{1}{h^e}+\frac{h^e}{6} & 0 & 0 \\
-       0 & -\frac{1}{h^e}+\frac{h^e}{6} & 2\left(\frac{1}{h^e}+\frac{h^e}{3}\right) &
-       -\frac{1}{h^e}+\frac{h^e}{6} & 0\\
-       0 & 0 & -\frac{1}{h^e}+\frac{h^e}{6} & 2\left(\frac{1}{h^e}+\frac{h^e}{3}\right) &
-       -\frac{1}{h^e}+\frac{h^e}{6}\\
-       0 & 0 & 0 & -\frac{1}{h^e}+\frac{h^e}{6} & \frac{1}{h^e}+\frac{h^e}{3}
-    \end{array}
-\right]
-  \left[
-    \begin{array}{c}
-      \phi_1 \\ \phi_2 \\ \phi_3 \\ \phi_4\\ \phi_5
-    \end{array}
-\right]
-=  \left[
-    \begin{array}{c}
-      \left.-\dx{\hfi}{}\right|_{x=0}\\0 \\ 0\\ 0\\\left.\dx{\hfi}{}\right|_{x=1}
-    \end{array}
-\right]
-\end{align*}
-En este problema en particular, los valores de $\phi_1$ y $\phi_{5}$ son conocidos,
-así que eliminando las primeras y últimas filas y columnas del sistema y estableciendo
-a mano el valor de los respectivos nodos, queda resolver el sistema reducido
-\begin{align*}
-  \left[
-    \begin{array}{ccc}
-        2\left(\frac{1}{h^e}+\frac{h^e}{3}\right) &
-       -\frac{1}{h^e}+\frac{h^e}{6} & 0  \\
-        -\frac{1}{h^e}+\frac{h^e}{6} & 2\left(\frac{1}{h^e}+\frac{h^e}{3}\right) &
-       -\frac{1}{h^e}+\frac{h^e}{6} \\
-        0 & -\frac{1}{h^e}+\frac{h^e}{6} & 2\left(\frac{1}{h^e}+\frac{h^e}{3}\right) 
-    \end{array}
-\right]
-  \left[
-    \begin{array}{c}
-       \phi_2 \\ \phi_3 \\ \phi_4
-    \end{array}
-\right]
-=  \left[
-    \begin{array}{c}
-      \phi_1\left(\frac{1}{h^e}+\frac{h^e}{6}\right)\\ 0\\\phi_5\left(\frac{1}{h^e}+\frac{h^e}{6}\right)
-    \end{array}
-\right]
-\end{align*}
-\newpage
-\section*{Ejercicio 5}
-\subsection*{a.}
-\consigna{%
-Analizar la barra de sección constante con una fuerza distribuida
-$b(x)$ a lo largo de su longitud la cual tiene el valor $L$ y
-además se encuentra sometida a una fuerza puntual $P$. La sección
-transversal es constante y de valor $A$. Calcular los desplazamientos,
-tensiones y deformaciones.
-}
-
-El Principio de los Trabajos Virtuales establece que
-\begin{align*}
-  \iiint_V \delta\epsilon\,\sigma\,d\!V = \int_0^L \delta u\,b\,d\!x + \sum_i \delta u_i\, X_i
-\end{align*}
-%
-dode $\delta u$ y $\delta \epsilon$ son el desplazamiento y deformación virtual genéricos
-de un punto de la barra, y $\delta u_i$ es el desplazamiento virtual del punto de actuación
-de la fuerza $X_i$.
-
-Integrando sobre la sección transversal, y teniendo en cuenta que $\sigma=E\epsilon=E\dx{u}{}$ con $E$ el módulo de Young, tengo
-\begin{align*}
-  \int_0^L \delta\epsilon\,A E\dx{u} \,d\!x   &= \int_0^L \delta u\,b\,d\!x + \sum_i \delta u_i\, X_i .
-\end{align*}
-Ésta es la ecuación de equilibrio que debo resolver para $u$.
-%
-\subsubsection*{Contribución elemental}
-Como en el ejecicio anterior, considero dentro del elemento el dominio normalizado
-\begin{align*}
-  \hat\Omega^e=\left\{\xi|\xi\in[-1,1]\right\}, && \T{con } && \xi=\frac{2(x-x_c^e)}{h^e}.
-\end{align*}
-Otra vez, $x_c^e$ es la coordenada central del elemento, $h^e$ la longitud del elemento, y entonces
-el dominio elemental será el rango $-1\leq\xi\leq 1$.
-Las funciones de forma $N^e_{l}$ serán entonces
-\begin{align*}
-  N_1^e &= \frac{1-\xi}{2},& N_2^e &= \frac{\xi+1}{2}.
-\end{align*}
-La solución $u$ la aproximamos según
-\begin{align*}
-  u = N_1^e u_1 + N_2^e u_2
-\end{align*}
-con $u_1$, $u_2$ el valor de u en los nodos 1, 2. El strain viene dado por
-\begin{align*}
-  \epsilon &= \dx{u}{} = \dvar{u}{\xi}{} \dvar{\xi}{x}{} = \frac{2}{h^e} \dvar{u}{\xi}{}
-                      = \frac{2}{h^e} \left(\dvar{N_1^e}{\xi}{} u_1 + \dvar{N_2^e}{\xi}{} u_2\right)
-                      = \frac{2}{h^e} \left(\frac{-1}{2} u_1 + \frac{1}{2} u_2\right) \\
-  \epsilon &= \frac{1}{h^e}(u_2-u_1).
-\end{align*}
-
-Las fuerzas entre elementos se transmiten únicamente a través de los nodos [Oñate,p2.6].
-Dichas fuerzas, que llamaremos ``de equilibrio'', pueden calcularse para cada elemento
-haciendo uso del Principio de los Trabajos Virtuales según
-\begin{align*}
-  \int_{-1}^{1} \delta\epsilon\,A E\epsilon \,d\!\xi   &= \int_{-1}^{1} \delta u\,b\,d\!\xi + \delta u_1\, X_1 + \delta u_2\, X_2 ,
-\end{align*}
-donde $\delta u_1$, $\delta u_2$, $X_1$, $X_2$ son los desplazamientos virtuales y las fuerzas d e equilibrio en los nodos 1 y 2. Interpolamos el desplazamiento virtual dentro del elemento
-\begin{align*}
-  \delta u = N_1^e \delta u_1 + N_2^e \delta u_2
-\end{align*}
-y el strain virtual será
-\begin{align*}
-  \delta \epsilon = \dx{}{}(\delta u) = \frac{2}{h^e}\left( \dvar{N_1^e}{\xi}{} \delta u_1 + \dvar{N_2^e}{\xi}{} \delta u_2 \right).
-\end{align*}
-Volviendo al PTV para el elemento, tengo
-\begin{align*}
- \begin{split}
-    \left(\frac{2}{h^e}\right)^2 \int_{-1}^{1} \left(\dvar{N_1^e}{\xi}{}\delta u_1+\dvar{N_2^e}{\xi}{}\delta u_2\right)
-         \,A E \left(\dvar{N_1^e}{\xi}{}u_1+\dvar{N_2^e}{\xi}{}u_2\right) \,d\!\xi  \qquad \qquad\\ \qquad \qquad
-    = \int_{-1}^{1}(N_1^e \delta u_1 + N_2^e \delta u_2) \,b\,d\!\xi + \delta u_1\, X_1 + \delta u_2\, X_2
-  \end{split}
-\end{align*}
-Reagrupando los términos,
-\begin{align*}
- \begin{split}
-   \delta u_1 \left[ \left(\frac{2}{h^e}\right)^2 \int_{-1}^{1} \dvar{N_1^e}{\xi}{}
-         \,A E \left(\dvar{N_1^e}{\xi}{}u_1+\dvar{N_2^e}{\xi}{}u_2\right) \,d\!\xi
-         - \int_{-1}^{1}N_1^e \,b\,d\!\xi - \, X_1 \right] \qquad \qquad\\ \qquad \qquad
-    + \delta u_2 \left[ \left(\frac{2}{h^e}\right)^2 \int_{-1}^{1} \dvar{N_2^e}{\xi}{}
-         \,A E \left(\dvar{N_1^e}{\xi}{}u_1+\dvar{N_2^e}{\xi}{}u_2\right) \,d\!\xi
-         - \int_{-1}^{1}N_2^e \,b\,d\!\xi -  X_2 \right] =0
- \end{split}
-\end{align*}
-Como los desplazamientos virtuales son arbitrarios, las expresiones entre corchetes deberán
-ser nulas. Esto se traduce en el sistema de ecuaciones
-\begin{align*}
-  \left(\frac{2}{h^e}\right)^2 \int_{-1}^{1} \left( \dvar{N_1^e}{\xi}{} A E \dvar{N_1^e}{\xi}{}u_1
-      + \dvar{N_1^e}{\xi}{} A E \dvar{N_2^e}{\xi}{}u_2\right) \,d\!\xi
-      - \int_{-1}^{1}N_1^e \,b\,d\!\xi - X_1 &=0 \\ 
-  \left(\frac{2}{h^e}\right)^2 \int_{-1}^{1} \left( \dvar{N_2^e}{\xi}{} A E \dvar{N_1^e}{\xi}{}u_1
-      + \dvar{N_2^e}{\xi}{} A E \dvar{N_2^e}{\xi}{}u_2\right) \,d\!\xi
-      - \int_{-1}^{1}N_2^e \,b\,d\!\xi - X_2  &=0,
-\end{align*}
-en forma matricial,
-\begin{align*}
-  \left(\frac{2}{h^e}\right)^2
-  \left[
-    \begin{array}{cc}
-      \int_{-1}^{1} \dvar{N_1^e}{\xi}{} A E \dvar{N_1^e}{\xi}{} \,d\!\xi &
-      \int_{-1}^{1} \dvar{N_1^e}{\xi}{} A E \dvar{N_2^e}{\xi}{} \,d\!\xi \\
-      \int_{-1}^{1} \dvar{N_2^e}{\xi}{} A E \dvar{N_1^e}{\xi}{} \,d\!\xi &
-      \int_{-1}^{1} \dvar{N_2^e}{\xi}{} A E \dvar{N_2^e}{\xi}{} \,d\!\xi
-   \end{array}
-    \right]
-\left[
-  \begin{array}{c}
-    u_1 \\ u_2
-  \end{array}
-\right] = 
-\left[
-  \begin{array}{c}
-    \int_{-1}^{1}N_1^e \,b\,d\!\xi + X_1 \\
-    \int_{-1}^{1}N_2^e \,b\,d\!\xi + X_2
-  \end{array}
-\right].
-\end{align*}
-Considerando $A$, $E$, $b$ como constantes e integrando
-\begin{align*}
-  AE \left(\frac{2}{h^e}\right)^2
-  \left[
-    \begin{array}{cc}
-      \int_{-1}^{1} \frac{-1}{2}\frac{-1}{2} \,d\!\xi &
-      \int_{-1}^{1} \frac{-1}{2}\frac{1}{2}  \,d\!\xi \\
-      \int_{-1}^{1} \frac{1}{2} \frac{-1}{2} \,d\!\xi &
-      \int_{-1}^{1} \frac{1}{2} \frac{1}{2}  \,d\!\xi
-   \end{array}
-    \right]
-\left[
-  \begin{array}{c}
-    u_1 \\ u_2
-  \end{array}
-\right] =
-\left[
-  \begin{array}{c}
-   b \int_{-1}^{1}N_1^e \,d\!\xi + X_1 \\
-   b \int_{-1}^{1}N_2^e \,d\!\xi + X_2
-  \end{array}
-\right]\\
-  AE \left(\frac{2}{h^e}\right)^2
-  \left[
-    \begin{array}{cc}
-      \frac{1}{2}  &
-      \frac{-1}{2} \\
-      \frac{-1}{2} &
-      \frac{1}{2}
-   \end{array}
-    \right]
-\left[
-  \begin{array}{c}
-    u_1 \\ u_2
-  \end{array}
-\right] =
-\left[
-  \begin{array}{c}
-   b + X_1 \\
-   b + X_2
-  \end{array}
-\right]
-\end{align*}
+\section{Cronograma}
 
 
 
+\definecolor{barblue}{RGB}{153,204,254}
+\definecolor{groupblue}{RGB}{51,102,254}
+\definecolor{linkred}{RGB}{165,0,33}
+\renewcommand\sfdefault{phv}
+\renewcommand\mddefault{mc}
+\renewcommand\bfdefault{bc}
+\sffamily
+\begin{ganttchart}%
+[canvas/.style={fill=none, draw=black!40, line width=.75pt},
+hgrid style/.style={draw=black!5, line width=.75pt},
+vgrid={*3{draw=black!15, line width=.75pt},
+*1{draw=black!40, line width=.75pt},
+*4{draw=black!15, line width=.75pt},
+*1{draw=black!40, line width=.75pt},
+*3{draw=black!15, line width=.75pt},
+*1{draw=black!40, line width=.75pt}},
+%x unit=0.2cm,
+%% today=7.1,
+%% today rule/.style={draw=black!64,
+%% dash pattern=on 3.5pt off 4.5pt, line width=1.5pt},
+%% today label={\small\bfseries TODAY},
+title/.style={draw=none, fill=none},
+title label font=\bfseries\footnotesize,
+title label anchor/.style={below=7pt},
+include title in canvas=false,
+bar label font=\mdseries\small\color{black!70},
+%bar label anchor/.style={left=2cm},
+bar/.style={draw=none, fill=black!63},
+bar incomplete/.style={fill=barblue},
+%progress label font=\mdseries\footnotesize\color{black!70},
+progress label text=,
+group incomplete/.style={fill=groupblue},
+group left shift=0,
+group right shift=0,
+group height=.5,
+group peaks={0}{}{},
+group label anchor/.style={left=.6cm},
+link/.style={-latex, line width=1.5pt, linkred},
+%link label font=\scriptsize\bfseries\color{linkred}\MakeUppercase,
+%link label anchor/.style={below left=-2pt and 0pt}
+]{29}
+%\gantttitle[title label anchor/.style={below left=7pt and -3pt}]%
+%{WEEKS:\quad1}{1}
+%\gantttitlelist{2,...,13}{1} \\
+\gantttitle{Jun}{4}\gantttitle{Jul}{5}\gantttitle{Ago}{4}\gantttitle{Sep}{4}
+\gantttitle{Oct}{5}\gantttitle{Nov}{4}\gantttitle{Dic}{3}\\
+\ganttgroup[progress=57, progress label font=\bfseries\small]%
+{1}{1}{10} \\
+\ganttbar[progress=75, name=WBS1A]%
+{1.a}{1}{8} \\
+\ganttbar[progress=67, name=WBS1B]%
+{1.b}{1}{3} \\
+\ganttgroup[progress=57, progress label font=\bfseries\small]%
+{2}{1}{10} \\
+\ganttbar[progress=50, name=WBS1C]%
+{2.a}{4}{10} \\
+\ganttbar[progress=0, name=WBS1D]%
+{2.b}{4}{10} \\[grid]
+\ganttgroup[progress=0, progress label font=\bfseries\small]%
+{3}{4}{10} \\
+\ganttbar[progress=0]{3.a}{4}{5} \\
+\ganttbar[progress=0]{3.b}{6}{8} \\
+\ganttgroup[progress=57, progress label font=\bfseries\small]%
+{4}{1}{10} \\
+\ganttbar[progress=75, name=WBS1A]%
+{4.a}{1}{8} \\
+\ganttbar[progress=67, name=WBS1B]%
+{4.b}{1}{3} \\
+\ganttgroup[progress=57, progress label font=\bfseries\small]%
+{5}{1}{10} \\
+\ganttbar[progress=50, name=WBS1C]%
+{5.a}{4}{10} \\
+\ganttbar[progress=0, name=WBS1D]%
+{5.b}{4}{10} \\[grid]
+\ganttgroup[progress=0, progress label font=\bfseries\small]%
+{6}{4}{10} \\
+\ganttbar[progress=0]{6.a}{4}{5} \\
+\ganttbar[progress=0]{6.b}{6}{8} \\
+\ganttgroup[progress=57, progress label font=\bfseries\small]%
+{7}{1}{10} \\
+\ganttbar[progress=75, name=WBS1A]%
+{7.a}{1}{8} \\
+\ganttbar[progress=67, name=WBS1B]%
+{7.b}{1}{3} \\
+\ganttgroup[progress=57, progress label font=\bfseries\small]%
+{8}{1}{10} \\
+\ganttbar[progress=50, name=WBS1C]%
+{8.a}{4}{10} \\
+\ganttbar[progress=0, name=WBS1D]%
+{8.b}{4}{10} \\
+\ganttbar[progress=0, name=WBS1D]%
+{8.c}{4}{10} \\[grid]
+\ganttgroup[progress=0, progress label font=\bfseries\small]%
+{9}{4}{10} \\
+\ganttbar[progress=0]{9}{4}{5}
+%\ganttlink[link type=s-s]{WBS1A}{WBS1B}
+%\ganttlink[link type=f-s]{WBS1B}{WBS1C}
+%\ganttlink[link type=f-f, link label anchor/.style={left}]{WBS1C}{WBS1D}
+\end{ganttchart}
+
+
+
+
+\printbibliography
+
+
+
+%\bibliographystyle{plain}
 
 
 \end{document}
+
+
+
