@@ -82,17 +82,17 @@
 % === Más packages
 % ===
 %
-%% \usepackage{mdwlist}		%Para listas mas compactas
+\usepackage{mdwlist}		%Para listas mas compactas
 %% \usepackage{textcomp}		%Para algunos símbolos
 %% \usepackage{colortbl}		%Para celdas de colores en tablas
 %% \usepackage{fancyhdr}		%Para encabezados/pie
 %% \usepackage{bbold}		%Fuente bb para modo math: \mathbb{R} = reales
 %% \usepackage{dsfont}		%Fuente ds para modo math: \mathds{R} = reales
-%% \usepackage{multirow}		%Para "combinar" celdas en tablas
+\usepackage{multirow}		%Para "combinar" celdas en tablas
 %% \usepackage{float}		%Para cuadros, figuras, etc copadas
 %% \usepackage{fancybox}		%Para recuardos de texto con bordes "fancy"
 %% \usepackage{dingbat}		%Para dingbats
-%\usepackage{marginal}		%Para notas al margen que no puedo hacer andar
+%\usepackage{marginal}		%Para  notas al margen que no puedo hacer andar
 %\usepackage{amsmath}		%Para enornos matemáticos mas flexibles
 %\usepackage{varwidth}		%varwidth es un minipage que se ajusta al ancho mínimo
 
@@ -100,3 +100,7 @@
 \usepackage{tikz}
 \usepackage{pgfkeys}
 \usepackage{pgfgantt}
+
+% typearea: uso con koma-script para ajustar márgenes de página.
+% vars globales a setear en la clase koma-script: DIV=12, BCOR=margen de ``binding'' para double side
+\usepackage{typearea}
