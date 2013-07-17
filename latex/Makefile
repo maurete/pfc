@@ -42,3 +42,5 @@ dvipdf:	$(fuentes:%.tex=%_dvipdf)
 
 clean:
 	rm -f $(fuentes:%.tex=%.pdf) $(fuentes:%.tex=%.dvi)
+	rm -f $(fuentes_aux)
+	rm -f $(biber_aux)

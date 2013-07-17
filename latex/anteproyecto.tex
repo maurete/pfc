@@ -1,205 +1,500 @@
-\documentclass[bibliography=openstyle,DIV=12]{scrartcl}
+\documentclass[12pt,bibliography=openstyle,DIV=12,parskip=full-]{scrartcl}
 \include{conf/preconfig}
-%
 \include{conf/packages}
-%\usepackage[backend=biber]{biblatex}
-\usepackage[T1]{fontenc}
-\usepackage{libertine}
-\usepackage[scale=0.96]{tgheros}
-%
 \include{conf/config}
 \include{conf/comandos}
 \include{conf/fuentes}
+%
 \addbibresource{biblio.bib}
+%
+\usepackage{footnote}
+%\makesavenoteenv{minpage}   % If you want to include minipages. 
+\makesavenoteenv{tabular}
+\selectlanguage{spanish}
+\hyphenation{micro-RNA}
+\hyphenation{micro-RNAs}
+\hyphenation{mi-RNA}
+\hyphenation{mi-RNAs}
 %
 \begin{document}
 \selectlanguage{spanish}
+%
 % pagina de titulo
 \begin{titlepage}
+%
 \titlehead{\center Universidad Nacional del Litoral\\
-Facultad de Ingeniería y Ciencias Hídricas}
-\subject{Ingeniería en Informática\\Propuesta de Proyecto Final de Carrera}
-\title{Desarrollo de un clasificador de secuencias de pre-microRNA mediante
-  técnicas de Inteligencia Computacional}
+  Facultad de Ingeniería y Ciencias Hídricas}
+%
+\subject{Ingeniería en Informática\\
+  Propuesta de Proyecto Final de Carrera}
+%
+\title{Desarrollo de un clasificador de secuencias de pre-microRNA
+  mediante técnicas de Inteligencia Computacional}
 \author{Mauro Javier Torrez}
-%\subtitle{titulo extra}
+%
 \publishers{\-\\[4em]{Director\\Dr. Diego H. Milone}\\[2em]
   {Asesora temática\\Dra. Georgina S. Stegmayer}}
+%
 \date{\-\\[2em]\today}
+%
 \maketitle
 \end{titlepage}
 %
+%
+\section{Título del Proyecto}
+Desarrollo de un clasificador de
+secuencias de pre-microRNA mediante
+técnicas de Inteligencia Computacional
+%
+%
+\section{Palabras clave}
+microRNA, pre-microRNA, Inteligencia Computacional, Máquinas de Vector
+de Soporte, Perceptrón Multicapa, identificación, clasificación
+%
+%
 \section{Justificación}
-Hace aproximadamente una década se propuso que un nuevo tipo de pequeñas moléculas de RNA antes ignoradas (aunque abundantes), jugarían un papel decisivo en la expresión genética de las células, mediando en la diferenciación en distintos tipos de tejidos y/o en la permanencia de las mismas en un estado particular de diferenciación \cite{lee-mammal}. Estas moléculas se denominan microRNA o miRNA. Aunque su mecanismo exacto de acción aún no se conoce completamente, estudios recientes demuestran que están implicadas, por ejemplo, en la evolución del cáncer (sea como inhibidores o promotores de éste) \cite{aurora}, y en procesos de infección viral \cite{lecellier}.
+Hace aproximadamente una década se propuso que un nuevo tipo de
+pequeñas moléculas de RNA antes ignoradas, aunque abundantes,
+jugarían un papel decisivo en la reproducción de las células,
+mediando en la diferenciación en distintos tipos de tejidos y/o en la
+permanencia de las mismas en un estado particular de diferenciación
+\cite{lee-mammal}. Estas moléculas se denominan microRNA o
+miRNA. Aunque su mecanismo exacto de acción aún no se conoce
+completamente, estudios recientes demuestran que están implicadas, por
+ejemplo, en la evolución del cáncer (sea como inhibidores o promotores
+de éste) \cite{aurora}, y en procesos de infección viral
+\cite{lecellier}.
 
-Se ha estimado que se encontrarían miles de miRNAs en el genoma humano, y hasta ahora han sido identificados unos 2000 \cite{MIRBASE RELEASE? FECHA?, BATUWITA}\cite{mirbase1}\cite{mirbase2}\cite{mirbase3}. El debate acerca del número e identidad de los miRNAs en los genomas mamíferos sigue abierto, en especial teniendo en cuenta que estas estimaciones consideran sólo aquellos miRNAs que se encuentran conservados entre especies relativamente distantes, como primates y roedores, y no aquellos miRNAs de evolución más reciente \cite{SWEWR}.
+Los miRNAs son pequeñas cadenas de RNA (ARN, ácido ribonucleico), de unos 22 nucleótidos de
+longitud, que ejercen una importante función reguladora de la
+expresión génica celular \cite{bartel116}.  Se ha demostrado su efecto
+regulador en varios procesos genéticos dentro de la célula, como la
+transcripción de mRNAs (\emph{RNA mensajeros}) y la síntesis de
+proteínas. Al alterar los niveles de miRNAs en las células, es posible
+medir su impacto en estos procesos de forma cuantitativa. \cite{lili}
 
-Los miRNAs se presentan en una estructura denominada pre-miRNA, que es una forma molecularmente estable de cadena RNA que contiene uno o más miRNAs “maduros” en su secuencia. En la figura 1 se representa en forma esquemática la secuencia y la llamada “estructura secundaria” (forma en que el pre-miRNA se “plega” sobre sí mismo logrando así estabilidad molecular) de un pre-miRNA típico (ver figura). \cite{CITA}
+El efecto regulador de la expresión génica de los microRNAs en los
+procesos celulares puede tener gran implicancia en el desarrollo y
+evolución de la enfermedad celular. Expresiones aberrantes de los
+miRNAs se han observado en muchos cánceres. Además, se ha demostrado
+que juegan un rol importante en la carcinogénesis. \cite{lili}
+Funciones recientemente descubiertas de los miRNAs incluyen el control
+de la proliferación y muerte celular, metabolismo de la grasa en
+moscas, y control del desarrollo de flores y hojas en
+plantas. \cite{bartel116}
 
-Se ha demostrado que los microRNAs tienen un efecto regulador en varios procesos genéticos dentro de la célula, como la transcripción de mRNAs y la síntesis de proteínas. Al alterar los niveles de miRNAs en las células, es posible medir su impacto en estos procesos de forma cuantitativa. \cite{LI}
+\newpage
+Los miRNAs se presentan dentro de una molécula denominada pre-miRNA
+(miRNA precursor), de unos ~70nt de longitud, la cual contiene uno o
+más miRNAs ``maduros'' en su secuencia.  En la figura \ref{horquilla} se representa
+en forma esquemática la secuencia de una cadena de pre-miRNA y su
+correspondiente \emph{estructura secundaria}. Esta estructura
+secundaria viene dada por la forma en que la cadena de pre-miRNA se
+``plega'' sobre sí misma logrando una mayor estabilidad
+molecular. Típicamente, en el reino animal se encuentra que la
+estructura secundaria de un pre-miRNA conforma una especie de
+\emph{horquilla}, como se puede ver en la figura.
+\cite{bartel116}\cite{sewer}
 
-El efecto regulador de la expresión génica de los microRNAs en los procesos celulares puede tener gran implicancia en el desarrollo y evolución de la enfermedad celular. Expresiones aberrantes de los miRNA se han observado en muchos cánceres. Además, se ha demostrado que juegan un rol importante en la carcinogénesis. \cite{Li 2010} Funciones recientemente descubiertas de los miRNAs incluyen el control de la proliferación y muerte celular, metabolismo de la grasa en moscas, y control del desarrollo de flores y hojas en plantas. \cite{BARTEL CELL 116}
-
-Inicialmente, la identificación de nuevos miRNAs se realizaba en forma experimental mediante secuenciado y clonación directa. Ésta es la primera elección, pero sólo aquellos miRNAs abundantes pueden ser fácilmente detectados. Sin embargo, no todos los miRNAs están bien expresados en múltiples tipos de tejidos. Aquellos miRNAs que tienen un bajo nivel de expresión, que se expresan en tejidos específicos y/o que se presentan en estadíos de desarrollo celular determinados pueden ser fácilmente ignorados mediante la técnica experimental. Estudios recientes sugieren que los miRNAs humanos expresados en bajos niveles evolucionan rápidamente. \cite{DING+XU}
-
-En pos de superar estas dificultades propias del método experimental es que surgen técnicas computacionales para encontrar aquellos miRNAs que son específicos a determinados tipos de tejidos o estadíos de desarrollo celular, y aquellos escasamente expresados. \cite{SHENG+XU}
-
-Los métodos computacionales para el reconocimiento de genes miRNA se han desarrollado en dos direcciones principales: los métodos comparativos, basados en la conservación ya sea de la secuencia y/o estructura secundaria entre distintas especies, y los no-comparativos, basados en el aprendizaje de máquina o Inteligencia Computacional. Estos dos enfoques se complementan mutuamente al encarar distintas estrategias para la predicción de nuevos miRNAs. \cite{BATUWITA+SHENG}
-
-En base a lo que se ha observado en la bibliografía y al problema planteado, se propone para este trabajo desarrollar un sistema informático para la identificación de cadenas de pre-microRNA de tipo no-comparativo, que haga uso de técnicas de Inteligencia Computacional para la clasificación de patrones.
-
-Una primera parte del sistema consistirá en generar un vector de características de cada secuencia. Para este propósito se procederá al diseño y codificación de un algoritmo para la extracción de características a partir de la propia secuencia en conjunto con la estructura secundaria y demás indicadores moleculares correspondientes. El conjunto de características a extraer se determinará en base a criterios de rendimiento obtenido en el algoritmo de clasificación y a la disponibilidad de los datos complementarios a la secuencia y estructura secundaria para todas las entradas.
-
-La segunda parte del sistema consistirá en clasificar los datos de entrada identificando aquellas secuencias candidatas a ser pre-miRNAs. En este caso se trabajará con técnicas de aprendizaje de máquina como las Máquinas de Vector de Soporte \cite{CITA} y Perceptrón Multicapa \cite{CITA}. En principio se trabajará con estas técnicas comparando su rendimiento, y se tomará en consideración la pertinencia o no de incluir éstas y otras técnicas en el clasificador final.
-
-El sistema contará además con una interfaz de usuario documentada tal que éste sea accesible a los usuarios destino.
-
-El impacto social del desarrollo de este proyecto se verá en un aumento en la productividad de los investigadores del área al proveerles una mayor facilidad de acceso que los sistemas actualmente disponibles. También se pretende que sirva como puntapié inicial en desarrollos futuros de sistemas similares con mayor complejidad y rendimiento. En una visión englobadora, se agilizará la investigación en el área con las implicancias que esto trae a la sociedad en general, como el desarrollo de nuevos métodos de prevención y tratamiento de enfermedades de diversa índole en las personas, animales y plantas; y una mayor y mejor comprensión de los procesos involucrados en su aparición y desarrollo.
-
-En lo personal, el desarrollo de este proyecto me permitirá profundizar mi conocimiento en diferentes áreas de la Inteligencia Computacional, así como en la introducción al campo de la bioinformática. Considero que el desarrollo de este proyecto me permitirá desarrollar habilidades y conocimientos que me serán de gran valor en el desempeño como profesional, y en caso de seguir una carrera de investigación servirá de introducción informal a la metodología de trabajo en este campo.
+El debate acerca del número e identidad de los miRNAs en diferentes
+genomas es una cuestión abierta. A modo de ejemplo, para el caso del
+genoma humano se ha estimado que se encontrarían miles de pre-miRNAs
+\cite{batuwita}, y hasta ahora han sido identificados unos 1900.  Sin
+embargo, este número podría ser mucho mayor, en especial si se tiene
+en cuenta que estas predicciones consideran sólo aquellos pre-miRNAs
+que se encuentran conservados entre especies relativamente distantes,
+como primates y roedores, y no aquellos pre-miRNAs de evolución más
+reciente \cite{sewer}.  La base de datos
+miRBase\footnote{\url{http://mirbase.org/}}
+\cite{mirbase2}\cite{mirbase3} recopila el conjunto de (pre-)miRNAs
+conocidos hasta la fecha. En la última versión
+disponible\footnote{\url{ftp://mirbase.org/pub/mirbase/20/}}, de junio
+de 2013, se listan 24521 pre-miRNAs experimentalmente validados,
+conteniendo un total de 30424 miRNAs ``maduros''.
+%
 \begin{figure}
-  \center
+  \small\slshape\center
   \includegraphics[width=.9\textwidth]{img/hsa-mir-299_ss.pdf}
-  \caption{Representación esquemática de un pre-microRNA y su estructura de horquilla. Los segmentos resaltados correspondes a microRNAs ``maduros'' contenidos en el pre-miRNA.}  
+  \caption{\small\slshape Representación esquemática de la secuencia (arriba) y
+    estructura secundaria tipo horquilla (abajo) del pre-miRNA
+    \textbf{hsa-mir-299}. Según información disponible en miRBase,
+    este pre-miRNA experimentalmente validado contiene 2 miRNAs
+    maduros, hsa-mir-299-5p y hsa-mir-299-3p en cada uno de sus
+    brazos. Estructura secundaria calculada con RNAfold
+    \cite{vienna}.}
+  \label{horquilla}
 \end{figure}
+
+%\newpage
+Inicialmente, la identificación de nuevos miRNAs se realizaba en forma
+experimental mediante secuenciado y clonación directa. Ésta es la
+primera elección, pero sólo aquellos miRNAs abundantes pueden ser
+fácilmente detectados mediante esta técnica. Sin embargo,
+no todos los miRNAs están bien expresados en múltiples tipos de
+tejidos. Aquellos miRNAs que tienen un bajo nivel de expresión, que se
+expresan en tejidos específicos y/o que se presentan en estadíos de
+desarrollo celular específicos pueden ser fácilmente ignorados
+mediante la técnica experimental. Estudios recientes sugieren que los
+miRNAs humanos expresados en bajos niveles evolucionan
+rápidamente. \cite{ding}\cite{xu}
+
+En pos de superar estas dificultades propias del método experimental
+es que surgen técnicas computacionales para encontrar aquellos miRNAs
+que son específicos a determinados tipos de tejidos o estadíos de
+desarrollo celular, y aquellos escasamente
+expresados. \cite{sheng}\cite{xu}
+
+Los métodos computacionales para el reconocimiento de genes miRNA se
+han desarrollado en dos direcciones principales: los métodos
+comparativos, basados en la conservación ya sea de la secuencia y/o la
+estructura secundaria entre distintas especies, y los no-comparativos,
+basados en el aprendizaje de máquina o Inteligencia
+Computacional. Estos dos enfoques se complementan mutuamente al
+encarar distintas estrategias para la predicción de nuevos
+miRNAs. \cite{batuwita}\cite{sheng}
+
+En base a lo que se ha observado en la bibliografía y al problema
+planteado, se propone para este trabajo desarrollar un sistema
+informático para la identificación de cadenas de pre-microRNA de tipo
+no-comparativo, que haga uso de técnicas de Inteligencia Computacional
+para la clasificación de patrones.
+
+Una primera parte del sistema consistirá en generar un vector de
+características de cada secuencia. Para este propósito se procederá al
+diseño y codificación de un algoritmo para la extracción de
+características a partir de la propia secuencia en conjunto con la
+estructura secundaria y otros indicadores moleculares que se
+encuentren disponibles. El conjunto de características a extraer se
+determinará en base a criterios del rendimiento obtenido en el
+algoritmo de clasificación y la disponibilidad de datos
+complementarios a la secuencia y estructura secundaria para todas las
+entradas.
+
+%\newpage
+La segunda parte del sistema consistirá en clasificar los datos de
+entrada identificando aquellas secuencias candidatas a ser
+pre-miRNAs. En este caso se trabajará con técnicas de aprendizaje de
+máquina como las Máquinas de Vector de Soporte \cite{svm} y Perceptrón
+Multicapa \cite{mlp1}\cite{mlp2}. En principio se trabajará con estas
+técnicas comparando su rendimiento, y se tomará en consideración la
+pertinencia de incluir éstas y otras técnicas en el clasificador
+final.
+%También se especificará y codificará una interfaz de usuario para la
+%utilización del sistema por parte del usuario final.
+
+El impacto social del desarrollo de este proyecto se verá en un
+aumento en la productividad de los investigadores del área al
+posibilitarle una mayor facilidad de acceso que los sistemas actualmente
+disponibles. También se pretende que sirva como puntapié inicial en
+desarrollos futuros de sistemas similares con mayor complejidad y
+rendimiento. En una visión englobadora, se agilizará la investigación
+en el área con las implicancias que esto trae a la sociedad en
+general, como el desarrollo de nuevos métodos de prevención y
+tratamiento de enfermedades de diversa índole en las personas,
+animales y plantas; y una mayor y mejor comprensión de los procesos
+involucrados en su aparición y desarrollo.
+En lo personal, el desarrollo de este proyecto me permitirá
+profundizar mi conocimiento en diferentes áreas de la Inteligencia
+Computacional, así como en la introducción al campo de la
+bioinformática. Considero que el desarrollo de este proyecto me
+permitirá desarrollar habilidades y conocimientos que me serán de gran
+valor en el desempeño como profesional, y en caso de seguir una
+carrera de investigación servirá de introducción informal a la
+metodología de trabajo en este campo.
+%
 %
 \section{Objetivo general del proyecto}
-Desarrollar un método computacional inteligente con interfaz de usuario para la identificación de secuencias de RNA candidatas a ser pre-miRNAs.
+Desarrollar un método computacional inteligente con interfaz de
+usuario para la identificación de secuencias de RNA candidatas a ser
+pre-miRNAs.
 \section{Objetivos específicos}
 \begin{itemize}
-\item Generar una base de datos de pre-miRNAs conocidos en plantas y animales, armonizando los conjuntos de características entre las distintas bases de datos disponibles.
-\item Codificar diferentes métodos de inteligencia computacional para trabajar sobre los datos. Se trabajarán al menos dos, SVM y MLP con la posibilidad de incorporar otros conforme se avance en este objetivo.
-\item Comparar el rendimiento de los distintos métodos codificados y parametrizar éste o éstos buscando obtener la mayor performance en la identificación.
-\item Especificar y codificar una interfaz de línea de comandos y una interfaz web para la utilización del método.
+\item Generar una base de datos de pre-miRNAs conocidos en plantas y
+  animales, armonizando los conjuntos de características entre las
+  distintas bases de datos disponibles.
+\item Codificar diferentes métodos de inteligencia computacional para
+  trabajar sobre los datos. Se trabajarán al menos dos, SVM y MLP con
+  la posibilidad de incorporar otros conforme se avance en este
+  objetivo.
+\item Comparar el rendimiento de los distintos métodos codificados y
+  parametrizar éste o éstos buscando obtener la mayor performance en
+  la identificación.
+\item Especificar y codificar una interfaz de línea de comandos y una
+  interfaz web para la utilización del método.
 \end{itemize}
+%
+%
 \section{Alcances}
 \begin{itemize}
-\item El trabajo se centrará en la utilización de algoritmos de clasificación de tipo Support Vector Machine (SVM) y Perceptrón Multicapa (MLP), comparando el rendimiento de cada uno.
-\item El sistema contará además con una interfaz de usuario documentada tal que éste sea accesible a los usuarios destino.
-\item Se trabajará durante el desarrollo exclusivamente con datos que se encuentren disponibles, ya clasificados y validados experimentalmente.
-\item En el sistema se trabajará únicamente con la identificación de pre-miRNAs, quedando fuera de nuestro alcance la identificación de el/los miRNAs “maduros” contenidos en éstos.
+\item El trabajo se centrará en la utilización de algoritmos de
+  clasificación de tipo Máquina de Vector de Soporte (SVM) y Perceptrón
+  Multicapa (MLP), comparando el rendimiento de cada uno.
+\item El sistema contará además con una interfaz de usuario
+  documentada tal que éste sea accesible a los usuarios destino.
+\item Se trabajará durante el desarrollo exclusivamente con datos que
+  se encuentren disponibles, ya clasificados y validados
+  experimentalmente.
+\item En el sistema se trabajará únicamente con la identificación de
+  pre-miRNAs, quedando fuera de nuestro alcance la identificación de
+  el/los miRNAs “maduros” contenidos en éstos.
 \end{itemize}
-
+%
+%
 \section{Metodología a emplear}
-El desarrollo del proyecto se realizará en las cuatro etapas que se enumeran a continuación. Cabe notar que estas etapas, si bien proveen una separación lógica entre los diferentes aspectos del trabajo a realizar, no implican necesariamente una separación temporal de tareas. Dada la naturaleza del sistema será necesaria la retroalimentación entre las etapas, lo que implicará un grado mayor o menor de simultaneidad entre las mismas.
-\subsection{Estudio del estado del arte, selección de herramientas informáticas}
-Se procederá a recopilar y estudiar la bibliografía referente al tema y se determinarán los métodos de clasificación sobre los que se trabajará, las características a extraer, los métodos de extracción de características necesarios. También se evaluarán las diferentes herramientas de desarrollo y lenguajes a utilizar tomando en consideración factores como requerimientos de hardware/software, disponibilidad, rendimiento, portabilidad y facilidad de uso.
-\subsection{Armado de la base de datos y desarrollo de los algoritmos específicos}
-Se realizará una búsqueda de datos disponibles en Internet a partir de la bibliografía consultada. Con estos datos se generará una base de datos de pre-miRNAs conocidos y validados experimentalmente así como de secuencias que no sean pre-miRNAs para su utilización en el diseño de los algoritmos de clasificación.
-Se codificarán métodos de inteligencia computacional para trabajar sobre la base de datos armada. Se evaluará la performance de clasificación de los métodos mediante métricas estadísticas estándares.
-\subsection{Integración del sistema y desarrollo de la interfaz de usuario}
-Con los algoritmos de extracción de características ya implementados se procederá la generación de un sistema integrado que a partir de los datos de entrada permita identificar pre-miRNAs, desentendiendo al usuario del proceso intermedio de extracción de características. Este sistema se obtendrá configurando aquellos algoritmos de clasificación y parámetros que permitan obtener el mayor rendimiento posible.
-Se especificará e implementará una interfaz de usuario documentada para la utilización del sistema por parte del usuario final.
-\subsection{Pruebas finales y conclusiones}
-En esta etapa se procederá a evaluar el sistema completo obteniendo medidas de rendimiento globales. Se intentará encontrar y eliminar aquellos fallos que pudieren haber sido pasados por alto durante el desarrollo.
+%% El desarrollo del proyecto se realizará en las cuatro etapas que se
+%% enumeran a continuación. Cabe notar que estas etapas, si bien proveen
+%% una separación lógica entre los diferentes aspectos del trabajo a
+%% realizar, no implican necesariamente una separación temporal de
+%% tareas. Dada la naturaleza del sistema será necesaria la
+%% retroalimentación entre las etapas, lo que implicará un grado mayor o
+%% menor de simultaneidad entre las mismas.
+El desarrollo del proyecto se llevará a cabo siguiendo un modelo de
+ciclo de vida en cascada según las etapas que se enumeran a
+continuación.  Cabe notar que, si bien estas etapas proveen una
+separación lógica de tareas a tomar como referencia, no implican
+necesariamente un orden cronológico de tareas a realizar. Así también,
+debido a la naturaleza del proyecto se contempla la posibilidad de una
+retroalimentación entre etapas, pudiendo retroceder a una fase
+anterior si así es requerido.
+%
+%% \subsection{Estudio del estado del arte, selección de herramientas informáticas}
+%% Se procederá a recopilar y estudiar la bibliografía referente al tema
+%% y se determinarán los métodos de clasificación sobre los que se
+%% trabajará, las características a extraer, los métodos de extracción de
+%% características necesarios. También se evaluarán las diferentes
+%% herramientas de desarrollo y lenguajes a utilizar tomando en
+%% consideración factores como requerimientos de hardware/software,
+%% disponibilidad, rendimiento, portabilidad y facilidad de uso.
+\subsection{Estudio del estado del arte y herramientas informáticas
+  disponibles}
+Se procederá a recopilar y estudiar la bibliografía referente al tema
+y se determinarán los métodos de clasificación y de extracción de
+características disponibles. También se estudiarán las diferentes
+herramientas de desarrollo y lenguajes disponibles tomando en
+consideración factores como requerimientos de hardware/software,
+disponibilidad, rendimiento, portabilidad y facilidad de uso.
+%
+%% \subsection{Armado de la base de datos y desarrollo de los algoritmos específicos}
+%% Se realizará una búsqueda de datos disponibles en Internet a partir de
+%% la bibliografía consultada. Con estos datos se generará una base de
+%% datos de pre-miRNAs conocidos y validados experimentalmente así como
+%% de secuencias que no sean pre-miRNAs para su utilización en el diseño
+%% de los algoritmos de clasificación.
 
+%% Se codificarán métodos de
+%% inteligencia computacional para trabajar sobre la base de datos
+%% armada. Se evaluará la performance de clasificación de los métodos
+%% mediante métricas estadísticas estándares.
+\subsection{Especificación de requerimientos y pruebas iniciales}
+Se realizará una búsqueda de datos disponibles en Internet a partir de
+la bibliografía consultada.  Se codificarán varios métodos de
+clasificación y se probarán sobre una de las bases de datos
+encontradas para obtener una mejor comprensión de los requerimientos
+del sistema.
+%
+Se evaluarán las herramientas informáticas disponibles para la
+implementación y se especificarán aquellas a utilizar según los
+resultados obtenidos en las pruebas iniciales.
+%
+\subsection{Preparación de los datos y codificación de partes del sistema}
+Se recopilará el conjunto de datos encontrados en la etapa anterior
+y se realizará un análisis exhaustivo de éstos.
+Se codificarán algoritmos de extracción de características a partir de
+la secuencia para su incorporación a la base de datos.
+Se preparará una base
+de datos propia mediante la selección, limpieza y adecuaciones de
+formato en cuanto sea necesario con el objetivo de garantizar la
+calidad de la misma. Esta base de datos contendrá secuencias de
+pre-miRNAs conocidos y validados experimentalmente así como de
+secuencias que no sean pre-miRNAs (ejemplos negativos) los cuales se
+utilizarán como entrada para los algoritmos de extracción de
+características y clasificación.
+
+El algoritmo de clasificación se desarrollará siguiendo
+aproximadamente un modelo de prototipos. En forma iterativa se
+realizarán pruebas sobre los clasificadores disponibles variando sus
+parámetros y el conjuntos de características de entrada. Cada
+iteración se evaluará mediante validación cruzada obteniendo así
+medidas de rendimiento discriminadas. A partir de estas medidas de
+rendimiento se especificarán el conjunto de características a
+considerar y los algoritmos a utilizar en la parte de clasificación,
+con sus parámetros correspondientes. Con esta especificación se procederá
+a la codificación del algoritmo de clasificación definitivo.
+%
+%
+\subsection{Integración del sistema e interfaz de usuario}
+Se definirá el formato de los datos de entrada del sistema final y se
+codificará un sistema integrado que incorpore extracción de
+características y clasificación. Se seleccionarán los parámetros de
+clasificación disponibles (configurables) al usuario final así como
+valores por defecto que aseguren un buen rendimiento.
+%
+Se especificará y codificará una interfaz de usuario de línea de
+comandos y una interfaz web, previa evaluación y selección de las
+tecnologías a utilizar para la implementación.  Se generará la
+documentación correspondiente para la utilización del sistema por
+parte del usuario final.
+%
+\subsection{Pruebas finales y puesta en servicio}
+En esta etapa se procederá a evaluar el sistema, verificando el buen
+funcionamiento y el cumplimiento de los requerimientos. Se realizarán
+pruebas de clasificación para obtener medidas de rendimiento
+globales. Mediante pruebas se intentará encontrar y eliminar
+aquellos fallos que pudieren haber sido pasados por alto durante el
+desarrollo.
+%
+Finalmente, se procederá a la configuración de un servidor web de
+ejemplo y se realizará la puesta en servicio del sistema sobre el
+mismo, evaluando y especificando las tecnologías a utilizar para tal
+fin.
+%
+%
+\newpage
 \section{Plan de tareas propuesto}
-Para el desarrollo del proyecto, el alumno dedicará 20 horas semanales de trabajo. Se realizarán entre 2 y 4 reuniones mensuales de una hora con el director de proyecto para seguimiento de avance y asesoramiento.
-
-A continuación se presenta la lista de tareas y sub-tareas a desarrollar en el transcurso del proyecto.
+Para el desarrollo del proyecto, el alumno dedicará 20 horas semanales
+de trabajo para un total de 580 horas.  Se realizarán entre 2 y 4
+reuniones mensuales de una hora con el director de proyecto para
+seguimiento de avance y asesoramiento.
+%
+A continuación se presenta la lista de tareas y sub-tareas a
+desarrollar en el transcurso del proyecto.
 \begin{enumerate}
 \item Búsqueda bibliográfica (44h)
-  \begin{enumerate}
-  \item Información específica del problema en cuestión: descripción de los microRNAs, mecanismo y función, implicancias en el campo de la biología (24h).
-  \item Perspectiva informática del tema: estructura de los datos de entrada, extracción de características, métodos de clasificación (20h).
-  \end{enumerate}
+  \begin{enumerate*}
+  \item Información específica del problema en cuestión: descripción
+    de los microRNAs, mecanismo y función, implicancias en el campo de
+    la biología (24h).
+  \item Perspectiva informática del tema: estructura de los datos de
+    entrada, extracción de características, métodos de clasificación
+    (20h).
+  \end{enumerate*}
 \item Implementación inicial de métodos de clasificación (36h)
-  \begin{enumerate}
-  \item Búsqueda de una base de datos ya clasificada y con las características extraídas (8h).
-  \item Codificación inicial de clasificadores para obtener una primera impresión de las herramientas disponibles, requerimientos de software y hardware, y rendimiento (28h).
-  \end{enumerate}
-\item Armado de la base de datos definitiva y pruebas de clasificación (64h)
-  \begin{enumerate}
-  \item Búsqueda exhaustiva de diferentes bases de datos (8h).
-  \item Armado de una base de datos propia unificando el formato y características disponibles (28h).
-  \item Prueba de los diferentes clasificadores sobre la base de datos definitiva (12h).
-  \item Tabulación de los resultados obtenidos para diferentes clasificadores y conjuntos de características (16h).
-  \end{enumerate}
+  \begin{enumerate*}
+  \item Búsqueda y verificación de una base de datos de prueba ya
+    clasificada y con las características extraídas (8h).
+  \item Codificación inicial de clasificadores para obtener una
+    primera impresión de las herramientas y lenguajes disponibles,
+    requerimientos de software y hardware, y rendimiento (28h).
+  \end{enumerate*}
+\item Preparación de la base de datos (60h)
+  \begin{enumerate*}
+  \item Búsqueda y verificación de diferentes bases de datos (12h).
+  \item Armado de una base de datos propia unificando el formato y
+    características disponibles (24h).
+  \item Codificación de métodos para la extracción de características
+    a partir de la secuencia e incorporación de las mismas a la base
+    de datos (24h).
+  \end{enumerate*}
 \item Redacción del informe entregable 1 (12h)
-\item Diseño del clasificador definitivo (96h)
-  \begin{enumerate}
-  \item Pruebas y especificación de clasificadores a utilizar (16h).
-  \item Ajuste de parámetros de los clasificadores (20h).
-  \item Selección de características de entrada a considerar (20h).
-  \item Codificación definitiva del clasificador (40h).
-  \end{enumerate}
-\item Integración del sistema (48h)
-  \begin{enumerate}
-  \item Extracción de características (24h).
-  \item Clasificación (24h).
-  \end{enumerate}
+\item Diseño del clasificador definitivo (100h)
+  \begin{enumerate*}
+  \item Pruebas de los clasificadores preliminares (64h).\\
+    Tarea iterativa:
+    \begin{itemize*}
+    \item Selección del método de clasificación.
+    \item Ajuste de parámetros del método.
+    \item Selección de características de entrada.
+    \item Validación cruzada.
+    \end{itemize*}
+  \item Codificación definitiva del clasificador (36h).
+  \end{enumerate*}
+\item Pruebas e integración del sistema (80h)
+  \begin{enumerate*}
+  \item Validación del método de clasificación (20h).
+  \item Integración del sistema: extracción de características y
+    clasificación (24h).
+  \item Especificación y codificación de la interfaz de usuario de
+    línea de comandos (16h).
+  \item Pruebas de funcionamiento y validación de requerimientos (20h).
+  \end{enumerate*}
 \item Redacción del informe entregable 2 (12h)
-\item Interfaz de usuario de línea de comandos (40h)
-  \begin{enumerate}
-  \item Especificar y codificar una interfaz de usuario de línea de comandos para el manejo del método (24h).
-  \item Documentar la interfaz de usuario (16h).
-  \end{enumerate}
 %\item Redacción del informe entregable 3 (12h)
-\item Interfaz de usuario web (84h)
-  \begin{enumerate}
-  \item Evaluar y seleccionar los lenguajes/tecnologías a utilizar (12h).
-  \item Codificar la interfaz web (36h).
-  \item Configuración y puesta en servicio de un servidor de prueba (36h).
-  \end{enumerate}
+\item Interfaz de usuario web, documentación y puesta en servicio (104h)
+  \begin{enumerate*}
+  \item Especificación de los lenguajes/tecnologías a utilizar en la
+    interfaz web (12h).
+  \item Codificación de la interfaz web (36h).
+  \item Documentación de las interfaces de usuario de línea de
+    comandos y web (20h).
+  \item Configuración y puesta en servicio de un servidor de prueba
+    (36h).
+  \end{enumerate*}
 \item Redacción del informe entregable 3 (12h)
 \item Redacción del informe final (120h)
 \end{enumerate}
 %
+%
 \section{Puntos de control y entregables}
 \subsection{Punto de control 1}
-Resultados de la revisión bibliográfica, pruebas preliminares y armado de la base de datos definitiva.
+Resultados de la revisión bibliográfica, pruebas preliminares y armado
+de la base de datos definitiva.  Abarca las etapas 1 y 2 y la primera
+parte de la etapa 3.
 \begin{description*}
-  \item[Fecha:] 29 de julio de 2013
+  \item[Fecha:] 25 de julio de 2013
   \item[Entregable:]
   \item
-    \begin{minipage}{.8\textwidth}
+    \begin{minipage}{\textwidth}
+      \medskip
       \begin{itemize*}
       \item Bibliografía consultada
       \item Bases de datos recopiladas
-      \item Distintos clasificadores y bases de datos probados
+      \item Métodos de clasificación codificados y pruebas preliminares
+      \item Métodos de extracción de características codificados
       \item Armado de la base de datos definitiva
-      \item Pruebas de los clasificadores sobre la base de datos definitiva
       \end{itemize*}
     \end{minipage}
 \end{description*}
+\newpage
 \subsection{Punto de control 2}
-Resultados de la implementación del clasificador definitivo e integración del sistema.
+Resultados de la implementación del clasificador definitivo e
+integración del sistema. Abarca la segunda parte de la etapa 3 y la
+etapa 4 excepto la interfaz web y la documentación para el usuario
+final.
 \begin{description*}
-  \item[Fecha:] 20 de septiembre de 2013
+  \item[Fecha:] 1 de octubre de 2013
   \item[Entregable:]
   \item
-    \begin{minipage}{.8\textwidth}
+    \begin{minipage}{\textwidth}
+      \medskip
       \begin{itemize*}
-      \item Clasificadores selecionados
-      \item Especificación de características consideradas
-      \item Ajuste de parámetros de los clasificadores
-      \item Codificación del clasificador definitivo
-      \item Integración del sistema
+      \item Resultados de las pruebas de los distintos clasificadores
+      \item Especificación del algoritmo de clasificación definitivo:
+        métodos seleccionados, parámetros, conjunto de características
+        considerado
+      \item Algoritmo de clasificación codificado
+      \item Resultados de la validación del algoritmo de clasificación
+      \item Codificación del sistema integrado
+      \item Interfaz de usuario de línea de comandos codificada
+      \item Resultados de la validación de requerimientos
       \end{itemize*}
     \end{minipage}
 \end{description*}
 \subsection{Punto de control 3}
-Interfaz de usuario de línea de comandos y web.
+Interfaz de usuario web, puesta en servicio y documentación para el
+usuario final. Abarca parte de la etapa 4 y la etapa 5.
 \begin{description*}
-  \item[Fecha:] 7 de noviiembre de 2013
+  \item[Fecha:] 4 de noviembre de 2013
   \item[Entregable:]
   \item
-    \begin{minipage}{.8\textwidth}
+    \begin{minipage}{\textwidth}
+      \medskip
       \begin{itemize*}
-      \item Especificación y codificación de la interfaz de línea de comandos
       \item Documentación de la interfaz de línea de comandos
-      \item Selección de tecnologías web utilizadas
-      \item Pruebas y codificación de la interfaz web
+      \item Tecnologías web seleccionadas para la interfaz de usuario
+      \item Interfaz de usuario web codificada
       \item Documentación de la interfaz de usuario web
+      \item Servidor de prueba puesto en servicio
       \end{itemize*}
     \end{minipage}
 \end{description*}
 %
+%
+\newpage
 \section{Cronograma tentativo}
-El siguiente cronograma se distribuye la carga de trabajo de 568 horas
-en 29 semanas. Se toma como fecha de inicio del proyecto el día 3 de junio de 2013
-y como fecha de finalización estimada el día 18 de diciembre del corriente.
-
+En el siguiente cronograma se distribuye la carga de trabajo de 580
+horas en 29 semanas. Se toma como fecha de inicio del proyecto el día
+3 de junio de 2013 y como fecha de finalización estimada el día 20 de
+diciembre del corriente.
 \begin{center}
 \definecolor{barblue}{RGB}{153,204,254}
 \definecolor{groupblue}{RGB}{51,102,254}
@@ -214,7 +509,7 @@ vgrid={*4{draw=black!15, line width=.75pt},
 %% *1{draw=black!40, line width=.75pt},
 %% *3{draw=black!15, line width=.75pt},
 *1{draw=black!40, line width=.75pt}},
-y unit chart=0.45cm,
+y unit chart=0.55cm,
 x unit=0.095cm,
 y unit title=0.6cm,
 %% today=7.1,
@@ -235,7 +530,7 @@ title height=1,
 %bar label anchor/.style={left=2cm},
 bar/.style={draw=none, fill=barblue},
 milestone/.style={fill=linkred},
-milestone width=3,
+milestone width=3.5,
 milestone height=.6,
 milestone yshift=0.6,
 %milestone label anchor/.style={below=8pt,left=0pt},
@@ -267,193 +562,193 @@ link/.style={-latex, line width=1.5pt, linkred},
 \ganttbar{2.a}{12}{13} \\ %8h
 \ganttbar{2.b}{14}{20} \\ %28h
 %
-\ganttgroup{Tarea 3}{21}{36} \\%16 dias
-\ganttbar{3.a}{21}{22} \\%8h
-\ganttbar{3.b}{23}{29} \\%28h
-\ganttbar{3.c}{30}{32} \\%12h
-\ganttbar{3.d}{33}{36} \\%16h
+\ganttgroup{Tarea 3}{21}{35} \\%15 dias
+\ganttbar{3.a}{21}{23} \\%12h
+\ganttbar{3.b}{24}{29} \\%24h
+\ganttbar{3.c}{30}{35} \\%24h
 % entregable 1
-\ganttgroup{Tarea 4}{37}{39} \\%3 dias
-\ganttmilestone{Control 1}{39}\\
-\ganttgroup{Tarea 5}{40}{65} \\%26 dias
-\ganttbar{5.a}{40}{43} \\%16h
-\ganttbar{5.b}{44}{48} \\%20h
-\ganttbar{5.c}{49}{53} \\%20h
-\ganttbar{5.d}{54}{65} \\%48h
-\ganttgroup{Tarea 6}{66}{77} \\%12 dias
-\ganttbar{6.a}{66}{71} \\%24h
-\ganttbar{6.b}{72}{77} \\%24h
+\ganttgroup{Tarea 4}{36}{38} \\%3 dias
+\ganttmilestone{Control 1}{38}\\
+%
+\ganttgroup{Tarea 5}{39}{63} \\%25 dias
+\ganttbar{5.a}{39}{54} \\%64h
+\ganttbar{5.b}{55}{63} \\%20h
+%
+\ganttgroup{Tarea 6}{64}{83} \\%20 dias
+\ganttbar{6.a}{64}{68} \\%20h
+\ganttbar{6.b}{69}{74} \\%24h
+\ganttbar{6.c}{75}{78} \\%16h
+\ganttbar{6.d}{79}{83} \\%20h
 % entregable 2
-\ganttgroup{Tarea 7}{78}{80} \\%%[thick,blue]%3 dias
-\ganttmilestone{Control 2}{80}\\
-\ganttgroup{Tarea 8}{81}{90} \\%10 dias
-\ganttbar{8.a}{81}{86} \\%24h
-\ganttbar{8.b}{87}{90} \\%16h
+\ganttgroup{Tarea 7}{84}{86} \\%3 dias
+\ganttmilestone{Control 2}{86}\\
+\ganttgroup{Tarea 8}{87}{112} \\%26 dias
+\ganttbar{8.a}{87}{89} \\%12h
+\ganttbar{8.b}{90}{98} \\%36h
+\ganttbar{8.c}{99}{103}\\%20h
+\ganttbar{8.d}{104}{112} \\%36h
 % 10 entregable 3
 %\ganttgroup{Tarea 9}{88}{90} \\%3 dias
 %\ganttmilestone{Control 3}{90}\\
-\ganttgroup{Tarea 9}{91}{111} \\%
-\ganttbar{9.a}{91}{93} \\%12h
-\ganttbar{9.b}{94}{102} \\%36h
-\ganttbar{9.c}{103}{111} \\%36h
 % entregable 3
-\ganttgroup{Tarea 10}{112}{114} \\%3 dias
-\ganttmilestone{Control 3}{114}\\
-\ganttgroup{Tarea 11}{115}{144} \\%30 dias
+\ganttgroup{Tarea 9}{113}{115} \\%3 dias
+\ganttmilestone{Control 3}{115}\\
+\ganttgroup{Tarea 10}{116}{145} \\%30 dias
 \end{ganttchart}
 \end{center}
-
-
+%
+%
 \section{Riesgos y estrategias de mitigación}
 %
 \subsection{Problemas en el armado de la base de datos}
-Al trabajar con bases de datos de fuentes diverso origen y sobre las cuales no se tienen
-garantías de calidad, se presenta el riesgo de encontrar más inconsistencias de lo previsto
-en la etapa de armado de la base de datos.
+Al trabajar con bases de datos de origen diverso y sobre las
+cuales no se tienen garantías de calidad, se presenta el riesgo de
+encontrar más inconsistencias de lo previsto en la etapa de armado de
+la base de datos.
 \begin{description*}
   \item[Probabilidad:] Media
-  \item[Impacto:] Retraso en el armado de la base de datos definitiva al requerirse tiempo extra de depuración
-  \item[Mitigación:] En caso de tratarse de una base de datos particularmente problemática, se analizará la
-  conveniencia de no considerarla para el armado de la base definitiva.
+  \item[Impacto:] Retraso en el armado de la base de datos definitiva
+    al requerirse tiempo extra de depuración
+  \item[Mitigación:] En caso de tratarse de una base de datos
+    particularmente problemática, se analizará la conveniencia de no
+    considerarla para el armado de la base definitiva.
 \end{description*}
 %
 \subsection{Retraso en los tiempos previstos por razones ajenas al proyecto}
-Al encontrarse el estudiante trabajando en un área que es ajena al desarrollo de este proyecto, se considera el riesgo de una carga laboral excesiva que pudiera provocar un retraso en el desarrollo del actual proyecto. En pos de disminuir el presente riesgo, se ha conversado el tema en el entorno laboral del alumno.
+Al encontrarse el estudiante trabajando en un área que es ajena al
+desarrollo de este proyecto, se considera el riesgo de una carga
+laboral excesiva que pudiera provocar un retraso en el desarrollo del
+actual proyecto. En pos de disminuir el presente riesgo, se ha
+conversado el tema en el entorno laboral del alumno.
 \begin{description*}
   \item[Probabilidad:] Baja
-  \item[Impacto:] Retraso en el cumplimiento del cronograma del proyecto
-  \item[Mitigación:] Replanificar tareas intentando mantener las fechas previstas, dedicando más horas de trabajo al dedarrollo del proyecto.
+  \item[Impacto:] Retraso en el cumplimiento del cronograma del
+    proyecto
+  \item[Mitigación:] Replanificar tareas intentando mantener las
+    fechas previstas, dedicando más horas de trabajo al desarrollo del
+    proyecto.
 \end{description*}
 %
-\subsection{Problemas de portabilidad, compatibilidad y/o licencias del software de base para el clasificador en el servidor Web}
-Dado que los servidores Web en general poseen recursos limitados y un entorno de software administrado diferente a aquel de un equipo de escritorio, se da el riesgo de que el software utilizado como soporte en el sistema (lenguajes de programación, software específico) no pueda ser utilizado en el servidor de interfaz Web.
+\subsection{Problemas de portabilidad, compatibilidad y/o
+  licencias del software de base para el clasificador en el servidor Web}
+Dado que los servidores Web en general poseen recursos limitados y un
+entorno de software administrado diferente a aquel de un equipo de
+escritorio, se da el riesgo de que el software utilizado como soporte
+en el sistema (lenguajes de programación, software específico) no
+pueda ser utilizado en el servidor de interfaz Web.
 \begin{description*}
   \item[Probabilidad:] Media
-  \item[Impacto:] Retraso en la implementación de la interfaz Web, necesidad de volver a codificar partes del sistema en otro lenguaje compatible
-  \item[Mitigación:] Búsqueda de software alternativo a utilizar en el servidor y recodificación de aquellas partes del sistema incompatibles. Como último recurso, se implementará el servidor en la misma máquina de desarrollo, aunque tal elección implique que el servicio no estará disponible para su utilización en un entorno de producción.
+  \item[Impacto:] Retraso en la implementación de la interfaz Web,
+    necesidad de volver a codificar partes del sistema en otro
+    lenguaje compatible
+  \item[Mitigación:] Búsqueda de software alternativo a utilizar en el
+    servidor y recodificación de aquellas partes del sistema
+    incompatibles. Como último recurso, se implementará el servidor en
+    la misma máquina de desarrollo, aunque tal elección implique que
+    el servicio no estará disponible para su utilización en un entorno
+    de producción.
 \end{description*}
 %
 %
-\section{Recursos necesarios y disponibles para el desarrollo}
-Al momento de iniciar el proyecto, todos los recursos necesarios se encuentran disponibles:
-\begin{itemize}
+\section{Recursos necesarios y disponibles}
+Al momento de iniciar el proyecto, todos los recursos necesarios se
+encuentran disponibles:
+\begin{itemize*}
 \item Material bibliográfico
 \item Servicios:
-  \begin{itemize}
-  \item conexión a Internet
-  \item Servidor Web (Instancia de Amazon EC2 ``micro'': Intel Xeon 1x2.6GHz, 600MB RAM)
-  \end{itemize}
+  \begin{itemize*}
+  \item Conexión a Internet
+  \item Servidor Web (Instancia de Amazon EC2 ``micro'': Intel Xeon
+    1x2.6GHz, 600MB RAM)
+  \end{itemize*}
 \item Hardware:
-  \begin{itemize}
+  \begin{itemize*}
   \item PC de escritorio (Intel Core 2, 4GB RAM)
   \item Notebook (Intel Core i5, 4GB RAM)
-  \end{itemize}
+  \end{itemize*}
 \item Software:
-  \begin{itemize}
+  \begin{itemize*}
   \item Sistema operativo Debian GNU/Linux 7.0 ``Wheezy''
   \item Entorno de desarrollo/Editor GNU Emacs 24
   \item Software científico (MATLAB, GNU Octave)
   \item Software de scripting (Bash, Python, Perl)
-  \item Software de servidor Web (Debian GNU/Linux, Apache httpd/nginx, PHP 5)
-  \end{itemize}
+  \item Software de servidor Web (Debian GNU/Linux, Apache
+    httpd/nginx, PHP 5)
+  \end{itemize*}
 \item Bases de datos para el desarrollo y pruebas
 \item Insumos varios:
-  \begin{itemize}
+  \begin{itemize*}
   \item Artículos de librería
   \item Impresora y tóner
   \item Fotocopias
   \item Pendrive
   \item Pasajes en colectivo
-  \end{itemize}
+  \end{itemize*}
 \item Recursos humanos: alumno y director.
-\end{itemize}
-
-\newcommand{\mcol}[3]{\multicolumn{#1}{#2}{#3}}
-\newcommand{\mrow}[3]{\multirow{#1}{#2}{#3}}
-
+\end{itemize*}
+%
+%
+\newpage
 \section{Presupuesto}
-
-En la tabla a continuación se detalla el presupuesto para el Proyecto final.
-Para la elaboración del mismo, se tuvieron en cuenta las siguientes consideraciones:
-\begin{enumerate}
-\item El costo de la hora hombre del alumno se considera equivalente al valor
-  de mercado de un programador Junior: \$40/h.
-\item El costo de la hora hombre del director se toma en: \$160/h.
-\item Se considera el software con precio nulo, ya que se utilizará en un principio
-  software libre. En caso de decidir utilizar software propietario, se deberá agregar el
-  costo de la licencia al costo total del presupuesto.
-\item Al considerar los costos, no se consideran intereses así como tampoco el
-  costo de oportunidad.
-\end{enumerate}
+En la tabla a continuación se detalla el presupuesto para el Proyecto
+Final. Para la elaboración del mismo, se tuvieron en cuenta las
+siguientes consideraciones:
+\begin{enumerate*}
+\item El costo de la hora hombre del Alumno se considera al valor de
+  mercado de un programador Junior en \$40/h.
+\item Se considera que el Director dedicará 15 horas mensuales en el
+  seguimiento, asesoramiento y correcciones a la tarea del Alumno. El
+  costo de la hora hombre del Director se toma en \$200/h.
+\item Se considera el software con precio nulo, ya que se en principio
+  se utilizará software libre. La decisión de utilizar software
+  comercial incidirá en el costo indirecto con el valor de la
+  licencia.
+\item No se consideran intereses así como
+  tampoco el costo de oportunidad.
+\end{enumerate*}
+{\sffamily\small
+\newcommand\GR[1]{{\bfseries #1}}
+\newcommand\SL[1]{{\slshape #1}}
 \begin{tabular}{p{4cm}crlrr}
-  Tarea/Concepto & Recurso & \mcol{2}{c}{Cantidad}    & Costo Unitario & Costo total \\\hline
-  \mrow{4}{*}{Tareas 1 a 4} & RRHH alumno    & 156 & hs.  & \$  40 & \$ 6240 \\
-                            & RRHH director  &  30 & hs.  & \$ 160 & \$ 4800 \\
-                            & Impresión      & 200 & pág. & \$ 0,2 & \$ 40 \\
-                            & Transporte     &  20 & pas. & \$ 2,9 & \$ 58 \\\hline
-  \mcol{5}{l}{Subtotal tareas 1--4} & \$ 11138 \\\hline
-  \mrow{4}{*}{Tareas 5 a 7} & RRHH alumno    & 156 & hs.  & \$  40 & \$ 6240 \\
-                            & RRHH director  &  30 & hs.  & \$ 160 & \$ 4800 \\
-                            & Impresión      & 100 & pág. & \$ 0,2 & \$ 20 \\
-                            & Transporte     &  20 & pas. & \$ 2,9 & \$ 58 \\\hline
-  \mcol{5}{l}{Subtotal tareas 5--7} & \$ 11118 \\\hline
-  \mrow{5}{*}{Tareas 8 a 10} & RRHH alumno    & 136 & hs.  & \$  40 & \$ 5440 \\
-                             & RRHH director  &  30 & hs.  & \$ 160 & \$ 4800 \\
-                             & Renta servidor web & 3000 & hs. & US\$ 0.06 & \$ 1188%
-\footnote{Precio estimado. Se considera el dólar americano a \$5,50 pesos argentinos y aplicando el
-20\% de recargo a compras en el exterior según R.G. AFIP 3450/2013} \\
-                             & Impresión      & 100 & pág. & \$ 0,2 & \$ 30 \\
-                             & Transporte     &  20 & pas. & \$ 2,9 & \$ 58 \\\hline
-  \mcol{5}{l}{Subtotal tareas 8--10} & \$ 11516 \\\hline
-  \mrow{4}{*}{Tarea 11}     & RRHH alumno    & 120 & hs.  & \$  40 & \$ 4800 \\
-                            & RRHH director  &  30 & hs.  & \$ 160 & \$ 4800 \\
-                            & Impresión      & 400 & pág. & \$ 0,2 & \$ 80 \\
-                            & Encuadernado   &   3 & unid.& \$ 30  & \$ 120 \\
-                            & Transporte     &  20 & pas. & \$ 2,9 & \$ 58 \\\hline
-  \mcol{5}{l}{Subtotal tarea 11} & \$ 9858 \\\hline
-  \mrow{4}{*}{Costos indirectos} & Serv. Internet  & 7 & mes  & \$  200 & \$ 1400 \\
-                                 & PC escritorio  &  1 & unid.  & \$ 6000 & \$ 6000 \\
-                                 & Elementos de oficina  & \mcol{2}{c}{N/A} & & \$ 150 \\
-                                 & Software     & \mcol{2}{c}{N/A} & \$ 0 & \$ 0 \\\hline
-  \mcol{5}{l}{Subtotal C.I.} & \$ 7550 \\\hline\smallskip\\
-  \mcol{5}{l}{Costo total del Proyecto} & \$ 51180\smallskip \\\hline
-\end{tabular}
-%% Para realizar el Presupuesto del Proyecto no se tuvieron en cuenta los intere-
-%% ses (costo de oportunidad) que cada costo supone. El costo total del proyecto fue
-%% calculado con una estimaci ́
-%% on del mismo de 3 meses y 6 d ́
-%% ıas. Para los costos de
-%% los insumos de librer ́
-%% ıa se tienen en cuenta gastos en papel, fotocopias, biromes,
-%% etc. Los servicios de luz se calcularon seg ́
-%% un
-%% 2PC’s(40W ) = 2 ∗ 0,8KW/h = 1,6KW/h ∗ 674h
-%% Para el c ́
-%% alculo del presupuesto no se tuvo en cuenta ning ́
-%% un tipo de capital fun-
-%% diario (tierras o mejoras). Para el costo de los recursos humanos se consider ́
-%% o el
-%% precio actual de mercado de un programador junior como $40/h.
-%% En el costo total de producci ́
-%% on est ́
-%% an inclu ́
-%% ıdos los costos directos e indirectos
-%% del proceso productivo.
-
-%% Horas hombre alumno: 570h * $40/h = $22800
-%% Horas hombre director: 20h/mes * 8 meses * $80/h = $12800
-%% Equipamiento informático: $6000
-%% Acceso a Internet: $200/mes * 8 meses = $1600
-%% Viáticos/movilidad = $20/semana * 32 semanas = $640
-%% Insumos varios de oficina = $200
-%% Impresión/fotocopias = $400
+  \GR{Tarea/Concepto}&  \GR{Recurso}  & \mcol{2}{c}{\GR{Cantidad}}
+                                                     &\GR{Costo unitario}
+                                                               &\GR{Costo total}\\\hline
+    \mrow{3}{*}{Tareas 1 a 4}
+                     & RRHH alumno    &   152 & hs.  & \$  40  & \$ 6080  \\
+                     & RRHH director  &    30 & hs.  & \$ 200  & \$ 6000  \\
+                     & Impresión      &   200 & pág. & \$ 0,2  & \$ 40    \\
+    \mcol{5}{l}{\quad\SL{Subtotal C.D. tareas 1--4}}           & \SL{\$12120}\\\hline
+    \mrow{3}{*}{Tareas 5 a 7}
+                     & RRHH alumno    &   164 & hs.  & \$  40  & \$ 6560  \\
+                     & RRHH director  &    30 & hs.  & \$ 200  & \$ 6000  \\
+                     & Impresión      &   100 & pág. & \$ 0,2  & \$ 20    \\
+    \mcol{5}{l}{\quad\SL{Subtotal C.D. tareas 5--7}}           & \SL{\$12580}\\\hline
+    \mrow{4}{*}{Tareas 8 a 9}
+                     & RRHH alumno    &   116 & hs.  & \$  40  & \$ 4640  \\
+                     & RRHH director  &    15 & hs.  & \$ 200  & \$ 3000  \\
+                 & Renta servidor web & 3000  & hs.  &US\$ 0.06& \$ 1188%
+    \footnote{Precio estimado. Se considera el dólar americano a
+      \$5,50 pesos argentinos y aplicando el 20\% de recargo a compras
+      en el exterior según R.G. AFIP 3450/2013}                           \\
+                     & Impresión      &   100 & pág. & \$ 0,2  & \$ 30    \\
+    \mcol{5}{l}{\quad\SL{Subtotal C.D. tareas 8--9}}           & \SL{\$8858} \\\hline
+    \mrow{4}{*}{Tarea 10}
+                     & RRHH alumno    &   120 & hs.  & \$  40  & \$ 4800  \\
+                     & RRHH director  &    20 & hs.  & \$ 200  & \$ 4000  \\
+                     & Impresión      &   400 & pág. & \$ 0,2  & \$ 80    \\
+                     & Encuadernado   &     3 & unid.& \$ 30   & \$ 120   \\
+    \mcol{5}{l}{\quad\SL{Subtotal C.D. tarea 10}}              & \SL{\$9000} \\\hline
+    \mrow{5}{*}{Costos Indirectos}
+                     & Serv. Internet &     7 & mes  & \$  200 & \$ 1400  \\
+                     & PC escritorio  &     1 & unid.& \$ 6000 & \$ 6000  \\
+                     & Transporte     &    80 & pas. & \$ 2,9  & \$ 232   \\
+                & Elementos de oficina&\mcol{2}{c}{N/A}&       & \$ 150   \\
+                     & Software     &\mcol{2}{c}{N/A}& \$ 0    & \$ 0     \\
+    \mcol{5}{l}{\quad\SL{Subtotal C.I.}}                       & \SL{\$7782} \\\hline
+    \mcol{5}{l}{\GR{Costo total del Proyecto}}                  & \GR{\$50340}\\\hline
+  \end{tabular}}
 %
 %
-%\nocite{*}
-%\bibliographystyle{plain}
-
 \printbibliography
+%
 \end{document}
-
-
-
