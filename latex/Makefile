@@ -1,5 +1,5 @@
-# nombre de los archivos fuente, sin/con extensión:
-fuentes = anteproyecto.tex
+# nombre de los archivos fuente
+fuentes = propuesta.tex anteproyecto.tex entregable1.tex
 #
 texes = $(wildcard '*.tex')
 #
@@ -15,32 +15,19 @@ $(fuentes:%.tex=%-blx.bib)
 #TOP := $(shell pwd)
 #TEXINPUTS := .:$(TOP)/skrapport:
 
-# 'compilador':
 cc = pdflatex -interaction nonstopmode
 bib = biber
-latex = latex
 
 all:	$(fuentes:%.tex=%.pdf) $(dep)
 	rm -f $(fuentes_aux)
 	rm -f $(biber_aux)
 
-dvipdf:	$(fuentes:%.tex=%_dvipdf)
-	rm -f $(fuentes_aux) 
-
-%.pdf:	%.tex
+%.pdf:	%.tex $(dep)
 	$(cc) $<
 	$(bib) $(<:%.tex=%)
 	$(cc) $<
 
-%.dvi:	%.tex
-	$(latex) $<
-	$(latex) $<
-
-%_dvipdf: %.dvi
-	dvipdf $<
-	rm -f $< 
-
 clean:
-	rm -f $(fuentes:%.tex=%.pdf) $(fuentes:%.tex=%.dvi)
+	rm -f $(fuentes:%.tex=%.pdf)
 	rm -f $(fuentes_aux)
 	rm -f $(biber_aux)

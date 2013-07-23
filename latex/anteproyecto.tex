@@ -5,11 +5,7 @@
 \include{conf/comandos}
 \include{conf/fuentes}
 %
-\addbibresource{biblio.bib}
 %
-\usepackage{footnote}
-%\makesavenoteenv{minpage}   % If you want to include minipages. 
-\makesavenoteenv{tabular}
 \selectlanguage{spanish}
 \hyphenation{micro-RNA}
 \hyphenation{micro-RNAs}
@@ -37,8 +33,11 @@
 %
 \date{\-\\[2em]\today}
 %
+\renewcommand*{\titlepagestyle}{empty}
+%\thispagestyle{empty}
 \maketitle
 \end{titlepage}
+\setcounter{page}{1}
 %
 %
 \section{Título del Proyecto}
@@ -65,32 +64,33 @@ ejemplo, en la evolución del cáncer (sea como inhibidores o promotores
 de éste) \cite{aurora}, y en procesos de infección viral
 \cite{lecellier}.
 
-Los miRNAs son pequeñas cadenas de RNA (ARN, ácido ribonucleico), de unos 22 nucleótidos de
-longitud, que ejercen una importante función reguladora de la
-expresión génica celular \cite{bartel116}.  Se ha demostrado su efecto
-regulador en varios procesos genéticos dentro de la célula, como la
-transcripción de mRNAs (\emph{RNA mensajeros}) y la síntesis de
-proteínas. Al alterar los niveles de miRNAs en las células, es posible
-medir su impacto en estos procesos de forma cuantitativa. \cite{lili}
+Los miRNAs son pequeñas cadenas de RNA (ARN, ácido ribonucleico), de
+unos 22 nucleótidos de longitud, que ejercen una importante función
+reguladora de la expresión génica celular \cite{bartel116}.  Se ha
+demostrado su efecto regulador en varios procesos genéticos dentro de
+la célula, como la transcripción de mRNAs (\emph{RNA mensajeros}) y la
+síntesis de proteínas. Al alterar los niveles de miRNAs en las
+células, es posible medir su impacto en estos procesos de forma
+cuantitativa \cite{lili}.
 
 El efecto regulador de la expresión génica de los microRNAs en los
 procesos celulares puede tener gran implicancia en el desarrollo y
 evolución de la enfermedad celular. Expresiones aberrantes de los
 miRNAs se han observado en muchos cánceres. Además, se ha demostrado
-que juegan un rol importante en la carcinogénesis. \cite{lili}
+que juegan un rol importante en la carcinogénesis \cite{lili}. 
 Funciones recientemente descubiertas de los miRNAs incluyen el control
 de la proliferación y muerte celular, metabolismo de la grasa en
 moscas, y control del desarrollo de flores y hojas en
-plantas. \cite{bartel116}
+plantas \cite{bartel116}. 
 
 \newpage
 Los miRNAs se presentan dentro de una molécula denominada pre-miRNA
 (miRNA precursor), de unos ~70nt de longitud, la cual contiene uno o
-más miRNAs ``maduros'' en su secuencia.  En la figura \ref{horquilla} se representa
-en forma esquemática la secuencia de una cadena de pre-miRNA y su
-correspondiente \emph{estructura secundaria}. Esta estructura
-secundaria viene dada por la forma en que la cadena de pre-miRNA se
-``plega'' sobre sí misma logrando una mayor estabilidad
+más miRNAs ``maduros'' en su secuencia.  En la figura \ref{horquilla}
+se representa en forma esquemática la secuencia de una cadena de
+pre-miRNA y su correspondiente \emph{estructura secundaria}. Esta
+estructura secundaria viene dada por la forma en que la cadena de
+pre-miRNA se ``plega'' sobre sí misma logrando una mayor estabilidad
 molecular. Típicamente, en el reino animal se encuentra que la
 estructura secundaria de un pre-miRNA conforma una especie de
 \emph{horquilla}, como se puede ver en la figura.
