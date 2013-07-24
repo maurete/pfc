@@ -51,14 +51,17 @@
 Identificar secuencias de pre-miRNAs a través de un clasificador SVM.
 \subsubsection{Características que utiliza}
 \begin{itemize}
-\item frecuencia de ocurrencia de 32 elementos ``triplet''
-  (en cada posición se toma un elemento de la secuencia + 3 de la estructura secundaria)
+\item frecuencia de ocurrencia de 32 elementos ``triplet'' (en cada
+  posición se toma un elemento de la secuencia + 3 de la estructura
+  secundaria)
 \end{itemize}
 \subsubsection{Disponibilidad de los datos}
-Si bien en la página del autor ya no están disponibles los datos, éstos se encuentran
-en una versión anterior, disponible en el archivo de internet: \url{PONER URL}
+Si bien en la página del autor ya no están disponibles los datos,
+éstos se encuentran en una versión anterior, disponible en el archivo
+de internet: \url{PONER URL}
 
-Para el armado de los conjuntos de datos se consideran los sig. criterios:
+Para el armado de los conjuntos de datos se consideran los
+sig. criterios:
 \begin{itemize}
 \item Mínimo de 18 base pairings en el tallo
 \item Máximo -15kcal/mol de free energy
@@ -72,18 +75,13 @@ clasificador SVM (frecuencia de los 32 triplets).
 \paragraph{pre-miRNAs humanos}
 Tomados de miRNA registry rel 5.0, sept/2004
 \begin{description*}
-\item[Tipo:] Conjunto de entrenamiento (163) y prueba(30), datos positivos
+\item[Tipo:] Conjunto de entrenamiento (163) y prueba(30), datos
+  positivos
 \item[Num. entradas:] 193
 \item[Especies:] Homo sapiens (hsa)
-\item[Características:]
-id \quad
-secuencia \quad
-estructura secundaria \quad
-SEQ\_LENGTH \quad
-GC\_CONTENT \quad
-BASEPAIR \quad
-FREE\_ENERGY \quad
-LEN\_BP\_RATIO
+\item[Características:] id \quad secuencia \quad estructura secundaria
+  \quad SEQ\_LENGTH \quad GC\_CONTENT \quad BASEPAIR \quad
+  FREE\_ENERGY \quad LEN\_BP\_RATIO
 \end{description*}
 \paragraph{CROSS-SPECIES}
 Tomados de miRNA registry rel 5.0, sept/2004
@@ -112,6 +110,7 @@ BASEPAIR \quad
 FREE\_ENERGY \quad
 LEN\_BP\_RATIO
 \end{description*}
+%
 \paragraph{pre-miRNAs humanos (actualizado)}
 Tomados de miRNA registry rel 5.0, sept/2004
 \begin{description*}
@@ -127,10 +126,13 @@ BASEPAIR \quad
 FREE\_ENERGY \quad
 LEN\_BP\_RATIO
 \end{description*}
+%
 \paragraph{CONSERVED-HAIRPIN}
-Tomados de UCSC database, region 56000001--57000000 del cromosoma humano 19
+Tomados de UCSC database, region 56000001--57000000 del cromosoma
+humano 19
 \begin{description*}
-\item[Tipo:] Conjunto de prueba, datos desconocidos (algunos positivos)
+\item[Tipo:] Conjunto de prueba, datos desconocidos (algunos
+  positivos)
 \item[Num. entradas:] 2444
 \item[Especies:]  Homo sapiens (hsa)
 \item[Características:]
@@ -167,41 +169,99 @@ LEN\_BP\_RATIO
 \subsection{Ng \& Mishra: miPred}
 \subsubsection{Objetivo del método presentado}
 Identificar secuencias de pre-miRNAs a través de un clasificador SVM.
+
+El método además es probado para detectar pre-miRNAs en genes de
+virus, recorriendo éste mediante una ventana deslizante de 95nt y
+clasificando las secuencias extraídas.
 \subsubsection{Características que utiliza}
 \begin{itemize}
-\item frecuencia de ocurrencia de 32 elementos ``triplet''
-  (en cada posición se toma un elemento de la secuencia + 3 de la estructura secundaria)
+\item $dP$
+\item $dG$
+\item $MFEI_1$
+\item $dQ$
+\item $dD$
+\item $dF$
+\item $MFEI_2$
+\item otras?
 \end{itemize}
 \subsubsection{Disponibilidad de los datos}
-Si bien en la página del autor ya no están disponibles los datos, éstos se encuentran
-en una versión anterior, disponible en el archivo de internet: \url{PONER URL}
-
-Para el armado de los conjuntos de datos se consideran los sig. criterios:
-\begin{itemize}
-\item Mínimo de 18 base pairings en el tallo
-\item Máximo -15kcal/mol de free energy
-\item Ningún loop múltiple
-\end{itemize}
-
-También se encuentran disponibles los vectores de entrada para el
-clasificador SVM (frecuencia de los 32 triplets).
+Los datos se encuentran disponibles, según se listan en las entradas
+siguientes.
 %
 \subsubsection{Conjuntos de datos}
-\paragraph{pre-miRNAs humanos}
-Tomados de miRNA registry rel 5.0, sept/2004
+\paragraph{pre-miRNAs no redundantes}
+Tomados de miRBase 8.2 (jul/2006) para todas las especies disponibles,
+se filtran aquellas secuencias redundantes mediante un algoritmo de
+agrupación incremental ``ávido''\cite{greedy}.
 \begin{description*}
-\item[Tipo:] Conjunto de entrenamiento (163) y prueba(30), datos positivos
-\item[Num. entradas:] 193
-\item[Especies:] Homo sapiens (hsa)
-\item[Características:]
-id \quad
-secuencia \quad
-estructura secundaria \quad
-SEQ\_LENGTH \quad
-GC\_CONTENT \quad
-BASEPAIR \quad
-FREE\_ENERGY \quad
-LEN\_BP\_RATIO
+\item[Tipo:] Conjunto de datos positivos
+\item[Num. entradas:] 2241
+\item[Especies:] 45 especies agrupadas en artropoda, nematoda,
+  vertebrata, viridiplantae y virus
+\item[Características:] id \quad secuencia \quad estructura secundaria
+  \quad Len \quad A \quad C \quad G \quad U \quad G+C \quad A+U \quad
+  AA \quad AC \quad AG \quad AU \quad CA \quad CC \quad CG \quad CU
+  \quad GA \quad GC \quad GG \quad GU \quad UA \quad UC \quad UG \quad
+  UU \quad \%A \quad \%C \quad \%G \quad \%U \quad \%G+C \quad \%A+U
+  \quad \%AA \quad \%AC \quad \%AG \quad \%AU \quad \%CA \quad \%CC
+  \quad \%CG \quad \%CU \quad \%GA \quad \%GC \quad \%GG \quad \%GU
+  \quad \%UA \quad \%UC \quad \%UG \quad \%UU \quad pb \quad Npb \quad
+  mfe \quad Nmfe \quad Q \quad NQ \quad D \quad ND \quad
+\end{description*}
+
+\paragraph{ncRNAs funcionales}
+Tomados de Rfam 7.0, consiste en un conjunto de ncRNAs de los que se
+han eliminado 46 tipos de pre-miRNAs.
+\begin{description*}
+\item[Tipo:] Conjunto de datos negativos
+\item[Num. entradas:] 12387
+\item[Especies:] prokaryota y eukaryota (?)
+\item[Características:] id \quad secuencia \quad estructura secundaria
+  \quad Len \quad A \quad C \quad G \quad U \quad G+C \quad A+U \quad
+  AA \quad AC \quad AG \quad AU \quad CA \quad CC \quad CG \quad CU
+  \quad GA \quad GC \quad GG \quad GU \quad UA \quad UC \quad UG \quad
+  UU \quad \%A \quad \%C \quad \%G \quad \%U \quad \%G+C \quad \%A+U
+  \quad \%AA \quad \%AC \quad \%AG \quad \%AU \quad \%CA \quad \%CC
+  \quad \%CG \quad \%CU \quad \%GA \quad \%GC \quad \%GG \quad \%GU
+  \quad \%UA \quad \%UC \quad \%UG \quad \%UU \quad pb \quad Npb \quad
+  mfe \quad Nmfe \quad Q \quad NQ \quad D \quad ND \quad
+\end{description*}
+
+\paragraph{mRNAs}
+Consiste en 31 mRNAs mensajeros que se pliegan en estructuras
+complejas con MFEs extremadamente negativas. Tomados de GeneBank DNA
+Database.
+\begin{description*}
+\item[Tipo:] Conjunto de datos negativos
+\item[Num. entradas:] 31
+\item[Especies:] varias, entre ellas: perro, hsa, mmu, cel, rno, ...
+\item[Características:] id \quad secuencia \quad estructura secundaria
+  \quad Len \quad A \quad C \quad G \quad U \quad G+C \quad A+U \quad
+  AA \quad AC \quad AG \quad AU \quad CA \quad CC \quad CG \quad CU
+  \quad GA \quad GC \quad GG \quad GU \quad UA \quad UC \quad UG \quad
+  UU \quad \%A \quad \%C \quad \%G \quad \%U \quad \%G+C \quad \%A+U
+  \quad \%AA \quad \%AC \quad \%AG \quad \%AU \quad \%CA \quad \%CC
+  \quad \%CG \quad \%CU \quad \%GA \quad \%GC \quad \%GG \quad \%GU
+  \quad \%UA \quad \%UC \quad \%UG \quad \%UU \quad pb \quad Npb \quad
+  mfe \quad Nmfe \quad Q \quad NQ \quad D \quad ND \quad
+\end{description*}
+
+\paragraph{pseudo-hairpins}
+Ídem al dataset CODING de triplet-svm, en este caso con más
+características extraídas
+\begin{description*}
+\item[Tipo:] Conjunto de datos negativos
+\item[Num. entradas:] 8494
+\item[Especies:] homo sapiens (hsa)
+\item[Características:] id \quad secuencia \quad estructura secundaria
+  \quad Len \quad A \quad C \quad G \quad U \quad G+C \quad A+U \quad
+  AA \quad AC \quad AG \quad AU \quad CA \quad CC \quad CG \quad CU
+  \quad GA \quad GC \quad GG \quad GU \quad UA \quad UC \quad UG \quad
+  UU \quad \%A \quad \%C \quad \%G \quad \%U \quad \%G+C \quad \%A+U
+  \quad \%AA \quad \%AC \quad \%AG \quad \%AU \quad \%CA \quad \%CC
+  \quad \%CG \quad \%CU \quad \%GA \quad \%GC \quad \%GG \quad \%GU
+  \quad \%UA \quad \%UC \quad \%UG \quad \%UU \quad pb \quad Npb \quad
+  mfe \quad Nmfe \quad Q \quad NQ \quad D \quad ND \quad
 \end{description*}
 %
 %
@@ -212,40 +272,81 @@ LEN\_BP\_RATIO
 \subsubsection{Objetivo del método presentado}
 Identificar secuencias de pre-miRNAs a través de un clasificador SVM.
 \subsubsection{Características que utiliza}
-\begin{itemize}
-\item frecuencia de ocurrencia de 32 elementos ``triplet''
-  (en cada posición se toma un elemento de la secuencia + 3 de la estructura secundaria)
-\end{itemize}
+Se utilizan las mismas características que en miPred además de las
+listadas a continuación.
+
+El vecor de características a utilizar se determina aplicando ``F-Score''
+al vector completo (ver paper).
+\begin{itemize*}
+\item MFEI3
+\item MFEI4
+\item NEFE
+\item Freq
+\item Diversity
+\item ...
+\end{itemize*}
 \subsubsection{Disponibilidad de los datos}
-Si bien en la página del autor ya no están disponibles los datos, éstos se encuentran
-en una versión anterior, disponible en el archivo de internet: \url{PONER URL}
 
-Para el armado de los conjuntos de datos se consideran los sig. criterios:
-\begin{itemize}
-\item Mínimo de 18 base pairings en el tallo
-\item Máximo -15kcal/mol de free energy
-\item Ningún loop múltiple
-\end{itemize}
-
-También se encuentran disponibles los vectores de entrada para el
-clasificador SVM (frecuencia de los 32 triplets).
 %
 \subsubsection{Conjuntos de datos}
 \paragraph{pre-miRNAs humanos}
-Tomados de miRNA registry rel 5.0, sept/2004
+Tomados de miRBase 12. Contiene 660 pre-miRNAs single-loop y 31 multi-loop.
 \begin{description*}
-\item[Tipo:] Conjunto de entrenamiento (163) y prueba(30), datos positivos
-\item[Num. entradas:] 193
+\item[Tipo:] Conjunto de datos positivos
+\item[Num. entradas:] 691
 \item[Especies:] Homo sapiens (hsa)
 \item[Características:]
-id \quad
-secuencia \quad
-estructura secundaria \quad
-SEQ\_LENGTH \quad
-GC\_CONTENT \quad
-BASEPAIR \quad
-FREE\_ENERGY \quad
-LEN\_BP\_RATIO
+id \quad secuencia \quad \textbf{estructura secundaria no disponible}
+\quad \%G+C \quad \%AA \quad \%AC \quad \%AG \quad \%AU \quad \%CA
+\quad \%CC \quad \%CG \quad \%CU \quad \%GA \quad \%GC \quad \%GG
+\quad \%GU \quad \%UA \quad \%UC \quad \%UG \quad \%UU \quad MFEI1
+\quad MFEI2 \quad dG \quad dP \quad dQ \quad dD \quad dF \quad ZG
+\quad ZP \quad ZQ \quad ZD \quad ZF \quad MFEI3 \quad MFEI4 \quad EAFE
+\quad Freq \quad Diversity \quad Diff \quad dH \quad dH/L \quad dS
+\quad dS/L \quad Tm \quad Tm/L \quad |A-U|/L \quad |G-C|/L \quad
+|G-U|/L \quad Avg\_Bp\_Stem \quad \%(A-U)/stems \quad \%(G-C)/stems
+\quad \%(G-U)/stems
+\end{description*}
+
+\paragraph{pseudo-hairpins}
+Ídem dataset CODING de Xue, con más características extraídas.
+\begin{description*}
+\item[Tipo:] Conjunto de datos negativos
+\item[Num. entradas:] 8494
+\item[Especies:] Homo sapiens (hsa)
+\item[Características:]
+id \quad secuencia \quad \textbf{estructura secundaria no disponible}
+\quad \%G+C \quad \%AA \quad \%AC \quad \%AG \quad \%AU \quad \%CA
+\quad \%CC \quad \%CG \quad \%CU \quad \%GA \quad \%GC \quad \%GG
+\quad \%GU \quad \%UA \quad \%UC \quad \%UG \quad \%UU \quad MFEI1
+\quad MFEI2 \quad dG \quad dP \quad dQ \quad dD \quad dF \quad ZG
+\quad ZP \quad ZQ \quad ZD \quad ZF \quad MFEI3 \quad MFEI4 \quad EAFE
+\quad Freq \quad Diversity \quad Diff \quad dH \quad dH/L \quad dS
+\quad dS/L \quad Tm \quad Tm/L \quad |A-U|/L \quad |G-C|/L \quad
+|G-U|/L \quad Avg\_Bp\_Stem \quad \%(A-U)/stems \quad \%(G-C)/stems
+\quad \%(G-U)/stems
+\end{description*}
+
+
+
+\paragraph{Otros ncRNAs humanos}
+Base de datos ensamblada manualmente por los autores. Contiene ncRNAs humanos
+que no son miRNAs.
+\begin{description*}
+\item[Tipo:] Conjunto de datos negativos
+\item[Num. entradas:] 754
+\item[Especies:] Homo sapiens (hsa)
+\item[Características:]
+id \quad secuencia \quad \textbf{estructura secundaria no disponible}
+\quad \%G+C \quad \%AA \quad \%AC \quad \%AG \quad \%AU \quad \%CA
+\quad \%CC \quad \%CG \quad \%CU \quad \%GA \quad \%GC \quad \%GG
+\quad \%GU \quad \%UA \quad \%UC \quad \%UG \quad \%UU \quad MFEI1
+\quad MFEI2 \quad dG \quad dP \quad dQ \quad dD \quad dF \quad ZG
+\quad ZP \quad ZQ \quad ZD \quad ZF \quad MFEI3 \quad MFEI4 \quad EAFE
+\quad Freq \quad Diversity \quad Diff \quad dH \quad dH/L \quad dS
+\quad dS/L \quad Tm \quad Tm/L \quad |A-U|/L \quad |G-C|/L \quad
+|G-U|/L \quad Avg\_Bp\_Stem \quad \%(A-U)/stems \quad \%(G-C)/stems
+\quad \%(G-U)/stems
 \end{description*}
 
 %% Batuwita et al.: microPred
