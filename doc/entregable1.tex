@@ -45,31 +45,98 @@
 %
 %
 \section{Bibliografía consultada}
+%
+A continuación se detalla la bibliografía consultada junto con una
+breve descripción de cada una de las publicaciones.
+%
+\subsection{C. Xue et al. \cite{xue}}
+%
+En este trabajo se presenta un clasificador de secuencias de
+pre-microRNA mediante SVM.  En el clasificador se utiliza un conjunto
+de características de tipo estructura-secuencia, utilizando como
+entrada al clasificador un vector de frecuencia de 32 ``triplets'' que
+combinan el nucleótido de la secuencia con la estructura secundaria
+del entorno donde éste se presenta.
+%
+\subsection{S. K. L. NG y S. K. Mishra \cite{ng}}
+%
+En este trabajo se presenta un clasificador de secuencias de
+pre-microRNA mediante SVM.
+
+El conjunto de características utilizado consiste en 29 medidas
+``globales e intrínsecas'' a la secuencia y su estructura secundaria:
+(1) 17 medidas de composición de la secuencia: frecuencia de
+ocurrencia de dinucleótidos
+$\mono{XY}:(\mono{X},\mono{Y})\in\{\mono{A},\mono{G},\mono{C},\mono{U}\}$
+y frecuencia agregada de ocurrencia de los nucleótidos \mono{G} y
+\mono{C}; (2) 6 medidas de plegado basadas en la mínima energía libre
+y la distribución de los \resalt{base pairs}; (3) un descriptor
+topológico; y (4) 5 variantes normalizadas de estas características.
+
+El método además es probado para detectar pre-miRNAs en genes de
+virus, recorriendo éste mediante una ventana deslizante de 95nt y
+clasificando las secuencias extraídas.
+%
+\subsection{R. Batuwita y V. Palade \cite{batuwita}}
+%
+En este paper se describe un método de clasificación de pre-miRNAs que
+elabora sobre \cite{ng} incorporando características basadas en la
+mínima energía libre, otras características relacionadas el programa
+RNAfold, y características basadas en los \resalt{base pairs}.
+
+Se discute acerca de la relevancia de cada una de las características
+y se presenta luego un conjunto reducido de éstas para mejorar la
+performance del clasificador, y también se discute acerca del problema
+de \resalt{``desbalance''} de clases, siempre presente en la
+clasificación de pre-miRNAs.
+%
+%
+%
+%
 \section{Bases de datos recopiladas}
-\subsection{Xue et al.: Triplet-SVM}
-\subsubsection{Objetivo del método presentado}
-Identificar secuencias de pre-miRNAs a través de un clasificador SVM.
-\subsubsection{Características que utiliza}
-\begin{itemize}
-\item frecuencia de ocurrencia de 32 elementos ``triplet'' (en cada
-  posición se toma un elemento de la secuencia + 3 de la estructura
-  secundaria)
-\end{itemize}
-\subsubsection{Disponibilidad de los datos}
+%
+\subsection{Triplet-SVM \cite{xue}}
+%
 Si bien en la página del autor ya no están disponibles los datos,
-éstos se encuentran en una versión anterior, disponible en el archivo
-de internet: \url{http://web.archive.org/web/*/http://bioinfo.au.tsinghua.edu.cn/mirnasvm/}
+éstos se pueden encontrar en una versión anterior de la misma,
+disponible en el archivo de internet:
+\url{http://web.archive.org/web/20120210235054/http://bioinfo.au.tsinghua.edu.cn/software/mirnasvm/}
 
-Para el armado de los conjuntos de datos se consideran los
-sig. criterios:
-\begin{itemize}
-\item Mínimo de 18 base pairings en el tallo
-\item Máximo -15kcal/mol de free energy
-\item Ningún loop múltiple
-\end{itemize}
-
-También se encuentran disponibles los vectores de entrada para el
-clasificador SVM (frecuencia de los 32 triplets).
+En esta base de datos cada una de las entradas presenta las siguientes
+características:
+\begin{description*}
+%
+\item[identificador] de la entrada (p. ej. \mono{hsa-mir-100}).
+%
+\item[secuencia] en forma de cadena de caracteres \mono{A}, \mono{G},
+  \mono{C}, \mono{U}.
+%
+\item[estructura secundaria] correspondiente a la secuencia, tal como
+  se obtiene con el programa RNAfold\cite{vienna}. Se presenta como
+  una cadena de caracteres \mono{(}, \mono{.}, \mono{)}.
+%
+\item[\mono{SEQ\_LENGTH}] indica la longitud de la secuencia
+  considerada para el armado del vector de características. Cuenta
+  aquellos nucleótidos que pertenecen al ``tallo'' del pre-miRNA.
+%
+\item[\mono{GC\_CONTENT}] se define según
+  $\frac{\T{cant}(\mono{G})+\T{cant}(\mono{C})}{\mono{SEQ\_LENGTH}}$
+  donde $\T{cant}(x)$ cuenta el número de ocurrencia del nucleótido
+  $x$ en el tallo del pre-miRNA.
+%
+\item[\mono{BASEPAIR}] cuenta la cantidad de nucleótidos
+  \resalt{emparejados} en el pre-miRNA.
+%
+\item[\mono{FREE\_ENERGY}] indica la mínima energía libre de plegado
+  obtenida con RNAfold.
+%
+\item[\mono{LEN\_BP\_RATIO}] se define según
+  $\frac{\mono{SEQ\_LENGTH}}{\mono{BASEPAIR}}$.
+\end{description*}
+%
+El vector de 32 triplets utilizados en el clasificador no está
+directamente disponible, si bien se encuentran los métodos para su
+cálculo.
 %
 \subsubsection{Conjuntos de datos}
 \paragraph{pre-miRNAs humanos}
@@ -79,9 +146,6 @@ Tomados de miRNA registry rel 5.0, sept/2004
   positivos
 \item[Num. entradas:] 193
 \item[Especies:] Homo sapiens (hsa)
-\item[Características:] id \quad secuencia \quad estructura secundaria
-  \quad SEQ\_LENGTH \quad GC\_CONTENT \quad BASEPAIR \quad
-  FREE\_ENERGY \quad LEN\_BP\_RATIO
 \end{description*}
 \paragraph{CROSS-SPECIES}
 Tomados de miRNA registry rel 5.0, sept/2004
@@ -89,26 +153,17 @@ Tomados de miRNA registry rel 5.0, sept/2004
 \item[Tipo:] Conjunto de prueba, datos positivos
 \item[Num. entradas:] 581
 \item[Especies:]
-\quad mmu (36)
-\quad rno (25)
-\quad gga (13)
-\quad dre (6)
-\quad cbr (73)
-\quad cel (110)
-\quad dps (71)
-\quad dme (71)
-\quad osa (96)
-\quad ath (75)
-\quad ebv (5)
-\item[Características:]
-id \quad
-secuencia \quad
-estructura secundaria \quad
-SEQ\_LENGTH \quad
-GC\_CONTENT \quad
-BASEPAIR \quad
-FREE\_ENERGY \quad
-LEN\_BP\_RATIO
+  \quad mmu (36)
+  \quad rno (25)
+  \quad gga (13)
+  \quad dre (6)
+  \quad cbr (73)
+  \quad cel (110)
+  \quad dps (71)
+  \quad dme (71)
+  \quad osa (96)
+  \quad ath (75)
+  \quad ebv (5)
 \end{description*}
 %
 \paragraph{pre-miRNAs humanos (actualizado)}
@@ -117,16 +172,18 @@ Tomados de miRNA registry rel 5.0, sept/2004
 \item[Tipo:] Conjunto de prueba, datos positivos
 \item[Num. entradas:] 39
 \item[Especies:]  Homo sapiens (hsa)
-\item[Características:]id \quad
-secuencia \quad
-estructura secundaria \quad
-SEQ\_LENGTH \quad
-GC\_CONTENT \quad
-BASEPAIR \quad
-FREE\_ENERGY \quad
-LEN\_BP\_RATIO
 \end{description*}
-%
+
+\bigskip
+Para el armado de los conjuntos de datos negativos se consideran los
+siguientes criterios:
+\begin{itemize*}
+\item Mínimo de 18 \resalt{base pairings} en el tallo
+\item Máximo -15kcal/mol de energía libre mínima
+\item Ningún bucle múltiple (no más de un ``tallo'' en la estructura
+  secundaria)
+\end{itemize*}
+
 \paragraph{CONSERVED-HAIRPIN}
 Tomados de UCSC database, region 56000001--57000000 del cromosoma
 humano 19
@@ -135,15 +192,6 @@ humano 19
   positivos)
 \item[Num. entradas:] 2444
 \item[Especies:]  Homo sapiens (hsa)
-\item[Características:]
-id \quad
-secuencia \quad
-estructura secundaria \quad
-SEQ\_LENGTH \quad
-GC\_CONTENT \quad
-BASEPAIR \quad
-FREE\_ENERGY \quad
-LEN\_BP\_RATIO
 \end{description*}
 \paragraph{CODING}
 Tomados de USC database, secuencias protein-coding (CDSs)
@@ -151,44 +199,63 @@ Tomados de USC database, secuencias protein-coding (CDSs)
 \item[Tipo:] Conjunto de entrenamiento, datos negativos
 \item[Num. entradas:] 8494
 \item[Especies:]  Homo sapiens (hsa)
-\item[Características:]
-id \quad
-secuencia \quad
-estructura secundaria \quad
-SEQ\_LENGTH \quad
-GC\_CONTENT \quad
-BASEPAIR \quad
-FREE\_ENERGY \quad
-LEN\_BP\_RATIO
 \end{description*}
 %
 %
 %
 %
 %
-\subsection{Ng \& Mishra: miPred}
-\subsubsection{Objetivo del método presentado}
-Identificar secuencias de pre-miRNAs a través de un clasificador SVM.
-
-El método además es probado para detectar pre-miRNAs en genes de
-virus, recorriendo éste mediante una ventana deslizante de 95nt y
-clasificando las secuencias extraídas.
-
+\subsection{miPred \cite{ng}}
 \url{http://web.bii.a-star.edu.sg/archive/stanley/Publications/}
-\subsubsection{Características que utiliza}
-\begin{itemize}
-\item $dP$
-\item $dG$
-\item $MFEI_1$
-\item $dQ$
-\item $dD$
-\item $dF$
-\item $MFEI_2$
-\item otras?
-\end{itemize}
-\subsubsection{Disponibilidad de los datos}
-Los datos se encuentran disponibles, según se listan en las entradas
-siguientes.
+%
+En esta base de datos cada entrada dispone de las siguientes características:
+\begin{description*}
+%
+\item[identificador] del pre-miRNA, p. ej. \mono{hsa-let-7a}.
+%
+\item[secuencia] en forma de cadena de caracteres \mono{A}, \mono{G},
+  \mono{C}, \mono{U}.
+%
+\item[estructura secundaria] correspondiente a la secuencia, como una
+  cadena de caracteres \mono{(}, \mono{.}, \mono{)}.
+%
+\item[longitud] de la secuencia completa.
+%
+\item[\mono{A}, \mono{G}, \mono{C}, \mono{U}] (x4) representan el
+  número de ocurrencias del nucleótido en la secuencia.
+%
+\item[\mono{G+C}, \mono{A+U}] (x2) corresponden a la suma de las
+  ocurrencias de \mono{G} y \mono{C}, y \mono{A} y \mono{U}
+  respectivamente.
+%
+\item[\mono{AA}, \mono{AG}, \mono{AC}, \mono{AU}, \mono{GA},
+  \textellipsis, \mono{UU}] (x16) representan el número de ocurrencias
+  del dinucleótido correspondiente en la secuencia.
+%
+\item[\mono{\%A}, \mono{\%G}, \mono{\%C}, \mono{\%U}] (x4) representan
+  la frecuencia de ocurrencia del nucleótido correspondiente.
+%
+\item[\mono{\%(G+C)}, \mono{\%(A+U)}] (x2) representan la frecuencia
+  de ocurrencia de \mono{G}+\mono{C} y \mono{A}+\mono{U}.
+%
+\item[\mono{\%AA}, \mono{\%AG}, \mono{\%AC}, \textellipsis] (x16)
+  representan la frecuencia de ocurrencia de los dinucleótidos
+  correspondientes.
+%
+\item[\mono{pb}] indica la cantidad de \resalt{base pairs}.
+%
+\item[\mono{mfe}] indica la mínima energía libre según RNAFold.
+%
+\item[\mono{Q}] corresponde a la \resalt{\emph{entropía de Shannon}}.
+%
+\item[\mono{D}] representa la distancia entre \resalt{base pairs}.
+%
+\item[\mono{Npb=dP}, \mono{Nmfe=dG}, \mono{NQ=dQ}, \mono{ND=dD}] (x4) corresponde
+  a las variables \mono{pb}, \mono{mfe}, \mono{Q}, \mono{D}
+  normalizadas por la longitud de la secuencia.
+%
+\end{description*}
+%
 %
 \subsubsection{Conjuntos de datos}
 \paragraph{pre-miRNAs no redundantes}
@@ -200,15 +267,6 @@ agrupación incremental ``ávido''\cite{greedy}.
 \item[Num. entradas:] 2241
 \item[Especies:] 45 especies agrupadas en artropoda, nematoda,
   vertebrata, viridiplantae y virus
-\item[Características:] id \quad secuencia \quad estructura secundaria
-  \quad Len \quad A \quad C \quad G \quad U \quad G+C \quad A+U \quad
-  AA \quad AC \quad AG \quad AU \quad CA \quad CC \quad CG \quad CU
-  \quad GA \quad GC \quad GG \quad GU \quad UA \quad UC \quad UG \quad
-  UU \quad \%A \quad \%C \quad \%G \quad \%U \quad \%G+C \quad \%A+U
-  \quad \%AA \quad \%AC \quad \%AG \quad \%AU \quad \%CA \quad \%CC
-  \quad \%CG \quad \%CU \quad \%GA \quad \%GC \quad \%GG \quad \%GU
-  \quad \%UA \quad \%UC \quad \%UG \quad \%UU \quad pb \quad Npb \quad
-  mfe \quad Nmfe \quad Q \quad NQ \quad D \quad ND \quad
 \end{description*}
 
 \paragraph{ncRNAs funcionales}
@@ -218,15 +276,6 @@ han eliminado 46 tipos de pre-miRNAs.
 \item[Tipo:] Conjunto de datos negativos
 \item[Num. entradas:] 12387
 \item[Especies:] prokaryota y eukaryota (?)
-\item[Características:] id \quad secuencia \quad estructura secundaria
-  \quad Len \quad A \quad C \quad G \quad U \quad G+C \quad A+U \quad
-  AA \quad AC \quad AG \quad AU \quad CA \quad CC \quad CG \quad CU
-  \quad GA \quad GC \quad GG \quad GU \quad UA \quad UC \quad UG \quad
-  UU \quad \%A \quad \%C \quad \%G \quad \%U \quad \%G+C \quad \%A+U
-  \quad \%AA \quad \%AC \quad \%AG \quad \%AU \quad \%CA \quad \%CC
-  \quad \%CG \quad \%CU \quad \%GA \quad \%GC \quad \%GG \quad \%GU
-  \quad \%UA \quad \%UC \quad \%UG \quad \%UU \quad pb \quad Npb \quad
-  mfe \quad Nmfe \quad Q \quad NQ \quad D \quad ND \quad
 \end{description*}
 
 \paragraph{mRNAs}
@@ -236,16 +285,7 @@ Database.
 \begin{description*}
 \item[Tipo:] Conjunto de datos negativos
 \item[Num. entradas:] 31
-\item[Especies:] varias, entre ellas: perro, hsa, mmu, cel, rno, ...
-\item[Características:] id \quad secuencia \quad estructura secundaria
-  \quad Len \quad A \quad C \quad G \quad U \quad G+C \quad A+U \quad
-  AA \quad AC \quad AG \quad AU \quad CA \quad CC \quad CG \quad CU
-  \quad GA \quad GC \quad GG \quad GU \quad UA \quad UC \quad UG \quad
-  UU \quad \%A \quad \%C \quad \%G \quad \%U \quad \%G+C \quad \%A+U
-  \quad \%AA \quad \%AC \quad \%AG \quad \%AU \quad \%CA \quad \%CC
-  \quad \%CG \quad \%CU \quad \%GA \quad \%GC \quad \%GG \quad \%GU
-  \quad \%UA \quad \%UC \quad \%UG \quad \%UU \quad pb \quad Npb \quad
-  mfe \quad Nmfe \quad Q \quad NQ \quad D \quad ND \quad
+\item[Especies:] varias, entre ellas: perro, hsa, mmu, cel, rno, \textellipsis.
 \end{description*}
 
 \paragraph{pseudo-hairpins}
@@ -255,15 +295,6 @@ características extraídas
 \item[Tipo:] Conjunto de datos negativos
 \item[Num. entradas:] 8494
 \item[Especies:] homo sapiens (hsa)
-\item[Características:] id \quad secuencia \quad estructura secundaria
-  \quad Len \quad A \quad C \quad G \quad U \quad G+C \quad A+U \quad
-  AA \quad AC \quad AG \quad AU \quad CA \quad CC \quad CG \quad CU
-  \quad GA \quad GC \quad GG \quad GU \quad UA \quad UC \quad UG \quad
-  UU \quad \%A \quad \%C \quad \%G \quad \%U \quad \%G+C \quad \%A+U
-  \quad \%AA \quad \%AC \quad \%AG \quad \%AU \quad \%CA \quad \%CC
-  \quad \%CG \quad \%CU \quad \%GA \quad \%GC \quad \%GG \quad \%GU
-  \quad \%UA \quad \%UC \quad \%UG \quad \%UU \quad pb \quad Npb \quad
-  mfe \quad Nmfe \quad Q \quad NQ \quad D \quad ND \quad
 \end{description*}
 %
 %
@@ -271,24 +302,42 @@ características extraídas
 %
 %
 \subsection{Batuwita et al.: microPred}
-\subsubsection{Objetivo del método presentado}
-Identificar secuencias de pre-miRNAs a través de un clasificador SVM.
-\subsubsection{Características que utiliza}
-Se utilizan las mismas características que en miPred además de las
-listadas a continuación.
-
-El vecor de características a utilizar se determina aplicando ``F-Score''
-al vector completo (ver paper).
-\begin{itemize*}
-\item MFEI3
-\item MFEI4
-\item NEFE
-\item Freq
-\item Diversity
-\item ...
-\end{itemize*}
-\subsubsection{Disponibilidad de los datos}
-
+En esta base de datos están presentes las características presentadas
+en \cite{ng} (salvo estructura secundaria) y se introducen otras 19 
+características adicionales. De estas 19 se detallan sólo aquellas que están
+basadas en la secuencia y/o estructura secundaria, el resto de características
+se basa en descriptores moleculares, y dada su complejidad de cálculo
+se consideran fuera del alcance del actual proyecto.
+%
+Los datos se encuentran disponibles en \url{http://www.cs.ox.ac.uk/people/manohara.rukshan.batuwita/microPred.htm}.
+%
+\begin{description*}
+%
+\item[identificador] del pre-miRNA, p. ej. \mono{hsa-let-7a}.
+%
+\item[secuencia] en forma de cadena de caracteres \mono{A}, \mono{G},
+  \mono{C}, \mono{U}.
+%
+\item[\mono{MFEI$_3$}] corresponde a \mono{dG} dividida entre el número
+  de loops (bucles) de la estructura secundaria.
+%
+\item[\mono{MFEI$_4$}] corresponde a \mono{mfe} dividida entre el número
+  de \resalt{base pairs}.
+%
+\item[\mono{|A-U|/L}, \mono{|G-C|/L}, \mono{|G-U|/L}] (x3) representan
+  el número de \resalt{base pairs} \mono{A-U}, \mono{G-C} y \mono{G-U}
+  respectivamente, normalizados por la longitud de la secuencia.
+%
+\item[\mono{Avg\_BP\_Stem}] es el número de \resalt{base pairs} dividido
+  entre el número total de tallos en la estructura secundaria.
+%
+\item[\mono{\%(A-U)/n\_stems}, \mono{\%(G-C)/n\_stems},
+  \mono{\%(G-U)/n\_stems}] (x3) donde \mono{\%(X-Y)} es el número de
+  \resalt{base pairs} \mono{X-Y} sobre el número total de
+  \resalt{base pairs}; este número a su vez dividido entre el número
+  total de tallos en la estructura secundaria.
+\end{description*}
+%
 %
 \subsubsection{Conjuntos de datos}
 \paragraph{pre-miRNAs humanos}
@@ -297,40 +346,16 @@ Tomados de miRBase 12. Contiene 660 pre-miRNAs single-loop y 31 multi-loop.
 \item[Tipo:] Conjunto de datos positivos
 \item[Num. entradas:] 691
 \item[Especies:] Homo sapiens (hsa)
-\item[Características:]
-id \quad secuencia \quad \textbf{estructura secundaria no disponible}
-\quad \%G+C \quad \%AA \quad \%AC \quad \%AG \quad \%AU \quad \%CA
-\quad \%CC \quad \%CG \quad \%CU \quad \%GA \quad \%GC \quad \%GG
-\quad \%GU \quad \%UA \quad \%UC \quad \%UG \quad \%UU \quad MFEI1
-\quad MFEI2 \quad dG \quad dP \quad dQ \quad dD \quad dF \quad ZG
-\quad ZP \quad ZQ \quad ZD \quad ZF \quad MFEI3 \quad MFEI4 \quad EAFE
-\quad Freq \quad Diversity \quad Diff \quad dH \quad dH/L \quad dS
-\quad dS/L \quad Tm \quad Tm/L \quad |A-U|/L \quad |G-C|/L \quad
-|G-U|/L \quad Avg\_Bp\_Stem \quad \%(A-U)/stems \quad \%(G-C)/stems
-\quad \%(G-U)/stems
 \end{description*}
-
+%
 \paragraph{pseudo-hairpins}
 Ídem dataset CODING de Xue, con más características extraídas.
 \begin{description*}
 \item[Tipo:] Conjunto de datos negativos
 \item[Num. entradas:] 8494
 \item[Especies:] Homo sapiens (hsa)
-\item[Características:]
-id \quad secuencia \quad \textbf{estructura secundaria no disponible}
-\quad \%G+C \quad \%AA \quad \%AC \quad \%AG \quad \%AU \quad \%CA
-\quad \%CC \quad \%CG \quad \%CU \quad \%GA \quad \%GC \quad \%GG
-\quad \%GU \quad \%UA \quad \%UC \quad \%UG \quad \%UU \quad MFEI1
-\quad MFEI2 \quad dG \quad dP \quad dQ \quad dD \quad dF \quad ZG
-\quad ZP \quad ZQ \quad ZD \quad ZF \quad MFEI3 \quad MFEI4 \quad EAFE
-\quad Freq \quad Diversity \quad Diff \quad dH \quad dH/L \quad dS
-\quad dS/L \quad Tm \quad Tm/L \quad |A-U|/L \quad |G-C|/L \quad
-|G-U|/L \quad Avg\_Bp\_Stem \quad \%(A-U)/stems \quad \%(G-C)/stems
-\quad \%(G-U)/stems
 \end{description*}
-
-
-
+%
 \paragraph{Otros ncRNAs humanos}
 Base de datos ensamblada manualmente por los autores. Contiene ncRNAs humanos
 que no son miRNAs.
@@ -338,18 +363,72 @@ que no son miRNAs.
 \item[Tipo:] Conjunto de datos negativos
 \item[Num. entradas:] 754
 \item[Especies:] Homo sapiens (hsa)
-\item[Características:]
-id \quad secuencia \quad \textbf{estructura secundaria no disponible}
-\quad \%G+C \quad \%AA \quad \%AC \quad \%AG \quad \%AU \quad \%CA
-\quad \%CC \quad \%CG \quad \%CU \quad \%GA \quad \%GC \quad \%GG
-\quad \%GU \quad \%UA \quad \%UC \quad \%UG \quad \%UU \quad MFEI1
-\quad MFEI2 \quad dG \quad dP \quad dQ \quad dD \quad dF \quad ZG
-\quad ZP \quad ZQ \quad ZD \quad ZF \quad MFEI3 \quad MFEI4 \quad EAFE
-\quad Freq \quad Diversity \quad Diff \quad dH \quad dH/L \quad dS
-\quad dS/L \quad Tm \quad Tm/L \quad |A-U|/L \quad |G-C|/L \quad
-|G-U|/L \quad Avg\_Bp\_Stem \quad \%(A-U)/stems \quad \%(G-C)/stems
-\quad \%(G-U)/stems
 \end{description*}
+%
+%
+%
+%
+\section{Codificación de clasificadores de prueba}
+%
+Una vez obtenidas las bases de datos se procedió a codificar
+algoritmos de clasificación preliminares.
+
+Se optó por trabajar con el conjunto de datos de \cite{xue}
+intentando replicar los resultados obtenidos en ese trabajo mediante
+la utilización de herramientas propias.
+
+Como un primer paso se procedió a codificar el programa \mono{fautil}
+en el lenguaje Python\footnote{\url{http://www.python.org/}}
+para el procesamiento de archivos en formato
+FASTA\footnote{\url{http://blast.ncbi.nlm.nih.gov/blastcgihelp.shtml}},
+un formato estándar para la representación de secuencias de RNA.
+En este caso se considera una ``extensión'' de dicho formato
+la salida del programa \mono{RNAFold}, que a los datos de la secuencia
+agrega la estructura secundaria, y el valor de la Mínima Energía Libre
+para la misma.
+
+La herramienta \mono{fautil} provee las siguientes funcionalidades:
+\begin{description*}
+\item[\mono{strip}] elimina las secuencias cuya estructura secundaria
+  contenga más de un bucle.
+\item[\mono{compare}] compara dos conjuntos de secuencias contando
+  aquellas presentes en sólo uno de los conjuntos y las presentes en
+  ambos. Es de utilidad para asegurar que dos particiones de un
+  conjunto (entrenamiento y prueba) no contengan entradas en común.
+\item[\mono{triplet}] calcula un vector de \emph{triplets} según el
+  procedimiento descripto en \cite{xue}.
+\item[\mono{svmout}] genera un archivo con las mismas características
+  utilizadas en \cite{xue} para ser utilizado de entrada a la librería
+  \emph{libsvm}\cite{svm}.
+\item[\mono{fannout}] genera un archivo con las mismas características
+  utilizadas en \cite{xue} para ser utilizado de entrada a la librería
+  \emph{libfann}\footnote{\url{http://leenissen.dk/fann/wp/}}.
+\end{description*}
+
+\section{Métodos de extracción de características}
+Se procedió a codificar un algoritmo para la extracción de características
+a partir de las bases de datos recopiladas.
+
+Se codificó un método de validación de las características extraídas, comparando
+los datos disponibles en las bases de datos recopiladas con aquellas obtenidas por el método.
+
+
+
+
+A partir de fautil, se codificó una herramienta que permita la
+extracción de características extra en la base de datos de xue, junto
+con un algoritmo de validación para asegurar que los resultados
+obtenidos son los mismos que en el paper original.
+
+
+
+\subsection{}
+%
+%
+\printbibliography
+%
+\end{document}
+
 
 %% Batuwita et al.: microPred
 %% 1. datos disponibles sin plegar, pero con las features calculadas
@@ -477,75 +556,4 @@ id \quad secuencia \quad \textbf{estructura secundaria no disponible}
 %% 2. (-) 1000 hsa, 20000+ aga obtenidos escaneando el genoma con ventanas de 90nt y filtrando por caracts. de plegado
 %% 1. test: no especificado
 %% 2. datos disponibles: sólo hsa, formato svm, sin info de secuencia/estructura secundaria
-\section{Métodos de clasificación codificados y pruebas preliminares}
-\section{Métodos de extracción de características codificados}
-\section{Armado de la base de datos definitiva}
-\begin{description}
-\item[Identificador] 
-\item[Secuencia] 
-\item[Estructura secundaria] 
-\item[Energía mínima de plegado] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\item[] 
-\end{description}
-%
-%
-\printbibliography
-%
-\end{document}
+
