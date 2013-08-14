@@ -271,6 +271,43 @@ def triplet_filter_single_loop ( infile, outfile, d=0 ):
 
 
 
+def triplet_filter_multi_loop ( infile, outfile, d=0 ):
+    """
+    Lee el archivo de entrada y guarda sólo aquellas entradas
+    que SI contengan múltiples loops en el archivo de salida.
+    Incluye las variables extra calculadas en el paper de xue
+    @param infile: archivo(s) a leer
+    @param outfile: archivo donde escribir la salida
+    @param d: auxiliar para recursión, debe ser cero
+    @rtype: None
+    """
+
+    # leo el archivo
+    f = load_fasta(infile)
+
+    # para cada entrada
+    for l in f:
+        # testeo multiples loops
+        if not re.match( mult_fmt, l[3]):
+            pass
+        # si solo hay un loop
+        else:
+            f = triplet_feats_extra(l[2],l[3])
+            
+            s = ('\tSEQ_LENGTH\t{}\tGC_CONTENT\t{:.15g}\tBASEPAIR\t{}\t'+
+                 'FREE_ENERGY\t{:.2f}\tLEN_BP_RATIO\t{:.15g}').format(
+                     f['seq_length'],f['gc_content'],
+                     f['basepair'],l[4],f['len_bp_ratio'])
+            
+            # guardo la entrada en el archivo solo si hay mas de 22 bp
+            #if f['basepair'] > 22:
+            outfile.write('>' + l[0] + s + '\n' + 
+                          l[2] + '\n' +
+                          l[3] + '\n')
+
+
+
+
 def triplet_feats ( sequence, structure, normalize = True ):
     """
     Calcula el 32-vector de frecuencia de triplets según el
@@ -546,6 +583,9 @@ def upred_out ( infile, outfile, extra = False ):
 def wrap_single (obj):
     triplet_filter_single_loop(obj.file, obj.outfile)
 
+def wrap_multi (obj):
+    triplet_filter_multi_loop(obj.file, obj.outfile)
+
 def wrap_triplet_svm (obj):
     triplet_svmout(obj.file, obj.outfile)
 
@@ -568,7 +608,10 @@ parser.add_argument( '--verbose', '-v',
 subp = parser.add_subparsers()
 
 singleloop = subp.add_parser('singleloop',
-                             description="strip multiloop entries, FASTA fmt")
+                             description="remove multiloop entries, FASTA fmt")
+
+multiloop  = subp.add_parser('multiloop',
+                             description="remove singlloop entries, FASTA fmt")
 
 tripletsvm = subp.add_parser('triplet',
                              description="extract triplets, libsvm format")
@@ -581,6 +624,7 @@ micropred  = subp.add_parser('micropred',
 
 
 singleloop.set_defaults(func=wrap_single)
+multiloop.set_defaults(func=wrap_multi)
 tripletsvm.set_defaults(func=wrap_triplet_svm)
 mipred.set_defaults    (func=wrap_mipred)
 micropred.set_defaults (func=wrap_micropred)
@@ -592,6 +636,17 @@ singleloop.add_argument('file',
                         default=sys.stdin,
                         help='file(s) to read from')
 singleloop.add_argument('--outfile', '-o',
+                        type=argparse.FileType('w'),
+                        nargs='?',
+                        default=sys.stdout,
+                        help="output file to write to")
+
+multiloop.add_argument ('file',
+                        type=argparse.FileType('r'),
+                        nargs='*',
+                        default=sys.stdin,
+                        help='file(s) to read from')
+multiloop.add_argument ('--outfile', '-o',
                         type=argparse.FileType('w'),
                         nargs='?',
                         default=sys.stdout,
