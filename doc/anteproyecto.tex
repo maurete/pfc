@@ -494,64 +494,47 @@ usuario final. Abarca parte de la etapa 4 y la etapa 5.
 En el siguiente cronograma se distribuye la carga de trabajo de 580
 horas en 29 semanas. Se toma como fecha de inicio del proyecto el día
 3 de junio de 2013 y como fecha de finalización estimada el día 20 de
-diciembre del corriente.
+diciembre de 2013.
 \begin{center}
 \definecolor{barblue}{RGB}{153,204,254}
 \definecolor{groupblue}{RGB}{51,102,254}
 \definecolor{linkred}{RGB}{165,0,33}
 \sffamily
-\begin{ganttchart}%
-[canvas/.style={fill=none, draw=black!40, line width=.75pt},
-hgrid style/.style={draw=black!5, line width=.75pt},
-vgrid={*4{draw=black!15, line width=.75pt},
-%% *1{draw=black!40, line width=.75pt},
-%% *4{draw=black!15, line width=.75pt},
-%% *1{draw=black!40, line width=.75pt},
-%% *3{draw=black!15, line width=.75pt},
-*1{draw=black!40, line width=.75pt}},
-y unit chart=0.55cm,
-x unit=0.095cm,
+\begin{ganttchart}[
+y unit chart=5.5mm,
+x unit=0.95mm,
 y unit title=0.6cm,
-%% today=7.1,
-%% today rule/.style={draw=black!64,
-%% dash pattern=on 3.5pt off 4.5pt, line width=1.5pt},
-%% today label={\small\bfseries TODAY},
-title/.style={%draw=none,
-draw=black!40, line width=.75pt,
-fill=none},
-%
-title label font=\bfseries\footnotesize,
-%title label anchor/.style={below=7pt},
+hgrid style/.append style={draw=black!5, line width=.75pt},
+vgrid={*4{draw=black!15, line width=.75pt},%
+  *1{draw=black!40, line width=.75pt}},
+canvas/.append style={fill=none, draw=black!40, line width=.75pt},
 include title in canvas=true,
-bar label font=\mdseries\small\color{black!70},
-milestone label font=\slshape\bfseries\small\color{black!80},
-bar height=.6,
 title height=1,
-%bar label anchor/.style={left=2cm},
-bar/.style={draw=none, fill=barblue},
-milestone/.style={fill=linkred},
-milestone width=3.5,
-milestone height=.6,
-milestone yshift=0.6,
-%milestone label anchor/.style={below=8pt,left=0pt},
-bar incomplete/.style={fill=black!63},
-%progress label font=\mdseries\footnotesize\color{black!70},
+title/.append style={draw=black!40, line width=.75pt,fill=none},
+title label font=\bfseries\footnotesize,
+bar label font=\mdseries\small\color{black!70},
+bar incomplete/.append style={fill=black!63},
+bar height=.6,
+%bar label node/.append style={left=2cm},
+bar/.append style={draw=none, fill=barblue},
 progress label text=,
-group incomplete/.style={fill=groupblue},
+group incomplete/.append style={fill=groupblue},
 group left shift=0,
 group right shift=0,
+group top shift=.3,
 group height=.6,
-group peaks={0}{0}{0},
-%group label anchor/.style={left=.6cm},
-link/.style={-latex, line width=1.5pt, linkred},
-%link label font=\scriptsize\bfseries\color{linkred}\MakeUppercase,
-%link label anchor/.style={below left=-2pt and 0pt}
-]{145}
-%\gantttitlelist{2,...,13}{1} \\
-\newcommand{\semana}{S}
+group/.append style={shape=ganttbar},
+milestone/.append style={shape=ganttmilestone,fill=linkred,draw=none},
+milestone label font=\slshape\bfseries\small\color{black!80},
+milestone height=.55,
+milestone top shift=.35,
+milestone left shift=-0.5,
+milestone right shift=1.5,
+milestone label node/.append style={below=8pt,left=0pt},
+]{1}{145}
 \gantttitle{Jun}{20}\gantttitle{Jul}{23}\gantttitle{Ago}{22}\gantttitle{Sep}{21}
 \gantttitle{Oct}{23}\gantttitle{Nov}{21}\gantttitle{Dic}{15}\\
-\gantttitle[title label anchor/.style={below left=-1.6ex and -1.1ex}]%
+\gantttitle[title label node/.append style={below left=-1.26ex and -1.1ex}]%
 {Semana:\quad1}{5}\gantttitlelist{2,...,29}{5} \\
 % 20 horas semanales: 1 dia = 4h
 \ganttgroup{Tarea 1}{1}{11} \\%11 dias
@@ -593,7 +576,7 @@ link/.style={-latex, line width=1.5pt, linkred},
 % entregable 3
 \ganttgroup{Tarea 9}{113}{115} \\%3 dias
 \ganttmilestone{Control 3}{115}\\
-\ganttgroup{Tarea 10}{116}{145} \\%30 dias
+\ganttgroup{Tarea 10}{116}{145} %30 dias
 \end{ganttchart}
 \end{center}
 %
