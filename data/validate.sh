@@ -72,7 +72,7 @@ done
 done
 
 echo "miPred: Calculating features..."
-for d in miRNAs8.2h mRNAs Rfam7.0
+for d in miRNAs8.2h mRNAs Rfam7.0 pseudoMiRNAs
 do echo "directory: $d"
 for f in $(ls miPred/$d/rnafold/)
 do echo "file: $f"

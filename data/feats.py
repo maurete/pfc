@@ -11,7 +11,7 @@ import math
 #   * (1) id: 3 letras + n { alfanum | _ | - }
 #   * se ignoran otros caracteres hasta el fin de linea
 #   >hsa-mir-123 Homo sapiens... etc
-desc_fmt = r"^\s*>[(]?([a-zA-Z0-9]{2,3}[\w<.:/_|+-]+)([,\s].+)?\s*$"
+desc_fmt = r"^\s*>[(]?([a-zA-Z0-9]{2,3}[\w<.:/_+-]+)([|,\s].+)?\s*$"
 
 # extra features en la descripcion, Xue
 seq_length_fmt   = r'^>.*\sSEQ_LENGTH\s+(\d+)\s.*$'
@@ -183,6 +183,81 @@ def load_fasta ( f ):
 
 
 
+def load_str ( f ):
+    """
+    Lee el archivo f EN FORMATO "STR" de miRBase.
+    @param f: el archivo a leer.
+    @return: lista de tuplas leidas:
+    (id, desc, seq, str, mfe, len3, gc3, bp3, len_bp3).
+    @rtype: list
+    """
+
+    # en entries guardo cada entrada leida
+    entries = list()
+
+    # si f es una lista de archivos
+    # hago recursion con cada elem y los agrego al final
+    if type(f) is list:
+        for li in f:
+            entries.extend(load_str(li))
+
+    else:
+        id_fmt = r"^>([a-zA-Z0-9_-]+)\s*.*$"
+        mfe_fmt = r"^>[a-zA-Z0-9_-]+\s+\(([-0-9.]+)\)\s+.*$"
+
+        lines = f.read().splitlines()
+
+        for l in range(0,len(lines),8):
+
+            identifier = None
+            mfe        = None
+            sequence   = ""
+            structure  = ""
+
+            if re.match(id_fmt,lines[l]):
+                identifier = re.split(id_fmt,lines[l])[1]
+            else:
+                raise Exception("Unknown identifier! {}".format(lines[l]))
+
+            if re.match(mfe_fmt,lines[l]):
+                mfe = re.split(mfe_fmt,lines[l])[1]
+        
+            hpin_len = len(lines[l+4])-1
+
+            seq_top = ""
+            seq_btm = ""
+            str_top = ""
+            str_btm = ""
+
+            for i in range(hpin_len):
+                if lines[l+4][i] == "|":
+                    seq_top += lines[l+3][i]
+                    seq_btm += lines[l+5][i]
+                    str_top += "("
+                    str_btm += ")"
+                else:
+                    if lines[l+2][i] in "gcuaGCUA":
+                        seq_top += lines[l+2][i]
+                        str_top += "."
+                    if lines[l+6][i] in "gcuaGCUA":
+                        seq_btm += lines[l+6][i]
+                        str_btm += "."
+        
+            for i in range(3,6):
+                if lines[l+i][hpin_len] in "gcuaGCUA":
+                    seq_top += lines[l+i][hpin_len]
+                    str_top += "."
+
+            sequence = seq_top.upper() + seq_btm[::-1].upper()
+            structure = str_top + str_btm[::-1]
+
+            entries.append((identifier,sequence,structure,mfe))
+
+    return entries
+
+
+
+
 def triplet_feats_extra ( sequence, structure ):
     """
     Calcula las variables extra presentes en la base de datos de Xue
@@ -230,6 +305,30 @@ def triplet_feats_extra ( sequence, structure ):
             "basepair": bp,
             "gc_content": gc,
             "len_bp_ratio": len_bp}
+
+
+
+
+def write_fasta ( strfilein, fastafileout ):
+    """
+    Lee al archivo en formato str de mipred y lo escribe en formato
+    fasta idem a la salida de RNAfold.
+    Incluye la mfe en la linea de descripción
+    @param infile: archivo(s) a leer
+    @param outfile: archivo donde escribir la salida
+    @rtype: None
+    """
+
+    # leo el archivo
+    f = load_str(strfilein)
+
+    # para cada entrada
+    for e in f:
+        desc = ">{}".format(e[0])
+        if e[3]:
+            desc += "\tFREE_ENERGY\t{}".format(e[3])
+
+        fastafileout.write( desc + '\n' + e[1] + '\n' + e[2] + '\n')
 
 
 
@@ -416,6 +515,28 @@ def triplet_svmout ( infile, outfile ):
 
 
 
+def triplet_out ( infile, outfile ):
+    """
+    Guarda los 32-triplets en el archivo de salida.
+    @param infile: archivo(s) de entrada (formato FASTA)
+    @param outfile: archivo de salida (formato f f f f f... x32)
+    @param label: etiqueta para los elementos de salida (int)
+    @rtype: None
+    """
+
+    # leo el archivo
+    f = load_fasta(infile)
+
+    for val in f:
+        if re.match( mult_fmt, val[3]):
+            continue
+
+        v = triplet_feats(val[2], val[3])
+        outfile.write("\t".join("{:.15g}".format(i) for i in v)+"\n")
+
+
+
+
 def mipred_feats ( sequence, structure ):
     """
     Calcula las sig. 23 caracteristicas segun miPred: A, C, G, U, G+C, A+U,
@@ -583,11 +704,17 @@ def upred_out ( infile, outfile, extra = False ):
 def wrap_single (obj):
     triplet_filter_single_loop(obj.file, obj.outfile)
 
+def wrap_strtofasta (obj):
+    write_fasta(obj.file, obj.outfile)
+
 def wrap_multi (obj):
     triplet_filter_multi_loop(obj.file, obj.outfile)
 
 def wrap_triplet_svm (obj):
-    triplet_svmout(obj.file, obj.outfile)
+    if obj.raw:
+        triplet_out(obj.file, obj.outfile)
+    else:
+        triplet_svmout(obj.file, obj.outfile)
 
 def wrap_mipred (obj):
     mipred_out(obj.file, obj.outfile)
@@ -610,11 +737,14 @@ subp = parser.add_subparsers()
 singleloop = subp.add_parser('singleloop',
                              description="remove multiloop entries, FASTA fmt")
 
+strtofasta = subp.add_parser('strtofasta',
+                             description="convert miRBase .str to .fasta")
+
 multiloop  = subp.add_parser('multiloop',
                              description="remove singlloop entries, FASTA fmt")
 
 tripletsvm = subp.add_parser('triplet',
-                             description="extract triplets, libsvm format")
+                             description="extract triplets, libsvm/raw format")
 
 mipred     = subp.add_parser('mipred',
                              description="extract miPred feats, tab-separated")
@@ -624,6 +754,7 @@ micropred  = subp.add_parser('micropred',
 
 
 singleloop.set_defaults(func=wrap_single)
+strtofasta.set_defaults(func=wrap_strtofasta)
 multiloop.set_defaults(func=wrap_multi)
 tripletsvm.set_defaults(func=wrap_triplet_svm)
 mipred.set_defaults    (func=wrap_mipred)
@@ -636,6 +767,17 @@ singleloop.add_argument('file',
                         default=sys.stdin,
                         help='file(s) to read from')
 singleloop.add_argument('--outfile', '-o',
+                        type=argparse.FileType('w'),
+                        nargs='?',
+                        default=sys.stdout,
+                        help="output file to write to")
+
+strtofasta.add_argument('file',
+                        type=argparse.FileType('r'),
+                        nargs='*',
+                        default=sys.stdin,
+                        help='file(s) to read from')
+strtofasta.add_argument('--outfile', '-o',
                         type=argparse.FileType('w'),
                         nargs='?',
                         default=sys.stdout,
@@ -662,6 +804,9 @@ tripletsvm.add_argument('--outfile', '-o',
                         nargs='?',
                         default=sys.stdout,
                         help="output file to write to")
+tripletsvm.add_argument('--raw', '-r',
+                        action='count',
+                        help='raw outpt instead of libsvm-formatted')
 
 mipred.add_argument    ('file',
                         type=argparse.FileType('r'),

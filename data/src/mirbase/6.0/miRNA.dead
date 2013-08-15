@@ -1,0 +1,201 @@
+AC   MI0000092
+ID   hsa-mir-91
+PI   hsa-mir-91-13
+FW   MI0000071
+CC   miR-91 is expressed from the 5' arm of the mir-17 precursor hairpin.
+//
+AC   MI0000096
+ID   hsa-mir-93-2
+PI   hsa-mir-93-7.2
+FW   MI0000095
+CC   Mourelatos et al. identified two copies of mir-93, but subsequent genome
+CC   assemblies suggest they map to a single locus.
+//
+AC   MI0000099
+ID   hsa-mir-97-6
+FW   MI0000088
+CC   miR-97 appears to be expressed from the same precursor sequence of the
+CC   mir-30a precursor hairpin.  The sequence is renamed miR-30a-5p.
+//
+AC   MI0000104
+ID   hsa-mir-101-9
+FW   MI0000739
+CC   Duplicate entry removed.
+//
+AC   MI0000106
+ID   hsa-mir-29b-3
+PI   hsa-mir-102-7.2 hsa-mir-102-3
+FW   MI0000105
+CC   Mourelatos et al. identified two copies of mir-102, which map to a single
+CC   locus in subsequent genome assemblies.  mir-102 was later renamed to 
+CC   mir-29b.
+//
+AC   MI0000110
+ID   hsa-mir-104
+PI   hsa-mir-104-17
+FW   MI0000077
+CC   The mir-104 precursor sequence reported by Mourelatos et al. is the exact
+CC   reverse complement of mir-21 from Lagos-Quintana et al.
+//
+AC   MI0000149
+ID   mmu-mir-123
+FW   MI0000153
+CC   Mouse miR-123 originates from the same precursor as miR-126.
+//
+AC   MI0000219
+ID   ath-MIR180a
+FW   MI0000215
+CC   MIR180a is renamed MIR172a.
+//
+AC   MI0000220
+ID   ath-MIR180b
+FW   MI0000216
+CC   MIR180b is renamed MIR172b.
+//
+AC   MI0000258
+ID   mmu-mir-1b
+FW   MI0000139
+CC   The 3' end of miR-1b conflicts with the precursor sequences and genome
+CC   assemblies.  miR-1b, 1c and 1d are merged into mir-1-1 and mir-1-2.
+//
+AC   MI0000260
+ID   hsa-mir-124b
+FW   MI0000716
+CC   miR-124b is not found in either mouse or human genome assemblies so is
+CC   removed.
+//
+AC   MI0000278
+ID   hsa-mir-196-1
+FW   MI0000238
+CC   Remove duplicate entry.
+//
+AC   MI0000280
+ID   hsa-mir-199a-1
+FW   MI0000242
+CC   Remove duplicate entry.
+//
+AC   MI0000332
+ID   cel-mir-227
+FW   MI0000051
+CC   miR-227 appears to be expressed from the 5' arm of the mir-80 precursor
+CC   hairpin.
+//
+AC   MI0000372
+ID   dme-mir-263a
+FW   MI0000343
+CC   Remove duplicate entry.
+//
+AC   MI0000396
+ID   mmu-mir-297-2
+FW   MI0000395
+CC   Remove low complexity duplicate entry.
+//
+AC   MI0000435
+ID   hsa-mir-1b-1
+FW   MI0000651
+CC   The 3' end of miR-1b conflicts with the precursor sequences and genome
+CC   assemblies.  miR-1b, 1c and 1d are merged into mir-1-1 and mir-1-2.
+//
+AC   MI0000436
+ID   hsa-mir-1b-2
+FW   MI0000651
+CC   The 3' end of miR-1b conflicts with the precursor sequences and genome
+CC   assemblies.  miR-1b, 1c and 1d are merged into mir-1-1 and mir-1-2.
+//
+AC   MI0000485
+ID   hsa-mir-189
+FW   MI0000080
+CC   miR-189 appears to be expressed from the same precursor hairpin as
+CC   miR-24.  Entries are merged.
+//
+AC   MI0000506
+ID   cbr-mir-53
+FW   MI0001399
+CC   Low confidence in predicted C. briggsae homologue of miR-53.  Later
+CC   reinstated as MI0001399.
+//
+AC   MI0000516
+ID   cbr-mir-77
+FW   MI0000515
+CC   Remove duplicate entry.
+//
+AC   MI0000529
+ID   cbr-mir-232
+FW   MI0000528
+CC   Remove duplicate entry.
+//
+AC   MI0000574
+ID   mmu-mir-26a-2
+FW   MI0000706
+CC   Remove duplicate sequence.  Subsequent genome assemblies suggest two
+CC   precursors so reinstated as MI0000706.
+//
+AC   MI0000543
+ID   hsa-mir-321
+FW   MI0000543
+CC   miR-321 is a fragment of a Arg-tRNA. 
+//
+AC   MI0000705
+ID   mmu-mir-321
+FW   MI0000705
+CC   miR-321 is a fragment of a Arg-tRNA.
+//
+AC   MI0000973
+ID   rno-mir-321
+FW   MI0000973
+CC   miR-321 is a fragment of a Arg-tRNA.
+//
+AC   MI0001417
+ID   cbr-mir-37
+FW   MI0001416
+CC   Incorrectly named - duplicate of cbr-mir-36 
+//
+AC   MI0001399
+ID   cbr-mir-53
+FW   MI0000505
+CC   Incorrectly named - duplicate of cbr-mir-52 
+//
+AC   MI0001393
+ID   cbr-mir-65
+FW   MI0001392
+CC   Incorrectly named - duplicate of cbr-mir-64 
+//
+AC   MI0001081
+ID   ath-MIR407b
+FW   MI0001079
+CC   MIR407a and b map to the same locus in NC_003071.3. MIR407b has
+CC   therefore been removed.
+//
+AC   MI0001076
+ID   ath-MIR405c
+FW   MI0001075
+CC   MIR405b and c map to the same locus in NC_003076.4. MIR405c has
+CC   therefore been removed.
+//
+AC   MI0000686
+ID   mmu-mir-10a-2
+FW   MI0000685
+CC   Two mir-10a loci in previous mouse assemblies appear to have
+CC   been collapsed in NCBIM33.
+//
+AC   MI0001443
+ID   hsa-mir-422b
+FW   MI0000786
+CC   from same precursor as miR-378 
+//
+AC   MI0001484
+ID   zma-MIR166j
+FW   MI0001480
+CC   duplicate of MIR166a 
+//
+AC   MI0001432
+ID   hsa-mir-108
+FW   MI0000769
+CC   mir-108 is the reverse complement of mir-365 
+//
+AC   MI0001646
+ID   rno-mir-365-2
+FW   MI0001656
+CC   There is only one rat genomic locus for mir-365 in the RGCS 3.4
+CC   assembly
+//
