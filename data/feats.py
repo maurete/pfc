@@ -144,10 +144,15 @@ def load_fasta ( f ):
                         len_bp_ratio = float(re.split(len_bp_ratio_fmt,
                                                        cur_dsc)[1])
 
-                    # guardo la entrada en el dict 
-                    entries.append((id_, cur_dsc, cur_seq.upper(), cur_st2,
-                                    free_energy, seq_length, gc_content,
-                                    basepair, len_bp_ratio))
+                    # guardo la entrada en el dict
+                    if re.match(seqn_fmt,cur_seq):
+                        entries.append((id_, cur_dsc, cur_seq.upper(), cur_st2,
+                                        free_energy, seq_length, gc_content,
+                                        basepair, len_bp_ratio))
+                    else:
+                        sys.stderr.write("ign {}, non-GCUA sequence\n".format(
+                            id_))
+
 
     
                 # asigno el valor actual a la
@@ -162,10 +167,10 @@ def load_fasta ( f ):
                 len_bp_ratio = None
                 
             # si leo una linea de secuencia
-            elif re.match(seqn_fmt, line):
+            elif re.match(r"^\s*([a-zA-Z]+)\s*$", line):
                 # agrego el pedazo de secuencia
                 # al final de la variable cur_seq
-                cur_seq += re.split(seqn_fmt,line)[1]
+                cur_seq += re.split(r"^\s*([a-zA-Z]+)\s*$",line)[1]
             
             # si leo una linea de estructura secundaria
             elif re.match(snds_fmt, line):
@@ -212,9 +217,13 @@ def load_fasta ( f ):
                                               cur_dsc)[1])
 
             # guardo la entrada en el dict 
-            entries.append((id_, cur_dsc, cur_seq.upper(), cur_st2,
-                            free_energy, seq_length, gc_content,
-                            basepair, len_bp_ratio))
+            if re.match(seqn_fmt,cur_seq):
+                entries.append((id_, cur_dsc, cur_seq.upper(), cur_st2,
+                                free_energy, seq_length, gc_content,
+                                basepair, len_bp_ratio))
+            else:
+                sys.stderr.write("ign {}, non-GCUA sequence\n".format(id_))
+
 
     return entries
 
