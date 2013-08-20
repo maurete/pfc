@@ -506,8 +506,12 @@ def rnafold_clean ( infile, outfile, d=0 ):
 
     # para cada entrada
     for l in f:
-        # guardo la entrada en el archivo
-        outfile.write('>' + l[0] + '\n' + l[2] + '\n' )
+        # si la secuencia es valida
+        if re.match(feats.seqn_fmt,l[2]):
+            # guardo la entrada en el archivo
+            outfile.write( l[1] + '\n' + l[2] + '\n' )
+        else:
+            sys.stderr.write("discarding entry {}: invalid sequence\n".format(l[0]))
 
 
 
