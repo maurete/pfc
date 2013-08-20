@@ -144,8 +144,8 @@ def load_fasta ( f ):
 
             # si no entiendo la linea, escribo una advertencia
             else:
-                sys.stderr.write("WARNING: {}: ignoring line {:d}\n".format(
-                        f.name,lineno))
+                sys.stderr.write("{}: {} ignoring line {:d}\n{}".format(
+                        f.name,id_,lineno,line))
 
         # si lei algo del for anterior, me queda
         # la ultima entrada sin guardar:
@@ -354,23 +354,27 @@ def triplet_filter_single_loop ( infile, outfile, d=0 ):
             pass
         # si solo hay un loop
         else:
-            f = triplet_feats_extra(l[2],l[3])
+            try:
+                f = triplet_feats_extra(l[2],l[3])
             
-            s = ('\tSEQ_LENGTH\t{}\tGC_CONTENT\t{:.15g}\tBASEPAIR\t{}\t'+
-                 'FREE_ENERGY\t{:.2f}\tLEN_BP_RATIO\t{:.15g}').format(
-                     f['seq_length'],f['gc_content'],
-                     f['basepair'],l[4],f['len_bp_ratio'])
+                s = ('\tSEQ_LENGTH\t{}\tGC_CONTENT\t{:.15g}\tBASEPAIR\t{}\t'+
+                     'FREE_ENERGY\t{:.2f}\tLEN_BP_RATIO\t{:.15g}').format(
+                         f['seq_length'],f['gc_content'],
+                         f['basepair'],l[4],f['len_bp_ratio'])
             
-            # guardo la entrada en el archivo solo si hay mas de 22 bp
-            #if f['basepair'] > 22:
-            outfile.write('>' + l[0] + s + '\n' + 
-                          l[2] + '\n' +
-                          l[3] + '\n')
+                # guardo la entrada en el archivo solo si hay mas de 22 bp
+                #if f['basepair'] > 22:
+                outfile.write('>' + l[0] + s + '\n' + 
+                              l[2] + '\n' +
+                              l[3] + '\n')
+            except Exception as e:
+                sys.stderr.write("error found for entry {}:\n{}\n{}".format(
+                    l[0],l[2],l[3]))
 
 
 
 
-def triplet_filter_multi_loop ( infile, outfile, d=0 ):
+def triplet_filter_multi_loop ( infile, outfile ):
     """
     Lee el archivo de entrada y guarda sólo aquellas entradas
     que SI contengan múltiples loops en el archivo de salida.
