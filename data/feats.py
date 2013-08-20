@@ -37,6 +37,44 @@ snds_fmt = r"^\s*([.()]+)(\s+\((\s*-?[0-9.]+)\s*\))?\s*$"
 #   ....(((((.((..))))))..((((...))))).))... etc
 mult_fmt = r"[.(]+\)[.()]*\([.)]+"
 
+# following set obtained from miRbase v20 organisms.txt.gz
+# doing the following on a Python shell:
+# >>> import gzip
+# >>> f = gzip.open( "src/mirbase/20/organisms.txt.gz", 'r')
+# >>> l = f.read().splitlines()
+# >>> valid_ids = {e.split()[0] for e in l}
+# >>> valid_ids
+valid_ids = set(['sci', 'pti', 'ptc', 'pta', 'aly', 'osa', 'lla',
+                 'mne', 'nlo', 'tca', 'cln', 'xtr', 'han', 'hru',
+                 'gma', 'zma', 'cla', 'bfl', 'nvi', 'bna', 'rgl',
+                 'rno', 'kshv', 'dan', 'cel', 'ame', 'ssp', 'amg',
+                 'ssl', 'nve', 'ttu', 'lca', 'lco', 'pgi', 'dya',
+                 'ssc', 'dme', 'dpu', 'hci', 'dps', 'dpr', 'crt',
+                 'lja', 'cme', 'tre', 'xla', 'hsv1', 'mcmv', 'dpe',
+                 'hsv2', 'esi', 'cre', 'pbi', 'crm', 'tgu', 'ola',
+                 'pvu', 'mdo', 'mdm', 'ipu', 'cfa', 'odi', 'ebv',
+                 'hiv1', 'bta', 'pma', 'rrv', 'rmi', 'emu', 'lus',
+                 'asu', 'sha', 'peu', 'mghv', 'blv', 'bdi', 'smr',
+                 'ptr', 'smo', 'ddi', 'dsi', 'aja', 'sme', 'dse',
+                 'hco', 'sma', 'hsa', 'eca', 'mmu', 'tur', 'meu',
+                 'mml', 'gga', 'hma', 'nta', 'ggo', 'cgr', 'aca',
+                 'ctr', 'lmi', 'vun', 'ath', 'cte', 'bol', 'isc',
+                 'bgy', 'pde', 'sja', 'dre', 'hbr', 'ppc', 'ppa',
+                 'har', 'mes', 'ppe', 'sof', 'hhv6b', 'ngi', 'pol',
+                 'api', 'ppt', 'ppy', 'ahy', 'hvu', 'hvt', 'bra',
+                 'sbi', 'bpcv2', 'bbe', 'hex', 'rco', 'gpy', 'fru',
+                 'mse', 'cqu', 'aqu', 'lgi', 'hcmv', 'bmo', 'aqc',
+                 'mcv', 'tcc', 'sko', 'sv40', 'aae', 'iltv', 'sly',
+                 'mtr', 'htu', 'der', 'ata', 'cin', 'dev', 'dmo',
+                 'aau', 'stu', 'prv', 'egr', 'egu', 'tni', 'sla',
+                 'prd', 'cbn', 'spu', 'cbr', 'tae', 'bma', 'hvsa',
+                 'hme', 'ssy', 'hhi', 'jcv', 'csi', 'mdv1', 'oan',
+                 'mdv2', 'csa', 'far', 'pab', 'oar', 'gra', 'hpa',
+                 'dwi', 'hpe', 'bpcv1', 'gar', 'dgr', 'bkv', 'rlcv',
+                 'vvi', 'bhv1', 'hbv', 'dvi', 'mja', 'ghr', 'ama',
+                 'cpa', 'age', 'aga', 'ccr', 'ccl', 'xbo', 'bcy',
+                 'ghb', 'cca', 'gso'])
+
 
 
 
@@ -704,6 +742,107 @@ def upred_out ( infile, outfile, extra = False ):
 
 
 
+def features_by_species ( infile, outdir, cls = 1, force_sp_name = None,
+                          write_headers = False):
+
+    f = load_fasta ( infile )
+    species = []
+    desc = []
+    sequence = []
+    structure = []
+    triplet = []
+    triplet_extra = []
+    sequence_feats = []
+    folding_feats = []
+
+    for e in f:
+        # step 0. validate reqs: structure, mfe and not multi-loop
+        if len(e[3]) < 1 or re.match( mult_fmt, e[3]) or not e[4]:
+            continue
+
+        # step 1. get species name (will determine output filename)
+        if force_sp_name:
+            species.append(force_sp_name)
+        else:
+            idd = re.split( r"^>([\w\d]+)-.*$", e[1] )[1]
+            if idd not in valid_ids:
+                sys.stderr.write("WARNING: invalid id: {}\n".format(idd))
+            species.append(idd)
+    
+        # step 2. copy sequence, structure, description
+        desc.append(e[1])
+        sequence.append(e[2])
+        structure.append(e[3])
+
+        # step 3. calculate features
+        triplet.append( triplet_feats(e[2],e[3]) )
+        triplet_extra.append( triplet_feats_extra(e[2],e[3]) )
+        s = [len(e[2])] # sequence length
+        f = [e[4]] # mfe
+        s.extend(mipred_feats(e[2],e[3])[:-1]) # mipred feats
+        f.extend(upred_feats(e[2],e[3],e[4])) # upred feats
+        sequence_feats.append(s)
+        folding_feats.append(f)
+    
+    # step 4. write files
+    num = len(sequence)
+    for sp in set(species):
+        with open( os.path.join(outdir,sp+".fa"), 'w') as o:
+            for i in range(num):
+                if species[i] == sp:
+                    o.write( "{}\n{}\n{}\n".format(
+                        desc[i],sequence[i],structure[i]))
+                
+        with open( os.path.join(outdir,sp+".3"), 'w') as o:
+            if write_headers:
+                o.write("\t".join("{}".format(n+s) for n in 'AGCU' for
+                                  s in ['...', '..(', '.(.', '.((', '(..',
+                                        '(.(', '((.', '((('])+"\n")
+            for i in range(num):
+                if species[i] == sp:
+                    o.write( "\t".join("{:.15g}".format(
+                        j) for j in triplet[i])+"\n" )
+
+        with open( os.path.join(outdir,sp+".3x"), 'w') as o:
+            if write_headers:
+                o.write("len3\tbasepair\tlen3/bp\tgc/len3\n")
+            for i in range(num):
+                if species[i] == sp:
+                    o.write( "{}\t{}\t{:.15g}\t{:.15g}\n".format(
+                        triplet_extra[i]["seq_length"],
+                        triplet_extra[i]["basepair"],
+                        triplet_extra[i]["len_bp_ratio"],
+                        triplet_extra[i]["gc_content"]))
+
+        with open( os.path.join(outdir,sp+".s"), 'w') as o:
+            if write_headers:
+                o.write("Len\tA\tC\tG\tU\tG+C\tA+U\tAA\tAC\tAG\tAU\t" +
+                  "CA\tCC\tCG\tCU\tGA\tGC\tGG\tGU\tUA\tUC\tUG\tUU\n")
+            for i in range(num):
+                if species[i] == sp:
+                    o.write( "\t".join("{:.15g}".format(
+                        j) for j in sequence_feats[i])+"\n" )
+
+        with open( os.path.join(outdir,sp+".f"), 'w') as o:
+            if write_headers:
+                o.write("mfe\tMFEI1\tMFEI4\tdP\t|A-U|/L\t|G-C|/L\t|G-U|/L\n")
+            for i in range(num):
+                if species[i] == sp:
+                    o.write( "\t".join("{:.15g}".format(
+                        j) for j in folding_feats[i])+"\n" )
+
+        with open( os.path.join(outdir,sp+".c"), 'w') as o:
+            if write_headers:
+                o.write("Class\n")
+            for i in range(num):
+                if species[i] == sp:
+                    o.write( "{}\n".format(cls) )
+
+    print( "Wrote {} entries.".format(num))
+
+
+
+
 # wrapper para las funciones
 def wrap_single (obj):
     triplet_filter_single_loop(obj.file, obj.outfile)
@@ -726,6 +865,8 @@ def wrap_mipred (obj):
 def wrap_micropred (obj):
     upred_out(obj.file, obj.outfile, obj.extra)
 
+def wrap_fbysp (obj):
+    features_by_species(obj.file, obj.outdir, obj.cls, obj.species, obj.headers)
 
 
 
@@ -756,6 +897,9 @@ mipred     = subp.add_parser('mipred',
 micropred  = subp.add_parser('micropred',
                              description="extract microPred feats, tab-sep")
 
+byspecies  = subp.add_parser('by_species',
+                             description="all features, output by species")
+
 
 singleloop.set_defaults(func=wrap_single)
 strtofasta.set_defaults(func=wrap_strtofasta)
@@ -763,6 +907,7 @@ multiloop.set_defaults(func=wrap_multi)
 tripletsvm.set_defaults(func=wrap_triplet_svm)
 mipred.set_defaults    (func=wrap_mipred)
 micropred.set_defaults (func=wrap_micropred)
+byspecies.set_defaults (func=wrap_fbysp)
 
 
 singleloop.add_argument('file',
@@ -836,6 +981,30 @@ micropred.add_argument ('--outfile', '-o',
 micropred.add_argument ('--extra', '-e',
                         action='count',
                         help='include extra features')
+
+byspecies.add_argument ('file',
+                        type=argparse.FileType('r'),
+                        nargs='*',
+                        default=sys.stdin,
+                        help='file(s) to read from')
+byspecies.add_argument ('--outdir', '-o',
+                        type=str,
+                        nargs='?',
+                        default="./",
+                        help="output dir where to write files")
+byspecies.add_argument ('--cls', '-c',
+                        type=int,
+                        nargs='?',
+                        default=1,
+                        help="set class (1 or -1)")
+byspecies.add_argument ('--species', '-s',
+                        type=str,
+                        nargs='?',
+                        default=None,
+                        help="force species name")
+byspecies.add_argument ('--headers', '-j',
+                        action='count',
+                        help='write headers to generated files')
 
 
 # main function
