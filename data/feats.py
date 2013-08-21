@@ -5,6 +5,7 @@ import argparse
 import re
 import sys
 import math
+import os
 
 # formato de la linea de descripcion:
 #   * comienza con un > (opcionalmente precedido de espacios
@@ -402,18 +403,26 @@ def triplet_filter_single_loop ( infile, outfile, d=0 ):
         # si solo hay un loop
         else:
             try:
-                f = triplet_feats_extra(l[2],l[3])
-            
-                s = ('\tSEQ_LENGTH\t{}\tGC_CONTENT\t{:.15g}\tBASEPAIR\t{}\t'+
-                     'FREE_ENERGY\t{:.2f}\tLEN_BP_RATIO\t{:.15g}').format(
-                         f['seq_length'],f['gc_content'],
-                         f['basepair'],l[4],f['len_bp_ratio'])
-            
+                x = triplet_feats_extra(l[2],l[3])
+
+                if l[4]:
+                    s = ('\tSEQ_LENGTH\t{}\tGC_CONTENT\t{:.15g}\t'+
+                         'BASEPAIR\t{}\tFREE_ENERGY\t{:.2f}'+
+                         '\tLEN_BP_RATIO\t{:.15g}').format(
+                             x['seq_length'],x['gc_content'],
+                             x['basepair'],l[4],x['len_bp_ratio'])
+                else:
+                    s = ('\tSEQ_LENGTH\t{}\tGC_CONTENT\t{:.15g}\tBASEPAIR\t{}'+
+                         '\tLEN_BP_RATIO\t{:.15g}').format(
+                             x['seq_length'],x['gc_content'],
+                             x['basepair'],x['len_bp_ratio'])
+
                 # guardo la entrada en el archivo solo si hay mas de 22 bp
                 #if f['basepair'] > 22:
                 outfile.write('>' + l[0] + s + '\n' + 
                               l[2] + '\n' +
                               l[3] + '\n')
+
             except Exception as e:
                 sys.stderr.write("error found for entry {}:\n{}\n{}".format(
                     l[0],l[2],l[3]))

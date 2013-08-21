@@ -82,7 +82,7 @@ def triplet_compare_fasta( set1files, set2files ):
                 set1[j][0],set1[j][7],set2[k][7]))
 
         #free_energy
-        if abs(set1[j][4]-set2[k][4]) > ERROR_THR:
+        if set1[j][4] and set2[k][4] and abs(set1[j][4]-set2[k][4]) > ERROR_THR:
             print("{}: FREE_ENERGY differ! ({:.15g},{:.15g})".format(
                 set1[j][0],set1[j][4],set2[k][4]))
 
@@ -596,7 +596,7 @@ def rnafold_compare( set1files, set2files ):
                 str_cont.append(set1[j][0])
 
         # free_energy
-        if type(set1[j][4]) is not None and type(set2[k][4]) is not None:
+        if set1[j][4] and set2[k][4]:
             if abs(set1[j][4]-set2[k][4]) > ERROR_THR:
                 if verbosity > 1:
                     print("{}: different mfe: {} vs {}".format(
