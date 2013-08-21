@@ -1,0 +1,621 @@
+>mmu-let-7g Mus musculus let-7g stem-loop
+CCAGGCUGAGGUAGUAGUUUGUACAGUUUGAGGGUCUAUGAUACCACCCGGUACAGGAGAUAACUGUACAGGCCACUGCCUUGCCAGG
+((.(((.((((((((.((((((((((((.....((((.((.((((....))))))..)))))))))))))))).))))))))))).))
+>mmu-let-7i Mus musculus let-7i stem-loop
+CUGGCUGAGGUAGUAGUUUGUGCUGUUGGUCGGGUUGUGACAUUGCCCGCUGUGGAGAUAACUGCGCAAGCUACUGCCUUGCUAG
+(((((.(((((((((((((((((.(((((.(((((.........)))))))........))).))))))))))))))))))))))
+>mmu-mir-1-1 Mus musculus miR-1-1 stem-loop
+GCUUGGGACACAUACUUCUUUAUAUGCCCAUAUGAACCUGCUAAGCUAUGGAAUGUAAAGAAGUAUGUAUUUCAGGC
+(((((..(.((((((((((((((((..(((((..............))))).)))))))))))))))).)..)))))
+>mmu-mir-15b Mus musculus miR-15b stem-loop
+CUGUAGCAGCACAUCAUGGUUUACAUACUACAGUCAAGAUGCGAAUCAUUAUUUGCUGCUCUAG
+(((.(((((((.((.((((((..(((.((.......)))))..)))))).)).))))))).)))
+>mmu-mir-23b Mus musculus miR-23b stem-loop
+GGCUGCUUGGGUUCCUGGCAUGCUGAUUUGUGACUUGAGAUUAAAAUCACAUUGCCAGGGAUUACCACGCAACC
+((.(((.(((((((((((((((.((((((..............)))))))).))))))))))..))).))).))
+>mmu-mir-27b Mus musculus miR-27b stem-loop
+AGGUGCAGAGCUUAGCUGAUUGGUGAACAGUGAUUGGUUUCCGCUUUGUUCACAGUGGCUAAGUUCUGCACCU
+((((((((((((((((((....((((((((....(((...)))..))))))))..))))))))))))))))))
+>mmu-mir-29b-1 Mus musculus miR-29b-1 stem-loop
+AGGAAGCUGGUUUCAUAUGGUGGUUUAGAUUUAAAUAGUGAUUGUCUAGCACCAUUUGAAAUCAGUGUUCU
+((((.((((((((((.((((((..((((((.............)))))))))))).)))))))))).))))
+>mmu-mir-30a Mus musculus miR-30a stem-loop
+GCGACUGUAAACAUCCUCGACUGGAAGCUGUGAAGCCACAAAUGGGCUUUCAGUCGGAUGUUUGCAGCUGC
+(((.((((((((((((..((((((((((((((....))).....))))))))))))))))))))))).)))
+>mmu-mir-30b Mus musculus miR-30b stem-loop
+AUGUAAACAUCCUACACUCAGCUGUCAUACAUGCGUUGGCUGGGAUGUGGAUGUUUACGU
+((((((((((((.(((((((((((.(........).)))))))).)))))))))))))))
+>mmu-mir-99a Mus musculus miR-99a stem-loop
+CAUAAACCCGUAGAUCCGAUCUUGUGGUGAAGUGGACCGCGCAAGCUCGUUUCUAUGGGUCUGUG
+((((.(((((((((..(((.((((((.((........)))))))).)))..))))))))).))))
+>mmu-mir-99b Mus musculus miR-99b stem-loop
+GGCACCCACCCGUAGAACCGACCUUGCGGGGCCUUCGCCGCACACAAGCUCGUGUCUGUGGGUCCGUGUC
+(((((..(((((((((..(((.((((.(((((....))).).).)))).)))..)))))))))..)))))
+>mmu-mir-101 Mus musculus miR-101 stem-loop
+UCAGUUAUCACAGUGCUGAUGCUGUCCAUUCUAAAGGUACAGUACUGUGAUAACUGA
+((((((((((((((((((.((((............))))))))))))))))))))))
+>mmu-mir-124a-3 Mus musculus miR-124a-3 stem-loop
+CUCUGCGUGUUCACAGCGGACCUUGAUUUAAUGUCUAUACAAUUAAGGCACGCGGUGAAUGCCAAGAG
+(((((.((((((((.(((..((((((((............))))))))..))).))))))))).))))
+>mmu-mir-125a Mus musculus miR-125a stem-loop
+CUGGGUCCCUGAGACCCUUUAACCUGUGAGGACGUCCAGGGUCACAGGUGAGGUUCUUGGGAGCCUGG
+(..((..((..(((.((((..((((((((((....))....)))))))))))).)))..))..))..)
+>mmu-mir-125b-2 Mus musculus miR-125b-2 stem-loop
+GCCUAGUCCCUGAGACCCUAACUUGUGAGGUAUUUUAGUAACAUCACAAGUCAGGUUCUUGGGACCUAGGC
+((((((..((..(((.(((.((((((((..(((....)))...)))))))).))).)))..))..))))))
+>mmu-mir-126 Mus musculus miR-126 stem-loop
+UGACAGCACAUUAUUACUUUUGGUACGCGCUGUGACACUUCAAACUCGUACCGUGAGUAAUAAUGCGCGGUCA
+.(((.((.(((((((((((.(((((((.(...(((....)))..).))))))).))))))))))).)).))).
+>mmu-mir-127 Mus musculus miR-127 stem-loop
+CCAGCCUGCUGAAGCUCAGAGGGCUCUGAUUCAGAAAGAUCAUCGGAUCCGUCUGAGCUUGGCUGGUCGG
+((((((.....(((((((((.((.((((((((.....))..)))))).)).)))))))))))))))....
+>mmu-mir-128a Mus musculus miR-128a stem-loop
+GUUGGAUUCGGGGCCGUAGCACUGUCUGAGAGGUUUACAUUUCUCACAGUGAACCGGUCUCUUUUUCAGC
+((((((...(((((((...((((((..(((((((....)))))))))))))...)))))))...))))))
+>mmu-mir-130a Mus musculus miR-130a stem-loop
+GAGCUCUUUUCACAUUGUGCUACUGUCUAACGUGUACCGAGCAGUGCAAUGUUAAAAGGGCAUC
+..((((((((.((((((..((.(((((......).))..)).))..)))))).))))))))...
+>mmu-mir-9-2 Mus musculus miR-9-2 stem-loop
+GUUGUUAUCUUUGGUUAUCUAGCUGUAUGAGUGUAUUGGUCUUCAUAAAGCUAGAUAACCGAAAGUAAAAAC
+(((.(((..(((((((((((((((.((((((..(....)..)))))).)))))))))))))))..))).)))
+>mmu-mir-132 Mus musculus miR-132 stem-loop
+GGGCAACCGUGGCUUUCGAUUGUUACUGUGGGAACCGGAGGUAACAGUCUACAGCCAUGGUCGCCC
+((((.(((((((((...((((((((((.(((...)))..))))))))))...))))))))).))))
+>mmu-mir-133a-1 Mus musculus miR-133a-1 stem-loop
+GCUAAAGCUGGUAAAAUGGAACCAAAUCGCCUCUUCAAUGGAUUUGGUCCCCUUCAACCAGCUGUAGC
+((((.(((((((..((.((.((((((((............)))))))).)).))..))))))).))))
+>mmu-mir-134 Mus musculus miR-134 stem-loop
+AGGGUGUGUGACUGGUUGACCAGAGGGGCGUGCACUCUGUUCACCCUGUGGGCCACCUAGUCACCAACCCU
+(((((..((((((((.((.(((.((((....((.....))...)))).)))..)).))))))))..)))))
+>mmu-mir-135a-1 Mus musculus miR-135-1 stem-loop
+AGGCCUCACUGUUCUCUAUGGCUUUUUAUUCCUAUGUGAUUCUAUUGCUCGCUCAUAUAGGGAUUGGAGCCGUGGCGUACGGUGAGGAUA
+...(((((((((.(.((((((((((..((((((((((((.............)))))))))))).)))))))))).).)))))))))...
+>mmu-mir-136 Mus musculus miR-136 stem-loop
+GAGGACUCCAUUUGUUUUGAUGAUGGAUUCUUAAGCUCCAUCAUCGUCUCAAAUGAGUCUUC
+((((((((.(((((...((((((((((.........))))))))))...)))))))))))))
+>mmu-mir-137 Mus musculus miR-137 stem-loop
+CUUCGGUGACGGGUAUUCUUGGGUGGAUAAUACGGAUUACGUUGUUAUUGCUUAAGAAUACGCGUAGUCGAGG
+((((((..(((.(((((((((((..(.(((((((.....)).))))))..))))))))))).)))..))))))
+>mmu-mir-138-2 Mus musculus miR-138-2 stem-loop
+CAGCUGGUGUUGUGAAUCAGGCCGACGAGCAGCGCAUCCUCUUACCCGGCUAUUUCACGACACCAGGGUUG
+...(((((((((((((...(((((..(((.((......)))))...)))))..))))))))))))).....
+>mmu-mir-140 Mus musculus miR-140 stem-loop
+CCUGCCAGUGGUUUUACCCUAUGGUAGGUUACGUCAUGCUGUUCUACCACAGGGUAGAACCACGGACAGG
+((((((.(((((((((((((.(((((((..(((......)))))))))).))))))))))))))).))))
+>mmu-mir-141 Mus musculus miR-141 stem-loop
+GGGUCCAUCUUCCAGUGCAGUGUUGGAUGGUUGAAGUAUGAAGCUCCUAACACUGUCUGGUAAAGAUGGCCC
+(((.(((((((((((.((((((((((..((((.........)))).))))))))))))))..))))))))))
+>mmu-mir-142 Mus musculus miR-142 stem-loop
+ACCCAUAAAGUAGAAAGCACUACUAACAGCACUGGAGGGUGUAGUGUUUCCUACUUUAUGGAUG
+..(((((((((((.(((((((((...(..(....)..)..))))))))).)))))))))))...
+>mmu-mir-144 Mus musculus miR-144 stem-loop
+GGCUGGGAUAUCAUCAUAUACUGUAAGUUUGUGAUGAGACACUACAGUAUAGAUGAUGUACUAGUC
+((((((.((((((((.(((((((((.((((......))))..))))))))))))))))).))))))
+>mmu-mir-145 Mus musculus miR-145 stem-loop
+CUCACGGUCCAGUUUUCCCAGGAAUCCCUUGGAUGCUAAGAUGGGGAUUCCUGGAAAUACUGUUCUUGAG
+((((.((..((((.((.((((((((((((.............)))))))))))).)).))))..))))))
+>mmu-mir-146 Mus musculus miR-146 stem-loop
+AGCUCUGAGAACUGAAUUCCAUGGGUUAUAUCAAUGUCAGACCUGUGAAAUUCAGUUCUUCAGCU
+((((..((((((((((((.((((((((............)))))))).)))))))))))).))))
+>mmu-mir-149 Mus musculus miR-149 stem-loop
+GGCUCUGGCUCCGUGUCUUCACUCCCGUGUUUGUCCGAGGAGGGAGGGAGGGACGGGGGCGGUGCU
+(((.(((.((((((.(((((.(((((.(.(((....))).))))))))))).)))))).))).)))
+>mmu-mir-150 Mus musculus miR-150 stem-loop
+CCCUGUCUCCCAACCCUUGUACCAGUGCUGUGCCUCAGACCCUGGUACAGGCCUGGGGGAUAGGG
+((((((((((((..(((.(((((((.((((.....))).).))))))))))..))))))))))))
+>mmu-mir-151 Mus musculus miR-151 stem-loop
+CCUGCCCUCGAGGAGCUCACAGUCUAGUAUGUCUCCUCCCUACUAGACUGAGGCUCCUUGAGGACAGG
+((((.((((((((((((..((((((((((.(.......).)))))))))).)))))))))))).))))
+>mmu-mir-152 Mus musculus miR-152 stem-loop
+CCGGGCCUAGGUUCUGUGAUACACUCCGACUCGGGCUCUGGAGCAGUCAGUGCAUGACAGAACUUGGGCCCGG
+(((((((((((((((((.((.((((..((((...(((....))))))))))).)).)))))))))))))))))
+>mmu-mir-153 Mus musculus miR-153 stem-loop
+CGGUGUCAUUUUUGUGACGUUGCAGCUAGUAAUAUGAGCCCAGUUGCAUAGUCACAAAAGUGAUCAUUG
+((((((((((((((((((..(((((((.((.......))..)))))))..))))))))))))).)))))
+>mmu-mir-154 Mus musculus miR-154 stem-loop
+GAAGAUAGGUUAUCCGUGUUGCCUUCGCUUUAUUCGUGACGAAUCAUACACGGUUGACCUAUUUUU
+((((((((((((.((((((....(((((.........).))))....)))))).))))))))))))
+>mmu-mir-155 Mus musculus miR-155 stem-loop
+CUGUUAAUGCUAAUUGUGAUAGGGGUUUUGGCCUCUGACUGACUCCUACCUGUUAGCAUUAACAG
+((((((((((((((...(.((((((((..(........).)))))))).).))))))))))))))
+>mmu-mir-10b Mus musculus miR-10b stem-loop
+UAUAUACCCUGUAGAACCGAAUUUGUGUGGUACCCACAUAGUCACAGAUUCGAUUCUAGGGGAAUAUA
+(((((.((((.(((((.((((((((((..((......))...)))))))))).))))))))).)))))
+>mmu-mir-129-1 Mus musculus miR-129-1 stem-loop
+UGGAUCUUUUUGCGGUCUGGGCUUGCUGUUCUCUCGACAGUAGUCAGGAAGCCCUUACCCCAAAAAGUAUCUA
+((((((((((((.(((..((((((.(((..((((....)).)).))).))))))..))).))))))).)))))
+>mmu-mir-181a Mus musculus miR-181a stem-loop
+CCAUGGAACAUUCAACGCUGUCGGUGAGUUUGGGAUUCAAAAACAAAAAAACCACCGACCGUUGACUGUACCUUGG
+(((.((.(((.((((((..(((((((.((((.................))))))))))))))))).))).)).)))
+>mmu-mir-182 Mus musculus miR-182 stem-loop
+ACCAUUUUUGGCAAUGGUAGAACUCACACCGGUAAGGUAAUGGGACCCGGUGGUUCUAGACUUGCCAACUAUGGU
+(((((..(((((((.(.((((((...((((((..............))))))))))))..))))))))..)))))
+>mmu-mir-183 Mus musculus miR-183 stem-loop
+CUGUGUAUGGCACUGGUAGAAUUCACUGUGAACAGUCUCAGUCAGUGAAUUACCGAAGGGCCAUAAACAG
+((((.((((((..(((((..(((((((((((......)))..)))))))))))))....)))))).))))
+>mmu-mir-184 Mus musculus miR-184 stem-loop
+CCUUUCCUUAUCACUUUUCCAGCCAGCUUUGUGACUCUAAGUGUUGGACGGAGAACUGAUAAGGGUAGG
+(((.(((((((((.((((((..(((((((((......)))).)))))..)))))).))))))))).)))
+>mmu-mir-185 Mus musculus miR-185 stem-loop
+AGGGAUUGGAGAGAAAGGCAGUUCCUGAUGGUCCCCUCCCAGGGGCUGGCUUUCCUCUGGUCCUU
+((((((..(((.(((((.(((((((((..((......))))))))))).))))))))..))))))
+>mmu-mir-186 Mus musculus miR-186 stem-loop
+ACUUUCCAAAGAAUUCUCCUUUUGGGCUUUCUCAUUUUAUUUUAAGCCCUAAGGUGAAUUUUUUGGGAAGU
+((((((((((((((((.((((..((((((..............)))))).)))).))))))))))))))))
+>mmu-mir-187 Mus musculus miR-187 stem-loop
+UCAGGCUACAACACAGGACCCGGGCGCUGCUCUGACCCCUCGUGUCUUGUGUUGCAGCCGG
+...((((.(((((((((((.((((.((......).).)).)).))))))))))).))))..
+>mmu-mir-188 Mus musculus miR-188 stem-loop
+UCUCACAUCCCUUGCAUGGUGGAGGGUGAGCUCUCUGAAAACCCCUCCCACAUGCAGGGUUUGCAGGA
+(((..((..(((((((((..((((((....(.....).....))))))..)))))))))..))..)))
+>mmu-mir-24-1 Mus musculus miR-24-1 stem-loop
+CUCCGGUGCCUACUGAGCUGAUAUCAGUUCUCAUUUCACACACUGGCUCAGUUCAGCAGGAACAGGAG
+((((.((.(((.(((((((((..(((((.............))))).))))))))).))).)).))))
+>mmu-mir-190 Mus musculus miR-190 stem-loop
+CUGUGUGAUAUGUUUGAUAUAUUAGGUUGUUAUUUAAUCCAACUAUAUAUCAAGCAUAUUCCUACAG
+(((((..(((((((((((((((..(((((..........))))))))))))))))))))..).))))
+>mmu-mir-191 Mus musculus miR-191 stem-loop
+AGCGGGCAACGGAAUCCCAAAAGCAGCUGUUGUCUCCAGAGCAUUCCAGCUGCACUUGGAUUUCGUUCCCUGCU
+((((((.((((((((((.((..(((((((..((((....)).))..)))))))..)))))))))))).))))))
+>mmu-mir-193 Mus musculus miR-193 stem-loop
+GAGAGCUGGGUCUUUGCGGGCAAGAUGAGAGUGUCAGUUCAACUGGCCUACAAAGUCCCAGUCCUC
+(((..(((((.(((((..(((.((.((((........)))).)).)))..))))).)))))..)))
+>mmu-mir-194-1 Mus musculus miR-194-1 stem-loop
+AUCGGGUGUAACAGCAACUCCAUGUGGACUGUGCUCGGAUUCCAGUGGAGCUGCUGUUACUUCUGAU
+((((((.(((((((((.((((((.(((((((....)))..)))))))))).))))))))).))))))
+>mmu-mir-195 Mus musculus miR-195 stem-loop
+UAGCAGCACAGAAAUAUUGGCAUGGGGAAGUGAGUCUGCCAAUAUUGGCUGUGCUGCU
+.((((((((((.((((((((((.((.........))))))))))))..))))))))))
+>mmu-mir-199a-1 Mus musculus miR-199a-1 stem-loop
+GCCAUCCCAGUGUUCAGACUACCUGUUCAGGAGGCUGGGACAUGUACAGUAGUCUGCACAUUGGUUAGGC
+(((...(((((((.((((((((.(((((((....)))).......))))))))))).)))))))...)))
+>mmu-mir-200b Mus musculus miR-200b stem-loop
+GCCGUGGCCAUCUUACUGGGCAGCAUUGGAUAGUGUCUGAUCUCUAAUACUGCCUGGUAAUGAUGACGGC
+(((((...((((((((..(((((.((((((.(........).)))))).)))))..)))).)))))))))
+>mmu-mir-201 Mus musculus miR-201 stem-loop
+UACCUUACUCAGUAAGGCAUUGUUCUUCUAUAUUAAUAAAUGAACAGUGCCUUUCUGUGUAGGGUA
+((((((((.(((.((((((((((((...(((....)))...)))))))))))).))).))))))))
+>mmu-mir-202 Mus musculus miR-202 stem-loop
+GUUCCUUUUUCCUAUGCAUAUACUUCUUUGUGGAUCUGGUCUAAAGAGGUAUAGCGCAUGGGAAGAUGGAGC
+(((((.(((((((((((.((((((((((..(((((...)))))))))))))))..))))))))))).)))))
+>mmu-mir-203 Mus musculus miR-203 stem-loop
+GCCUGGUCCAGUGGUUCUUGACAGUUCAACAGUUCUGUAGCACAAUUGUGAAAUGUUUAGGACCACUAGACCCGGC
+(((.((((.(((((((((.((((.((((.(((((.((...)).))))))))).)))).))))))))).)))).)))
+>mmu-mir-204 Mus musculus miR-204 stem-loop
+UGGACUUCCCUUUGUCAUCCUAUGCCUGAGAAUAUAUGAAGGAGGCUGGGAAGGCAAAGGGACGUUCA
+.((((.((((((((((.(((((.((((...............))))))))).)))))))))).)))).
+>mmu-mir-205 Mus musculus miR-205 stem-loop
+CUCUUGUCCUUCAUUCCACCGGAGUCUGUCUUAUGCCAACCAGAUUUCAGUGGAGUGAAGCUCAGGAG
+((((((..(((((((((((.((((((((............)))))))).)))))))))))..))))))
+>mmu-mir-206 Mus musculus miR-206 stem-loop
+CCAGGCCACAUGCUUCUUUAUAUCCUCAUAGAUAUCUCAGCACUAUGGAAUGUAAGGAAGUGUGUGGUUUUGG
+(((((((((((((((((((((((.(.(((((...........)))))).)))))))))))))))))).)))))
+>mmu-mir-207 Mus musculus miR-207 stem-loop
+AAGGCAGGGGUGAGGGGCUGCGGGAGGAGCCGGGCGGAGGCUGCGGCUUGCGCUUCUCCUGGCUCUCCUCCCUCUCUUU
+((((.(((((.((((((..((((((((((((((((.(......).))))).))))))))).)).)))))))))))))))
+>mmu-mir-122a Mus musculus miR-122a stem-loop
+AGCUGUGGAGUGUGACAAUGGUGUUUGUGUCCAAACCAUCAAACGCCAUUAUCACACUAAAUAGCU
+((((((..(((((((.(((((((((((((.......)).))))))))))).)))))))..))))))
+>mmu-mir-143 Mus musculus miR-143 stem-loop
+CCUGAGGUGCAGUGCUGCAUCUCUGGUCAGUUGGGAGUCUGAGAUGAAGCACUGUAGCUCAGG
+((((((.(((((((((.((((((.((((......)).)).)))))).))))))))).))))))
+>mmu-mir-30e Mus musculus miR-30e stem-loop
+CUGUAAACAUCCUUGACUGGAAGCUGUAAGGUGUUGAGAGGAGCUUUCAGUCGGAUGUUUACAG
+((((((((((((..(((((((((((.(............).)))))))))))))))))))))))
+>mmu-mir-290 Mus musculus miR-290 stem-loop
+CUCAUCUUGCGGUACUCAAACUAUGGGGGCACUUUUUUUUUUCUUUAAAAAGUGCCGCCUAGUUUUAAGCCCCGCCGGUUGAG
+((((.((.((((..((.((((((.((.((((((((((.........)))))))))).))))))))..))..)))).)).))))
+>mmu-mir-291 Mus musculus miR-291 stem-loop
+CCUAUGUAGCGGCCAUCAAAGUGGAGGCCCUCUCUUGAGCCUGAAUGAGAAAGUGCUUCCACUUUGUGUGCCACUGCAUGGG
+(((((((((.(((((.((((((((((((.((.((((..........)))).)).)))))))))))))).))).)))))))))
+>mmu-mir-292 Mus musculus miR-292 stem-loop
+CAGCCUGUGAUACUCAAACUGGGGGCUCUUUUGGAUUUUCAUCGGAAGAAAAGUGCCGCCAGGUUUUGAGUGUCACCGGUUG
+(((((.(((((((((((.((((.(((.((((....(((((....))))))))).))).))))...))))))))))).)))))
+>mmu-mir-293 Mus musculus miR-293 stem-loop
+UUCAAUCUGUGGUACUCAAACUGUGUGACAUUUUGUUCUUUGUAAGAAGUGCCGCAGAGUUUGUAGUGUUGCCGAUUGAG
+.((((((.((..((((((((((.((((.((((((...........)))))).)))).)))))).))))..)).)))))).
+>mmu-mir-294 Mus musculus miR-294 stem-loop
+UUCCAUAUAGCCAUACUCAAAAUGGAGGCCCUAUCUAAGCUUUUAAGUGGAAAGUGCUUCCCUUUUGUGUGUUGCCAUGUGGAG
+.(((((((.((.((((.(((((.((((((.((.(((..(((....)))))).)).)))))).))))).)))).)).))))))).
+>mmu-mir-295 Mus musculus miR-295 stem-loop
+GGUGAGACUCAAAUGUGGGGCACACUUCUGGACUGUACAUAGAAAGUGCUACUACUUUUGAGUCUCUCC
+((.((((((((((.(((((((((..(((((.........))))).))))).)))).)))))))))).))
+>mmu-mir-296 Mus musculus miR-296 stem-loop
+GGGCCUUUCUGGAGGGCCCCCCCUCAAUCCUGUUGUGCUCGCUUCAGAGGGUUGGGUGGAGGCUCUCCUGAAGGUGUCC
+(((((((((.((((((((.((.(((((((((.(((.(....)..)))))))))))).)).)))))))).))))).))))
+>mmu-mir-297-1 Mus musculus miR-297-1 stem-loop
+AUAUGUAUGUAUGUAUGUAUGUGUGCAUGUGCAUGUGCAUGUAUGCAUAUUGUAUGUAUAUAUUAUGCAUACAUGU
+(((((((((((((.(((((((..((((((((((((......)))))))).))))..))))))))))))))))))))
+>mmu-mir-297-2 Mus musculus miR-297-2 stem-loop
+UGUAUGUGCAUGCAUAUGUGCUCAUGUGUGUGUACAUGUAUGUGUGCAUGUGCAUGUAUAUAUG
+.(((((((((((((((((..(.((((..((....))..)))).)..))))))))))))))))).
+>mmu-mir-298 Mus musculus miR-298 stem-loop
+CCAGGCCUUUGGCAGAGGAGGGCUGUUCUUCCCUUGAGUUUUAUGACUGGGAGGAACUAGCCUUCUCUCAGCUUAGGAGUGG
+(((..(((..(((.(((((((((((((((((((...((((....))))))))))))).))))))).))).))).)))..)))
+>mmu-mir-299 Mus musculus miR-299 stem-loop
+AAGAAAUGGUUUACCGUCCCACAUACAUUUUGAGUAUGUAUGUGGGACGGUAAACCGCUUCUU
+(((((.((((((((((((((((((((((.......)))))))))))))))))))))).)))))
+>mmu-mir-300 Mus musculus miR-300 stem-loop
+GCUACUUGAAGAGAGGUUAUCCUUUGUGUGUUUGCUUUACGCGAAAUGAAUAUGCAAGGGCAAGCUCUCUUCGAGGAGC
+(((.(((((((((((.((..(((((((((((((..(((....)))..))))))))))))).)).))))))))))).)))
+>mmu-mir-301 Mus musculus miR-301 stem-loop
+CCUGCUAACGGCUGCUCUGACUUUAUUGCACUACUGUACUUUACAGCGAGCAGUGCAAUAGUAUUGUCAAAGCAUCCGCGAGCAGG
+((((((..(((.((((.((((.((((((((((.(((((...))))).....))))))))))....)))).)))).)))..))))))
+>mmu-mir-302 Mus musculus miR-302 stem-loop
+CCACCACUUAAACGUGGUUGUACUUGCUUUAGACCUAAGAAAGUAAGUGCUUCCAUGUUUUGGUGAUGG
+(((.((((.((((((((..(((((((((((.........)))))))))))..)))))))).)))).)))
+>mmu-mir-34c Mus musculus miR-34c stem-loop
+AGUCUAGUUACUAGGCAGUGUAGUUAGCUGAUUGCUAAUAGUACCAAUCACUAACCACACAGCCAGGUAAAAAGACU
+(((((..(((((.(((.((((.(((((.((((((.((....)).))))))))))).)))).))).)))))..)))))
+>mmu-mir-34b Mus musculus miR-34b stem-loop
+GUGCUCGGUUUGUAGGCAGUGUAAUUAGCUGAUUGUAGUGCGGUGCUGACAAUCACUAACUCCACUGCCAUCAAAACAAGGCAC
+(((((..((((...(((((((...((((.((((((((((.....))).)))))))))))...)))))))....))))..)))))
+>mmu-let-7d Mus musculus let-7d stem-loop
+AAUGGGUUCCUAGGAAGAGGUAGUAGGUUGCAUAGUUUUAGGGCAGAGAUUUUGCCCACAAGGAGUUAACUAUACGACCUGCUGCCUUUCUUAGGGCCUUAUU
+((((((..(((((((.((((((((((((((.((((((...(((((((...)))))))..........)))))).)))))))))))))))))))))..))))))
+>mmu-mir-106a Mus musculus miR-106a stem-loop
+AUGUCAAAGUGCUAACAGUGCAGGUAGCUUUUUGAGUUCUACUGCAGUGCCAGCACUUCUUACAU
+((((..(((((((..((.(((((..(((((...)))))...))))).))..)))))))...))))
+>mmu-mir-106b Mus musculus miR-106b stem-loop
+CCUGCUGGGACUAAAGUGCUGACAGUGCAGAUAGUGGUCCUCUCUGUGCUACCGCACUGUGGGUACUUGCUGCUCCAGCAGG
+((((((((..(..(((((((.(((((((.....((((..(.....)..)))).))))))).)))))))...)..))))))))
+>mmu-mir-130b Mus musculus miR-130b stem-loop
+GGCUUGUUGGACACUCUUUCCCUGUUGCACUACUGUGGGCCUCUGGGAAGCAGUGCAAUGAUGAAAGGGCAUCUGUCGGGCC
+((((((.((((..(((((((..(((((((((.((.....((....)).)).)))))))))..)))))))..)))).))))))
+>mmu-mir-19b-2 Mus musculus miR-19b-2 stem-loop
+ACUUACGAUUAGUUUUGCAGAUUUGCAGUUCAGCGUAUAUGUGAAUAUAUGGCUGUGCAAAUCCAUGCAAAACUGAUUGUGGGA
+.((((((((((((((((((((((((((...((((((((((....)))))).))))))))))))..)))))))))))))))))).
+>mmu-mir-30c-1 Mus musculus miR-30c-1 stem-loop
+ACCAUGUUGUAGUGUGUGUAAACAUCCUACACUCUCAGCUGUGAGCUCAAGGUGGCUGGGAGAGGGUUGUUUACUCCUUCUGCCAUGGA
+.(((((..((((...(.(((((((.(((...(((((((((.((....))....))))))))).))).))))))).)...))))))))).
+>mmu-mir-30c-2 Mus musculus miR-30c-2 stem-loop
+GAGUGACAGAUAUUGUAAACAUCCUACACUCUCAGCUGUGAAAAGUAAGAAAGCUGGGAGAAGGCUGUUUACUCUCUCUGCCUU
+(((.(.((((....(((((((.(((...(((((((((..............))))))))).))).)))))))....))))))))
+>mmu-mir-30d Mus musculus miR-30d stem-loop
+AAGUCUGUGUCUGUAAACAUCCCCGACUGGAAGCUGUAAGCCACAGCCAAGCUUUCAGUCAGAUGUUUGCUGCUACUGGCUC
+.((((.(((.(.(((((((((...(((((((((((....((....))..))))))))))).))))))))).).))).)))).
+>mmu-mir-148a Mus musculus miR-148a stem-loop
+AGCCAGUUUGGUCUUUUGAGACAAAGUUCUGAGACACUCCGACUCUGAGUAUGAUAGAAGUCAGUGCACUACAGAACUUUGUCUCUAGAGGCUGUGGUC
+.((((...((((((((.((((((((((((((((.((((..(((((((.......))).))))))))..)).)))))))))))))).)))))))))))).
+>mmu-mir-192 Mus musculus miR-192 stem-loop
+CGUGCACAGGGCUCUGACCUAUGAAUUGACAGCCAGUACUCUUUUCUCUCCUCUGGCUGCCAAUUCCAUAGGUCACAGGUAUGUUCACC
+.(((.(((.(.((.((((((((((((((.(((((((................))))))).))))).))))))))).)).).))).))).
+>mmu-mir-196a-1 Mus musculus miR-196a-1 stem-loop
+UGAGCCGGGACUGUUGAGUGAAGUAGGUAGUUUCAUGUUGUUGGGCCUGGCUUUCUGAACACAACGACAUCAAACCACCUGAUUCAUGGCAGUUACUGCUUC
+.((((.(..(((((...(((((.(((((.((((.((((((((((..(.........)..).))))))))).)))).))))).))))).)))))..).)))).
+>mmu-mir-196a-2 Mus musculus miR-196a-2 stem-loop
+AGCUGAUCUGUGGCUUAGGUAGUUUCAUGUUGUUGGGAUUGAGUUUUGAACUCGGCAACAAGAAACUGCCUGAGUUACAUCAGUC
+.(((((..((((((((((((((((((.((((((((((.(..(...)..).)))))))))).))))))))))))))))))))))).
+>mmu-mir-200a Mus musculus miR-200a stem-loop
+CUGGGCCUCUGUGGGCAUCUUACCGGACAGUGCUGGAUUUCUUGGCUUGACUCUAACACUGUCUGGUAACGAUGUUCAAAGGUGACCCAC
+.(((((.(((.(((((((((((((((((((((.((((..((.......)).)))).))))))))))))).)))))))).))).).)))).
+>mmu-mir-208 Mus musculus miR-208 stem-loop
+UUCCUUUGACGGGUGAGCUUUUGGCCCGGGUUAUACCUGACACUCACGUAUAAGACGAGCAAAAAGCUUGUUGGUCAGAGGAG
+.(((((((((.((..(((((((.((.((..((((((.((.....)).))))))..)).)).)))))))..)).))))))))).
+>mmu-let-7a-2 Mus musculus let-7a-2 stem-loop
+CUGCAUGUUCCCAGGUUGAGGUAGUAGGUUGUAUAGUUUAGAGUUACAUCAAGGGAGAUAACUGUACAGCCUCCUAGCUUUCCUUGGGACUUGCAC
+.((((.((.((((((..(((.(((.(((((((((((((.........(((......)))))))))))))))).))).)))..)))))))).)))).
+>mmu-let-7b Mus musculus let-7b stem-loop
+GCAGGGUGAGGUAGUAGGUUGUGUGGUUUCAGGGCAGUGAUGUUGCCCCUCCGAAGAUAACUAUACAACCUACUGCCUUCCCUGA
+.(((((.(((((((((((((((((((((((.((((((.....))))))....))....)))))))))))))))))))))))))).
+>mmu-let-7c-1 Mus musculus let-7c-1 stem-loop
+UGUGUGCAUCCGGGUUGAGGUAGUAGGUUGUAUGGUUUAGAGUUACACCCUGGGAGUUAACUGUACAACCUUCUAGCUUUCCUUGGAGCACACU
+.((((((.((((((..(((.(((.(((((((((((((..((.(..(.....)..).))))))))))))))).))).)))..)))))))))))).
+>mmu-let-7e Mus musculus let-7e stem-loop
+CGCGCCCCCCGGGCUGAGGUAGGAGGUUGUAUAGUUGAGGAAGACACCCGAGGAGAUCACUAUACGGCCUCCUAGCUUUCCCCAGGCUGCGCC
+.((((..((.(((..(((.((((((((((((((((.((......(......)....)))))))))))))))))).)))..))).))..)))).
+>mmu-let-7f-1 Mus musculus let-7f-1 stem-loop
+AUCAGAGUGAGGUAGUAGAUUGUAUAGUUGUGGGGUAGUGAUUUUACCCUGUUUAGGAGAUAACUAUACAAUCUAUUGCCUUCCCUGAG
+.((((.(..(((((((((((((((((((((((((((((.....))))))).........))))))))))))))))))))))..))))).
+>mmu-mir-15a Mus musculus miR-15a stem-loop
+CCCUUGGAGUAAAGUAGCAGCACAUAAUGGUUUGUGGAUGUUGAAAAGGUGCAGGCCAUACUGUGCUGCCUCAAAAUACAAGGA
+.(((((.......(..((((((((..((((((((((..(.......)..))))))))))..))))))))..)......))))).
+>mmu-mir-16-1 Mus musculus miR-16-1 stem-loop
+AUGUCAGCGGUGCCUUAGCAGCACGUAAAUAUUGGCGUUAAGAUUCUGAAAUUACCUCCAGUAUUGACUGUGCUGCUGAAGUAAGGUUGGCAA
+.(((((((..(((.((((((((((((.((((((((.(.(((..........))).).)))))))).)).)))))))))).)))..))))))).
+>mmu-mir-16-2 Mus musculus miR-16-2 stem-loop
+CAUGCUUGUUCCACUCUAGCAGCACGUAAAUAUUGGCGUAGUGAAAUAAAUAUUAAACACCAAUAUUAUUGUGCUGCUUUAGUGUGACAGGGAUA
+.((.(((((..((((..(((((((((..((((((((.((..(((........))).)).))))))))..)))))))))..))))..))))).)).
+>mmu-mir-18 Mus musculus miR-18 stem-loop
+UGCGUGCUUUUUGUUCUAAGGUGCAUCUAGUGCAGAUAGUGAAGUAGACUAGCAUCUACUGCCCUAAGUGCUCCUUCUGGCAUAAGAAGUUAUGUC
+.(((((((((((((.((((((.(((..(((.((((.(((((.((....))..)).))))))).)))..))).)))..))).)))))))).))))).
+>mmu-mir-20 Mus musculus miR-20 stem-loop
+GUGUGAUGUGACAGCUUCUGUAGCACUAAAGUGCUUAUAGUGCAGGUAGUGUGUAGCCAUCUACUGCAUUACGAGCACUUAAAGUACUGCCAGCUGUAGAACUCCAG
+.((.((.((.((((((...((((.(((.(((((((..((((((((.(((.(((....))))))))))))))..)))))))..))).)))).))))))...)))))).
+>mmu-mir-21 Mus musculus miR-21 stem-loop
+UGUACCACCUUGUCGGAUAGCUUAUCAGACUGAUGUUGACUGUUGAAUCUCAUGGCAACAGCAGUCGAUGGGCUGUCUGACAUUUUGGUAUC
+.((((((...((((((((((((((((.(((((.(((((.((((.(.....)))))))))).)))))))))))))))))))))...)))))).
+>mmu-mir-22 Mus musculus miR-22 stem-loop
+ACCUGGCUGAGCCGCAGUAGUUCUUCAGUGGCAAGCUUUAUGUCCUGACCCAGCUAAAGCUGCCAGUUGAAGAACUGUUGCCCUCUGCCCCUGGC
+.((.(((.(((..((((((((((((((((((((.((((((.((.........))))))))))))).))))))))))))))).))).)))...)).
+>mmu-mir-23a Mus musculus miR-23a stem-loop
+CGGACGGCUGGGGUUCCUGGGGAUGGGAUUUGAUGCCAGUCACAAAUCACAUUGCCAGGGAUUUCCAACUGACCC
+.((.(((.((((((((((((.((((.((((((.((.....)))))))).)))).))))))).))))).))).)).
+>mmu-mir-24-2 Mus musculus miR-24-2 stem-loop
+GCCUCUCUCCGGGCUCCGCCUCCCGUGCCUACUGAGCUGAAACAGUUGAUUCCAGUGCACUGGCUCAGUUCAGCAGGAACAGGAGUCCAGCCCCCUAGGAGCUGGCA
+(((...(((((((((....((((.((.(((.(((((((((..((((..((....))..))))..))))))))).))).)).))))...)))))....))))..))).
+>mmu-mir-26a-1 Mus musculus miR-26a-1 stem-loop
+AAGGCCGUGGCCUCGUUCAAGUAAUCCAGGAUAGGCUGUGCAGGUCCCAAGGGGCCUAUUCUUGGUUACUUGCACGGGGACGCGGGCCUG
+.((((((((.((((((.(((((((((.((((((((((.(...(....)..).)))))))))).))))))))).)))))).))).))))).
+>mmu-mir-26b Mus musculus miR-26b stem-loop
+UGCCCGGGACCCAGUUCAAGUAAUUCAGGAUAGGUUGUGGUGCUGACCAGCCUGUUCUCCAUUACUUGGCUCGGGGGCCGGUGCC
+.((((((..((((((.((((((((..(((((((((..((((....)))))))))))))..))))))))))).)))..)))).)).
+>mmu-mir-29a Mus musculus miR-29a stem-loop
+ACCCCUUAGAGGAUGACUGAUUUCUUUUGGUGUUCAGAGUCAAUAGAAUUUUCUAGCACCAUCUGAAAUCGGUUAUAAUGAUUGGGGA
+.((((.......((((((((((((...(((((((.((((...........)))))))))))...)))))))))))).......)))).
+>mmu-mir-29c Mus musculus miR-29c stem-loop
+AUCUCUUACACAGGCUGACCGAUUUCUCCUGGUGUUCAGAGUCUGUUUUUGUCUAGCACCAUUUGAAAUCGGUUAUGAUGUAGGGGGA
+.(((((((((((...(((((((((((...((((((((((((.....)))))...)))))))...))))))))))))).))))))))).
+>mmu-mir-27a Mus musculus miR-27a stem-loop
+UGGCCUGAGGAGCAGGGCUUAGCUGCUUGUGAGCAAGGUCCACAGCAAAGUCGUGUUCACAGUGGCUAAGUUCCGCCCCCUGGACCC
+.((((.(.((.((.(((((((((..((.(((((((.((............)).)))))))))..))))))))).)).))).)).)).
+>mmu-mir-31 Mus musculus miR-31 stem-loop
+UGCUCCUGUAACUCGGAACUGGAGAGGAGGCAAGAUGCUGGCAUAGCUGUUGAACUGAGAACCUGCUAUGCCAACAUAUUGCCAUCUUUCCUGUCUGACAGCAGCU
+.(((.(((....(((((...((((((..(((((.(((.(((((((((.(((........)))..))))))))).))).)))))..))))))..)))))))).))).
+>mmu-mir-92-2 Mus musculus miR-92-2 stem-loop
+UGCCCAUUCAUCCACAGGUGGGGAUUGGUGGCAUUACUUGUGUUAGAUAUAAAGUAUUGCACUUGUCCCGGCCUGAGGAAGAAAGAGGGUU
+.((((.(((.(((.(((((.(((((.((((.((.(((((((((...)))).))))).)))))).))))).))))).))).)))...)))).
+>mmu-mir-93 Mus musculus miR-93 stem-loop
+AGUCAUGGGGGCUCCAAAGUGCUGUUCGUGCAGGUAGUGUAAUUACCUGACCUACUGCUGAGCUAGCACUUCCCGAGCCCCCAGGACA
+.(((.(((((((((..((((((((((((.((((.(((.((.........)))))))))))))).)))))))...))))))))).))).
+>mmu-mir-96 Mus musculus miR-96 stem-loop
+CCAGUACCAUCUGCUUGGCCGAUUUUGGCACUAGCACAUUUUUGCUUGUGUCUCUCCGCUGUGAGCAAUCAUGUGUAGUGCCAAUAUGGGAAAAGCGGGCUGCUGC
+.(((((...(((((((..((.((.(((((((((.(((((..(((((..(((......)).)..)))))..)))))))))))))).)).))..))))))).))))).
+>mmu-mir-34a Mus musculus miR-34a stem-loop
+CCAGCUGUGAGUAAUUCUUUGGCAGUGUCUUAGCUGGUUGUUGUGAGUAUUAGCUAAGGAAGCAAUCAGCAAGUAUACUGCCCUAGAAGUGCUGCACAUUGU
+.(((.((((((((.((((..(((((((((((.((((((((((...(((....))).....))))))))))))).))))))))..)))).)))).))))))).
+>mmu-mir-129-2 Mus musculus miR-129-2 stem-loop
+UGCCUUUCGCGAAUCUUUUUGCGGUCUGGGCUUGCUGUACAUAACUCAAUAGCCGGAAGCCCUUACCCCAAAAAGCAUUCGCGGAGGGCG
+.((((((((((((((((((((.(((..(((((((((((..........)))))...))))))..))).))))))).))))))))))))).
+>mmu-mir-98 Mus musculus miR-98 stem-loop
+GUGAGGUAGUAAGUUGUAUUGUUGUGGGGUAGGGAUUUUAGGCCCCAGUAAGAAGAUAACUAUACAACUUACUACUUUCC
+..(((((((((((((((((.((((((((((...........)))))).........)))).)))))))))))))))))..
+>mmu-mir-103-1 Mus musculus miR-103-1 stem-loop
+UUCUUACUGCCCUCGGCUUCUUUACAGUGCUGCCUUGUUGCAUAUGGAUCAAGCAGCAUUGUACAGGGCUAUGAAGGCAUUGAGAC
+.(((((.((((.((((((.((.(((((((((((.(((.(.(....).).)))))))))))))).))))))..)).)))).))))).
+>mmu-mir-103-2 Mus musculus miR-103-2 stem-loop
+GUCUUCGUGCUUUCAGCUUCUUUACAGUGCUGCCUUGUAGCAUUCAGGUCAAGCAGCAUUGUACAGGGCUAUGAAAGAACCAAGAA
+.((((.((.(((((((((.((.(((((((((((((((.......))))....))))))))))).)))))..)))))).)).)))).
+>mmu-mir-322 Mus musculus miR-322 stem-loop
+CCUCGUUGACUCCGAAGGGCUGCAGCAGCAAUUCAUGUUUUGGAGUAUUGCCAAGGUUCAAAACAUGAAGCGCUGCAACACCCCUUCGUGGGGAA
+.........((((((((((.((..(((((..(((((((((((((.(........).)))))))))))))..)))))..)).))))))).)))...
+>mmu-mir-323 Mus musculus miR-323 stem-loop
+UUGGUACUUGGAGAGAGGUGGUCCGUGGCGCGUUCGCUUCAUUUAUGGCGCACAUUACACGGUCGACCUCUUUGCGGUAUCUAAUC
+..((((((.(.((((((((.(.(((((....((.((((........)))).))....))))).).)))))))).))))))).....
+>mmu-mir-324 Mus musculus miR-324 stem-loop
+AACUGACUAUGCCUCCUCGCAUCCCCUAGGGCAUUGGUGUAAAGCUGGAGACCCACUGCCCCAGGUGCUGCUGGGGGUUGUAGUCUGAC
+....((((((..(((((.(((.(.(((.(((((.(((.((..........))))).))))).))).).))).)))))..))))))....
+>mmu-mir-325 Mus musculus miR-325 stem-loop
+AUAUAGUGCUUGGUUCCUAGUAGGUGCUCAGUAAGUGUUUGUGACAUAAUUCGUUUAUUGAGCACCUCCUAUCAAUCAAGCACUGUGCUAGGCUCUGG
+.((((((((((((((..(((.((((((((((((((((..(........)..)))))))))))))))).)))..))))))))))))))...........
+>mmu-mir-326 Mus musculus miR-326 stem-loop
+CUCAUCUGUCUGUUGGGCUGGGGGCAGGGCCUUUGUGAAGGCGGGUUAUGCUCAGAUCGCCUCUGGGCCCUUCCUCCAGUCCCGAGGCAGAUUUA
+...((((((((...((((((((((.(((((((....((.(((((............))))))).))))))).))))))))))..))))))))...
+>mmu-mir-328 Mus musculus miR-328 stem-loop
+CUGUCUCGGAGCCUGGGGCAGGGGGGCAGGAGGGGCUCAGGGAGAAAGUAUCUACAGCCCCUGGCCCUCUCUGCCCUUCCGUCCCCUGUCCCCAAGU
+.......((..(..(((((.(((((((((..(((((.(((((.(...((....))..)))))))))))..))))))))).)))))..)..)).....
+>mmu-mir-329 Mus musculus miR-329 stem-loop
+UGUUCGCUUCUGGUACCGGAAGAGAGGUUUUCUGGGUCUCUGUUUCUUUGAUGAGAAUGAAACACACCCAGCUAACCUUUUUUUCAGUAUCAAAUCC
+..........((((((.((((((((((((..((((((...(((((((((.....))).)))))).))))))..)))))))))))).)))))).....
+>mmu-mir-330 Mus musculus miR-330 stem-loop
+GACCCUUUGGCGAUCUCUGCCUCUCUGGGCCUGUGUCUUAGGCUCUUCAAGAUCCAACGAGCAAAGCACAGGGCCUGCAGAGAGGUAGCGCUCUGCUC
+........(((((.(.(((((((((((((((((((.(((..((((.............)))).))))))).))))..))))))))))).).)).))).
+>mmu-mir-331 Mus musculus miR-331 stem-loop
+GAGUCUGGUUUUGUUUGGGUUUGUUCUAGGUAUGGUCCCAGGGAUCCCAGAUCAAACCAGGCCCCUGGGCCUAUCCUAGAACCAACCUAAACCCGU
+......((....(((((((((.((((((((.((((.(((((((..(.............)..))))))).)))))))))))).)))))))))))..
+>mmu-mir-337 Mus musculus miR-337 stem-loop
+CAGUGUAGUGAGAAGUUGGGGGGUGGGAACGGCGUCAUGCAGGAGUUGAUUGCACAGCCAUUCAGCUCCUAUAUGAUGCCUUUCUUCACCCCCUUCA
+..............(..((((((((((((.(((((((((.(((((((((.((......)).))))))))).))))))))).))).))))))))).).
+>mmu-mir-148b Mus musculus miR-148b stem-loop
+CAGGCACCCUUAGCAUUUGAGGUGAAGUUCUGUUAUACACUCAGGCUGUGGCUCUGAAAGUCAGUGCAUCACAGAACUUUGUCUCGAAAGCUUUCUA
+...........(((.(((((((..(((((((((.((.(((((((((....)).))))......))).)).)))))))))..))))))).))).....
+>mmu-mir-338 Mus musculus miR-338 stem-loop
+CAACGCUGCACAGGCCGUCCUCCCCAACAAUAUCCUGGUGCUGAGUGGGUGCACAGUGACUCCAGCAUCAGUGAUUUUGUUGAAGAGGGCAGCUGCCA
+............(((.((((((..((((((.(((((((((((((((.(.(....).).))).))))))))).))).))))))..)))))).)))....
+>mmu-mir-339 Mus musculus miR-339 stem-loop
+ACGGGGUGGCCACUAUCCCUGUCCUCCAGGAGCUCACGUAUGCCUGCCUGUGAGCGCCUCGGCGACAGAGCCGGUGUCCACCCCUGCACUGUCCAC
+..(((((((.((((..(.(((((..(((((.(((((((((....)))..)))))).))).)).))))).)..)))).)))))))............
+>mmu-mir-340 Mus musculus miR-340 stem-loop
+CAAUUGUACUUGGUGUGAUUAUAAAGCAAUGAGACUGAUUGUCAUAUGUCGUUUGUGGGAUCCGUCUCAGUUACUUUAUAGCCAUACCUGGUAUCUUA
+.....(((((.((((((..(((((((...((((((.((((.(((((.......))))))))).))))))....)))))))..)))))).)))))....
+>mmu-mir-341 Mus musculus miR-341 stem-loop
+AAAAUGAUGAUGUCAGUUGGCCGGUCGGCCGAUCGCUCGGUCUGUCAGUCAGUCGGUCGGUCGAUCGGUCGGUCGGUCAGUCGGCUUCCUGUCUUC
+.....(((((.(((..(((((((..((((((((((..(((.(((.(.....).))))))..))))))))))..)))))))..))).))..)))...
+>mmu-mir-342 Mus musculus miR-342 stem-loop
+GAAAAUGGGCUCAAGGUGAGGGGUGCUAUCUGUGAUUGAGGGACAUGGUCAAUGGAAUUGUCUCACACAGAAAUCGCACCCGUCACCUUGGCCUGCUGA
+......((((.((((((((.((((((..((((((.....((((((...((....))..)))))).))))))....)))))).)))))))))))).....
+>mmu-mir-344 Mus musculus miR-344 stem-loop
+CUGCAGCCAGGGUUUUUACCAGUCAGGCUCCUGGCUAGAUUCCAGGUACCAGCUGGUACCUGAUCUAGCCAAAGCCUGACUGUAAGCCCUGAACA
+.......((((((((....((((((((((..(((((((((..((((((((....))))))))))))))))).)))))))))).))))))))....
+>mmu-mir-345 Mus musculus miR-345 stem-loop
+ACCCAAGUCCAGGCCUGCUGACCCCUAGUCCAGUGCUUGUGGUGGCUACUGGGCCCUGAACUAGGGGUCUGGAGACCUGGGUUUGAUCUCCACAGG
+...(((..(((((.((.(.((((((((((.(((.((((((((...)))).)))).))).)))))))))).).)).)))))..)))...........
+>mmu-mir-346 Mus musculus miR-346 stem-loop
+UCUGUGUUGGGCGUCUGUCUGCCCGAGUGCCUGCCUCUCUGUUGCUCUGAAGGAGGCAGGGGCUGGGCCUGCAGCUGCCUGGGCAGAGCUGCUCCUUC
+(((((.(..((((.((((..((((.(((.((((((((.((..........)))))))))).)))))))..)))).))))..))))))...........
+>mmu-mir-350 Mus musculus miR-350 stem-loop
+AGAUGCCUUGCUCCUACAAGAGUAAAGUGCAUGCGCUUUGGGACAGUGAGGAAAAUAAUGUUCACAAAGCCCAUACACUUUCACCCUUUAGGAGAGUUG
+..........((((((.(((.((((((((.(((.(((((((((((.............))))).)))))).))).)))))).)).))))))))).....
+>mmu-mir-351 Mus musculus miR-351 stem-loop
+CAUGGCACCUCCGUUUCCCUGAGGAGCCCUUUGAGCCUGGAGUGAAAAAAAAAAACAGGUCAAGAGGCGCCUGGGAACUGGAGAAGAGUGUUAAACUUC
+..(((((((((((.(((((..(((.(((.(((((.((((................))))))))).))).)))))))).)))))....))))))......
+>mmu-mir-135b Mus musculus miR-135b stem-loop
+CGCUCUGCUGUGGCCUAUGGCUUUUCAUUCCUAUGUGAUUGCUGCUCCGAACUCAUGUAGGGCUAAAAGCCAUGGGCUACAGUGAGGGGCAAGCUCC
+.((((((((((((((((((((((((...((((((((((...(......)...))))))))))..)))))))))))))))))))..))))).......
+>mmu-mir-101b Mus musculus miR-101b stem-loop
+AUCUGAGACUGAACUGCCCUUUUUCGGUUAUCAUGGUACCGAUGCUGUAGCUCUGAAAGGUACAGUACUGUGAUAGCUGAAGAAUGGCGGUGCCAUC
+.........((.((((((.((((((((((((((((((......((((((.((.....)).)))))))))))))))))))))))).))))))..))..
+>mmu-mir-1-2 Mus musculus miR-1-2 stem-loop
+UCAGAGCACAUACUUCUUUAUGUACCCAUAUGAACAUUCAGUGCUAUGGAAUGUAAAGAAGUAUGUAUUUUG
+.(((((.((((((((((((((((..(((((...((.....))..))))).)))))))))))))))).)))))
+>mmu-mir-107 Mus musculus miR-107 stem-loop
+UUCUCUGUGCUUUCAGCUUCUUUACAGUGUUGCCUUGUGGCAUGGAGUUCAAGCAGCAUUGUACAGGGCUAUCAAAGCACAGAGAGC
+(((((((((((((.((((.((.(((((((((((.(((.(((.....))))))))))))))))).))))))...))))))))))))).
+>mmu-mir-10a Mus musculus miR-10a stem-loop
+GACCUGUCUGUCUUCUGUAUAUACCCUGUAGAUCCGAAUUUGUGUAAGGAAUUUUGUGGUCACAAAUUCGUAUCUAGGGGAAUAUGUAGUUGACAUAAACACUCCGCUCA
+....(((.((((..((((((((.((((.(((((.((((((((((................)))))))))).))))))))).))))))))..))))...))).........
+>mmu-mir-17 Mus musculus miR-17 stem-loop
+GUCAGAAUAAUGUCAAAGUGCUUACAGUGCAGGUAGUGAUGUGUGCAUCUACUGCAGUGAGGGCACUUGUAGCAUUAUGCUGAC
+(((((.(((((((..(((((((..((.(((((.....((((....))))..))))).))..)))))))...))))))).)))))
+>mmu-mir-19a Mus musculus miR-19a stem-loop
+GCAGCCCUCUGUUAGUUUUGCAUAGUUGCACUACAAGAAGAAUGUAGUUGUGCAAAUCUAUGCAAAACUGAUGGUGGCCUGC
+((((.((.(((((((((((((((((((((((((((.......))))...))))))..))))))))))))))))).)).))))
+>mmu-mir-25 Mus musculus miR-25 stem-loop
+GGCCAGUGUUGAGAGGCGGAGACUUGGGCAAUUGCUGGACGCUGCCCUGGGCAUUGCACUUGUCUCGGUCUGACAGUGCCGGCC
+((((.(..(((..((((.(((((..(.(((((.(((((.......))..)))))))).)..))))).))))..)))..).))))
+>mmu-mir-28 Mus musculus miR-28 stem-loop
+GGUCCCUACCUUCAAGGAGCUCACAGUCUAUUGAGUUGCCUUUCUGAUUCUCCCACUAGAUUGUGAGCUGCUGGAGGGCAGGCACU
+(((.(((.(((((.((.(((((((((((((..(((((........)))))......))))))))))))).)).))))).))).)))
+>mmu-mir-32 Mus musculus miR-32 stem-loop
+GGAGAUAUUGCACAUUACUAAGUUGCAUGUUGUCACGGCCUCAAUGCAAUUUAGUGUGUGUGAUAUUUUC
+((((((((..(((((.(((((((((((((..((....))..).)))))))))))))))))..))))))))
+>mmu-mir-100 Mus musculus miR-100 stem-loop
+CCUGUUGCCACAAACCCGUAGAUCCGAACUUGUGCUGAUUCUGCACACAAGCUUGUGUCUAUAGGUAUGUGUCUGUUAGG
+((((..(.((((.(((..((((..(((.((((((.((......)))))))).)))..))))..))).)))).)...))))
+>mmu-mir-139 Mus musculus miR-139 stem-loop
+GUGUAUUCUACAGUGCACGUGUCUCCAGUGUGGCUCGGAGGCUGGAGACGCGGCCCUGUUGGAGUAAC
+...((((((((((.((.((((((((((((.(.......).)))))))))))))).))).)))))))..
+>mmu-mir-200c Mus musculus miR-200c stem-loop
+CCCUCGUCUUACCCAGCAGUGUUUGGGUGCUGGUUGGGAGUCUCUAAUACUGCCGGGUAAUGAUGGAGG
+((..((((((((((.((((((((.(((.(((.......)))))).)))))))).)))))).))))..))
+>mmu-mir-210 Mus musculus miR-210 stem-loop
+CCGGGGCAGUCCCUCCAGGCUCAGGACAGCCACUGCCCACCGCACACUGCGUUGCUCCGGACCCACUGUGCGUGUGACAGCGGCUGAUCUGUCCCUGGGCAGCGCGAACC
+..((..(.((..(.(((((..((((.(((((.(((..(((((((((.((.(((......))).)).)))))).))).))).))))).))))..))))))..))..)..))
+>mmu-mir-212 Mus musculus miR-212 stem-loop
+GGGCAGCGCGCCGGCACCUUGGCUCUAGACUGCUUACUGCCCGGGCCGCCUUCAGUAACAGUCUCCAGUCACGGCCACCGACGCCUGGCCC
+((((((.(((.(((..((.(((((..((((((.((((((...((....))..))))))))))))..))))).))...))).))))).))))
+>mmu-mir-213 Mus musculus miR-213 stem-loop
+GGUUGCUUCAGUGAACAUUCAACGCUGUCGGUGAGUUUGGAAUUCAAAUAAAAACCAUCGACCGUUGAUUGUACCCUAUAGCUAACC
+(((((((..((.(.(((.((((((..(((((((.((((.............))))))))))))))))).))).).))..))).))))
+>mmu-mir-214 Mus musculus miR-214 stem-loop
+GGCCUGGCUGGACAGAGUUGUCAUGUGUCUGCCUGUCUACACUUGCUGUGCAGAACAUCCGCUCACCUGUACAGCAGGCACAGACAGGCAGUCACAUGACAACCCAGCCU
+.....((((((.....(((((((((((.((((((((((...((((((((((((.............))))))))))))...)))))))))).))))))))))))))))).
+>mmu-mir-216 Mus musculus miR-216 stem-loop
+UUGGUUUAAUCUCAGCUGGCAACUGUGAGAUGUCCCUAUCAUUCCUCACAGUGGUCUCUGGGAUUAUGCUAA
+.((((.(((((((((..(((.(((((((((((.......)))..)))))))).))).))))))))).)))).
+>mmu-mir-218-1 Mus musculus miR-218-1 stem-loop
+GUGAUAAUGGAGCGAGAUUUUCUGUUGUGCUUGAUCUAACCAUGUGCUUGCGAGGUAUGAGAAAAACAUGGUUCCGUCAAGCACCAUGGAACGUCACGCAGCUUUCUACA
+...........(((.(((.((((((.(((((((((..((((((((.(((.........)))....))))))))..))))))))).)))))).))).)))...........
+>mmu-mir-218-2 Mus musculus miR-218-2 stem-loop
+GACCAGUUGCCGCGGGGCUUUCCUUUGUGCUUGAUCUAACCAUGUGGUGGAACGAUGGAAACGGAACAUGGUUCUGUCAAGCACCGCGGAAAGCAUCGCUCUCUCCUGCA
+...(((..(..(((..(((((((...(((((((((..((((((((..........((....))..))))))))..)))))))))...)))))))..)))...)..)))..
+>mmu-mir-223 Mus musculus miR-223 stem-loop
+UCUGGCCAUCUGCAGUGUCACGCUCCGUGUAUUUGACAAGCUGAGUUGGACACUCUGUGUGGUAGAGUGUCAGUUUGUCAAAUACCCCAAGUGUGGCUCAUGCCUAUCAG
+.((((......(((..((((((((..(.((((((((((((((......(((((((((.....))))))))))))))))))))))).)..))))))))...)))...))))
+>mmu-mir-320 Mus musculus miR-320 stem-loop
+GCCUCGCCGCCCUCCGCCUUCUCUUCCCGGUUCUUCCCGGAGUCGGGAAAAGCUGGGUUGAGAGGGCGAAAAAGGAUGUGGG
+......(((((((.(((((((((..(((((((.((((((....)))))).)))))))..)))))))))....)))..)))).
+>mmu-mir-26a-2 Mus musculus miR-26a-2 stem-loop
+GGCUGCGGCUGGAUUCAAGUAAUCCAGGAUAGGCUGUGUCCGUCCAUGAGGCCUGUUCUUGAUUACUUGUUUCUGGAGGCAGCG
+.(((((..(..((..(((((((((.(((((((((((((......)))..)))))))))).)))))))))..))..)..))))).
+>mmu-mir-33 Mus musculus miR-33 stem-loop
+CUGUGGUGCAUUGUAGUUGCAUUGCAUGUUCUGGCAAUACCUGUGCAAUGUUUCCACAGUGCAUCACGG
+((((((((((((((.(..(((((((((.....((.....)).)))))))))..).))))))))))))))
+>mmu-mir-211 Mus musculus miR-211 stem-loop
+CUGCUUGGACCUGUGACCUGUGGGCUUCCCUUUGUCAUCCUUUGCCUAGGCCUCUGAGUGAGGCAAGGACAGCAAAGGGGGGCUCAGUGGUCACCUCUACUGCAGA
+((((.((((...((((((..(((((((((((((((..(((((.((((..((......)).)))))))))..)))))))))))))))..)))))).))))..)))).
+>mmu-mir-221 Mus musculus miR-221 stem-loop
+AUCCAGGUCUGGGGCAUGAACCUGGCAUACAAUGUAGAUUUCUGUGUUUGUUAGGCAACAGCUACAUUGUCUGCUGGGUUUCAGGCUACCUGGAA
+.(((((((....(((.((((((..(((.(((((((((....(((((((.....))).))))))))))))).)))..)).)))).)))))))))).
+>mmu-mir-222 Mus musculus miR-222 stem-loop
+CCCUCAGUGGCUCAGUAGCCAGUGUAGAUCCUGUCUUUGGUAAUCAGCAGCUACAUCUGGCUACUGGGUCUCUGGUGGC
+((.((((.(((((((((((((((((((...(((...........)))...))))).)))))))))))))).)))).)).
+>mmu-mir-224 Mus musculus miR-224 stem-loop
+GGGCUUUUAAGUCACUAGUGGUUCCGUUUAGUAGAUGGUUUGUGCAUUGUUUCAAAAUGGUGCCCUAGUGACUACAAAGCCC
+(((((((..(((((((((.(((.((((((.(.(((..((......))..)))).)))))).))))))))))))..)))))))
+>mmu-mir-29b-2 Mus musculus miR-29b-2 stem-loop
+CUUCUGGAAGCUGGUUUCACAUGGUGGCUUAGAUUUUUCCAUCUUUGUAUCUAGCACCAUUUGAAAUCAGUGUUUUAGGAG
+(((((((((((((((((((.((((((.((.((((..............)))))))))))).)))))))))).)))))))))
+>mmu-mir-199a-2 Mus musculus miR-199a-2 stem-loop
+UGGAAGCUUCAGGAGAUCCUGCUCCGUCGCCCCAGUGUUCAGACUACCUGUUCAGGACAAUGCCGUUGUACAGUAGUCUGCACAUUGGUUAGACUGGGCAAGGGCCAGCA
+.....(((...((...((((((((.(((...(((((((.((((((((.(((...((......)).....))))))))))).)))))))...))).)))).))))))))).
+>mmu-mir-199b Mus musculus miR-199b stem-loop
+CCAGAGGAUACCUCCACUCCGUCUACCCAGUGUUUAGACUACCUGUUCAGGACUCCCAAAUUGUACAGUAGUCUGCACAUUGGUUAGGCUGGGCUGGGUUAGACCCUCGG
+...((((.....((((..(((((((.(((((((.((((((((.(((.((((....))....)).))))))))))).))))))).))))).))..))))......))))..
+>mmu-mir-135a-2 Mus musculus miR-135a-2 stem-loop
+AGAUAAAUUCACUCUAGUGCUUUAUGGCUUUUUAUUCCUAUGUGAUCGUAAUAAAGUCUCAUGUAGGGAUGGAAGCCAUGAAAUACAUUGUGAAAAUUCA
+.((....(((((....(((.((((((((((((.((((((((((((.(........)..)))))))))))))))))))))))).)))...)))))...)).
+>mmu-mir-124a-1 Mus musculus miR-124a-1 stem-loop
+AGGCCUCUCUCUCCGUGUUCACAGCGGACCUUGAUUUAAAUGUCCAUACAAUUAAGGCACGCGGUGAAUGCCAAGAAUGGGGCUG
+.((((((..(((..((((((((.(((..((((((((.............))))))))..))).))))))))..)))..)))))).
+>mmu-mir-124a-2 Mus musculus miR-124a-2 stem-loop
+AUCAAGAUCAGAGACUCUGCUCUCCGUGUUCACAGCGGACCUUGAUUUAAUGUCAUACAAUUAAGGCACGCGGUGAAUGCCAAGAGCGGAGCCUACGGCUGCACUUGAA
+.(((((..(((((.(((((((((..((((((((.(((..((((((((...........))))))))..))).))))))))..))))))))).))....)))..))))).
+>mmu-mir-19b-1 Mus musculus miR-19b-1 stem-loop
+CACUGGUCUAUGGUUAGUUUUGCAGGUUUGCAUCCAGCUGUAUAAUAUUCUGCUGUGCAAAUCCAUGCAAAACUGACUGUGGUGGUG
+((((...(((((((((((((((((((((((((..((((.............)))))))))).)).))))))))))))))))).))))
+>mmu-mir-92-1 Mus musculus miR-92-1 stem-loop
+CUUUCUACACAGGUUGGGAUUUGUCGCAAUGCUGUGUUUCUCUGUAUGGUAUUGCACUUGUCCCGGCCUGUUGAGUUUGG
+..(((...((((((((((((..((.(((((((((((........)))))))))))))..)))))))))))).))).....
+>mmu-mir-9-1 Mus musculus miR-9-1 stem-loop
+CGGGGUUGGUUGUUAUCUUUGGUUAUCUAGCUGUAUGAGUGGUGUGGAGUCUUCAUAAAGCUAGAUAACCGAAAGUAAAAAUAACCCCA
+.(((((((....(((..(((((((((((((((.((((((.((.......)))))))).)))))))))))))))..)))...))))))).
+>mmu-mir-9-3 Mus musculus miR-9-3 stem-loop
+GGAGGCCCGUUUCUCUCUUUGGUUAUCUAGCUGUAUGAGUGCCACAGAGCCGUCAUAAAGCUAGAUAACCGAAAGUAGAAAUGACUCUCA
+.((((..(((((((((.(((((((((((((((.(((((..((......))..))))).))))))))))))))))).)))))))..)))).
+>mmu-mir-138-1 Mus musculus miR-138-1 stem-loop
+CUCUAGCAUGGUGUUGUGGGACAGCUGGUGUUGUGAAUCAGGCCGUUGCCAAUCAGAGAACGGCUACUUCACAACACCAGGGCCACACUGCACUGCAAG
+.....(((..((((.(((((.(..(((((((((((((...(((((((..(.....)..)))))))..))))))))))))).))).))).)))))))...
+>mmu-mir-181b-1 Mus musculus miR-181b-1 stem-loop
+AGGUCACAAUCAACAUUCAUUGCUGUCGGUGGGUUGAACUGUGUAGAAAAGCUCACUGAACAAUGAAUGCAACUGUGGCC
+.(((((((.....(((((((((...((((((((((...((....))...)))))))))).)))))))))....)))))))
+>mmu-mir-181c Mus musculus miR-181c stem-loop
+GCCAAGGGUUUGGGGGAACAUUCAACCUGUCGGUGAGUUUGGGCAGCUCAGACAAACCAUCGACCGUUGAGUGGACCCCGAGGCCUGGA
+.(((.((.(((((((...((((((((..(((((((.(((((...........)))))))))))).))))))))..))))))).))))).
+>mmu-mir-125b-1 Mus musculus miR-125b-1 stem-loop
+UGCGCUCCCCUCAGUCCCUGAGACCCUAACUUGUGAUGUUUACCGUUUAAAUCCACGGGUUAGGCUCUUGGGAGCUG
+...........(((..((..(((.(((((((((((..(((((.....))))).))))))))))).)))..))..)))
+>mmu-mir-128b Mus musculus miR-128b stem-loop
+CAGUGGGAAGGGGGGCCGAUGCACUGUAAGAGAGUGAGUAGCAGGUCUCACAGUGAACCGGUCUCUUUCCCUACUG
+(((((((.((((((((((...((((((..((((.(........).))))))))))...)))))))))).)))))))
+>mmu-mir-7-1 Mus musculus miR-7-1 stem-loop
+UUGGAUGUUGGCCUAGUUCUGUGUGGAAGACUAGUGAUUUUGUUGUUUUUAGAUAACUAAAACGACAACAAAUCACAGUCUGCCAUAUGGCACAGGCCACCUCUACAG
+.((((.((.(((((.((.((((((((.(((((.(((((((.(((((((((((....)))))..)))))))))))))))))).)))))))).))))))))).))))...
+>mmu-mir-7-2 Mus musculus miR-7-2 stem-loop
+GGUCGGGCCAGCCCCGUUUGGAAGACUAGUGAUUUUGUUGUUGUGUCUCUGUAUCCAACAACAAGUCCCAGUCUGCCACAUGGUGCUGGUCAUUUCA
+((...(((((((.((((.(((.(((((.(.(((((.(((((((..(......)..))))))))))))).))))).))).)))).)))))))...)).
+>mmu-mir-217 Mus musculus miR-217 stem-loop
+AAACAUAGUCAUUACAGUUUUUGAUGUUGCAGAUACUGCAUCAGGAACUGACUGGAUAAGACUUAAUCCCCAUCAGUUCCUAAUGCAUUGCCUUCAGCAUCUAAACAA
+................((((..(((((((.((.((.(((((.(((((((((..((((........))))...))))))))).))))).)).)).))))))).))))..
+>mmu-mir-219-2 Mus musculus miR-219-2 stem-loop
+ACUCAGGGGCUUCGCCACUGAUUGUCCAAACGCAAUUCUUGUACGAGUCUGCGGCCAACCGAGAAUUGUGGCUGGACAUCUGUGGUUGAGCUCCGGG
+.(((.(((((((.(((((.(((.(((((..(((((((((((...(.((.....)))...)))))))))))..)))))))).))))).))))))))))
+>mmu-mir-376a Mus musculus miR-376a stem-loop
+UAAAAGGUAGAUUCUCCUUCUAUGAGUACAAUAUUAAUGACUAAUCGUAGAGGAAAAUCCACGUUUUC
+.((((.((.((((.((((.((((((...................)))))))))).)))).)).)))).
+>mmu-mir-380 Mus musculus miR-380 stem-loop
+AAGAUGGUUGACCAUAGAACAUGCGCUACUUCUGUGUCGUAUGUAGUAUGGUCCACAUCUU
+((((((...(((((((..(((((((.(((....))).)))))))..)))))))..))))))
+>mmu-mir-133a-2 Mus musculus miR-133a-2 stem-loop
+AGAAGCCAAAUGCUUUGCUGAAGCUGGUAAAAUGGAACCAAAUCAGCUGUUGGAUGGAUUUGGUCCCCUUCAACCAGCUGUAGCUGCGCAUUGAUCACGCCGCA
+.(..((..(((((...((((.(((((((..((.((.((((((((..(.....)...)))))))).)).))..))))))).))))...)))))......))..).
+>mmu-mir-133b Mus musculus miR-133b stem-loop
+CCUCCAAAGGGAGUGGCCCCCUGCUCUGGCUGGUCAAACGGAACCAAGUCCGUCUUCCUGAGAGGUUUGGUCCCCUUCAACCAGCUACAGCAGGGCUGGCAAAGCUCAAUAUUUGGAGA
+.(((((((..((((.((((((((((.((((((((..((.((.((((((.((.((((...)))))))))))).)).))..)))))))).)))))))..)))...))))....))))))).
+>mmu-mir-181b-2 Mus musculus miR-181b-2 stem-loop
+UUGAUGGCUGCACUCAACAUUCAUUGCUGUCGGUGGGUUUGAAUGUCAACCAACUCACUGAUCAAUGAAUGCAAACUGCGGGCCAAAAA
+....((((((((.....(((((((((..(((((((((((((.....))...)))))))))))))))))))).....))).)))))....
+>mmu-mir-215 Mus musculus miR-215 stem-loop
+AGCUCUCAGCAUCAACGGUGUACAGGAGAAUGACCUAUGAUUUGACAGACCGUGCAGCUGUGUAUGUCUGUCAUUCUGUAGGCCAAUAUUCUGUAUGUCACUGCUACUUAAA
+.......((((.....((..(((((((...((.(((((((..((((((((.(((((....))))))))))))).)).))))).))...)))))))..))..)))).......
+>mmu-mir-196b Mus musculus miR-196b stem-loop
+AACUGGUCGGUGAUUUAGGUAGUUUCCUGUUGUUGGGAUCCACCUUUCUCUCGACAGCACGACACUGCCUUCAUUACUUCAGUUG
+((((((..((((((..(((((((.((.(((((((((((..........))))))))))).)).)))))))..)))))))))))).
+>mmu-mir-409 Mus musculus miR-409 stem-loop
+UGGUACUCGGAGAGAGGUUACCCGAGCAACUUUGCAUCUGGAGGACGAAUGUUGCUCGGUGAACCCCUUUUCGGUAUCA
+.(((((.(((((((.((((..((((((((((((((........).)))).)))))))))..)))).)))))))))))).
+>mmu-mir-410 Mus musculus miR-410 stem-loop
+GGGUACUUGAGGAGAGGUUGUCUGUGAUGAGUUCGCUUUAUUAAUGACGAAUAUAACACAGAUGGCCUGUUUUCAAUACCA
+.((((.(((((((.((((..((((((.((.((((((.........).))))).)).))))))..)))).))))))))))).
+>mmu-mir-376b Mus musculus miR-376b stem-loop
+UGGUAUUUAAAAGGUGGAUAUUCCUUCUAUGGUUACGUGCUUCCUGGAUAAUCAUAGAGGAACAUCCACUUUUUCAGUAUCA
+.((((((.(((((((((((.(((((.(((((((((....((....)).)))))))))))))).))))))))))).)))))).
+>mmu-mir-411 Mus musculus miR-411 stem-loop
+UGGUACUUGGAGAGAUAGUAGACCGUAUAGCGUACGCUUUAUCUGUGACGUAUGUAACACGGUCCACUAACCCUCAGUAUCA
+.((((((..(((.(.((((.((((((.(.((((((((.........).))))))).).)))))).)))).).))))))))).
+>mmu-mir-412 Mus musculus miR-412 stem-loop
+GGGUAUGGGACGGAUGGUCGACCAGCUGGAAAGUAAUUGUUUCUAAUGUACUUCACCUGGUCCACUAGCCGUCGGUGCCC
+((((((.(.((((.((((.((((((.(((..((((((((....)))).))))))).)))))).)))).))))).))))))
+>mmu-mir-370 Mus musculus miR-370 stem-loop
+AGACGGAGAGACCAGGUCACGUCUCUGCAGUUACACAGCUCAUGAGUGCCUGCUGGGGUGGAACCUGGUUUGUCUGUCU
+(((((((.(((((((((..(..(((.((((.(((.((.....)).))).)))).)))..)..))))))))).)))))))

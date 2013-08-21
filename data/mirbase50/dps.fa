@@ -1,0 +1,213 @@
+>dps-bantam Drosophila pseudoobscura bantam stem-loop
+AUUUGACUACGAAACCGGUUUUCGAUUUGGUUUGACUGUUUUUUAUACAAGUGAGAUCAUUUUGAAAGCUGAUUUUGUCAA
+..(((((...((((.((((((((((..((((((.(((((.......)).))).))))))..)))))))))).)))))))))
+>dps-let-7 Drosophila pseudoobscura let-7 stem-loop
+UCUGGCAAAUUGAGGUAGUAGGUUGUAUAGUAGUACUUCAGAUCGUACUAUACAAUGUGCUAGCUUUCUUUGCUUGA
+((.((((((..(((.(((((.(((((((((((.............))))))))))).))))).)))..)))))).))
+>dps-mir-1 Drosophila pseudoobscura miR-1 stem-loop
+GCCUUUGAGAGUUCCAUGCUUCCUUGCAUUCAAUAGUAUAACAUAAAGCAUAUGGAAUGUAAAGAAGUAUGGAGCGAAAUCUGGCAAG
+(((...((..((((((((((((.((((((((.(((((..........)).))).)))))))).))))))))))))....)).)))...
+>dps-mir-2a-1 Drosophila pseudoobscura miR-2a-1 stem-loop
+GCUGGGCUCACAAAGUGGUUGUGAAAUGCAUUUUGCUUUGCCCGCAUAUCACAGCCAGCUUUGAUGAGCUCGGC
+((((((((((((((((((((((((.((((..............)))).))))))))).))))).))))))))))
+>dps-mir-2a-2 Drosophila pseudoobscura miR-2a-2 stem-loop
+AUCUAAGCCUCAUCAAGUGGUUGUGAUAUGGAUACCCAACGCAUAUCACAGCCAGCUUUGAUGAGCUAGGAU
+((((.(((.((((((((((((((((((((((........).)))))))))))))..))))))))))).))))
+>dps-mir-2b-1 Drosophila pseudoobscura miR-2b-1 stem-loop
+CUGCGACGCUCUUUAAAGUGGCGGUGACGUGUUGGUAAUAAUAUUCAUAUCACAGCCAGCUUUGAGGAGCGUUGCGG
+((((((((((((((((((((((.((((..((...((....))...))..)))).)))).))))))))))))))))))
+>dps-mir-2b-2 Drosophila pseudoobscura miR-2b-2 stem-loop
+UUGUGUCAUUCUUCAAAGUGGUUGUGAAAUGUUUGCCUUUUUAUGCCUAUUCAUAUCACAGCCAGCUUUGAGGAGCGACACGA
+(((((((.(((((((((((((((((((.(((...((........)).....))).))))))))).)))))))))).)))))))
+>dps-mir-2c Drosophila pseudoobscura miR-2c stem-loop
+UGGUAUCCUUACUUUCAGUGUCAUCAAAAAUGGCUGAAGAAAGAUAUAUUUGCAUUUGAAGCGUAUCACAGCCAGCUUUGAUGGGCAUUGCAAUGAGCAUCGA
+.(((...((((.((.(((((((((((((..((((((......(((((.(((......)))..))))).))))))..)))))).))))))).)))))).)))..
+>dps-mir-3 Drosophila pseudoobscura miR-3 stem-loop
+GAUCCUGGGAUGCAUUUUGUGCAGUUAUGUCUACGUGAUCAUCCUCAUCACUGGGCAAAGUGUGUCUCAGGAU
+.(((((((((((((((((((.((((.(((................))).)))).)))))))))))))))))))
+>dps-mir-4 Drosophila pseudoobscura miR-4 stem-loop
+UUGCAAUUAGUUUCUUUGGUCGUCCAGCCUUAGGUGAUUUCUCUGAUCAUAAAGCUAGACAACCAUUGAAGUUCGUUGUGG
+(..((((.(..(((..((((.(((.(((.....((((((.....))))))...))).))).))))..)))..).))))..)
+>dps-mir-iab-4 Drosophila pseudoobscura miR-iab-4 stem-loop
+UCGUAUACGUAUACUGAAUGUAUCCUGAGUGUAUCCUAUCCGGUAUACCUUCAGUAUACGUAACACGA
+((((.(((((((((((((.((((.(((..((.....))..))).)))).)))))))))))))..))))
+>dps-mir-5 Drosophila pseudoobscura miR-5 stem-loop
+GCUAAAAGGAACGAUCGUUGUGAUAUGCGUUAAUUCACCGUUACAUAUCACAGUGAUUUUCCUUUAUAGCGC
+(((((((((((.(((((((((((((((...((((.....)))))))))))))))))))))))))).))))..
+>dps-mir-6-1 Drosophila pseudoobscura miR-6-1 stem-loop
+UUUGAAGUAGAGAGAAUAGUUGCUGUGCUAUAUGUCCUUCGACUCUAUAUAUCACAGUGGCUGUUCUUUUUGUACCUAAA
+.......(((((((((((((..(((((.((((((((....)))...))))).)))))..)))))))))))))........
+>dps-mir-6-3 Drosophila pseudoobscura miR-6-3 stem-loop
+CAAAAAGAAGGGAACGGUUGCUGCUGAUGUAGUUCAAGUUUUGCACAAUUUAUAUCACAGUGGCUGUUCUUUUUUGUUUG
+((((.(((((((((((((..(((.((((((((.....(.....).....)))))))))))..))))))))))))).))))
+>dps-mir-6-2 Drosophila pseudoobscura miR-6-2 stem-loop
+CCAACCGCAGGGAACCGCUGCUGCUGAUAUAUUAUCCACCCAUCUUUGACAUUUCUAUAUCACAGUGGCUGUUCUUUUUGGUU
+..(((((.(((((((.((..(((.(((((((.........((....)).......))))))))))..)).))))))).)))))
+>dps-mir-7 Drosophila pseudoobscura miR-7 stem-loop
+GAGUGUAUUCCGUAUGGAAGACUAGUGAUUUUGUUGUUUGGUCUCUGCUAAUAACAAUAAAUCCCUUGUCUUCUUACGGCGUGCAUCU
+..((((((.(((((.(((((((.((.((((((((((((.(((....))))))))))..))))).)).)))))))))))).))))))..
+>dps-mir-8 Drosophila pseudoobscura miR-8 stem-loop
+AAGGACAUCUGUUCACAUCUUACCGGGCAGCAUUAGAUCCUUUAGAUACCUCUAAUACUGUCAGGUAAAGAUGUCGUCCGUGUCCUU
+((((((((..(..(((((((((((.(((((.((((((.............)))))).))))).))).))))))).)..)))))))))
+>dps-mir-9a Drosophila pseudoobscura miR-9a stem-loop
+GCUAUGUUGUCUUUGGUUAUCUAGCUGUAUGAGUGAUAAAUAACGUCAUAAAGCUAGCUUACCGAAGUUAAUAUUAGC
+(((((((((.(((((((...((((((.(((((((........)).))))).))))))...))))))).))))).))))
+>dps-mir-9b Drosophila pseudoobscura miR-9b stem-loop
+UGCACAUUAUUUGAUCUUUGGUGAUUUUAGCUGUAUGGUGUAUAUCAAAGAUCCAUAGAGCUUUAUCACCAAAACCCAAAUGGUUUUUGCA
+.(((.((((((((...(((((((((...((((.(((((..............))))).))))..)))))))))...))))))))...))).
+>dps-mir-9c Drosophila pseudoobscura miR-9c stem-loop
+AUUUUUGCUGUUUCUUUGGUAUUCUAGCUGUAGAUUGUUUUUUGCACAUUGUAUAUCAUCUAAAGCUUUUAUACCAAAGCUCCAGCUUAAAU
+((((..((((...(((((((((...((((.(((((.((....(((.....))).)).))))).))))...)))))))))...))))..))))
+>dps-mir-10 Drosophila pseudoobscura miR-10 stem-loop
+CCACGUCUACCCUGUAGAUCCGAAUUUGUUUUACAUUAGCUUUAAGGACAAAUUCGGUUCUAGAGAGGUUUGUGUGG
+(((((...(((((.((((.(((((((((((((............))))))))))))).)))).)).)))...)))))
+>dps-mir-11 Drosophila pseudoobscura miR-11 stem-loop
+CUCUUGUCAAGAACUUAUUCUGUGACCUGCGUGACAUUUAGCCACAUCACAGUCUGAGUUCUUGCUGAGCG
+(((..(.((((((((((..((((((..((.((........))))..))))))..))))))))))).)))..
+>dps-mir-12 Drosophila pseudoobscura miR-12 stem-loop
+UACGGCUGAGUAUUACAUCAGGUACUGGUGUGCUUUAAAUCCAACAACCAGUACUUAUGUUAUACUACGCCGUG
+((((((..(((((.((((.((((((((((((............)).)))))))))))))).)))))..))))))
+>dps-mir-13a Drosophila pseudoobscura miR-13a stem-loop
+UACGUAACCCAUCAAACGGUUGUGAAAUGUUGCAUUUAUCAAAUCAUAUCACAGCCAUUUUGAUGAGUUUCGUG
+((((.(((.(((((((.((((((((.(((...............))).))))))))..))))))).))).))))
+>dps-mir-13b-1 Drosophila pseudoobscura miR-13b-1 stem-loop
+CCAUGUCGUUAAAAUGUUUGUGACCUUAUGUACUCUUGAAUCAUAUCACAGCCAUUUUGACGAGUUUGG
+(((..(((((((((((.((((((...((((...........)))))))))).)))))))))))...)))
+>dps-mir-13b-2 Drosophila pseudoobscura miR-13b-2 stem-loop
+AUUUACGCGUCAAAAUGACUGUGAGCUAUGUGUUUUUGAUCUCAUAUCACAGCCAUUUUGACGAGUUUG
+....((.((((((((((.((((((..((((.(........).)))))))))).)))))))))).))...
+>dps-mir-14 Drosophila pseudoobscura miR-14 stem-loop
+UGUGGGAGCGAGACGGGGACUCACUGUGCUUUUGAAGUAGUCAGUCUUUUUCUCUCUCCUAUA
+((((((((.((((..((((((.((((..(....)...)))).))))))..)))).))))))))
+>dps-mir-31b Drosophila pseudoobscura miR-31b stem-loop
+AAUUUGGCAAGAUGUCGGAAUAGCUGAGAGCAAAAAGAAGAUGAUUUGAAAUGCGGCUAUGCCUCAUCUAGUCAAUUGCAUUCAUUUGA
+...(((((.(((((..((.(((((((....((((..........)))).....))))))).)).))))).)))))..............
+>dps-mir-33 Drosophila pseudoobscura miR-33 stem-loop
+CCGGAGAUGACACGCAGGUGCAUUGUAGUCGCAUUGUCUGUCCAUCUUGAUUUCAGGCAAUACAACUGCAAUGCAAGCUCUGUGCAUUUCA
+...((((((.((((.((.(((((((((((.(.((((((((.............)))))))).).)))))))))))..)).)))))))))).
+>dps-mir-34 Drosophila pseudoobscura miR-34 stem-loop
+AAUUGGCUAUGCGCUUUGGCAGUGUGGUUAGCUGGUUGUGUAGCCAAAAUAUUGCCUUUGACCAUUCACAGCCACUAUCUUCACUGCCGCCGCGACAAGC
+.....(((.(((((..((((((((.((.(((.((((((((..(.((((........)))).)....))))))))))).)).))))))))..))).)))))
+>dps-mir-79 Drosophila pseudoobscura miR-79 stem-loop
+CUGCUCUGCUUCUGCUUUGGCGCUUUAGCUGUAUGAUAGAUUUAAAAUACUUCAUAAAGCUAGAUUACCAAAGCAUUGGCUCUG
+.......(((..((((((((...(((((((.(((((...((.....))...))))).)))))))...))))))))..)))....
+>dps-mir-87 Drosophila pseudoobscura miR-87 stem-loop
+CAUAUUUCAUUCGCGCCUGUAUCUUGCUGAACCGUAGCCAUAAUGGUCUUUCAUCCCGGUUGAGCAAAAUUUCAGGUGUGUGAGAAAUUUGUUAAGCA
+((.(((((...((((((((.((.(((((.(((((.((((.....)).)).......))))).))))).))..))))))))...))))).)).......
+>dps-mir-92a Drosophila pseudoobscura miR-92a stem-loop
+AUAGAGAUUGCCCGUAGGACGGGAAGGUGUCAACGUUUUAAAUUUUGAACAAACAUUGCACUUGUCCCGGCCUAUGGGCGGCUUGUCAUACACA
+...(((.(((((((((((.((((((((((.(((.((((............)))).)))))))).))))).))))))))))))))..........
+>dps-mir-92b Drosophila pseudoobscura miR-92b stem-loop
+UAAAACGUCACCUGAUGUAGGCCGUGCCCAGUGCUUAUUUGUCGUUGUUUGAAAAUACAAAUUGCACUAGUCCCGGCCUGCAGAGAGUGUCGCACACAAC
+.....((.(((((..(((((((((.(.(.(((((..((((((.(((.......))))))))).))))).).).))))))))).)).))).))........
+>dps-mir-100 Drosophila pseudoobscura miR-100 stem-loop
+CCAUUAACAGAAACCCGUAAUUCCGAACUUGUGCUGUUUUAUAUCUGUUACAAGACCGGCAUUAUGGGAGUCUGUCAAUGCAAACAACUGGUUUUUGGCA
+.((((.(((((..((((((((.(((..(((((((.(........).).))))))..))).))))))))..))))).))))....................
+>dps-mir-124 Drosophila pseudoobscura miR-124 stem-loop
+UCGUUUGGUACGUUUUUCUCCUGGUAUCCACUGUAGGCCUAUAUGUAUUUCGACCAUAAGGCACGCGGUGAAUGCCAAGAGCGGACGAAACUCUACUA
+..((((.((.((((((.....((((((.((((((..((((.((((.........))))))))..)))))).)))))))))))).)).)))).......
+>dps-mir-125 Drosophila pseudoobscura miR-125 stem-loop
+GACAUGUGCAAAUGUUUGUAUGGCUGAUUCCCUGAGACCCUAACUUGUGACUUUUAAUACCAGUUUCACAAGUUUUGAUCUCCGGUAUUGGACGCAAACUUGCUGAUGUU
+(((((..((((..((((((....(..((..((.((((.(..(((((((((..((.......))..)))))))))..).)))).)).))..)..))))))))))..)))))
+>dps-mir-133 Drosophila pseudoobscura miR-133 stem-loop
+UACAACGGCUGUAUGUAGCUGGUUGACAUCGGGUCAGAUCUAUUUUAUCAAGUAUUUGGUCCCCUUCAACCAGCUGUAUCAGUGGUUGAUUCCAAC
+..((((.((((.((((((((((((((....((..(((((((.........)).)))))..))...)))))))))))))))))).))))........
+>dps-mir-184 Drosophila pseudoobscura miR-184 stem-loop
+GGUCGACCGGUGCAUUCGUACCCUUAUCAUUCUCGCGCCCCGUGUGCAUUAAAAGACAACUGGACGGAGAACUGAUAAGGGCUCGUAUCACCAACUCAUC
+........((((.((.((..((((((((((((((.((((...(((..........)))...)).))))))).)))))))))..)).))))))........
+>dps-mir-210 Drosophila pseudoobscura miR-210 stem-loop
+GGUACUUAUUGCAGCUGCUGGCCACUGCACAAGAUUAGAUUUAAGACUCUUGUGCGUGUGACAGCGGCUAUUGUAAGAGGCCAUAUUAGCAUCA
+(((.(((((...((((((((..((((((((((((.............))))))))).))).))))))))...)))))..)))............
+>dps-mir-219 Drosophila pseudoobscura miR-219 stem-loop
+UAAUUCGAUUUUUAGCUAUGAUUGUCCAAACGCAAUUCUUGUUGAUAUCCAAUACUCAAGGGUUGUGACUGGACAUCGCGGCUCGAAAUAAGAAUACAAC
+..((((.(((((.(((..((((.(((((..(((((((((((...((.....))...)))))))))))..)))))))))..))).)))))..)))).....
+>dps-mir-263a Drosophila pseudoobscura miR-263a stem-loop
+ACAUCCCGGCACAGUUAAUGGCACUGGAAGAAUUCACGGGGUUUUUCAAUACAACCCGUGAUCUCUUAGUGGCAUCUAUGGUGCGGGACUCA
+...(((((.(((.((..(((.(((((..(((..(((((((..............))))))))))..))))).)))..)).))))))))....
+>dps-mir-263b Drosophila pseudoobscura miR-263b stem-loop
+UUGCUGGCAUUGGCUCUUGGCACUGGGAGAAUUCACAGUUGGUUUCCAUAUAUUCUGUGGUUCUGCGGGUGCCAAAAUCGAAUGUUCGGCU
+..(((((((((.(...((((((((.(.(((((.(((((...((......))...)))))))))).).))))))))...).)))).))))).
+>dps-mir-274 Drosophila pseudoobscura miR-274 stem-loop
+UCCCGUGCUGCAGUUUCAUUUUGUGACCGACACUAACGGGUAAUGGCUGGCCGCAGGACUACUCGUUUUUGCGAUCACAAUACUGAAAUUGCAGCAA
+.....(((((((((((((..((((((.((.((..((((((((....(((....)))...))))))))..)))).))))))...))))))))))))).
+>dps-mir-275 Drosophila pseudoobscura miR-275 stem-loop
+AAAGUCUCCUACCAUGCGCGCUAAUCAGAGACCGGGGCUGGUUUUUUCACUGCAGUCAGGUACCUGAAGUAGCGCGCGUGGUGCUAGACA
+...((((..((((((((((((((.((((..(((..(((((............))))).)))..))))..))))))))))))))..)))).
+>dps-mir-276a Drosophila pseudoobscura miR-276a stem-loop
+CCUGGUUUUUGCCAUCAGCGAGGUAUAGAGUUCCUACGUUCAUAUUAUAAACUCGUAGGAACUUCAUACCGUGCUCUUGGAAGACCAAAAGACAACGAA
+..((((((...(((..((((.(((((..((((((((((...............))))))))))..))))).))))..))).))))))............
+>dps-mir-276b Drosophila pseudoobscura miR-276b stem-loop
+AAAGCGAAGCCUCUUUACCAUCAGCGAGGUAUAGAGUUCCUACGUGCCGUAUCCAAAGUCGUAGGAACUUAAUACCGUGCUCUUGGAGGGCUGUCCAUC
+...(.((((((.((...(((..((((.(((((.(((((((((((.((..........))))))))))))).))))).))))..))))))))).)))...
+>dps-mir-277 Drosophila pseudoobscura miR-277 stem-loop
+UUGAAGGUUUUGGGUUGCGUGUCAGGAGUGCAUUUGCACUGAAACAUUCUGAAGCUUGUAAAUGCACUAUCUGGUACGACAUUCCAGAACGUACAAUCUU
+(((.(.(((((((..(((((..((((((((((((((((((............))..)))))))))))).))))..))).))..))))))).).)))....
+>dps-mir-278 Drosophila pseudoobscura miR-278 stem-loop
+GUAAUGGUACGGUGCGACCGGACGAUGGUUCACAACGACCGUGUCUCUUAAACUGGUCGGAGGGACUUUCGUCCGUUUGUAACGCCAUUUGUCAGCGA
+..((((((....(((((.(((((((.(((((.(..((((((.((.......))))))))..)))))).))))))).)))))..)))))).........
+>dps-mir-279 Drosophila pseudoobscura miR-279 stem-loop
+UCAUACUACUGUUUUUAGUGAGUGAGGGUCCAGUGUUUCACAUUGAUUUUCUUAGUAUUUGUGACUAGAUCCACACUCAUUAAUAACGGUAGUUC
+....(((((((((.((((((((((.(((((.((....(((((...(((.....)))...))))))).))))).)))))))))).)))))))))..
+>dps-mir-280 Drosophila pseudoobscura miR-280 stem-loop
+GGCUUUUAUGUAUUUACGUUGCAUAUGAAAUGAUAUUUAUAGUAAACAGAUUAUUUUAUAUGCAGGUAUGUGCAGCUGAAGAGCCUGUCCAUUG
+(((((((.(((((.(((.((((((((((((((((.((((...))))...))))))))))))))))))).)))))....))))))).........
+>dps-mir-281-1 Drosophila pseudoobscura miR-281-1 stem-loop
+CGAAUAGGUGAAUAAAGAGAGCUGUCCGUCGACAGUCAACGUACCAAUUUAAUACUGUCAUGGAAUUGCUCUCUUUGUAUAAUAUUCG
+((((((..((.(((((((((((..(((((.((((((.................)))))))))))...))))))))))).)).))))))
+>dps-mir-281-2 Drosophila pseudoobscura miR-281-2 stem-loop
+CGAAUAGUGAAAUAAAGAGAGCUAUCCGUCGACAGUCAAGUUAAUCAGAUUGUAAUACUGUCAUGGAAUUGCUCUCUUUGUAUAAUAUUCG
+((((((...(.(((((((((((..(((((.((((((..((((.....)))).....)))))))))))...))))))))))).)..))))))
+>dps-mir-282 Drosophila pseudoobscura miR-282 stem-loop
+UGCCUUAUAAAUCUAGCCUCUACUAGGCUUUGUCUGUGCAUUUGAAAACCCGAUCAGACAUAGCCUAUAAGAGGUUAGGUGUACCAAGGAAGAA
+..((((....(((((((((((..((((((.((((((.....(((......))).)))))).))))))..))))))))))).....)))).....
+>dps-mir-283 Drosophila pseudoobscura miR-283 stem-loop
+CUCACGAUUCUCAAAGGUAAAUAUCAGCUGGUAAUUCUGGGAGCUAAGCAAGAUAUGAAACACUCGGAAUUUCAGUUGGUAUCGACUUUUUUGAAUU
+.....(((((..((((((..(((((((((((.(((((((((.(.....((.....))...).))))))))))))))))))))..))))))..)))))
+>dps-mir-285 Drosophila pseudoobscura miR-285 stem-loop
+UCGAAUCGAAGAACUGAGAUCGAUUGGUGCAUAGAUAUCAAGAGGACUCGCUAAUUUUCAACUCUAGCACCAUUCGAAAUCAGUGCUUUUGAUGAGAACC
+((..(((((((.(((((..((((.((((((.((((......(((((........)))))...)))))))))).))))..)))))..)))))))..))...
+>dps-mir-286 Drosophila pseudoobscura miR-286 stem-loop
+UUAAAAUUAAAUGGCGAUUGUCGGUUUGGUCGCUUUUUACCAGGGUUCCGAUCAAGCGAAGUGACUAGACCGAACACUCGUGCUAUAAUUUUAGAAU
+(((((((((....((((.((((((((((((((((((......((...))........))))))))))))))).))).))))....)))))))))...
+>dps-mir-287 Drosophila pseudoobscura miR-287 stem-loop
+AUGUGUGAGUGUGGGGCCUGAAAUUUUGCACACAUUUACAAUAAUUGUAAAUGUGUUGAAAAUCGUUUGCACAACUGUGA
+.((((..((((...........(((((..(((((((((((.....)))))))))))..)))))))))..)))).......
+>dps-mir-288 Drosophila pseudoobscura miR-288 stem-loop
+GGCCAUGUCGUAAUUAGCAGGGUACAGCGUUGCCGGCGAUAAUUAAUGACGUUGGUCACGUUGGUUUCAUGUCGAUUUCAUUUCAUGACACGGCCG
+((((.(((((((((..((((((..((((((.(((((((.((.....)).))))))).))))))..))).)))..))).......)))))).)))).
+>dps-mir-289 Drosophila pseudoobscura miR-289 stem-loop
+GAGUUUACAGUGAAAUAAAUAUUUAAGUGGAGCCUGCGACUGGGACUCCAGCUCUCCGACUGGGCUAACUCACUUGAGCGUUUGUUGGCACGUAAAAGAC
+...(((((.(((.((((((..(((((((((((((((.((((((....)))).)).).....)))))...)))))))))..))))))..))))))))....
+>dps-mir-304 Drosophila pseudoobscura miR-304 stem-loop
+GCAGCAUUGAAUAAUCUCAAUUUGUAAAUGUGAGCGAUUUGAGGCAUUUGACACACUCACUUUGCAACUGGAGAUUGCUCGAAACUGC
+((((..((((.(((((((...(((((((.(((((.(..(..((...))..)..).))))))))))))...))))))).))))..))))
+>dps-mir-305 Drosophila pseudoobscura miR-305 stem-loop
+CAUGUCUAUUGUACUUCAUCAGGUGCUCUGGUGUGUCCUGUAACCCGGCACAUGUUGAAGUACACUCAAUAUG
+(((((..(.(((((((((.((.(((((..((.((........))))))))).)).))))))))).)..)))))
+>dps-mir-306 Drosophila pseudoobscura miR-306 stem-loop
+CACUUUGCCGGCUCAGGUACUUAGUGACUCUCAAUGCUUUCGACAUCUUGAGAGUCUCUCUGUGCCUGCACUGGCGGUGG
+((((..(((((..(((((((..((.((((((((((((....).)))..)))))))).))..)))))))..))))))))).
+>dps-mir-307 Drosophila pseudoobscura miR-307 stem-loop
+UGUCUUGCUUUGACUCACUCAACCUGGGUGUGAUGUUAUUUCGAUAUGGUAUCCAUCACAACCUCCUUGAGUGAGCGAUAGCAGGAUA
+((((((((((((.(((((((((...((.(((((((.((((.......))))..))))))).))...)))))))))))).)))))))))
+>dps-mir-308 Drosophila pseudoobscura miR-308 stem-loop
+CUCGCAGUAUAUUUUUGUGUUUUGUUGUGUCUGAAACGCAAAUCACAGGAUUAUACUGUGAG
+(((((((((((.(((((((.....((((((.....))))))..))))))).)))))))))))
+>dps-mir-309 Drosophila pseudoobscura miR-309 stem-loop
+AUUAUACGAUAAACUUUGUUCAGUUUUGCCAACUUGCUUGCAGCACUGGGUGAAGUUUGUCUUAUAAU
+((((((.(((((((((..((((((.((((..........)))).))))))..))))))))).))))))
+>dps-mir-314 Drosophila pseudoobscura miR-314 stem-loop
+UCGUAACUUGUGUGGCUUCGAAUGUACCUAGUUGAGGAAAACUCCGAAAUGGAUUUUGUUACCUCUGGUAUUCGAGCCAAUAAGUUCGG
+.((.(((((((.(((((.(((..(((((.....((((.(((.(((.....))).)))....)))).)))))))))))))))))))))).
+>dps-mir-315 Drosophila pseudoobscura miR-315 stem-loop
+CACUUAUCUAUUUUUGAUUGUUGCUCAGAAAGCCCUUAUAAUUAACCAGUUGGCUUUCGAGCAAUUAUCAAAGCCAAAUAAGUG
+(((((((....(((((((.(((((((.(((((((.................)))))))))))))).)))))))....)))))))
+>dps-mir-316 Drosophila pseudoobscura miR-316 stem-loop
+AAAUUCUAGUCGAUUUGUCUUUUUCCGCUUACUGGCGUUUUAUUCGAUCAACGACAGGAAAGGGAAAAAGGCGUAUUUACUAUGAGUUU
+((((((((((.(((.(((((((((((.(((.(((.((((..........)))).)))..)))))))))))))).))).)))).))))))
+>dps-mir-317 Drosophila pseudoobscura miR-317 stem-loop
+UGCAACUGCCGUUGGGAUACACCCUGUGCUCGCUUUGAAUAUGGUGCAAGCAAGUGAACACAGCUGGUGGUAUCCAAUGGCCGUUCUGCA
+.(((((.(((((((((...(((((((((.((((((................)))))).)))))..))))...))))))))).))..))).
+>dps-mir-318 Drosophila pseudoobscura miR-318 stem-loop
+UUUAUGGGAUGCACCAAGUUCAGUUUUGUCACAUUUCGAGCAUCACUGGGCUUUGUUUAUCUCAUAAG
+.((((((((((.((.(((((((((..((((.......)).))..))))))))).)).)))))))))).
