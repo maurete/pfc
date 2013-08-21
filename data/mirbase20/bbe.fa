@@ -1,0 +1,309 @@
+>bbe-let-7a-1 MI0026170 Branchiostoma belcheri let-7a-1 stem-loop
+CUGAGGUGAGGUAGUAGGUUGUAUAGUUGAGAAGUACAACAUUGGAGAUGACUGUACAACCCGUUACCUUUUUUCGGGUCAU
+((((((.(((((((..((((((((((((.....................))))))))))))..))))))).)))))).....
+>bbe-let-7a-2 MI0026171 Branchiostoma belcheri let-7a-2 stem-loop
+AGACAAGGGUGCGCCUGAGGUGAGGUAGUAGGUUGUAUAGUUGAGAAGUACAUCAUUGGAGAUAACUGUGCAACCUGCUAGCUCUCCUUGGGGCAUGCC
+......(.((((.((..(((.(((.((((((((((((((((((.......((....))....)))))))))))))))))).))).)))..)))))).).
+>bbe-mir-100 MI0026172 Branchiostoma belcheri miR-100 stem-loop
+AGAUAAAGCCGGCUGCCAUAAACCCGUAGAUCCGAACUUGUGUUGCUUCAGUUCACAAGCUCGUGUCUAUGGGUCUAUGUCAUCAGGGCAACAUCUGCAU
+((((...(((.(.((.((((.(((((((((..(((.((((((..((....)).)))))).)))..))))))))).)))).)).)..)))...))))....
+>bbe-mir-10a MI0026173 Branchiostoma belcheri miR-10a stem-loop
+CUAUAUGUACCCUGUAGAUCCGAAUUUGUGUGAGGUAUCCACGUCACAAAUUCGUUUCUGCAGGUAUAAUGUAGCC
+(((((((((((.((((((..((((((((((((.((...)).)).))))))))))..))))))))))).))))))..
+>bbe-mir-10b MI0026174 Branchiostoma belcheri miR-10b stem-loop
+ACGUUUUAGUGGUCUAUAUAAACCCUGUGGAUCCGAUCUUGUGUCGCUAUAAAAACCGCAAGGUGGGAUUGACAGGUUCAUAUAGAACACGAUAAGCAUCC
+..((((..(((.(((((((.((((.(((.(((((.((((((((.............)))))))).))))).))))))).))))))).)))...))))....
+>bbe-mir-10c MI0026175 Branchiostoma belcheri miR-10c stem-loop
+UCCCCAGGAUUACCCUGUAGAUCCGGACUUGUGAUCACGUCACAACACAAAUCCGAUUUACAGGUUAGGCCUGGGCAA
+..((((((.(((.((((((((((.(((.(((((............))))).))))))))))))).))).))))))...
+>bbe-mir-124 MI0026176 Branchiostoma belcheri miR-124 stem-loop
+CGGCAAAUCUCGGCUUGGCUCUUAGUGUUCACGGCGGUCCUUAAUUUAACAUUGUGCAAUUAAGGCACGCGGUGAAUGCCAAGAACAGGGCCAAAUCCUCA
+...........((((..(.((((.((((((((.(((..((((((((..((...))..))))))))..))).)))))))).)))).)..)))).........
+>bbe-mir-125a MI0026177 Branchiostoma belcheri miR-125a stem-loop
+GUUUGUUGGUGUGUUCCCCAUUCCCUGAGACCCUAACUUGUGAUGUCCAUGGCUCACAGGUUAGGAUCUUGGGAGCUGGGUGACAUACGCCCUCCACAUCG
+.......((((((((((((((((((.((((.((((((((((((.((.....)))))))))))))).))))))))).)))).)).)))))))..........
+>bbe-mir-129b MI0026180 Branchiostoma belcheri miR-129b stem-loop
+ACGUACCAUGCUGAAUACCUUCUGUGGUUUGGGCGAUCGUGUGGUUGAGACGAAGCCCUUACCCCAAAAGGUGUCUGUCAUGGUAAGU
+((.(((((((.(..(((((((.((.(((..((((..((((.(.....).)))).))))..))).)).)))))))..).))))))).))
+>bbe-mir-133 MI0026181 Branchiostoma belcheri miR-133 stem-loop
+AGUAUCAGGGAUGCUGUGCUAAAGCUGGUAAAUUGGAACCAAAUCAACUCCUCAAUGGAUUUGGUCCCCUUCAACCAGCUGUAGCAUUGCAUUUUCAACCG
+.......(((((((.((((((.(((((((.....((.((((((((............)))))))).)).....))))))).)))))).)))))))......
+>bbe-mir-135b MI0026183 Branchiostoma belcheri miR-135b stem-loop
+CCGUGUCCAAUGGCUUUCAUCCUUUGUGAAUGUCUGAGCACAGUUCACAUCGAUGGGGGUUAUUGGUUAAGG
+((....(((((((((..((((...(((((((((......))).))))))..))))..)))))))))....))
+>bbe-mir-137 MI0026184 Branchiostoma belcheri miR-137 stem-loop
+CAAACAUACGCACUGCUCGGUCACGGGUAUUCUUGGGUUAAUAAUAUACUUUUUCUAUAUUAUUGCUUGAGAAUACACGUGACUGAGUGUGUGUGAGACUC
+......(((((((.(((((((((((.(((((((..(((.(((((((((.......))))))))))))..))))))).))))))))))))))))))......
+>bbe-mir-1 MI0026185 Branchiostoma belcheri miR-1 stem-loop
+CCAGGCCUGUUAAGCAUAAGUACUUCUUUACUAUCCCAUACUGAACUCAAUUGUAUGGAAUGUAAAGAAGUAUGUAUGGUUAGCAGGCUACCACGU
+...((((((((((.((((.((((((((((((.((.((((((...........)))))).)))))))))))))).)))).)))))))))).......
+>bbe-mir-153 MI0026186 Branchiostoma belcheri miR-153 stem-loop
+UUGCAGGUGGCUGCCAUUUUUGUGACCUUGCAACUGUACUGUGACCUCUGGUUGCAUAGUCUCAAAAGUGACAUCCUUCUUGUAA
+.((((((.((.((.((((((((.(((..(((((((..............)))))))..))).)))))))).)).))..)))))).
+>bbe-mir-182a MI0026187 Branchiostoma belcheri miR-182a stem-loop
+GAUCUUUCGGGUUCAAUUUGCUUGGCACUAGUGGAAUUCUUUGUUUAGGAACCAGUGCAUAGAUGUCAUUGAGUCAAAGAAUUCCCCAGUACCAAGCAAAUU
+..............(((((((((((.(((.(.(((((((((((.......(((((((((....)).))))).)))))))))))))).))).)))))))))))
+>bbe-mir-182b MI0026188 Branchiostoma belcheri miR-182b stem-loop
+GGACCAGUUUUCUUGGCACUUGUGGAAUUCUCUGUUUUGUUGCAUGUAAUGUGCAGCUUCAUGGCAUCACAGAAUUCCCCAGUACCAAGGAAACUGUUCC
+(((.((((((((((((.(((.(.((((((((.((((..(((((((.....))))))).....))))....))))))))).))).)))))))))))).)))
+>bbe-mir-182c MI0026189 Branchiostoma belcheri miR-182c stem-loop
+ACCUCUGGGUCAGCUUACUUGGCACUUGUGGAAUUUUUUGCUCAGCAAGACUUUGUGUCAAAGAAUUCCCCAGUACUAAGUAUGCUGGCUUGGGAUG
+...((..(((((((.(((((((.(((.(.(((((((((((....((((....))))..)))))))))))).))).))))))).)))))))..))...
+>bbe-mir-182d MI0026190 Branchiostoma belcheri miR-182d stem-loop
+UUGGCAAGUCCUCUUGGAACUGGGGAAUCCUUUGUGUUGAUUGUAAAGACUUUUACAUGGCGUAUCAUAGAAUUCCCCCGUACCGAGUGGUCUUGUAAA
+...(((((.((.(((((.((.(((((((..((((((.((..((((((....))))))...))...))))))))))))).)).))))).)).)))))...
+>bbe-mir-183 MI0026191 Branchiostoma belcheri miR-183 stem-loop
+ACACGUGCCCGUUCACGGUCUAUGGCACUGGUAGAAUUCACUGAUCGUAGACACCAGUGAUUCUUCAGUCAGCCAUAAACUGUGGCGGGAACUGAUCAUC
+.((.((.(((((.((((((.(((((((((((.(((((.(((((...........)))))))))))))))..)))))).))))))))))).))))......
+>bbe-mir-184 MI0026192 Branchiostoma belcheri miR-184 stem-loop
+GUCCUGGUUCCGCACGCUCCCUUAUCACUUCUUCCGCCGAGCUCGUGUCUCUGAGUCAGCUGGACGGAGAACUGAUAAGGGCCUGUGCCGAACACCAAUCC
+......((((.(((((..(((((((((.((((.((((((.(((((......)))))....))).))))))).)))))))))..))))).))))........
+>bbe-mir-190 MI0026193 Branchiostoma belcheri miR-190 stem-loop
+GAAACCUGUGGUGUUCUGGGUGAUAUGUUUGAUAUUUGGUUGUUACCUUCACUCCAACCAAUAUAUCGAACAUAUGAUCCAAGGCCCCAUACACACAGCCA
+......(((((.((..(((((.((((((((((((((((((((............))))))).))))))))))))).)))))..)).)))))..........
+>bbe-mir-193b MI0026194 Branchiostoma belcheri miR-193b stem-loop
+ACAUGUGAACAGCGGCUUGCAGGGUCAGUCGGUAGAAAGAGAUGUCCUACUGGCCUGCCAAGUCGGUGCUUACAUGG
+.(((((((.((.(((((((..((((((((.((((........)).)).))))))))..))))))).)).))))))).
+>bbe-mir-200a MI0026195 Branchiostoma belcheri miR-200a stem-loop
+GACAUGUUAGCUUGAAUCCUGACAUCUUACUUGGCAGCAUUCGAUGUGUUUCCAUAUUCAAAUACUGCCUGGUAAUGAUGCCAGUCAAGUUUCCUUCCAGU
+.....(..(((((((...(((.(((((((((.(((((.(((.((((((....))))))..))).))))).))))).)))).))))))))))..).......
+>bbe-mir-200b MI0026196 Branchiostoma belcheri miR-200b stem-loop
+ACAGUUUAGGAUCUCGGCAACAUCUUACCAGGCAGCAUUUAGUUUUUGAAAGGAAUACUAAUACUGUCUGGUAAUGAUGUUGGUGGGGUUCAGACAGU
+...((((.((((((((.((((((((((((((((((...(((((((((....)))).)))))..))))))))))).))))))).))))))))))))...
+>bbe-mir-200c MI0026197 Branchiostoma belcheri miR-200c stem-loop
+UAACCACCUAGCGGAGUUGUGUCAUCUUACCUGGCAGGUUUAGACGAUUCUGAGAUCUAACACUGUCUGGUAAUGAUGACAGGACUCCGCAAUAC
+..........((((((((.((((((((((((.(((((..((((((........).)))))..))))).))))).))))))).)))))))).....
+>bbe-mir-2013 MI0026198 Branchiostoma belcheri miR-2013 stem-loop
+UUUGCCCCUGAGCCAUUGCAUUUGUCUGCCUUGUCUGUGCAUUGAGAUGUCCAAAGCAGCAUAGUGCAAUGGUGUCAGGGUC
+.....(((((((((((((((((((.((((.(((.....((((....)))).))).)))))).))))))))))).))))))..
+>bbe-mir-2056 MI0026199 Branchiostoma belcheri miR-2056 stem-loop
+ACAGACGACUUGGGCUCAGGUAUGUCUGCGGUGAGGCUGGUAAACUUCGACAGGUUUCACUGUAGAUCUACCUGCGCUCAUG
+..........(((((.((((((.(((((((((((((((.((........)).))))))))))))))).)))))).)))))..
+>bbe-mir-2057 MI0026200 Branchiostoma belcheri miR-2057 stem-loop
+GACGGGUGAGAAGUUAGCCAACCAUCCGGCGGGUAUGUUCGACCCGGGUGGUGGUUGACUUCUUUCUCGUCACGUCUCAAUA
+((((((.(((((((((((((.((((((((((((....))))..))))))))))))))))))))).))))))...........
+>bbe-mir-2058 MI0026201 Branchiostoma belcheri miR-2058 stem-loop
+GCUACGUGAGAAGUAAGACUACCAUCCCGAGUGUUCUAUAUGCCGGGGUGGGGUCUUGCUUCUUCCAUAGCGCGCUUACAAAAC
+((((.(..((((((((((((.((((((((.((((.....))))))))))))))))))))))))..).)))).............
+>bbe-mir-2059 MI0026202 Branchiostoma belcheri miR-2059 stem-loop
+AACACUUGUUGAGCCCCUUUCAAAGCAAAUGGCUGCAAUUCUUUGUAUUCAUCAAGUAUUGCACUGUUUUGCUUUGAAAGGU
+...............(((((((((((((((((.((((((.(((.((....)).))).))))))))).)))))))))))))).
+>bbe-mir-2061 MI0026205 Branchiostoma belcheri miR-2061 stem-loop
+CUCUGGUGGUUUUCCACGGGCAAUGUAUCUAGCGCAACACGUUAGCUGGAGCUGUUGCAUAGGUACAUUGGUCAGUGGGAGC
+..........(((((((((.(((((((((((..((((((.(((......))))))))).))))))))))).)).))))))).
+>bbe-mir-2062 MI0026206 Branchiostoma belcheri miR-2062 stem-loop
+CCUGCUCUGCAACAAUAUUUCAUCAGUGGUGAACUAGUGAAGCCUACUGGUGAAAUGUAGUUGCGUAGGAGGCCGGCUACUGU
+(((.((.((((((.((((((((((((((((...(....)..))).))))))))))))).)))))).)).)))...........
+>bbe-mir-2063 MI0026207 Branchiostoma belcheri miR-2063 stem-loop
+AGGGUUACUUUCAAAAAGCAAAAAGUUGCAAUAUCGGUUUACGACGUUACGUAGAUAUUGCACUAAUUUGCUUUUGAAAGUG
+.....(((((((((((.(((((.(((.((((((((....((((......)))))))))))))))..))))))))))))))))
+>bbe-mir-2064 MI0026208 Branchiostoma belcheri miR-2064 stem-loop
+CUUUCAGCCACCUUGUCCACGGUUGCAUUGUGUUGGUCUUUGUAAUGUGCGAACAAAGCAGCACUGUGCAACUGUGUAGAUG
+..............((((((((((((((.((((((..((((((.........)))))))))))).)))))))))))..))).
+>bbe-mir-2067 MI0026210 Branchiostoma belcheri miR-2067 stem-loop
+CCCUCAUCCAUGUUUCAACUGUUGCAUCUUGCUGCCUUUAGAACCUUCCAUCCAUAAAGCAGCAGUAUGCAAUGGUGAAAAA
+............(((((.(((((((((.(((((((.((((..............))))))))))).))))))))))))))..
+>bbe-mir-2068 MI0026211 Branchiostoma belcheri miR-2068 stem-loop
+GUUCUUCUUCCUAUGCACAUCUGUCCUUGUAAAUUGAAGGAGGGCAUGUGUGCAUAGGGAAGAGAUCAACUAGCCAAGUCAG
+(.(((..(((((((((((((.(((((((.(.......).))))))).)))))))))))))..))).)...............
+>bbe-mir-2070 MI0026215 Branchiostoma belcheri miR-2070 stem-loop
+CGAGUCUUUCCACAGCCUCUACACAUGUCGGCCUUUCAUAGCGCAUGUGCAUAAGCUGUGGGAGUACUCUGUACACCAUUA
+.((((.((((((((((.....(((((((..((........))))))))).....)))))))))).))))............
+>bbe-mir-2071-1 MI0026216 Branchiostoma belcheri miR-2071-1 stem-loop
+UCCGCAGGUUGAAUAUGCGGUGCGGUGGUAGCAACCGUCCCGACGUAAAGUCGAUUGUUACACCGCGCCGCAAAAGUUGAC
+.......((..(...((((((((((((.((((((......((((.....)))).))))))))))))))))))....)..))
+>bbe-mir-2071-2 MI0026217 Branchiostoma belcheri miR-2071-2 stem-loop
+UCCGCAGGUUGAAUAUGCGGUGCGGUGGUAGCAACCGUCCCGACGUAAAGUCGAUUGUUACACCGCGCCGCAAAAGUUGAC
+.......((..(...((((((((((((.((((((......((((.....)))).))))))))))))))))))....)..))
+>bbe-mir-210 MI0026220 Branchiostoma belcheri miR-210 stem-loop
+GUAGUUGGUCGGUGGCAUUCGCCUCUGUUUCGCGCGCAAGAUGUGAUGUCAGUCCUUCUCCUGUGCGUGUGACAGCGGCUGAUGCACCGGCCAAAAAGUCG
+....((((((((((.((((.(((.(((((.(((((((((((.(.(((....)))).)))..)))))))).))))).))).)))))))))))))).......
+>bbe-mir-216 MI0026221 Branchiostoma belcheri miR-216 stem-loop
+UGGUUGUGUAAUCUCAGCUGGCAACUGUGAGUCUAACUUCACAUCCUCACGGUGCAAGCUGGGAUCGCUCAAACU
+...(((.(..(((((((((.(((.(((((((..............)))))))))).)))))))))..).)))...
+>bbe-mir-217 MI0026222 Branchiostoma belcheri miR-217 stem-loop
+CUGGGACUACUGCAUCAGGAACUGAUUGGAUGGGAAUCAAAUCAAUCUGUUCCUCAUGCAUGGCUCAC
+.((((.(((.(((((.((((((.((((((((....)))....))))).)))))).)))))))))))).
+>bbe-mir-219-1 MI0026223 Branchiostoma belcheri miR-219-1 stem-loop
+CCAGUGCUGAUUGUCCAAACGCAAUUCUUGUUUGACCUUUGAACCAAGAACUGCGCUGGACAUCAGCAAUUGACGCUGCCUAC
+.((((((((((.(((((..((((.((((((((..(...)..)).)))))).)))).))))))))))).))))...........
+>bbe-mir-219-2 MI0026224 Branchiostoma belcheri miR-219-2 stem-loop
+CCAGUGCUGAUUGUCCAAACGCAAUUCUUGUUUGACCUUUGAACCAAGAACUGCGCUGGACAUCAGCAAUUGACGCUGCCUAC
+.((((((((((.(((((..((((.((((((((..(...)..)).)))))).)))).))))))))))).))))...........
+>bbe-mir-22 MI0026225 Branchiostoma belcheri miR-22 stem-loop
+CGCUCUGAGAAGCGUAGCUCUUCACUCGGUAGCUCUGUGUUUAUCUGAUCAAAGCUGCCAGAUGAAGAGCUGUGCUUCCAGGGCA
+.((((((.((((((((((((((((((.(((((((.((.(((.....))))).))))))))).)))))))))))))))))))))).
+>bbe-mir-242 MI0026226 Branchiostoma belcheri miR-242 stem-loop
+AUGGCCUCCCAAGUGUUGCGUAGGCGUUGUGCACACUGUCUGACACAACCGUGUGUACCUCUCCUGCCUAACAUUUGGACGGCAUG
+...(((..((((((((((.(((((.(..((((((((.((........)).))))))))..).))))).))))))))))..)))...
+>bbe-mir-252a MI0026227 Branchiostoma belcheri miR-252a stem-loop
+AAUGACUGGCCUGCUCCAUGCUAAGUACUAGUGCCGCAGGUGUCUGUGUUUCCUCGAACCCCUGCAGACUGGUGCUUAACAUGGGACAGGUAAUACUGCCACCU
+........(((((..(((((.(((((((((((.(.(((((.((.((........)).)).))))).)))))))))))).)))))..))))).............
+>bbe-mir-252b MI0026228 Branchiostoma belcheri miR-252b stem-loop
+GAAAGCGACUGUCUCUGUGCUAAGUAGUACUGCCGCAGGGAGUGCUGCGGACUGAUUCUAUCCCCUGCGCAGUCCUACUUACAACAGGGAACAUUUCUAAU
+((((.......(((((((..(((((((.(((((.((((((..((..............))..))))))))))).)))))))..)))))))...))))....
+>bbe-mir-278 MI0026229 Branchiostoma belcheri miR-278 stem-loop
+CUCUCCCCCACCCGGGCGAACACCGUCGCCAGUCGUCGGGCUUCAGCAGAUCGGUGGGGUUUUCGUUCGAGUGGGGGAGACG
+.((((((((((.((((((((.(((.(((((.(((.....((....)).))).)))))))).)))))))).))))))))))..
+>bbe-mir-281 MI0026230 Branchiostoma belcheri miR-281 stem-loop
+UUUCCCGCCUCUGUGCGGAAGGGAGAGCCUUUCCGUGACUGUCGAACUUCGGGAACACUGUCAUGGAGUUGCUCUCUUUUCCGCG
+..............((((((((((((((..(((((((((.((....(....)....)).)))))))))..)))))))))))))).
+>bbe-mir-29a MI0026231 Branchiostoma belcheri miR-29a stem-loop
+UCCUGGGAAUUCUGUGCACGGAAGCUGAUUUCAGUUGGUGCUAGAUGGAAGUCGGCGUUCUAGCACCAUAUGAAAUCAGUUAUCGGUGCUCAGGC
+..........((((.((((.(((((((((((((..((((((((((((........)).))))))))))..))))))))))).)).)))).)))).
+>bbe-mir-29b MI0026232 Branchiostoma belcheri miR-29b stem-loop
+CACUGCAGGUUUUCUAUCCUGGAAGACUGGUUCCAAGUGGUGGGUAGAUGGCACUGAGAUCUAGCACCAUUUGAAAUCAGUGCUUUCAGGACUAG
+.............(((((((((((((((((((.((((((((.(.(((((.........))))).))))))))).))))))).))))))))).)))
+>bbe-mir-31 MI0026233 Branchiostoma belcheri miR-31 stem-loop
+UGCAGGGGGACGAGGAGAUGGCAAGAUGUUGGCAUAGCUGUUUACAGUUUCUGGUUCGGCUGUGCUGACAAACUGCCGUUUCCCGUUCACCCGAUUACAAC
+....((((((((.((((((((((...(((..(((((((((....(((...)))...)))))))))..)))...))))))))))))))).))).........
+>bbe-mir-33-1 MI0026234 Branchiostoma belcheri miR-33-1 stem-loop
+AGACCUGUUGCUGGGGUGCAUUGUAGUUGCAUUGCAUGUGUGUUCAUUGCUGCAAUGUAACUGCAGUGCAGCCCAGAGGCAGGAAC
+...(((((..(((((.((((((((((((((((((((.(((....)))...)))))))))))))))))))).)))))..)))))...
+>bbe-mir-33-2 MI0026235 Branchiostoma belcheri miR-33-2 stem-loop
+GCUGAGGUGCAUUGUAGUUGCAUUGCAUGUGCAAAAGUGGAAGUGCAAUGUAACAGCAGUGCAGCUCAGACACGGUUGCAAUG
+.(((((.((((((((.((((((((((((.(.((....)).).)))))))))))).)))))))).)))))..............
+>bbe-mir-34a MI0026236 Branchiostoma belcheri miR-34a stem-loop
+CCGUUCCCUGUGUGCUGCUCUGGCAGUGUGGAUAGCUGGCCGUUCUGAUUAUAACAGCCACUGUCAGCACUACCGUAACAACGCACGGACUGUCGACACUA
+.((....(((((((.((...(((.(((((.(((((.((((.(((........))).))))))))).))))).)))...)).))))))).....))......
+>bbe-mir-34c MI0026238 Branchiostoma belcheri miR-34c stem-loop
+AUAUCGUGCAGCCAUCUGGCAGUGUUAUUAGCUGGCCGCUAGGAGUCGCUCUUGUGGCCAUCUAUUAACGCUGCCCUACGGAAGCGCGACAC
+...((((((..((....((((((((((.(((.(((((((.(((((...)))))))))))).))).))))))))))....))..))))))...
+>bbe-mir-34d MI0026239 Branchiostoma belcheri miR-34d stem-loop
+CGAGCUCGCCAGUUUGGCAGUGUGCGCCUACAGCUGACCCGGUGUUACACACGGGCCACUGUACACAUUGCCAGCCGGGCGGGUCAU
+.((.((((((.(.(((((((((((....(((((.((.(((((((...))).)))).)))))))))))))))))).).))))))))..
+>bbe-mir-34f MI0026240 Branchiostoma belcheri miR-34f stem-loop
+UGUUGUGGUGUGGCAGUGCGAAUAGCUGGCCGCGGUGUACCUUACCGCGACGGCCUCUCUUCACACUACCUCACCACGGCA
+.(((((((((.((.((((.(((.((..((((((((((.....))))))...)))).)).))).)))).)).))))))))).
+>bbe-mir-375 MI0026241 Branchiostoma belcheri miR-375 stem-loop
+AUUCCAUCCGUGCCCAGAUAGGCCGAGCCCGGCGUGCAAAGCUGUGUACAACAUGAAUGUUUUGUUCGUUCGGCUCGCGUUAUCUUGGCAUGGCCUGUUGU
+.......(((((((.((((((.(((((((..(((.(((((((.(((.....)))....))))))).)))..)))))).))))))).)))))))........
+>bbe-mir-4057 MI0026242 Branchiostoma belcheri miR-4057 stem-loop
+CCGUGCUGUGGGUGCCCAUCUUGGUGGUGUAGCAGCUGUGAGAUGUGAGACACAUUUGCUACGGCCACCAAGAUCUGUGCCAGCAGUAUUC
+..(((((((.((..(..((((((((((((((((((.((((..........)))).))))))).)))))))))))..)..)).)))))))..
+>bbe-mir-4859 MI0026243 Branchiostoma belcheri miR-4859 stem-loop
+UUCGGCCUGUUGGAAAGCAGCGAGCAUUACGGUCAUUCUGACGCUGGAGAAUAUGACAGUAAUGCCCGCUGACUUCUAAUGGGGCUUC
+...(.((((((((((..(((((.(((((((.((((((((........)))..))))).))))))).)))))..)))))))))).)...
+>bbe-mir-4860 MI0026244 Branchiostoma belcheri miR-4860 stem-loop
+ACUCGCUGCCUGUCAACGUCUCUGUACAGUGAACAUGAGGCAUGUGUAGAGAUUGUGUGACGGGUAGUGAGCCC
+.(((((((((((((((((((((((((((((.........)).)))))))))).))).))))))))))))))...
+>bbe-mir-4861 MI0026245 Branchiostoma belcheri miR-4861 stem-loop
+UCUGCUCACAGACGAUGAGCCAAUGCGGCAUGUAAAAGGCUGACAUUCUAUGUCUUUACGUGCCACAUUGUCUCCUUGUCUGCUGUGUUUA
+...((.(((((((((.(((.(((((.((((((((((.(((...........))))))))))))).))))).))).))))))).)).))...
+>bbe-mir-4863 MI0026246 Branchiostoma belcheri miR-4863 stem-loop
+CCUUGCCUGGUCAUGCAGACAACAUCAGAAUGUCCCUACGGGUUUGUACAGGUAGUAGGGCCAUUUUGUGUUGUCAGCAGGACCAGUGCAGUU
+..((((((((((.(((.(((((((.(((((((.((((((..((....)).....)))))).)))))))))))))).))).)))))).))))..
+>bbe-mir-4864 MI0026247 Branchiostoma belcheri miR-4864 stem-loop
+UCUCUGGUGUAGGGAGAUCACCUCAGGCAUACAGUAUUGUCAGGUGCAUGUAGCCAGACCUGAUCUCCCUGCAGCAGCUG
+...(((.(((((((((((((..((.(((.(((((((((....))))).))))))).))..))))))))))))).)))...
+>bbe-mir-4865 MI0026248 Branchiostoma belcheri miR-4865 stem-loop
+GUGCCUGCUGGCUUGUCACUUCCAAUACAUGCUGUGGUCGCCCCAUACCGUCCAUGUAGAGAGAGUGACAGGUUGUCGGGCCUC
+..(((((.((((((((((((..(..((((((.(((((.....))))).....))))))..)..)))))))))))).)))))...
+>bbe-mir-4866 MI0026249 Branchiostoma belcheri miR-4866 stem-loop
+GUGUUAGACCUGUACCCAUCACACUUGUACUUCUUAGCAUGUGGCACAGGGAUGCUUAGCAGUGCAAGUGUGACAGGUAUGGCGUUCCCUUC
+......((((((((((..(((((((((((((.((.(((((.(.......).))))).)).)))))))))))))..))))))).)))......
+>bbe-mir-4868a MI0026251 Branchiostoma belcheri miR-4868a stem-loop
+UUCUCGUCCCUGGUCAGCCCGGAAGUUGUUACGUCAUUUCCGUUGUAUCAGCUCCAGCGCUGAUCAGUGACGCGACG
+.((.((((.((((((((((.(((.((((.((((.(......).)))).))))))).).))))))))).)))).))..
+>bbe-mir-4868b MI0026252 Branchiostoma belcheri miR-4868b stem-loop
+AAAGUGUGUCAGCUUCCCCCAUCACACCGGAGGCUGUUACGUCAUUCUGUUGUAUCAGCUCCAGCUGUGAUGAGUGAAGAGGCAUGCACA
+...(((((((..((((.(.((((((((.((((.(((.((((.(.....).)))).))))))).).))))))).).)))).)))))))...
+>bbe-mir-4868c MI0026253 Branchiostoma belcheri miR-4868c stem-loop
+CUGCUCAUGUCAGUACUGGUGAGUCUGGGUGCUGAUGAUCUGUCCUACAUUGUACCAUCAGCUCCAAGGCUGAUCAGUACCGAUGUGAGAUC
+...((((((((.((((((((.(((((.((.(((((((..................))))))).)).))))).)))))))).))))))))...
+>bbe-mir-4873 MI0026254 Branchiostoma belcheri miR-4873 stem-loop
+GCACUGGGGUGUGUUCCCACCUUCUGAUGUUGUUUAAUCACGUGAUACAACAUCGUAGGGCGGGGCACAUCCCAGGGU
+...(((((((((((.(((.((((.(((((((((...(((....)))))))))))).)))).))))))))))))))...
+>bbe-mir-4874 MI0026255 Branchiostoma belcheri miR-4874 stem-loop
+GCUGUUUCAUCCCCGCCCAGUUUGUAGCAUCCAGCUGAGCUGGCAGUCCUGCAGCAGCUGGCUGGUUGGUGCAAACAGGGGGUGGAUGGAGCGC
+((.(((((((((((.(((.(((((((.((.((((((.((((((((....)))..))))))))))).)).))))))).))))).)))))))))))
+>bbe-mir-4876 MI0026256 Branchiostoma belcheri miR-4876 stem-loop
+CUUGCUCGCGGCCACAGGUCUCACCUGGUGCGUAACGCUGGUACUGUAACUCGCCUUACGUGCCACGUGAGGACUCUUGGACGCGAAGCUCU
+...(((((((.(((..((((((((.(((..(((((.((.(((......))).)).)))))..))).)))).))))..))).)))).)))...
+>bbe-mir-4877 MI0026257 Branchiostoma belcheri miR-4877 stem-loop
+CUCCCAUUGCGGUGAGGGUAGUUUUUCCGCUACUUCAGUGCUGUGGUGUGUGAAGUAGUAGUUGAACUAUCUUCUUCACAGUGGCUC
+...((((((.((.(((((((((((..(..(((((((((..(....)..).))))))))..)..))))))))))).)).))))))...
+>bbe-mir-4878 MI0026258 Branchiostoma belcheri miR-4878 stem-loop
+UGUCCCUGAUUUGGAGUGCAGAGUGGCCUGUUAACGACAGACCAGGUCUUUCUACAUCUCCAAAACAGGGCCC
+...(((((.(((((((((.((((.((((((............)))))).)))).)).))))))).)))))...
+>bbe-mir-4879 MI0026259 Branchiostoma belcheri miR-4879 stem-loop
+CGCAGAUGUUAAACUAUCGUUCUGGGAACAGUCGCUCUUACAAGCUGUUUCCAUGGAGAUAGCUUAGCAACUCCU
+.(.((.((((((.(((((.(((((((((((((...........)))))))))).)))))))).)))))).)).).
+>bbe-mir-4880 MI0026260 Branchiostoma belcheri miR-4880 stem-loop
+CUUCACCAUUGCUUGAUUUGCUAUUUGAUGACCAGUGGUCAUUUUGAAACCCAGUGGUCAAACAAUAGCAAACCCGGCGAGUGUGAAUG
+.(((((..(((((.(.(((((((((...((((((.(((((.....))...))).))))))...))))))))).).)))))..)))))..
+>bbe-mir-4887 MI0026261 Branchiostoma belcheri miR-4887 stem-loop
+CUCGUUGAUGGGCGUAUUCUCGAUUGUUCUGGUCCAGCUCUAUCUUUGUGCUGAACCAUUACAACCGUGAGUACGUCAUCAAUGCCA
+..(((((((((.(((((((.((.((((..((((.((((.(.......).)))).))))..)))).)).))))))))))))))))...
+>bbe-mir-4888 MI0026262 Branchiostoma belcheri miR-4888 stem-loop
+GUAUGUGAUGCAGAGCUUGUGCGAUUGGCGCUUGAAAAUGAAGAGCGCCACACGCGAGCUCUUCACCCCAGCC
+....((((...((((((((((.(..((((((((.........))))))))).)))))))))))))).......
+>bbe-mir-4889b MI0026263 Branchiostoma belcheri miR-4889b stem-loop
+AGAGCUUUUUAAUCUUCCUAGCGCCACGGGUCGAUUGUAAAGUCUACAUCUAAUCGGCCCUGACGCUUGGAAUAUUAAAGGGCU
+..(((((((((((.((((.((((.((.((((((((((((.....))))....)))))))))).)))).)))).)))))))))))
+>bbe-mir-4890 MI0026264 Branchiostoma belcheri miR-4890 stem-loop
+UUCUGUGCAGUUCUAUGUGAUUAGCUAAGGUAGCUGAUACCAUGUGAGCCAGGCUACCAGCUCCAGAGCUGAUCAUAUGGAAGGCACAAGC
+...(((((..((((((((((((((((..((.(((((.((((.((.....)))).)).)))))))..)))))))))))))))).)))))...
+>bbe-mir-4891 MI0026265 Branchiostoma belcheri miR-4891 stem-loop
+UGGCUGUUUGGGAAGAUGAGCUGUUCUGCUACGGCUGCGUGUCAGACUAGCGUAGCAGGACCCUCGUCUGCCCAAACGUCUGGCCUCU
+.(((((((((((.(((((((..(((((((((((.(((.((.....)))))))))))))))).))))))).)))))))....))))...
+>bbe-mir-4899 MI0026266 Branchiostoma belcheri miR-4899 stem-loop
+UGCCUGUGGACUAACUCCCUCACAACGGGCCAGCUGAAUACUUCCUGUUUCUUCCUGGUCGUAUUGAGGGAGAGAAAAAUGGUUUCC
+.(((......((..((((((((..((((.((((..(((.((.....)))))...))))))))..))))))))))......)))....
+>bbe-mir-4904 MI0026267 Branchiostoma belcheri miR-4904 stem-loop
+CCCUGGCUUGGUCCCGGAGUCGUUCUAUACGCCGUUUGUACUUGAUAAAAUGGCGUAGAGCGACUAAGGAACCAAGACA
+......((((((.((..(((((((((..(((((((((..........))))))))))))))))))..)).))))))...
+>bbe-mir-4928 MI0026268 Branchiostoma belcheri miR-4928 stem-loop
+CCCAGCCUAGGGUGAUGUUGGCGGCAAGUGCGUGGUUGUGUCUGUCUCCAUUUGCUGUUGACAUCAGCCCCAGGCUUGC
+...(((((.(((((((((..((((((((((.(..(......)..)...))))))))))..)))))).))).)))))...
+>bbe-mir-7 MI0026269 Branchiostoma belcheri miR-7 stem-loop
+AUGUUCGGUAUGGAAGACUAGUGAUUUUGUUGUUGUGUGUCGUUGCAAACAACAGUAAAUCACAGUCUUCCUUACGGUGCAUU
+((((.(.(((.((((((((.(((((((...((((((.(((....))).))))))..))))))))))))))).))).).)))).
+>bbe-mir-705 MI0026270 Branchiostoma belcheri miR-705 stem-loop
+GCAUGAGGUGGGAGGUGGGGUGGUUCCCGAAGUCGGAGCUGACAUAGCCUAUCCUCAGACGCCCCUUGCUGAGUACCAGGUC
+(((.(.((((.((((((((.(((((((((....))).)..))).)).)))).))))...)))).).))).............
+>bbe-mir-92a-1 MI0026272 Branchiostoma belcheri miR-92a-1 stem-loop
+AGAAGUUAGUCAUGACAAGAAGGUCGUGAUAGGUGGCAAUGUUGUACCCACCUCAAUAUUGCACUUGUCCCGGCCUUUUUGC
+...............(((((((((((.((((((((.((((((((.........)))))))))))))))).))))))))))).
+>bbe-mir-92a-2 MI0026273 Branchiostoma belcheri miR-92a-2 stem-loop
+AUAGAACAUGGCCUUGUCAGACAGGCCAGGAUUGGUUGCAAUGCUGGAUGUCAUGUCAGUAUUGCACUUGUCCCGGCCUUUCUGAUUGGGCAAAAAUCUAC
+.((((.....((((.((((((.(((((.((((.(((.((((((((((........))))))))))))).)))).))))).)))))).)))).....)))).
+>bbe-mir-92b MI0026274 Branchiostoma belcheri miR-92b stem-loop
+CAGACAUGGCGUCGUUGCUCAGGUCUGGAUAGUUGCAAUCUUCGUUCUGUCACAGCCGAACAUUGCACUCGUCCCGGCCUGAGAAACUCCGCCAAUUUUCA
+......(((((..(((.((((((((.(((((((.(((((.((((..(((...))).)))).)))))))).)))).)))))))).)))..))))).......
+>bbe-mir-92d MI0026276 Branchiostoma belcheri miR-92d stem-loop
+UGUGUGAUUGACAGGUCAGGAUGGAGUGUUAUGCUGUAAACUUGGUGUCAGUAUUGCACUUAUCCUGGCCUGUCAAUUAUGGC
+...((((((((((((((((((((.(((((.((((((...((...))..)))))).)))))))))))))))))))))))))...
+>bbe-mir-9 MI0026277 Branchiostoma belcheri miR-9 stem-loop
+GUGCUGUCUUUGGUUAUCUAGCUGUAUGAGAGUCUUCUGUCACCAUAAAGCUAGGUAACCAAAACAACAACCACUCCCCUAG
+.((.(((.(((((((((((((((.((((.(.(.(....).).))))).)))))))))))))))))).)).............
+>bbe-mir-96 MI0026278 Branchiostoma belcheri miR-96 stem-loop
+CCUGCCUCUUUCUUGCUCUGUUUGGCACUAGCACAUUUUUGCUGGGCAGGUGUGUAGGCCAAAAUUGUUAGUGCCAAAUACAGCCUGAAAGACGGACUUAC
+....((((((((..(((.(((((((((((((((.(((((.(((..(((....))).))).)))))))))))))))))))).)))..)))))).))......
+>bbe-mir-34g MI0026279 Branchiostoma belcheri miR-34g stem-loop
+CGUUUCCUUGGCAGUGAUGUUAGUUGUUGUCGUCUCGUGUCACACAACAAACUGACAUCACUGCCUCUGUAGCGC
+((((.....(((((((((((((((((((((.((........))))))).)))))))))))))))).....)))).
+>bbe-mir-34h MI0026280 Branchiostoma belcheri miR-34h stem-loop
+AGGUUUGGUUGUGAGGCAGUGUGAUUAGCUUGCCGUUUGAUUAUGACGUCACGGCAGCUACUCGCCCUGCCCCACAAACACACCU
+((((.((.(((((.(((((.((((.(((((.(((((..(((......))))))))))))).)))).))))).))))).)).))))
+>bbe-mir-2060c-1 MI0026281 Branchiostoma belcheri miR-2060c-1 stem-loop
+GUUUACCUGUGUGUGGAUGGUGUUCAGCACCAAGGACAGGUGUGUUUACCUGUGUGUGGAUGGUGUUCAGCACCAAGGACAGGCAUGUUUACUU
+((..((.(((.(((...(((((((.(((((((.(.(((((((....))))))).).....))))))).)))))))...))).))).))..))..
+>bbe-mir-2060c-2 MI0026282 Branchiostoma belcheri miR-2060c-2 stem-loop
+GUUUGCCUGUGUGUGGAUGGUGUUCAGCACCAAGGACAGGUGUGUUGGCCUGUGUGUGGAUGGUGUUCAGCACCAAGGACAGGCAUGUUUGCCU
+...(((((((.(.....(((((((.(((((((.(.((((((......)))))).).....))))))).))))))).).))))))).........
+>bbe-mir-2060c-3 MI0026283 Branchiostoma belcheri miR-2060c-3 stem-loop
+GUUGGCCUGUGUGUGGAUGGUGUUCAGCACCAAGGACAGGCAUGUUUGCCUGUGUGUAUGGUGUUCAGCACCAAGGACAGGCAUGUUUGCCU
+....((((((.(.....(((((((.(((((((.(.(((((((....))))))).)...))))))).))))))).).))))))..........
+>bbe-mir-2060c-4 MI0026284 Branchiostoma belcheri miR-2060c-4 stem-loop
+GUAUGUUUGUGUGUGGAUGGUGUUCAGCACCAAGGACAGGUGUGUUUGCCUGUGUGUGGAUGGUGUUCAGCACCAAGGACAGGCAUGUUUGUGU
+.(((((((((.(.....(((((((.(((((((.(.((((((......)))))).).....))))))).))))))).).))))))))).......
+>bbe-mir-4856a MI0026285 Branchiostoma belcheri miR-4856a stem-loop
+AGGUACCUUUAUUACGCAGUGACGUCAGCGCCUCUGGUCUUACGUCACGGAGGUGAUGACGUCACUGAUGACAUGAAGGUGCUA
+.(((((((((((....(((((((((((.(((((((((.(....).).)))))))).))))))))))).....))))))))))).
+>bbe-mir-4857 MI0026286 Branchiostoma belcheri miR-4857 stem-loop
+CUGUGAUCACGAUGUUUUUGUCUGCUCCAGAGGUGAGUUCGCACGACUCUGGGUCAGACGAAACAUCUCAGAUCAACG
+...(((((..((((((((.(((((..(((((((((......)))..))))))..)))))))))))))...)))))...
+>bbe-mir-4869 MI0026287 Branchiostoma belcheri miR-4869 stem-loop
+UUUCCGUUACGAUGUUGACUUCCGCUCCUCUGUGGUAAUAUAUCAACUAGAGGGACCUGUAGUCAACACGACAUGGAA
+.((((((..((.((((((((...(..(((((((((((...)))))..))))))..)....))))))))))..))))))
