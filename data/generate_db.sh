@@ -46,7 +46,7 @@ gen_dataset
 
 echo "Dataset conserved-hairpin: (pseudo?) miRNAs test set as in Triplet-SVM"
 NAME="conserved-hairpin"
-SRC="src/triplet/7_test_dataset/test_cds_1000.txt"
+SRC="src/triplet/7_test_dataset/genome_chr19.txt"
 CLS="0"
 SPECIES="-s unknown"
 gen_dataset
