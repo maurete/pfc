@@ -6,9 +6,9 @@ This folder contains the following datasets:
 
  * mirbase50
 
-   Published in (Xue et al.), from miRBase release 5.0.
-   Contains 1210 validated pre-miRNAs for various species:
-	* 76  ath (A.thaliana)
+    Published in (Xue et al.), from miRBase release 5.0.
+    Contains 1210 validated pre-miRNAs for various species:
+    * 76  ath (A.thaliana)
     * 73  cbr (C.briggsae)
     * 110 cel (C.elegans)
     * 71  dme (fruit fly D.melanogaster)
@@ -23,18 +23,18 @@ This folder contains the following datasets:
 
  * updated
  
-   Published in (Xue et al.) as the "UPDATED" test set.
-   Contains 39 validated human pre-miRNAs (hsa).
+    Published in (Xue et al.) as the "UPDATED" test set.
+    Contains 39 validated human pre-miRNAs (hsa).
  
  * coding
  
-   Published in (Xue et al.) as the "CODING" set.
-   Contains 8494 pseudo pre-miRNAs to be used as negative training set.
+    Published in (Xue et al.) as the "CODING" set.
+    Contains 8494 pseudo pre-miRNAs to be used as negative training set.
 	 
  * conserved-hairpin
 
-   Published in (Xue et al.) as the "CONSERVED-HAIRPIN" set.
-   Contains 1000 pseudo pre-miRNAs, thou some are to be used as negative training set.
+    Published in (Xue et al.) as the "CONSERVED-HAIRPIN" set.
+    Contains 1000 pseudo pre-miRNAs, thou some are to be used as negative training set.
  
  * mirbase82-nr
  * functional-ncrna
