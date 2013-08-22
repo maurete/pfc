@@ -27,13 +27,13 @@ $RNAFOLD < work/coding.fa > work/coding.rnafold
     -1 src/triplet/4_pseudo_miRNAs/8494_hairpins_over_fe_15_bp_18_from_cds.txt \
     -2 work/coding.rnafold
 
-echo "folding test_cds_1000.txt..."
+echo "folding genome_chr19.txt..."
 ./tests.py rnafold_clean \
-    < src/triplet/7_test_dataset/test_cds_1000.txt \
+    < src/triplet/7_test_dataset/genome_chr19.txt \
     > work/conserved-hairpin.fa
 $RNAFOLD < work/conserved-hairpin.fa > work/conserved-hairpin.rnafold
 ./tests.py rnafold \
-    -1 src/triplet/7_test_dataset/test_cds_1000.txt \
+    -1 src/triplet/7_test_dataset/genome_chr19.txt \
     -2 work/conserved-hairpin.rnafold
 
 for f in $(ls src/triplet/2_predict_secondary_structure_of_miRNAs/)
@@ -66,7 +66,7 @@ echo "file: 8494_hairpins_over_fe_15_bp_18_from_cds.txt"
     -2 work/coding.singleloop
 echo "file: test_cds_1000.txt"
 ./tests.py rnafold \
-    -1 src/triplet/7_test_dataset/test_cds_1000.txt \
+    -1 src/triplet/7_test_dataset/genome_chr19.txt \
     -2 work/conserved-hairpin.singleloop
 for f in $(ls src/triplet/3_extract_miRNAs_without_multiple_loops/)
 do echo "file: $f"
@@ -98,7 +98,7 @@ echo "Triplet-SVM: Validating TripletSVM extra features..."
     -1 src/triplet/4_pseudo_miRNAs/8494_hairpins_over_fe_15_bp_18_from_cds.txt \
     -2 work/coding.singleloop
 ./tests.py triplet_fasta \
-    -1 src/triplet/7_test_dataset/test_cds_1000.txt \
+    -1 src/triplet/7_test_dataset/genome_chr19.txt \
     -2 work/conserved-hairpin.singleloop
 for f in $(ls src/triplet/3_extract_miRNAs_without_multiple_loops/)
 do echo "file: $f"

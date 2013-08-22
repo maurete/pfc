@@ -42,8 +42,7 @@ mult_fmt = r"[.(]+\)[.()]*\([.)]+"
 # doing the following on a Python shell:
 # >>> import gzip
 # >>> f = gzip.open( "src/mirbase/20/organisms.txt.gz", 'r')
-# >>> l = f.read().splitlines()
-# >>> valid_ids = {e.split()[0] for e in l}
+# >>> valid_ids = {e.split()[0] for e in f.read().splitlines()}
 # >>> valid_ids
 valid_ids = set(['sci', 'pti', 'ptc', 'pta', 'aly', 'osa', 'lla',
                  'mne', 'nlo', 'tca', 'cln', 'xtr', 'han', 'hru',
