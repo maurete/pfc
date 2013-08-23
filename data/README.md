@@ -178,10 +178,10 @@ Comments
 References
 ----------
 
-(Xue et al.)            doi:10.1186/1471-2105-6-310
-(Batuwita & Palade)     doi:10.1093/bioinformatics/btp107
-(miRBase)               doi:10.1093/nar/gkh023
-(Ng & Mishra)           doi:10.1093/bioinformatics/bti283
-(Hofacker et al.)       doi:10.1007/BF00818163
-(Griffith-Jones et al.) doi:10.1093/nar/gki081
-(Li & Godzik)           doi:10.1093/bioinformatics/btl158
+* (Xue et al.)            doi:10.1186/1471-2105-6-310
+* (Batuwita & Palade)     doi:10.1093/bioinformatics/btp107
+* (miRBase)               doi:10.1093/nar/gkh023
+* (Ng & Mishra)           doi:10.1093/bioinformatics/bti283
+* (Hofacker et al.)       doi:10.1007/BF00818163
+* (Griffith-Jones et al.) doi:10.1093/nar/gki081
+* (Li & Godzik)           doi:10.1093/bioinformatics/btl158
