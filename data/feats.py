@@ -146,18 +146,18 @@ def load_fasta ( f ):
 
                     # guardo la entrada en el dict
                     if re.match(seqn_fmt,cur_seq):
-                        entries.append((id_, cur_dsc, cur_seq.upper(), cur_st2,
+                        entries.append((id_, cur_dsc.strip(),
+                                        cur_seq.upper().strip(),
+                                        cur_st2.strip(),
                                         free_energy, seq_length, gc_content,
                                         basepair, len_bp_ratio))
                     else:
                         sys.stderr.write("ign {}, non-GCUA sequence\n".format(
                             id_))
 
-
-    
                 # asigno el valor actual a la
                 # linea de descripcion y reseteo las otras
-                cur_dsc = line.replace( '''''', '')
+                cur_dsc = line
                 cur_seq = ""
                 cur_st2 = ""
                 seq_length = None
@@ -218,7 +218,9 @@ def load_fasta ( f ):
 
             # guardo la entrada en el dict 
             if re.match(seqn_fmt,cur_seq):
-                entries.append((id_, cur_dsc, cur_seq.upper(), cur_st2,
+                entries.append((id_, cur_dsc.strip(),
+                                cur_seq.upper().strip(),
+                                cur_st2.strip(),
                                 free_energy, seq_length, gc_content,
                                 basepair, len_bp_ratio))
             else:
