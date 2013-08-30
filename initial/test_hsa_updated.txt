@@ -1,0 +1,1 @@
+../data/src/triplet/7_test_dataset/39_hsa_miRNAs_one_stemloop.txt
