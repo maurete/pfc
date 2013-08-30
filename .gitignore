@@ -2,8 +2,5 @@
 \#*\#
 doc/*.log
 *.aux
-rep1-xue/prueba*
 doc/*.pdf
-libsvm-matlab/*.o
-libsvm-matlab/*.mex
 *.pyc
