@@ -12,7 +12,7 @@ import math
 #   * (1) id: 3 letras + n { alfanum | _ | - }
 #   * se ignoran otros caracteres hasta el fin de linea
 #   >hsa-mir-123 Homo sapiens... etc
-desc_fmt = r"^\s*>([a-zA-Z]{3}[\w_-]+)(\s.+)?\s*$"
+desc_fmt = r"^\s*>([a-zA-Z]{3}[\w_-]+)([\s|].+)?\s*$"
 
 # formato de la linea de secuencia:
 #   * sólo se reconocen los caracteres GCAUTgcaut

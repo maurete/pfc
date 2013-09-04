@@ -1,4 +1,4 @@
-\documentclass[12pt,bibliography=openstyle,DIV=12,parskip=half-]{scrartcl}
+\documentclass[12pt,bibliography=oldstyle,DIV=12,parskip=half-]{scrartcl}
 \include{conf/preconfig}
 \include{conf/packages}
 \include{conf/config}
@@ -13,8 +13,13 @@
 \hyphenation{mi-RNA}
 \hyphenation{mi-RNAs}
 %
+%\usepackage{gmverb}
+%\MakeShortVerb\|
+
 \begin{document}
 \selectlanguage{spanish}
+%\DeclareMathAlphabet{\mathtt}{OT1}{zi4}{m}{n}
+%\UseMathAlphabet{\mathtt}{OT1}{zi4}{m}{n}
 %
 % pagina de titulo
 \begin{titlepage}
@@ -46,10 +51,32 @@
 %
 \section{Bibliografía consultada}
 %
-A continuación se detalla la bibliografía consultada junto con una
-breve descripción de cada una de las publicaciones.
+*A continuación se detalla la bibliografía consultada junto con una
+breve descripción de cada una de las publicaciones.*
 %
-\subsection{C. Xue et al. \cite{xue}}
+\subsection{Perspectiva biológica y computacional de los (pre-)miRNAs}
+\subsubsection*{D. P. Bartel \cite{bartel116}}
+Este trabajo se presenta una revisión de los desarrollos en la
+investigación de los microRNAs y las conclusiones que surgen de éstos
+acerca de la biogénesis y función de los miRNAs.  Ofrece una
+explicación didáctica del proceso de maduración de un pre-miRNA en
+miRNA.  Publicado en 2004, es anterior a la aparición de los métodos
+computacionales no-comparativos que permitieron un gran aumento en el
+número de nuevos miRNAs descubiertos.
+%
+\subsubsection*{D. Yue et al. \cite{yue}}
+%
+\subsubsection*{L. Li et al. \cite{lili}}
+
+%% \subsubsection{Y. Lee et al. \cite{yoontae}}
+%% En este trabajo se propone una descripción del proceso de maduración
+%% de los miRNAs a partir del pre-miRNA y de la exportación del mismo del
+%% núcleo al citoplasma, a través de experimentos biológicos propios.
+%
+%% \subsection{Perspectiva computacional de la clasificación de pre-miRNAs}
+%
+\subsection{Métodos de clasificación de pre-miRNAs}
+\subsubsection{C. Xue et al. \cite{xue}}
 %
 En este trabajo se presenta un clasificador de secuencias de
 pre-microRNA mediante SVM.  En el clasificador se utiliza un conjunto
@@ -58,7 +85,7 @@ entrada al clasificador un vector de frecuencia de 32 ``triplets'' que
 combinan el nucleótido de la secuencia con la estructura secundaria
 del entorno donde éste se presenta.
 %
-\subsection{S. K. L. NG y S. K. Mishra \cite{ng}}
+\subsubsection{S. K. L. Ng y S. K. Mishra \cite{ng}}
 %
 En este trabajo se presenta un clasificador de secuencias de
 pre-microRNA mediante SVM.
@@ -70,25 +97,26 @@ ocurrencia de dinucleótidos
 $\mono{XY}:(\mono{X},\mono{Y})\in\{\mono{A},\mono{G},\mono{C},\mono{U}\}$
 y frecuencia agregada de ocurrencia de los nucleótidos \mono{G} y
 \mono{C}; (2) 6 medidas de plegado basadas en la mínima energía libre
-y la distribución de los \resalt{base pairs}; (3) un descriptor
+y la distribución de los pares de bases; (3) un descriptor
 topológico; y (4) 5 variantes normalizadas de estas características.
 
 El método además es probado para detectar pre-miRNAs en genes de
 virus, recorriendo éste mediante una ventana deslizante de 95nt y
 clasificando las secuencias extraídas.
 %
-\subsection{R. Batuwita y V. Palade \cite{batuwita}}
-%
+\subsubsection{R. Batuwita y V. Palade \cite{batuwita}}
 En este paper se describe un método de clasificación de pre-miRNAs que
 elabora sobre \cite{ng} incorporando características basadas en la
 mínima energía libre, otras características relacionadas el programa
-RNAfold, y características basadas en los \resalt{base pairs}.
+RNAfold, y características basadas en los pares de bases.
 
 Se discute acerca de la relevancia de cada una de las características
 y se presenta luego un conjunto reducido de éstas para mejorar la
 performance del clasificador, y también se discute acerca del problema
-de \resalt{``desbalance''} de clases, siempre presente en la
+de \emph{desbalance de clases}, siempre presente en la
 clasificación de pre-miRNAs.
+%
+\subsubsection{S. Sewer et al. \cite{sewer}}
 %
 %
 %
@@ -97,10 +125,11 @@ clasificación de pre-miRNAs.
 %
 \subsection{Triplet-SVM \cite{xue}}
 %
-Si bien en la página del autor ya no están disponibles los datos,
-éstos se pueden encontrar en una versión anterior de la misma,
-disponible en el archivo de internet:
-\url{http://web.archive.org/web/20120210235054/http://bioinfo.au.tsinghua.edu.cn/software/mirnasvm/}
+Si bien en la página del
+autor\footnote{\url{http://bioinfo.au.tsinghua.edu.cn/software/mirnasvm/}}
+ya no están disponibles los datos, éstos se pueden encontrar en una
+versión anterior de la misma, disponible en el archivo de
+internet\footnote{\url{http://web.archive.org/web/20120210235054/}}.
 
 En esta base de datos cada una de las entradas presenta las siguientes
 características:
@@ -113,7 +142,7 @@ características:
 %
 \item[estructura secundaria] correspondiente a la secuencia, tal como
   se obtiene con el programa RNAfold\cite{vienna}. Se presenta como
-  una cadena de caracteres \mono{(}, \mono{.}, \mono{)}.
+  una cadena de caracteres \mono{(}, \mono{.} y \mono{)}.
 %
 \item[\mono{SEQ\_LENGTH}] indica la longitud de la secuencia
   considerada para el armado del vector de características. Cuenta
@@ -121,11 +150,11 @@ características:
 %
 \item[\mono{GC\_CONTENT}] se define según
   $\frac{\T{cant}(\mono{G})+\T{cant}(\mono{C})}{\mono{SEQ\_LENGTH}}$
-  donde $\T{cant}(x)$ cuenta el número de ocurrencia del nucleótido
+  donde $\T{cant}(x)$ cuenta el número de ocurrencias del nucleótido
   $x$ en el tallo del pre-miRNA.
 %
 \item[\mono{BASEPAIR}] cuenta la cantidad de nucleótidos
-  \resalt{emparejados} en el pre-miRNA.
+  que forman un par de bases en el pre-miRNA.
 %
 \item[\mono{FREE\_ENERGY}] indica la mínima energía libre de plegado
   obtenida con RNAfold.
@@ -135,8 +164,8 @@ características:
 \end{description*}
 %
 El vector de 32 triplets utilizados en el clasificador no está
-directamente disponible, si bien se encuentran los métodos para su
-cálculo.
+directamente disponible, si bien se pueden encontrar las rutinas para su
+cálculo, en lenguaje Perl.
 %
 \subsubsection{Conjuntos de datos}
 \paragraph{pre-miRNAs humanos}
@@ -167,7 +196,9 @@ Tomados de miRNA registry rel 5.0, sept/2004
 \end{description*}
 %
 \paragraph{pre-miRNAs humanos (actualizado)}
-Tomados de miRNA registry \resalt{rel 5.0}, sept/2004
+Conjunto de 39 pre-miRNAs obtenido a partir de los 89 reportados en
+\cite{bentwich}, eliminando entradas redundantes y aquellas similares
+a las encontradas en el conjunto de entrenamiento.
 \begin{description*}
 \item[Tipo:] Conjunto de prueba, datos positivos
 \item[Num. entradas:] 39
@@ -175,26 +206,30 @@ Tomados de miRNA registry \resalt{rel 5.0}, sept/2004
 \end{description*}
 
 \bigskip
-Para el armado de los conjuntos de datos negativos se consideran los
-siguientes criterios:
-\begin{itemize*}
-\item Mínimo de 18 \resalt{base pairings} en el tallo
-\item Máximo -15kcal/mol de energía libre mínima
-\item Ningún bucle múltiple (no más de un ``tallo'' en la estructura
-  secundaria)
-\end{itemize*}
+
 
 \paragraph{CONSERVED-HAIRPIN}
-Tomados de UCSC database, region 56000001--57000000 del cromosoma
-humano 19
+Se obtiene mediante aplicación de una ventana deslizante de 100nt con
+paso 10nt en la región 56000001--57000000 del cromosoma humano 19 de
+UCSC database. La gran mayoría de entradas en este conjunto son
+pseudo-pre-miRNAs, aunque contiene algunos pre-miRNAs reales.  Por
+esto se deberá usar únicamente como conjunto de prueba.
 \begin{description*}
-\item[Tipo:] Conjunto de prueba, datos desconocidos (algunos
+\item[Tipo:] Conjunto de prueba, datos mayormente negativos (algunos
   positivos)
 \item[Num. entradas:] 2444
 \item[Especies:]  Homo sapiens (hsa)
 \end{description*}
 \paragraph{CODING}
-Tomados de USC database, secuencias protein-coding (CDSs)
+Entradas obtenidas de las regiones codificantes (CDS) de los genes
+humanos RefSeq disponibles en en la base de datos USC.  Para
+el armado de este conjunto se consideran los siguientes criterios:
+\begin{itemize*}
+\item Mínimo de 18 pares de bases en el tallo
+\item Máximo -15kcal/mol de energía libre mínima
+\item Ningún bucle múltiple (no más de un ``tallo'' en la estructura
+  secundaria)
+\end{itemize*}
 \begin{description*}
 \item[Tipo:] Conjunto de entrenamiento, datos negativos
 \item[Num. entradas:] 8494
@@ -206,9 +241,11 @@ Tomados de USC database, secuencias protein-coding (CDSs)
 %
 %
 \subsection{miPred \cite{ng}}
-\url{http://web.bii.a-star.edu.sg/archive/stanley/Publications/}
+Los conjuntos de datos de este trabajo están disponibles en la página
+del autor\footnote{\url{http://web.bii.a-star.edu.sg/archive/stanley/%
+Publications/Supp_materials/06-002-supp.html}}.
 %
-En esta base de datos cada entrada dispone de las siguientes características:
+Cada entrada contiene de las siguientes características:
 \begin{description*}
 %
 \item[identificador] del pre-miRNA, p. ej. \mono{hsa-let-7a}.
@@ -242,17 +279,22 @@ En esta base de datos cada entrada dispone de las siguientes características:
   representan la frecuencia de ocurrencia de los dinucleótidos
   correspondientes.
 %
-\item[\mono{pb}] indica la cantidad de \resalt{base pairs}.
+\item[\mono{pb}] indica la cantidad de pares de bases.
 %
 \item[\mono{mfe}] indica la mínima energía libre según RNAFold.
 %
-\item[\mono{Q}] corresponde a la \resalt{\emph{entropía de Shannon}}.
+\item[\mono{Q}] corresponde a la \emph{entropía de Shannon}\footnote{%
+La entropía de Shannon es una medida de aleatoriedad utilizada en
+  Teoría de la Información. En forma simple, podemos decir que muestra
+  en cuánto se diferencia una secuencia determinada de otra
+  completamente aleatoria, y de esta manera brinda una idea de la
+  cantidad de información contenida en la misma.}  de la secuencia.
 %
-\item[\mono{D}] representa la distancia entre \resalt{base pairs}.
+\item[\mono{D}] representa la distancia entre pares de bases.
 %
-\item[\mono{Npb=dP}, \mono{Nmfe=dG}, \mono{NQ=dQ}, \mono{ND=dD}] (x4) corresponde
-  a las variables \mono{pb}, \mono{mfe}, \mono{Q}, \mono{D}
-  normalizadas por la longitud de la secuencia.
+\item[\mono{Npb=dP}, \mono{Nmfe=dG}, \mono{NQ=dQ}, \mono{ND=dD}] (x4)
+  corresponde a las variables \mono{pb}, \mono{mfe}, \mono{Q},
+  \mono{D} normalizadas por la longitud de la secuencia.
 %
 \end{description*}
 %
@@ -275,7 +317,7 @@ han eliminado 46 tipos de pre-miRNAs.
 \begin{description*}
 \item[Tipo:] Conjunto de datos negativos
 \item[Num. entradas:] 12387
-\item[Especies:] prokaryota y eukaryota (?)
+\item[Especies:] muchas (prokaryota y eukaryota)
 \end{description*}
 
 \paragraph{mRNAs}
@@ -285,7 +327,8 @@ Database.
 \begin{description*}
 \item[Tipo:] Conjunto de datos negativos
 \item[Num. entradas:] 31
-\item[Especies:] varias, entre ellas: perro, hsa, mmu, cel, rno, \textellipsis.
+\item[Especies:] varias, entre ellas: perro, hsa, mmu, cel, rno,
+  \textellipsis.
 \end{description*}
 
 \paragraph{pseudo-hairpins}
@@ -301,7 +344,7 @@ características extraídas
 %
 %
 %
-\subsection{Batuwita et al.: microPred}
+\subsection{microPred \cite{batuwita}}
 En esta base de datos están presentes las características presentadas
 en \cite{ng} (salvo estructura secundaria) y se introducen otras 19 
 características adicionales. De estas 19 se detallan sólo aquellas que están
@@ -309,7 +352,8 @@ basadas en la secuencia y/o estructura secundaria, el resto de características
 se basa en descriptores moleculares, y dada su complejidad de cálculo
 se consideran fuera del alcance del actual proyecto.
 %
-Los datos se encuentran disponibles en \url{http://www.cs.ox.ac.uk/people/manohara.rukshan.batuwita/microPred.htm}.
+Los datos se encuentran disponibles en el sitio web de los autores%
+\footnote{\url{http://www.cs.ox.ac.uk/people/manohara.rukshan.batuwita/microPred.htm}}.
 %
 \begin{description*}
 %
@@ -322,19 +366,19 @@ Los datos se encuentran disponibles en \url{http://www.cs.ox.ac.uk/people/manoha
   de loops (bucles) de la estructura secundaria.
 %
 \item[\mono{MFEI$_4$}] corresponde a \mono{mfe} dividida entre el número
-  de \resalt{base pairs}.
+  de pares de bases.
 %
 \item[\mono{|A-U|/L}, \mono{|G-C|/L}, \mono{|G-U|/L}] (x3) representan
-  el número de \resalt{base pairs} \mono{A-U}, \mono{G-C} y \mono{G-U}
+  el número de pares de bases \mono{A-U}, \mono{G-C} y \mono{G-U}
   respectivamente, normalizados por la longitud de la secuencia.
 %
-\item[\mono{Avg\_BP\_Stem}] es el número de \resalt{base pairs} dividido
+\item[\mono{Avg\_BP\_Stem}] es el número de pares de bases dividido
   entre el número total de tallos en la estructura secundaria.
 %
 \item[\mono{\%(A-U)/n\_stems}, \mono{\%(G-C)/n\_stems},
   \mono{\%(G-U)/n\_stems}] (x3) donde \mono{\%(X-Y)} es el número de
-  \resalt{base pairs} \mono{X-Y} sobre el número total de
-  \resalt{base pairs}; este número a su vez dividido entre el número
+  pares de bases \mono{X-Y} sobre el número total de
+  pares de bases; este número a su vez dividido entre el número
   total de tallos en la estructura secundaria.
 \end{description*}
 %
@@ -357,8 +401,8 @@ Tomados de miRBase 12. Contiene 660 pre-miRNAs single-loop y 31 multi-loop.
 \end{description*}
 %
 \paragraph{Otros ncRNAs humanos}
-Base de datos ensamblada manualmente por los autores. Contiene ncRNAs humanos
-que no son miRNAs.
+Conjunto de datos compilado manualmente por los autores. Contiene
+ncRNAs humanos que no son pre-miRNAs.
 \begin{description*}
 \item[Tipo:] Conjunto de datos negativos
 \item[Num. entradas:] 754
@@ -377,61 +421,281 @@ Se optó por trabajar con el conjunto de datos de \cite{xue}
 intentando replicar los resultados obtenidos en ese trabajo mediante
 la utilización de herramientas propias.
 
-Como un primer paso se procedió a codificar el programa \mono{fautil}
-en el lenguaje Python\footnote{\url{http://www.python.org/}}
-para el procesamiento de archivos en formato
-FASTA\footnote{\url{http://blast.ncbi.nlm.nih.gov/blastcgihelp.shtml}},
-un formato estándar para la representación de secuencias de RNA.
-En este caso se considera una ``extensión'' de dicho formato
-la salida del programa \mono{RNAFold}, que a los datos de la secuencia
-agrega la estructura secundaria, y el valor de la Mínima Energía Libre
-para la misma.
+Al analizar el formato de los datos disponibles surge la necesidad
+de codificar una herramienta para el manejo de archivos en formato
+FASTA\footnote{FASTA es un formato estándar para la representación
+  de secuencias de RNA (además de proteínas y DNA, entre otros).
+  La especificación de este formato se encuentra disponible en
+  \url{http://blast.ncbi.nlm.nih.gov/blastcgihelp.shtml}.}.
+El formato de salida del programa \mono{RNAFold} es además
+muy similar a FASTA, e incorpora la información de la estructura
+secuendaria o \emph{plegado} para cada entrada.
+%
+Se ha codificado la herramienta \mono{fautil.py} en lenguaje Python,
+que permite manipular archivos con formato FASTA/RNAfold. También para
+Matlab se ha codificado la utilidad \mono{fastaread.m}.
+%
+\subsection{Extracción de características}
+%
+Tal como en \cite{xue}, las características se calculan para cada
+``triplete'' (\emph{triplet}) en la secuencia, relacionando secuencia
+y estructura secundaria. Para cada entrada, el vector de
+características representa la frecuencia de ocurrencia de las 32
+configuraciones posibles al combinar el nucleótido central del
+triplete con la estructura secundaria del mismo.
 
-La herramienta \mono{fautil} provee las siguientes funcionalidades:
-\begin{description*}
-\item[\mono{strip}] elimina las secuencias cuya estructura secundaria
-  contenga más de un bucle.
-\item[\mono{compare}] compara dos conjuntos de secuencias contando
-  aquellas presentes en sólo uno de los conjuntos y las presentes en
-  ambos. Es de utilidad para asegurar que dos particiones de un
-  conjunto (entrenamiento y prueba) no contengan entradas en común.
-\item[\mono{triplet}] calcula un vector de \emph{triplets} según el
-  procedimiento descripto en \cite{xue}.
-\item[\mono{svmout}] genera un archivo con las mismas características
-  utilizadas en \cite{xue} para ser utilizado de entrada a la librería
-  \emph{libsvm}\cite{svm}.
-\item[\mono{fannout}] genera un archivo con las mismas características
-  utilizadas en \cite{xue} para ser utilizado de entrada a la librería
-  \emph{libfann}\footnote{\url{http://leenissen.dk/fann/wp/}}.
-\end{description*}
+El proceso detallado se puede describir como sigue:
+\begin{enumerate}
+\item A partir de la estructura secundaria, se determina una región a
+  considerar para los cálculos, de forma que excluya los extremos
+  ``sueltos'' así como el bucle central de la cadena, donde las bases
+  no forman pares.
+\item Se recorre en esta región tanto la secuencia como la
+  estructura secundaria con una ventana de 3nt y paso 1nt. En cada
+  paso:
+  \begin{enumerate}
+  \item Se calcula una cadena de ``elemento triplet'' añadiendo al
+    caracter central en la secuencia los tres caracteres
+    correspondientes a la estructura secundaria (se ignora la
+    orientación en el caso de bases que forman un par). Se obtiene
+    así, por ejemplo, el elemento ``\mono{A.((}''.
+  \item Se incrementa el contador de ocurrencias para el elemento en
+    la posición correspondiente del vector.
+  \item En los extremos se ignora un caracter del triplet, que se
+    considera en la estructura secundaria como un ``\mono{.}''.
+  \end{enumerate}
+\item Se normaliza el vector de frecuencias dividiéndolo por el número
+  total de triplets contados.
+\end{enumerate}
+En el archivo \mono{fautil.py}, rutina \mono{triplet}, se encuentra
+una implementación en Python de este proceso. También se ha codificado
+el mismo algoritmo en Matlab, \mono{triplet.m}.
+%
+\subsection{Clasificadores}
+Se generaron 3 clasificadores, según se detallan a continuación.
+\begin{enumerate}
+\item Clasificador mediante SVM utilizando \emph{libsvm} con los
+  parámetros por defecto.
+\item Clasificador mediante SVM utilizando el \emph{Bioinformatics
+  Toolbox} de Matlab.
+\item Clasificador mediante MLP utilizando el \emph{Neural Network
+  Toolbox} de Matlab.
+\end{enumerate}
+%
+La librería \emph{libsvm} provee una utilidad \mono{svm-easy} que
+busca en forma automática aquellos parámetros que minimizan el
+error. En los otros casos, esta búsqueda se realizó en forma manual,
+ajustando los parámetros \mono{boxconstraint} y y \mono{sigma} para
+SVM y para MLP ajustando el número de capas ocultas y el número de
+nodos por capa oculta.
+%
+\subsection{Pruebas}
+Los clasificadores se entrenaron con el mismo conjunto de datos
+de \cite{xue}, con los conjuntos de prueba \emph{Real} (30 elementos),
+\emph{Pseudo} (1000 elementos) y \emph{Updated} (39 elementos), también
+de la misma fuente.
 
-*********** Pruebas preliminares
+En el caso de SVM-Matlab y MLP, se probaron diversos parámetros hasta
+encontrar aquellos que obtienen el mejor rendimiento del clasificador.
+En la tabla \ref{testresults} se presentan figuras de rendimiento para
+los distintos clasificadores. En el caso de SVM-Matlab se muestran
+tres resultados representativos correspondientes a diferentes
+parámetros.  En el caso MLP, se encontró que los resultados no varían
+significativamente para distintas configuraciones, con diferencias
+menores a 3\% en cada caso.  Se muestran entonces para MLP tasas
+representativas.
+%
+\begin{table}
+  \caption{Resultados de las pruebas iniciales de clasificación}
+  \center%\sffamily
+  \begin{tabular}{lrrr}
+    Clasificador   & \% Real (/30) &
+                     \% Pseudo (/1000) & \% Updated (/39) \\\hline
+    svm (libsvm)   & $100.0$    & $87.4$     & $92.3$     \\
+    svm (matlab,1) & $100.0$    & $91.2$     & $89.7$     \\
+    svm (matlab,2) & $96.7$     & $96.6$     & $48.7$     \\
+    svm (matlab,3) & $100.0$    & $86.4$     & $97.4$     \\
+    mlp            & $\sim90.0$ & $\sim85.0$ & $\sim91.0$  
+  \end{tabular}
+  \label{testresults}
+\end{table}
+%
 
+Como se puede observar en la tabla \ref{testresults}, las tasas de
+clasificación para los distintos conjuntos resultan satisfactorias, e
+incluso sensiblemente mejores a aquellas del trabajo original.  Sin
+embargo, estos números deberán tomarse con cuidado, ya que han sido
+obtenidos entrenando y validando con particiones estáticas, y podrían
+ser resultado de un sobreentrenamiento para estos datos en
+particular. Se observa también que el perceptrón multicapa presenta
+una buena tasa de clasificación incluso cuando se trata de una única
+neurona (sin capas ocultas), siempre para este mismo conjunto de
+datos.
+
+Se ha implementado el script \mono{triplet\_libsvm.sh} para las
+pruebas con \emph{libsvm}, y los scripts \mono{triplet\_svm.m} y
+\mono{triplet\_mlp.m} para las pruebas en Matlab de los clasificadores
+SVM y MLP respectivamente. Con el software apropiado, estos scripts
+se pueden ejecutar directamente para reproducir los resultados de las
+pruebas.
+%
 \section{Métodos de extracción de características}
-Se procedió a codificar un algoritmo para la extracción de características
-a partir de las bases de datos recopiladas.
+%
+Tomando como punto de partida la utilidad \mono{fautil.py} se procedió
+a codificar \mono{feats.py}, una herramienta para extracción de
+características a partir de archivos con formato RNAfold. 
 
-Se codificó un método de validación de las características extraídas, comparando
-los datos disponibles en las bases de datos recopiladas con aquellas obtenidas por el método.
-
-
-
-
-A partir de fautil, se codificó una herramienta que permita la
-extracción de características extra en la base de datos de xue, junto
-con un algoritmo de validación para asegurar que los resultados
-obtenidos son los mismos que en el paper original.
-
-
+Las características consideradas se tomaron de aquellas presentadas en
+\cite{xue}, \cite{ng} y \cite{batuwita}, ignorando aquellas que
+no se pueden calcular directamente con la información de la secuencia
+y de la estructura secundaria tal como calculada con el programa
+RNAfold. A continuación se enumeran las características agrupadas en 4
+conjuntos: de triplete, de triplete-extra, de secuencia y de
+estructura secundaria.
+%
+\subsection{Características de tripletes}
+Consiste en los 32 elementos de tripletes tal como calculados en
+\cite{xue}.  Considerando la región del ``tallo'' de la horquilla,
+genera un vector de características que contiene el número de
+ocurrencias del elemento triplete correspondiente normalizado entre el
+número total de ocurrencias.  El orden de las columnas es el
+siguiente: \mono{A..., A..(, A.(., A.((, A(.., A(.(, A((., A(((,
+  G..., G..(, G.(., G.((, G(.., G(.(, G((., G(((, C..., C..(, C.(.,
+  C.((, C(.., C(.(, C((., C(((, U..., U..(, U.(., U.((, U(.., U(.(,
+  U((., U(((}.
+%
+\subsection{Características de tripletes ``extra''}
+Este grupo contiene aquellas características auxiliares que se obtienen
+al calcular el vector de tripletes, a saber:
+\begin{itemize}
+\item\mono{length3} indica la longitud de la secuencia considerada al
+  extraer los elementos de triplete, esto es, el número de bases que
+  conforman el ``tallo'' de la estructura de horquilla.
+\item\mono{basepairs} indica el número de pares de bases presente en
+  el pre-miRNA, según calculado por RNAfold.
+\item\mono{length3/basepairs} indica el grado de complementariedad
+  entre los dos brazos de la estructura de horquilla. Para una
+  complementariedad perfecta se da el valor mínimo de 2. Cuanto más
+  bases ``sueltas'' contenga el tallo, mayor será este número. Se
+  calcula dividiendo \mono{length3} entre \mono{basepairs}.
+\item\mono{gc\_content} indica la proporción de nucleótidos \mono{G} y
+  \mono{C} en el tallo. Se calcula dividiendo la cantidad de \mono{G}
+  y \mono{C} en el tallo por el valor de \mono{length3}.
+\end{itemize}
+%
+\subsection{Medidas de la secuencia}
+Este grupo contiene las siguientes medidas de la secuencia del pre-miRNA:
+\begin{itemize}
+\item\mono{Length} es la longitud del pre-miRNA, incluyendo extremos sueltos
+  y el bucle central.
+\item\mono{A, C, G, U} cuentan el número de nucleótidos \mono{A},
+  \mono{C}, \mono{G} y \mono{U} presentes en la secuencia del
+  pre-miRNA.
+\item\mono{G+C, A+U} cuentan el número de nucleótidos \mono{G} y
+  \mono{C}, y \mono{A} y \mono{U} respectivamente.
+\item\mono{XY} son 16 características que cuentan el número de
+  dinucleótidos (dos nucleótidos contiguos) \mono{XY}, con
+  $\mono{X,Y}\in\{\mono{A,C,G,U}\}$. El orden es el siguiente:
+  \mono{AC, AG, AU, CA, CC, CG, CU, GA, GC, GG, GU, UA, UC, UG, UU}.
+\end{itemize}
+%
+\subsection{Medidas de la estructura secundaria}
+En este grupo se presentan las siguientes características relativas al
+plegado del pre-miRNA en su estructura de horquilla:
+\begin{itemize}
+\item\mono{MFE} es la Mínima Energía Libre obtenida al plegar la
+  secuencia con \mono{RNAfold}.
+\item\mono{MFEI1} se calcula según ${\mono{MFE}}/{(\mono{G+C})\cdot
+  100}$, donde \mono{G+C} es la misma que aquella calculada en las
+  medidas de secuencia.
+\item\mono{MFEI4}$=\mono{MFE}/\mono{basepairs}$ con \mono{basepairs}
+  de las características de triplete extra.
+\item\mono{dP} es la característica \mono{basepairs} normalizada con
+  la longitud total \mono{Length}.
+\item\mono{|A-U|/Length} indica el número de pares \mono{A-U}
+  normalizado según la longitud \mono{Length}.
+\item\mono{|G-C|/Length} indica el número de pares \mono{G-C}
+  normalizado según la longitud \mono{Length}.
+\item\mono{|G-U|/Length} indica el número de pares \mono{G-U}
+  normalizado según la longitud \mono{Length}.
+\end{itemize}
+%
+%
+%
+%
 \section{Armado de la base de datos definitiva}
+Para el armado de la base de datos definitiva se tomaron como fuente
+aquellas presentadas en \cite{xue}, \cite{ng} y \cite{batuwita}.
+Se incorporó además la última versión disponible de miRBase \cite{mirbase}.
 
+Como primer paso en el armado de la base de datos se
+procedió a validar el plegado de las secuencias en las bases de datos
+originales aplicando el programa RNAfold sobre las mismas y
+comprobando que el plegado obtenido fuera el mismo que el presente en
+la base de datos original. Se utilizó la versión 1.8.5 de RNAfold, ya
+que con la versión actual (2.1) se obtienen plegados diferentes en la
+mayoría de los casos.
 
-\subsection{}
+Una vez validadas las estructuras secundarias, se validaron las
+características extraídas contra las bases de datos respectivas: las
+características de triplete y triplete-extra contra la base de datos
+de \cite{xue}, las características de la secuencia contra la base de
+\cite{ng}, y las de estructura secundaria con la base de datos en
+\cite{batuwita}.
+
+Luego se procedió a filtrar aquellas entradas con bucles múltiples en
+la estructura secundaria, ya que las características de triplete no
+están definidas en estos casos.  De esta manera se eliminó la base de
+datos ``mRNA'' de \cite{ng} por completo, ya que todas las entradas en
+este caso poseen bucles múltiples.
+
+Además de las características calculadas, se incorporan a la base de
+datos los datos de la secuencia y estructura secundaria en formato
+compatible RNAfold, junto con otro archivo donde se indica la clase
+(pre-miRNA real, pseudo-pre-miRNA o indefinido) de cada entrada
+correspondiente.  En el archivo \mono{README.md} de la base de datos
+se detalla la estructura de directorios generada junto con el formato
+de los archivos para cada caso.
+
+Se codificó la herramienta \mono{tests.py} para la validación, así
+como los scripts en Bash \mono{validate.sh} y \mono{generate\_db.sh},
+los que pueden ser ejecutados directamente, siempre con el software
+requerido, para validar y regenerar la misma base de datos a partir de
+las fuentes.
+%
+\subsection{Conjuntos de datos}
+A continuación se listan los conjuntos de datos obtenidos en el armado
+de la base de datos.
+\begin{description}
+\item[mirbase50] de \cite{xue}, contiene 1210 pre-miRNAs reales para
+  diferentes especies, entre ellas 193 humanos, 112 de gallina, 207 de
+  ratón, 172 de rata y 96 de arroz.
+\item[updated] de \cite{xue}, contiene 39 pre-miRNAs humanos.
+\item[coding] de \cite{xue}, contiene 8494 pseudo pre-miRNAs humanos.
+\item[conserved-hairpin] de \cite{xue}, contiene 2444 pseudo
+  pre-miRNAs humanos, aunque se conoce que algunos de ellos son
+  pre-miRNAs reales. Se establece la clase para estas entradas como
+  indeterminada, representada por el valor ambiguo 0.
+\item[mirbase82-nr] de \cite{ng}, contiene 1985 pre-miRNAs de miRBase
+  8.2 filtrados a 90\% de similaridad, para 40 especies incluyendo
+  vertebrados, plantas y virus.
+\item[functional-ncrna] de \cite{ng}, contiene 2657 ncRNAs
+  funcionales, excepto pre-miRNAs, para varias
+  especies.\item[mirbase12] de \cite{batuwita}, contiene 660
+  pre-miRNAs humanos no redundantes originalmente de miRBase 12.0.
+\item[other-ncrna] de \cite{batuwita}, contiene 129 ncRNAs humanos que
+  no son pre-miRNAs.
+\item[mirbase20] de \cite{mirbase}, incorpora 21433 pre-miRNAs reales
+  que no tienen bucles múltiples de miRBase 20, para 204 especies,
+  entre ellos 1801 humanos, 1121 de ratón, 423 de rata y 392 de arroz.
+\end{description}
 %
 %
+\renewcommand{\bibfont}{\normalfont\small}
 \printbibliography
 %
 \end{document}
+
 
 
 %% Batuwita et al.: microPred
