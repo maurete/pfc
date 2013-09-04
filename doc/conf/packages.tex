@@ -96,7 +96,12 @@
 \usepackage{amsmath}		%Para enornos matemáticos mas flexibles
 %\usepackage{varwidth}		%varwidth es un minipage que se ajusta al ancho mínimo
 
-\usepackage[backend=biber,sorting=none]{biblatex}
+
+\usepackage[backend=biber,sorting=none,style=ieee,eprint=false,url=false]{biblatex} %% style=ieee
+%% requiere texlive-bibtex-extra en debian
+
+
+
 \usepackage{tikz}
 \usepackage{pgfkeys}
 \usepackage{pgfgantt}

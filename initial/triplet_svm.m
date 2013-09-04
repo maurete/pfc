@@ -1,15 +1,10 @@
-function [xvalerr sigmas boxcns sensit specif] = triplet_svm ( kernelfunc, boxconstraint, k )
+function [sensit specif sigmas boxcns] = triplet_svm ( tries, sigma, ...
+                                                      boxconstraint )
     
     addpath('./util/');
     
-    if nargin < 3
-        k = 5;
-        if nargin < 2
-            boxconstraint = Inf;
-            if nargin < 1
-                kernelfunc = 'rbf';
-            end
-        end
+    if nargin < 1
+        tries = 10;
     end
 
     % Leo los datos originales
@@ -17,11 +12,13 @@ function [xvalerr sigmas boxcns sensit specif] = triplet_svm ( kernelfunc, boxco
     ftrain_pseudo = fastaread('train_cds_168.txt');
     ftest_real    = fastaread('test_hsa_30.txt');
     ftest_pseudo  = fastaread('test_cds_1000.txt');
+    ftest_updated = fastaread('test_hsa_updated.txt');
     
     train_real   = zeros(163,32);
     train_pseudo = zeros(168,32);
     test_real    = zeros(30,32);
     test_pseudo  = zeros(1000,32);
+    test_updated = zeros(39,32);
     
     for i=1:163
         train_real(i,:) = triplet(ftrain_real(i).Sequence, ftrain_real(i).Fold);
@@ -35,47 +32,61 @@ function [xvalerr sigmas boxcns sensit specif] = triplet_svm ( kernelfunc, boxco
     for i=1:1000
         test_pseudo(i,:) = triplet(ftest_pseudo(i).Sequence, ftest_pseudo(i).Fold);
     end
+    for i=1:39
+        test_updated(i,:) = triplet(ftest_updated(i).Sequence, ftest_updated(i).Fold);
+    end
     
-    N = 163+168;
-    part = cvpartition(N, 'kfold', k);
     [traindata fff ooo] = scale([train_real; train_pseudo]);
     trainlbls = [ones(163,1); zeros(168,1)];
-    sigmas = [1 2 5 8 10 20 50 100 1000 1e4];
-    boxcns = [0.01 0.1 0.5 1 2 5 10 100 1000 1e4 1e5];
-    %results = zeros(length(sigmas),length(boxcns));
+
+    sigmas = [0.6 0.8 1 1.2 1.5 1.8 2 2.2 2.8 3 4 18 18.5 19 19.5 ...
+              20 20.5 21 22];
+    %boxcns = [0.01 0.1 0.5 1 2 5 10 100 1000 1e4 1e5 1e6];
+    boxcns = [1 10 100 1e3 1e4 1e5 1e6 1e7 1e8 1e9 1e10];
+
     test_real = scale(test_real, fff, ooo);
     test_pseudo = scale(test_pseudo, fff, ooo);
+    test_updated = scale(test_updated, fff, ooo);
 
-    xvalerr = zeros(length(sigmas),length(boxcns));
     sensit  = zeros(length(sigmas),length(boxcns));
     specif  = zeros(length(sigmas),length(boxcns));
+    sensit2 = zeros(length(sigmas),length(boxcns));
 
+    matlabpool(2);
     for s=1:length(sigmas)
         for b=1:length(boxcns)
-            try
-                err = crossval('mcr',traindata,trainlbls,'Predfun',...
-                               @(trndata, trnlbls, tstdata)svmxfun(trndata, trnlbls,tstdata,sigmas(s),boxcns(b)),...
-                           'partition',part);
-                                
-                model = load('__svm__struct__.mat');
-                tr = double(svmclassify(model,test_real))-1;
-                tp = double(svmclassify(model,test_pseudo))-1;
-                se=sum(tr)/30;
-                sp=1-sum(tp)/1000;
-                fmt='% -9.6f';
-                disp(['sig=',num2str(sigmas(s),fmt),' box=', ...
-                      num2str(boxcns(b),fmt), ' err=', num2str(err,fmt), ...
-                      ' se=', num2str(se,fmt), ' sp=', num2str(sp,fmt) ])
+            try                
+                se = zeros(1,tries);
+                sp = zeros(1,tries);
+                up = zeros(1,tries);
+                
+                parfor i = 1:tries
+                    idx = randperm(331);
+                    
+                    model = svmtrain(traindata(idx,:),trainlbls(idx,:),'Kernel_Function','rbf', ...
+                     'rbf_sigma',sigmas(s),'boxconstraint',boxcns(b));
+
+                    se(i) = sum(double(svmclassify(model, ...
+                                                   test_real)))/30;
+                    sp(i) = 1-sum(double(svmclassify(model, ...
+                                                     test_pseudo)))/1000;
+                    up(i) = sum(double(svmclassify(model, ...
+                                                   test_updated)))/39;
+                                      
+                end
+                
+                fprintf( 'sigma=%8.6g, boxcn=%8.6g, se=%-8.6f, sp=%-8.6f, up=%-8.6f\n', ...
+                 sigmas(s), boxcns(b), mean(se), mean(sp), mean(up) )
+                
             catch e
-                err=1;
                 se = 0;
                 sp = 0;
-                %disp(e)
+                up = 0;
             end
-            xvalerr(s,b) = err;
-            sensit(s,b) = se;
-            specif(s,b) = sp;
+            sensit(s,b) = mean(se);
+            specif(s,b) = mean(sp);
+            sensit2(s,b) = mean(up);
         end
     end
-    %rtab = [ [ 5; sigmas'] [boxcns; xvalerr] ];
+    matlabpool close;
 end
