@@ -6,11 +6,23 @@
 \include{conf/fuentes}
 %
 %
+%
 \selectlanguage{spanish}
 \hyphenation{micro-RNA}
 \hyphenation{micro-RNAs}
 \hyphenation{mi-RNA}
 \hyphenation{mi-RNAs}
+%
+%
+%% \usepackage{glossaries}
+%% \newglossaryentry{conservacion}{name=conservaci{ó}n,
+%%   description={refiere a la conservación de las especies},
+%%   user1={conservados}
+%% }
+%% \newglossaryentry{nt}{name=nucle{ó}tido,
+%%   description={Unidad constitutiva de los ácidos ribonucleico (ARN) y
+%% desoxirribonucleico (ADN)},
+%% }
 %
 \begin{document}
 \selectlanguage{spanish}
@@ -28,8 +40,9 @@
   mediante técnicas de Inteligencia Computacional}
 \author{Mauro Javier Torrez}
 %
-\publishers{\-\\[4em]{Director\\Dr. Diego H. Milone}\\[2em]
-  {Asesora temática\\Dra. Georgina S. Stegmayer}}
+\publishers{\-\\[4em]{Director\\Dr. Diego H. Milone}%\\[2em]
+%  {Asesora temática\\Dra. Georgina S. Stegmayer}
+}
 %
 \date{\-\\[2em]\today}
 %
@@ -47,102 +60,99 @@ técnicas de Inteligencia Computacional
 %
 %
 \section{Palabras clave}
-microRNA, pre-microRNA, Inteligencia Computacional, Máquinas de Vector
-de Soporte, Perceptrón Multicapa, identificación, clasificación
+miRNA, pre-miRNA, máquina de vectores
+de soporte, perceptrón multicapa, clasificación
 %
 %
 \section{Justificación}
-Hace aproximadamente una década se propuso que un nuevo tipo de
-pequeñas moléculas de RNA antes ignoradas, aunque abundantes,
-jugarían un papel decisivo en la reproducción de las células,
-mediando en la diferenciación en distintos tipos de tejidos y/o en la
-permanencia de las mismas en un estado particular de diferenciación
-\cite{lee-mammal}. Estas moléculas se denominan microRNA o
-miRNA. Aunque su mecanismo exacto de acción aún no se conoce
-completamente, estudios recientes demuestran que están implicadas, por
-ejemplo, en la evolución del cáncer (sea como inhibidores o promotores
-de éste) \cite{aurora}, y en procesos de infección viral
-\cite{lecellier}.
+%
+%\subsection*{Descripción de los miRNAs y pre-miRNAs}
+%
+Hace aproximadamente una década se propuso que un tipo de pequeñas
+moléculas previamente ignoradas, aunque presentes en grandes
+cantidades en la célula, jugarían un papel decisivo en la reproducción
+de las mismas, mediando en la diferenciación en distintos tipos de
+tejidos y/o en la permanencia de éstas en un estado particular de
+diferenciación \cite{lee-mammal}. Estas pequeñas moléculas de ARN
+(\eng{RNA}, \emph{ácido ribonucleico}), de unos 22 nucleótidos de
+longitud, se llaman en inglés \eng{microRNAs} o \eng{miRNAs}.  En
+trabajos posteriores se ha demostrado que los miRNAs ejercen una
+función reguladora de la expresión génica celular \cite{bartel116} y
+están involucrados en varios procesos genéticos dentro de la célula,
+como la transcripción de mRNAs (\emph{RNA mensajeros}) y la síntesis
+de proteínas \cite{lili}.  Este efecto regulador puede tener gran
+implicancia en el desarrollo y evolución de la enfermedad celular. Se
+ha demostrado que los miRNAs juegan un rol importante en la
+carcinogénesis \cite{aurora}\cite{lili}, regulando la proliferación y
+muerte celular, entre otras funciones como el metabolismo de la grasa
+en moscas, los procesos de infección viral, y el control del
+desarrollo de flores y hojas en plantas
+\cite{bartel116}\cite{lecellier}.
 
-Los miRNAs son pequeñas cadenas de RNA (ARN, ácido ribonucleico), de
-unos 22 nucleótidos de longitud, que ejercen una importante función
-reguladora de la expresión génica celular \cite{bartel116}.  Se ha
-demostrado su efecto regulador en varios procesos genéticos dentro de
-la célula, como la transcripción de mRNAs (\emph{RNA mensajeros}) y la
-síntesis de proteínas. Al alterar los niveles de miRNAs en las
-células, es posible medir su impacto en estos procesos de forma
-cuantitativa \cite{lili}.
-
-El efecto regulador de la expresión génica de los microRNAs en los
-procesos celulares puede tener gran implicancia en el desarrollo y
-evolución de la enfermedad celular. Expresiones aberrantes de los
-miRNAs se han observado en muchos cánceres. Además, se ha demostrado
-que juegan un rol importante en la carcinogénesis \cite{lili}. 
-Funciones recientemente descubiertas de los miRNAs incluyen el control
-de la proliferación y muerte celular, metabolismo de la grasa en
-moscas, y control del desarrollo de flores y hojas en
-plantas \cite{bartel116}. 
+Los miRNAs se presentan naturalmente dentro de una molécula denominada
+pre-miRNA o \emph{miRNA precursor}, de unos 70 nucleótidos [nt] de
+longitud, la cual contiene uno o más miRNAs ``maduros'' en su
+secuencia. En la Figura \ref{horquilla} se representa en forma
+esquemática la secuencia de una cadena de pre-miRNA y su
+correspondiente \emph{estructura secundaria}. Esta estructura
+secundaria viene dada por la forma en que la cadena de pre-miRNA se
+``plega'' sobre sí misma logrando una mayor estabilidad molecular. Tal
+como se aprecia en la figura, se encuentra que en el reino animal la
+estructura secundaria de un pre-miRNA conforma una especie de
+\emph{horquilla} \cite{bartel116}\cite{sewer}.
 
 \newpage
-Los miRNAs se presentan dentro de una molécula denominada pre-miRNA
-(miRNA precursor), de unos ~70nt de longitud, la cual contiene uno o
-más miRNAs ``maduros'' en su secuencia.  En la figura \ref{horquilla}
-se representa en forma esquemática la secuencia de una cadena de
-pre-miRNA y su correspondiente \emph{estructura secundaria}. Esta
-estructura secundaria viene dada por la forma en que la cadena de
-pre-miRNA se ``plega'' sobre sí misma logrando una mayor estabilidad
-molecular. Típicamente, en el reino animal se encuentra que la
-estructura secundaria de un pre-miRNA conforma una especie de
-\emph{horquilla}, como se puede ver en la figura.
-\cite{bartel116}\cite{sewer}
-
-El debate acerca del número e identidad de los miRNAs en diferentes
-genomas es una cuestión abierta. A modo de ejemplo, para el caso del
-genoma humano se ha estimado que se encontrarían miles de pre-miRNAs
-\cite{batuwita}, y hasta ahora han sido identificados unos 1900.  Sin
-embargo, este número podría ser mucho mayor, en especial si se tiene
-en cuenta que estas predicciones consideran sólo aquellos pre-miRNAs
-que se encuentran conservados entre especies relativamente distantes,
-como primates y roedores, y no aquellos pre-miRNAs de evolución más
-reciente \cite{sewer}.  La base de datos
-miRBase\footnote{\url{http://mirbase.org/}}
-\cite{mirbase2}\cite{mirbase3} recopila el conjunto de (pre-)miRNAs
-conocidos hasta la fecha. En la última versión
-disponible\footnote{\url{ftp://mirbase.org/pub/mirbase/20/}}, de junio
-de 2013, se listan 24521 pre-miRNAs experimentalmente validados,
-conteniendo un total de 30424 miRNAs ``maduros''.
+El debate acerca del número e identidad de los miRNAs presentes en
+diferentes genomas es una cuestión abierta: a modo de ejemplo, para el
+caso del genoma humano se ha estimado que se encontrarían miles de
+pre-miRNAs \cite{batuwita}, y hasta ahora han sido identificados unos
+1900. Sin embargo, este número podría ser mucho mayor, en especial si
+se tiene en cuenta que estas predicciones consideran sólo aquellos
+pre-miRNAs que se encuentran conservados entre especies
+relativamente distantes, como primates y roedores, y no aquellos
+pre-miRNAs de evolución más reciente \cite{sewer}.  La base de datos
+miRBase%\footnote{\url{http://mirbase.org/}}
+\cite{mirbase2}\cite{mirbase3} recopila el conjunto de
+\mbox{(pre-)miRNAs} conocidos hasta la fecha. En la última versión
+disponible, de junio de
+2013%\footnote{\url{ftp://mirbase.org/pub/mirbase/20/}}
+, se listan
+24521 pre-miRNAs experimentalmente validados, conteniendo un total de
+30424 miRNAs ``maduros''.
 %
 \begin{figure}
   \small\slshape\center
-  \includegraphics[width=.9\textwidth]{img/hsa-mir-299_ss.pdf}
+  \includegraphics[width=.9\textwidth]{res/hsa-mir-299_ss.pdf}
   \caption{\small\slshape Representación esquemática de la secuencia (arriba) y
     estructura secundaria tipo horquilla (abajo) del pre-miRNA
-    \textbf{hsa-mir-299}. Según información disponible en miRBase,
-    este pre-miRNA experimentalmente validado contiene 2 miRNAs
-    maduros, hsa-mir-299-5p y hsa-mir-299-3p en cada uno de sus
-    brazos. Estructura secundaria calculada con RNAfold
-    \cite{vienna}.}
+    \textbf{hsa-mir-299}.
+    %% Según información disponible en miRBase,
+    %% este pre-miRNA experimentalmente validado contiene 2 miRNAs
+    %% maduros, hsa-mir-299-5p y hsa-mir-299-3p en cada uno de sus
+    %% brazos. Estructura secundaria calculada con RNAfold
+    %% \cite{vienna}.
+  }
   \label{horquilla}
 \end{figure}
 
-%\newpage
-Inicialmente, la identificación de nuevos miRNAs se realizaba en forma
-experimental mediante secuenciado y clonación directa. Ésta es la
-primera elección, pero sólo aquellos miRNAs abundantes pueden ser
-fácilmente detectados mediante esta técnica. Sin embargo,
-no todos los miRNAs están bien expresados en múltiples tipos de
-tejidos. Aquellos miRNAs que tienen un bajo nivel de expresión, que se
-expresan en tejidos específicos y/o que se presentan en estadíos de
-desarrollo celular específicos pueden ser fácilmente ignorados
-mediante la técnica experimental. Estudios recientes sugieren que los
-miRNAs humanos expresados en bajos niveles evolucionan
-rápidamente. \cite{ding}\cite{xu}
-
-En pos de superar estas dificultades propias del método experimental
-es que surgen técnicas computacionales para encontrar aquellos miRNAs
-que son específicos a determinados tipos de tejidos o estadíos de
-desarrollo celular, y aquellos escasamente
-expresados. \cite{sheng}\cite{xu}
+%
+%\subsection*{Identificación (clasificación) de los pre-miRNAs}
+%
+En principio, la identificación de nuevos miRNAs se realiza en forma
+experimental en el laboratorio. Ésta es la primera elección, pero sólo
+aquellos miRNAs abundantes pueden ser detectados de forma fiable
+mediante esta técnica. Sin embargo, no todos los miRNAs están bien
+expresados en múltiples tipos de tejidos: aquellos miRNAs que tienen
+un bajo nivel de expresión, que se expresan en tejidos específicos y/o
+que se presentan sólo en determinados estadíos de desarrollo celular
+pueden ser fácilmente ignorados mediante la técnica
+experimental. Estudios recientes sugieren que los miRNAs humanos
+expresados en bajos niveles evolucionan rápidamente
+\cite{ding}\cite{xu}. En pos de superar estas dificultades propias
+del método experimental es que surgen técnicas computacionales para
+encontrar aquellos miRNAs que son específicos a determinados tipos de
+tejidos o estadíos de desarrollo celular, y aquellos escasamente
+expresados \cite{sheng}\cite{xu}.
 
 Los métodos computacionales para el reconocimiento de genes miRNA se
 han desarrollado en dos direcciones principales: los métodos
@@ -151,37 +161,94 @@ estructura secundaria entre distintas especies, y los no-comparativos,
 basados en el aprendizaje de máquina o Inteligencia
 Computacional. Estos dos enfoques se complementan mutuamente al
 encarar distintas estrategias para la predicción de nuevos
-miRNAs. \cite{batuwita}\cite{sheng}
+miRNAs \cite{batuwita}\cite{sheng}.
 
+
+Desde el punto de vista informático, una secuencia de pre-miRNA se
+representa mediante una cadena de caracteres \mono{A, G, C, U,} donde
+cada carácter representa un tipo de nucleótido compuesto de
+\emph{adenina}, \emph{guanina}, \emph{citosina} y \emph{uracilo}
+respectivamente, siendo éstas las \emph{bases} constitutivas del
+ARN. Además, se sabe que los pre-miRNAs tienen una longitud de unos 70
+nucleótidos, y una estructura secundaria de tipo horquilla.
+
+En un clasificador de tipo comparativo, se analizan genomas de
+diferentes especies buscando correspondencias que cumplan con las
+características de un pre-miRNA. Tal como en el caso del método
+experimental, mediante esta técnica sólo es posible detectar aquellos
+pre-miRNAs conservados entre especies y con un elevado nivel de
+expresión. En cambio, en un clasificador no-comparativo se utiliza
+alguna técnica de aprendizaje de máquina, a partir de la cual se
+genera un modelo computacional que describe internamente las
+características del pre-miRNA a partir de un conjunto de datos que se
+utilizan en la etapa del entrenamiento.
+
+El objetivo último de un clasificador no-comparativo es obtener una
+tasa mínima de errores de clasificación para conjuntos de datos
+nuevos, que no hayan sido utilizados en la etapa de entrenamiento.
+En Inteligencia Computacional se utilizan diversas técnicas para
+la implementación de un clasificador no-comparativo, entre ellas
+ el \emph{Perceptrón Multicapa} \cite{mlp1}\cite{mlp2} y la
+\emph{Máquina de Vectores de Soporte} \cite{svm}.
+El Preceptrón Multicapa (MLP) es un tipo de red neuronal artificial
+con propagación hacia adelante, donde las neuronas se disponen en
+capas.  La salida de cada neurona se determina de aplicar una
+\emph{función de activación}, de tipo sigmoidea, a la suma ponderada
+de las salidas en la capa anterior. Durante el entrenamiento del MLP
+se ajustan los pesos de cada neurona mediante un \emph{algoritmo de
+  retropropagación} hasta obtener una tasa de clasificación
+satisfactoria \cite{jain}. 
+La Máquina de Vectores de Soporte (SVM) es un algoritmo de
+clasificación que se basa en mapear, mediante una función de mapeo
+llamada \emph{kernel} (núcleo), el espacio $N$-dimensional de los
+datos de entrada en otro espacio de dimensión $M: M\gg N$, donde se
+espera que los datos sean linealmente separables mediante un
+hiperplano. El entrenamiento consiste en encontrar el hiperplano
+óptimo de separación para el conjunto de datos presentado \cite{bottou}.
+
+Para cada entrada presentada, el clasificador deberá ser capaz de
+discriminar entre dos \emph{clases}: positiva para aquellas que
+corresponden a un pre-miRNA y negativa para aquellas entradas que no
+lo son. A la hora de seleccionar los datos de entrenamiento para el
+clasificador, se deberán utilizar como conjunto de datos positivos
+pre-miRNAs validados experimentalmente. Para el caso del conjunto de
+entrenamiento negativo, se deberá utilizar un conjunto de datos
+artificialmente seleccionados que no contenga pre-miRNAs, aunque sí
+presenten características similares a aquellos.
+
+%\subsection*{Propuesta}
 En base a lo que se ha observado en la bibliografía y al problema
 planteado, se propone para este trabajo desarrollar un sistema
-informático para la identificación de cadenas de pre-microRNA de tipo
+informático para la identificación de cadenas de pre-miRNA de tipo
 no-comparativo, que haga uso de técnicas de Inteligencia Computacional
 para la clasificación de patrones.
 
-Una primera parte del sistema consistirá en generar un vector de
-características de cada secuencia. Para este propósito se procederá al
-diseño y codificación de un algoritmo para la extracción de
-características a partir de la propia secuencia en conjunto con la
-estructura secundaria y otros indicadores moleculares que se
-encuentren disponibles. El conjunto de características a extraer se
-determinará en base a criterios del rendimiento obtenido en el
-algoritmo de clasificación y la disponibilidad de datos
-complementarios a la secuencia y estructura secundaria para todas las
-entradas.
+Para cada entrada, mediante un proceso de extracción de
+características se generará un vector numérico que será la entrada al
+clasificador.  El sistema clasificará los datos de entrada
+identificando aquellas secuencias candidatas a ser pre-miRNAs.  Se
+utilizarán clasificadores mediante Máquina de Vector de Soporte y
+Perceptrón Multicapa, comparando su rendimiento, y se tomará en
+consideración la pertinencia de incluir éstas y otras técnicas en el
+clasificador final.
+
+%% Una primera parte del sistema consistirá en generar un vector de
+%% características de cada secuencia. Para este propósito se procederá al
+%% diseño y codificación de un algoritmo para la extracción de
+%% características a partir de la propia secuencia en conjunto con la
+%% estructura secundaria y otros indicadores moleculares que se
+%% encuentren disponibles. El conjunto de características a extraer se
+%% determinará en base a criterios del rendimiento obtenido en el
+%% algoritmo de clasificación y la disponibilidad de datos
+%% complementarios a la secuencia y estructura secundaria para todas las
+%% entradas.
 
 %\newpage
-La segunda parte del sistema consistirá en clasificar los datos de
-entrada identificando aquellas secuencias candidatas a ser
-pre-miRNAs. En este caso se trabajará con técnicas de aprendizaje de
-máquina como las Máquinas de Vector de Soporte \cite{svm} y Perceptrón
-Multicapa \cite{mlp1}\cite{mlp2}. En principio se trabajará con estas
-técnicas comparando su rendimiento, y se tomará en consideración la
-pertinencia de incluir éstas y otras técnicas en el clasificador
-final.
 %También se especificará y codificará una interfaz de usuario para la
 %utilización del sistema por parte del usuario final.
 
+%\subsection*{Impacto}
+%
 El impacto social del desarrollo de este proyecto se verá en un
 aumento en la productividad de los investigadores del área al
 posibilitarle una mayor facilidad de acceso que los sistemas actualmente
@@ -193,6 +260,7 @@ general, como el desarrollo de nuevos métodos de prevención y
 tratamiento de enfermedades de diversa índole en las personas,
 animales y plantas; y una mayor y mejor comprensión de los procesos
 involucrados en su aparición y desarrollo.
+
 En lo personal, el desarrollo de este proyecto me permitirá
 profundizar mi conocimiento en diferentes áreas de la Inteligencia
 Computacional, así como en la introducción al campo de la
@@ -216,9 +284,8 @@ pre-miRNAs.
   trabajar sobre los datos. Se trabajarán al menos dos, SVM y MLP con
   la posibilidad de incorporar otros conforme se avance en este
   objetivo.
-\item Comparar el rendimiento de los distintos métodos codificados y
-  parametrizar éste o éstos buscando obtener la mayor performance en
-  la identificación.
+\item Comparar el rendimiento de los distintos métodos buscando
+  obtener el mejor desempeño en la tasa de clasificación.
 \item Especificar y codificar una interfaz de línea de comandos y una
   interfaz web para la utilización del método.
 \end{itemize}
@@ -230,10 +297,12 @@ pre-miRNAs.
   clasificación de tipo Máquina de Vector de Soporte (SVM) y Perceptrón
   Multicapa (MLP), comparando el rendimiento de cada uno.
 \item El sistema contará además con una interfaz de usuario
-  documentada tal que éste sea accesible a los usuarios destino.
-\item Se trabajará durante el desarrollo exclusivamente con datos que
-  se encuentren disponibles, ya clasificados y validados
-  experimentalmente.
+  documentada tal que éste sea accesible a los usuarios no expertos.
+\item Se trabajará durante el desarrollo exclusivamente con datos de
+  distintos organismos que se encuentren disponibles en línea, ya
+  clasificados y validados experimentalmente.
+\item Se utilizarán técnicas de extracción de características
+  disponibles en la bibliografía.
 \item En el sistema se trabajará únicamente con la identificación de
   pre-miRNAs, quedando fuera de nuestro alcance la identificación de
   el/los miRNAs “maduros” contenidos en éstos.
@@ -297,29 +366,27 @@ implementación y se especificarán aquellas a utilizar según los
 resultados obtenidos en las pruebas iniciales.
 %
 \subsection{Preparación de los datos y codificación de partes del sistema}
-Se recopilará el conjunto de datos encontrados en la etapa anterior
-y se realizará un análisis exhaustivo de éstos.
-Se codificarán algoritmos de extracción de características a partir de
-la secuencia para su incorporación a la base de datos.
-Se preparará una base
-de datos propia mediante la selección, limpieza y adecuaciones de
-formato en cuanto sea necesario con el objetivo de garantizar la
-calidad de la misma. Esta base de datos contendrá secuencias de
-pre-miRNAs conocidos y validados experimentalmente así como de
-secuencias que no sean pre-miRNAs (ejemplos negativos) los cuales se
-utilizarán como entrada para los algoritmos de extracción de
-características y clasificación.
+Se recopilará el conjunto de datos encontrados en la etapa anterior y
+se realizará un análisis exhaustivo de éstos.  Se codificarán
+herramientas auxiliares para la extracción de características si fuera
+necesario para lograr completitud y uniformidad de los diferentes
+conjuntos de datos.  Se preparará una base de datos propia mediante la
+selección, limpieza y adecuaciones de formato en cuanto sea necesario
+con el objetivo de garantizar la calidad de la misma. Esta base de
+datos contendrá secuencias de pre-miRNAs conocidos y validados
+experimentalmente así como de secuencias que no sean pre-miRNAs
+(ejemplos negativos) para utilizar en el entrenamiento y prueba del
+clasificador.
 
 El algoritmo de clasificación se desarrollará siguiendo
 aproximadamente un modelo de prototipos. En forma iterativa se
 realizarán pruebas sobre los clasificadores disponibles variando sus
-parámetros y el conjuntos de características de entrada. Cada
-iteración se evaluará mediante validación cruzada obteniendo así
-medidas de rendimiento discriminadas. A partir de estas medidas de
-rendimiento se especificarán el conjunto de características a
-considerar y los algoritmos a utilizar en la parte de clasificación,
-con sus parámetros correspondientes. Con esta especificación se procederá
-a la codificación del algoritmo de clasificación definitivo.
+parámetros y distintas características de entrada. Cada caso se
+evaluará mediante validación cruzada obteniendo medidas de
+rendimiento. A partir de estas medidas de rendimiento se especificarán
+los algoritmos a utilizar en la parte de clasificación, con sus
+parámetros correspondientes. Con esta especificación se procederá a la
+codificación del algoritmo de clasificación definitivo.
 %
 %
 \subsection{Integración del sistema e interfaz de usuario}
@@ -381,9 +448,8 @@ desarrollar en el transcurso del proyecto.
   \item Búsqueda y verificación de diferentes bases de datos (12h).
   \item Armado de una base de datos propia unificando el formato y
     características disponibles (24h).
-  \item Codificación de métodos para la extracción de características
-    a partir de la secuencia e incorporación de las mismas a la base
-    de datos (24h).
+  \item Codificación de herramientas para validación de la base de
+    datos generada y pruebas (24h).
   \end{enumerate*}
 \item Redacción del informe entregable 1 (12h)
 \item Diseño del clasificador definitivo (100h)
@@ -393,7 +459,7 @@ desarrollar en el transcurso del proyecto.
     \begin{itemize*}
     \item Selección del método de clasificación.
     \item Ajuste de parámetros del método.
-    \item Selección de características de entrada.
+%    \item Selección de características de entrada.
     \item Validación cruzada.
     \end{itemize*}
   \item Codificación definitiva del clasificador (36h).
@@ -439,7 +505,7 @@ parte de la etapa 3.
       \item Bibliografía consultada
       \item Bases de datos recopiladas
       \item Métodos de clasificación codificados y pruebas preliminares
-      \item Métodos de extracción de características codificados
+      \item Auxiliares de extracción de características codificados
       \item Armado de la base de datos definitiva
       \end{itemize*}
     \end{minipage}
@@ -641,8 +707,7 @@ encuentran disponibles:
 \item Servicios:
   \begin{itemize*}
   \item Conexión a Internet
-  \item Servidor Web (Instancia de Amazon EC2 ``micro'': Intel Xeon
-    1x2.6GHz, 600MB RAM)
+  \item Servidor Web (disponible en el Sinc)
   \end{itemize*}
 \item Hardware:
   \begin{itemize*}
@@ -709,10 +774,7 @@ siguientes consideraciones:
     \mrow{4}{*}{Tareas 8 a 9}
                      & RRHH alumno    &   116 & hs.  & \$  40  & \$ 4640  \\
                      & RRHH director  &    15 & hs.  & \$ 200  & \$ 3000  \\
-                 & Renta servidor web & 3000  & hs.  &US\$ 0.06& \$ 1188%
-    \footnote{Precio estimado. Se considera el dólar americano a
-      \$5,50 pesos argentinos y aplicando el 20\% de recargo a compras
-      en el exterior según R.G. AFIP 3450/2013}                           \\
+                     & Servidor Web   & 3000  & hs.  & \$   0  & \$ 0     \\
                      & Impresión      &   100 & pág. & \$ 0,2  & \$ 30    \\
     \mcol{5}{l}{\quad\SL{Subtotal C.D. tareas 8--9}}           & \SL{\$8858} \\\hline
     \mrow{4}{*}{Tarea 10}
@@ -732,6 +794,9 @@ siguientes consideraciones:
   \end{tabular}}
 %
 %
+%\printglossaries
+\renewcommand{\bibfont}{\normalfont\footnotesize}
+\renewcommand{\refname}{Bibliografía}
 \printbibliography
 %
 \end{document}
