@@ -13,13 +13,11 @@
 \hyphenation{mi-RNA}
 \hyphenation{mi-RNAs}
 %
-%\usepackage{gmverb}
-%\MakeShortVerb\|
-
+%
+%
+%
 \begin{document}
 \selectlanguage{spanish}
-%\DeclareMathAlphabet{\mathtt}{OT1}{zi4}{m}{n}
-%\UseMathAlphabet{\mathtt}{OT1}{zi4}{m}{n}
 %
 % pagina de titulo
 \begin{titlepage}
@@ -35,8 +33,9 @@
 \subject{Informe entregable 1}
 \author{Mauro Javier Torrez}
 %
-\publishers{\-\\[4em]{Director\\Dr. Diego H. Milone}\\[2em]
-  {Asesora temática\\Dra. Georgina S. Stegmayer}}
+\publishers{\-\\[4em]{Director\\Dr. Diego H. Milone}%\\[2em]
+%  {Asesora temática\\Dra. Georgina S. Stegmayer}
+}
 %
 \date{\-\\[2em]\today}
 %
@@ -49,10 +48,27 @@
 %
 %
 %
+\section{Introducción}
+En este informe entregable se presente una revisión de las tareas
+llevadas a cabo por el alumno tal como se ha estipulado en la
+Propuesta de Proyecto Final de Carrera.
+
+El documento se divide en las secciones: Bibliografía consultada,
+Bases de datos recopiladas, Codificación de clasificadores de prueba,
+Extracción de características y Armado de la base de datos definitiva.
+
+En pos de evitar la incorporación del código fuente generado en el
+documento, se refiere al lector al repositorio disponible en
+\url{https://bitbucket.org/maurete/pfc/src}, donde se puede consultar
+el código fuente y demás archivos generados en el desarrollo.
+%
+%
+%
+%
 \section{Bibliografía consultada}
 %
-*A continuación se detalla la bibliografía consultada junto con una
-breve descripción de cada una de las publicaciones.*
+A continuación se detalla la bibliografía consultada junto con una
+breve descripción de cada una de las publicaciones.
 %
 \subsection{Perspectiva biológica y computacional de los (pre-)miRNAs}
 \subsubsection*{D. P. Bartel \cite{bartel116}}
@@ -64,10 +80,26 @@ miRNA.  Publicado en 2004, es anterior a la aparición de los métodos
 computacionales no-comparativos que permitieron un gran aumento en el
 número de nuevos miRNAs descubiertos.
 %
-\subsubsection*{D. Yue et al. \cite{yue}}
-%
 \subsubsection*{L. Li et al. \cite{lili}}
-
+Junto a una revisión de las características biológicas de los miRNAs,
+se presenta un panorama de los métodos para su identificación, tanto
+de tipo comparativo como aquellos basados en aprendizaje de máquina,
+así como métodos que trabajan sobre los datos experimentales de
+técnicas de secuenciamiento en gran escala o \eng{deep sequencing}.
+También se presenta el estado del arte en la predicción de dianas
+(\eng{targets}) y regulación de la expresión de los miRNAs.
+%
+\subsubsection*{D. Yue et al. \cite{yue}}
+Se presenta en este trabajo un resumen de las técnicas disponibles
+para la predicción de dianas y de métodos de predicción de las
+funciones de los miRNAs, con una exposición clara de los conceptos
+relevantes en este campo de estudio.
+%
+\subsubsection*{L. Bottou y C.-J. Lin \cite{bottou}}
+Este trabajo presenta una descripción del problema de clasificación
+mediante SVM \cite{svm}, detallando el problema de optimización a
+resolver y los parámetros a considerar en la utilización e
+implementación de las máquinas de vectores de soporte.
 %% \subsubsection{Y. Lee et al. \cite{yoontae}}
 %% En este trabajo se propone una descripción del proceso de maduración
 %% de los miRNAs a partir del pre-miRNA y de la exportación del mismo del
@@ -76,19 +108,19 @@ número de nuevos miRNAs descubiertos.
 %% \subsection{Perspectiva computacional de la clasificación de pre-miRNAs}
 %
 \subsection{Métodos de clasificación de pre-miRNAs}
-\subsubsection{C. Xue et al. \cite{xue}}
+\subsubsection*{C. Xue et al. \cite{xue}}
 %
 En este trabajo se presenta un clasificador de secuencias de
-pre-microRNA mediante SVM.  En el clasificador se utiliza un conjunto
-de características de tipo estructura-secuencia, utilizando como
-entrada al clasificador un vector de frecuencia de 32 ``triplets'' que
-combinan el nucleótido de la secuencia con la estructura secundaria
-del entorno donde éste se presenta.
+pre-microRNA mediante SVM \cite{svm}.  En el clasificador se utiliza
+un conjunto de características de tipo estructura-secuencia,
+utilizando como entrada al clasificador un vector de frecuencia de 32
+``triplets'' que combinan el nucleótido de la secuencia con la
+estructura secundaria del entorno donde éste se presenta.
 %
-\subsubsection{S. K. L. Ng y S. K. Mishra \cite{ng}}
+\subsubsection*{S. K. L. Ng y S. K. Mishra \cite{ng}}
 %
 En este trabajo se presenta un clasificador de secuencias de
-pre-microRNA mediante SVM.
+pre-miRNA mediante SVM.
 
 El conjunto de características utilizado consiste en 29 medidas
 ``globales e intrínsecas'' a la secuencia y su estructura secundaria:
@@ -104,7 +136,7 @@ El método además es probado para detectar pre-miRNAs en genes de
 virus, recorriendo éste mediante una ventana deslizante de 95nt y
 clasificando las secuencias extraídas.
 %
-\subsubsection{R. Batuwita y V. Palade \cite{batuwita}}
+\subsubsection*{R. Batuwita y V. Palade \cite{batuwita}}
 En este paper se describe un método de clasificación de pre-miRNAs que
 elabora sobre \cite{ng} incorporando características basadas en la
 mínima energía libre, otras características relacionadas el programa
@@ -116,7 +148,15 @@ performance del clasificador, y también se discute acerca del problema
 de \emph{desbalance de clases}, siempre presente en la
 clasificación de pre-miRNAs.
 %
-\subsubsection{S. Sewer et al. \cite{sewer}}
+\subsubsection*{S. Sewer et al. \cite{sewer}}
+%
+\subsubsection*{J. Hertel y P. F. Stadler \cite{hertel}}
+%
+\subsubsection*{Y. Sheng et al. \cite{sheng}}
+%
+\subsubsection*{Y. Xu et al. \cite{xu}}
+%
+\subsubsection*{J. Ding et al. \cite{ding}}
 %
 %
 %
@@ -141,7 +181,7 @@ características:
   \mono{C}, \mono{U}.
 %
 \item[estructura secundaria] correspondiente a la secuencia, tal como
-  se obtiene con el programa RNAfold\cite{vienna}. Se presenta como
+  se obtiene con el programa RNAfold \cite{vienna}. Se presenta como
   una cadena de caracteres \mono{(}, \mono{.} y \mono{)}.
 %
 \item[\mono{SEQ\_LENGTH}] indica la longitud de la secuencia
@@ -173,14 +213,14 @@ Tomados de miRNA registry rel 5.0, sept/2004
 \begin{description*}
 \item[Tipo:] Conjunto de entrenamiento (163) y prueba(30), datos
   positivos
-\item[Num. entradas:] 193
+\item[Núm. entradas:] 193
 \item[Especies:] Homo sapiens (hsa)
 \end{description*}
 \paragraph{CROSS-SPECIES}
 Tomados de miRNA registry rel 5.0, sept/2004
 \begin{description*}
 \item[Tipo:] Conjunto de prueba, datos positivos
-\item[Num. entradas:] 581
+\item[Núm. entradas:] 581
 \item[Especies:]
   \quad mmu (36)
   \quad rno (25)
@@ -201,7 +241,7 @@ Conjunto de 39 pre-miRNAs obtenido a partir de los 89 reportados en
 a las encontradas en el conjunto de entrenamiento.
 \begin{description*}
 \item[Tipo:] Conjunto de prueba, datos positivos
-\item[Num. entradas:] 39
+\item[Núm. entradas:] 39
 \item[Especies:]  Homo sapiens (hsa)
 \end{description*}
 
@@ -217,7 +257,7 @@ esto se deberá usar únicamente como conjunto de prueba.
 \begin{description*}
 \item[Tipo:] Conjunto de prueba, datos mayormente negativos (algunos
   positivos)
-\item[Num. entradas:] 2444
+\item[Núm. entradas:] 2444
 \item[Especies:]  Homo sapiens (hsa)
 \end{description*}
 \paragraph{CODING}
@@ -232,7 +272,7 @@ el armado de este conjunto se consideran los siguientes criterios:
 \end{itemize*}
 \begin{description*}
 \item[Tipo:] Conjunto de entrenamiento, datos negativos
-\item[Num. entradas:] 8494
+\item[Núm. entradas:] 8494
 \item[Especies:]  Homo sapiens (hsa)
 \end{description*}
 %
@@ -306,7 +346,7 @@ se filtran aquellas secuencias redundantes mediante un algoritmo de
 agrupación incremental ``ávido''\cite{greedy}.
 \begin{description*}
 \item[Tipo:] Conjunto de datos positivos
-\item[Num. entradas:] 2241
+\item[Núm. entradas:] 2241
 \item[Especies:] 45 especies agrupadas en artropoda, nematoda,
   vertebrata, viridiplantae y virus
 \end{description*}
@@ -316,7 +356,7 @@ Tomados de Rfam 7.0, consiste en un conjunto de ncRNAs de los que se
 han eliminado 46 tipos de pre-miRNAs.
 \begin{description*}
 \item[Tipo:] Conjunto de datos negativos
-\item[Num. entradas:] 12387
+\item[Núm. entradas:] 12387
 \item[Especies:] muchas (prokaryota y eukaryota)
 \end{description*}
 
@@ -326,7 +366,7 @@ complejas con MFEs extremadamente negativas. Tomados de GeneBank DNA
 Database.
 \begin{description*}
 \item[Tipo:] Conjunto de datos negativos
-\item[Num. entradas:] 31
+\item[Núm. entradas:] 31
 \item[Especies:] varias, entre ellas: perro, hsa, mmu, cel, rno,
   \textellipsis.
 \end{description*}
@@ -336,7 +376,7 @@ Database.
 características extraídas
 \begin{description*}
 \item[Tipo:] Conjunto de datos negativos
-\item[Num. entradas:] 8494
+\item[Núm. entradas:] 8494
 \item[Especies:] homo sapiens (hsa)
 \end{description*}
 %
@@ -388,7 +428,7 @@ Los datos se encuentran disponibles en el sitio web de los autores%
 Tomados de miRBase 12. Contiene 660 pre-miRNAs single-loop y 31 multi-loop.
 \begin{description*}
 \item[Tipo:] Conjunto de datos positivos
-\item[Num. entradas:] 691
+\item[Núm. entradas:] 691
 \item[Especies:] Homo sapiens (hsa)
 \end{description*}
 %
@@ -396,7 +436,7 @@ Tomados de miRBase 12. Contiene 660 pre-miRNAs single-loop y 31 multi-loop.
 Ídem dataset CODING de Xue, con más características extraídas.
 \begin{description*}
 \item[Tipo:] Conjunto de datos negativos
-\item[Num. entradas:] 8494
+\item[Núm. entradas:] 8494
 \item[Especies:] Homo sapiens (hsa)
 \end{description*}
 %
@@ -405,7 +445,7 @@ Conjunto de datos compilado manualmente por los autores. Contiene
 ncRNAs humanos que no son pre-miRNAs.
 \begin{description*}
 \item[Tipo:] Conjunto de datos negativos
-\item[Num. entradas:] 754
+\item[Núm. entradas:] 754
 \item[Especies:] Homo sapiens (hsa)
 \end{description*}
 %
@@ -474,7 +514,7 @@ el mismo algoritmo en Matlab, \mono{triplet.m}.
 \subsection{Clasificadores}
 Se generaron 3 clasificadores, según se detallan a continuación.
 \begin{enumerate}
-\item Clasificador mediante SVM utilizando \emph{libsvm} con los
+\item Clasificador mediante SVM utilizando \emph{libsvm}\cite{libsvm} con los
   parámetros por defecto.
 \item Clasificador mediante SVM utilizando el \emph{Bioinformatics
   Toolbox} de Matlab.
@@ -482,7 +522,7 @@ Se generaron 3 clasificadores, según se detallan a continuación.
   Toolbox} de Matlab.
 \end{enumerate}
 %
-La librería \emph{libsvm} provee una utilidad \mono{svm-easy} que
+La librería \emph{libsvm}\cite{libsvm} provee una utilidad \mono{svm-easy} que
 busca en forma automática aquellos parámetros que minimizan el
 error. En los otros casos, esta búsqueda se realizó en forma manual,
 ajustando los parámetros \mono{boxconstraint} y y \mono{sigma} para
@@ -691,7 +731,7 @@ de la base de datos.
 \end{description}
 %
 %
-\renewcommand{\bibfont}{\normalfont\small}
+\renewcommand{\bibfont}{\normalfont\footnotesize}
 \printbibliography
 %
 \end{document}
