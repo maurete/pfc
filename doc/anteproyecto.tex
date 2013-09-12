@@ -1,4 +1,4 @@
-\documentclass[12pt,bibliography=oldstyle,DIV=12,parskip=full-]{scrartcl}
+\documentclass[12pt,bibliography=oldstyle,DIV=12,parskip=full-,titlepage]{scrartcl}
 \include{conf/preconfig}
 \include{conf/packages}
 \include{conf/config}
@@ -24,32 +24,29 @@
 %% desoxirribonucleico (ADN)},
 %% }
 %
+\setkomafont{subject}{\LARGE\usekomafont{disposition}}
+\setkomafont{title}{\normalfont\slshape}
+
 \begin{document}
 \selectlanguage{spanish}
 %
-% pagina de titulo
-\begin{titlepage}
-%
-\titlehead{\center Universidad Nacional del Litoral\\
+\titlehead{\center\large Universidad Nacional del Litoral\\
   Facultad de Ingeniería y Ciencias Hídricas}
 %
-\subject{Ingeniería en Informática\\
-  Propuesta de Proyecto Final de Carrera}
+\subject{Propuesta de Proyecto Final de Carrera\\Ingeniería en
+  Informática}
 %
-\title{Desarrollo de un clasificador de secuencias de pre-microRNA
-  mediante técnicas de Inteligencia Computacional}
-\author{Mauro Javier Torrez}
+\title{\LARGE ``Desarrollo de un clasificador de secuencias de pre-microRNA
+  mediante técnicas de Inteligencia Computacional''}
 %
-\publishers{\-\\[4em]{Director\\Dr. Diego H. Milone}%\\[2em]
-%  {Asesora temática\\Dra. Georgina S. Stegmayer}
-}
+%\subtitle{hola que tal}
 %
+\author{{Alumno: Mauro Javier Torrez}\and{Director: Dr. Diego. H. Milone}}
+%
+%\publishers{Director: Dr. Diego H. Milone}
 \date{\-\\[2em]\today}
-%
 \renewcommand*{\titlepagestyle}{empty}
-%\thispagestyle{empty}
 \maketitle
-\end{titlepage}
 \setcounter{page}{1}
 %
 %
@@ -163,15 +160,6 @@ Computacional. Estos dos enfoques se complementan mutuamente al
 encarar distintas estrategias para la predicción de nuevos
 miRNAs \cite{batuwita}\cite{sheng}.
 
-
-Desde el punto de vista informático, una secuencia de pre-miRNA se
-representa mediante una cadena de caracteres \mono{A, G, C, U,} donde
-cada carácter representa un tipo de nucleótido compuesto de
-\emph{adenina}, \emph{guanina}, \emph{citosina} y \emph{uracilo}
-respectivamente, siendo éstas las \emph{bases} constitutivas del
-ARN. Además, se sabe que los pre-miRNAs tienen una longitud de unos 70
-nucleótidos, y una estructura secundaria de tipo horquilla.
-
 En un clasificador de tipo comparativo, se analizan genomas de
 diferentes especies buscando correspondencias que cumplan con las
 características de un pre-miRNA. Tal como en el caso del método
@@ -206,6 +194,12 @@ espera que los datos sean linealmente separables mediante un
 hiperplano. El entrenamiento consiste en encontrar el hiperplano
 óptimo de separación para el conjunto de datos presentado \cite{bottou}.
 
+En base a lo que se ha observado en la bibliografía y al problema
+planteado, se propone para este trabajo desarrollar un sistema
+informático para la identificación de cadenas de pre-miRNA de tipo
+no-comparativo, que haga uso de técnicas de Inteligencia Computacional
+para la clasificación de patrones.
+
 Para cada entrada presentada, el clasificador deberá ser capaz de
 discriminar entre dos \emph{clases}: positiva para aquellas que
 corresponden a un pre-miRNA y negativa para aquellas entradas que no
@@ -217,13 +211,14 @@ artificialmente seleccionados que no contenga pre-miRNAs, aunque sí
 presenten características similares a aquellos.
 
 %\subsection*{Propuesta}
-En base a lo que se ha observado en la bibliografía y al problema
-planteado, se propone para este trabajo desarrollar un sistema
-informático para la identificación de cadenas de pre-miRNA de tipo
-no-comparativo, que haga uso de técnicas de Inteligencia Computacional
-para la clasificación de patrones.
-
-Para cada entrada, mediante un proceso de extracción de
+\newpage
+Una secuencia de pre-miRNA se representa mediante una cadena de
+caracteres \mono{A, G, C, U,} donde cada carácter representa el tipo
+de \emph{base} constitutiva de cada nucleótido\footnote{Las bases
+  constitutivas del ARN son: \emph{adenina}, \emph{guanina},
+  \emph{citosina} y \emph{uracilo}, de ahí la denominación \mono{A, G,
+    C, U}.}.
+A partir de esta secuencia, mediante un proceso de extracción de
 características se generará un vector numérico que será la entrada al
 clasificador.  El sistema clasificará los datos de entrada
 identificando aquellas secuencias candidatas a ser pre-miRNAs.  Se
@@ -271,6 +266,7 @@ carrera de investigación servirá de introducción informal a la
 metodología de trabajo en este campo.
 %
 %
+\newpage
 \section{Objetivo general del proyecto}
 Desarrollar un método computacional inteligente con interfaz de
 usuario para la identificación de secuencias de RNA candidatas a ser
@@ -287,36 +283,29 @@ pre-miRNAs.
 \item Comparar el rendimiento de los distintos métodos buscando
   obtener el mejor desempeño en la tasa de clasificación.
 \item Especificar y codificar una interfaz de línea de comandos y una
-  interfaz web para la utilización del método.
+  interfaz web para la utilización del método por parte del usuario no experto.
 \end{itemize}
 %
 %
 \section{Alcances}
 \begin{itemize}
 \item El trabajo se centrará en la utilización de algoritmos de
-  clasificación de tipo Máquina de Vector de Soporte (SVM) y Perceptrón
-  Multicapa (MLP), comparando el rendimiento de cada uno.
+  clasificación de tipo Máquina de Vector de Soporte (SVM) y
+  Perceptrón Multicapa (MLP), comparando el rendimiento de cada uno.
 \item El sistema contará además con una interfaz de usuario
   documentada tal que éste sea accesible a los usuarios no expertos.
 \item Se trabajará durante el desarrollo exclusivamente con datos de
   distintos organismos que se encuentren disponibles en línea, ya
   clasificados y validados experimentalmente.
-\item Se utilizarán técnicas de extracción de características
-  disponibles en la bibliografía.
+\item Se utilizarán únicamente técnicas de extracción de
+  características disponibles en la bibliografía.
 \item En el sistema se trabajará únicamente con la identificación de
-  pre-miRNAs, quedando fuera de nuestro alcance la identificación de
-  el/los miRNAs “maduros” contenidos en éstos.
+  pre-miRNAs, quedando fuera del alcance de este proyecto la
+  identificación de el/los miRNAs ``maduros'' contenidos en éstos.
 \end{itemize}
 %
 %
 \section{Metodología a emplear}
-%% El desarrollo del proyecto se realizará en las cuatro etapas que se
-%% enumeran a continuación. Cabe notar que estas etapas, si bien proveen
-%% una separación lógica entre los diferentes aspectos del trabajo a
-%% realizar, no implican necesariamente una separación temporal de
-%% tareas. Dada la naturaleza del sistema será necesaria la
-%% retroalimentación entre las etapas, lo que implicará un grado mayor o
-%% menor de simultaneidad entre las mismas.
 El desarrollo del proyecto se llevará a cabo siguiendo un modelo de
 ciclo de vida en cascada según las etapas que se enumeran a
 continuación.  Cabe notar que, si bien estas etapas proveen una
@@ -326,14 +315,6 @@ debido a la naturaleza del proyecto se contempla la posibilidad de una
 retroalimentación entre etapas, pudiendo retroceder a una fase
 anterior si así es requerido.
 %
-%% \subsection{Estudio del estado del arte, selección de herramientas informáticas}
-%% Se procederá a recopilar y estudiar la bibliografía referente al tema
-%% y se determinarán los métodos de clasificación sobre los que se
-%% trabajará, las características a extraer, los métodos de extracción de
-%% características necesarios. También se evaluarán las diferentes
-%% herramientas de desarrollo y lenguajes a utilizar tomando en
-%% consideración factores como requerimientos de hardware/software,
-%% disponibilidad, rendimiento, portabilidad y facilidad de uso.
 \subsection{Estudio del estado del arte y herramientas informáticas
   disponibles}
 Se procederá a recopilar y estudiar la bibliografía referente al tema
@@ -343,17 +324,6 @@ herramientas de desarrollo y lenguajes disponibles tomando en
 consideración factores como requerimientos de hardware/software,
 disponibilidad, rendimiento, portabilidad y facilidad de uso.
 %
-%% \subsection{Armado de la base de datos y desarrollo de los algoritmos específicos}
-%% Se realizará una búsqueda de datos disponibles en Internet a partir de
-%% la bibliografía consultada. Con estos datos se generará una base de
-%% datos de pre-miRNAs conocidos y validados experimentalmente así como
-%% de secuencias que no sean pre-miRNAs para su utilización en el diseño
-%% de los algoritmos de clasificación.
-
-%% Se codificarán métodos de
-%% inteligencia computacional para trabajar sobre la base de datos
-%% armada. Se evaluará la performance de clasificación de los métodos
-%% mediante métricas estadísticas estándares.
 \subsection{Especificación de requerimientos y pruebas iniciales}
 Se realizará una búsqueda de datos disponibles en Internet a partir de
 la bibliografía consultada.  Se codificarán varios métodos de
@@ -387,7 +357,6 @@ rendimiento. A partir de estas medidas de rendimiento se especificarán
 los algoritmos a utilizar en la parte de clasificación, con sus
 parámetros correspondientes. Con esta especificación se procederá a la
 codificación del algoritmo de clasificación definitivo.
-%
 %
 \subsection{Integración del sistema e interfaz de usuario}
 Se definirá el formato de los datos de entrada del sistema final y se
@@ -464,6 +433,7 @@ desarrollar en el transcurso del proyecto.
     \end{itemize*}
   \item Codificación definitiva del clasificador (36h).
   \end{enumerate*}
+\newpage
 \item Pruebas e integración del sistema (80h)
   \begin{enumerate*}
   \item Validación del método de clasificación (20h).
@@ -774,9 +744,10 @@ siguientes consideraciones:
     \mrow{4}{*}{Tareas 8 a 9}
                      & RRHH alumno    &   116 & hs.  & \$  40  & \$ 4640  \\
                      & RRHH director  &    15 & hs.  & \$ 200  & \$ 3000  \\
-                     & Servidor Web   & 3000  & hs.  & \$   0  & \$ 0     \\
+                     & Servidor Web   & 3000  & hs.  & \$   0\footnote{%
+Servidor Web disponible en \emph{sinc(i)}.}  & \$ 0     \\
                      & Impresión      &   100 & pág. & \$ 0,2  & \$ 30    \\
-    \mcol{5}{l}{\quad\SL{Subtotal C.D. tareas 8--9}}           & \SL{\$8858} \\\hline
+    \mcol{5}{l}{\quad\SL{Subtotal C.D. tareas 8--9}}           & \SL{\$7670} \\\hline
     \mrow{4}{*}{Tarea 10}
                      & RRHH alumno    &   120 & hs.  & \$  40  & \$ 4800  \\
                      & RRHH director  &    20 & hs.  & \$ 200  & \$ 4000  \\
@@ -790,13 +761,12 @@ siguientes consideraciones:
                 & Elementos de oficina&\mcol{2}{c}{N/A}&       & \$ 150   \\
                      & Software     &\mcol{2}{c}{N/A}& \$ 0    & \$ 0     \\
     \mcol{5}{l}{\quad\SL{Subtotal C.I.}}                       & \SL{\$7782} \\\hline
-    \mcol{5}{l}{\GR{Costo total del Proyecto}}                  & \GR{\$50340}\\\hline
+    \mcol{5}{l}{\GR{Costo total del Proyecto}}                 & \GR{\$49512}\\\hline
   \end{tabular}}
 %
 %
 %\printglossaries
 \renewcommand{\bibfont}{\normalfont\footnotesize}
-\renewcommand{\refname}{Bibliografía}
-\printbibliography
+\printbibliography[heading=bibnumbered,title=Bibliografía]
 %
 \end{document}
