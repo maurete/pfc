@@ -1,11 +1,11 @@
-\documentclass[12pt,bibliography=oldstyle,DIV=12,parskip=half-]{scrartcl}
+\documentclass[12pt,bibliography=oldstyle,DIV=12,parskip=half-,titlepage]{scrartcl}
 \include{conf/preconfig}
 \include{conf/packages}
 \include{conf/config}
 \include{conf/comandos}
 \include{conf/fuentes}
 %
-\addbibresource{biblio.bib}
+\addbibresource{res/bibliografia.bib}
 %
 \selectlanguage{spanish}
 \hyphenation{micro-RNA}
@@ -16,40 +16,41 @@
 %
 %
 %
+\addtokomafont{descriptionlabel}{\small}
+\setkomafont{subject}{\LARGE\usekomafont{disposition}}
+\setkomafont{title}{\normalfont\slshape}
+\setkomafont{subtitle}{\LARGE\usekomafont{disposition}}
+%
 \begin{document}
 \selectlanguage{spanish}
 %
 % pagina de titulo
-\begin{titlepage}
 %
-\titlehead{\center Universidad Nacional del Litoral\\
-  Facultad de Ingeniería y Ciencias Hídricas}
-%
-\subtitle{Ingeniería en Informática\\
-  Propuesta de Proyecto Final de Carrera}
-%
-\title{Desarrollo de un clasificador de secuencias de pre-microRNA
-  mediante técnicas de Inteligencia Computacional}
-\subject{Informe entregable 1}
-\author{Mauro Javier Torrez}
-%
-\publishers{\-\\[4em]{Director\\Dr. Diego H. Milone}%\\[2em]
-%  {Asesora temática\\Dra. Georgina S. Stegmayer}
+\titlehead{\center\large
+    Universidad Nacional del Litoral\\
+    Facultad de Ingeniería y Ciencias Hídricas
 }
 %
-\date{\-\\[2em]\today}
+%
+\title{\LARGE ``Desarrollo de un clasificador de secuencias de pre-microRNA
+  mediante técnicas de Inteligencia Computacional''}
+\subject{Proyecto Final de Carrera\\Ingeniería en
+  Informática}
+\subtitle{~\\[.2ex]Informe entregable 1\\[.2ex]~}
+\author{{Alumno: Mauro Javier Torrez}\and{Director: Dr. Diego H. Milone}}
+%
+\date{~\\[2em]\today}
 %
 \renewcommand*{\titlepagestyle}{empty}
 %\thispagestyle{empty}
 \maketitle
-\end{titlepage}
 \setcounter{page}{1}
 %
 %
 %
 %
 \section{Introducción}
-En este informe entregable se presente una revisión de las tareas
+En este informe entregable se presenta una revisión de las tareas
 llevadas a cabo por el alumno tal como se ha estipulado en la
 Propuesta de Proyecto Final de Carrera.
 
@@ -169,7 +170,7 @@ Si bien en la página del
 autor\footnote{\url{http://bioinfo.au.tsinghua.edu.cn/software/mirnasvm/}}
 ya no están disponibles los datos, éstos se pueden encontrar en una
 versión anterior de la misma, disponible en el archivo de
-internet\footnote{\url{http://web.archive.org/web/20120210235054/}}.
+internet\footnote{\url{http://web.archive.org/web/20120210235054/http://bioinfo.au.tsinghua.edu.cn/software/mirnasvm/}}.
 
 En esta base de datos cada una de las entradas presenta las siguientes
 características:
