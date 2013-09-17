@@ -68,88 +68,76 @@ de soporte, perceptrón multicapa, clasificación
 Hace aproximadamente una década se propuso que un tipo de pequeñas
 moléculas previamente ignoradas, aunque presentes en grandes
 cantidades en la célula, jugarían un papel decisivo en la reproducción
-de las mismas, mediando en la diferenciación en distintos tipos de
-tejidos y/o en la permanencia de éstas en un estado particular de
-diferenciación \cite{lee-mammal}. Estas pequeñas moléculas de ARN
-(\eng{RNA}, \emph{ácido ribonucleico}), de unos 22 nucleótidos de
-longitud, se llaman en inglés \eng{microRNAs} o \eng{miRNAs}.  En
-trabajos posteriores se ha demostrado que los miRNAs ejercen una
-función reguladora de la expresión génica celular \cite{bartel116} y
-están involucrados en varios procesos genéticos dentro de la célula,
-como la transcripción de mRNAs (\emph{RNA mensajeros}) y la síntesis
-de proteínas \cite{lili}.  Este efecto regulador puede tener gran
-implicancia en el desarrollo y evolución de la enfermedad celular. Se
-ha demostrado que los miRNAs juegan un rol importante en la
-carcinogénesis \cite{aurora}\cite{lili}, regulando la proliferación y
-muerte celular, entre otras funciones como el metabolismo de la grasa
-en moscas, los procesos de infección viral, y el control del
-desarrollo de flores y hojas en plantas
+celular, promoviendo su diferenciación en distintos tipos de tejidos
+y/o su permanencia en un estado particular de diferenciación
+\cite{lee-mammal}.  Estas pequeñas moléculas de ácido ribonucleico
+(\eng{RNA}, del inglés \emph{ribonucleic acid}), de unos 22
+nucleótidos [nt] de longitud, se denominaron en inglés \eng{microRNA} o
+\eng{miRNA}.  En trabajos posteriores se ha demostrado que los miRNA
+ejercen una función reguladora de la expresión génica celular
+\cite{bartel116} y están involucrados en varios procesos genéticos
+dentro de la célula, como la transcripción de mRNA (\emph{RNA
+  mensajeros}) y la síntesis de proteínas \cite{lili}.  Este efecto
+regulador puede tener gran implicancia en el desarrollo y evolución de
+la enfermedad celular. Se ha demostrado que los miRNA juegan un rol
+importante en la carcinogénesis \cite{aurora}\cite{lili}, regulando la
+proliferación y muerte celular, entre otras funciones como el
+metabolismo de las grasas en moscas, los procesos de infección viral,
+y el control del desarrollo de flores y hojas en plantas
 \cite{bartel116}\cite{lecellier}.
 
-Los miRNAs se presentan naturalmente dentro de una molécula denominada
-pre-miRNA o \emph{miRNA precursor}, de unos 70 nucleótidos [nt] de
-longitud, la cual contiene uno o más miRNAs ``maduros'' en su
+Los miRNA se presentan naturalmente dentro de una molécula denominada
+pre-miRNA o \emph{miRNA precursor}, de unos 70 nucleótidos de
+longitud, la cual contiene uno o más miRNA \emph{maduros} en su
 secuencia. En la Figura \ref{horquilla} se representa en forma
 esquemática la secuencia de una cadena de pre-miRNA y su
 correspondiente \emph{estructura secundaria}. Esta estructura
 secundaria viene dada por la forma en que la cadena de pre-miRNA se
-``plega'' sobre sí misma logrando una mayor estabilidad molecular. Tal
-como se aprecia en la figura, se encuentra que en el reino animal la
-estructura secundaria de un pre-miRNA conforma una especie de
-\emph{horquilla} \cite{bartel116}\cite{sewer}.
+\emph{pliega} sobre sí misma logrando una mayor estabilidad
+molecular. Tal como se aprecia en la figura, se encuentra que en el
+reino animal la estructura secundaria de un pre-miRNA conforma una
+especie de \emph{horquilla} \cite{bartel116}\cite{sewer}.
 
 \newpage
-El debate acerca del número e identidad de los miRNAs presentes en
+El debate acerca del número e identidad de los miRNA presentes en
 diferentes genomas es una cuestión abierta: a modo de ejemplo, para el
-caso del genoma humano se ha estimado que se encontrarían miles de
-pre-miRNAs \cite{batuwita}, y hasta ahora han sido identificados unos
-1900. Sin embargo, este número podría ser mucho mayor, en especial si
-se tiene en cuenta que estas predicciones consideran sólo aquellos
-pre-miRNAs que se encuentran conservados entre especies
-relativamente distantes, como primates y roedores, y no aquellos
-pre-miRNAs de evolución más reciente \cite{sewer}.  La base de datos
-miRBase%\footnote{\url{http://mirbase.org/}}
-\cite{mirbase2}\cite{mirbase3} recopila el conjunto de
-\mbox{(pre-)miRNAs} conocidos hasta la fecha. En la última versión
-disponible, de junio de
-2013%\footnote{\url{ftp://mirbase.org/pub/mirbase/20/}}
-, se listan
-24521 pre-miRNAs experimentalmente validados, conteniendo un total de
-30424 miRNAs ``maduros''.
+caso del genoma humano se había estimado inicialmente que se
+encontrarían unos pocos cientos de genes miRNA; posteriormente este
+número ha sido revisado a unos 1000 \cite{sewer}\cite{chang}.
+Actualmente, se encuentra que el número de miRNAs descubiertos en
+humanos duplica esta cifra \cite{gomes}.  Teniendo en cuenta que estas
+predicciones consideran sólo aquellos miRNA que se encuentran
+conservados entre especies relativamente distantes (como primates y
+roedores) y no aquellos de evolución más reciente \cite{sewer}, el
+número de miRNAs en humanos podría ser mucho mayor que las
+estimaciones. La base de datos miRBase \cite{mirbase2}\cite{mirbase3}
+recopila el conjunto de (pre-)miRNA conocidos hasta la
+fecha. En la última versión disponible, de agosto de 2012, se listan
+21264 pre-miRNA experimentalmente validados, conteniendo un total de
+25141 miRNA maduros, para 193 especies diferentes.
 %
 \begin{figure}
   \small\slshape\center
   \includegraphics[width=.9\textwidth]{res/hsa-mir-299_ss.pdf}
-  \caption{\small\slshape Representación esquemática de la secuencia (arriba) y
-    estructura secundaria tipo horquilla (abajo) del pre-miRNA
-    \textbf{hsa-mir-299}.
-    %% Según información disponible en miRBase,
-    %% este pre-miRNA experimentalmente validado contiene 2 miRNAs
-    %% maduros, hsa-mir-299-5p y hsa-mir-299-3p en cada uno de sus
-    %% brazos. Estructura secundaria calculada con RNAfold
-    %% \cite{vienna}.
-  }
+  \caption{\small\slshape Representación esquemática de la secuencia
+    (arriba) y estructura secundaria tipo horquilla (abajo) del
+    pre-miRNA \textbf{hsa-mir-299}.  }
   \label{horquilla}
 \end{figure}
 
-%
-%\subsection*{Identificación (clasificación) de los pre-miRNAs}
-%
-En principio, la identificación de nuevos miRNAs se realiza en forma
+En principio, la identificación de nuevos miRNA se realiza en forma
 experimental en el laboratorio. Ésta es la primera elección, pero sólo
-aquellos miRNAs abundantes pueden ser detectados de forma fiable
+aquellos miRNA abundantes pueden ser detectados de forma fiable
 mediante esta técnica. Sin embargo, no todos los miRNAs están bien
-expresados en múltiples tipos de tejidos: aquellos miRNAs que tienen
-un bajo nivel de expresión, que se expresan en tejidos específicos y/o
+expresados en múltiples tipos de tejidos: aquellos miRNA que tienen un
+bajo nivel de expresión, que se expresan en tejidos específicos y/o
 que se presentan sólo en determinados estadíos de desarrollo celular
 pueden ser fácilmente ignorados mediante la técnica
-experimental. Estudios recientes sugieren que los miRNAs humanos
-expresados en bajos niveles evolucionan rápidamente
-\cite{ding}\cite{xu}. En pos de superar estas dificultades propias
-del método experimental es que surgen técnicas computacionales para
-encontrar aquellos miRNAs que son específicos a determinados tipos de
-tejidos o estadíos de desarrollo celular, y aquellos escasamente
-expresados \cite{sheng}\cite{xu}.
+experimental\cite{ding}\cite{xu}.  En pos de superar estas
+dificultades propias del método experimental es que surgen técnicas
+computacionales para encontrar aquellos miRNA que son específicos a
+determinados tipos de tejidos o estadíos de desarrollo celular, y
+aquellos escasamente expresados \cite{sheng}\cite{xu}.
 
 Los métodos computacionales para el reconocimiento de genes miRNA se
 han desarrollado en dos direcciones principales: los métodos
@@ -157,93 +145,77 @@ comparativos, basados en la conservación ya sea de la secuencia y/o la
 estructura secundaria entre distintas especies, y los no-comparativos,
 basados en el aprendizaje de máquina o Inteligencia
 Computacional. Estos dos enfoques se complementan mutuamente al
-encarar distintas estrategias para la predicción de nuevos
-miRNAs \cite{batuwita}\cite{sheng}.
+encarar distintas estrategias para la predicción de nuevos miRNAs
+\cite{batuwita}\cite{sheng}.
 
-En un clasificador de tipo comparativo, se analizan genomas de
-diferentes especies buscando correspondencias que cumplan con las
-características de un pre-miRNA. Tal como en el caso del método
-experimental, mediante esta técnica sólo es posible detectar aquellos
-pre-miRNAs conservados entre especies y con un elevado nivel de
-expresión. En cambio, en un clasificador no-comparativo se utiliza
-alguna técnica de aprendizaje de máquina, a partir de la cual se
-genera un modelo computacional que describe internamente las
+\newpage
+En un enfoque comparativo, se analizan genomas de diferentes especies
+buscando correspondencias que cumplan con las características de un
+pre-miRNA. Tal como en el caso del método experimental, mediante esta
+técnica sólo es posible detectar aquellos pre-miRNAs conservados entre
+especies y con un elevado nivel de expresión. En cambio, en un enfoque
+no-comparativo se utiliza alguna técnica de aprendizaje de máquina,
+para generar un modelo computacional que describe internamente las
 características del pre-miRNA a partir de un conjunto de datos que se
-utilizan en la etapa del entrenamiento.
+utilizan en la etapa del entrenamiento. Con este modelo computacional
+se genera un \emph{clasificador}.
 
 El objetivo último de un clasificador no-comparativo es obtener una
 tasa mínima de errores de clasificación para conjuntos de datos
-nuevos, que no hayan sido utilizados en la etapa de entrenamiento.
-En Inteligencia Computacional se utilizan diversas técnicas para
-la implementación de un clasificador no-comparativo, entre ellas
- el \emph{Perceptrón Multicapa} \cite{mlp1}\cite{mlp2} y la
-\emph{Máquina de Vectores de Soporte} \cite{svm}.
-El Preceptrón Multicapa (MLP) es un tipo de red neuronal artificial
-con propagación hacia adelante, donde las neuronas se disponen en
-capas.  La salida de cada neurona se determina de aplicar una
-\emph{función de activación}, de tipo sigmoidea, a la suma ponderada
-de las salidas en la capa anterior. Durante el entrenamiento del MLP
-se ajustan los pesos de cada neurona mediante un \emph{algoritmo de
-  retropropagación} hasta obtener una tasa de clasificación
-satisfactoria \cite{jain}. 
-La Máquina de Vectores de Soporte (SVM) es un algoritmo de
-clasificación que se basa en mapear, mediante una función de mapeo
-llamada \emph{kernel} (núcleo), el espacio $N$-dimensional de los
-datos de entrada en otro espacio de dimensión $M: M\gg N$, donde se
-espera que los datos sean linealmente separables mediante un
-hiperplano. El entrenamiento consiste en encontrar el hiperplano
-óptimo de separación para el conjunto de datos presentado \cite{bottou}.
+nuevos, que no hayan sido utilizados en la etapa de entrenamiento.  En
+Inteligencia Computacional se pueden utilizar diversas técnicas para
+la implementación de un clasificador no-comparativo, entre ellas las
+más utilizadas han sido el \emph{Perceptrón Multicapa}
+\cite{mlp1}\cite{mlp2} y la \emph{Máquina de Vectores de Soporte}
+\cite{svm}.  El Preceptrón Multicapa (\emph{MLP}, del inglés
+\eng{Multilayer Perceptron}) es un tipo de red neuronal artificial con
+propagación hacia adelante, donde las neuronas se disponen en capas.
+La salida de cada neurona se determina de aplicar una \emph{función de
+  activación}, de tipo sigmoidea, a la suma ponderada de las salidas
+en la capa anterior. Durante el entrenamiento del MLP se ajustan los
+pesos de cada neurona mediante un algoritmo de aprendizaje basado en
+la \emph{retropropagación} del error de clasificación, hasta obtener
+una tasa de clasificación satisfactoria \cite{jain}.  La Máquina de
+Vectores de Soporte (\emph{SVM}, de su nombre en inglés {Support
+  Vector Machine}) es un algoritmo de clasificación que se basa en
+transformar, mediante una función de mapeo llamada \emph{núcleo}, el
+espacio $N$-dimensional de los datos de entrada en otro espacio de
+dimensión $M: M\gg N$, donde se espera que los datos sean linealmente
+separables mediante un hiperplano. El entrenamiento consiste en
+encontrar el hiperplano óptimo de separación para el conjunto de datos
+presentado \cite{bottou}.
 
-En base a lo que se ha observado en la bibliografía y al problema
-planteado, se propone para este trabajo desarrollar un sistema
-informático para la identificación de cadenas de pre-miRNA de tipo
+En base al problema formulado y al análisis de la bibliografía, se
+propone para este trabajo desarrollar un sistema informático para la
+identificación de pre-miRNAs mediante un clasificador de tipo
 no-comparativo, que haga uso de técnicas de Inteligencia Computacional
-para la clasificación de patrones.
+para el reconocimiento de patrones.
 
 Para cada entrada presentada, el clasificador deberá ser capaz de
 discriminar entre dos \emph{clases}: positiva para aquellas que
 corresponden a un pre-miRNA y negativa para aquellas entradas que no
-lo son. A la hora de seleccionar los datos de entrenamiento para el
-clasificador, se deberán utilizar como conjunto de datos positivos
-pre-miRNAs validados experimentalmente. Para el caso del conjunto de
-entrenamiento negativo, se deberá utilizar un conjunto de datos
-artificialmente seleccionados que no contenga pre-miRNAs, aunque sí
-presenten características similares a aquellos.
-
-%\subsection*{Propuesta}
-\newpage
+lo son. 
 Una secuencia de pre-miRNA se representa mediante una cadena de
 caracteres \mono{A, G, C, U,} donde cada carácter representa el tipo
 de \emph{base} constitutiva de cada nucleótido\footnote{Las bases
   constitutivas del ARN son: \emph{adenina}, \emph{guanina},
-  \emph{citosina} y \emph{uracilo}, de ahí la denominación \mono{A, G,
+  \emph{citosina} y \emph{uracilo}, de ahí la representación \mono{A, G,
     C, U}.}.
 A partir de esta secuencia, mediante un proceso de extracción de
 características se generará un vector numérico que será la entrada al
 clasificador.  El sistema clasificará los datos de entrada
 identificando aquellas secuencias candidatas a ser pre-miRNAs.  Se
-utilizarán clasificadores mediante Máquina de Vector de Soporte y
-Perceptrón Multicapa, comparando su rendimiento, y se tomará en
+desarrollarán clasificadores basados en MLP y SVM, comparando su rendimiento, y se tomará en
 consideración la pertinencia de incluir éstas y otras técnicas en el
 clasificador final.
 
-%% Una primera parte del sistema consistirá en generar un vector de
-%% características de cada secuencia. Para este propósito se procederá al
-%% diseño y codificación de un algoritmo para la extracción de
-%% características a partir de la propia secuencia en conjunto con la
-%% estructura secundaria y otros indicadores moleculares que se
-%% encuentren disponibles. El conjunto de características a extraer se
-%% determinará en base a criterios del rendimiento obtenido en el
-%% algoritmo de clasificación y la disponibilidad de datos
-%% complementarios a la secuencia y estructura secundaria para todas las
-%% entradas.
+Se seleccionarán conjuntos de datos tanto positivos como negativos
+para el entrenamiento del clasificador. Como conjunto de datos
+positivos, se deberán utilizar pre-miRNAs validados experimentalmente.
+Para el caso negativo, se deberán utilizar datos artificialmente
+seleccionados que no contengan pre-miRNAs, aunque sí presenten
+características similares a éstos.
 
-%\newpage
-%También se especificará y codificará una interfaz de usuario para la
-%utilización del sistema por parte del usuario final.
-
-%\subsection*{Impacto}
-%
 El impacto social del desarrollo de este proyecto se verá en un
 aumento en la productividad de los investigadores del área al
 posibilitarle una mayor facilidad de acceso que los sistemas actualmente
@@ -691,7 +663,7 @@ encuentran disponibles:
   \item Software científico (MATLAB, GNU Octave)
   \item Software de scripting (Bash, Python, Perl)
   \item Software de servidor Web (Debian GNU/Linux, Apache
-    httpd/nginx, PHP 5)
+    httpd, PHP 5)
   \end{itemize*}
 \item Bases de datos para el desarrollo y pruebas
 \item Insumos varios:

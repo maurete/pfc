@@ -13,8 +13,8 @@
    viewBox="0 0 729.24453 303.29493"
    version="1.1"
    id="svg2"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="hsa-mir-299_ss.svg">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="hsa-mir-299_ss.pdf">
   <metadata
      id="metadata282">
     <rdf:RDF>
@@ -23,6 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -36,7 +37,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1030"
+     inkscape:window-height="1031"
      id="namedview280"
      showgrid="false"
      fit-margin-top="50"
@@ -44,7 +45,7 @@
      fit-margin-bottom="50"
      fit-margin-left="50"
      inkscape:zoom="1.2684253"
-     inkscape:cx="488.19434"
+     inkscape:cx="615.32668"
      inkscape:cy="187.42424"
      inkscape:window-x="0"
      inkscape:window-y="25"
@@ -123,17 +124,17 @@
   <path
      inkscape:connector-curvature="0"
      id="path24"
-     d="m 144.90684,186.98686 c -0.42969,0 -0.77734,-0.34765 -0.77734,-0.77734 0,-0.42969 0.34765,-0.77735 0.77734,-0.77735 0.42969,0 0.77734,0.34766 0.77734,0.77735 0,0.42969 -0.34765,0.77734 -0.27734,0.66406 l 0,-1 15,6 44,0 11.48828,-6.42187 11.51172,6.42187 307,0 9.13281,-11.54297 14.94531,-2.76562 13.19922,7.53515 5.22266,14.27344 -5.22266,14.27344 -13.19922,7.53515 -14.94531,-2.76562 -9.13281,-11.54297 -307,0 -11.51172,6.42188 -11.48828,-6.42188 -44,0 -15.5,5.66406"
+     d="m 144.90684,170.98686 c -0.42969,0 -0.77734,-0.34765 -0.77734,-0.77734 0,-0.42969 0.34765,-0.77735 0.77734,-0.77735 0.42969,0 0.77734,0.34766 0.77734,0.77735 0,0.42969 -0.34765,0.77734 -0.27734,0.66406 l 0,-1 15,6 44,0 11.48828,-6.42187 11.51172,6.42187 307,0 9.13281,-11.54297 14.94531,-2.76562 13.19922,7.53515 5.22266,14.27344 -5.22266,14.27344 -13.19922,7.53515 -14.94531,-2.76562 -9.13281,-11.54297 -307,0 -11.51172,6.42188 -11.48828,-6.42188 -44,0 -15.5,5.66406"
      style="fill:none;stroke:#303030;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
   <path
      inkscape:connector-curvature="0"
      id="path26"
-     d="m 160.40684,206.87358 0,-15 m 14,15 0,-15 m 15,15 0,-15 m 15,15 0,-15 m 23,15 0,-15 m 15,15 0,-15 m 15,15 0,-15 m 14,15 0,-15 m 15,15 0,-15 m 14,15 0,-15 m 15,15 0,-15 m 14,15 0,-15 m 15,15 0,-15 m 15,15 0,-15 m 14,15 0,-15 m 15,15 0,-15 m 14,15 0,-15 m 15,15 0,-15 m 14,15 0,-15 m 15,15 0,-15 m 15,15 0,-15 m 14,15 0,-15 m 15,15 0,-15 m 14,15 0,-15 m 15,15 0,-15 m 15,15 0,-15"
+     d="m 160.40684,190.87358 0,-15 m 14,15 0,-15 m 15,15 0,-15 m 15,15 0,-15 m 23,15 0,-15 m 15,15 0,-15 m 15,15 0,-15 m 14,15 0,-15 m 15,15 0,-15 m 14,15 0,-15 m 15,15 0,-15 m 14,15 0,-15 m 15,15 0,-15 m 15,15 0,-15 m 14,15 0,-15 m 15,15 0,-15 m 14,15 0,-15 m 15,15 0,-15 m 14,15 0,-15 m 15,15 0,-15 m 15,15 0,-15 m 14,15 0,-15 m 15,15 0,-15 m 14,15 0,-15 m 15,15 0,-15 m 15,15 0,-15"
      style="fill:none;stroke:#303030;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:8.74712, 2.92542;stroke-dashoffset:8.74712" />
   <g
      id="g28"
      style="fill:#000000;fill-opacity:1"
-     transform="translate(-130.37659,-15.342989)">
+     transform="translate(-130.37659,-31.342989)">
     <use
        height="842"
        width="595"
@@ -145,7 +146,7 @@
   <g
      id="g32"
      style="fill:#000000;fill-opacity:1"
-     transform="translate(-120.85904,-26.460539)">
+     transform="translate(-120.85904,-42.460539)">
     <use
        height="842"
        width="595"
@@ -157,7 +158,7 @@
   <g
      id="g36"
      style="fill:#000000;fill-opacity:1"
-     transform="translate(-106.00945,-39.710129)">
+     transform="translate(-106.00945,-55.710129)">
     <use
        height="842"
        width="595"
@@ -169,7 +170,7 @@
   <g
      id="g40"
      style="fill:#000000;fill-opacity:1"
-     transform="translate(-91.702037,-54.017529)">
+     transform="translate(-91.702037,-70.017529)">
     <use
        height="842"
        width="595"
@@ -181,7 +182,7 @@
   <g
      id="g44"
      style="fill:#000000;fill-opacity:1"
-     transform="translate(-77.123547,-70.196019)">
+     transform="translate(-77.123547,-86.196019)">
     <use
        height="842"
        width="595"
@@ -193,7 +194,7 @@
   <g
      id="g48"
      style="fill:#000000;fill-opacity:1"
-     transform="translate(-58.599777,-87.088549)">
+     transform="translate(-58.599777,-103.08855)">
     <use
        height="842"
        width="595"
@@ -205,7 +206,7 @@
   <g
      id="g52"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(-53.434587,-94.041239)">
+     transform="translate(-53.434587,-110.04124)">
     <use
        height="842"
        width="595"
@@ -218,7 +219,7 @@
   <g
      id="g56"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(-38.552967,-107.16661)">
+     transform="translate(-38.552967,-123.16661)">
     <use
        height="842"
        width="595"
@@ -231,7 +232,7 @@
   <g
      id="g60"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(-23.974447,-121.74513)">
+     transform="translate(-23.974447,-137.74513)">
     <use
        height="842"
        width="595"
@@ -244,7 +245,7 @@
   <g
      id="g64"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(-9.8553314,-136.17674)">
+     transform="translate(-9.8553314,-152.17674)">
     <use
        height="842"
        width="595"
@@ -257,7 +258,7 @@
   <g
      id="g68"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(4.7231586,-150.75524)">
+     transform="translate(4.7231586,-166.75524)">
     <use
        height="842"
        width="595"
@@ -270,7 +271,7 @@
   <g
      id="g72"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(19.301679,-165.33376)">
+     transform="translate(19.301679,-181.33376)">
     <use
        height="842"
        width="595"
@@ -283,7 +284,7 @@
   <g
      id="g76"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(34.06846,-179.78804)">
+     transform="translate(34.06846,-195.78804)">
     <use
        height="842"
        width="595"
@@ -296,7 +297,7 @@
   <g
      id="g80"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(48.724294,-194.44386)">
+     transform="translate(48.724294,-210.44386)">
     <use
        height="842"
        width="595"
@@ -309,7 +310,7 @@
   <g
      id="g84"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(63.302784,-209.02236)">
+     transform="translate(63.302784,-225.02236)">
     <use
        height="842"
        width="595"
@@ -322,7 +323,7 @@
   <g
      id="g88"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(78.075055,-223.79463)">
+     transform="translate(78.075055,-239.79463)">
     <use
        height="842"
        width="595"
@@ -335,7 +336,7 @@
   <g
      id="g92"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(92.194549,-238.22664)">
+     transform="translate(92.194549,-254.22664)">
     <use
        height="842"
        width="595"
@@ -348,7 +349,7 @@
   <g
      id="g96"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(107.03868,-252.75826)">
+     transform="translate(107.03868,-268.75826)">
     <use
        height="842"
        width="595"
@@ -361,7 +362,7 @@
   <g
      id="g100"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(121.6172,-267.33678)">
+     transform="translate(121.6172,-283.33678)">
     <use
        height="842"
        width="595"
@@ -374,7 +375,7 @@
   <g
      id="g104"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(136.19568,-281.91527)">
+     transform="translate(136.19568,-297.91527)">
     <use
        height="842"
        width="595"
@@ -387,7 +388,7 @@
   <g
      id="g108"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(150.69685,-296.41643)">
+     transform="translate(150.69685,-312.41643)">
     <use
        height="842"
        width="595"
@@ -400,7 +401,7 @@
   <g
      id="g112"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(165.35269,-311.07228)">
+     transform="translate(165.35269,-327.07228)">
     <use
        height="842"
        width="595"
@@ -413,7 +414,7 @@
   <g
      id="g116"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(179.85386,-325.57344)">
+     transform="translate(179.85386,-341.57344)">
     <use
        height="842"
        width="595"
@@ -426,7 +427,7 @@
   <g
      id="g120"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(194.24407,-340.27614)">
+     transform="translate(194.24407,-356.27614)">
     <use
        height="842"
        width="595"
@@ -439,7 +440,7 @@
   <g
      id="g124"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(209.01085,-354.73042)">
+     transform="translate(209.01085,-370.73042)">
     <use
        height="842"
        width="595"
@@ -452,7 +453,7 @@
   <g
      id="g128"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(223.66666,-369.38625)">
+     transform="translate(223.66666,-385.38625)">
     <use
        height="842"
        width="595"
@@ -465,7 +466,7 @@
   <g
      id="g132"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(238.16783,-383.88741)">
+     transform="translate(238.16783,-399.88741)">
     <use
        height="842"
        width="595"
@@ -478,7 +479,7 @@
   <g
      id="g136"
      style="fill:#c80073;fill-opacity:1"
-     transform="translate(250.95809,-400.19017)">
+     transform="translate(250.95809,-416.19017)">
     <use
        height="842"
        width="595"
@@ -491,7 +492,7 @@
   <g
      id="g140"
      style="fill:#000000;fill-opacity:1"
-     transform="translate(274.25926,-419.97884)">
+     transform="translate(274.25926,-435.97884)">
     <use
        height="842"
        width="595"
@@ -503,7 +504,7 @@
   <g
      id="g144"
      style="fill:#000000;fill-opacity:1"
-     transform="translate(293.9264,-436.0866)">
+     transform="translate(293.9264,-452.0866)">
     <use
        height="842"
        width="595"
@@ -515,7 +516,7 @@
   <g
      id="g148"
      style="fill:#000000;fill-opacity:1"
-     transform="translate(302.11977,-441.75185)">
+     transform="translate(302.11977,-457.75185)">
     <use
        height="842"
        width="595"
@@ -527,7 +528,7 @@
   <g
      id="g152"
      style="fill:#000000;fill-opacity:1"
-     transform="translate(296.72794,-426.44753)">
+     transform="translate(296.72794,-442.44753)">
     <use
        height="842"
        width="595"
@@ -539,7 +540,7 @@
   <g
      id="g156"
      style="fill:#000000;fill-opacity:1"
-     transform="translate(273.76238,-401.88196)">
+     transform="translate(273.76238,-417.88196)">
     <use
        height="842"
        width="595"
@@ -551,7 +552,7 @@
   <g
      id="g160"
      style="fill:#000000;fill-opacity:1"
-     transform="translate(250.50104,-379.54875)">
+     transform="translate(250.50104,-395.54875)">
     <use
        height="842"
        width="595"
@@ -563,7 +564,7 @@
   <g
      id="g164"
      style="fill:#000000;fill-opacity:1"
-     transform="translate(236.1714,-365.89098)">
+     transform="translate(236.1714,-381.89098)">
     <use
        height="842"
        width="595"
@@ -575,7 +576,7 @@
   <g
      id="g168"
      style="fill:#000000;fill-opacity:1"
-     transform="translate(236.56792,-366.2875)">
+     transform="translate(236.56792,-382.2875)">
     <use
        height="842"
        width="595"
@@ -587,7 +588,7 @@
   <g
      id="g172"
      style="fill:#000000;fill-opacity:1"
-     transform="translate(223.40111,-353.43318)">
+     transform="translate(223.40111,-369.43318)">
     <use
        height="842"
        width="595"
@@ -599,7 +600,7 @@
   <g
      id="g176"
      style="fill:#000000;fill-opacity:1"
-     transform="translate(209.28196,-339.00154)">
+     transform="translate(209.28196,-355.00154)">
     <use
        height="842"
        width="595"
@@ -611,7 +612,7 @@
   <g
      id="g180"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(194.24413,-324.2762)">
+     transform="translate(194.24413,-340.2762)">
     <use
        height="842"
        width="595"
@@ -624,7 +625,7 @@
   <g
      id="g184"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(179.8539,-309.57347)">
+     transform="translate(179.8539,-325.57347)">
     <use
        height="842"
        width="595"
@@ -637,7 +638,7 @@
   <g
      id="g188"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(165.08713,-295.11922)">
+     transform="translate(165.08713,-311.11922)">
     <use
        height="842"
        width="595"
@@ -650,7 +651,7 @@
   <g
      id="g192"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(150.96799,-280.68758)">
+     transform="translate(150.96799,-296.68758)">
     <use
        height="842"
        width="595"
@@ -663,7 +664,7 @@
   <g
      id="g196"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(135.93013,-265.96221)">
+     transform="translate(135.93013,-281.96221)">
     <use
        height="842"
        width="595"
@@ -676,7 +677,7 @@
   <g
      id="g200"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(121.81098,-251.53056)">
+     transform="translate(121.81098,-267.53056)">
     <use
        height="842"
        width="595"
@@ -689,7 +690,7 @@
   <g
      id="g204"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(107.23249,-236.95207)">
+     transform="translate(107.23249,-252.95207)">
     <use
        height="842"
        width="595"
@@ -702,7 +703,7 @@
   <g
      id="g208"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(92.653974,-222.37355)">
+     transform="translate(92.653974,-238.37355)">
     <use
        height="842"
        width="595"
@@ -715,7 +716,7 @@
   <g
      id="g212"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(77.804389,-207.52397)">
+     transform="translate(77.804389,-223.52397)">
     <use
        height="842"
        width="595"
@@ -728,7 +729,7 @@
   <g
      id="g216"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(63.193496,-193.06932)">
+     transform="translate(63.193496,-209.06932)">
     <use
        height="842"
        width="595"
@@ -741,7 +742,7 @@
   <g
      id="g220"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(48.918074,-178.63765)">
+     transform="translate(48.918074,-194.63765)">
     <use
        height="842"
        width="595"
@@ -754,7 +755,7 @@
   <g
      id="g224"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(34.339584,-164.05916)">
+     transform="translate(34.339584,-180.05916)">
     <use
        height="842"
        width="595"
@@ -767,7 +768,7 @@
   <g
      id="g228"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(19.30173,-149.33382)">
+     transform="translate(19.30173,-165.33382)">
     <use
        height="842"
        width="595"
@@ -780,7 +781,7 @@
   <g
      id="g232"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(4.9115086,-134.63109)">
+     transform="translate(4.9115086,-150.63109)">
     <use
        height="842"
        width="595"
@@ -793,7 +794,7 @@
   <g
      id="g236"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(-9.6670114,-120.05257)">
+     transform="translate(-9.6670114,-136.05257)">
     <use
        height="842"
        width="595"
@@ -806,7 +807,7 @@
   <g
      id="g240"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(-24.245497,-105.47408)">
+     transform="translate(-24.245497,-121.47408)">
     <use
        height="842"
        width="595"
@@ -819,7 +820,7 @@
   <g
      id="g244"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(-38.746627,-90.972949)">
+     transform="translate(-38.746627,-106.97295)">
     <use
        height="842"
        width="595"
@@ -832,7 +833,7 @@
   <g
      id="g248"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(-53.325157,-76.394429)">
+     transform="translate(-53.325157,-92.394429)">
     <use
        height="842"
        width="595"
@@ -845,7 +846,7 @@
   <g
      id="g252"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(-67.709917,-60.409659)">
+     transform="translate(-67.709917,-76.409659)">
     <use
        height="842"
        width="595"
@@ -858,7 +859,7 @@
   <g
      id="g256"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(-86.521197,-43.323379)">
+     transform="translate(-86.521197,-59.323379)">
     <use
        height="842"
        width="595"
@@ -871,7 +872,7 @@
   <g
      id="g260"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(-91.890267,-36.541799)">
+     transform="translate(-91.890267,-52.541799)">
     <use
        height="842"
        width="595"
@@ -884,7 +885,7 @@
   <g
      id="g264"
      style="fill:#00a082;fill-opacity:1"
-     transform="translate(-106.46876,-23.563309)">
+     transform="translate(-106.46876,-39.563309)">
     <use
        height="842"
        width="595"
@@ -897,7 +898,7 @@
   <g
      id="g268"
      style="fill:#000000;fill-opacity:1"
-     transform="translate(-120.78163,-8.9379391)">
+     transform="translate(-120.78163,-24.93794)">
     <use
        height="842"
        width="595"
@@ -909,7 +910,7 @@
   <g
      id="g272"
      style="fill:#000000;fill-opacity:1"
-     transform="translate(-135.62576,7.1936909)">
+     transform="translate(-135.62576,-8.8063095)">
     <use
        height="842"
        width="595"
@@ -921,7 +922,7 @@
   <g
      id="g276"
      style="fill:#000000;fill-opacity:1"
-     transform="translate(-156.89642,26.864351)">
+     transform="translate(-156.89642,10.864351)">
     <use
        height="842"
        width="595"
@@ -945,50 +946,16 @@
      xml:space="preserve"
      style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
      x="39.789055"
-     y="50.610157"
+     y="82.610161"
      id="text3391"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3393"
        x="39.789055"
-       y="50.610157"
+       y="82.610161"
        style="font-size:14.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica">AAGAAA<tspan
    style="fill:#c80073;fill-opacity:1"
    id="tspan5203">UGGUUUACCGUCCCACAUACAU</tspan>UUUGAAUAUG<tspan
    style="fill:#00a082;fill-opacity:1"
    id="tspan5207">UAUGUGGGAUGGUAAACCGCUU</tspan>CUU</tspan></text>
-  <path
-     style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#StopL);marker-end:url(#StopL)"
-     d="m 187.31886,246.68709 302.10688,0"
-     id="path4021"
-     inkscape:connector-curvature="0" />
-  <path
-     style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#StopL);marker-mid:none;marker-end:url(#StopL)"
-     d="m 227.05317,151.91567 304.62969,0"
-     id="path4023"
-     inkscape:connector-curvature="0" />
-  <text
-     xml:space="preserve"
-     style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times;-inkscape-font-specification:Times"
-     x="329.68051"
-     y="147.66959"
-     id="text5195"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan5197"
-       x="329.68051"
-       y="147.66959"
-       style="font-style:italic;-inkscape-font-specification:Times Medium Italic">hsa-mir-299-5p</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times;-inkscape-font-specification:Times"
-     x="288.68481"
-     y="259.99808"
-     id="text5199"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan5201"
-       x="288.68481"
-       y="259.99808"
-       style="font-style:italic;-inkscape-font-specification:Times Medium Italic">hsa-mir-299-3p</tspan></text>
 </svg>
