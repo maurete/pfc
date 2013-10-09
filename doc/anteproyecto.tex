@@ -14,15 +14,6 @@
 \hyphenation{mi-RNAs}
 %
 %
-%% \usepackage{glossaries}
-%% \newglossaryentry{conservacion}{name=conservaci{ó}n,
-%%   description={refiere a la conservación de las especies},
-%%   user1={conservados}
-%% }
-%% \newglossaryentry{nt}{name=nucle{ó}tido,
-%%   description={Unidad constitutiva de los ácidos ribonucleico (ARN) y
-%% desoxirribonucleico (ADN)},
-%% }
 %
 \setkomafont{subject}{\LARGE\usekomafont{disposition}}
 \setkomafont{title}{\normalfont\slshape}
@@ -112,7 +103,7 @@ roedores) y no aquellos de evolución más reciente \cite{sewer}, el
 número de miRNAs en humanos podría ser mucho mayor que las
 estimaciones. La base de datos miRBase \cite{mirbase2}\cite{mirbase3}
 recopila el conjunto de (pre-)miRNA conocidos hasta la
-fecha. En la última versión disponible, de agosto de 2012, se listan
+fecha. En la última versión disponible (r.19, agosto de 2012) se listan
 21264 pre-miRNA experimentalmente validados, conteniendo un total de
 25141 miRNA maduros, para 193 especies diferentes.
 %
@@ -205,9 +196,9 @@ A partir de esta secuencia, mediante un proceso de extracción de
 características se generará un vector numérico que será la entrada al
 clasificador.  El sistema clasificará los datos de entrada
 identificando aquellas secuencias candidatas a ser pre-miRNAs.  Se
-desarrollarán clasificadores basados en MLP y SVM, comparando su rendimiento, y se tomará en
-consideración la pertinencia de incluir éstas y otras técnicas en el
-clasificador final.
+desarrollarán clasificadores basados en MLP y SVM, comparando su
+rendimiento, y se tomará en consideración la pertinencia de incluir
+éstas y otras técnicas en el clasificador final.
 
 Se seleccionarán conjuntos de datos tanto positivos como negativos
 para el entrenamiento del clasificador. Como conjunto de datos
@@ -255,7 +246,8 @@ pre-miRNAs.
 \item Comparar el rendimiento de los distintos métodos buscando
   obtener el mejor desempeño en la tasa de clasificación.
 \item Especificar y codificar una interfaz de línea de comandos y una
-  interfaz web para la utilización del método por parte del usuario no experto.
+  interfaz web para la utilización del método por parte del usuario no
+  experto.
 \end{itemize}
 %
 %
@@ -360,75 +352,73 @@ fin.
 \newpage
 \section{Plan de tareas propuesto}
 Para el desarrollo del proyecto, el alumno dedicará 20 horas semanales
-de trabajo para un total de 580 horas.  Se realizarán entre 2 y 4
+de trabajo para un total de 740 horas.  Se realizarán 2
 reuniones mensuales de una hora con el director de proyecto para
 seguimiento de avance y asesoramiento.
 %
 A continuación se presenta la lista de tareas y sub-tareas a
 desarrollar en el transcurso del proyecto.
 \begin{enumerate}
-\item Búsqueda bibliográfica (44h)
+\item Búsqueda bibliográfica (56h)
   \begin{enumerate*}
   \item Información específica del problema en cuestión: descripción
     de los microRNAs, mecanismo y función, implicancias en el campo de
-    la biología (24h).
+    la biología (32h).
   \item Perspectiva informática del tema: estructura de los datos de
     entrada, extracción de características, métodos de clasificación
-    (20h).
+    (24h).
   \end{enumerate*}
-\item Implementación inicial de métodos de clasificación (36h)
+\item Implementación inicial de métodos de clasificación (44h)
   \begin{enumerate*}
   \item Búsqueda y verificación de una base de datos de prueba ya
-    clasificada y con las características extraídas (8h).
+    clasificada y con las características extraídas (12h).
   \item Codificación inicial de clasificadores para obtener una
     primera impresión de las herramientas y lenguajes disponibles,
-    requerimientos de software y hardware, y rendimiento (28h).
+    requerimientos de software y hardware, y rendimiento (32h).
   \end{enumerate*}
-\item Preparación de la base de datos (60h)
+\item Preparación de la base de datos (76h)
   \begin{enumerate*}
-  \item Búsqueda y verificación de diferentes bases de datos (12h).
+  \item Búsqueda y verificación de diferentes bases de datos (16h).
   \item Armado de una base de datos propia unificando el formato y
-    características disponibles (24h).
+    características disponibles (32h).
   \item Codificación de herramientas para validación de la base de
-    datos generada y pruebas (24h).
+    datos generada y pruebas (28h).
   \end{enumerate*}
-\item Redacción del informe entregable 1 (12h)
-\item Diseño del clasificador definitivo (100h)
+\item Redacción del informe entregable 1 (16h)
+\item Diseño del clasificador definitivo (124h)
   \begin{enumerate*}
-  \item Pruebas de los clasificadores preliminares (64h).\\
+  \item Pruebas de los clasificadores preliminares (80h).\\
     Tarea iterativa:
     \begin{itemize*}
     \item Selección del método de clasificación.
     \item Ajuste de parámetros del método.
-%    \item Selección de características de entrada.
     \item Validación cruzada.
     \end{itemize*}
-  \item Codificación definitiva del clasificador (36h).
+  \item Codificación definitiva del clasificador (44h).
   \end{enumerate*}
 \newpage
-\item Pruebas e integración del sistema (80h)
+\item Pruebas e integración del sistema (104h)
   \begin{enumerate*}
-  \item Validación del método de clasificación (20h).
+  \item Validación del método de clasificación (24h).
   \item Integración del sistema: extracción de características y
-    clasificación (24h).
+    clasificación (32h).
   \item Especificación y codificación de la interfaz de usuario de
-    línea de comandos (16h).
-  \item Pruebas de funcionamiento y validación de requerimientos (20h).
+    línea de comandos (24h).
+  \item Pruebas de funcionamiento y validación de requerimientos (24h).
   \end{enumerate*}
-\item Redacción del informe entregable 2 (12h)
-%\item Redacción del informe entregable 3 (12h)
-\item Interfaz de usuario web, documentación y puesta en servicio (104h)
+\item Redacción del informe entregable 2 (16h)
+\item Interfaz de usuario web, documentación y puesta en servicio (132h)
   \begin{enumerate*}
   \item Especificación de los lenguajes/tecnologías a utilizar en la
-    interfaz web (12h).
-  \item Codificación de la interfaz web (36h).
+    interfaz web (16h).
+  \item Codificación de la interfaz web (48h).
   \item Documentación de las interfaces de usuario de línea de
-    comandos y web (20h).
+    comandos y web (24h).
   \item Configuración y puesta en servicio de un servidor de prueba
-    (36h).
+    (44h).
   \end{enumerate*}
-\item Redacción del informe entregable 3 (12h)
-\item Redacción del informe final (120h)
+\item Redacción del informe entregable 3 (16h)
+\item Redacción del informe final (156h)
 \end{enumerate}
 %
 %
@@ -438,7 +428,7 @@ Resultados de la revisión bibliográfica, pruebas preliminares y armado
 de la base de datos definitiva.  Abarca las etapas 1 y 2 y la primera
 parte de la etapa 3.
 \begin{description*}
-  \item[Fecha:] 25 de julio de 2013
+  \item[Fecha:] 7 de agosto de 2013
   \item[Entregable:]
   \item
     \begin{minipage}{\textwidth}
@@ -459,7 +449,7 @@ integración del sistema. Abarca la segunda parte de la etapa 3 y la
 etapa 4 excepto la interfaz web y la documentación para el usuario
 final.
 \begin{description*}
-  \item[Fecha:] 1 de octubre de 2013
+  \item[Fecha:] 31 de octubre de 2013
   \item[Entregable:]
   \item
     \begin{minipage}{\textwidth}
@@ -481,7 +471,7 @@ final.
 Interfaz de usuario web, puesta en servicio y documentación para el
 usuario final. Abarca parte de la etapa 4 y la etapa 5.
 \begin{description*}
-  \item[Fecha:] 4 de noviembre de 2013
+  \item[Fecha:] 7 de enero de 2014
   \item[Entregable:]
   \item
     \begin{minipage}{\textwidth}
@@ -499,18 +489,19 @@ usuario final. Abarca parte de la etapa 4 y la etapa 5.
 %
 \newpage
 \section{Cronograma tentativo}
-En el siguiente cronograma se distribuye la carga de trabajo de 580
-horas en 29 semanas. Se toma como fecha de inicio del proyecto el día
-3 de junio de 2013 y como fecha de finalización estimada el día 20 de
-diciembre de 2013.
+En el siguiente cronograma se distribuye la carga de trabajo de 740
+horas en 37 semanas. Se toma como fecha de inicio del proyecto el día
+3 de junio de 2013 y como fecha de finalización estimada el día 28 de
+febrero de 2014. Se consideran como no laborables las dos semanas
+comprendidas entre el día 23 de diciembre y 3 de enero.
 \begin{center}
 \definecolor{barblue}{RGB}{153,204,254}
 \definecolor{groupblue}{RGB}{51,102,254}
 \definecolor{linkred}{RGB}{165,0,33}
 \sffamily
 \begin{ganttchart}[
-y unit chart=5.5mm,
-x unit=0.95mm,
+y unit chart=5mm,
+x unit=0.75mm,
 y unit title=0.6cm,
 hgrid style/.append style={draw=black!5, line width=.75pt},
 vgrid={*4{draw=black!15, line width=.75pt},%
@@ -536,55 +527,54 @@ milestone/.append style={shape=ganttmilestone,fill=linkred,draw=none},
 milestone label font=\slshape\bfseries\small\color{black!80},
 milestone height=.55,
 milestone top shift=.35,
-milestone left shift=-0.5,
-milestone right shift=1.5,
+milestone left shift=-1,
+milestone right shift=2,
 milestone label node/.append style={below=8pt,left=0pt},
-]{1}{145}
-\gantttitle{Jun}{20}\gantttitle{Jul}{23}\gantttitle{Ago}{22}\gantttitle{Sep}{21}
-\gantttitle{Oct}{23}\gantttitle{Nov}{21}\gantttitle{Dic}{15}\\
-\gantttitle[title label node/.append style={below left=-1.26ex and -1.1ex}]%
-{Semana:\quad1}{5}\gantttitlelist{2,...,29}{5} \\
+]{1}{185}
+\gantttitle{Jun}{20}\gantttitle{Jul}{23}\gantttitle{Ago}{22}
+\gantttitle{Sep}{21}\gantttitle{Oct}{23}\gantttitle{Nov}{21}
+\gantttitle{Dic}{15}\gantttitle{Ene}{20}\gantttitle{Feb}{20}\\
+\gantttitle[title label node/.append style={below left=-1.15ex and -1.1ex},
+  title label font=\bfseries\scriptsize]{Semana:\quad\,1}{5}%
+\gantttitlelist[title label font=\bfseries\scriptsize]{2,...,37}{5} \\
 % 20 horas semanales: 1 dia = 4h
-\ganttgroup{Tarea 1}{1}{11} \\%11 dias
-\ganttbar{1.a}{1}{6} \\ %24h
-\ganttbar{1.b}{7}{11} \\ %20h
+\ganttgroup{Tarea 1}{1}{14} \\%14 dias
+\ganttbar{1.a}{1}{8} \\ %32h
+\ganttbar{1.b}{9}{14} \\ %24h
 %
-\ganttgroup{Tarea 2}{12}{20} \\%9 dias
-\ganttbar{2.a}{12}{13} \\ %8h
-\ganttbar{2.b}{14}{20} \\ %28h
+\ganttgroup{Tarea 2}{15}{25} \\%11 dias
+\ganttbar{2.a}{15}{17} \\ %12h
+\ganttbar{2.b}{18}{25} \\ %32h
 %
-\ganttgroup{Tarea 3}{21}{35} \\%15 dias
-\ganttbar{3.a}{21}{23} \\%12h
-\ganttbar{3.b}{24}{29} \\%24h
-\ganttbar{3.c}{30}{35} \\%24h
+\ganttgroup{Tarea 3}{26}{44} \\%19 dias
+\ganttbar{3.a}{26}{29} \\%16h
+\ganttbar{3.b}{30}{37} \\%32h
+\ganttbar{3.c}{38}{44} \\%28h
 % entregable 1
-\ganttgroup{Tarea 4}{36}{38} \\%3 dias
-\ganttmilestone{Control 1}{38}\\
+\ganttgroup{Tarea 4}{45}{48} \\%4 dias
+\ganttmilestone{Control 1}{48}\\
 %
-\ganttgroup{Tarea 5}{39}{63} \\%25 dias
-\ganttbar{5.a}{39}{54} \\%64h
-\ganttbar{5.b}{55}{63} \\%20h
+\ganttgroup{Tarea 5}{49}{79} \\%31 dias
+\ganttbar{5.a}{49}{68} \\%80h
+\ganttbar{5.b}{69}{79} \\%44h
 %
-\ganttgroup{Tarea 6}{64}{83} \\%20 dias
-\ganttbar{6.a}{64}{68} \\%20h
-\ganttbar{6.b}{69}{74} \\%24h
-\ganttbar{6.c}{75}{78} \\%16h
-\ganttbar{6.d}{79}{83} \\%20h
+\ganttgroup{Tarea 6}{80}{105} \\%26 dias
+\ganttbar{6.a}{80}{85} \\%24h
+\ganttbar{6.b}{86}{93} \\%32h
+\ganttbar{6.c}{94}{99} \\%24h
+\ganttbar{6.d}{100}{105} \\%24h
 % entregable 2
-\ganttgroup{Tarea 7}{84}{86} \\%3 dias
-\ganttmilestone{Control 2}{86}\\
-\ganttgroup{Tarea 8}{87}{112} \\%26 dias
-\ganttbar{8.a}{87}{89} \\%12h
-\ganttbar{8.b}{90}{98} \\%36h
-\ganttbar{8.c}{99}{103}\\%20h
-\ganttbar{8.d}{104}{112} \\%36h
-% 10 entregable 3
-%\ganttgroup{Tarea 9}{88}{90} \\%3 dias
-%\ganttmilestone{Control 3}{90}\\
+\ganttgroup{Tarea 7}{106}{109} \\%4 dias
+\ganttmilestone{Control 2}{109}\\
+\ganttgroup{Tarea 8}{110}{142} \\%33 dias
+\ganttbar{8.a}{110}{113} \\%16h
+\ganttbar{8.b}{114}{125} \\%48h
+\ganttbar{8.c}{126}{131}\\%24h
+\ganttbar{8.d}{132}{142} \\%44h
 % entregable 3
-\ganttgroup{Tarea 9}{113}{115} \\%3 dias
-\ganttmilestone{Control 3}{115}\\
-\ganttgroup{Tarea 10}{116}{145} %30 dias
+\ganttgroup{Tarea 9}{143}{146} \\%4 dias
+\ganttmilestone{Control 3}{146}\\
+\ganttgroup{Tarea 10}{147}{185} %39 dias
 \end{ganttchart}
 \end{center}
 %
@@ -649,7 +639,7 @@ encuentran disponibles:
 \item Servicios:
   \begin{itemize*}
   \item Conexión a Internet
-  \item Servidor Web (disponible en el Sinc)
+  \item Servidor Web (disponible en sinc(i))
   \end{itemize*}
 \item Hardware:
   \begin{itemize*}
@@ -658,9 +648,9 @@ encuentran disponibles:
   \end{itemize*}
 \item Software:
   \begin{itemize*}
-  \item Sistema operativo Debian GNU/Linux 7.0 ``Wheezy''
+  \item Sistema operativo Debian GNU/Linux testing ``Jessie''
   \item Entorno de desarrollo/Editor GNU Emacs 24
-  \item Software científico (MATLAB, GNU Octave)
+  \item Software científico (GNU Octave/MATLAB)
   \item Software de scripting (Bash, Python, Perl)
   \item Software de servidor Web (Debian GNU/Linux, Apache
     httpd, PHP 5)
@@ -704,28 +694,28 @@ siguientes consideraciones:
                                                      &\GR{Costo unitario}
                                                                &\GR{Costo total}\\\hline
     \mrow{3}{*}{Tareas 1 a 4}
-                     & RRHH alumno    &   152 & hs.  & \$  40  & \$ 6080  \\
-                     & RRHH director  &    30 & hs.  & \$ 200  & \$ 6000  \\
+                     & RRHH alumno    &   192 & hs.  & \$  40  & \$ 7680  \\
+                     & RRHH director  &    40 & hs.  & \$ 200  & \$ 8000  \\
                      & Impresión      &   200 & pág. & \$ 0,2  & \$ 40    \\
-    \mcol{5}{l}{\quad\SL{Subtotal C.D. tareas 1--4}}           & \SL{\$12120}\\\hline
+    \mcol{5}{l}{\quad\SL{Subtotal C.D. tareas 1--4}}           & \SL{\$15720}\\\hline
     \mrow{3}{*}{Tareas 5 a 7}
-                     & RRHH alumno    &   164 & hs.  & \$  40  & \$ 6560  \\
-                     & RRHH director  &    30 & hs.  & \$ 200  & \$ 6000  \\
+                     & RRHH alumno    &   244 & hs.  & \$  40  & \$ 9760  \\
+                     & RRHH director  &    40 & hs.  & \$ 200  & \$ 8000  \\
                      & Impresión      &   100 & pág. & \$ 0,2  & \$ 20    \\
-    \mcol{5}{l}{\quad\SL{Subtotal C.D. tareas 5--7}}           & \SL{\$12580}\\\hline
+    \mcol{5}{l}{\quad\SL{Subtotal C.D. tareas 5--7}}           & \SL{\$17780}\\\hline
     \mrow{4}{*}{Tareas 8 a 9}
-                     & RRHH alumno    &   116 & hs.  & \$  40  & \$ 4640  \\
-                     & RRHH director  &    15 & hs.  & \$ 200  & \$ 3000  \\
+                     & RRHH alumno    &   148 & hs.  & \$  40  & \$ 5920  \\
+                     & RRHH director  &    20 & hs.  & \$ 200  & \$ 4000  \\
                      & Servidor Web   & 3000  & hs.  & \$   0\footnote{%
 Servidor Web disponible en \emph{sinc(i)}.}  & \$ 0     \\
                      & Impresión      &   100 & pág. & \$ 0,2  & \$ 30    \\
-    \mcol{5}{l}{\quad\SL{Subtotal C.D. tareas 8--9}}           & \SL{\$7670} \\\hline
+    \mcol{5}{l}{\quad\SL{Subtotal C.D. tareas 8--9}}           & \SL{\$9950} \\\hline
     \mrow{4}{*}{Tarea 10}
-                     & RRHH alumno    &   120 & hs.  & \$  40  & \$ 4800  \\
-                     & RRHH director  &    20 & hs.  & \$ 200  & \$ 4000  \\
+                     & RRHH alumno    &   156 & hs.  & \$  40  & \$ 6240  \\
+                     & RRHH director  &    40 & hs.  & \$ 200  & \$ 8000  \\
                      & Impresión      &   400 & pág. & \$ 0,2  & \$ 80    \\
                      & Encuadernado   &     3 & unid.& \$ 30   & \$ 120   \\
-    \mcol{5}{l}{\quad\SL{Subtotal C.D. tarea 10}}              & \SL{\$9000} \\\hline
+    \mcol{5}{l}{\quad\SL{Subtotal C.D. tarea 10}}              & \SL{\$14440} \\\hline
     \mrow{5}{*}{Costos Indirectos}
                      & Serv. Internet &     7 & mes  & \$  200 & \$ 1400  \\
                      & PC escritorio  &     1 & unid.& \$ 6000 & \$ 6000  \\
@@ -733,7 +723,7 @@ Servidor Web disponible en \emph{sinc(i)}.}  & \$ 0     \\
                 & Elementos de oficina&\mcol{2}{c}{N/A}&       & \$ 150   \\
                      & Software     &\mcol{2}{c}{N/A}& \$ 0    & \$ 0     \\
     \mcol{5}{l}{\quad\SL{Subtotal C.I.}}                       & \SL{\$7782} \\\hline
-    \mcol{5}{l}{\GR{Costo total del Proyecto}}                 & \GR{\$49512}\\\hline
+    \mcol{5}{l}{\GR{Costo total del Proyecto}}                 & \GR{\$65672}\\\hline
   \end{tabular}}
 %
 %
