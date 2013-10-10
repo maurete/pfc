@@ -1,9 +1,9 @@
 
-Machine Learning-Based Pre-miRNA Sequence Classifier
-====================================================
+A Machine Learning-Based pre-miRNA Sequence Classifier
+======================================================
 
 This repository is a work-in-progress following the development of a
-machine-learning pre-miRNA sequence classifier.
+machine learning-based pre-miRNA sequence classifier.
 
 This work is being done as a requirement the IT Engineering degree
 at [FICH-UNL](http://fich.unl.edu.ar/), Santa Fe, Argentina.
