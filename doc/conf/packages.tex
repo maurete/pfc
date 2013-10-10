@@ -82,7 +82,7 @@
 % === Más packages
 % ===
 %
-\usepackage{mdwlist}		%Para listas mas compactas
+%%\usepackage{mdwlist}		%Para listas mas compactas
 %% \usepackage{textcomp}		%Para algunos símbolos
 %% \usepackage{colortbl}		%Para celdas de colores en tablas
 %% \usepackage{fancyhdr}		%Para encabezados/pie
@@ -101,6 +101,11 @@
 %% requiere texlive-bibtex-extra en debian
 
 
+\usepackage{enumitem}
+\setlist{noitemsep}
+%% \setlist[description]{noitemsep}
+%% \setlist[enumerate]{noitemsep}
+%% \setlist[itemize]{noitemsep}
 
 \usepackage{tikz}
 \usepackage{pgfkeys}
