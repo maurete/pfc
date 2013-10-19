@@ -269,6 +269,7 @@ pre-miRNAs.
 \end{itemize}
 %
 %
+\newpage
 \section{Metodología a emplear}
 El desarrollo del proyecto se llevará a cabo siguiendo un modelo de
 ciclo de vida en cascada según las etapas que se enumeran a
@@ -676,55 +677,57 @@ siguientes consideraciones:
 \begin{enumerate}
 \item El costo de la hora hombre del Alumno se considera al valor de
   mercado de un programador Junior en \$40/h.
-\item Se considera que el Director dedicará 15 horas mensuales en el
+\item Se considera que el Director dedicará 20 horas mensuales en el
   seguimiento, asesoramiento y correcciones a la tarea del Alumno. El
   costo de la hora hombre del Director se toma en \$200/h.
-\item Se considera el software con precio nulo, ya que se en principio
-  se utilizará software libre. La decisión de utilizar software
-  comercial incidirá en el costo indirecto con el valor de la
+\item No se asigna costo al software a utilizar en el proyecto, ya que
+  en principio se utilizará software libre. La decisión de utilizar
+  software comercial incidirá en el costo indirecto con el valor de la
   licencia.
 \item No se consideran intereses así como
   tampoco el costo de oportunidad.
 \end{enumerate}
-{\sffamily\small
+\begin{center}
+\sffamily\fontsize{11}{13}\selectfont
 \newcommand\GR[1]{{\bfseries #1}}
 \newcommand\SL[1]{{\slshape #1}}
-\begin{tabular}{p{4cm}crlrr}
+\begin{tabular}{p{3.5cm}crlrr}\toprule
   \GR{Tarea/Concepto}&  \GR{Recurso}  & \mcol{2}{c}{\GR{Cantidad}}
                                                      &\GR{Costo unitario}
-                                                               &\GR{Costo total}\\\hline
+                                                               &\GR{Costo total}\\\midrule
     \mrow{3}{*}{Tareas 1 a 4}
                      & RRHH alumno    &   192 & hs.  & \$  40  & \$ 7680  \\
                      & RRHH director  &    40 & hs.  & \$ 200  & \$ 8000  \\
                      & Impresión      &   200 & pág. & \$ 0,2  & \$ 40    \\
-    \mcol{5}{l}{\quad\SL{Subtotal C.D. tareas 1--4}}           & \SL{\$15720}\\\hline
+    \mcol{5}{l}{\quad\SL{Subtotal C.D. tareas 1--4}}           & \SL{\$15720}\\\midrule
     \mrow{3}{*}{Tareas 5 a 7}
                      & RRHH alumno    &   244 & hs.  & \$  40  & \$ 9760  \\
                      & RRHH director  &    40 & hs.  & \$ 200  & \$ 8000  \\
                      & Impresión      &   100 & pág. & \$ 0,2  & \$ 20    \\
-    \mcol{5}{l}{\quad\SL{Subtotal C.D. tareas 5--7}}           & \SL{\$17780}\\\hline
+    \mcol{5}{l}{\quad\SL{Subtotal C.D. tareas 5--7}}           & \SL{\$17780}\\\midrule
     \mrow{4}{*}{Tareas 8 a 9}
                      & RRHH alumno    &   148 & hs.  & \$  40  & \$ 5920  \\
                      & RRHH director  &    20 & hs.  & \$ 200  & \$ 4000  \\
                      & Servidor Web   & 3000  & hs.  & \$   0\footnote{%
 Servidor Web disponible en \emph{sinc(i)}.}  & \$ 0     \\
                      & Impresión      &   100 & pág. & \$ 0,2  & \$ 30    \\
-    \mcol{5}{l}{\quad\SL{Subtotal C.D. tareas 8--9}}           & \SL{\$9950} \\\hline
+    \mcol{5}{l}{\quad\SL{Subtotal C.D. tareas 8--9}}           & \SL{\$9950} \\\midrule
     \mrow{4}{*}{Tarea 10}
                      & RRHH alumno    &   156 & hs.  & \$  40  & \$ 6240  \\
                      & RRHH director  &    40 & hs.  & \$ 200  & \$ 8000  \\
                      & Impresión      &   400 & pág. & \$ 0,2  & \$ 80    \\
                      & Encuadernado   &     3 & unid.& \$ 30   & \$ 120   \\
-    \mcol{5}{l}{\quad\SL{Subtotal C.D. tarea 10}}              & \SL{\$14440} \\\hline
+    \mcol{5}{l}{\quad\SL{Subtotal C.D. tarea 10}}              & \SL{\$14440} \\\midrule
     \mrow{5}{*}{Costos Indirectos}
                      & Serv. Internet &     7 & mes  & \$  200 & \$ 1400  \\
                      & PC escritorio  &     1 & unid.& \$ 6000 & \$ 6000  \\
                      & Transporte     &    80 & pas. & \$ 2,9  & \$ 232   \\
                 & Elementos de oficina&\mcol{2}{c}{N/A}&       & \$ 150   \\
                      & Software     &\mcol{2}{c}{N/A}& \$ 0    & \$ 0     \\
-    \mcol{5}{l}{\quad\SL{Subtotal C.I.}}                       & \SL{\$7782} \\\hline
-    \mcol{5}{l}{\GR{Costo total del Proyecto}}                 & \GR{\$65672}\\\hline
-  \end{tabular}}
+    \mcol{5}{l}{\quad\SL{Subtotal C.I.}}                       & \SL{\$7782} \\\midrule
+    \mcol{5}{l}{\GR{Costo total del Proyecto}}                 & \GR{\$65672}\\\bottomrule
+  \end{tabular}
+\end{center}
 %
 %
 %\printglossaries
