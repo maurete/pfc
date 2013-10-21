@@ -1,15 +1,15 @@
-function [Z C perf] = svm_workflow ( )
+function [Z C perf] = svm_workflow_2 ( )
     
     pick = @(x,n) x(randsample(size(x,1),min(size(x,1),n)),:);
     shuffle = @(x) x(randsample(size(x,1),size(x,1)),:);
         
-    %% Xue's Triplet-SVM dataset
+    %% MiRBAse 20 dataset
 
-    POSITIVE_DATASETS = { 'mirbase50' };
+    POSITIVE_DATASETS = { 'mirbase20' };
     NEGATIVE_DATASETS = { 'coding' };
     POSITIVE_SPECIES  = { 'hsa' };
     NEGATIVE_SPECIES  = { '*' };
-    TEST_DATASETS     = { 'updated' };
+    TEST_DATASETS     = { 'mirbase20' };
     TEST_SPECIES      = { '*' };
     
     pseudo = [];
