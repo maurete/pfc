@@ -2,7 +2,7 @@ function svm_workflow_ng ( )
         
     % ng dataset
     dataset = struct();
-    dataset(1).name          = 'mirbase82'; % TR-H, TE-H
+    dataset(1).name          = 'mirbase82-nr'; % TR-H, TE-H
     dataset(1).train_species = 'human';
     dataset(1).test_species  = 'all';
     dataset(1).train_ratio   = 200/323;
@@ -14,7 +14,7 @@ function svm_workflow_ng ( )
     dataset(2).train_ratio   = 400/8494;
     dataset(2).test_ratio    = 236/8494;
 
-    dataset(3).name          = 'mirbase82'; % IE-NH
+    dataset(3).name          = 'mirbase82-nr'; % IE-NH
     dataset(3).train_species = 'none';
     dataset(3).test_species  = 'non-human';
     dataset(3).train_ratio   = 0;

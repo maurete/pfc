@@ -35,12 +35,14 @@ function svm_workflow_rbf ( dataset, boxconstraint, sigma, num_workers, iter )
         [train_data f s] = scale_data(train_data);
         test_data = scale_data(test(:,1:66),f,s);
     
-        train_labels = train(:,67); 
+        train_labels = train(:,67);
         test_labels  = test(:,67);
 
         parfor n=1:length(l_sigma)
             try
-                model = svmtrain(train_data,train_labels, ...
+                lbls = train_labels;
+                lbls(find(train_labels==0))=-1;
+                model = svmtrain(train_data,lbls, ...
                                  'Kernel_Function','rbf', ...
                                  'rbf_sigma',l_sigma(n), ...
                                  'boxconstraint',l_boxc(n));
@@ -53,9 +55,13 @@ function svm_workflow_rbf ( dataset, boxconstraint, sigma, num_workers, iter )
                 
                 perf_se(t,n) = 1-mean(abs(test_labels(pos)-res(pos)));
                 perf_sp(t,n) = 1-mean(abs(test_labels(neg)-res(neg)));
-                perf_an(t,n) = 1-mean(abs((test_labels(aneg)-1)-res(aneg)));
-                
+                if length(aneg)>0
+                    perf_an(t,n) = 1-mean(abs((test_labels(aneg)-1)-res(aneg)));
+                else
+                    perf_an(t,n) = mean([perf_se(t,n) perf_sp(t,n)]);
+                end
             catch e
+                %e
                 % do nothing
             end  
         end
@@ -87,8 +93,8 @@ function svm_workflow_rbf ( dataset, boxconstraint, sigma, num_workers, iter )
     %nor = sqrt( mean_img(:,:,1).^2 +  mean_img(:,:,2).^2 +  mean_img(:,:,3).^2 );
     h = figure;
     image(log10(boxconstraint),log10(sigma),mean_img);
-    set(gca,'XTick',log10(boxconstraint))
-    set(gca,'YTick',log10(sigma))
+    set(gca,'XTickLabel',log10(boxconstraint))
+    set(gca,'YTickLabel',log10(sigma))
     %surf(log10(C),log10(sigma), nor, mean_img)
     saveas(h, ['svmw-img-mean-' datestr(dd.begintime) '.fig']);
     
@@ -99,8 +105,8 @@ function svm_workflow_rbf ( dataset, boxconstraint, sigma, num_workers, iter )
     
     h = figure;
     image(log10(boxconstraint),log10(sigma),stdd_img);
-    set(gca,'XTick',log10(boxconstraint))
-    set(gca,'YTick',log10(sigma))
+    set(gca,'XTickLabel',log10(boxconstraint))
+    set(gca,'YTickLabel',log10(sigma))
     saveas(h, ['svmw-img-stdd-' datestr(dd.begintime) '.fig']);    
 
     tt = round(etime(clock,dd.begintime));
