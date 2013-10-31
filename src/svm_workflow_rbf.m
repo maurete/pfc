@@ -14,15 +14,15 @@ function svm_workflow_rbf ( dataset, boxconstraint, sigma, num_workers, iter )
     l_sigma = reshape( diag(sigma)*ones(length(sigma),length(boxconstraint)), 1, []);
     l_boxc  = reshape( ones(length(sigma),length(boxconstraint))*diag(boxconstraint), 1, []);
 
-    perf_se = -ones( dd.num_repeats, length(l_boxc) ); % sensitivity
-    perf_sp = -ones( dd.num_repeats, length(l_boxc) ); % specificity
-    perf_an = -ones( dd.num_repeats, length(l_boxc) ); % almost-negative test result
+    perf_se = -ones( dd.num_iterations, length(l_boxc) ); % sensitivity
+    perf_sp = -ones( dd.num_iterations, length(l_boxc) ); % specificity
+    perf_an = -ones( dd.num_iterations, length(l_boxc) ); % almost-negative test result
     
     matlabpool(dd.num_pool_workers);
 
     for t=1:iter
 
-        fprintf('train/test iteration %d of %d..\n',t,dd.num_repeats);
+        fprintf('train/test iteration %d of %d..\n',t,dd.num_iterations);
 
         fprintf( 'Loading test and train datasets... ' );
         [ train test ] = load_datasets(dd.dataset);
@@ -86,7 +86,7 @@ function svm_workflow_rbf ( dataset, boxconstraint, sigma, num_workers, iter )
     
     %nor = sqrt( mean_img(:,:,1).^2 +  mean_img(:,:,2).^2 +  mean_img(:,:,3).^2 );
     h = figure;
-    image(log10(C),log10(sigma),mean_img);
+    image(log10(boxconstraint),log10(sigma),mean_img);
     set(gca,'XTick',log10(boxconstraint))
     set(gca,'YTick',log10(sigma))
     %surf(log10(C),log10(sigma), nor, mean_img)

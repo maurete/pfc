@@ -39,10 +39,10 @@ function svm_workflow_xue ( )
     C = [1e-3 1e-2 1e-1 10^-0.5 1e0 10^0.5 1e1 10^1.5 10^1.75 1e2 10^2.25 10^2.5 1e3 1e4 1e5 1e6 1e7 1e8];
 
     % number of workers for the matlabpool
-    N = 12
+    N = 12;
     
     % number of iterations
-    I = 10
+    I = 10;
     
     svm_workflow_rbf (dataset, C, Z, N, I)
 
