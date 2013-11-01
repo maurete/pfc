@@ -1,4 +1,4 @@
-\documentclass[12pt,bibliography=oldstyle,DIV=12,parskip=full-,titlepage]{scrartcl}
+\documentclass[12pt,bibliography=oldstyle,DIV=14,parskip=full-,titlepage]{scrartcl}
 \include{conf/preconfig}
 \include{conf/packages}
 \include{conf/config}
@@ -17,7 +17,9 @@
 %
 \setkomafont{subject}{\LARGE\usekomafont{disposition}}
 \setkomafont{title}{\normalfont\slshape}
-
+%
+\raggedbottom
+%
 \begin{document}
 \selectlanguage{spanish}
 %
@@ -88,8 +90,15 @@ secundaria viene dada por la forma en que la cadena de pre-miRNA se
 molecular. Tal como se aprecia en la figura, se encuentra que en el
 reino animal la estructura secundaria de un pre-miRNA conforma una
 especie de \emph{horquilla} \cite{bartel116}\cite{sewer}.
+\begin{figure}[H]
+\smallskip\small\slshape\center
+  \includegraphics[width=.85\textwidth]{res/hsa-mir-299_ss.pdf}
+  \caption{\small\slshape Secuencia
+    (arriba) y estructura secundaria tipo horquilla (abajo) del
+    pre-miRNA \textbf{hsa-mir-299}.  }
+  \label{horquilla}
+\end{figure}
 
-\newpage
 El debate acerca del número e identidad de los miRNA presentes en
 diferentes genomas es una cuestión abierta: a modo de ejemplo, para el
 caso del genoma humano se había estimado inicialmente que se
@@ -107,14 +116,6 @@ fecha. En la última versión disponible (r.19, agosto de 2012) se listan
 21264 pre-miRNA experimentalmente validados, conteniendo un total de
 25141 miRNA maduros, para 193 especies diferentes.
 %
-\begin{figure}
-  \small\slshape\center
-  \includegraphics[width=.9\textwidth]{res/hsa-mir-299_ss.pdf}
-  \caption{\small\slshape Representación esquemática de la secuencia
-    (arriba) y estructura secundaria tipo horquilla (abajo) del
-    pre-miRNA \textbf{hsa-mir-299}.  }
-  \label{horquilla}
-\end{figure}
 
 En principio, la identificación de nuevos miRNA se realiza en forma
 experimental en el laboratorio. Ésta es la primera elección, pero sólo
@@ -139,7 +140,6 @@ Computacional. Estos dos enfoques se complementan mutuamente al
 encarar distintas estrategias para la predicción de nuevos miRNAs
 \cite{batuwita}\cite{sheng}.
 
-\newpage
 En un enfoque comparativo, se analizan genomas de diferentes especies
 buscando correspondencias que cumplan con las características de un
 pre-miRNA. Tal como en el caso del método experimental, mediante esta
@@ -161,13 +161,13 @@ más utilizadas han sido el \emph{Perceptrón Multicapa}
 \cite{svm}.  El Preceptrón Multicapa (\emph{MLP}, del inglés
 \eng{Multilayer Perceptron}) es un tipo de red neuronal artificial con
 propagación hacia adelante, donde las neuronas se disponen en capas.
-La salida de cada neurona se determina de aplicar una \emph{función de
+La salida de cada neurona se determina al aplicar una \emph{función de
   activación}, de tipo sigmoidea, a la suma ponderada de las salidas
 en la capa anterior. Durante el entrenamiento del MLP se ajustan los
 pesos de cada neurona mediante un algoritmo de aprendizaje basado en
 la \emph{retropropagación} del error de clasificación, hasta obtener
 una tasa de clasificación satisfactoria \cite{jain}.  La Máquina de
-Vectores de Soporte (\emph{SVM}, de su nombre en inglés {Support
+Vectores de Soporte (\emph{SVM}, de su nombre en inglés \eng{Support
   Vector Machine}) es un algoritmo de clasificación que se basa en
 transformar, mediante una función de mapeo llamada \emph{núcleo}, el
 espacio $N$-dimensional de los datos de entrada en otro espacio de
@@ -176,11 +176,24 @@ separables mediante un hiperplano. El entrenamiento consiste en
 encontrar el hiperplano óptimo de separación para el conjunto de datos
 presentado \cite{bottou}.
 
-En base al problema formulado y al análisis de la bibliografía, se
-propone para este trabajo desarrollar un sistema informático para la
-identificación de pre-miRNAs mediante un clasificador de tipo
+En el Centro de Investigación en Señales, Sistemas e Inteligencia
+Computacional \emph{sinc(i)} de la Facultad de Ingeniería y Ciencias
+Hídricas surge la necesidad de contar con un clasificador de
+pre-miRNA. Al revisar los desarrollos publicados en el tema, se
+encuentra que en muchos casos las tasas de clasificación no son
+satisfactorias, en otros casos, se obtienen buenas tasas de
+clasificación sólo en casos particulares.  También se encuentra que en
+muchos de los trabajos disponibles no se publica el código fuente, y
+en los casos que se encuentran disponibles, están codificados en
+lenguajes diferentes lenguajes, o bien funcionan con diferentes
+formatos de entrada/salida.  Teniendo en cuenta estos inconvenientes
+es que se propone en este trabajo desarrollar un método informático
+para la identificación de pre-miRNAs mediante un clasificador de tipo
 no-comparativo, que haga uso de técnicas de Inteligencia Computacional
-para el reconocimiento de patrones.
+para el reconocimiento de patrones.  Se integrarán técnicas que se
+encuentran en la bibliografía con el propósito de obtener un
+clasificador con una buena tasa de clasificación, con una interfaz
+sencilla de cara al usuario no experto.
 
 Para cada entrada presentada, el clasificador deberá ser capaz de
 discriminar entre dos \emph{clases}: positiva para aquellas que
@@ -219,17 +232,16 @@ tratamiento de enfermedades de diversa índole en las personas,
 animales y plantas; y una mayor y mejor comprensión de los procesos
 involucrados en su aparición y desarrollo.
 
-En lo personal, el desarrollo de este proyecto me permitirá
-profundizar mi conocimiento en diferentes áreas de la Inteligencia
-Computacional, así como en la introducción al campo de la
-bioinformática. Considero que el desarrollo de este proyecto me
-permitirá desarrollar habilidades y conocimientos que me serán de gran
+El alumno considera que en lo personal, el desarrollo de este proyecto
+le permitirá profundizar su conocimiento en diferentes áreas de la
+Inteligencia Computacional, así como su aplicación al campo de la
+bioinformática. Expresa que el desarrollo de este proyecto le
+permitirá desarrollar habilidades y conocimientos que le serán de gran
 valor en el desempeño como profesional, y en caso de seguir una
 carrera de investigación servirá de introducción informal a la
 metodología de trabajo en este campo.
 %
 %
-\newpage
 \section{Objetivo general del proyecto}
 Desarrollar un método computacional inteligente con interfaz de
 usuario para la identificación de secuencias de RNA candidatas a ser
@@ -269,7 +281,6 @@ pre-miRNAs.
 \end{itemize}
 %
 %
-\newpage
 \section{Metodología a emplear}
 El desarrollo del proyecto se llevará a cabo siguiendo un modelo de
 ciclo de vida en cascada según las etapas que se enumeran a
@@ -350,7 +361,6 @@ mismo, evaluando y especificando las tecnologías a utilizar para tal
 fin.
 %
 %
-\newpage
 \section{Plan de tareas propuesto}
 Para el desarrollo del proyecto, el alumno dedicará 20 horas semanales
 de trabajo para un total de 740 horas.  Se realizarán 2
@@ -397,7 +407,6 @@ desarrollar en el transcurso del proyecto.
     \end{itemize}
   \item Codificación definitiva del clasificador (44h).
   \end{enumerate}
-\newpage
 \item Pruebas e integración del sistema (104h)
   \begin{enumerate}
   \item Validación del método de clasificación (24h).
@@ -443,7 +452,7 @@ parte de la etapa 3.
       \end{itemize}
     \end{minipage}
 \end{description}
-\newpage
+
 \subsection{Punto de control 2}
 Resultados de la implementación del clasificador definitivo e
 integración del sistema. Abarca la segunda parte de la etapa 3 y la
@@ -488,7 +497,6 @@ usuario final. Abarca parte de la etapa 4 y la etapa 5.
 \end{description}
 %
 %
-\newpage
 \section{Cronograma tentativo}
 En el siguiente cronograma se distribuye la carga de trabajo de 740
 horas en 37 semanas. Se toma como fecha de inicio del proyecto el día
@@ -503,7 +511,7 @@ comprendidas entre el día 23 de diciembre y 3 de enero.
 \begin{ganttchart}[
 y unit chart=5mm,
 x unit=0.75mm,
-y unit title=0.6cm,
+y unit title=6mm,
 hgrid style/.append style={draw=black!5, line width=.75pt},
 vgrid={*4{draw=black!15, line width=.75pt},%
   *1{draw=black!40, line width=.75pt}},
@@ -669,7 +677,6 @@ encuentran disponibles:
 \end{itemize}
 %
 %
-\newpage
 \section{Presupuesto}
 En la tabla a continuación se detalla el presupuesto para el Proyecto
 Final. Para la elaboración del mismo, se tuvieron en cuenta las
