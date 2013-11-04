@@ -180,20 +180,20 @@ En el Centro de Investigación en Señales, Sistemas e Inteligencia
 Computacional \emph{sinc(i)} de la Facultad de Ingeniería y Ciencias
 Hídricas surge la necesidad de contar con un clasificador de
 pre-miRNA. Al revisar los desarrollos publicados en el tema, se
-encuentra que en muchos casos las tasas de clasificación no son
+encuentra que en muchos de ellos las tasas de clasificación no son
 satisfactorias, en otros casos, se obtienen buenas tasas de
-clasificación sólo en casos particulares.  También se encuentra que en
-muchos de los trabajos disponibles no se publica el código fuente, y
-en los casos que se encuentran disponibles, están codificados en
-lenguajes diferentes lenguajes, o bien funcionan con diferentes
-formatos de entrada/salida.  Teniendo en cuenta estos inconvenientes
-es que se propone en este trabajo desarrollar un método informático
-para la identificación de pre-miRNAs mediante un clasificador de tipo
+clasificación sólo en casos particulares.  En muchos de estos trabajos
+no se encuentra disponible el código fuente, lo que imposibilita su
+implementación en forma directa.  Además, en aquellos casos en que sí
+se publica el código fuente, se encuentra que tanto el lenguaje de
+programación utilizado como el formato de entrada/salida varían entre
+diferentes trabajos.  Teniendo en cuenta estos inconvenientes es que
+se propone en este trabajo desarrollar un método informático para la
+identificación de pre-miRNA mediante un clasificador de tipo
 no-comparativo, que haga uso de técnicas de Inteligencia Computacional
-para el reconocimiento de patrones.  Se integrarán técnicas que se
-encuentran en la bibliografía con el propósito de obtener un
-clasificador con una buena tasa de clasificación, con una interfaz
-sencilla de cara al usuario no experto.
+para el reconocimiento de patrones.  Se integrarán diversas técnicas
+que se encuentran en la bibliografía con el objetivo de obtener un
+clasificador con una tasa de rendimiento máxima.
 
 Para cada entrada presentada, el clasificador deberá ser capaz de
 discriminar entre dos \emph{clases}: positiva para aquellas que
@@ -243,23 +243,24 @@ metodología de trabajo en este campo.
 %
 %
 \section{Objetivo general del proyecto}
-Desarrollar un método computacional inteligente con interfaz de
-usuario para la identificación de secuencias de RNA candidatas a ser
-pre-miRNAs.
+Desarrollar un método computacional inteligente para la identificación
+de secuencias de RNA candidatas a ser pre-miRNAs.
 \section{Objetivos específicos}
 \begin{itemize}
 \item Generar una base de datos de pre-miRNAs conocidos en plantas y
-  animales, armonizando los conjuntos de características entre las
-  distintas bases de datos disponibles.
-\item Codificar diferentes métodos de inteligencia computacional para
-  trabajar sobre los datos. Se trabajarán al menos dos, SVM y MLP con
-  la posibilidad de incorporar otros conforme se avance en este
-  objetivo.
-\item Comparar el rendimiento de los distintos métodos buscando
-  obtener el mejor desempeño en la tasa de clasificación.
-\item Especificar y codificar una interfaz de línea de comandos y una
-  interfaz web para la utilización del método por parte del usuario no
-  experto.
+  animales, uniformizando el formato y los conjuntos de
+  características entre las distintas bases de datos disponibles.
+\item Codificar o integrar diferentes métodos de Inteligencia
+  Computacional para trabajar sobre los datos. Se trabajarán al menos
+  dos, SVM y MLP con la posibilidad de incorporar otros conforme se
+  avance en este objetivo.
+\item Entrenar los métodos de clasificación con la base de datos
+  generada. Comparar el rendimiento de los distintos métodos y generar
+  un modelo definitivo que obtenga el mejor desempeño en la tasa de
+  clasificación.
+\item Especificar y codificar una interfaz de línea de comandos
+  orientada al usuario experto, y una interfaz web de demostración
+  para la utilización del método por parte del usuario no experto.
 \end{itemize}
 %
 %
@@ -268,24 +269,23 @@ pre-miRNAs.
 \item El trabajo se centrará en la utilización de algoritmos de
   clasificación de tipo Máquina de Vector de Soporte (SVM) y
   Perceptrón Multicapa (MLP), comparando el rendimiento de cada uno.
-\item El sistema contará además con una interfaz de usuario
-  documentada tal que éste sea accesible a los usuarios no expertos.
+\item El sistema contará con una interfaz de usuario
+  documentada orientada a los usuarios expertos.
 \item Se trabajará durante el desarrollo exclusivamente con datos de
   distintos organismos que se encuentren disponibles en línea, ya
   clasificados y validados experimentalmente.
 \item Se utilizarán únicamente técnicas de extracción de
   características disponibles en la bibliografía.
 \item En el sistema se trabajará únicamente con la identificación de
-  pre-miRNAs, quedando fuera del alcance de este proyecto la
-  identificación de el/los miRNAs ``maduros'' contenidos en éstos.
+  pre-miRNA, quedando fuera del alcance de este proyecto la
+  identificación de el/los miRNA ``maduros'' contenidos en los pre-miRNA.
 \end{itemize}
 %
 %
 \section{Metodología a emplear}
-El desarrollo del proyecto se llevará a cabo siguiendo un modelo de
-ciclo de vida en cascada según las etapas que se enumeran a
-continuación.  Cabe notar que, si bien estas etapas proveen una
-separación lógica de tareas a tomar como referencia, no implican
+El desarrollo del proyecto se llevará a cabo por etapas, las que se
+enumeran a continuación.  Cabe notar que, si bien estas etapas proveen
+una separación lógica de tareas a tomar como referencia, no implican
 necesariamente un orden cronológico de tareas a realizar. Así también,
 debido a la naturaleza del proyecto se contempla la posibilidad de una
 retroalimentación entre etapas, pudiendo retroceder a una fase
@@ -342,10 +342,10 @@ clasificación disponibles (configurables) al usuario final así como
 valores por defecto que aseguren un buen rendimiento.
 %
 Se especificará y codificará una interfaz de usuario de línea de
-comandos y una interfaz web, previa evaluación y selección de las
-tecnologías a utilizar para la implementación.  Se generará la
-documentación correspondiente para la utilización del sistema por
-parte del usuario final.
+comandos y una interfaz web de demostración, previa evaluación y
+selección de las tecnologías a utilizar para la implementación.  Se
+generará la documentación correspondiente para la utilización del
+sistema por parte del usuario final.
 %
 \subsection{Pruebas finales y puesta en servicio}
 En esta etapa se procederá a evaluar el sistema, verificando el buen
@@ -678,8 +678,10 @@ encuentran disponibles:
 %
 %
 \section{Presupuesto}
-En la tabla a continuación se detalla el presupuesto para el Proyecto
-Final. Para la elaboración del mismo, se tuvieron en cuenta las
+%% En la tabla a continuación se detalla el presupuesto para el Proyecto
+%% Final. Para la elaboración del mismo, se tuvieron en cuenta las
+%% siguientes consideraciones:
+Para la elaboración del presupuesto, se tuvieron en cuenta las
 siguientes consideraciones:
 \begin{enumerate}
 \item El costo de la hora hombre del Alumno se considera al valor de
@@ -691,8 +693,8 @@ siguientes consideraciones:
   en principio se utilizará software libre. La decisión de utilizar
   software comercial incidirá en el costo indirecto con el valor de la
   licencia.
-\item No se consideran intereses así como
-  tampoco el costo de oportunidad.
+\item No se consideran intereses así como tampoco el costo de
+  oportunidad.
 \end{enumerate}
 \begin{center}
 \sffamily\fontsize{11}{13}\selectfont
