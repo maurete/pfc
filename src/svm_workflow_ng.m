@@ -41,6 +41,6 @@ function svm_workflow_ng ( )
     % number of iterations
     I = 10;
     
-    svm_workflow_rbf (dataset, C, Z, N, I)
+    svm_workflow_gridsearch (dataset, N, I)
 
 end

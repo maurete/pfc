@@ -58,7 +58,7 @@ function svm_workflow_rbf ( dataset, boxconstraint, sigma, num_workers, iter )
                 if length(aneg)>0
                     perf_an(t,n) = 1-mean(abs((test_labels(aneg)-1)-res(aneg)));
                 else
-                    perf_an(t,n) = mean([perf_se(t,n) perf_sp(t,n)]);
+                    perf_an(t,n) = rms([perf_se(t,n) perf_sp(t,n)]);
                 end
             catch e
                 %e
@@ -92,9 +92,11 @@ function svm_workflow_rbf ( dataset, boxconstraint, sigma, num_workers, iter )
     
     %nor = sqrt( mean_img(:,:,1).^2 +  mean_img(:,:,2).^2 +  mean_img(:,:,3).^2 );
     h = figure;
-    image(log10(boxconstraint),log10(sigma),mean_img);
-    set(gca,'XTickLabel',log10(boxconstraint))
-    set(gca,'YTickLabel',log10(sigma))
+    image(mean_img);
+    set(gca,'XTick',1:size(boxconstraint,2))
+    set(gca,'YTick',1:size(sigma,1)')
+    set(gca,'XTickLabel',boxconstraint)
+    set(gca,'YTickLabel',sigma)
     %surf(log10(C),log10(sigma), nor, mean_img)
     saveas(h, ['svmw-img-mean-' datestr(dd.begintime) '.fig']);
     
@@ -104,11 +106,46 @@ function svm_workflow_rbf ( dataset, boxconstraint, sigma, num_workers, iter )
     stdd_img(:,:,3) = dd.test_perf.stdd_almost_neg;
     
     h = figure;
-    image(log10(boxconstraint),log10(sigma),stdd_img);
-    set(gca,'XTickLabel',log10(boxconstraint))
-    set(gca,'YTickLabel',log10(sigma))
+    image(stdd_img);
+    set(gca,'XTick',1:size(boxconstraint,2))
+    set(gca,'YTick',1:size(sigma,1)')
+    set(gca,'XTickLabel',boxconstraint)
+    set(gca,'YTickLabel',sigma)
     saveas(h, ['svmw-img-stdd-' datestr(dd.begintime) '.fig']);    
 
+    h = figure;
+    subplot(2,2,1)
+    imagesc(dd.test_perf.mean_sensitivity);
+    colormap(gray)
+    set(gca,'XTick',1:size(boxconstraint,2))
+    set(gca,'YTick',1:size(sigma,1)')
+    set(gca,'XTickLabel',boxconstraint)
+    set(gca,'YTickLabel',sigma)
+    subplot(2,2,2)
+    imagesc(dd.test_perf.mean_specificity);
+    colormap(gray)
+    set(gca,'XTick',1:size(boxconstraint,2))
+    set(gca,'YTick',1:size(sigma,1)')
+    set(gca,'XTickLabel',boxconstraint)
+    set(gca,'YTickLabel',sigma)
+    subplot(2,2,3)
+    imagesc(dd.test_perf.mean_almost_neg);
+    colormap(gray)
+    set(gca,'XTick',1:size(boxconstraint,2))
+    set(gca,'YTick',1:size(sigma,1)')
+    set(gca,'XTickLabel',boxconstraint)
+    set(gca,'YTickLabel',sigma)
+    subplot(2,2,4)
+    imagesc(mean(stdd_img,3));
+    colormap(gray)
+    set(gca,'XTick',1:size(boxconstraint,2))
+    set(gca,'YTick',1:size(sigma,1)')
+    set(gca,'XTickLabel',boxconstraint)
+    set(gca,'YTickLabel',sigma)
+    %surf(log10(C),log10(sigma), nor, mean_img)
+    saveas(h, ['svmw-img-multiple-' datestr(dd.begintime) '.fig']);
+    
+    
     tt = round(etime(clock,dd.begintime));
     fprintf( 'Total script running time: %02d:%02d.\n', floor(tt/60), ...
              mod(tt,60))
