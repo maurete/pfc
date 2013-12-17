@@ -27,7 +27,8 @@ function [out] = loadset( name, species, id )
     % valid dataset names
     valid_names = {     'coding'; 'functional-ncrna'; 'mirbase12'; ...
                    'other-ncrna'; 'updated';  'conserved-hairpin'; ...
-                     'mirbase20'; 'mirbase50'; 'mirbase82-nr'};
+                     'mirbase20'; 'mirbase50'; 'mirbase82-nr'; ...
+                   'mirbase20-nr' };
     
     % validate dataset name
     val = strfind(valid_names, name);
