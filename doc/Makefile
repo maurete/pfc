@@ -1,5 +1,5 @@
 # nombre de los archivos fuente
-fuentes = propuesta.tex anteproyecto.tex entregable1.tex
+fuentes = propuesta.tex anteproyecto.tex entregable1.tex entregable2.tex
 #
 texes = $(wildcard '*.tex')
 #
