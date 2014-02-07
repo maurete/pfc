@@ -1,0 +1,336 @@
+>sbi-MIR166c MI0001498 Sorghum bicolor miR166c stem-loop
+GGGGAAUGUUGUCUGGUCGGAGACCUAACACCGCGAAUCAUCCAUGGAGCAGCAUGCAUGGUGGUGGAUGGUUUCGGACCAGGCUUCAUUCCCC
+((((((((..((((((((.((((((...((((((....(((.((((......)))).)))))))))...)))))).))))))))..))))))))
+>sbi-MIR166b MI0001499 Sorghum bicolor miR166b stem-loop
+GGGGAAUGAUGUCCGGUCCGAAGACGCUGUGCGGCGAAAGCGGCGGCGGCUUCGGACCAGGCUUCAUUCCCC
+(((((((((.(((.(((((((((.((((..((.((....)).)))))).))))))))).))).)))))))))
+>sbi-MIR172a MI0001503 Sorghum bicolor miR172a stem-loop
+GUGCAGCAUCAUCAAGAUUCACAUCCAGCUCAUCCUCGGUGAUAUGCUAUAUACAUAAAUAUAUGCGUAUGUGAUGAGAUGAGAAUCUUGAUGAUGCUGCAU
+((((((((((((((((((((.((((....(((((..(....(((((((((((......))))).))))))).))))))))).))))))))))))))))))))
+>sbi-MIR160d MI0001507 Sorghum bicolor miR160d stem-loop
+UGCCUGGCUCCCUGUAUGCCACUCGCUUAGCUGCCAACAACUCAUACUACGUUGUUAACGACGUUGGCUCUACUGCGGAUGGCGUGCGAGGAGCCAAGCA
+.((.(((((((.(((((((((..(((.(((..((((............((((((....)))))))))).)))..)))..))))))))).))))))).)).
+>sbi-MIR160a MI0001508 Sorghum bicolor miR160a stem-loop
+UGCCUGGCUCCCUGUAUGCCACACAUGUAGCCCAACCCAUAUGCUAAGGUUGCCUGCUGUGGGUGGCGUGCAAGGGGCCAAGCA
+.((.(((((((.((((((((((.(((((((..(((((..........))))).)))).))).)))))))))).))))))).)).
+>sbi-MIR160e MI0001511 Sorghum bicolor miR160e stem-loop
+UGCCUGGCUCCCUGUAUGCCACUCGCACGGCUACCACCCCAAGAUCAUCGAUCGAUCUCGGUGGCCGCUGCGGCUGGCGUGCGAGGUGCCAAGCA
+.((.((((.((.(((((((((..((((((((((((......(((((.......))))).)))))))).))))..))))))))).)).)))).)).
+>sbi-MIR169b MI0001515 Sorghum bicolor miR169b stem-loop
+CAGCCAAGGAUGACUUGCCGGAUAUGUGCAUGCAUAUGUUACAAGGCAGCAUAUGCACCCUGUUACAAGCCUGCCUGUUCUCCGGCAAGUUGUCCUUGGCUA
+.(((((((((..((((((((((.(((.(((.((...(((.(((.((..((....)).)).))).))).)).))).)))..))))))))))..))))))))).
+>sbi-MIR169a MI0001516 Sorghum bicolor miR169a stem-loop
+CAGCCAAGGAUGACUUGCCGAUCGAUCGAUGCAAACUCCUCUGAUGUCUGAUCUCAUCAGAUUAUCGUUGUCGGCAAGUUGUUCUUGGCUA
+.(((((((((..(((((((((.(((.(((((........(((((((........))))))).)))))))))))))))))..))))))))).
+>sbi-MIR394a MI0001531 Sorghum bicolor miR394a stem-loop
+CUUUACAUACUGAGAGUUCCUUGGCAUUCUGUCCACCUCCUUGCCCAUCGUCAGAUAUAUGUGUUGCUUUUGGAGGUGGACAUACUGCCAAUGGAGCUGUGUAGGCCUCU
+.........((((.((((((((((((.(.(((((((((((..((....((.((......))))..))....))))))))))).).)))))).)))))).).)))......
+>sbi-MIR395b MI0001533 Sorghum bicolor miR395b stem-loop
+GUUAGGUUUGGUGUCCCUAGGAGUUCUCUGCAAGCACUUCACGAGGCAUCGUUUUGAGAGCUUUUGUGAAGUGUUUGGGGGAACUCUUAGUGUCACAAAUCAUUU
+....((((((.((.(.(((((((((((((.(((((((((((((((((.((.......)))).)))))))))))))))))))))))))))).).))))))))....
+>sbi-MIR395a MI0001534 Sorghum bicolor miR395a stem-loop
+GGUUGGUUGGUUGUCACCUGGAGUUCUCCACAAACUACUUCAGUAGCAACACACACCCCUAGUUUAAUGCACCGUGUUUGCAUGUUUGUGUGGAGCUGUGUGUGUACAUAGUGAAGUGUUUGGGGGAACUCUGGGUGGCAAUCAGCAAUU
+.....(((((((((((((..(((((((((.(((((.((((((.((...((((((((....(((((.(((((.((((....))))..))))).)))))))))))))...)).))))))))))))))))))))..)))))))))))))....
+>sbi-MIR395e MI0001537 Sorghum bicolor miR395e stem-loop
+AUUAGGUUUGGUGUCCCCGGGAGUUCUCUGCAAGCACUUCACGAGGCACUAUUUUGAGAGCUUUUGUGAAGUGUUUGGGGGAACUCUUGAUGCCACUAACCAUUU
+....(((((((((((...(((((((((((.(((((((((((((((((.((......)).)).)))))))))))))))))))))))))))))))))..))))....
+>sbi-MIR396a MI0001539 Sorghum bicolor miR396a stem-loop
+ACAUGGCCCUCCUUGCCGUCUUCCACAGCUUUCUUGAACUGCAUGCUGGUAGUGCUGUGUGCAUCCGUUCCAAUAUUCCAAGAGGCAGUUCAAUAAAGCUGUGGGAAAUUGCAGAGAGAGACCAG
+...((((.(((.((((.((.((((((((((((.(((((((((...((((.((((.((.(.((....)).))).)))))).))..))))))))).)))))))))))).)).)))).))).).))).
+>sbi-MIR399a MI0001541 Sorghum bicolor miR399a stem-loop
+UGCCGGCGCCGGCGAAUUACGGGGCAGUUCGUCUUUGGCACAAAGGCACGUCCAGAACUACUCGAUGAGGGUCACUUGAGCUGAACUGAACAUGCGUGCCAAAGGAGAAUUGCCCUGCGAUUCGCCCGUGCAGAAG
+.....((((.(((((((..(((((((((((..(((((((((....(((.((.(((..(..(((((((.....)).)))))..)..))).)).))))))))))))..)))))))))))..))))))).)))).....
+>sbi-MIR399f MI0001545 Sorghum bicolor miR399f stem-loop
+CAUAUGCGAGUCGAGGAUUACCGGGCCAUUUCUCCUUGGGCAGAGUAAUUGAAUUUUACUUUGCUGGAUCCGGUUUGCUCUGCCAAAGGAGAUUUGCCCAGCAAUCCACAUUUGUAAUAU
+....(((((((.(.(((((.(.((((.(..(((((((.((((((((((..............((((....)))))))))))))).)))))))..))))).).))))).))))))))....
+>sbi-MIR399g MI0001547 Sorghum bicolor miR399g stem-loop
+CCAGAUGUGCACUUGCAUUGCUGGGCAACUUCUCCUUUGGCAGAUGCGCAAUGUGCUCCGACCCUGGGGCUUCUUCCGCGCCUACUGCCAAAGGAAAUUUGCCCCGGAAUUCACCUGCACAGCCA
+.....((((((..((.(((.(.((((((.((.(((((((((((..((((.....((((((....)))))).......))))...))))))))))))).)))))).).))).))..))))))....
+>sbi-MIR156d MI0001548 Sorghum bicolor miR156d stem-loop
+UGGACCUCUGGAGUGAGUGAUGACAGAAGAGAGAGAGCACAACCCAGCACCAGCGAGGAGAAGCCUCGCUUCUGCGAGGGCCGUGUGCUCUCUGCUCUCACUGUCAUCGCCGACAGGCCACCCAA
+(((...((((...((.((((((((((.((((((((((((((.(((.(((..(((((((.....)))))))..)))..)))...)))))))))).))))..)))))))))))).))))....))).
+>sbi-MIR164b MI0001549 Sorghum bicolor miR164b stem-loop
+GAGGGGCGAGCAAACCGUGCUGGAGAAGCAGGGCACGUGCUCGUCGUCGCUGCAUGCGUGGUCGUCGUCGCAGCACGUGCGCUCCUUCUCCAACAUGGCUUCUCGCCCCCA
+(.((((((((.((.(((((.((((((((.((.(((((((((((.((.(((..(....)..).)).)).)).))))))))).)).)))))))).))))).))))))))))).
+>sbi-MIR166e MI0001550 Sorghum bicolor miR166e stem-loop
+CAAGUUGAAGGUUAGGUUAAUGGGGUUGUUGUCUGGUUCAAGGUCGCCACAGCAGACAAAGCCCAUUUUGCUUAGCAUGCAGCAUGGGUUUAUCUCUAUUGAUGAUCGAUCUCGGACCAGGCUUCAAUCCCUUUAACUAGCAUCUGCAUAU
+...((.((..(((((.((((.(((((((..(((((((((.((((((.(((((.(((..((((((((.((((.......)))).))))))))...))).))).))..)))))).)))))))))..))))))).))))))))).)).))....
+>sbi-MIR167d MI0001551 Sorghum bicolor miR167d stem-loop
+GUGGUGCAUCCUCUAGUAGCUGAAGCUGCCAGCAUGAUCUGAUGAGGUGAGGUUUAUUUGCUAGUUGGUCACAGGCUAACAGCAUGAUGGCCCAACAAAUCAACGAUCAGAUCAUGCUGUGCAGUUUCAUCUGCUCGUGGAUGCACAU
+...((((((((.(.(((((.(((((((((((((((((((((((((.((..((((....((((.((((((.....))))))))))....))))..))...)))....))))))))))))).))))))))).))))).).))))))))..
+>sbi-MIR167g MI0001553 Sorghum bicolor miR167g stem-loop
+AUUUGUGCACCUUAAGCAGCUGAAGCUGCCAGCAUGAUCUGAUCUUAAUUUCUUUUACUGGCAAACUUCGGAUGCCUAAGAUCAGAUCGUGCUGCGCAGUUUCACCUGCUAAUUGGAGCACAG
+...(((((.((...(((((.(((((((((((((((((((((((((((............((((..(....).)))))))))))))))))))))).))))))))).)))))....)).))))).
+>sbi-MIR167c MI0001555 Sorghum bicolor miR167c stem-loop
+CUUUGCUGGUGUGAGAGGUUGAAGCUGCCAGCAUGAUCUGGUGGCCGGCCGGCCGGCGUCUCUCAAGUGCGCUCGGAUCGGAGACGCGUCGCCAGAUCAUGUUGCAGCUUCACUCUCUCGCAACCACCAAA
+..(((.(((((((((((..(((((((((.((((((((((((((((((.(((((((((((((....)).)))).))).))))...)).)))))))))))))))))))))))))..))))))).)))).))).
+>sbi-MIR168 MI0001556 Sorghum bicolor miR168 stem-loop
+GCCGCCGCGCCGCCUCGGGCUCGCUUGGUGCAGAUCGGGACCUGCCGCCGUGCUCGGACGGGACAGAUCCCGCCUUGCACCAAGUGAAUCCGAGCCGGAGCAGCCG
+...((.((.(((.(((((..(((((((((((((..(((((.(((((((((....))).)))..))).)))))..)))))))))))))..))))).))).)).))..
+>sbi-MIR169f MI0001560 Sorghum bicolor miR169f stem-loop
+CGAUGAGAGCACUGCUCUGGUAGCCAAGGAUGACUUGCCUGUGGCCUCCACUCCACCUGCGGCAGGAGGCUCUUCUUCUGCGCGCGCGUGUGUGUGUGGUUGUCGAUCGCAGGCAGUCUCCUUGGCUAGCCUCAGCGGCUCUCAUCCU
+.(((((((((...(((..((((((((((((.((((.(((((((..(.((((.(((((((((((((((((....)))))))).)))).).))).).)))).....)..)))))))))))))))))))).)))..))).)))))))))..
+>sbi-MIR171b MI0001564 Sorghum bicolor miR171b stem-loop
+AUGGCCGCCGCGCGCGACGGGGUAUUGGCGCGGUUCAAUUCGAGAGCUCGAGCCCUAGACUAGACGCCAGGGAGAGAGGGGGCUCUGCUCUCUGAUUGAGCCGUGCCAAUAUCACGUCCCGCUUGAAUGGCU
+..(((((.((.(((.((((.((((((((((((((((((((.((((((..(((((((...((...(.....)...))..))))))).)))))).)))))))))))))))))))).)))).))).))..)))))
+>sbi-MIR172e MI0001568 Sorghum bicolor miR172e stem-loop
+UCGGAGCCGACUCUCUGCAGGUGCAGCAGCAUCAAGGUUCGCCAGCAGCAAGCGAUCGAUCGAGGCGUGUGUGUGUGAAUCUUGAUGAUGCUGCACCAGCAAUGAGCCGGCCGGC
+.(.(.((((.(((..(((.(((((((((.((((((((((((((((((((...(((....)))..)).))).)).))))))))))))).))))))))).)))..))).))))).).
+>sbi-MIR166f MI0001569 Sorghum bicolor miR166f stem-loop
+CCUUGGUCAUGGGGGUUUGUGGGGAAUGUUGGCUGGCUCGAGGCAUCCGCGUCCUGGCUUGCAGAUCGUUUUGCCUGCUACCGGAAAGAUCGAGAGGCGUCGGACCAGGCUUCAUUCCUCGCAAACCGGUGCAUCCAUG
+.......(((((((((((((((((((((..(.((((..(((.((.((((..(((((((..(((((....)))))..))))..))).....)).)).)).)))..)))).)..)))))))))))))))......))))))
+>sbi-MIR171e MI0001570 Sorghum bicolor miR171e stem-loop
+AGGAGGAAGAAGACGACAUGGCGUGGUAUUGUUUCGGCUCAUGUCCUUCUUGCUUCGAGUCUGUCGUCGGAUUUUGGAUGUGAUGUGAGCCGAACCAAUAUCACUCAUGUAUUCUUCAUUCUGA
+((((.((((((....((((((.(((((((((.((((((((((((((.(((......(((((((....))))))).))).).))))))))))))).))))))))))))))).)))))).))))..
+>sbi-MIR319a MI0001573 Sorghum bicolor miR319 stem-loop
+CUGCCGCCAUGGUUGUGAUAUGGCCGGAUGGAAGAGAGCGUCCUUCAGUCCACUCAGGGGCGGUGCUAGGGUCGAAUUAGCUGCCGACUCAUUCACCCACAUGCCAAGCAAACGGCCAUGGAAACGAGCUAGCUUUGCAGAUGAGUGAAUGAAGCGGGAGGUAAAAGCUUCGAUCUCGCACCAUCUUUGCUUGGACUGAAGGGUGCUCCCUCCUCCCCUCCUUAAUUGUUUACUUUACCCAUGGCGCAG
+((((.(((((((..((((...((..(((.(((.(.((((..(((((((((((..(((((..(((((..(((((((((((.((.(((..((((((((.((..(((.((((....(((..((....)).))).)))).)))..)).))))))))..))).)).)))....)))))))).)))))..)))))..)))))))))))..))))).))))))...))........)))).....)))))))))))
+>sbi-MIR399h MI0001849 Sorghum bicolor miR399h stem-loop
+AGUGUUCAGGGUAAGAAUCACAGUGCGGUUCUCCUCUGGCAUGGAGGCCAACAUAGCAGGCAUUGGAGAAUGCACAGCGCUAUCGCCAUCCCUGCCAAAGGAGAAUUGCCCUGCCAUUCGGUAUAACCCUGG
+......((((((..((((..(((.(((((((((((.(((((.((((((....(((((..(((((....))))).....))))).))).))).))))).))))))))))).)))..))))......)))))).
+>sbi-MIR164c MI0001852 Sorghum bicolor miR164c stem-loop
+UAUGGUGUGUUUGUGCAGGGUGGAGAAGCAGGACACGUGAGCGACCAUCCAGUUUCCAUCGCUGGCUCUCCGCUGCGGGCGCUGCCGUGCGUUGGAUCGUCGUUGGGUGGUCGCUCAUGUGUCCGUCCUCUCCACCGAGCACCGGUACAUCCG
+...(((((((..((((..((((((((....((((((((((((((((((((((..((((.(((((((....(((.....)))..)))).))).))))......))))))))))))))))))))))....))))))))..))))..)))))))..
+>sbi-MIR166g MI0001853 Sorghum bicolor miR166g stem-loop
+UCAUGCUCGGAUUAGGUUAGGGGGAUUGUUGUCUGGCUCGGGGUCUCCGGUCGAGAAUCCUUGGCCUUGCCGGAGUUGUCGUUGACCGGAGAUUUCGGACCAGGCUUCAAUCCCUUUAACCAUGCGGCAUUUAG
+..((((.((.((..((((((((((((((..((((((..((..((((((((((((((.(((..(((...))))))....)).))))))))))))..))..))))))..)))))))))))))))).))))))....
+>sbi-MIR171f MI0001854 Sorghum bicolor miR171f stem-loop
+UGAGAGAAUAAGACGACAUGGCGUGAUGUUGUUUCGGCUCAUGCAUAUCCUUCUUGAGUGUAUCAUCAGGAAAGAGGCGAUGAGCCGAACCAAUAUCACUCAUGUAUUCUUCAUUCAUA
+.....((((((((..((((((.(((((((((.((((((((((((...((.(((((((........))))))).)).)).)))))))))).)))))))))))))))..)))).))))...
+>sbi-MIR395f MI0001855 Sorghum bicolor miR395f stem-loop
+ACAAUGUUUGGUGUUACCACGAGUUCCCUUCAAGCACUUCAUGAGGCACCAUUAAAUAACUCUAUUUAAGAUUAGGUGUAAUAUGAAGUGUUUGGGGGAACUCUUGGUGAUACUCAACAUCG
+...(((((.((((((((((.(((((((((.(((((((((((((..(((((.(((((((....))))))).....)))))..)))))))))))))))))))))).)))))))))).)))))..
+>sbi-MIR164d MI0010865 Sorghum bicolor miR164d stem-loop
+UGGAGAAGCAGGGCACGUGCAUGCUCCUAACUUCUCGCGCGCUCCUCUCCGCCGAGAUCCAUCGUUCAUCUAUAUCUCCAUGGAUAUGGAGCUAUAUAUGGACUGGAUCGCGGAGAGAAAGCUAGCUAGUAUACUGCACGCACGUGUUCUCCUUCUCCAU
+((((((((.(((((((((((.(((.....(((....((..(((.((((((((...((((((..((((((.((((.((((((....)))))).)))).))))))))))))))))))))..)))..)).))).....))).))))))))))).)))))))).
+>sbi-MIR166h MI0010867 Sorghum bicolor miR166h stem-loop
+AGGGGAAUGUUGUCUGGCUCGGGGGCGCCGCCGCUCCGCUCCGCUCCUUCCUUCUCUGGUCUCUCUCUCUCCCCUAGUCUUCGCGCGCUUCCUCAAUCUCCAUCGUCUCUUCCUCCUUCUCUUGGAGACCAGCAGGAGGACGGAGGCGGGUGGUGUAGAUCUCGGACCAGGCUUCAUUCCCCCCA
+.((((((((..((((((..((((..(..((((((.((((....((((.((((((((((((((((...........................................................))))))))).))))))).))))))))))))))..)..))))..))))))..))))))))...
+>sbi-MIR166j MI0010869 Sorghum bicolor miR166j stem-loop
+UGUGGAAUGUUGUCUGGUUCUAGGCCUCUCUCUACAUGCAAGCAUGGAUGUAGUAGCAGCCUACUGCAAUUGCUUGCUGGGACCUCGGACCAGGCUUCAUUCCCCUCA
+...((((((..(((((((((.((((((..........(((((((....((((((((....))))))))..))))))).))).))).)))))))))..)))))).....
+>sbi-MIR166k MI0010870 Sorghum bicolor miR166k stem-loop
+GAAUGGAGGCUGAUCCAAGAUCCUCCUCGAGUGCGAAACAAAUGCCGUUUUUUUGGUUUUGUGUUUGCUCUCUUGGGGGGUCUCGGACCAGGCUUCAUUCCUC
+((((((((.(((.(((.(((((((((..(((.((((((((((.((((......))))))))).))))).)))..))))))))).))).))).))))))))...
+>sbi-MIR167h MI0010871 Sorghum bicolor miR167h stem-loop
+UGAAGCUGCCAGCAUGAUCUGAAAGCAUACGAGUCCUUCGUUAUCAUCUGAUGAAAGAAAUAGAUGAUCAGAUCAUCUGGCAGUUUCAUU
+((((((((((((.(((((((((...(((.....((.(((((((.....))))))).)).....))).)))))))))))))))))))))..
+>sbi-MIR167i MI0010872 Sorghum bicolor miR167i stem-loop
+AGUGAAGCUGCCAGCAUGAUCUAGCUUUGGUUGGCACCAUUGGCAGGCGCCCACACAGUGGCCUCUUCCGUGUGUGUAGUGCCGCUCUGUACCUGCAAAUCAUUGUUAGAUCAUGCAUGACAGCCUCAUUUC
+(((((.((((.((((((((((((((..(((((.(((..((.(((.(((((.((((((.(((......)))))))))..))))))))..))...))).)))))..)))))))))))).)).)))).)))))..
+>sbi-MIR169k MI0010876 Sorghum bicolor miR169k stem-loop
+CAGCCAAGGAUGACUUGCCGGCUCCUCAAAUUUGAAGCGUCGUCUAAGCUGCUGAGGCUUAAUAAAAACUUAGUCGGCAAGUCUGUCCUUGGCUACA
+.((((((((((((((((((((((...........((((.(((.(......).))).))))...........)))))))))))).))))))))))...
+>sbi-MIR169l MI0010877 Sorghum bicolor miR169l stem-loop
+UGAUAGCCAAGGAUGACUUGCCUGUGUCCUUUGUGCCGAAGGAUCAGAAAUGUGAGCCUUUGAGAUAGAUGGUUCAUAGGCAGUCUCCUUGGCUAGC
+...((((((((((.((((.(((((((.(((((((..((((((..((....))....))))))..))))).))..)))))))))))))))))))))..
+>sbi-MIR171i MI0010882 Sorghum bicolor miR171i stem-loop
+GUGUUGGCUCGGCUCACUCAGAAGCUGAAAUAGUAGUGAUGAAUCUAAAUGGUAGCUAUGGCGUUUCUGAUUGAGCCGUGCCAAUAUCUU
+((((((((.(((((((.((((((((.(..(((((..(.((........)).)..)))))..))))))))).))))))).))))))))...
+>sbi-MIR172d MI0010885 Sorghum bicolor miR172d stem-loop
+UGGCAUCAUCAAGAUUCACAACCCAUGGAUCCAAAUAAACCACUGAUUUGGAUCGAGGAGAUGCAUGAGAAUCUUGAUGAUGCUGCAU
+.((((((((((((((((.((.(((.(.(((((((((.........))))))))).))).).....)).))))))))))))))))....
+>sbi-MIR390 MI0010887 Sorghum bicolor miR390 stem-loop
+UGAAGCUCAGGAGGGAUAGCGCCUAGGAAAACACAUAGAUUGGAGCUAGCCAUGAGGAGAAAGAGAGAGAGAGGCAGCAGAGCGAGAUGCAUGUGAAUCUCUGAAUCUGCUCAUCUCUUUCUCUUUCUCAAGGUUGGUUCUGUCUAUCAAUCUGAAGCGCUAUCUAUCCUGAGCUCCAC
+((.(((((((((.(((((((((...(((......((((((.((((((((((.....((((((((((((((((.(.((((((..(((((........)))))....))))))).))))))))))))))))..))))))))))))))))...)))...))))))))).))))))))).)).
+>sbi-MIR394b MI0010889 Sorghum bicolor miR394b stem-loop
+CUUGGCAUUCUGUCCACCUCCUUGCCGAUCGAUCUUGCAGAAAGUUUUUUUUUGGAGGUGGGCAUACUGCCAAUGGA
+.((((((.(.(((((((((((............(((.....))).........))))))))))).).))))))....
+>sbi-MIR395c MI0010890 Sorghum bicolor miR395c stem-loop
+GAGUUCCCUACAAGCACUUCACGAGACCUUGGCUUAAUAAAGGGUUGUUUGUGAAGUGUUUGGGGGAACUCUU
+(((((((((.((((((((((((((((((((..........))))))..)))))))))))))))))))))))..
+>sbi-MIR395i MI0010893 Sorghum bicolor miR395i stem-loop
+GUUCCCUGCAAACACUUCACAAGCUAGACCAUAUAUAGUAUGCCCUUGCACAAUGUGGUAUCCAGUUACCUAGCUAGUGAAGUGUUUGGGGGAACUC
+(((((((.((((((((((((.(((((((((((((...(((......)))...)))))))..........)))))).)))))))))))))))))))..
+>sbi-MIR395j MI0010894 Sorghum bicolor miR395j stem-loop
+GUUCCCUUCAAGCACUUCACAUGAAGCUCUUUGCAUUAUAUUGGCGGAUGUAGCAUUGAGACCAAUGUGAAGUGUUUGGGGGAACUC
+(((((((.((((((((((((((....(((..(((..((((((....)))))))))..)))....)))))))))))))))))))))..
+>sbi-MIR395l MI0010896 Sorghum bicolor miR395l stem-loop
+GUUCCCUUCAAGCACUUCACAUGGAGCAUUAUUUGUCUUGGAGAAAGCUUAAUUUGAUGCAUUGUGAAGUGCUUGGGGGAACUC
+(((((((.(((((((((((((....((((((.(((.(((.....)))..)))..))))))..))))))))))))))))))))..
+>sbi-MIR396d MI0010897 Sorghum bicolor miR396d stem-loop
+CUCCACAGGCUUUCUUGAACUGUGAACUCGAUCGCGUGCUCUUAGCUUGCUUGCUCUCGCUCGCUUUGUGUUGAUGGUUCAAGAAAGUCCUUGGAA
+.((((..((((((((((((((((.(((.(((..(((.((....(((......)))...)).))).))).))).))))))))))))))))..)))).
+>sbi-MIR397 MI0010899 Sorghum bicolor miR397 stem-loop
+UCAUUGAGUGCAGCGUUGAUGAGCCAGCUGGCCGGCCAGCCGUGCGUCCGCCGCCGGCGCCGGCCACGGCUCACCGGCGCUGCACUCAAUU
+..((((((((((((((((.((((((.(.((((((((..((((.(((.....)))))))))))))))))))))).)))))))))))))))).
+>sbi-MIR399j MI0010900 Sorghum bicolor miR399j stem-loop
+AGUGCGGUUCUCCUCUGGCAUGAACGACGGCUGGAGCAGCUUGCCACAUGGCUCGGCCACGGCCCUUGCUUGCCAAAGGAGAAUUGCCCUGCC
+((.(((((((((((.(((((....(((.(((((..((.....(((....)))...))..))))).)))..))))).))))))))))).))...
+>sbi-MIR437f MI0010907 Sorghum bicolor miR437f stem-loop
+AGUCAAACUUCUCUAACUUUGAAAAAAGUCUGUAGAAAAAUAUAUUAACAUCUACAAUACCAAAUAAAUGCACUAUCAAGACAUAUUUCAUGUUGGAUUUAAUGAAACUAAUUUGUUGUUGAUCUUGGUGCACUUUUCUAUAAACUUGGUCAAAGUUAGAGAAGUUUGACUUAG
+((((((((((((((((((((((...((((.(((((((((.(.((((((.(((.((((((...............(((..(((((.....))))).)))...............)))))).))).)))))).).))))))))).))))..))))))))))))))))))))))...
+>sbi-MIR437g MI0010908 Sorghum bicolor miR437g stem-loop
+CAGUCAAACUUUUCUAACUUUGACUAAGUUUUAGAGAAAUAUGUUCACGUGUACAAGUUCAAAUAAAUGCACUAUCAAGACAUAUUUCAUAGAGAAUUUGGUGAAACUAGUUUGAUGUUGUAGAUGUUGAUGCAAUUUUCUAUAAACUUGGUCAAAGUUAGAGAAGUUUGACUUAG
+.(((((((((((((((((((((((((((((((((((((.(..(((.((((.(((((..((((((.....(((((........................)))))......))))))..))))).)))).)))..).))))))).))))))))))))))))))))))))))))))...
+>sbi-MIR437l MI0010912 Sorghum bicolor miR437l stem-loop
+GUCAAACUUUGUUAACAUUGACCAAAUUUAUAGAAAAAUGCACCAACAGACAACACCAAAUUAGUUUAAUUAAAUUUUCCAUACAAUAAGCUUUGAUAGAGCAAUUUUUUGAGAAGUAGAUGUUAAUAUAUUUUUCUAAAAACUUGGCCAAAGUUAGAGAAGUUUGACUU
+((((((((((.(((((.(((.((((.(((.((((((((((....((((.((..((..(((((.((((.(((((((((..........))).)))))).)))))))))..))....))...))))....)))))))))).))).)))).))).))))).))))))))))..
+>sbi-MIR437m MI0010913 Sorghum bicolor miR437m stem-loop
+GUCAAACUCAUCUAACUUUAAACAAGUUACUAGAAAAAUGCACCAACAUCUAGAAUAUCAAAUUAGCUUCAUUAAAUUUUCCACGAAAUGUCUUGGUAGUGUGUUUAUUAAACUAGUAUAUGUUAAUAUAAUUUUCUAAAAACUUGGUCAAAAAGUUAGAGAAGUUUGACUUAG
+((((((((..(((((((((...((((((..(((((((.......(((((((((..((..((((..((((((....(((((....)))))....))).)))..))))..))..))))...))))).......)))))))..)))))).....)))))))))..))))))))....
+>sbi-MIR437p MI0010916 Sorghum bicolor miR437p stem-loop
+AUGUCAAACUUCUCUAACACUGACCGAGUUUGUAGGACAAAUAUAUACUAGCAUCUACAAUACCAAAUAAAUGCACUAUCAAGAGUCAAGACAAAUUUCAUGGUGGAUUUGAUGAAACUAAUUUGAUUUUGUAUGUGUUGGUCCAUUUUUUCAAUAAACUUGGUCAAAGUUAGAGAAGUUUGACUUAG
+..((((((((((((((((..(((((((((((((.(((.((((....((((((((.(((((...(((((((((.((((((.(((.((....))...))).)))))).))))..........)))))...))))).))))))))..)))).))).)))))))))))))..))))))))))))))))....
+>sbi-MIR437r MI0010918 Sorghum bicolor miR437r stem-loop
+AGUAAAACUUCUCUUAUUUUGACCAAGUCUAUAGAAAAAUGUACUAAUAUUUACAACAUCAAAUUAGUUUUAUUCAAUUCACCAUGCAAUGUGUUGGAGAGUGAACUUAUUUGGUAUUACAGUAUAGGUGCCAAUGUAUAUUUCUAUAAACUUGGCCAAAGUUAGAGAAGUUUGACUUAG
+(((.((((((((((.((((((.((((((.((((((((.(((((((.(((((...((.(((((((.(((((.((((..((((.(((.....))).))))))))))))).))))))).))..))))).)))))......)).)))))))).)))))).)))))).)))))))))).)))...
+>sbi-MIR437t MI0010920 Sorghum bicolor miR437t stem-loop
+GUCAAACUUGUCUAUCUUUGACCAAGUUGAAAAAUAUAUUAACAUCUACAAUAUCAAAUGAAUCCACUAUCGAAAUAUUAUUUCCUGGUGUGUGCAAUGAAUAUAGUUUGAUGUAGCAGAUGUUUGUGCAUUUUUCUAUAAACUUGGUCAAAGUUAGAGAAGUUUGACUU
+(((((((((.((((.((((((((((((((((((((.(((.(((((((.(.(((((((((..(..(((((..(((((...))))).)))))..)............))))))))).).))))))).))).)))))))....))))))))))))).)))).)))))))))..
+>sbi-MIR437w MI0010923 Sorghum bicolor miR437w stem-loop
+UAAAUCUCUCUAAUAUUUACCAAGUUUAUAGAAAAAUGCAUCAACAUUUCCAACAUCAAAUUAGUAUCAUUAAAUUCUCCGUGAAAUAUAUUCAUAGUGCAUUUACUUGAACUUGUAGAUUUUAAUAGUUUUUUUUUUCUAAAAACUUGGUGAAAGUUAGAGAAGUUUGACUU
+((((..((((((((.((((((((((((.((((((((......((((((......(((.....(((.(((.(((((.(.(..((((.....))))..).).)))))..))))))....)))...))).)))...)))))))).)))))))))))).))))))))..))))....
+>sbi-MIR529 MI0010924 Sorghum bicolor miR529 stem-loop
+GGGAGAAGAGAGAGAGUACAGCCUUACCAUGUACACACACUCCAAUCUCAACAGUCUCUUAUAUAUGCUGCUGUUACCUGUGAGUGUGAUGAAGGCUGUACCCUCUCUCUUCUUCU
+((((((((((((((.((((((((((..(((.....(((((((((.....((((((..(........)..))))))...)).)))))))))))))))))))).))))))))))))))
+>sbi-MIR821a MI0010925 Sorghum bicolor miR821a stem-loop
+UAAAUGAUUUCAGCUAAAAAAGUCAUCAACAUAAAAGUUGUAAAACUGGUCAAGAUCUCCAAUUUUUAUUUUAGUCAUUUUUUCAUAUGACAAAGUAAUAGUAACAUUGUUCAUAAAUUUUACAUAUCUCUGAUAUAGUUUCAUAAACUAUAUGAGAGAUAUGUAAAAUUUAUGAACAAUGUUACUAUUACUUUGUCGGAUGAAUAAAUAACCAAAAUAAAAGUUGUAGAUCUUGAUGAGUUGUACAACUUGUAUAUUCAUAACUUUAUCAACUAAAAUCAUUUA
+((((((((((.((.....(((((.((.((.(((.((((((((.((((.((((((((((.(((((((((((((.((.((((.(((((.((((((((((((((((((((((((((((((((((((((((((((.((((((((.....)))))))).)))))))))))))))))))))))))))))))))))))))))))).))))).)))).)).))))))))))))).)))))))))).)))).)))))))).))).)).)).))))).....)).))))))))))
+>sbi-MIR821b MI0010926 Sorghum bicolor miR821b stem-loop
+UAAAUGAUUUCAGAUGAAAAAGUUAUGAACAUAAAAGUUGUAGAACUGAUUAAGAUCUACACCUUUUAUUUUGGUCAUUUGUUCAUCCAAUGAAAUGAUAGUAACAUUGUUCACAAAAUUUAUAUAUCUCACUCUUAUAGUUUAUAAAACCAUAUGAGAGAGAUGUAAAAUUUAUGAACAAUGUUAGUAUCACUCUAUCGGAUGAAAAAAUGACCAAAAUAAUAGUUAUAGAUCUUGAUGACUUCUAUAACUUUGUUGUUGAUAACUUUUUCA
+..............((((((((((((.((((..((((((((((((.(.(((((((((((...((.(((((((((((((((.(((((((.(((.(.(((((.((((((((((((..((((((.((((((((.(((.(((.(((.....))).))).))).)))))))))))))).)))))))))))).))))).).))).))))))).))))))))))))))).))...))))))))))).).))))))))))))..)))).))))))))))))
+>sbi-MIR821d MI0010928 Sorghum bicolor miR821d stem-loop
+AAAAAGUCAUCAACAACAAAGUUGUAGAAAUCAUUAAUAUCUAAAACUUUUAUUUUGGUCAUUUAUCCAUUCGAUAAAGUGAUAGCAACAUUGUUCAUAAAUUUUACAAAUCCCUCGUAUGGUUUCAUAAACUAUAAGAGAGAUAUGUAAAUUUUGUGAACAAUAUUACUAUCACUUUCUCGGAUGAACAAAUACCUAAAAUAAAAGUUGUAUAUAUUGAUGAGUUCUACAACUUUUAUGUUCAUGAAUUUUUCGAAUGAAAUC
+(((((.((((.((((..((((((((((((.((((((((((.((.((((((((((((((..((((...(((((((.((((((((((.((.((((((((((((.((((((.(((.(((.(((((((.....))))))).))).))).)))))).)))))))))))).)).)))))))))).)))))))...))))..)))))))))))))).)).)))))))))).))))))))))))..)))).)))).)))))...........
+>sbi-MIR1435b MI0010932 Sorghum bicolor miR1435b stem-loop
+CUAUAGAAUUAUAAAAUAAUCUUUUACUCUCUCCAUCACCGAAUAAAUCAAUUCCUAAAGUUUUCUUAAGUCAAACCUUUUAAAGUUUAACAAAAUUUAUAGAAAAGAGCACCAAAAUUUAUGGCACUAGUAUAAAAUGUUGUCAUAAUAUGCUGAUUUGGUAUCAUAAAUACUUGUGCUCUUUUCUACAAAUUCAAUCAAACGUAAAAAAAGUUUUGAUUUAAAAUAACUCUACGAAUUGAAUGGAUUUAUUUAUGGAUGGAGUGA
+...........................((.(((((((...((((((((((((((.((.((((...((((((((((.(((((...((((.....(((((.(((((((((((((....(((((((..(((((((((..(((....)))..)))))).....)))..)))))))....))))))))))))).))))).....)))).....))))).))))))))))...)))).)).))))))).....)))))))...))))))).))
+>sbi-MIR169o MI0013253 Sorghum bicolor miR169o stem-loop
+AUAGCCAAGGAUGAUUUGCCUGUAGCAACCUCUGAGUGCUCCUGCUGCCAUGGCAGUCAGGAGCGCCAAGUGGGUGCUUCUCCGGGCAAAUCAUCUGGGCUAG
+.(((((..((((((((((((((.((((.((.((..(((((((((((((....)))).)))))))))..)).)).))))....)))))))))))))).))))).
+>sbi-MIR169p MI0013254 Sorghum bicolor miR169p stem-loop
+UUAGCCAAGAAUGGCUUGCCUAUCUCCAUUAUUUGGUUCAUCAGAGGGACCUCUGAUCCCUCAUGAUGGAUGAAAUGUGGAUGAUGGCAGCCCUUCUGGCUAAGU
+(((((((.(((.((((.(((.((((((((.((((.((((((((((((((.......)))))).)))))))).))))))))).)))))))))).))))))))))..
+>sbi-MIR169q MI0013255 Sorghum bicolor miR169q stem-loop
+UUAGCCAAGAAUGGCUUGCCUAUCUCCAUUAUUUUGUUCAUCGAUGCAGGCCUAGGGAUCGUCAUGGAUGAAAUGUGGAUGAUGGCAUCCAUUCUUGGCUAAGU
+((((((((((((((..((((.((((((((.((((..(((((((((.(........).))))..)))))..))))))))).))))))).))))))))))))))..
+>sbi-MIR398 MI0013257 Sorghum bicolor miR398 stem-loop
+GGGGGCGGACUGGGAACACAUGGGAAUGAGAGAUGAGAUUGCUCGGUCGUGCUGGCCCUGGGCUCGUAGUUGAUCUGCUUGUAUGCAUGUGUUCUCAGGUCGCCCCCGC
+(((((((..(((((((((((((.(.(..((((((.((...((((((((.....))))..))))......)).)))).))..).).)))))))))))))..)))))))..
+>sbi-MIR528 MI0013259 Sorghum bicolor miR528 stem-loop
+UGGAAGGGGCAUGCAGAGGAGCACGAGGCUUGGCUGGAAGCCGACCUACGCCUCGCUGGCUCUCCUGUGCCUGCCUCUUCCAUU
+(((((((((((.(((.((((((((((((((((((.....))))).....)))))).))...))))).))).)))))))))))..
+>sbi-MIR5382 MI0018689 Sorghum bicolor miR5382 stem-loop
+UUUUCAUUGCCAAUCUAAACAGGCCCUAACUCAUCAGUGGACAUUUUGCAAGAGGAGAAAGCCGAAAGCCUCUUUUGAGCUGGGACCUGUUUAGAUUGGGAACGAAAACG
+(((((.((.((((((((((((((.((((.((((..((.((.(.(((.((...........)).))).))).))..)))).)))).)))))))))))))).)).)))))..
+>sbi-MIR5385 MI0018692 Sorghum bicolor miR5385 stem-loop
+GGAGUUUUGCACGCCGCCGCUUCUCACCACCAACCCCACCGCUUCUCCGCGCCGAGGGGCGAGAAGCGGUGGUGUUGGUGGUGAGAAGCAGCGGCGUGGCAGAUUUGCAG
+(.((.((((((((((((.((((((((((((((((.((((((((((((.((.(....).)))))))))))))).)))))))))))))))).))))))).))))).)).)..
+>sbi-MIR5388 MI0018695 Sorghum bicolor miR5388 stem-loop
+AAAAAAAAAUCUUUGCCGGGAGGGUCCUCAGCAAACAUUCGGCAAAGAAAAUUUGAAAAAAAAUUAGAAAAUCUUUGCCGGGUGUCUCUGACACAGCUUCCGGCAAAGCA
+..........((((((((((((.((..((((...((((((((((((((...(((((.......)))))...))))))))))))))..)))).))..))))))))))))..
+>sbi-MIR5564a MI0019096 Sorghum bicolor miR5564a stem-loop
+UGCCGUGGGGAAGCAAUUCGUCGAACAGCUGCUGCGCCAGAGGUUGGCAGGCCCUGAGCCUCGUCCACGUGCACGCGAGCUGUUCGGCGACUUGCUUCACCCAUGUC
+...(((((((((((((.((((((((((((((((((((..((((((((....))...))))))......))))).)).))))))))))))).))))))).))))))..
+>sbi-MIR5564b MI0019097 Sorghum bicolor miR5564b stem-loop
+CGGGAGCAAUUCGUCGAACAGCUUGAGGCGCGCCGGCCGGGCAACCCGGGCGUCAGCCACGCACUCCAGCUGUUCGACGAAUGCCUCCUCCACGCCAGGCAAUGC
+.((..(((.((((((((((((((.((((((.((((.(((((...))))).))...))..))).))).)))))))))))))))))..)).................
+>sbi-MIR5565e MI0019098 Sorghum bicolor miR5565e stem-loop
+UAAACGGUAAGGUUUUGUUUGGAUGUUGUCGGAUUCACCUCAAUCCACAUGUUUUGGAGUAGAUUAGGGUGGAAUUUAGUUCAAGUUCCACUCCAAUUCACCCCAAUACAUGUGGAUUGAUGCGAAUCCAACUACAUCCAAACAAGGCCUAAAUAUAAGUGUGGAUAGUGUAGAUAAAUAUAGAAGAGAUAGAUAUGAGGAUGGAAAAGGAUC
+.........(((((((((((((((((.((.((((((.(.(((((((((((((.((((.((..(((.(((((((((((.....))))))))))).)))..)).)))).))))))))))))).).)))))).)).)))))))))))))))))...............................................................
+>sbi-MIR5565f MI0019099 Sorghum bicolor miR5565f stem-loop
+GGAUGUAGUCGGAUUUAUAUCAAUCCACAUAUGUUGGGUGGACUGAAGUGGAAUUUGAACUAAAUUCCAACAUAUGUGGAUUGAGGUGAAUCCGACAACAUCCCA
+((((((.(((((((((((.((((((((((((((((((((((..((((......))))..)))...))))))))))))))))))).))))))))))).))))))..
+>sbi-MIR5566 MI0019100 Sorghum bicolor miR5566 stem-loop
+GAGUUUCAGCAUCACCUCCCUGUUGUUCUCCGGGUACACAACCUCCCCGUCGAGACGUGUAUUUGGAGAACAGCGGGGAGGUGCUGCCGAAAUUUCGUCUCAGAUC
+(((((((.(((.(((((((((((((((((((((((((((...(((......)))..))))))))))))))))))))))))))).))).)))))))...........
+>sbi-MIR5567 MI0019101 Sorghum bicolor miR5567 stem-loop
+UUAUCUACAUUUAAUGAUUCAUGUAUGUGUCCAAAGAUUCGAUGAGAUGGAUAAAAAAAUUUUGAUGGAGAACUAAACAGGGCCUAAGGCCUUGUAUAGUUUAGGUCUUGUUUAGUUCCAAAAAUUUUGCAAAAUUUUUCAGAUUCCUCGUCACAUCGAAUCUUUAGACGUAUGCAUGGAGUAUUAAAUAUAGAUGAAAAUAAAAAUUAAUUGC
+(((((((.((((((((.((((((((((((((.((((((((((((.((((((...((((((((((...(.(((((((((((((((((((.(........)))))))))))))))))))))..........)))))))))).....)))..))).)))))))))))).)))))))))))))).)))))))).))))))).................
+>sbi-MIR5565c MI0019102 Sorghum bicolor miR5565c stem-loop
+GAUGUAGUCGGAUUCGCAUCAAUCCACAUGUGUUGGUGUGGAUUGGAGUGAAACUUGAAUUAAAUUCCACCCCAAUCCACUACACAUGUGGAUUGAGGUGAAUCCG
+........(((((((((.(((((((((((((((....(((((((((.(((.................))).))))))))).))))))))))))))).)))))))))
+>sbi-MIR5568a MI0019103 Sorghum bicolor miR5568 stem-loop
+UCCCAACAUUCCAAAUUGUAAGUCGUUCUGGCUUUUCUAAGUAGAUUGCUGUGGCUAUGCACCUAUGUAUGUAGAAGAGCCAGAGCGACUUACAAUUUGGAACAAU
+........(((((((((((((((((((((((((((((((.(((.((.(.(((......))).).)).))).)))))))))))))))))))))))))))))))....
+>sbi-MIR5387b MI0019104 Sorghum bicolor miR5387b stem-loop
+CGGCACGUGGCUCUGACCGGUGCUAAAGGGUCUCUGCCCCAACAACACCUGUCAGUAGCCGUGGGGCAGGAUCCUUUAGCACCGGUUCGUGUUACGAACCGGUGUUAAA
+(((..((((((.(.((((((((((((((((((.((((((((.....((......)).....)))))))))))))))))))))))))).).))))))..)))........
+>sbi-MIR5569 MI0019105 Sorghum bicolor miR5569 stem-loop
+GUAGGCUCAUUAUUGCAUGCUUGAACUAUGGUAAAAAUUUCAUACUCAUUGGAUCACAUAUAACUUAGUUAUAGAUAAAGCAUAGAUUUAACAAGAAUAAAGCUAAAUAAAUCUAUAACUAAAUUUUACUUGAUCCAAUGGAUACAAAACUUUUACCAUAGUUCAAGCAUACAAUAAUGAGUCCACCAUAAAAAAUUUACCACAAUUGAACCAU
+((.((((((((((((.((((((((((((((((((((.(((..((..((((((((((..((.((.((((((((((((..(((....((((.....))))...)))......)))))))))))).)).))..))))))))))..))..))).)))))))))))))))))))).)))))))))))).))............................
+>sbi-MIR5565a MI0019107 Sorghum bicolor miR5565a stem-loop
+GUAGUCGGAUCCGCAUCAAUCUACAUGUGUUGGAGUGGAUUGGAGUAGAAAUUGAAUUAAAUUUCACCUCAAUCCACUCCAACACAUGUGGAUUGAGGCGAAUCCGACA
+...(((((((.(((.(((((((((((((((((((((((((((..((.((((((......))))))))..))))))))))))))))))))))))))).))).))))))).
+>sbi-MIR5565b MI0019108 Sorghum bicolor miR5565b stem-loop
+GUAGUCAGAUUCACAUCAAUCCACAUGUGUUGAGGCGGGUUGGAGUGAAACUGGAACUAAAUUCCACCCUAAUUCACUCCAACACAUGUGGAUUGAGGCGAAUCCGACA
+...(((.(((((.(.(((((((((((((((((..(.(((((((.(((.................))).))))))).)..))))))))))))))))).).))))).))).
+>sbi-MIR5565d MI0019109 Sorghum bicolor miR5565d stem-loop
+GAUUCACUUCAAUCCAUGUAUGUUGGUGUGGGUUGGGGUGGAAUUUAGUUCAAAUUCUACUCCAAUCCACCUCAACACAUGUGGAUUGAUGUAAAUCCGACUACAUCAA
+((((.((.(((((((((((.((((((.(((((((((((((((((((.....))))))))))))))))))).)))))).))))))))))).)).))))............
+>sbi-MIR5568g MI0023506 Sorghum bicolor miR5568g stem-loop
+UAAAUAUUUGAUAUGUACUCCCUUCAUUCCAAAUUAUAAGAUGUUUUGGCUUUUUUAGAUACAUUGCUGUUAUUAUGUAUCAAGACAGCGUAUAUCUAAGUGCAUAGCAAUAGCUAUGUGUCUAGAUAAGACAAAACGUCUUAUAAUUUGGAGCGGAAGGAGUAUGAAGCUGUAUAUUUG
+(((((((..(...((((((((.(((.((((((((((((((((((((((.(((.(((((((((((.((((((.((((((((..(((.(.....).)))..)))))))).)))))).))))))))))).))).)))))))))))))))))))))).))).))))))))...)...)))))))
+>sbi-MIR5564c MI0023507 Sorghum bicolor miR5564c stem-loop
+GGUUCCGGAGCUGGCCUGUCCUGGGAAGCAAUUCGUCGAACAGCUGCAGCGCGAGACGGUGGUAGGCCCUCAGCCUCGACCACGCGCACGCGAGCUGUUUGGCGAAUUGCUUUACCCAUGUCAGGCCCUGCCUCGGUUAUAUUAUACGGCCUUCAACC
+(((((((..((.((((((.(.((((((((((((((((((((((((((.(((((....(((.(.((((.....))))).))).)))))..)).))))))))))))))))))))..)))).).))))))..))..)))...........)))).......
+>sbi-MIR6218 MI0023510 Sorghum bicolor miR6218 stem-loop
+GUAUUUAUAAAUUAUAAAAAAUCCAAACGACGUCCGAAAAUCACGAAACUUGUCGAUGUGUCUUGGUAUCCCAUGUGGAGACUAUGAUAAAAAUUUUAGGAAGUUUCGAGCAAGUAGUGAUGUCCGAUACUUAAAACCCAGACAUCUCCACUUGUCAAAGUUUUGUGAUCACAUGUGGAGGAGGAUGGCUUUUAAGCAUUCGAAGUCACUACAUGAAACUUCCUCAAAUUUUUAUCAUAGUCUCCACAUGGGAUACCAAGACACAUCGACAAGUUUCGUGAUUUUUGGACGUCGUUCGGAUUUUUUAUAAUUUAAAUAC
+(((((((..(((((((((((((((.(((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((.(((((((((((.....((((((((.((.(((.(((((((.(((..(..((((((.(((((........))).))...))))))..)..))).))))))).))).)).)))))))).))))))))))).))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))).))))))))))))))))))))))
+>sbi-MIR5565g MI0023511 Sorghum bicolor miR5565g stem-loop
+GGGCUUGUUUGGAUGUAGUCGGAUUCACAUCAAUCCACAUAUGUUGGAAUGGGUUGGAGUGUAAUUUGAACUAAAUUCCACCUCAAUCCACUUCAACACAUGUGGAUUGAGAUGAAUACGAUAACAUCCAAACAACCGGUCU
+.((.((((((((((((.((((.(((((..(((((((((((.(((((((.(((((((..(((.((((((...)))))).)))..))))))).))))))).)))))))))))..))))).)))).)))))))))))))).....
+>sbi-MIR5568b MI0023512 Sorghum bicolor miR5568b stem-loop
+ACAGGUUUAAUCAAAUUAUCUAGUAUGUACUCCCUCUAUUCCAAAUUGUAAGUCAUUUAAACUUUUCUAGGUACAUAGCUUUUGCUAUGCAUCUAUAGCUACAUAGUUUUUACUAUGUAUCUAGAAAAGCUAGAACAAAUUACAAUUUCAAACAGAGUAGCAUUUAAUUAUAUACUAUUUUUGACACCAUGU
+((((((....(((((.....(((((((((......((((((.(((((((((..........(((((((((((((((((.....((((((............)))))).....)))))))))))))))))..........)))))))))......))))))........)))))))))..))))).))).)))
+>sbi-MIR5568c MI0023513 Sorghum bicolor miR5568c stem-loop
+GUACUCCAUCUGUUCCAAAUUGUAAGUCGUUUUGGCUUUCUUAAAUACAUAGUUUUUACUAUGCAUAUAGACACAGUGCAUAUGUUUUUUUGCAUAGCAAAAGCUAUGUACCCAGGAAAGCCAAAACAACUUACAGUUUGGAACGGAGGGAGUAC
+(((((((.(((((((((((((((((((.((((((((((((((...((((((((((((.(((((((...(((((.(.....).)))))...))))))).))))))))))))...)))))))))))))).))))))))))))))))))).)))))))
+>sbi-MIR6219 MI0023514 Sorghum bicolor miR6219 stem-loop
+UACUGCGGAAGAGGGUCAUAUAACCGGGAGUAAAGGCCCCCUUUAGUCCCGGGUGUGCGAACCGGGACUAAAGGUGGGACAUUAGUCCCGAAACCUUAGUCCCGGCUCACAGUCCGGGACUAGAGGUGGAUUUCGUCCGGGACUAAAGGCCGGUGUUGUAGCAGUG
+((((((...((..((((......((((..(.(((..((.((((((((((((((((((.(..((((((((((.((((((((....)))))...)))))))))))))).)))).)))))))))))))).)).))))..)))).......))))....))...))))))
+>sbi-MIR6220 MI0023515 Sorghum bicolor miR6220 stem-loop
+GGCCAUGCUGUCGAACAUAUUACUCUCUCCAUCCUAAAUUAUAAGACAUUAUAAGAAUCCUAGAUAGUCAAAGUAUGACAAAUUUGACCAAAUUUAUAUAAUAAAAUAAUAACAUUUAUGAUACUAACUAAACAUCAUUAGAUUCUUCUUUAAUUAUAUUUUAUAGUAUAUCUACUUGAUCUCAUAAGUUUUUAUAUUUUUCUAUAAUUUUGGUUAAACUUGAGAUAAUUUGAUUCUCUAAGUUUUUUGAAAUGCCUUAUAAUUUGGGAUGGAGAGAGCUUUUUUUAUUGUUAAAGUAGUGCC
+(((..((((....((((.....(((((((((((((((((((((((.((((.((((((.(.((((.(((((((.(((..(((.((((((((((.(((((....((((((..((.((((((((............((((.(((((....((.(((.......))).))...)))))..)))).)))))))).))..))))))..))))).)))))))))).)))..))).))))))).)))).).)))))).)))).)))))))))))))))))))))))..........))))..))))..)))
+>sbi-MIR6221 MI0023517 Sorghum bicolor miR6221 stem-loop
+ACAGCUCACCAGCCCAUCCUUAUGCGUGGUGCUUCUGACUUCUGGCCCCUGCUCAGCCCCACCAACACUAAGCCGGGGCCAGAUCUCAGAAGCAUUGUGCAUAAUCAUGUGCCUCUAGCUGU
+((((((.....((.(((..(((((((..((((((((((..(((((((((.(((.((...........)).))).)))))))))..))))))))))..)))))))..))).))....))))))
+>sbi-MIR6222 MI0023518 Sorghum bicolor miR6222 stem-loop
+AACUCUGUCCUGUUUGGAUCAGCCAAGGCUCGUUAUUAUUAGCUAAUUUUUAGCCCAAGCUAAUAACUAGAACUAGCUGAUCCAAACAGGCCCUUAGUU
+((((..(.(((((((((((((((..((..((....(((((((((.............)))))))))...)).)).)))))))))))))))..)..))))
+>sbi-MIR6223 MI0023519 Sorghum bicolor miR6223 stem-loop
+GAAGAGCUAUUCUUUGUUCUUGGGAGGAGCAUGCUAGAAAUUUUCUCAAAGUCAGUCCUUGACUUUCAGAAAGUUCCUAGCAUGUUCCUCCUAAGAGCAUGCUCUCUC
+..(((((.......(((((((((((((((((((((((.((((((((.((((((((...)))))))).)))))))).))))))))))))))))))))))).)))))...
+>sbi-MIR6224a MI0023520 Sorghum bicolor miR6224a stem-loop
+ACUCCCUCCGUCCUAAUAUAUAAGGCGUAACCACUUUUUAAUCAUGUCCUAUAAUACAAAGCGUGCCCUCUCACAGACAUUAAUGCAGUAGUACUAGUGCUGAGAGAGAAAAUUAAAUGCGUUCUUGGUCUUUGAACCAGAGGUGGUUAUGCCUUAUAUACUAGGACGGAGGGAGU
+(((((((((((((((.((((((((((((((((((((((...(((.(.((...........((((...(((((.(((.(((((.(((....))).)))))))).)))))........))))......)).)..)))...)))))))))))))))))))))).)))))))))))))))
+>sbi-MIR6224b MI0023521 Sorghum bicolor miR6224b stem-loop
+CUCUCUCCGUCCUAAUAUAUAAGGCGCAAUCACUUUUUAUUUAUAUCCCAUAAUAUAAUAGCUCUCUCUCAUACAUCAAUACAGUAGUACUAGUAUUGAGAGAGAAUUAAAUAUGAUCUUGAUUUUUGAACCAAAGGUAGUUAAGCCUUAUAUACUAGGACGGAGGGAG
+((((((((((((((.((((((((((..(((.((((((..((((.(((.....((((..(((.((((((((((((.....(((....)))...))).))))))))).))).))))......)))...))))..)))))).)))..)))))))))).))))))))))))))
+>sbi-MIR6225 MI0023523 Sorghum bicolor miR6225 stem-loop
+UAAUCAUGUACUAACUAGACUCAAAAGAUUCAUCUCCCGAUUUAUAGAUAAAUUGUGCAAUUAGUUUUUGUUUUUGUCUAUAUUUAAUGCUUCACGCAUGUGCUGUAAAAUUCGAUAUGAAGGGAAAUCUUGAAAAGUUUUUGGUACUUUUUGAAAACUACCCAAAACUUUUCAAGAUUUCCCAUCAUAAUGAAUCUUACGGCACAUGCAUUAAACACUAAAUAUAGAUGAAAAUAAAAACUAAUUAUAUAAUUUGUCUGUAAUUUGCGAAACGAAUCUUUUAAGUCUAAUUAAAUUAUUAUUA
+((((.(((...(((.((((((.(((((((((...((.(((.((((((((((((((((.((((((((((((((((..((((((((((.((......(((((((((((((.(((((.(((((.((((((((((((((((((((.((((.(((....))).)))).)))))))))))))))))))).))))).))))).)))))))))))))......)).))))))))))..)))))))))))))))).)))))))))))))))).))).))...))))))))).)))))).)))...))).))))
+>sbi-MIR5568d MI0023524 Sorghum bicolor miR5568d stem-loop
+CACCCUCUGUCCCAAAUUGUAGGUCGUUUUGGCUUUUCUAGAUACAUAGCUUUUGCUAUGCACUUAGAUAUAUGAUACAUCUAGAUACAUAAUAAAAGUUGUGUAUCUAGAAAAGCCAAAACGACCUGUAAAAUUGAACGGAGGGUG
+((((((((((..(((.(((((((((((((((((((((((((((((((((((((((.((((...((((((.........))))))...)))).)))))))))))))))))))))))))))))))))))))))..))).))))))))))
+>sbi-MIR2118 MI0023526 Sorghum bicolor miR2118 stem-loop
+GUGGGCAUGGAAGAGGAAGAAAAGAGGGUCUAAGAGCAGUGGGCAUGGGAACAUGUAGGAAGGCCUUUGAGAUGGAAAGCUCAUUUUGGGUCUUCCUGAUGCCUCCCAUGCCUAUUGUUCUUAGGUGCUCCUUCCUCUUGCUUUUGGCUCAC
+((((((..(.(((((((((....(((.(((((((((((((((((((((((.(((.(((((((((((.((((.(....).))))....))))))))))))))..))))))))))))))))))))))).)))))))))))).).....))))))
+>sbi-MIR6227 MI0023527 Sorghum bicolor miR6227 stem-loop
+CUGGACAUGGAUGUAUAGGUAGUAGUGGGCCCAAAUAGCAAGUGUUGUGAGAAGGAGUAAAAAAGAGAAGAUAUUUUAGAGACAAGUAUGAAACAACUUAUUGAAUAACUUGGCUUUUAUCACGUGACUUAUAGCCAAGCACUUGGCUCUAUUAGAGCAAGAUCAAUAAUAGAGCCAAGUGUUUGGCUAUAAGUUAAGUGAUUAGAGCCAAGUUAUACAAUAAGUUGUCUCAUACUUGUCUCUAAAAUAUCUUCUAUUUCUUAUUCCUUCUCACAACACUUGCUAUUUGGGCCCACUACUACUUAUGGAUCCGUGCUCAG
+(((..(((((((.(((((((((((((((((((((((((((((((((((((((((((((((.(((.((((((((((((((((((((((((((.(((((((((((.(((((((((((((.(((((.((((((((((((((((((((((((((((((((......))..)))))))))))))))))))))))))))))).))))).))))))))))))).))))))))))).)))))))))))))))))))))))))).))).))))))))))))))))))))))))))))))))))))))))))))))).)))))))..)))
+>sbi-MIR6228 MI0023529 Sorghum bicolor miR6228 stem-loop
+GCAGUUUCUAUCUCUAUUAAUUGUGUUGCCAACUCACCAUUUUGCUGCUGUGGCAGUAGAAUUAAUGAAGGGAGAGAGUGC
+(((.(((((..((.((((((((.((((((((...((.(.....).))...)))))))).)))))))).))..))))).)))
+>sbi-MIR6229 MI0023530 Sorghum bicolor miR6229 stem-loop
+UGUUAAUUCUCACUUGGGCGACGGAAAGGCCACCGUGUAUGGAUGGGGGUGGGGGUUCGGGGUUUUUCUCGCCGGGUGAGAAGGCA
+.((...(((((((((((.(((..((((((((.(((......................))))))))))))))))))))))))).)).
+>sbi-MIR5568e MI0023532 Sorghum bicolor miR5568e stem-loop
+UAUUUUACUACCUCCAUUCCUAUUUAUAAGAUGUUUUGGGUUUUCUAGAUAUAUAUCUCUUGCUAUGUACUUGGAUAUAUACAUUACGUCUAGAAACAUAGUAAAACCAGUGUGUAUCUAGAAAAGCUAAAACGUGUAUAAUUUGAAAUAGAGGGAGUACUAUA
+(((..((((.((((.(((.(...(((((..(((((((((.((((((((((((((((...(((((((((..(((((..((.....))..)))))..))))))))).....)))))))))))))))).))))))))).)))))...).))).)))).))))..)))
+>sbi-MIR5568f MI0023534 Sorghum bicolor miR5568f stem-loop
+GUAUUACUCCAUCCAUUCCAAAUUGUAAGAUGUUUUGGCUUUUCCAGAUAUACACUAUGUCUAGAUACAUAGUAAAAGAAAUGUAUCUAGAAAAACUCAAAUGUCUUAUAAUUUGGAAUGGAGAGAGUAGCUUGUAC
+...((((((..((((((((((((((((((((((((.((.(((((.(((((((.(((((((......)))))))........))))))).))))).)).))))))))))))))))))))))))..)))))).......
+>sbi-MIR6232a MI0023535 Sorghum bicolor miR6232a stem-loop
+GUAGAUACAUAGCUUUUACUCUGUUCCGAAUUAUAAGUCGCUUUGACUUUUUUGGUACAUCGAUUUUGCUAUGUAUCUAGACAUGUUGUUAUAUCUAGAUACAUAGCAAAGUGGAUGUACCAAAAAAGUCAAAGCGGCUUAUAAUUUGGAACGGAGGGAGUACUAUGUUCGUUGC
+((((..((((((..((..(((((((((((((((((((((((((((((((((((((((((((.(((((((((((((((((((.(((....))).))))))))))))))))))).)))))))))))))))))))))))))))))))))))))))))))..))..))))))...))))
+>sbi-MIR6232b MI0023536 Sorghum bicolor miR6232b stem-loop
+UGAGAUGAAAGGGAUAAGGUAAUAUGAUAAUACUCGAUCUGUUUCGAAUUAUAAGUCGAGUUGAUUUUUUUGGUACAUUGAAUUUGCAAUGUAUGUAGACUAGCAAAUUCGAUGUACCAAAAAAGUCAAACUGACUUAUAAUUUGAUGAAAUGGAUGGAGUACUAAAGAAUAGUUGCCUCCCAUUGCUUA
+..........((((...((((((((..((.(((((.((((((((((((((((((((((..(((((((((((((((((((((((((((...((......))..)))))))))))))))))))))))))))..)))))))))))))...))))))))).))))).))....)).))))))))))........
+>sbi-MIR6233 MI0023537 Sorghum bicolor miR6233 stem-loop
+CACAGAUGCAACUAGCCACUGGUGAUGUUGAGGCUGGAGCGAAACUCGGUGAAGGUCGAGGACGGGAGACCCUUGGUGAAGAUGUUGGCCCAAGUUUGGUUUUGGUAAUUAAUGACACCAAGUUGCUAAUGCUUUGUG
+((((((.(((..((((.(((((((.((((((.((..((((.(((((.(((.((.(((...((.((....)).))......))).)).)))..))))).))))..))..)))))).)))).))).)))).)))))))))
+>sbi-MIR6235 MI0023540 Sorghum bicolor miR6235 stem-loop
+UGUUUACUAAUUUAUUGUGAGAGAAAAAUACUGUUGGCUGGCAGAAAAAGUAUGGCACAAGUAUGGCACAGUCUUGUUCAUUUGUCUUAUAAGCCGUAUUUUUUUUUGUCAACGAACAGUAUUUUUCUCUUACAAUAAAAUCAGCGAACA
+.(((..((..(((((((((((((((((((((((((.(.((((((((((((((((((((((((..((((......)))).)))))).......)))))).)))))))))))).).)))))))))))))))))))))))))...))..))).

@@ -1,0 +1,69 @@
+>cfa-mir-429 MI0001644 Canis familiaris miR-429 stem-loop
+AGCCUGCUGAUGGGCGUCUUACCAGACACGGUUAGAUCUGGGUUCUGGUGUCUAAUACUGUCUGGUAAUGCCGUUCAUCCAUGGC
+.(((....((((((((.(((((((((((..((((((((..(...)..).)))))))..)))))))))).).))))))))...)))
+>cfa-mir-1835 MI0007991 Canis familiaris miR-1835 stem-loop
+UGCACCCUGAGAGCUGGAGCAGGUCUCUUACGGGAACCAUCUUCAACUCUGUGGAUGCAGG
+((((.((..((((.(((((..((((((....))).)))..))))).))))..)).))))..
+>cfa-mir-371 MI0007996 Canis familiaris miR-371 stem-loop
+ACUCAAAAAAUGGCGGCACUUUCCUACCUAGAACAGAAAGUGCCCCCACAGUUUGAGUGG
+(((((((...(((.(((((((((............))))))))).)))...)))))))..
+>cfa-mir-1836 MI0008014 Canis familiaris miR-1836 stem-loop
+UAGGCCAUGGUAGAUAGAGAUGGAGUAACCAUUUCAUCUCAUCUGCACUGCCCAGAC
+..(((....((((((.((((((((((....))))))))))))))))...))).....
+>cfa-mir-1837-1 MI0008028 Canis familiaris miR-1837-1 stem-loop
+AUGUGAUGGCUCUUCUGAGAAGUACUUCGAUGGCUCCUCUCAGAGGGACUGCGACAUCU
+((((..(((..(((((((((.(..((.....))..).)))))))))..)))..))))..
+>cfa-mir-1838 MI0008044 Canis familiaris miR-1838 stem-loop
+CCACCAGCUGGCGUUCCCUGGCGUGGGAACGAGAGGCAGGGGCUGCUGGCUGGAGGGA
+((.(((((..(((..(((((.(.((....))...).)))))..)))..))))).))..
+>cfa-mir-1840 MI0008089 Canis familiaris miR-1840 stem-loop
+UUAGGGCGCGUCACGUGACGGGCUCGUCGCUCCGCCGUCACGUGACGGGCCUCGGCG
+(..((((.(((((((((((((((.....))....))))))))))))).))))..)..
+>cfa-mir-1841 MI0008096 Canis familiaris miR-1841 stem-loop
+AGAGGAAAGCUGGACGGCAAGCCUGAAGGGAAGAAGGUGGCUCCGUCCUCUUUCCAAGCC
+...((((((..((((((..((((...............)))))))))).)))))).....
+>cfa-mir-1842 MI0008116 Canis familiaris miR-1842 stem-loop
+UGGCUCUGCGAGGUCAGCUCAAGGUGGGUCUGGAUAUUGAGCAGGCCUGUCAGGGCGUUG
+..((((((..(((((.((((((.((........)).)))))).)))))..))))))....
+>cfa-mir-1843 MI0008123 Canis familiaris miR-1843 stem-loop
+ACUGGAGGUCUCUGUCUGGCUUAGGACAGCUGGCUAAGUCUGAUCGUUCCCCUCCAUACA
+..((((((...(.(((.(((((((..(....).))))))).))).)....))))))....
+>cfa-mir-1844 MI0008164 Canis familiaris miR-1844 stem-loop
+AGGACUACGGACGGGCUGAGCUUUCAGGCUCCCCACAGCUCUGCCCGACUCUGGUUCGCA
+.((((((.((.(((((.(((((....((....))..))))).))))).)).))))))...
+>cfa-let-7j MI0008189 Canis familiaris let-7j stem-loop
+UGAGGUAGUAGAGUGCAGUAGUUAUAAAAGGAAUCUCUGGAGCUAGAUUGCUGUACUUCAUACCUGCU
+..(((((...(((((((((((((......((.....)).......)))))))))))))..)))))...
+>cfa-mir-20b MI0010322 Canis familiaris miR-20b stem-loop
+GUACCAAAGUGCUCACAGUGCAGGUAGUCUGGGCUUUUCUCUACUGUAGUGUGGGCACUUCCGGUAAC
+.((((.(((((((((((.(((((.(((.............)))))))).)))))))))))..))))..
+>cfa-mir-147 MI0010371 Canis familiaris miR-147 stem-loop
+ACUCUAUGAAUCUAGUGGAAACAUUGCUGCACAAACUAGAUUAUGGAUACCAGUGUGCGGAAAUGCUUCUGCUACAUUUUUAGGGC
+.(((((.((((.(((..(((.((((.(((((((..........(((...))).))))))).)))).)))..))).)))).))))).
+>cfa-mir-483 MI0010400 Canis familiaris miR-483 stem-loop
+GAGGACGGGAGGAAAGGAGGACGUGGUUUCAUGCAGGUCCUCACUCCUCCCCUCCCGUCUUCCUCUUCC
+((((((((((((...((((((.((((..((.....))..).))))))))))))))))))))).......
+>cfa-mir-578 MI0010414 Canis familiaris miR-578 stem-loop
+CCAAGUAGCUUCUUGUGCUCUAGAUUGGUGUUUUUCAUAGUGUGGAGUCAAGAAGUUGCUUUAGGGAUC
+(((((((((((((((.((((((.((((.((.....)))))).)))))))))))))))))))..))....
+>cfa-mir-589 MI0010416 Canis familiaris miR-589 stem-loop
+GGCUCUGAGAACCAUGUCUGAUCAGAGCUGGGUACUGCCUGUUCAGAACAGACACCGGUCUCUAAGACGCAG
+.(((((.((((((.((((((.((.((((.(((.....))))))).)).))))))..))).))).))).))..
+>cfa-mir-631 MI0010421 Canis familiaris miR-631 stem-loop
+CCGACCUGGCCCAGACCUCAGCCCCAUAGCUGAUGGGCUGAGUCAGGGGCCAAGGCUCCCCUCGUCCA
+..((((((((((.(((.(((((((.((.....))))))))))))..))))).))).))..........
+>cfa-mir-632 MI0010422 Canis familiaris miR-632 stem-loop
+CGCCUCCGGCCGCAGUGCCUGACGGGAGCAGAGCGGCGAACGAGGGCGUCGGCCAUUUUGUGUCUGUUUCCUGUGGGACGCGGUCGUGGCCGUUGGC
+.(((..(((((((.((((((.(((((((((((.((.((((....(((....)))..)))))))))).)))))))))).)))....)))))))..)))
+>cfa-mir-300 MI0010428 Canis familiaris miR-300 stem-loop
+GCUACUUGAAGAGAGGUUAUCCUUCGUGUGUUUGUAUGAUUGUAAUGAAUAUGCAAGGACAAGCUCUCUCCGAGGAGC
+(((.((((.((((((.((.(((((.(((((((..(.........)..)))))))))))).)).)))))).)))).)))
+>cfa-mir-665 MI0010433 Canis familiaris miR-665 stem-loop
+UCCCGCGGCCUCAGCCUCCACCCGGGGCUCUGUCCGGACCAGGAGGCUAAGGCCCCUCACGGCGGCUG
+..(((((((((.(((((((..(((((......)))))....))))))).))))).......))))...
+>cfa-mir-207 MI0010434 Canis familiaris miR-207 stem-loop
+CAGGGGCGAGGGGCUGCGGGGGGAGCGGGGCGGAGGCUGCGGCCGCUUCUCCGGUCUCUCCUCCUUCCC
+..((((.((((((..((.((((((((((.((((...))))..)))))))))).))..))))))..))))
+>cfa-mir-872 MI0010439 Canis familiaris miR-872 stem-loop
+UUGUUAGAAGGUUAUGUGUUAGCUCAAGGCUUCAUUAUUUCCUGCCUGACCUAUUGAAGUAGCCUUCUAACGG
+.((((((((((((((....(((.(((.(((.............)))))).))).....)))))))))))))).
