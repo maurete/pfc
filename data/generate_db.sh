@@ -2,8 +2,9 @@
 # -----------------------------------------------------------------------------
 # Generate database with all features (triplet, sequence, folding) for all
 # datasets. This script requires `zcat` to be found in PATH (required for
-# miRBase 20 dataset). Also required is Python 2 v2.7+ and RNAfold from the
-# Vienna RNA package.
+# miRBase 20 dataset). Also required is Python 2 v2.7+, RNAfold from the
+# Vienna RNA package, and the CD-HIT program (http://cd-hit.org) for
+# generating non-redundant data sets.
 #
 # USAGE: ./generate_db.sh
 # 
@@ -12,10 +13,19 @@
 
 # RNAfold command, replace with the right value for your system
 RNAFOLD="RNAfold -noPS"
+CDHIT="cdhit"
 
 gen_dataset () {
     zcat -f $SRC | ./tests.py rnafold_clean > work/$NAME.clean
     $RNAFOLD < work/$NAME.clean > work/$NAME.rnafold
+    mkdir -p work/$NAME
+    ./feats.py by_species work/$NAME.rnafold -o work/$NAME -c $CLS $SPECIES
+}
+
+gen_nr_dataset () {
+    zcat -f $SRC | ./tests.py rnafold_clean > work/$NAME.clean
+    $CDHIT -i work/$NAME.clean -o work/$NAME.nr
+    $RNAFOLD < work/$NAME.nr > work/$NAME.rnafold
     mkdir -p work/$NAME
     ./feats.py by_species work/$NAME.rnafold -o work/$NAME -c $CLS $SPECIES
 }
@@ -44,7 +54,7 @@ CLS="-1"
 SPECIES="-s pseudo"
 gen_dataset
 
-echo "Dataset conserved-hairpin: (pseudo?) miRNAs test set as in Triplet-SVM"
+echo "Dataset conserved-hairpin: mostly-pseudo miRNA tst set as in Triplet-SVM"
 NAME="conserved-hairpin"
 SRC="src/triplet/7_test_dataset/genome_chr19.txt"
 CLS="0"
@@ -86,13 +96,20 @@ CLS="1"
 SPECIES=""
 gen_dataset
 
+echo "Dataset mirbase20-nr: miRNAs from miRBase 20+CD-HIT"
+NAME="mirbase20-nr"
+SRC="src/mirbase/20/hairpin.fa.gz"
+CLS="1"
+SPECIES=""
+gen_nr_dataset
+
 echo "Cleaning aux files.."
 rm -f work/*.*
 
 echo "Moving directories to data/"
 rm -rf mirbase50 coding updated conserved-hairpin
 rm -rf mirbase82-nr functional-ncrna mirbase12 other-ncrna
-rm -rf mirbase20
+rm -rf mirbase20 mirbase20-nr
 
 mv -f work/* .
 

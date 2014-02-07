@@ -6,6 +6,7 @@ import re
 import sys
 import math
 import os
+import random
 
 # formato de la linea de descripcion:
 #   * comienza con un > (opcionalmente precedido de espacios
@@ -382,19 +383,23 @@ def write_fasta ( strfilein, fastafileout ):
 
 
 
-def triplet_filter_single_loop ( infile, outfile, d=0 ):
+def triplet_filter_single_loop ( infile, outfile, sample=0 ):
     """
     Lee el archivo de entrada y guarda sólo aquellas entradas
     que no contengan múltiples loops en el archivo de salida.
     Incluye las variables extra calculadas en el paper de xue
     @param infile: archivo(s) a leer
     @param outfile: archivo donde escribir la salida
-    @param d: auxiliar para recursión, debe ser cero
+    @param sample: no. máx de elems, sel. aleatoria. si <=0 => todos
     @rtype: None
     """
 
     # leo el archivo
     f = load_fasta(infile)
+
+    c = 0
+    if sample > 0:
+        f = random.shuffle(f)
 
     # para cada entrada
     for l in f:
@@ -404,6 +409,9 @@ def triplet_filter_single_loop ( infile, outfile, d=0 ):
         # si solo hay un loop
         else:
             try:
+                if sample > 0 and c >= sample:
+                    return
+
                 x = triplet_feats_extra(l[2],l[3])
 
                 if l[4]:
@@ -423,6 +431,7 @@ def triplet_filter_single_loop ( infile, outfile, d=0 ):
                 outfile.write('>' + l[0] + s + '\n' + 
                               l[2] + '\n' +
                               l[3] + '\n')
+                c = c+1
 
             except Exception as e:
                 sys.stderr.write("error found for entry {}:\n{}\n{}".format(
@@ -864,7 +873,7 @@ def features_by_species ( infile, outdir, cls = 1, force_sp_name = None,
 
 # wrapper para las funciones
 def wrap_single (obj):
-    triplet_filter_single_loop(obj.file, obj.outfile)
+    triplet_filter_single_loop(obj.file, obj.outfile, obj.number)
 
 def wrap_strtofasta (obj):
     write_fasta(obj.file, obj.outfile)
@@ -939,6 +948,11 @@ singleloop.add_argument('--outfile', '-o',
                         nargs='?',
                         default=sys.stdout,
                         help="output file to write to")
+singleloop.add_argument('--number', '-n',
+                        type=int,
+                        nargs='?',
+                        default=0,
+                        help="number of samples to write, default=0 (all)")
 
 strtofasta.add_argument('file',
                         type=argparse.FileType('r'),

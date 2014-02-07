@@ -34,7 +34,10 @@
 %
 % sfbf: texto en negrita + slanted
 %       uso:
-\newcommand{\sfbf}{\bfseries\textsf}
+\newcommand{\sfbf}[1]{\textsf{\bfseries #1}}
+%
+% small bold sans-serif
+\newcommand{\sbs}[1]{\textsf{\small\bfseries #1}}
 %
 % eng: itálica (para palabras en inglés)
 %      uso: \eng{some English text}
