@@ -13,7 +13,7 @@ function [out] = loadset( name, species, id )
 %       id: identifier to be added as last column,
 %           to be used for sample tracing
 %
-% output matrix with 69 columns:
+% output matrix with 70 columns:
 %     1-66: feature vector:
 %             1-32 - triplet features (.3)
 %            33-36 - triplet-extra features (.3x)
@@ -23,6 +23,7 @@ function [out] = loadset( name, species, id )
 %       68: index in species file (== line no.)
 %       69: index of species file in dataset (1 to M, in
 %           alphabetical order => 'aaa'=1, 'zzz'=M)
+%       70: dataset id (same as input id)
 
     % valid dataset names
     valid_names = {     'coding'; 'functional-ncrna'; 'mirbase12'; ...
