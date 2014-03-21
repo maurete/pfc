@@ -17,7 +17,7 @@ function svm_rbf_hsa
     rec.grid_refine    = 5;
     rec.initial_sigma         = exp([-15:2:15]');
     rec.initial_boxconstraint = exp([-0:2:14]);
-    
+        
     % aux functions
     pick      = @(x,n) x(randsample(size(x,1),min(size(x,1),n)),:);
     shuffle   = @(x)   x(randsample(size(x,1),size(x,1)),:);
@@ -25,34 +25,17 @@ function svm_rbf_hsa
     stshuffle = @(x)   x(strandsample(rec.random_seed,size(x,1),size(x,1)),:);
     function o=zerofill(i),o=0;if i,o=i;end,end
     
-    % load train datasets
-    real1   = loadset('mirbase20-nr','human', 0); % 1265 hsa entries
-    pseudo1 = loadset('coding','all', 1);         % 8494 hsa-only dataset
-    pseudo2 = loadset('other-ncrna','all', 2);    % 129  hsa-only dataset
-
-    % test datasets (not used for CV)
-    rec.test = struct();
-    rec.test(1).name  = 'mirbase20-other-species';
-    rec.test(1).class = 1;
-    rec.test(1).data  = loadset('mirbase20-nr','non-human', 3);
-
-    % pick random elements for training with ratio 1real:2pseudo
-    real   = stpick(real1, 1260); % 1260 real
-    pseudo = stshuffle([ stpick(pseudo1,2391); pseudo2 ]); % 2520 pseudo
+    [rec.train rec.test] = load_data( 'hsa', rec.random_seed);
     
-    % scale the data to the range [-1:1]
-    [real(:,1:66) f s] = scale_data(real(:,1:66));
-    [pseudo(:,1:66)]   = scale_data(pseudo(:,1:66),f,s);
-
-    rec.scale_f = f;
-    rec.scale_s = s;
+    real   = rec.train.real;
+    pseudo = rec.train.pseudo;
     
     % generate 10 cross-validation partitions
-    [tr_real ts_real]     = stpart(rec.random_seed, real, rec.num_partitions);
-    [tr_pseudo ts_pseudo] = stpart(rec.random_seed, pseudo, rec.num_partitions);
+    [tr_real ts_real]     = stpart(rec.random_seed, rec.train.real, rec.num_partitions);
+    [tr_pseudo ts_pseudo] = stpart(rec.random_seed, rec.train.pseudo, rec.num_partitions);
     
     fprintf('REAL %d PSEUDO %d TR+ %d TR- %d TE+ %d TE- %d\n', ...
-            size(real,1), size(pseudo,1), size(tr_real,1), ...
+            size(rec.train.real,1), size(rec.train.pseudo,1), size(tr_real,1), ...
             size(tr_pseudo,1), size(ts_real,1), size(ts_pseudo, 1))
     
     % create matlab pool
@@ -247,16 +230,14 @@ function svm_rbf_hsa
     for i=1:length(rec.test)
         rec.test(i).featset = struct();
         avgperf = [];
-        
-        scaled = scale_data(rec.test(i).data(:,1:66),rec.scale_f,rec.scale_s);
-
+                
         for f = rec.featsets
             rec.test(i).featset(f).cls_results = zeros(size(rec.test(i).data,1),rec.num_iterations); 
             rec.test(i).featset(f).performance = zeros(1,rec.num_iterations); 
         
             for t=1:rec.num_iterations
                 model = rec.gs(rec.grid_refine).raw_results{bidx,t,f,6};
-                rec.test(i).featset(f).cls_results(:,t) = round(svmclassify(model, scaled(:,fidx(f,1):fidx(f,2))));
+                rec.test(i).featset(f).cls_results(:,t) = round(svmclassify(model, rec.test(i).data(:,fidx(f,1):fidx(f,2))));
                 rec.test(i).featset(f).performance(t)     = mean( ...
                     rec.test(i).featset(f).cls_results(:,t) == rec.test(i).class);
             end
