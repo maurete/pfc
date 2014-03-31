@@ -1,0 +1,706 @@
+\documentclass[12pt,bibliography=oldstyle,DIV=12,parskip=half-,titlepage]{scrartcl}
+\include{conf/preconfig}
+\include{conf/packages}
+\include{conf/config}
+\include{conf/comandos}
+\include{conf/fuentes}
+%
+\addbibresource{res/bibliografia.bib}
+%
+\selectlanguage{spanish}
+\hyphenation{micro-RNA}
+\hyphenation{micro-RNAs}
+\hyphenation{mi-RNA}
+\hyphenation{mi-RNAs}
+%
+%
+%
+%
+\addtokomafont{descriptionlabel}{\small}
+\setkomafont{subject}{\LARGE\usekomafont{disposition}}
+\setkomafont{title}{\normalfont\slshape}
+\setkomafont{subtitle}{\LARGE\usekomafont{disposition}}
+%
+\begin{document}
+\selectlanguage{spanish}
+%
+% pagina de titulo
+%
+\titlehead{\center\large
+    Universidad Nacional del Litoral\\
+    Facultad de Ingeniería y Ciencias Hídricas
+}
+%
+%
+\title{\LARGE ``Desarrollo de un clasificador de secuencias de pre-microRNA
+  mediante técnicas de Inteligencia Computacional''}
+\subject{Proyecto Final de Carrera\\Ingeniería en
+  Informática}
+\subtitle{~\\[.2ex]Informe entregable 2\\[.2ex]~}
+\author{{Alumno: Mauro Javier Torrez}\and{Director: Dr. Diego H. Milone}}
+%
+\date{~\\[2em]\today}
+%
+\renewcommand*{\titlepagestyle}{empty}
+%\thispagestyle{empty}
+\maketitle
+\setcounter{page}{1}
+%
+%
+%
+%
+\section{Introducción}
+En este informe entregable se detalla el trabajo realizado \resalt{\ldots}
+
+Se realizaron pruebas de clasificación con clasificadores SVM y MLP,
+variando los parámetros de cada uno, para distintas configuraciones de
+datos de entrenamiento/prueba y de conjuntos de características
+utilizados.
+
+\section{Clasificadores}
+Para las pruebas se utilizaron clasificadores SVM y MLP según se
+detallan a continuación.
+%
+\subsection{SVM}
+Para el clasificador SVM se implementó un algoritmo de búsqueda de
+parámetros óptimos de tipo \eng{grid-search} \ref{ref-svm-gridsearch}
+o \emph{búsqueda en la grilla}.  Este algoritmo consiste en, a partir
+de valores iniciales para los parámetros, en cada iteración se genera
+un nuevo conjunto de valores nuevo en las cercanías de aquellos que
+obtienen el mejor rendimiento.
+
+%% \begin{algorithm}[H]
+%% %% \SetKwInput{Datos}{Datos}
+%% %% \SetKwInput{Resultado}{Resultado}
+%% %% \SetKwInput{Entrada}{Entrada}
+%% %% \SetKwInput{Salida}{Salida}
+%% %% \SetKw{KwA}{a}
+%% %% \SetKw{KwDevolver}{devolver}
+%% %% \SetKw{Devolver}{devolver}
+%% %% \SetKwBlock{Inicio}{inicio}{fin}
+%% %% \SetKwIF{SSi}{EnOtroCasoSi}{EnOtroCaso}{si}{entonces}{sin\'o, si}{sin\'o}{fin si}
+%% %% \SetKwSwitch{Seleccionar}{Caso}{Otro}{seleccionar}{hacer}{caso}{sin\'o}{fin caso}{fin seleccionar}
+%% %% \SetKwFor{Para}{para}{hacer}{fin para}
+%% %% \SetKwFor{ParaPara}{par}{hacer en paralelo}{fin para}
+%% %% \SetKwFor{EnParalelo}{para}{hacer en paralelo}{fin para}
+%% %% \SetKwFor{Mientras}{mientras}{hacer}{fin mientras}
+%% %% \SetKwFor{ParaCada}{para cada}{hacer}{fin para cada}
+%% %% \SetKwFor{ParaTodo}{para todo}{hacer}{fin para todo}
+%% %% \SetKwRepeat{Repetir}{repetir}{hasta que}
+%% \SetAlgoLined
+%% \Entrada{clasificador RBF, datos, $\sigma_0$, $C_0$, $R$}
+%% \Resultado{$\sigma_{ni},C_{nj} | G_m(\T{Se}(\sigma_{ki},C_{kj}),\T{Sp}(\sigma_{ki},C_{kj})) = \max(G_m) \forall k,i,j$}
+%% $C\leftarrow C_0$\;
+%% $sigma\leftarrow\sigma_0$\;
+%% \Para{$r\in [1,R]$}{ 
+%% \ParaCada{$C_l, \sigma_m$}{
+%% Se$_k$, Sp$_k$ $\leftarrow$ entrenar($C_l$, $\sigma_m$, datos, \ldots) \; 
+%% $G_m(k)\leftarrow\sqrt{\T{Se}_k\cdot\T{Sp}_k}$
+%% }
+%% $G_m*\leftarrow\{G_m(k):(G_m(k)-\max(Gm(k)))<\T{tolerancia}\}$
+%% }
+%% \caption{How to write algorithms}
+%% \end{algorithm}
+
+Como medida para el rendimiento se utilizó la media geométrica entre
+la sensibilidad (tasa de clasificación del conjunto de datos positivo)
+y la especificidad (tasa de clasificación del conjunto de datos negativo)
+obtenida en cada prueba.
+
+Se realizaron las pruebas con cuatro etapas de refinamiento de los parámetros,
+partiendo de una grilla logarítmicamente espaciada en $10^2$ se llega a una
+grilla refinada en $10^{0.25}$ con una progresión de $2^{(2-r)}$, con $r$ 
+el número de iteración.
+\subsubsection{Parámetros}
+En el caso del clasificador SVM con kernel de función de base radial,
+se refinaron los parametros \emph{boxconstraint} y \emph{sigma}.
+
+En el caso SVM lineal, el parámetro que se procedió a refinar es
+el \emph{boxconstraint}.
+\subsection{MLP}
+Se utilizaron clasificadores MLP con una única capa oculta, variando
+el número de neuronas en la capa oculta entre los valores extremos 5 y 25.
+
+Como función de entrenamiento del MLP se utilizó el método \emph{gradiente conjugado escalado}.
+%
+\section{Conjuntos de datos}
+Se generaron 5 configuraciones diferentes para los conjuntos de datos, 
+cada una de las cuales especifica los conjuntos de la base de datos 
+utilizados tanto para entrenamiento como para prueba.
+
+En la tabla \ref{datasetup} se detallan los conjuntos utilizados en
+cada configuración.  A continuación se describen cada una de las
+configuraciones.
+
+%
+\begin{table}[H]
+  \caption{Configuraciones de los conjuntos de datos utilizados para las pruebas}
+  \center%\sffamily
+  \begin{tabular}{llrlrrrr}\toprule
+Config. &
+Fuente             & Clase & Especies  & Total  & Train & Test  \\\midrule
+\mrow{4}{*}{HSA}
+& mirbase20        & +1    & humano    & 1265   & 1200  & 65    \\
+& coding           & -1    & humano    & 8494   & 2271  & 6223  \\
+& other-ncrna      & -1    & humano    & 129    & 129   & 0     \\
+& mirbase20        & +1    & no humano & 11805  & 0     & 11805 \\\midrule
+\mrow{4}{*}{ALL}
+& mirbase20        & +1    & todas     & 13070  & 2200  & 10870 \\
+& functional-ncrna & -1    & varias    & 2650   & 2200  & 450   \\
+& coding           & -1    & humano    & 8494   & 0     & 8494  \\
+& other-ncrna      & -1    & humano    & 129    & 0     & 129   \\\midrule
+\mrow{7}{*}{XUE}
+& mirbase50        & +1    & humano    & 193    & 163   &  30   \\
+& coding           & -1    & humano    & 8494   & 168   & 1000  \\
+& conserved-hairpin& -1?   & humano    & 2444   & 0     & 2444  \\
+& updated          & +1    & humano    & 39     & 0     &  39   \\
+& mirbase50        & +1    & no-humano & 1017   & 0     & 1017  \\
+& mirbase20        & +1    & humano    & 1265   & 0     & 1265  \\
+& mirbase20        & +1    & no-humano & 11805  & 0     & 11805 \\\midrule
+\mrow{7}{*}{NG}
+& mirbase82        & +1    & humano    & 308    & 200   & 108   \\
+& coding           & -1    & humano    & 8494   & 400   & 8094  \\
+& mirbase82        & +1    & no-humano & 1677   & 0     & 1677  \\
+& functional-ncrna & -1    & varias    & 2650   & 0     & 2650  \\
+& mirbase20        & +1    & humano    & 1265   & 0     & 1265  \\
+& mirbase20        & +1    & no-humano & 11805  & 0     & 11805 \\\midrule
+\mrow{5}{*}{BTW}
+& mirbase12        & +1    & humano    & 660    & 561   & 99    \\
+& coding           & -1    & humano    & 8494   & 1012  & 7482  \\
+& other-ncrna      & -1    & humano    & 129    & 110   & 19    \\
+& mirbase20        & +1    & humano    & 1265   & 0     & 1265  \\
+& mirbase20        & +1    & no-humano & 11805  & 0     & 11805 \\
+\bottomrule
+  \end{tabular}
+  \label{datasetup}
+\end{table}
+%
+\subsection{Configuración HSA}
+En esta configuración se utilizan para entrenamiento 1200 entradas del
+conjunto de datos positivo \sbs{mirbase20} (humano), y 2400 entradas
+de los conjuntos de datos negaivos \sbs{other-ncrna} (humano), y
+\sbs{coding} (humano).
+
+El clasificador se evalúa contra las 65 entradas restantes de humanos
+de \sbs{mirbase20}, contra otras 6223 del conjunto negativo
+\sbs{coding}, y contra las 11805 entradas de \sbs{mirbase20} que no
+pertenecen a humanos.
+%
+\subsection{Configuración ALL}
+En esta configuración se utilizan como datos de entrenamiento positivo
+2200 entradas del conjunto \sbs{mirbase20} para todas las especies,
+tomadas aleatoriamente. Como entrenamiento negativo, se utilizan 2200
+entradas del conjunto \sbs{functional-ncrna}, que contiene ncRNAs
+funcionales (exceptuando pre-miRNAs) para todas las especies.
+
+El clasificador de prueba contra las 10870 entradas restantes de
+\sbs{mirbase20}, discriminando entre entradas de humano/no-humano,
+contra las 450 entradas de \sbs{functional-ncrna} no utilizadas para
+entrenamiento, y contra las bases de datos negativas \sbs{coding}
+(humano) y \sbs{other-ncrna} (humano).
+%
+\subsection{Configuración XUE}
+En esta configuración se replican los conjuntos de entrenamiento y
+prueba utilizados en \cite{xue}: entrenamiento con 163 entradas de
+humanos de \sbs{mirbase50} y 168 de \sbs{coding}, y prueba contra
+\sbs{mirbase50} (30 entradas de humanos, 1017 otras especies),
+\sbs{coding} (1000 entradas de humanos), \sbs{conserved-hairpin} (2444
+entradas de humanos) y \sbs{updated} (39 entradas humanos).
+
+Se prueba además el clasificador contra la base de datos positiva
+\sbs{mirbase20} discriminando entre entradas pertenecientes a humanos
+y a otras especies.
+%
+\subsection{Configuración NG}
+En esta configuración se replican los conjuntos de datos utilizados en
+\cite{ng}.  Para entrenamiento se utilizan 200 entradas del conjunto
+positivo \sbs{mirbase82} y 400 del conjunto negativo \sbs{coding}.
+
+Se prueba el clasificador con las 108 entradas de humanos restantes de
+\sbs{mirbase82}, 8094 de \sbs{coding}, 1677 entradas de
+\sbs{mirbase82} pertenecientes a otras especies, 2650 entradas
+negativas del conjunto \sbs{functional-ncrna}, además de las 13070
+entradas del conjunto positivo \sbs{mirbase20} discriminando entre
+humano y otras especies.
+%
+\subsection{Configuración BTW}
+Se entrena utilizando los conjuntos de datos utilizados en
+\cite{batuwita}, tomando como conjunto positivo el 85\% (561) de las
+entradas de humanos disponibles en \sbs{mirbase12}, y como conjunto de
+datos negativos se toman 1122 entradas de los conjuntos \sbs{coding}
+(1012) y \sbs{other-ncrna} (110).
+
+Se prueba el clasificador con las entradas restantes de los conjuntos
+utilizados para entrenamiento: \sbs{mirbase12} (99), \sbs{coding}
+(7482) y \sbs{other-ncrna} (19), además de las 13070 disponibles en
+\sbs{mirbase20} discriminando entre humano y no-humano.
+%
+
+
+\section{Conjuntos de características}
+Considerando los conjuntos de características definidos en la etapa anterior,
+se probaron 15 configuraciones diferentes que abarcan todas las combinaciones
+posibles. La composición de cada configuración se muestra en la Tabla
+\ref{featsets}, marcando con un asterisco (*) el conjunto incluido en la respectiva configuración.
+
+\begin{table}[H]
+  \caption{Configuraciones de prueba para las características.}
+  \center%\sffamily
+  \begin{tabular}{lccccccccccccccc}\toprule
+Características / Configuración & 1& 2& 3& 4& 5& 6& 7& 8& 9&10&11&12&13&14&15\\
+\midrule
+Tripletes                       & *& *&  &  &  & *& *&  & *&  &  &  & *& *& *\\
+Tripletes ``extra''             & *&  & *&  &  & *& *&  & *& *& *& *&  &  &  \\
+Medidas de la secuencia         & *&  &  & *&  &  &  & *& *& *&  & *&  & *& *\\
+Medidas estructura secundaria   & *&  &  &  & *&  & *& *&  & *& *&  & *&  & *\\
+\bottomrule
+  \end{tabular}
+  \label{featsets}
+\end{table}
+
+
+\section{Pruebas de clasificación}
+
+Las pruebas de clasificación se realizaron con los tres
+clasificadores, para todas las combinaciones de configuraciones de los
+conjuntos de datos y de los conjuntos de características.
+
+Para cada cada prueba, el conjunto de datos de entrenamiento se
+particionó en 5, 80\% entrenamiento y 20\% prueba (validación
+cruzada), tal que cada conjunto de prueba no contenga entradas en
+común con los otros 4. Se repitió el entrenamiento/validación cruzada
+para las 5 particiones, y el resultado de la prueba se consideró como
+la media aritmética de los 5 resultados obtenidos.
+
+
+\end{document}
+
+
+\subsubsection{Características de tripletes}
+Vector de 32 elementos de tripletes, calculado según \cite{xue}.
+Considerando la región del tallo, contiene el número de ocurrencias
+del elemento triplete correspondiente, normalizado entre el número
+total de ocurrencias.  El orden es el siguiente: \mono{A..., A..(,
+  A.(., A.((, A(.., A(.(, A((., A(((, G..., G..(, G.(., G.((, G(..,
+  G(.(, G((., G(((, C..., C..(, C.(., C.((, C(.., C(.(, C((., C(((,
+  U..., U..(, U.(., U.((, U(.., U(.(, U((., U(((}.
+%
+\subsubsection{Características de tripletes ``extra''}
+Características auxiliares que se obtienen
+al calcular el vector de tripletes.
+\begin{description}[style=sameline,leftmargin=3cm]
+\item[length3] longitud de la secuencia considerada al
+  extraer los elementos de triplete (número de bases que
+  conforman el tallo de la estructura de horquilla).
+\item[basepairs] número de pares de bases en
+  el pre-miRNA.
+\item[{length3/basepairs}] grado de complementariedad
+  entre los dos brazos de la estructura de horquilla. Para una
+  complementariedad perfecta se da el valor mínimo de 2, aumentando cuanto más
+  bases ``sueltas'' contenga el tallo.
+\item[gc\_content] $=(\T{cant(\mono{G})}+\T{cant(\mono{C})})/\mono{length3}$. Proporción de nucleótidos \mono{G} y
+  \mono{C} en el tallo.
+\end{description}
+%
+\subsubsection{Medidas de la secuencia}
+%Este grupo contiene las siguientes medidas de la secuencia del pre-miRNA:
+\begin{description}[style=sameline,leftmargin=3cm]
+\item[length] longitud del pre-miRNA, incluyendo extremos sueltos y el
+  bucle central.
+\item[A, C, G, U] (x4) número de nucleótidos \mono{A}, \mono{C},
+  \mono{G} y \mono{U}, respectivamente.
+\item[G+C, A+U] (x2) número de nucleótidos \mono{G} y \mono{C}, y
+  \mono{A} y \mono{U} respectivamente.
+\item[XY] (x16) número de dinucleótidos (dos nucleótidos contiguos)
+  \mono{XY}, con $\mono{X,Y}\in\{\mono{A,C,G,U}\}$. El orden es el
+  siguiente: \mono{AC, AG, AU, CA, CC, CG, CU, GA, GC, GG, GU, UA, UC,
+    UG, UU}.
+\end{description}
+%
+\subsubsection{Medidas de la estructura secundaria}
+%En este grupo se presentan las siguientes características relativas al
+%plegado del pre-miRNA en su estructura de horquilla:
+\begin{description}[style=sameline,leftmargin=3cm]
+\item[MFE] Mínima Energía Libre obtenida al plegar la secuencia con
+  \mono{RNAfold}.
+\item[MFEI1] $={\mono{MFE}}/{(\mono{G+C})\cdot 100}$, con \mono{G+C}
+  de las medidas de secuencia.
+\item[MFEI4] $=\mono{MFE}/\mono{basepairs}$ con \mono{basepairs} de
+  las características de triplete extra.
+\item[dP] \mono{basepairs} normalizada con la longitud total
+  \mono{length}.
+\item[|A-U|/length] número de pares \mono{A-U} normalizado.
+\item[|G-C|/length] número de pares \mono{G-C} normalizado.
+\item[|G-U|/length] número de pares \mono{G-U} normalizado.
+\end{description}
+
+
+Para el entrenamiento y validación 
+
+
+En la fase de pruebas se trabajará con dos conjuntos de datos diferentesgenerados a
+partir 
+
+
+
+Para las pruebas a realizar en esta etapa se procederá a la generación
+de un conjunto de datos propio, a partir del conjunto de datos \sbs{mirbase20}
+habiendo aplicado el algoritmo de \emph{clustering} \emph{CD-HIT}\resalt{ref},
+y como conjuntos de datos negativos se utilizarán elementos de los conjuntos 
+\sbs{coding, functional-ncrna, other-ncrna}.
+
+\subsection*{Clasificadores}
+
+svm -- grid search
+
+mlp
+\subsection*{Características}
+todas las feats, discriminadas por clase
+\subsection*{Configuración de las pruebas}
+svm - grid search
+mlp - no. de neuronas capa oculta
+libsvm?
+libfann?
+\subsubsection*{XUE}
+training, test
+\subsubsection*{NG}
+training,test
+\subsubsection*{BTW}
+
+training, test
+\subsubsection*{OWN}
+training, test
+
+\subsection*{Resultados}
+
+%\% aciertos
+
+tiempos
+
+Los clasificadores se entrenaron con el mismo conjunto de datos de
+\cite{xue}, y se probaron con los conjuntos de prueba \emph{Real} (30
+elementos), \emph{Pseudo} (1000 elementos) y \emph{Updated} (39
+elementos), también de la misma fuente.
+
+En el caso de SVM-Matlab y MLP, se probaron diversos parámetros hasta
+encontrar aquellos que obtienen el mejor rendimiento del clasificador.
+En la tabla \ref{testresults} se presentan figuras de rendimiento para
+los distintos clasificadores. %En el caso de SVM-Matlab se muestran
+%tres resultados representativos correspondientes a diferentes
+%parámetros. 
+En el caso MLP, se encontró que los resultados no varían
+significativamente para distintas configuraciones, con diferencias
+menores a 3\% en cada caso.  Se muestran entonces para MLP tasas
+representativas.
+%
+\begin{table}
+  \caption{Resultados de las pruebas iniciales de clasificación}
+  \center%\sffamily
+  \begin{tabular}{lrrr}\toprule
+    Clasificador  & \% Real (/30) &
+                     \% Pseudo (/1000) & \% Updated (/39) \\\midrule
+    Triplet-SVM   &  $93.3$    & $88.1$     & $92.3$     \\
+    SVM (libSVM)  & $100.0$    & $87.4$     & $92.3$     \\
+    SVM (Matlab)  & $100.0$    & $91.2$     & $89.7$     \\
+    %% svm (matlab,2) & $96.7$     & $96.6$     & $48.7$     \\
+    %% svm (matlab,3) & $100.0$    & $86.4$     & $97.4$     \\
+    MLP           &  $90.0$    & $85.0$     & $91.0$  \\\bottomrule
+  \end{tabular}
+  \label{testresults}
+\end{table}
+%
+
+Como se puede observar en la tabla \ref{testresults}, las tasas de
+clasificación para los distintos conjuntos resultan satisfactorias, e
+incluso sensiblemente mejores a aquellas del trabajo original.  Sin
+embargo, estos números deberán tomarse con cuidado, ya que han sido
+obtenidos entrenando y validando con particiones estáticas, y podrían
+ser resultado de un sobreentrenamiento para estos datos en
+particular. Se observa también que el perceptrón multicapa presenta
+una buena tasa de clasificación incluso cuando se trata de una única
+neurona (sin capas ocultas), siempre para este mismo conjunto de
+datos.
+
+Se ha implementado el script \mono{triplet\_libsvm.sh} para las
+pruebas con \emph{libsvm}, y los scripts \mono{triplet\_svm.m} y
+\mono{triplet\_mlp.m} para las pruebas en Matlab de los clasificadores
+SVM y MLP respectivamente. Con el software apropiado, estos scripts
+se pueden ejecutar directamente para reproducir los resultados de las
+pruebas.
+
+%
+%
+%
+%
+%
+\section{Armado de la base de datos definitiva}
+Para el armado de la base de datos definitiva se tomaron como fuente
+los conjuntos de datos y características utilizados en \cite{xue},
+\cite{ng} y \cite{batuwita}. Se incorporó al conjunto de datos
+la última versión disponible de miRBase \cite{mirbase}.
+
+Como primer paso se procedió a validar el plegado de las secuencias en
+las bases de datos originales aplicando el programa RNAfold sobre las
+mismas y comprobando que el plegado obtenido fuera el mismo que el
+presente en la base de datos original. Se utilizó la versión 1.8.5 de
+RNAfold, ya que con la versión actual (2.1) se obtienen plegados
+diferentes en la mayoría de los casos.
+
+Una vez validadas las estructuras secundarias se procedió a filtrar
+aquellas entradas con bucles múltiples en la estructura secundaria, ya
+que las características de triplete no están definidas en estos casos.
+De esta manera se eliminó la base de datos ``mRNA'' de \cite{ng} por
+completo, ya que todas las entradas en este caso poseen bucles
+múltiples.
+
+Luego se procedió a la ectracción y validación de características
+extraídas contra las bases de datos respectivas: las características
+de triplete y triplete-extra contra la base de datos de \cite{xue},
+las características de la secuencia contra la base de \cite{ng}, y las
+de estructura secundaria con la base de datos en \cite{batuwita}.
+
+Además de las características calculadas, se incorporan a la base de
+datos los datos de la secuencia y estructura secundaria en formato
+compatible RNAfold, junto con otro archivo donde se indica la clase
+(pre-miRNA real, pseudo-pre-miRNA o indefinido) de cada entrada
+correspondiente.  En el archivo \mono{README.md} de la base de datos
+se detalla la estructura de directorios generada junto con el formato
+de los archivos para cada caso.
+
+Se codificó la herramienta \mono{feats.py} a partir de la utilidad
+\mono{fautil.py}, para la extracción de características de archivos
+con formato RNAfold. Se ignoraron aquellas características que no se
+pueden calcular directamente con la información de la secuencia y de
+la estructura secundaria.
+
+Se codificó la herramienta \mono{tests.py} para la validación, así
+como los scripts en Bash \mono{validate.sh} y \mono{generate\_db.sh},
+los que pueden ser ejecutados directamente, siempre con el software
+requerido, para validar y regenerar la misma base de datos a partir de
+las fuentes.
+%
+\subsection{Características extraídas}
+%
+A continuación se enumeran las características disponibles en la base
+de datos definitiva.
+%
+\subsubsection{Características de tripletes}
+Vector de 32 elementos de tripletes, calculado según \cite{xue}.
+Considerando la región del tallo, contiene el número de ocurrencias
+del elemento triplete correspondiente, normalizado entre el número
+total de ocurrencias.  El orden es el siguiente: \mono{A..., A..(,
+  A.(., A.((, A(.., A(.(, A((., A(((, G..., G..(, G.(., G.((, G(..,
+  G(.(, G((., G(((, C..., C..(, C.(., C.((, C(.., C(.(, C((., C(((,
+  U..., U..(, U.(., U.((, U(.., U(.(, U((., U(((}.
+%
+\subsubsection{Características de tripletes ``extra''}
+Características auxiliares que se obtienen
+al calcular el vector de tripletes.
+\begin{description}[style=sameline,leftmargin=3cm]
+\item[length3] longitud de la secuencia considerada al
+  extraer los elementos de triplete (número de bases que
+  conforman el tallo de la estructura de horquilla).
+\item[basepairs] número de pares de bases en
+  el pre-miRNA.
+\item[{length3/basepairs}] grado de complementariedad
+  entre los dos brazos de la estructura de horquilla. Para una
+  complementariedad perfecta se da el valor mínimo de 2, aumentando cuanto más
+  bases ``sueltas'' contenga el tallo.
+\item[gc\_content] $=(\T{cant(\mono{G})}+\T{cant(\mono{C})})/\mono{length3}$. Proporción de nucleótidos \mono{G} y
+  \mono{C} en el tallo.
+\end{description}
+%
+\subsubsection{Medidas de la secuencia}
+%Este grupo contiene las siguientes medidas de la secuencia del pre-miRNA:
+\begin{description}[style=sameline,leftmargin=3cm]
+\item[length] longitud del pre-miRNA, incluyendo extremos sueltos y el
+  bucle central.
+\item[A, C, G, U] (x4) número de nucleótidos \mono{A}, \mono{C},
+  \mono{G} y \mono{U}, respectivamente.
+\item[G+C, A+U] (x2) número de nucleótidos \mono{G} y \mono{C}, y
+  \mono{A} y \mono{U} respectivamente.
+\item[XY] (x16) número de dinucleótidos (dos nucleótidos contiguos)
+  \mono{XY}, con $\mono{X,Y}\in\{\mono{A,C,G,U}\}$. El orden es el
+  siguiente: \mono{AC, AG, AU, CA, CC, CG, CU, GA, GC, GG, GU, UA, UC,
+    UG, UU}.
+\end{description}
+%
+\subsubsection{Medidas de la estructura secundaria}
+%En este grupo se presentan las siguientes características relativas al
+%plegado del pre-miRNA en su estructura de horquilla:
+\begin{description}[style=sameline,leftmargin=3cm]
+\item[MFE] Mínima Energía Libre obtenida al plegar la secuencia con
+  \mono{RNAfold}.
+\item[MFEI1] $={\mono{MFE}}/{(\mono{G+C})\cdot 100}$, con \mono{G+C}
+  de las medidas de secuencia.
+\item[MFEI4] $=\mono{MFE}/\mono{basepairs}$ con \mono{basepairs} de
+  las características de triplete extra.
+\item[dP] \mono{basepairs} normalizada con la longitud total
+  \mono{length}.
+\item[|A-U|/length] número de pares \mono{A-U} normalizado.
+\item[|G-C|/length] número de pares \mono{G-C} normalizado.
+\item[|G-U|/length] número de pares \mono{G-U} normalizado.
+\end{description}
+%
+\subsection{Conjuntos de datos}
+A continuación se listan los conjuntos de datos obtenidos en el armado
+de la base de datos.
+\begin{description}
+\item[mirbase50] de \cite{xue}, contiene 1210 pre-miRNAs reales para
+  diferentes especies, entre ellas 193 humanos, 112 de gallina, 207 de
+  ratón, 172 de rata y 96 de arroz.
+\item[updated] de \cite{xue}, contiene 39 pre-miRNAs humanos.
+\item[coding] de \cite{xue}, contiene 8494 pseudo pre-miRNAs humanos.
+\item[conserved-hairpin] de \cite{xue}, contiene 2444 pseudo
+  pre-miRNAs humanos, aunque se conoce que algunos de ellos son
+  pre-miRNAs reales. Se establece la clase para estas entradas como
+  indeterminada, representada por el valor ambiguo 0.
+\item[mirbase82-nr] de \cite{ng}, contiene 1985 pre-miRNAs de miRBase
+  8.2 filtrados a 90\% de similaridad, para 40 especies incluyendo
+  vertebrados, plantas y virus.
+\item[functional-ncrna] de \cite{ng}, contiene 2657 ncRNAs
+  funcionales, excepto pre-miRNAs, para varias
+  especies.\item[mirbase12] de \cite{batuwita}, contiene 660
+  pre-miRNAs humanos no redundantes originalmente de miRBase 12.0.
+\item[other-ncrna] de \cite{batuwita}, contiene 129 ncRNAs humanos que
+  no son pre-miRNAs.
+\item[mirbase20] de \cite{mirbase}, incorpora 21433 pre-miRNAs reales
+  que no tienen bucles múltiples de miRBase 20, para 204 especies,
+  entre ellos 1801 humanos, 1121 de ratón, 423 de rata y 392 de arroz.
+\end{description}
+%
+%
+\renewcommand{\bibfont}{\normalfont\footnotesize}
+\printbibliography
+%
+\end{document}
+
+
+
+%% Batuwita et al.: microPred
+%% 1. datos disponibles sin plegar, pero con las features calculadas
+%% 2. dataset positivo: 695 pre-miRNAs hsa (mirBase 12)
+%% 3. datasets negativos:
+%% 1. CODING de Xue (8494)
+%% 2. otros ncRNAs hsa: 754 (695 con secstruct multi-branched)
+%% 1. features (48):
+%% 1. 29 idem miPred
+%% 2. 2 MFE-related
+%% 3. 4 RNAfold-related
+%% 4. 6 Mfold-related
+%% 5. 7 calculadas con scripts propios
+
+
+
+%% Sewer et al.: Mir-abela
+%% 1. extrae candidatos de miRNAs usando sliding windows en las regiones del genoma que se sabe hay miRNAs
+%% 2. especies: human, mouse, rat
+%% 3. algunas features “calculables”:
+%% 1. energía
+%% 2. long del stem simple más largo
+%% 3. long del loop del hairpin
+%% 4. proporción de nt A/C/G/U en el stem
+%% 5. proporción de pares A-U/C-G/G-U en el stem
+%% 1. no hay datos de entrenamiento
+
+
+
+
+
+%% Hertel & Stadler: RNAmicro
+%% 1. no hay datos
+%% 2. features sacables:
+%% 1. long stem
+%% 2. long loop
+%% 3. G+C
+
+%% Helvik et al.: Microprocessor SVM
+%% 1. no hay datos
+%% 2. valida con 332 miRNAs hsa (miRBase 8.0) + 130 miRNAs (miRBase 8.1)
+%% 3. plega con RNAfold default
+%% 4. muchas features
+
+%% Yousef et al.: BayesmiRNAfind
+%% 1. no hay datos (dice que estan como supplementary data pero en Bioinformatics no están, tampoco en el sitio bioinfo.wistar.upenn.edu)
+%% 2. dataset positivo: no queda claro de dónde lo sacó (pasando un sliding window por las regiones candidatas? de mirbase?)
+%% 3. dataset negativo: 190739 no-miRNAs sacados aleatoriamente de las 3’UTR de mRNAs humanos.
+
+%% Nam et al: ProMiR
+%% 1. no hay datos, solo disponible el dataset positivo, sin plegar, en http://rfam.sanger.ac.uk
+%% 2. no usa “features”, sino estados de transición en la secuencia para entrenar un clasificador HMM
+%% Jiang et al.: MiPred
+%% 1. dataset positivo: mirna registry database, release 8.2
+%% 2. dataset negativo: CODING de Xue
+%% 3. features(34): Xue + MFE + P-value
+%% 4. disponible: 163 hsa (+), 168 random (-), sin plegar, sin características extraídas. Aparentemente idem Xue.
+
+
+
+%% Huang et al.: MiRFinder
+%% 1. datos no tan disponibles (train sin etiquetar, sólo vectores libsvm, test sólo secuencias, sin features) 
+%% 2. features (18):
+%% 1. 1: Minimum Free Energy
+%% 2. 2: The difference of the MFE of the sequence pair
+%% 3. 3: The difference of the structure of the sequence pair
+%% 4. 4–7: Base pairing and other properties of the 22 mer hypothesized mature miRNA
+%% 5. 8: The mutation frequency of the sequence segment pair
+%% 6. 9–18: The frequency of the 10 possible secondary structure elements (combinations of 2 adjacent characters) in the pseudo code of stem region (represented by the new syntax)
+%% 1. training (+): vectores libSVM sin etiquetar: mirBase 8.2 human, mouse, pig, cattle, dog, sheep
+%% 2. training (-): sequence segments extracted from UCSC genome pair-wise alignments (human, mouse)
+%% Lim et al.: mirCheck/mirScan
+%% 1. no hay datos
+%% 2. especies: C. elegans
+%% 3. features:
+%% 1. base pairing of the miRNA portion of the fold-back
+%% 2. base pairing of the rest of the fold-back
+%% 3. stringent sequence conservation in the 5Ј half of the miRNA
+%% 4. slightly less stringent sequence conservation in the 3Ј half of the miRNA
+%% 5.  sequence biases in the first five bases of the miRNA (especially a U at the first position)
+%% 6. a tendency toward having symmetric rather than asymmetric internal loops and bulges in the miRNA region
+%% 7. and the presence of two to nine consensus base pairs between the miRNA and the terminal loop region, with a preference for 4–6 bp.
+%% Gkirtzou et al: MatureBayes
+%% 1. datos no disponibles
+%% 2. conjunto train:
+%% 1. 533 hsa, 422 rno de mirBase 10.0
+%% 1. test:
+%% 1. entradas nuevas de hsa, rno en mirBase 11.0-14.0
+%% 2. especies dme, zebrafish en mirBase 14
+%% 1. no se usan features útiles para un clasificador svm
+%% Lai et al.: MiRSeeker
+%% 1. no hay datos
+%% 2. scope del paper distinto al nuestro
+%% Ding et al.: MiRenSVM
+%% 1. training:
+%% 1. (+) 692 hsa, 52 aga de mirBase 12.0
+%% 2. (-) 9225 hsa, 92 aga de UTRdb release 22.0 (long 70-150nt)
+%% 3. (-) 754 ncRNAs hsa usados en microPred
+%% 4. (-) 256 ncRNAs aga de Rfam 9.1 (<150nt)
+%% 1. test:
+%% 1. (+) 14 hsa, 14 aga nuevos en mirBase 13.0
+%% 2. (+) 5328 pre-miRNAs de otras 27 especies
+%% 3. (-) ??? aparentemente parte de los de UTRdb en train (usa sólo 5428 para entrenar)
+%% 1. datos no disponibles, aunque se pueden armar los datasets a mano (secuencias disponibles, hace falta plegar, armar conjuntos train/test)
+%% 2. features de miPred + features de microPred
+%% miPredGA
+%% 1. train:
+%% 1. (+) idem microPred
+%% 2. (-) idem microPred (CODING de Xue + 754 ncRNAs)
+%% 1. test:
+%% 1. separa del dataset de train
+%% 1. features:
+%% 1. idem microPred, rankeadas según libSVM
+%% 1. datos disponibles de microPred. no aporta nada nuevo en lo que hace los datos. 
+%% Sheng et al.: mirCos
+%% 1. no sirve
+%% Xu et al.: miRank
+%% 1. features:
+%% 1. 1 MFE normalizada
+%% 2. 2 base pairing propensity normalizada (1para c/brazo)
+%% 3. 1 long del loop normalizada
+%% 4. 32 triplets como Xue
+%% 1. train:
+%% 1. (+) 533 hsa, 38 aga de mirBase 1/9/2007
+%% 2. (-) 1000 hsa, 20000+ aga obtenidos escaneando el genoma con ventanas de 90nt y filtrando por caracts. de plegado
+%% 1. test: no especificado
+%% 2. datos disponibles: sólo hsa, formato svm, sin info de secuencia/estructura secundaria
+
