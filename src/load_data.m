@@ -1,5 +1,10 @@
-function [ tr ts ] = load_data ( id, seed )
+function [ tr ts ] = load_data ( id, seed, symmetric )
 
+    scalefun = @scale_data;
+    if nargin > 2 && symmetric
+        scalefun = @scale_sym;
+    end
+    
     pick      = @(x,n) x(randsample(size(x,1),min(size(x,1),n)),:);
     shuffle   = @(x)   x(randsample(size(x,1),size(x,1)),:);
     stpick    = @(x,n) x(strandsample(seed,size(x,1),min(size(x,1),n)),:);
@@ -22,8 +27,8 @@ function [ tr ts ] = load_data ( id, seed )
         pseudo = stshuffle([ coding(1:2271,:); pseudo2 ]); % 2400 pseudo
 
         % scale the data to the range [-1:1]
-        [real(:,1:66) f s] = scale_data(real(:,1:66));
-        [pseudo(:,1:66)]   = scale_data(pseudo(:,1:66),f,s);
+        [real(:,1:66) f s] = scalefun(real(:,1:66));
+        [pseudo(:,1:66)]   = scalefun(pseudo(:,1:66),f,s);
 
         tr.real = real;
         tr.pseudo = pseudo;
@@ -35,19 +40,19 @@ function [ tr ts ] = load_data ( id, seed )
         ts(1).name   = 'mirbase20-other-species';
         ts(1).class  = 1;
         data         = loadset('mirbase20-nr','non-human', 3);
-        data(:,1:66) = scale_data(data(:,1:66),f,s);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(1).data   = data;
 
         ts(2).name   = 'mirbase20-human-notrain';
         ts(2).class  = 1;
         data         = real0(1201:end,:);
-        data(:,1:66) = scale_data(data(:,1:66),f,s);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(2).data   = data;
 
         ts(3).name   = 'coding-human-notrain';
         ts(3).class  = -1;
         data         = coding(2272:end,:);
-        data(:,1:66) = scale_data(data(:,1:66),f,s);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(3).data   = data;
         
     elseif strcmpi(id,'all')
@@ -61,8 +66,8 @@ function [ tr ts ] = load_data ( id, seed )
         %stshuffle([ pseudo1(1:2200,:); pseudo2(1:2200,:) ]); % 4400 pseudo
 
         % scale the data to the range [-1:1]
-        [real(:,1:66) f s] = scale_data(real(:,1:66));
-        [pseudo(:,1:66)]   = scale_data(pseudo(:,1:66),f,s);
+        [real(:,1:66) f s] = scalefun(real(:,1:66));
+        [pseudo(:,1:66)]   = scalefun(pseudo(:,1:66),f,s);
 
         tr.real = real;
         tr.pseudo = pseudo;
@@ -76,7 +81,7 @@ function [ tr ts ] = load_data ( id, seed )
         data         = real1( 2201:end,:);
         data         = data(find(real1(2201:end,69)==97),:);
         %data(:,70)   = 3*ones(size(data,1),1);
-        data(:,1:66) = scale_data(data(:,1:66),f,s);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(1).data   = data;
 
         ts(2).name   = 'mirbase20-nonhuman-notrain';
@@ -84,23 +89,30 @@ function [ tr ts ] = load_data ( id, seed )
         data         = real1( 2201:end,:);
         data         = data(find(real1(2201:end,69)~=97),:);
         %data(:,70)   = 4*ones(size(data,1),1);
-        data(:,1:66) = scale_data(data(:,1:66),f,s);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(2).data   = data;
     
         ts(3).name   = 'coding-human';
         ts(3).class  = -1;
         data         = pseudo2;
         %data(:,70)   = 5*ones(size(data,1),1);
-        data(:,1:66) = scale_data(data(:,1:66),f,s);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(3).data   = data;
     
-        ts(3).name   = 'functional-ncrna-human-notrain';
-        ts(3).class  = -1;
+        ts(4).name   = 'functional-ncrna-human-notrain';
+        ts(4).class  = -1;
         data         = pseudo1(2201:end,:);
         %data(:,70)   = 5*ones(size(data,1),1);
-        data(:,1:66) = scale_data(data(:,1:66),f,s);
-        ts(3).data   = data;
-    
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
+        ts(4).data   = data;
+ 
+        ts(5).name   = 'other-ncrna-human';
+        ts(5).class  = -1;
+        data         = loadset('other-ncrna', 'all', 55);;
+        %data(:,70)   = 5*ones(size(data,1),1);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
+        ts(5).data   = data;
+     
     elseif strcmpi(id,'xue')
 
         real1   = loadset('mirbase50', 'human', 0);         % 193  hsa
@@ -116,8 +128,8 @@ function [ tr ts ] = load_data ( id, seed )
         pseudo = pseudo0(1:168,:); % 168 pseudo
 
         % scale the data to the range [-1:1]
-        [real(:,1:66) f s] = scale_data(real(:,1:66));
-        [pseudo(:,1:66)]   = scale_data(pseudo(:,1:66),f,s);
+        [real(:,1:66) f s] = scalefun(real(:,1:66));
+        [pseudo(:,1:66)]   = scalefun(pseudo(:,1:66),f,s);
 
         tr.real   = real;
         tr.pseudo = pseudo;
@@ -129,33 +141,46 @@ function [ tr ts ] = load_data ( id, seed )
         ts(1).name   = 'mirbase50-human-notrain';
         ts(1).class  = 1;
         data         = real0( 164:end,:);
-        data(:,1:66) = scale_data(data(:,1:66),f,s);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(1).data   = data;
 
         ts(2).name   = 'mirbase50-nonhuman-notrain';
         ts(2).class  = 1;
         data         = real2;
-        data(:,1:66) = scale_data(data(:,1:66),f,s);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(2).data   = data;
     
         ts(3).name   = 'updated-human-notrain';
         ts(3).class  = 1;
         data         = real3;
-        data(:,1:66) = scale_data(data(:,1:66),f,s);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(3).data   = data;
 
         ts(4).name   = 'coding-human-notrain';
         ts(4).class  = -1;
         data         = stpick(pseudo0(169:end,:),1000);
-        data(:,1:66) = scale_data(data(:,1:66),f,s);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(4).data   = data;
 
         ts(5).name   = 'conserved-hairpin-human-notrain';
         ts(5).class  = -1;
         data         = pseudo2;
-        data(:,1:66) = scale_data(data(:,1:66),f,s);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(5).data   = data;
-    
+
+        ts(6).name   = 'mirbase20-human';
+        ts(6).class  = 1;
+        data         = loadset('mirbase20-nr','human',6);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
+        ts(6).data   = data;
+
+        ts(7).name   = 'mirbase20-non-human';
+        ts(7).class  = 1;
+        data         = loadset('mirbase20-nr','non-human',7);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
+        ts(7).data   = data;
+
+        
     elseif strcmpi(id,'ng')
 
         real1   = loadset('mirbase82-nr', 'human', 0);       % ???  hsa
@@ -170,8 +195,8 @@ function [ tr ts ] = load_data ( id, seed )
         pseudo = pseudo0(1:400,:); % 400 pseudo
 
         % scale the data to the range [-1:1]
-        [real(:,1:66) f s] = scale_data(real(:,1:66));
-        [pseudo(:,1:66)]   = scale_data(pseudo(:,1:66),f,s);
+        [real(:,1:66) f s] = scalefun(real(:,1:66));
+        [pseudo(:,1:66)]   = scalefun(pseudo(:,1:66),f,s);
 
         tr.real   = real;
         tr.pseudo = pseudo;
@@ -183,27 +208,39 @@ function [ tr ts ] = load_data ( id, seed )
         ts(1).name   = 'mirbase82-human-notrain';
         ts(1).class  = 1;
         data         = real0( 201:end,:);
-        data(:,1:66) = scale_data(data(:,1:66),f,s);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(1).data   = data;
 
         ts(2).name   = 'mirbase82-nonhuman-notrain';
         ts(2).class  = 1;
         data         = real2;
-        data(:,1:66) = scale_data(data(:,1:66),f,s);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(2).data   = data;
     
         ts(3).name   = 'coding-human-notrain';
         ts(3).class  = -1;
         data         = pseudo0(401:end,:); % original = 246 + 3836
-        data(:,1:66) = scale_data(data(:,1:66),f,s);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(3).data   = data;
 
         ts(4).name   = 'functional-ncrna-allsp-notrain';
         ts(4).class  = -1;
         data         = pseudo2;
-        data(:,1:66) = scale_data(data(:,1:66),f,s);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(4).data   = data;
 
+        ts(5).name   = 'mirbase20-human';
+        ts(5).class  = 1;
+        data         = loadset('mirbase20-nr','human',6);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
+        ts(5).data   = data;
+
+        ts(6).name   = 'mirbase20-non-human';
+        ts(6).class  = 1;
+        data         = loadset('mirbase20-nr','non-human',7);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
+        ts(6).data   = data;
+        
     elseif strcmpi(id,'batuwita')
 
         real1   =           loadset('mirbase12', 'human', 0);       % ???  hsa
@@ -221,8 +258,8 @@ function [ tr ts ] = load_data ( id, seed )
         pseudo = stshuffle([pseudo1(1:1012,:);pseudo2(1:110,:)]); % 1122 pseudo
 
         % scale the data to the range [-1:1]
-        [real(:,1:66) f s] = scale_data(real(:,1:66));
-        [pseudo(:,1:66)]   = scale_data(pseudo(:,1:66),f,s);
+        [real(:,1:66) f s] = scalefun(real(:,1:66));
+        [pseudo(:,1:66)]   = scalefun(pseudo(:,1:66),f,s);
 
         tr.real   = real;
         tr.pseudo = pseudo;
@@ -234,26 +271,38 @@ function [ tr ts ] = load_data ( id, seed )
         ts(1).name   = 'mirbase12-human-notrain';
         ts(1).class  = 1;
         data         = real0( 562:end,:);
-        data(:,1:66) = scale_data(data(:,1:66),f,s);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(1).data   = data;
 
         % ts(2).name   = 'mirbase12-nonhuman-notrain';
         % ts(2).class  = 1;
         % data         = real2;
-        % data(:,1:66) = scale_data(data(:,1:66),f,s);
+        % data(:,1:66) = scalefun(data(:,1:66),f,s);
         % ts(2).data   = data;
     
         ts(3).name   = 'coding-human-notrain';
         ts(3).class  = -1;
         data         = pseudo1(1013:end,:);
-        data(:,1:66) = scale_data(data(:,1:66),f,s);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(3).data   = data;
 
         ts(2).name   = 'other-ncrna-human-notrain';
         ts(2).class  = -1;
         data         = pseudo2(111:end,:);
-        data(:,1:66) = scale_data(data(:,1:66),f,s);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(2).data   = data;
+
+        ts(3).name   = 'mirbase20-human';
+        ts(3).class  = 1;
+        data         = loadset('mirbase20-nr','human',6);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
+        ts(3).data   = data;
+
+        ts(4).name   = 'mirbase20-non-human';
+        ts(4).class  = 1;
+        data         = loadset('mirbase20-nr','non-human',7);
+        data(:,1:66) = scalefun(data(:,1:66),f,s);
+        ts(4).data   = data;
 
     end
         

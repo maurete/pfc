@@ -1,4 +1,4 @@
-function svm_rbf ( dataset, featset, seed )
+function svm_lin ( dataset, featset, seed )
    
     if nargin < 3
         seed = mod(5829,2^32);
@@ -9,7 +9,7 @@ function svm_rbf ( dataset, featset, seed )
             end
         end
     end
-
+    
     dlm_outfile = 'results.tsv';
     if ~exist( dlm_outfile )
         fid = fopen( dlm_outfile, 'a' );
@@ -18,7 +18,7 @@ function svm_rbf ( dataset, featset, seed )
         fclose(fid);
     end
     
-    fprintf('#\n> begin svm-rbf\n#\n' );
+    fprintf('#\n> begin svm-linear\n#\n');
     
     % keep record of this experiment for review
     rec = struct();
@@ -45,7 +45,7 @@ function svm_rbf ( dataset, featset, seed )
     rec.num_partitions = 5;
     rec.num_iterations = 5;
     rec.grid_refine    = 4;
-    rec.initial_sigma         = exp([-15:2:15]');
+    %rec.initial_sigma         = exp([-15:2:15]');
     rec.initial_boxconstraint = exp([-4:2:14]);
         
     % aux functions
@@ -97,34 +97,34 @@ function svm_rbf ( dataset, featset, seed )
 
     % initial sigma-boxconstraint values for grid search
     rec.gs = struct();
-    rec.gs(1).sigma = rec.initial_sigma;
+    %rec.gs(1).sigma = rec.initial_sigma;
     rec.gs(1).boxconstraint = rec.initial_boxconstraint;
     
     % refine sigma-bc
     for r=1:rec.grid_refine
       fprintf('#\n> gridsearch\t%d\n> parameters\t%d\n', ...
-              r, length(rec.gs(r).sigma)*length(rec.gs(r).boxconstraint))
+              r, length(rec.gs(r).boxconstraint))
       if r>1
-          esttime = round(rec.time/rec.numcv*length(rec.gs(r).sigma)*length(rec.gs(r).boxconstraint));
+          esttime = round(rec.time/rec.numcv*length(rec.gs(r).boxconstraint));
           estendt = datevec(datenum(0,0,0,0,0,esttime)+now);
           fprintf('# estimated\t%dm %d\tendtime\t%02d:%02d\n', ...
                   floor(esttime/60), mod(esttime,60), fix(estendt(4:5)))
       end
       
       % avoid nested loops by linearizing Z-C matrix
-      rec.gs(r).l_sigma = reshape( diag(rec.gs(r).sigma)*ones(length(rec.gs(r).sigma),...
-                                                       length(rec.gs(r).boxconstraint)), 1, []);
-      rec.gs(r).l_boxc  = reshape( ones(length(rec.gs(r).sigma),...
-                                 length(rec.gs(r).boxconstraint))*diag(rec.gs(r).boxconstraint), 1, []);
+      % rec.gs(r).l_sigma = reshape( diag(rec.gs(r).sigma)*ones(length(rec.gs(r).sigma),...
+      %                                                  length(rec.gs(r).boxconstraint)), 1, []);
+      % rec.gs(r).l_boxc  = reshape( ones(length(rec.gs(r).sigma),...
+      %                            length(rec.gs(r).boxconstraint))*diag(rec.gs(r).boxconstraint), 1, []);
 
-      N = length(rec.gs(r).l_sigma);
+      N = length(rec.gs(r).boxconstraint);
       T = rec.num_iterations;
 
       % results for current r
       res = cell(N,T,6);
       
       % ignore flag, avoid trying nonconvergent values
-      ignore = zeros(size(rec.gs(r).l_sigma));
+      ignore = zeros(size(rec.gs(r).boxconstraint));
 
       % details for each iteration
       rec.gs(r).iter = struct();
@@ -152,9 +152,8 @@ function svm_rbf ( dataset, featset, seed )
               auxr = res(n,:,:);
               try
                   model = svmtrain(train_data(:,features),train_lbls, ...
-                                   'Kernel_Function','rbf', ...
-                                   'rbf_sigma',rec.gs(r).l_sigma(n), ...
-                                   'boxconstraint',rec.gs(r).l_boxc(n));
+                                   'Kernel_Function','linear', ...
+                                   'boxconstraint',rec.gs(r).boxconstraint(n));
 
                       res_r = round(svmclassify(model, test_real(:,features)));
                       res_p = round(svmclassify(model, test_pseudo(:,features)));
@@ -204,15 +203,13 @@ function svm_rbf ( dataset, featset, seed )
       if max(rec.gs(r).gm) == 0
           fprintf('! no convergence, sorry\n')
           fid = fopen( dlm_outfile, 'a' );
-          % fprintf( fid, [ 'id\ttrain/test\tsetup\tdataset\tfeatset\t'...
-          %                 'classifier\tparam1\tparam2\tse\tsp\tgm/perf\n' ] ); 
           fprintf( fid, '%f\t%d\t%s\t%s\t%s\t%d\t%s\t%9.8g\t%9.8g\t%9.8g\t%9.8g\t%9.8g\n', ...
-                 datenum(rec.begintime), seed, 'train', dataset, 'train', featset, ...
-                   'svm-rbf', [], [], 0, 0, 0 );
+                   datenum(rec.begintime), seed, 'train', dataset, 'train', featset, ...
+                   'svm-linear', [], [], 0, 0, 0 );
           for i=1:length(rec.test)
               fprintf( fid, '%f\t%d\t%s\t%s\t%s\t%d\t%s\t%9.8g\t%9.8g\t%9.8g\t%9.8g\t%9.8g\n', ...
                  datenum(rec.begintime), seed, 'test', dataset, rec.test(i).name, featset, ...
-                 'svm-rbf', [], [], [], [], 0 );
+                 'svm-linear', [], [], [], [], 0 );
           end
           fclose(fid)
           return
@@ -221,26 +218,24 @@ function svm_rbf ( dataset, featset, seed )
       % for d=find(rec.gs(r).feat(f).best)
       %     fprintf('Step %d, feat %d: SE %8.6f SP %8.6f GM %8.6f for log(Z,C) = %8.6f,%8.6f idx %d\n', ...
       %         r, f, rec.gs(r).feat(f).se(d), rec.gs(r).feat(f).sp(d), rec.gs(r).feat(f).gm(d), ...
-      %         log(rec.gs(r).l_sigma(d)), log(rec.gs(r).l_boxc(d)),d);
+      %         log(rec.gs(r).boxconstraint(d)), log(rec.gs(r).boxconstraint(d)),d);
       % end % for d
                 
       % refine grid around central value n
       neighbor = @(n,d,w) exp([log(n)-w/2^(d-1):1/2^(d-1):log(n)+w/2^(d-1)]);
             
       % new parameters for next iteration
-      ns = [];
       nc = [];
-      fprintf('#\n# idx\tlog(sigma)\tlog(C)\t\tsensitivity\tspecificity\tgeomean\n');
-      fprintf(   '# ---\t----------\t------\t\t-----------\t-----------\t-------\n');
+      fprintf('#\n# idx\tlog(C)\t\tsensitivity\tspecificity\tgeomean\n');
+      fprintf(   '# ---\t------\t\t-----------\t-----------\t-------\n');
       for d=find(rec.gs(r).best)
-          fprintf('< %d\t%8.6f\t%8.6f\t%8.6f\t%8.6f\t%8.6f\n', ...
-                  d, log(rec.gs(r).l_sigma(d)), log(rec.gs(r).l_boxc(d)), ...
+          fprintf('< %d\t%8.6f\t%8.6f\t%8.6f\t%8.6f\n', ...
+                  d, log(rec.gs(r).boxconstraint(d)), ...
                   rec.gs(r).se(d), ...
                   rec.gs(r).sp(d), ...
                   rec.gs(r).gm(d) );
           % append new values to ns,nc
-          ns = [ ns; neighbor(rec.gs(r).l_sigma(d),r,4)'];
-          nc = [ nc, neighbor(rec.gs(r).l_boxc(d), r,4) ];
+          nc = [ nc, neighbor(rec.gs(r).boxconstraint(d), r,4) ];
       end % for d
       
       % delete non-best svm models as they take up too much space
@@ -253,11 +248,10 @@ function svm_rbf ( dataset, featset, seed )
       % values for next grid refine
       if r < rec.grid_refine
           rec.gs(r+1).precision     = 1/2^(r-1); % as in neighbor function
-          rec.gs(r+1).sigma         = logunique( ns, 1e-5 );
           rec.gs(r+1).boxconstraint = logunique( nc, 1e-5 );
       end
       
-      rec.numcv = rec.numcv + length(rec.gs(r).sigma)*length(rec.gs(r).boxconstraint);
+      rec.numcv = rec.numcv + length(rec.gs(r).boxconstraint);
       rec.time = round(etime(clock,rec.begintime));
       fprintf( '#\n> time\t%02d:%02d\n', floor(rec.time/60), mod(rec.time,60))
     
@@ -272,28 +266,28 @@ function svm_rbf ( dataset, featset, seed )
     % fprintf( fid, [ 'id\ttrain/test\tsetup\tdataset\tfeatset\t'...
     %                 'classifier\tparam1\tparam2\tse\tsp\tgm/perf\n' ] ); 
     fprintf( fid, '%f\t%d\t%s\t%s\t%s\t%d\t%s\t%9.8g\t%9.8g\t%9.8g\t%9.8g\t%9.8g\n', ...
-                 datenum(rec.begintime), seed, 'train', dataset, 'train', featset, ...
-             'svm-rbf', log(rec.gs(rec.grid_refine).l_boxc(bidx)), ...
-             log(rec.gs(rec.grid_refine).l_sigma(bidx)), ...
+             datenum(rec.begintime), seed, 'train', dataset, 'train', featset, ...
+             'svm-linear', log(rec.gs(rec.grid_refine).boxconstraint(bidx)), [], ...
              rec.gs(rec.grid_refine).se(bidx), ...
              rec.gs(rec.grid_refine).sp(bidx), ...
              rec.gs(rec.grid_refine).gm(bidx) );
+    
     
     if max(rec.gs(rec.grid_refine).gm) < 0.75
         fprintf('! train CV rate too low, not testing\n')
         for i=1:length(rec.test)
             fprintf( fid, '%f\t%d\t%s\t%s\t%s\t%d\t%s\t%9.8g\t%9.8g\t%9.8g\t%9.8g\t%9.8g\n', ...
-                 datenum(rec.begintime), seed, 'test', dataset, rec.test(i).name, featset, ...
-                     'svm-rbf', [], [], [], [], 0 );
+                     datenum(rec.begintime), seed, 'test', dataset, rec.test(i).name, featset, ...
+                     'svm-linear', [], [], [], [], 0 );
         end
-        fclose(fid)
+        fclose(fid);
         return
     end
+
     
     fprintf('#\n# begin testing\n');
     fprintf('# \t\tdataset\t\t\tclass\tsize\tperformance\n');
     fprintf('# \t\t-------\t\t\t-----\t----\t-----------\n');
-
     for i=1:length(rec.test)
         rec.test(i).cls_results = zeros(size(rec.test(i).data,1),rec.num_iterations); 
         rec.test(i).performance = zeros(1,rec.num_iterations); 
@@ -308,23 +302,20 @@ function svm_rbf ( dataset, featset, seed )
 
         fprintf('+ %32s\t%d\t%d\t%8.6f\n',...
                 rec.test(i).name, rec.test(i).class, size(rec.test(i).data,1), rec.test(i).avg_performance);
-
-        % fprintf( fid, [ 'id\ttrain/test\tsetup\tdataset\tfeatset\t'...
-        %                 'classifier\tparam1\tparam2\tse\tsp\tgm/perf\n' ] ); 
+        
         fprintf( fid, '%f\t%d\t%s\t%s\t%s\t%d\t%s\t%9.8g\t%9.8g\t%9.8g\t%9.8g\t%9.8g\n', ...
                  datenum(rec.begintime), seed, 'test', dataset, rec.test(i).name, featset, ...
-                 'svm-rbf', log(rec.gs(rec.grid_refine).l_boxc(bidx)), ...
-                 log(rec.gs(rec.grid_refine).l_sigma(bidx)), [], [], ...
-                 rec.test(i).avg_performance );
+                 'svm-linear', log(rec.gs(rec.grid_refine).boxconstraint(bidx)), ...
+                 [], [], [], rec.test(i).avg_performance );
 
         % clear data for saving space
         rec.test(i).data = [];
     end
     fclose(fid);
     
-    %fprintf( ['#\n# saving results to ' './results/svm_rbf-' ...
+    %fprintf( ['#\n# saving results to ' './results/svm_lin-' ...
     %          datestr(rec.begintime,'yyyy-mm-dd_HH.MM.SS') '.mat\n']);
-    %save( ['./results/svm_rbf-' datestr(rec.begintime,'yyyy-mm-dd_HH.MM.SS') '.mat'],'-struct', 'rec');
+    %save( ['./results/svm_lin-' datestr(rec.begintime,'yyyy-mm-dd_HH.MM.SS') '.mat'],'-struct', 'rec');
     %fprintf('#\n# adeu\n#\n');
 
 end
