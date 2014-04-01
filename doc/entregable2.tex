@@ -50,24 +50,37 @@
 %
 %
 \section{Introducción}
-En este informe entregable se detalla el trabajo realizado \resalt{\ldots}
+\resalt{\Large texto introductorio}
 
-Se realizaron pruebas de clasificación con clasificadores SVM y MLP,
-variando los parámetros de cada uno, para distintas configuraciones de
-datos de entrenamiento/prueba y de conjuntos de características
-utilizados.
+%% Se realizaron pruebas de clasificación con clasificadores SVM y MLP,
+%% variando los parámetros de cada uno, para distintas configuraciones de
+%% datos de entrenamiento/prueba y de conjuntos de características
+%% utilizados.
 
 \section{Clasificadores}
-Para las pruebas se utilizaron clasificadores SVM y MLP según se
-detallan a continuación.
-%
+%% Para las pruebas se utilizaron clasificadores SVM y MLP según se
+%% detallan a continuación.
+
 \subsection{SVM}
-Para el clasificador SVM se implementó un algoritmo de búsqueda de
-parámetros óptimos de tipo \eng{grid-search} \ref{ref-svm-gridsearch}
-o \emph{búsqueda en la grilla}.  Este algoritmo consiste en, a partir
-de valores iniciales para los parámetros, en cada iteración se genera
-un nuevo conjunto de valores nuevo en las cercanías de aquellos que
-obtienen el mejor rendimiento.
+Se seleccionaron para el clasificador SVM dos \eng{kernels}
+\cite{bottou} diferentes, lineal (SVM-LINEAR) y función de base radial
+(SVM-RBF).  \resalt{Explicar.}
+
+Se implementó para SVM-RBF un algoritmo de búsqueda de parámetros
+óptimos de tipo \emph{búsqueda en la grilla} (\eng{grid-search}) \cite{hsu}.
+Este algoritmo consiste en, a partir de valores iniciales para los
+parámetros $C$ y $\sigma$ del clasificador, en cada iteración se
+genera un nuevo conjunto de parámetros en las cercanías de aquellos
+que obtienen el mejor rendimiento. \resalt{Mejorar.}
+
+Se realizaron las pruebas con cuatro etapas de refinamiento de los
+parámetros, partiendo de una grilla logarítmicamente espaciada en
+$10^2$ se llega a una grilla refinada en $10^{0.25}$ con una
+progresión de $10^{(2-r)}$, con $r$ el número de iteración.
+
+Para el clasificador SVM-LINEAR se implementó un algoritmo de búsqueda
+del parámetro óptimo muy similar al de búsqueda en la grilla, en este
+caso para el parámetro único $C$.
 
 %% \begin{algorithm}[H]
 %% %% \SetKwInput{Datos}{Datos}
@@ -102,26 +115,21 @@ obtienen el mejor rendimiento.
 %% \caption{How to write algorithms}
 %% \end{algorithm}
 
-Como medida para el rendimiento se utilizó la media geométrica entre
-la sensibilidad (tasa de clasificación del conjunto de datos positivo)
-y la especificidad (tasa de clasificación del conjunto de datos negativo)
-obtenida en cada prueba.
-
-Se realizaron las pruebas con cuatro etapas de refinamiento de los parámetros,
-partiendo de una grilla logarítmicamente espaciada en $10^2$ se llega a una
-grilla refinada en $10^{0.25}$ con una progresión de $2^{(2-r)}$, con $r$ 
-el número de iteración.
-\subsubsection{Parámetros}
-En el caso del clasificador SVM con kernel de función de base radial,
-se refinaron los parametros \emph{boxconstraint} y \emph{sigma}.
-
-En el caso SVM lineal, el parámetro que se procedió a refinar es
-el \emph{boxconstraint}.
 \subsection{MLP}
-Se utilizaron clasificadores MLP con una única capa oculta, variando
-el número de neuronas en la capa oculta entre los valores extremos 5 y 25.
+\resalt{\Large explicar mejor esta sección}
 
-Como función de entrenamiento del MLP se utilizó el método \emph{gradiente conjugado escalado}.
+Se probaron clasificadores MLP con una topología \emph{capa de
+  entrada} $\rightarrow$ \emph{capa oculta} $\rightarrow$ \emph{capa
+  de salida}. Se probaron distintos valores en el rango $[5,25]$ para
+el número de neuronas en la capa oculta.
+
+Se utilizó para el clasificador MLP la implementación disponible en el
+\eng{Neural Network Toolbox} del software MATLAB \resalt{ref.}.  Se
+utilizó el método \mono{trainscg} como función de entrenamiento, el
+cual utiliza el método del gradiente conjugado escalado \resalt{ref},
+limitando el tiempo de entrenamiento por época a 10 segundos
+\resalt{porqué?}, y estableciendo un número máximo de épocas de
+$2\cdot10^{12}$.
 %
 \section{Conjuntos de datos}
 Se generaron 5 configuraciones diferentes para los conjuntos de datos, 
@@ -131,6 +139,10 @@ utilizados tanto para entrenamiento como para prueba.
 En la tabla \ref{datasetup} se detallan los conjuntos utilizados en
 cada configuración.  A continuación se describen cada una de las
 configuraciones.
+
+En el caso de la base de datos \sbs{mirbase20}, se aplicó el algoritmo
+de filtrado CD-HIT \cite{greedy} con parámetros por
+defecto. \resalt{aclarar bien: xue, ng y batuwita hicieron lo mismo.}
 
 %
 \begin{table}[H]
@@ -265,6 +277,12 @@ Las pruebas de clasificación se realizaron con los tres
 clasificadores, para todas las combinaciones de configuraciones de los
 conjuntos de datos y de los conjuntos de características.
 
+Como medida para el rendimiento de los diferentes clasificadores se
+utilizó la media geométrica entre la sensibilidad (tasa de
+clasificación del conjunto de datos positivo) y la especificidad (tasa
+de clasificación del conjunto de datos negativo) obtenida en cada
+prueba.
+
 Para cada cada prueba, el conjunto de datos de entrenamiento se
 particionó en 5, 80\% entrenamiento y 20\% prueba (validación
 cruzada), tal que cada conjunto de prueba no contenga entradas en
@@ -272,7 +290,24 @@ común con los otros 4. Se repitió el entrenamiento/validación cruzada
 para las 5 particiones, y el resultado de la prueba se consideró como
 la media aritmética de los 5 resultados obtenidos.
 
+En pos de hacer que las pruebas fueran reproducibles, se utilizaron funciones pseudoaleatorias
+que reciben como parámetro una \emph{semilla} para la generación de particiones
+y el muestreo de las bases de datos. \resalt{explicar mejor.}
 
+
+\section{Resultados de las pruebas de clasificación}
+\resalt{Muy preliminar. Algunas conclusiones.}
+\begin{itemize}
+\item Dataset ALL: tasa muy baja para CODING. Se deberá reemplazar por otro dataset que entrene también con CODING.
+\item Featureset 2 (triplet): no funciona bien para mirbase20.
+\item Dataset XUE: rendimiento SVM-LINEAR igual o mejor que SVM-RBF.
+\item Featureset 5 (estructura secundaria): muy buen desempeño con un vector de sólo 7 características.
+\item Featureset 4 (secuencia): mejor desempeño que FS-5 únicamente en dataset ALL (que no funciona para CODING).
+\item Dataset HSA: prácticamente clasifican mejor aquellos featuresets que excluyen los triplets.
+\end{itemize}
+
+\renewcommand{\bibfont}{\normalfont\footnotesize}
+\printbibliography
 \end{document}
 
 
@@ -570,137 +605,6 @@ de la base de datos.
 \end{description}
 %
 %
-\renewcommand{\bibfont}{\normalfont\footnotesize}
-\printbibliography
 %
 \end{document}
-
-
-
-%% Batuwita et al.: microPred
-%% 1. datos disponibles sin plegar, pero con las features calculadas
-%% 2. dataset positivo: 695 pre-miRNAs hsa (mirBase 12)
-%% 3. datasets negativos:
-%% 1. CODING de Xue (8494)
-%% 2. otros ncRNAs hsa: 754 (695 con secstruct multi-branched)
-%% 1. features (48):
-%% 1. 29 idem miPred
-%% 2. 2 MFE-related
-%% 3. 4 RNAfold-related
-%% 4. 6 Mfold-related
-%% 5. 7 calculadas con scripts propios
-
-
-
-%% Sewer et al.: Mir-abela
-%% 1. extrae candidatos de miRNAs usando sliding windows en las regiones del genoma que se sabe hay miRNAs
-%% 2. especies: human, mouse, rat
-%% 3. algunas features “calculables”:
-%% 1. energía
-%% 2. long del stem simple más largo
-%% 3. long del loop del hairpin
-%% 4. proporción de nt A/C/G/U en el stem
-%% 5. proporción de pares A-U/C-G/G-U en el stem
-%% 1. no hay datos de entrenamiento
-
-
-
-
-
-%% Hertel & Stadler: RNAmicro
-%% 1. no hay datos
-%% 2. features sacables:
-%% 1. long stem
-%% 2. long loop
-%% 3. G+C
-
-%% Helvik et al.: Microprocessor SVM
-%% 1. no hay datos
-%% 2. valida con 332 miRNAs hsa (miRBase 8.0) + 130 miRNAs (miRBase 8.1)
-%% 3. plega con RNAfold default
-%% 4. muchas features
-
-%% Yousef et al.: BayesmiRNAfind
-%% 1. no hay datos (dice que estan como supplementary data pero en Bioinformatics no están, tampoco en el sitio bioinfo.wistar.upenn.edu)
-%% 2. dataset positivo: no queda claro de dónde lo sacó (pasando un sliding window por las regiones candidatas? de mirbase?)
-%% 3. dataset negativo: 190739 no-miRNAs sacados aleatoriamente de las 3’UTR de mRNAs humanos.
-
-%% Nam et al: ProMiR
-%% 1. no hay datos, solo disponible el dataset positivo, sin plegar, en http://rfam.sanger.ac.uk
-%% 2. no usa “features”, sino estados de transición en la secuencia para entrenar un clasificador HMM
-%% Jiang et al.: MiPred
-%% 1. dataset positivo: mirna registry database, release 8.2
-%% 2. dataset negativo: CODING de Xue
-%% 3. features(34): Xue + MFE + P-value
-%% 4. disponible: 163 hsa (+), 168 random (-), sin plegar, sin características extraídas. Aparentemente idem Xue.
-
-
-
-%% Huang et al.: MiRFinder
-%% 1. datos no tan disponibles (train sin etiquetar, sólo vectores libsvm, test sólo secuencias, sin features) 
-%% 2. features (18):
-%% 1. 1: Minimum Free Energy
-%% 2. 2: The difference of the MFE of the sequence pair
-%% 3. 3: The difference of the structure of the sequence pair
-%% 4. 4–7: Base pairing and other properties of the 22 mer hypothesized mature miRNA
-%% 5. 8: The mutation frequency of the sequence segment pair
-%% 6. 9–18: The frequency of the 10 possible secondary structure elements (combinations of 2 adjacent characters) in the pseudo code of stem region (represented by the new syntax)
-%% 1. training (+): vectores libSVM sin etiquetar: mirBase 8.2 human, mouse, pig, cattle, dog, sheep
-%% 2. training (-): sequence segments extracted from UCSC genome pair-wise alignments (human, mouse)
-%% Lim et al.: mirCheck/mirScan
-%% 1. no hay datos
-%% 2. especies: C. elegans
-%% 3. features:
-%% 1. base pairing of the miRNA portion of the fold-back
-%% 2. base pairing of the rest of the fold-back
-%% 3. stringent sequence conservation in the 5Ј half of the miRNA
-%% 4. slightly less stringent sequence conservation in the 3Ј half of the miRNA
-%% 5.  sequence biases in the first five bases of the miRNA (especially a U at the first position)
-%% 6. a tendency toward having symmetric rather than asymmetric internal loops and bulges in the miRNA region
-%% 7. and the presence of two to nine consensus base pairs between the miRNA and the terminal loop region, with a preference for 4–6 bp.
-%% Gkirtzou et al: MatureBayes
-%% 1. datos no disponibles
-%% 2. conjunto train:
-%% 1. 533 hsa, 422 rno de mirBase 10.0
-%% 1. test:
-%% 1. entradas nuevas de hsa, rno en mirBase 11.0-14.0
-%% 2. especies dme, zebrafish en mirBase 14
-%% 1. no se usan features útiles para un clasificador svm
-%% Lai et al.: MiRSeeker
-%% 1. no hay datos
-%% 2. scope del paper distinto al nuestro
-%% Ding et al.: MiRenSVM
-%% 1. training:
-%% 1. (+) 692 hsa, 52 aga de mirBase 12.0
-%% 2. (-) 9225 hsa, 92 aga de UTRdb release 22.0 (long 70-150nt)
-%% 3. (-) 754 ncRNAs hsa usados en microPred
-%% 4. (-) 256 ncRNAs aga de Rfam 9.1 (<150nt)
-%% 1. test:
-%% 1. (+) 14 hsa, 14 aga nuevos en mirBase 13.0
-%% 2. (+) 5328 pre-miRNAs de otras 27 especies
-%% 3. (-) ??? aparentemente parte de los de UTRdb en train (usa sólo 5428 para entrenar)
-%% 1. datos no disponibles, aunque se pueden armar los datasets a mano (secuencias disponibles, hace falta plegar, armar conjuntos train/test)
-%% 2. features de miPred + features de microPred
-%% miPredGA
-%% 1. train:
-%% 1. (+) idem microPred
-%% 2. (-) idem microPred (CODING de Xue + 754 ncRNAs)
-%% 1. test:
-%% 1. separa del dataset de train
-%% 1. features:
-%% 1. idem microPred, rankeadas según libSVM
-%% 1. datos disponibles de microPred. no aporta nada nuevo en lo que hace los datos. 
-%% Sheng et al.: mirCos
-%% 1. no sirve
-%% Xu et al.: miRank
-%% 1. features:
-%% 1. 1 MFE normalizada
-%% 2. 2 base pairing propensity normalizada (1para c/brazo)
-%% 3. 1 long del loop normalizada
-%% 4. 32 triplets como Xue
-%% 1. train:
-%% 1. (+) 533 hsa, 38 aga de mirBase 1/9/2007
-%% 2. (-) 1000 hsa, 20000+ aga obtenidos escaneando el genoma con ventanas de 90nt y filtrando por caracts. de plegado
-%% 1. test: no especificado
-%% 2. datos disponibles: sólo hsa, formato svm, sin info de secuencia/estructura secundaria
 
