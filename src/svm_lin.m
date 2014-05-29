@@ -313,9 +313,12 @@ function svm_lin ( dataset, featset, seed )
     end
     fclose(fid);
     
-    %fprintf( ['#\n# saving results to ' './results/svm_lin-' ...
-    %          datestr(rec.begintime,'yyyy-mm-dd_HH.MM.SS') '.mat\n']);
-    %save( ['./results/svm_lin-' datestr(rec.begintime,'yyyy-mm-dd_HH.MM.SS') '.mat'],'-struct', 'rec');
-    %fprintf('#\n# adeu\n#\n');
+    for r=1:rec.grid_refine
+        rec.gs(r).raw_results(:,:,6) = cell(size(rec.gs(r).raw_results(:,:,6)));
+    end
+
+    fprintf( ['#\n# saving results to ' './results/svm_lin-' ...
+             datestr(rec.begintime,'yyyy-mm-dd_HH.MM.SS') '.mat\n']);
+    save( ['./results/svm_lin-' datestr(rec.begintime,'yyyy-mm-dd_HH.MM.SS') '.mat'],'-struct', 'rec');
 
 end

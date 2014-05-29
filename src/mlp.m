@@ -135,8 +135,8 @@ function mlp ( dataset, featset, seed )
                 %res_r = round(net(test_real'))';
                 %res_p = round(net(test_pseudo'))';
             
-                res_r = round(net(test_real(:,features)'))';
-                res_p = round(net(test_pseudo(:,features)'))';
+                res_r = sign(net(test_real(:,features)'))';
+                res_p = sign(net(test_pseudo(:,features)'))';
 
                 Se = mean( res_r(:,1) == 1 );
                 Sp = mean( res_p(:,2) == 1 );
@@ -231,7 +231,7 @@ function mlp ( dataset, featset, seed )
         
         for t=1:rec.num_iterations
             net = rec.raw_results{bidx,t,6};
-            res = round(net(rec.test(i).data(:,features)'))';
+            res = sign(net(rec.test(i).data(:,features)'))';
             rec.test(i).cls_results(:,t) = res(:,1).*(res(:,1)~=res(:,2));
             rec.test(i).performance(t)   = mean( ...
                 rec.test(i).cls_results(:,t) == rec.test(i).class);
@@ -251,9 +251,8 @@ function mlp ( dataset, featset, seed )
     end
     fclose(fid);
     
-    %fprintf( ['#\n# saving results to ' './results/mlp-' ...
-    %          datestr(rec.begintime,'yyyy-mm-dd_HH.MM.SS') '.mat\n']);
-    %save( ['./results/mlp-' datestr(rec.begintime,'yyyy-mm-dd_HH.MM.SS') '.mat'],'-struct', 'rec');
-    %fprintf('#\n# adeu\n#\n');
+    fprintf( ['#\n# saving results to ' './results/mlp-' ...
+             datestr(rec.begintime,'yyyy-mm-dd_HH.MM.SS') '.mat\n']);
+    save( ['./results/mlp-' datestr(rec.begintime,'yyyy-mm-dd_HH.MM.SS') '.mat'],'-struct', 'rec');
 
 end
