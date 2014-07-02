@@ -26,7 +26,7 @@ len_bp_ratio_fmt = r'^>.*\sLEN_BP_RATIO\s+([\d.]+).*$'
 #   * sólo se reconocen los caracteres GCAUTgcaut
 #     opcionalmente rodeados de espacios
 #   GCGCGAAUACUCUCCUAUAUAAACC... etc
-seqn_fmt = r"^\s*([GCAUgcau]+)\s*$"
+seqn_fmt = r"^\s*([GCAUTgcaut]+)\s*$"
 
 # formato de la linea de estructura secundaria:
 #   * idem anterior, pero con caracteres .()
@@ -148,7 +148,7 @@ def load_fasta ( f ):
                     # guardo la entrada en el dict
                     if re.match(seqn_fmt,cur_seq):
                         entries.append((id_, cur_dsc.strip(),
-                                        cur_seq.upper().strip(),
+                                        cur_seq.upper().replace('T','U').strip(),
                                         cur_st2.strip(),
                                         free_energy, seq_length, gc_content,
                                         basepair, len_bp_ratio))
@@ -220,7 +220,7 @@ def load_fasta ( f ):
             # guardo la entrada en el dict 
             if re.match(seqn_fmt,cur_seq):
                 entries.append((id_, cur_dsc.strip(),
-                                cur_seq.upper().strip(),
+                                cur_seq.upper().replace('T','U').strip(),
                                 cur_st2.strip(),
                                 free_energy, seq_length, gc_content,
                                 basepair, len_bp_ratio))
@@ -461,16 +461,16 @@ def triplet_filter_multi_loop ( infile, outfile ):
             pass
         # si solo hay un loop
         else:
-            f = triplet_feats_extra(l[2],l[3])
+            #f = triplet_feats_extra(l[2],l[3])
             
-            s = ('\tSEQ_LENGTH\t{}\tGC_CONTENT\t{:.15g}\tBASEPAIR\t{}\t'+
-                 'FREE_ENERGY\t{:.2f}\tLEN_BP_RATIO\t{:.15g}').format(
-                     f['seq_length'],f['gc_content'],
-                     f['basepair'],l[4],f['len_bp_ratio'])
+            # s = ('\tSEQ_LENGTH\t{}\tGC_CONTENT\t{:.15g}\tBASEPAIR\t{}\t'+
+            #      'FREE_ENERGY\t{:.2f}\tLEN_BP_RATIO\t{:.15g}').format(
+            #          f['seq_length'],f['gc_content'],
+            #          f['basepair'],l[4],f['len_bp_ratio'])
             
             # guardo la entrada en el archivo solo si hay mas de 22 bp
             #if f['basepair'] > 22:
-            outfile.write('>' + l[0] + s + '\n' + 
+            outfile.write('>' + l[0] + '\n' + 
                           l[2] + '\n' +
                           l[3] + '\n')
 

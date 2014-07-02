@@ -6,31 +6,7 @@ import re
 import sys
 import math
 import feats
-from feats import load_fasta
-
-# formato de la linea de descripcion:
-#   * comienza con un > (opcionalmente precedido de espacios
-#   * (1) id: 3 letras + n { alfanum | _ | - }
-#   * se ignoran otros caracteres hasta el fin de linea
-#   >hsa-mir-123 Homo sapiens... etc
-desc_fmt = r"^\s*>([a-zA-Z]{2,3}[\w_|+-]+)(\s.+)?\s*$"
-
-# formato de la linea de secuencia:
-#   * sólo se reconocen los caracteres GCAUTgcaut
-#     opcionalmente rodeados de espacios
-#   GCGCGAAUACUCUCCUAUAUAAACC... etc
-seqn_fmt = r"^\s*([GCAUgcau]+)\s*$"
-
-# formato de la linea de estructura secundaria:
-#   * idem anterior, pero con caracteres .()
-#   * puede estar terminada por un numero entre parentesis
-#   ...(((((.((((...(((.(((((.....))))))...)).).. etc
-snds_fmt = r"^\s*([.()]+)(\s+\((\s*-?[0-9.]+)\s*\))?\s*$"
-
-# formato de un string de estructura *con más de un loop*
-#   * no acepta otra cosa que .(), sin espacios, nada
-#   ....(((((.((..))))))..((((...))))).))... etc
-mult_fmt = r"[.(]+\)[.()]*\([.)]+"
+from feats import load_fasta, mult_fmt, seqn_fmt
 
 # error máximo tolerado al comparar floats
 ERROR_THR = 1E-14
@@ -491,7 +467,7 @@ def upred_compare ( file1, file2 ):
 
 
 
-def rnafold_clean ( infile, outfile, d=0 ):
+def rnafold_clean ( infile, outfile, minlen=0, maxlen=sys.maxint ):
     """
     Lee el archivo de entrada y guarda un archivo FASTA eliminando
     la información de estructura secundaria calculada por RNAfold.
@@ -506,12 +482,15 @@ def rnafold_clean ( infile, outfile, d=0 ):
 
     # para cada entrada
     for l in f:
-        # si la secuencia es valida
-        if re.match(feats.seqn_fmt,l[2]):
-            # guardo la entrada en el archivo
-            outfile.write( l[1] + '\n' + l[2] + '\n' )
+        if minlen <= len(l[2]) <= maxlen:
+            # si la secuencia es valida
+            if re.match(feats.seqn_fmt,l[2]):
+                # guardo la entrada en el archivo
+                outfile.write( l[1] + '\n' + l[2] + '\n' )
+            else:
+                sys.stderr.write("discarding entry {}: invalid sequence\n".format(l[0]))
         else:
-            sys.stderr.write("discarding entry {}: invalid sequence\n".format(l[0]))
+            sys.stderr.write("discarding entry {}: invalid length\n".format(l[0]))
 
 
 
@@ -685,7 +664,7 @@ def wrap_rnafold_compare (obj):
     rnafold_compare(obj.set1, obj.set2)
 
 def wrap_rnafold_clean (obj):
-    rnafold_clean(obj.file, obj.outfile)
+    rnafold_clean(obj.file, obj.outfile, obj.minlength, obj.maxlength)
 
 
 parser = argparse.ArgumentParser( description='Feature extraction tests.',
@@ -732,6 +711,16 @@ rnafclean.add_argument ( '--outfile', '-o',
                          nargs='?',
                          default=sys.stdout,
                          help="output file to write to" )
+rnafclean.add_argument ( '--minlength', '-m',
+                         type=int,
+                         nargs='?',
+                         default=0,
+                         help="minimum sequence length" )
+rnafclean.add_argument ( '--maxlength', '-M',
+                         type=int,
+                         nargs='?',
+                         default=sys.maxint,
+                         help="maximum sequence length" )
 
 tripval.add_argument   ( 'infile',
                          type=argparse.FileType('r'),
