@@ -14,16 +14,17 @@
 # RNAfold command, replace with the right value for your system
 RNAFOLD="RNAfold -noPS"
 CDHIT="cdhit"
+EXTRAOPTS=""
 
 gen_dataset () {
-    zcat -f $SRC | ./tests.py rnafold_clean > work/$NAME.clean
+    zcat -f $SRC | ./tests.py rnafold_clean $EXTRAOPTS > work/$NAME.clean
     $RNAFOLD < work/$NAME.clean > work/$NAME.rnafold
     mkdir -p work/$NAME
     ./feats.py by_species work/$NAME.rnafold -o work/$NAME -c $CLS $SPECIES
 }
 
 gen_nr_dataset () {
-    zcat -f $SRC | ./tests.py rnafold_clean > work/$NAME.clean
+    zcat -f $SRC | ./tests.py rnafold_clean $EXTRAOPTS > work/$NAME.clean
     $CDHIT -i work/$NAME.clean -o work/$NAME.nr
     $RNAFOLD < work/$NAME.nr > work/$NAME.rnafold
     mkdir -p work/$NAME
@@ -89,6 +90,70 @@ CLS="-1"
 SPECIES="-s ncrna"
 gen_dataset
 
+echo "Dataset mirbase12-nr: miRNAs from miRBase 12.0 as in (microPred,) MiRenSVM"
+NAME="mirbase12-nr"
+SRC="src/mirbase/12.0/hairpin.fa.gz"
+CLS="1"
+SPECIES=""
+gen_nr_dataset
+
+echo "Dataset 3utr: pseudo hairpins from 3'-UTRdb as in MiRenSVM"
+EXTRAOPTS="-m 70 -M 150"
+NAME="3utrdb"
+SRC="src/3utrdb/3UTRef.Homo_sapiens.fasta.gz"
+CLS="-1"
+SPECIES="-s hsa"
+gen_nr_dataset
+NAME="3utrdb"
+SRC="src/3utrdb/3UTRef.Anopheles_gambiae_str._PEST.fasta.gz"
+CLS="-1"
+SPECIES="-s aga"
+gen_nr_dataset
+EXTRAOPTS=""
+
+echo "Dataset rfam91: pseudo hairpins for aga from Rfam9.1 as in MiRenSVM"
+NAME="rfam91"
+SRC="src/mirensvm/rfam91-aga.fa"
+CLS="-1"
+SPECIES="-s aga"
+gen_dataset
+
+EXTRAOPTS="-M 500"
+echo "Dataset mirbag-real-train: real train pre-miRNAs as in MiR-BAG"
+NAME="mirbag-real-train"
+SRC="src/mirbag/*-train-real.fa"
+CLS="1"
+SPECIES=""
+gen_dataset
+
+echo "Dataset mirbag-real-test: real test pre-miRNAs as in MiR-BAG"
+NAME="mirbag-real-test"
+SRC="src/mirbag/*-test-real.fa"
+CLS="1"
+SPECIES=""
+gen_dataset
+
+echo "Dataset mirbag-pseudo-train: pseudo train hairpins as in MiR-BAG"
+NAME="mirbag-pseudo-train"
+CLS="-1"
+for SP in hsa cfa rno mmu cel dme
+do
+    SRC="src/mirbag/${SP}-train-pseudo.fa"
+    SPECIES="-s ${SP}"
+    gen_dataset
+done
+
+echo "Dataset mirbag-pseudo-test: pseudo test hairpins as in MiR-BAG"
+NAME="mirbag-pseudo-test"
+CLS="-1"
+for SP in hsa cfa rno mmu cel dme
+do
+    SRC="src/mirbag/${SP}-test-pseudo.fa"
+    SPECIES="-s ${SP}"
+    gen_dataset
+done
+EXTRAOPTS=""
+
 echo "Dataset mirbase20: miRNAs from miRBase 20"
 NAME="mirbase20"
 SRC="src/mirbase/20/hairpin.fa.gz"
@@ -109,7 +174,9 @@ rm -f work/*.*
 echo "Moving directories to data/"
 rm -rf mirbase50 coding updated conserved-hairpin
 rm -rf mirbase82-nr functional-ncrna mirbase12 other-ncrna
-rm -rf mirbase20 mirbase20-nr
+rm -rf mirbase20 mirbase20-nr mirbase12-nr 3utrdb rfam91
+rm -rf mirbag-real-test mirbag-real-train 
+rm -rf mirbag-pseudo-test mirbag-pseudo-train
 
 mv -f work/* .
 
