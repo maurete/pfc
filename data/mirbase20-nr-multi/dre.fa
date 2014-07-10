@@ -1,0 +1,621 @@
+>dre-mir-7b MI0001360 Danio rerio miR-7b stem-loop
+UGAACGCUGGCUUGCUUCUGUGUGGAAGACUUGUGAUUUUGUUGUUGUUAGUUAGAUGAAGUGACAACAAAUCACGGUCUGCCCUACAGCACAGGCCCAGCAUC
+.....(((((((((...(((((.((.(((((.(((((((.(((((..((..........))..))))))))))))))))).)).)))))..)))).)))))...
+>dre-mir-7a-1 MI0001361 Danio rerio miR-7a-1 stem-loop
+UGUGGAAGACUAGUGAUUUUGUUGUUGUUUCUUCUGCUUUCUGACAACAAGUCACAGUCUACCUCAGCGAGCGGGCCCU
+((.((.(((((.(((((((.((((((................)))))))))))))))))).)).)).............
+>dre-mir-7a-2 MI0001362 Danio rerio miR-7a-2 stem-loop
+UUUUGGGCAUUAUGGAAGACUAGUGAUUUUGUUGUUGUGACGUCAUCAGUACUGACAACAAGUCACAGUCUGCCUCAGUGACCAGAAUCCACUCGUC
+((((((.((((..((.(((((.(((((((.((((((...((.......))...)))))))))))))))))).))..)))).))))))..........
+>dre-mir-10a MI0001363 Danio rerio miR-10a stem-loop
+UGUCUGUCAUCUAUAUAUACCCUGUAGAUCCGAAUUUGUGUGAAUAUACAGUCGCAAAUUCGUGUCUUGGGGAAUAUGUAGUUGACAUAAACACAACGC
+....(((((.((((((((.(((((.(((..((((((((((............))))))))))..)))))))).)))))))).)))))............
+>dre-mir-34a MI0001365 Danio rerio miR-34 stem-loop
+CUGCUGUGAGUGGUUCUCUGGCAGUGUCUUAGCUGGUUGUUGUGUGGAGUGAGAACGAAGCAAUCAGCAAGUAUACUGCCGCAGAAACUCGUCACCUU
+.....((((..((((((.((((((((((((.((((((((((.(((.........))).))))))))))))).))))))))).)).))))..))))...
+>dre-mir-181b-1 MI0001366 Danio rerio miR-181b-1 stem-loop
+CAUGUACGCACCUUCAGUUCUUCAAAGGUCAUAAUCAACAUUCAUUGCUGUCGGUGGGUUUAGUCUUGUAACAGCUCUCUGAACAAUGAAUGUAACUGUGGCCCAGAUU
+..........................(((((((....((((((((((...((((.(((((..((......))))))).)))).))))))))))...)))))))......
+>dre-mir-181b-2 MI0001367 Danio rerio miR-181b-2 stem-loop
+CUAAUGACUGCAAUAAACAUUCAUUGCUGUCGGUGGGUUUCUAAUAGACACAACUCACUGAUCAAUGAAUGCAAACUGCGGUGCAA
+....((((((((.....(((((((((..(((((((((((((.....))...)))))))))))))))))))).....)))))).)).
+>dre-mir-199-2 MI0001374 Danio rerio miR-199-2 stem-loop
+GGAGUUUUUGUGGACGCCCGUCCCGCCUGCCCAGUGUUCAGACUACCUGUUCAGGAAUUAGUGUUUGUACAGUAGUCUGCACAUUGGUUAGGCUGG
+((.((((....))))..))..((.(((((.(((((((.((((((((.(((.((((........)))).))))))))))).))))))).))))).))
+>dre-mir-199-3 MI0001375 Danio rerio miR-199-3 stem-loop
+CCUCCCCCUCGCCUGCCCAGUGUUCAGACUACCUGUUCAUCAUGCUGCAGCUGAACAGUAGUCCGCACAUUGGUUAGGCUGGGCUGGGACACACACAC
+..(((((((.(((((.(((((((.(.((((((.((((((....((....)))))))))))))).).))))))).))))).)))..)))).........
+>dre-mir-203a MI0001376 Danio rerio miR-203a stem-loop
+GUGUUUGGGUCUCUUCUGGUCCCUCUGGUGCAGUGGUUCUUAACAGUUCAACAGUUCUAUCUCAAAAUUGUGAAAUGUUUAGGACCACUUGACCAG
+......(((.((.....)).))).(((((..(((((((((.((((.((((.(((((.........))))))))).)))).)))))))))..)))))
+>dre-mir-204-1 MI0001377 Danio rerio miR-204-1 stem-loop
+UCAUGUGACCUGUGGACUUCCCUUUGUCAUCCUAUGCCUGGAGUAAUAGAGGGGGCUGGGAAGUCAAAGGGACGCUCAGGCGUCAUCAUUCGC
+....(((((((...((((((((...(((.((((.(((.....)))....))))))).))))))))..)))(((((....))))).....))))
+>dre-mir-205 MI0001378 Danio rerio miR-205 stem-loop
+AAACUACUGUGCAUUCUAUCCUUCAUUCCACCGGAGUCUGUGUAGUUGUUCAAUCAGAUUUCAGUGGUGUGAAGUGUAGGAAACACGGA
+......(((((..(((((..((((((.((((.((((((((((........))..)))))))).)))).))))))..)))))..))))).
+>dre-mir-181a-1 MI0001380 Danio rerio miR-181a-1 stem-loop
+GUUUGCCUCAGUGAACAUUCAACGCUGUCGGUGAGUUUGAGCUAAAUGGAAAAAAACCAUCGACCGUUGAUUGUACCCUGCGGC
+....(((.(((.(.(((.((((((..(((((((.((((...((....))....))))))))))))))))).))).).))).)))
+>dre-mir-214 MI0001381 Danio rerio miR-214 stem-loop
+UGACUGAGAGCGUUGUCUGUCUGCCUGUCUACACUUGCUGUGCAGAACUUCCUGCACCUGUACAGCAGGCACAGACAGGCAGACAGAUGGCAGCCCGCCU
+.......(.((((..(((((((((((((((...((((((((((((............))))))))))))...)))))))))))))))..)).)).)....
+>dre-mir-216a MI0001382 Danio rerio miR-216a stem-loop
+GCUGAUUUUUGGCAUAAUCUCAGCUGGCAACUGUGAGUAGUGUUUUCAUCCCUCUCACAGGCGCUGCUGGGGUUCUGUCACACACAGCA
+((((.....(((((.(((((((((.(((..(((((((..(((....)))....)))))))..)))))))))))).)))))....)))).
+>dre-mir-217 MI0001383 Danio rerio miR-217 stem-loop
+AUGAGAACUUUCUGAUGUUGGUGAUACUGCAUCAGGAACUGAUUGGAUGAUAUUCAGGAGCCAUCAGUUCCUGAUGCACUCCCAUCAGCAUCGAAAGA
+.......(((((.((((((((((....((((((((((((((((.((.((.....))....))))))))))))))))))....))))))))))))))).
+>dre-mir-219-1 MI0001384 Danio rerio miR-219-1 stem-loop
+AGGGUCCCAGAGAUUGAUUGUCCAAACGCAAUUCUUGUAACAUAUAAUAUAAAUCCAAGAAUUGUGCCUGGACAUCUGUUGCUGGAGAUUC
+.(((((((((..((.(((.(((((..(((((((((((..................)))))))))))..)))))))).))..)))).)))))
+>dre-mir-219-2 MI0001385 Danio rerio miR-219-2 stem-loop
+UGAUUGUCCAAACGCAAUUCUUGUGAAAUGUCGAGCGAUCAGUCGAGAAUUGUGCCUGGACAUCUGUUGCUGGAGGCUCC
+.(((.(((((..(((((((((((.....((((....)).))..)))))))))))..))))))))....((.....))...
+>dre-mir-221 MI0001387 Danio rerio miR-221 stem-loop
+GUCGUGAACCUGGCAUACAAUGUAGAUUUCUGUGUGGUACUAUCUACAGCUACAUUGUCUGCUGGGUUUCAGGCCAGCAGAAUAAUUCUGCUC
+(((..(((((..(((.(((((((((....(((((.(((...))))))))))))))))).)))..)))))..))).((((((.....)))))).
+>dre-mir-222a MI0001388 Danio rerio miR-222 stem-loop
+GCCGGUGGCUUGUUCGGGUGCUCAUGAGAUGCUCAGUAGUCAGUGUAGAUCCUGUGUCACAAUCAGCAGCUACAUCUGGCUACUGGGUCUCUGAUGGCAUUUUCUGCU
+(((...)))..((..((((((.(((.(((.((((((((((((((((((...(((.........)))...))))).))))))))))))).))).)))))))))...)).
+>dre-mir-223 MI0001389 Danio rerio miR-223 stem-loop
+CUCUCCUCCUGAUCUAGACUCUUCUCUUAGAGUAUUUGACAGACUGUGGUUGACACUCGAUCUAAAGGGGUGUCAGUUUGUCAAAUACCCCAAGAGAGG
+....................((((((((.(.((((((((((((((......(((((((.........))))))))))))))))))))).).))))))))
+>dre-mir-430a-1 MI0001527 Danio rerio miR-430a-1 stem-loop
+GUCACUAUCGGUGCCCUCACAAAGGCACUGACUUGGAUGCUGCAUGUGGUAAGUGCUAUUUGUUGGGGUAGUUUCAAGUGAC
+((((((...(.((((((.(((((((((((.(((...(((...)))..))).)))))).))))).)))))).)....))))))
+>dre-mir-430b-1 MI0001528 Danio rerio miR-430b-1 stem-loop
+CAGUUGAGGUCAACUCUAACUUUAGCAUCUUUCUUUUAAGCAAAGUAGAAAGUGCUAUCAAGUUGGGGUAGAUGUUUGCUG
+((((.((.(((.(((((((((((((((.((((((............)))))))))))..)))))))))).))).)).))))
+>dre-mir-430c-1 MI0001529 Danio rerio miR-430c-1 stem-loop
+AUUAAGAUCACUUCAAACAGGAGCAUUGAUUUGUCCUUUGUUCAUAAGUGCUUCUCUUUGGGGUAGUUUUAAU
+((((((((.((((((((.(((((((((....((.........))..))))))))).)))))))).))))))))
+>dre-mir-429a MI0001720 Danio rerio miR-429 stem-loop
+CUUGUUGAUGGACGUCUUACCAGACAUGGUUAGAUGUAAUAACUUGUGUCUAAUACUGUCUGGUAAUGCCGUCCAUCACAUG
+..(((.((((((((.(((((((((((..((((((..(((....)))..))))))..)))))))))).).)))))))))))..
+>dre-mir-451 MI0001732 Danio rerio miR-451 stem-loop
+AGAGGCGGCGAAACCGUUACCAUUACUGAGUUUAGUAAUGGUAAGGGUUCUGCUGCCUUU
+((((((((((.((((.((((((((((((....)))))))))))).)))).))))))))))
+>dre-let-7a-2 MI0001858 Danio rerio let-7a-2 stem-loop
+GCCCCCAGGCUGAGGUAGUAGGUUGUAUAGUUUAGAAUAACAUCACUGGAGAUAACUGUACAACCUCCUAGCUUUCCCUGAGAU
+.....((((..(((.(((.(((((((((((((.........(((......)))))))))))))))).))).)))..))))....
+>dre-let-7a-3 MI0001860 Danio rerio let-7a-3 stem-loop
+GAGACUGUCGUUUGGGGUGAGGUAGUAGGUUGUAUAGUUUGAGGGUUUAACCCUUGCUGUCAGAUAACUAUACAACUUACUGUCUUUCCCGAAGUGGCCGUAGUGUC
+((.((((((((((.(((.(((..((((((((((((((((((((((.....)))))).........))))))))))))))))..))).))).)))))))...))).))
+>dre-let-7a-4 MI0001861 Danio rerio let-7a-4 stem-loop
+GCGAUGUCUCGGGAUGAGGUAGUAGGUUGUAUAGUUUAGAGUUACAACACGGGAGAUAACUGUACAGCCUCCUAGCUUUCCUCGAGCAGACGC
+(((.((.((((((..(((.(((.(((((((((((((....((......)).......))))))))))))).))).)))..))))))))..)))
+>dre-let-7a-5 MI0001862 Danio rerio let-7a-5 stem-loop
+GUACGUGUUUUUGGUGUCUGGACAAGGUGAGGUAGUAGGUUGUAUAGUUUGGUGGGAGGGAUCAAACCCUGUUCAGCUGAUAACUAUACAGUCUAUUGCCUUCCUUGUGUCACCUAAGGUCUGC
+...((..((((.((((.(...((((((.((((((((((..(((((((((.(.((((((((......)))).)))).)....)))))))))..))))))))))))))))).)))).))))..)).
+>dre-let-7a-6 MI0001863 Danio rerio let-7a-6 stem-loop
+CACAGUGAACCUGUGUGUUUCUUCAAGGUGAGGUAGUAGGUUGUAUAGUUUGUGGGAAGGAUCACAUCCUAUUCAGGUGAUAACUAUACAGUCUAUUGCCUUCCCUGAGAGACACAAUGACCACGAGUG
+(((.(((......((((((((((..(((..(((((((((..((((((((((.((((.(((((...))))).)))).)....)))))))))..)))))))))..))))))))))))).....)))..)))
+>dre-let-7b MI0001865 Danio rerio let-7b stem-loop
+UCGGACAGGGUGAGGUAGUAGGUUGUGUGGUUUCAGGGUUGUGUUUUUGCCCCAUCAGGAGUUAACUAUACAACCUACUGCCUUCCCUGAAGGG
+.....(((((.(((((((((((((((((((((((.((((.........))))......))...)))))))))))))))))))))))))).....
+>dre-let-7c-1 MI0001866 Danio rerio let-7c-1 stem-loop
+CUGAGAGUGUGUGCAUCCAGGCUGAGGUAGUAGGUUGUAUGGUUUAGAAUUUUGCCCUGGGAGUUAACUGUACAACCUUCUAGCUUUCCUUGGAGCUCACAAGCCAG
+(((.(..((((.((.((((((..(((.(((.(((((((((((((...((((((......))))))))))))))))))).))).)))..)))))))).))))..))))
+>dre-let-7d-1 MI0001868 Danio rerio let-7d-1 stem-loop
+UGUGCGUUGCGGUGUGAGGUAGUUGGUUGUAUGGUUUUGCAUAAUAAACAGCCCGGAGUUAACUGUACAACCUUCUAGCUUUCCCUGCGGCUGCACG
+.(((((((((((.(.(((.(((..((((((((((((..((.................)).))))))))))))..))).))).).))))))).)))).
+>dre-let-7e MI0001871 Danio rerio let-7e stem-loop
+GCUGUUCUUGGGGCUGAGGUAGUAGAUUGAAUAGUUGUGGAGCCCUGCGCUCUCUCUCUGAGAUAACUAUACAAUCUACUGUCUUUCCUAAGGCGACAGC
+(((((((((((((..(((..(((((((((.(((((((((((((.....))))).........)))))))).)))))))))..))))))))))..))))))
+>dre-let-7f MI0001872 Danio rerio let-7f stem-loop
+UGGUAAUGCUUGUGCAGUGUGAGGUAGUAGAUUGUAUAGUUGUAGGGUAGUGAUUUUAUCCUGUGUAGAAGAUAACUAUACAAUCUAUUGCCUUCCCUGAGGGGCAGAAAUACACA
+..(((.(((((.(.(((.(..(((((((((((((((((((((((((((((.....))))))).........))))))))))))))))))))))..))))).)))))....)))...
+>dre-let-7g-1 MI0001873 Danio rerio let-7g-1 stem-loop
+GGGGGCUGUGGAAUGAGGUAGUAGUUUGUAUAGUUUGGGAUCACACCAGAUCUGGGAGAUAACUAUACAGCCUACUGUCUUUCUCACAGCUGCUCC
+((.((((((((...(((..(((((.(((((((((((.(((((......))))).).....)))))))))).)))))..)))..)))))))).))..
+>dre-let-7g-2 MI0001874 Danio rerio let-7g-2 stem-loop
+GUGGACUGUGGGAUGAGGUAGUAGUUUGUAUAGUUUUAGGAUCACACCAGAUCUGGGAGAUAACUAUACAGUCUACUGUCUUUCCCACGGUUACCGC
+(((((((((((((.(((..(((((.((((((((((...(((((......))))).......)))))))))).)))))..))))))))))))..))))
+>dre-let-7h MI0001875 Danio rerio let-7h stem-loop
+GAGUUGGCUGUGUUGUGGUGAGGUAGUAAGUUGUGUUGUUGUUGGGGAUCAGUAUAGUAUGGCCCUUGAAGGAGAUAACUAUACAAUUUACUGCCUUCCAUAAUGCAGACUCUC
+((((...(((((((((((.(((((((((((((((((.((((((((((.(((........))))))).......)))))).))))))))))))))))))))))))))))))))..
+>dre-mir-1-1 MI0001878 Danio rerio miR-1-1 stem-loop
+GCCCAUAUAUCCCGCUUGGUAGACAUACUUCUUUAUAUGCCCAUAUGAACAAGAGCAGCUAUGGAAUGUAAAGAAGUAUGUAUCCCAGGUGAGAGAAAAACGGGGC
+((((.....((.(((((((...((((((((((((((((..(((((((........))..))))).))))))))))))))))...))))))).))........))))
+>dre-mir-7a-3 MI0001879 Danio rerio miR-7a-3 stem-loop
+UGUGUGUGUGUUCUGCCCUCUGCGGAGUGGAAGACUAGUGAUUUUGUUGUGAAAAUGAACAAAAACCAACAACAAACCGCAGUCGUCCUCUCAGCACGGGGCCCACACCUGCAGAGCACA
+......(((((((((((((((((.(((.(((.((((.(((..((((((((..................)))))))).))))))).))).))).))).)))).........))))))))))
+>dre-mir-9-2 MI0001881 Danio rerio miR-9-2 stem-loop
+GCUCUCCUCUGGUGACUUUUGCACUUGGAGGCGUGUUGUUAUCUUUGGUUAUCUAGCUGUAUGAGUGUGCUGGCCGUCAUAAAGCUAGAUAACCGAAAGUAAGAGCCGCUUCUAUCAGCAACGUAUGGAGCAUUGC
+(((((.....(....)..((((...((((((((.(((.(((..(((((((((((((((.(((((.((.(....)))))))).)))))))))))))))..))).)))))))))))...)))).....))))).....
+>dre-mir-9-3 MI0001883 Danio rerio miR-9-3 stem-loop
+UCAGGGGGUUGGUUUCUCUCUUUGGUUAUCUAGCUGUAUGAGUUAUAACACUGUCAUAAAGCUAGAUAACCGAAAGUAGAAAUAAUUCCCAAAAUCUUUGG
+...((((((((.(((((((.(((((((((((((((.(((((((......))..))))).))))))))))))))))).)))))))))))))...........
+>dre-mir-9-6 MI0001885 Danio rerio miR-9-6 stem-loop
+GGAGGUAGUUGCUAUCUUUGGUUAUCUAGCUGUAUGAGUGUUUAUCUGCCUUCAUAAAGCUAGAUAACCGAAAGUAGAAAUGUCCUCC
+(((((..(((.(((..(((((((((((((((.((((((.((......)).)))))).)))))))))))))))..))).)))..)))))
+>dre-mir-10c MI0001888 Danio rerio miR-10c stem-loop
+CCUGUCAUCUAUAUAUACCCUGUAGAUCCGGAUUUGUGUAAACAGACGCACAGUCACAAAUUCGUAUCUAGGGGAGUAUGUAGUUGAUGUAUAGG
+(((((((((..((((((((((.(((((.((((((((((................)))))))))).))))).))).)))))))...)))).)))))
+>dre-mir-10d MI0001889 Danio rerio miR-10d stem-loop
+UGGAAGCUUUGUUCCGUCGUCUAUAUAUACCCUGUAGAACCGAAUGUGUGUUUACACAGCAAAUUCACAGAUUCGGUUUUAGGGGAGUAUAUGGACGAUGCAAAAACGUCUGCUUUCA
+.((((((..((((.((((((((((((((.((((.(((((((((((.((((...............)))).))))))))))))))).))))))))))))))....))))...)))))).
+>dre-mir-15a-1 MI0001891 Danio rerio miR-15a-1 stem-loop
+CCUGUCGGUACUGUAGCAGCACAGAAUGGUUUGUGAGUUAUAACGGGGGUGCAGGCCGUACUGUGCUGCGGCAACAACGACAGG
+(((((((....(((.(((((((((.((((((((((..((......))..)))))))))).))))))))).)))....)))))))
+>dre-mir-15a-2 MI0001892 Danio rerio miR-15a-2 stem-loop
+GCCGAGGCUCUCUAGGUGAUGGUGUAGCAGCACAGAAUGGUUUGUGGUGAUACAGAGAUGCAGGCCAUGAUGUGCUGCAGCAUCAAUUCCUGGGACCUACGC
+..(((((.((.(((((...((((((.((((((((..((((((((((............))))))))))..)))))))).))))))...)))))))))).)).
+>dre-mir-15b MI0001893 Danio rerio miR-15b stem-loop
+GUCUGUCGUCAUCUUUUUAUUUAGCCCUGAGUGCCCUGUAGCAGCACAUCAUGGUUUGUAAGUUAUAAGGGCAAAUUCCGAAUCAUGAUGUGCUGUCACUGGGAGCCUGGGAGUUUCUCCAUUAACAUGACAGC
+..(((((((.............((((((..((.(((.((..(((((((((((((((((.(((((.....)))...)).)))))))))))))))))..)).))).))..))).)))...........))))))).
+>dre-mir-16b MI0001895 Danio rerio miR-16b stem-loop
+CCUGAACUUGGCCGUGUGACAGACUGGCUGCCUGGCUGUAGCAGCACGUAAAUAUUGGAGUCAAAGCACUUGCGAAUCCUCCAGUAUUGACCGUGCUGCUGGAGUUAGGCGGGCCGUUUACCGUCUGCGGGGGCCUCGGG
+(((((....((((.(.((.((((((((((((((((((.((((((((((..((((((((((.....((....)).....))))))))))...)))))))))).)))))))).)))))......))))))).))))))))))
+>dre-mir-16c MI0001896 Danio rerio miR-16c stem-loop
+GAGGUUGUGUGUGUGUGCGUGUGUUGUCUUGCUUUAGCAGCAUGUAAAUAUUGGAGUUACUCCUUGGCCAAUGCCUCCAAUAUUGCUCGUGCUGCUGAAGCAAGAAGUCACCAAGCAGCACAUGCACGUCAUCCUU
+((((.((((((((((((((((((...((((((((((((((((((..(((((((((..........(((....))))))))))))...))))))))))))))))))...)))...)).))))))))))).)).))))
+>dre-mir-17a-1 MI0001897 Danio rerio miR-17a-1 stem-loop
+GGACUUUCUUGAGUGGACUUGGUUGGUGUCAAUGUAUUGUCAAAGUGCUUACAGUGCAGGUAGUAUUAUGGAAUAUCUACUGCAGUGGAGGCACUUCUAGCAAUACACUUGACCAUUUUAACCUUCCUCCAGGCAUCC
+(((....((((.(.(((...((((((.(((((((((((((..((((((((.((.(((((.(((((((....)))).)))))))).)).))))))))...)))))))).)))))....)))))).))).)))))..)))
+>dre-mir-17a-2 MI0001898 Danio rerio miR-17a-2 stem-loop
+GUCACUGUAGUGUCAAAGUGCUUACAGUGCAGGUAGUUCAAUAUAAUCUACUGCAGUGGAGGCACUUCAAGCUUUACCGUGAC
+(((((.((((.((..((((((((.((.(((((.(((...........)))))))).)).))))))))...)).)))).)))))
+>dre-mir-20b MI0001899 Danio rerio miR-20b stem-loop
+GAGUUUGUCCUGGCAGUUCCAAAGUGCUCACAGUGCAGGUAGUGCCAGUGGAUCUACUGCAAUGUCUGCACUUCAAGUAUUGCCGGACGCCUUC
+(((..(((((.((((((....((((((..(((.(((((.(((..((...))..)))))))).)))..)))))).....)))))))))))..)))
+>dre-mir-19a MI0001903 Danio rerio miR-19a stem-loop
+UGGUGCAGUUCUCUGCUAGUUUUGCAUAGUUGCACUACAAGAAAACGGGAGUUGUGCAAAUCUAUGCAAAACUGAUGGUGGCCUGCUGC
+....((((..(.((..(((((((((((((((((((........(((....)))))))))..)))))))))))))..)).)..))))...
+>dre-mir-19b MI0001904 Danio rerio miR-19b stem-loop
+GCUGGACCCCCGGUCAGUUUUGCUGGUUUGCAUUCAGCUUUUAAGACUGUGCGCUGUGCAAAUCCAUGCAAAACUGAUUGUGGCAGC
+((((...((.(((((((((((((((((((((((...((............))...))))))).))).))))))))))))).))))))
+>dre-mir-19c MI0001905 Danio rerio miR-19c stem-loop
+UGGAAAAGCCCUGUUAUCUGGGGUGAGUUUUGCAGGAUUGCAUCCGGCUUUAUUACAACAUGCUGUGCAAAUCCAUGCAAAACUCGCUGCGCCAGGGACAAACCA
+.((.....(((((.....((.(((((((((((((((((((((..((((.............))))))).))))).))))))))))))).)).))))).....)).
+>dre-mir-19d MI0001906 Danio rerio miR-19d stem-loop
+GUUGUGUGGCGGUCAGCUUUGCGGGGUGGGCAGUCAGCCUCCGUGUGGCCGCUGUGCAAACCCAUGCAAAACUGAGCGCUGCGCUAC
+...(((..(((.((((.((((((((((..(((..((((..((....))..)))))))..)))).)))))).)))).)))..)))...
+>dre-mir-20a MI0001907 Danio rerio miR-20a stem-loop
+UCUUAAAUAAAUCUCCUAAUGUUGCAGUUGUGUUAGAGUUUCAGCAGUGCUAAAGUGCUUAUAGUGCAGGUAGUAUUUCUGUCAUCUACUGCAGUGUGAGCACUUGAAGUACUUCUAGCUUAAUGCGUCUGGGAUCCGAAGAUUUCUGCUAGA
+(((.....((((((.(....(((.(((.((((((.(((((..((.((((((.(((((((((((.(((((.(((............)))))))).)))))))))))..)))))).))))))))))))).))).)))..).)))))).....)))
+>dre-mir-21-1 MI0001908 Danio rerio miR-21-1 stem-loop
+UUAUGUGUCUUUAUUGGCGUGGAUAUAAGUCUUUCCCAGUGUGUCAGAUAGCUUAUCAGACUGGUGUUGGCUGUUACAUUCGCCCGGCGACAACAGUCUGUAGGCUGUCUGACAUUUUGGGCAUUUUCUUCUCCGAUUAAAAAUAUGA
+((((((......(((((.(.(((...((((....(((((.(((((((((((((((.(((((((.(((((.(((...........)))))))).)))))))))))))))))))))).))))).))))))).).))))).....))))))
+>dre-mir-21-2 MI0001909 Danio rerio miR-21-2 stem-loop
+AGACAGACAGUAAAAGUGUCCCUUUCUGUCAUGUAGCUUAUCAGACUGGUGUUGGCUUUGAGUUUUUGGCAACAGCAGUCUAAUAGGCUGUCUGACAUUUUGGGCUUAUUCGACGUACGGUUUGUUU
+((((((((.(((..((((.(((....(((((..((((((((.((((((.(((((.(...........).))))).)))))).))))))))..)))))....)))..)))).....))).))))))))
+>dre-mir-23a-1 MI0001913 Danio rerio miR-23a-1 stem-loop
+GCUGUGGCGGGGAGGGUUCCUGGCACCGUGAUUUGGUGGAUAAACAGAAAUGAAAAUCACAUUGCCAGGGAUUUCCACUCCUGCACGGU
+((((((.(((((.((((((((((((..(((((((..........((....)).)))))))..))))))))))..)).).))))))))))
+>dre-mir-23a-2 MI0001915 Danio rerio miR-23a-2 stem-loop
+CUCUUCUGCCGGCCAGGGGAAUUCCUGGCAGAGUGAUUUUUAAACCUAAUGACUGAAUCACAUUGCCAGGGAUUUCCAAUGGCUCGUGUGACUCAGAG
+(((((((((.(((((.(((((((((((((((.(((((((...............))))))).)))))))))))))))..))))).))).))...))))
+>dre-mir-23a-3 MI0001916 Danio rerio miR-23a-3 stem-loop
+CCAGCUGGAGGGAUUCCUGGCAGAGUGAUUUGGGAUUAUAUCAUAAAAUCACAUUGCCAGGGAUUUCCAACCAGCUGU
+.(((((((.(..(((((((((((.(((((((..(((...)))...))))))).)))))))))))..)...))))))).
+>dre-mir-23b MI0001917 Danio rerio miR-23b stem-loop
+GUGGCUGUGUGGGUUCUUGGCAUGCUGAUUUGUGACUGUAGUAAAAAAAAAUCACAUUGCCAGGGAUUACCACACUACCAC
+((((..((((((((((((((((((.((((((...((....))......)))))))).))))))))))..))))))..))))
+>dre-mir-24-4 MI0001918 Danio rerio miR-24-4 stem-loop
+GAGGGCUGUUCCCACUUGUGCCUGCUAAACUGGUAUCAGUAUGUUGAUUUAGUGCUGGCUCAGUUCAGCAGGAACAGGUGUGAAGUCCUC
+(((((((..((.(((((((.((((((.((((((..(((((((.........))))))).)))))).)))))).))))))).)))))))))
+>dre-mir-24-2 MI0001919 Danio rerio miR-24-2 stem-loop
+GGGCUGGUCUCCUGUGCCUGCUGUGCUGAUAAUCAGUGGACGGCUGUGACUGGCUCAGUUCAGCAGGAACAGGGGCCUGGUC
+.(((..(.(((((((.(((((((.(((((...(((((.(.......).))))).))))).))))))).))))))).)..)))
+>dre-mir-24-3 MI0001920 Danio rerio miR-24-3 stem-loop
+GCUGAACGGGAGUCAUAUGAGAGAUAGAUGGAGCUGGCCUCCCGUGCCUACUGAGCUGAUUACAGUACUGUGCAAACACUGGCUCAGUUCAGCAGGAACAGGAGUCUGGUCCACAAACUCCACCAAACACUGCUGCUUCAGC
+(((((((((.(((....((.(((...(.((((.(..(.((((.((.(((.(((((((((...((((...((....))))))..))))))))).))).)).)))).)..))))))...)))))......))).))).))))))
+>dre-mir-24-1 MI0001921 Danio rerio miR-24-1 stem-loop
+ACCUGAGCUCCGGUGCCUUCUGAGCUGAUAUCAGUUGUAGUAAAUCACUGGCUCAGUUCAGCAGGAACAGGAGUGUGGCC
+.((...(((((.((.(((.(((((((((..(((((.((.....)).))))).))))))))).))).)).)))))..))..
+>dre-mir-25 MI0001922 Danio rerio miR-25 stem-loop
+GCCGGCGCUGAGAGGCGGAGACUUGGGCAGCUGCCGUCAUUCCCAGAAGGCAUUGCACUUGUCUCGGUCUGACAGUGGCGGC
+((((.(((((..((((.(((((..(.((((.((((.((.......)).)))))))).)..))))).))))..))))).))))
+>dre-mir-26a-1 MI0001923 Danio rerio miR-26a-1 stem-loop
+UUUGGCCUGGUUCAAGUAAUCCAGGAUAGGCUUGUGAUGUCCGGAAAGCCUAUUCGGGAUGACUUGGUUCAGGAAUGA
+.....(((((..(((((.((((.((((((((((.((.....))..)))))))))).)))).)))))..))))).....
+>dre-mir-26a-2 MI0001925 Danio rerio miR-26a-2 stem-loop
+GUGUGGACUUGAGUGCUGGAAGUGGUUGUUCCCUUGUUCAAGUAAUCCAGGAUAGGCUGUCUGUCCUGGAGGCCUAUUCAUGAUUACUUGCACUAGGUGGCAGCCGUUGCCCUUCAUGGAACUCAUGC
+.........(((((.((((((((((((((..(((.((.(((((((((..(((((((((..(......)..)))))))))..))))))))).)).)))..))))))).....)))).))).)))))...
+>dre-mir-26a-3 MI0001926 Danio rerio miR-26a-3 stem-loop
+CUAAGCUGAUACUGAGUCAGUGUGUGGCUGCAACCUGGUUCAAGUAAUCCAGGAUAGGCUUUGUGGACUAGGGUUGGCCUGUUCUUGGUUACUUGCACUGGGUUGCAGCUACUAAACAACUAAGAAGAUCAGAAGAG
+((...(((((.((.(((..((..((((((((((((..((.(((((((((.((((((((((.....(((....))))))))))))).))))))))).))..))))))))))))...)).)))....)))))))...))
+>dre-mir-26b MI0001927 Danio rerio miR-26b stem-loop
+GCAUUUGGCCUUUGCCUGGUUCAAGUAAUCCAGGAUAGGUUAGUUCCCACUAGUACGGCCUAUUCUUGGUUACUUGUUUCAGGAGGAGGCUACGAGC
+((...(((((((..(((((..(((((((((.(((((((((((((....)))).....))))))))).)))))))))..)))))..)))))))...))
+>dre-mir-27a MI0001928 Danio rerio miR-27a stem-loop
+UCUGGAUAUGAUGUCUGCUGAAGUUUCGUGAGGUGCAGGACUUAGCUCACUCUGUGAACAGAUCUCGGAUAUCCUAUGUUCACAGUGGCUAAGUUCCGCUCCUCUGAGGCCCACACUCGAAAUCAGCCAGG
+.((((...((((.((...((..((((((.((((.((.((((((((((....(((((((((......((....))..))))))))).)))))))))).)).))))))))))...))...)).)))).)))).
+>dre-mir-27b MI0001929 Danio rerio miR-27b stem-loop
+UCUUUUCUAGCAGGUGCAGAGCUUAGCUGAUUGGUGAACAGUGAUUGAACUCUUUGUUCACAGUGGCUAAGUUCUGCAUCUGAGGAGAGGA
+((((((((..(((((((((((((((((((....((((((((.((......)).))))))))..))))))))))))))))))).))))))))
+>dre-mir-27d MI0001931 Danio rerio miR-27d stem-loop
+UUCUGAGCGGGUGCAGAGCUUGGCUGAUUGGUGAACGUGCAUGGCUUGUGUUUUUGUUCACAGUGGCUAAGUUCUUCACCCGAAAAGAA
+.(((...((((((.((((((((((((....(((((((.((((.....))))...)))))))..)))))))))))).))))))...))).
+>dre-mir-27e MI0001932 Danio rerio miR-27e stem-loop
+GUCAUCACUCGCUCACGGCGCAGAGCUUAGCUAAUCGGUGAGCAUUGAUCCCUUAAGAAAACUGUUCACAGUGGCUAAGUUCAGUGUCUGGAGUGAACGGGAUGAC
+((((((..((((((..(((((.(((((((((((....(((((((.(..((......))..).)))))))..))))))))))).)))))..))))))....))))))
+>dre-mir-29b-1 MI0001933 Danio rerio miR-29b-1 stem-loop
+CUGCUCCUGGAAGCUGAAUUCAGAUGGUGCCAUAGAGUAUUUUAUGGCAUCUAGCACCAUUUGAAAUCAGUGUUCCUGGGCCG
+..((.((.(((((((((.((((((((((((..((((((........)).)))))))))))))))).))))).)))).))))..
+>dre-mir-29b-2 MI0001934 Danio rerio miR-29b-2 stem-loop
+UCUUCCUCCAGAUGCUGGUUUCACAUGGUGGUUUAGAUGUGUUCUACCAAAGUCUAGCACCAUUUGAAAUCAGUGUUCUUGGGGAGGG
+.(((((((.((((((((((((((.((((((..((((((.((......))..)))))))))))).))))))))))).))).))))))).
+>dre-mir-29a MI0001938 Danio rerio miR-29a stem-loop
+UGAAGACCCUCAUCUCUCUCUCUCUCUCCCCACCAAACGAUGACUGAUUUCCUUUGGUGCUUAGAGUCCCAUCUGUCAUCUAGCACCAUUUGAAAUCGGUUAUAAUGACUGGGGAUCAAUUCUUCA
+.(((((....................((((((.......((((((((((((...(((((((.((((.(......).).))))))))))...))))))))))))......)))))).....))))).
+>dre-mir-30a MI0001940 Danio rerio miR-30a stem-loop
+GGCUCCUUGCAGUUGUAAACAUUCCCGACUGGAAGUUGUAAUGCAGAAAAUCUCAGCUUUCAGUCUGAUGUUUGCUGCUACUGGUGGCC
+(((..((.(.(((.(((((((((...((((((((((((..((.......))..)))))))))))).))))))))).))).).))..)))
+>dre-mir-30c MI0001944 Danio rerio miR-30c stem-loop
+CUUCAGGGAGUGUAAACAUCCUACACUCUCAGCUGGAGCGCAGCCGAGGCCGGGAGUGGGAUGUUUGCGCUCUCUGGCU
+..(((((((((((((((((((..(((((((.(((...((...))...))).))))))))))))))))))))))))))..
+>dre-mir-30d MI0001946 Danio rerio miR-30d stem-loop
+GUGCUGUAUAUGGGUAUAACUGGUUGUUCAUGCCUGUAAACAUCCCCGACUGGAAGCUGUGCUACGCGGAAAACGAGCUUUCAGUUGGAUGUUUGCUGUCAUCGUCCAGUUCUGUCGCCUUGUAUUAC
+.....(((((.(((((.((((((.((...(((.(.((((((((((..(((((((((((((.((....))...)).))))))))))))))))))))).).))))).)))))).)).).)).)))))...
+>dre-mir-30e-2 MI0001950 Danio rerio miR-30e-2 stem-loop
+UACGGGCUACUGUAAACAUCCUUGACUGGAAGCUGGUGCACAUGAUGGAGCUUUCAGUCGGAUGUUUGCAGCAGCCAACU
+....((((.((((((((((((..(((((((((((....(....)....))))))))))))))))))))))).))))....
+>dre-mir-92a-1 MI0001951 Danio rerio miR-92a-1 stem-loop
+UGGUCCCUUUCUGCGCAGGUUGGGAUUGGUAGCAAUGCUGUGUGUUUUGAAGGUAUUGCACUUGUCCCGGCCUGUAAAGGAUUGU
+.....(((((....((((((((((((.(((.((((((((............))))))))))).))))))))))))))))).....
+>dre-mir-92a-2 MI0001952 Danio rerio miR-92a-2 stem-loop
+ACAGCAUCCCUUUCUUUGCAGGUUGGGAUCGGCCGCAAUGCUCUGUGCUGGAAGUAUUGCACUUGUCCCGGCCUGUGAAGAGCAUGGGAAAUUGU
+((((..((((.(((((..(((((((((((.((..((((((((((.....)).)))))))).)).)))))))))))..)))))...))))..))))
+>dre-mir-93 MI0001954 Danio rerio miR-93 stem-loop
+GUGUGUGUUAAAAGUGCUGUUUGUGCAGGUAGUGUGUUUCCUCUACUGUAGGAGCAGCACUUCACAACACACAC
+(((((((((..(((((((((((.(((((.(((.(......).)))))))).)))))))))))...)))))))))
+>dre-mir-96 MI0001955 Danio rerio miR-96 stem-loop
+GCUGGGCGCUCUUCUUUGCCUGUUUUGGCACUAGCACAUUUUUGCUUUUUUAUAUAUACCUUGAGCAAUUAUGUGUAGUGCCAAUAUGGGACAAGACAGACAUGCUACUUAAAAAAAAAAUCAGC
+((((((((.(((((((..(((((.(((((((((.(((((..((((((...............))))))..)))))))))))))).)))))..)))).)))..))))...............))))
+>dre-mir-99-1 MI0001956 Danio rerio miR-99-1 stem-loop
+GCCACUUGUCAUUAACCCGUAGAUCCGAUCUUGUGAUAAGUUUGAUGGCACAAGCUCGAUUCUAUGGGUCUCUGUCUCUGUGGU
+(((((..(.((...(((((((((..(((.((((((...(......)..)))))).)))..)))))))))...)).)...)))))
+>dre-mir-99-2 MI0001957 Danio rerio miR-99-2 stem-loop
+CACUUGUCACAAACCCGUAGAUCCGAUCUUGUGGCGUAAUCGGCAACCCAAGCUCGAUUCUGUGGGUCUCUGUCACUGUG
+(((..((.(((.(((((((((..(((.((((((.((....)).))...)))).)))..)))))))))...))).)).)))
+>dre-mir-100-1 MI0001958 Danio rerio miR-100-1 stem-loop
+GAAGAGACCUGCCUGCUGACACAAACCCGUAGAUCCGAACUUGUGGUGACUGUCCACACAAGCUUGUAUCUAUAGGUAUCUGUCUGUGUGGCCUUC
+((((......((((((.((((.(.(((..(((((.(((.((((((.((......)))))))).))).)))))..))).).)))).))).)))))))
+>dre-mir-101b MI0001961 Danio rerio miR-101b stem-loop
+GCUCCUCCGUCAUGAAUUGUCCAUUUUCAGUUAUCAUGGUACCGGUGCUGUGUGCCUGUCAAGUACAGUACUAUGAUAACUGAAGAUUGACGGUGCCAAACAUCAGUGGAGU
+(((((.(.(...((.((((((.((((((((((((((((((((..(((((.((.......))))))).)))))))))))))))))))).))))))..)).....).).)))))
+>dre-mir-103 MI0001962 Danio rerio miR-103 stem-loop
+UUGCCCUGGUCUGUCAGCCUCUUUACGGUGCUGCCUUGUGGAAUCUGGAUCAAGCAGCAUUGUACAGGGCUAUGAGAGACCCGGGCCC
+..((((.(((((.((((((.((.(((((((((((.(((............)))))))))))))).)))))..))).))))).))))..
+>dre-mir-124-1 MI0001966 Danio rerio miR-124-1 stem-loop
+GGCUCUCGCUGUACGUGUUCACAGUGGACCUUGAUUUAUUGUAUUUCAAUUAAGGCACGCGGUGAAUGCCAACAGCACAGCC
+((((...(((((..((((((((.(((..((((((((...........))))))))..))).))))))))..)))))..))))
+>dre-mir-124-3 MI0001968 Danio rerio miR-124-3 stem-loop
+GGCUCUGUGGGAUUUCAGACUCUGGCUUUCCGUGUUCACAGCGGACCUUGAUUUAAUGUCUUACAAUUAAGGCACGCGGUGAAUGCCAAGAGCGGAGCCUUUUAACAUCAGCAGGCC
+(((.((((..(((...((.(((((.((((..((((((((.(((..(((((((((((....))).))))))))..))).))))))))..))))))))).))......))).)))))))
+>dre-mir-124-4 MI0001969 Danio rerio miR-124-4 stem-loop
+GGUUUUUGCUCUUUGUGUUCACAGUGGACCUUGAUUUAAUUUCAAUACAAUUAAGGCACGCGGUGAAUGCCAAGAGAGAAGCC
+(((((((.(((((.((((((((.(((..((((((((............))))))))..))).)))))))).))))))))))))
+>dre-mir-124-5 MI0001970 Danio rerio miR-124-5 stem-loop
+GGGUUUUGCUCGUGCGUUCUUUUUGAGUUCUCGCUCUGCGUGUUCACAGCGGACCUUGAUUUAAUGUCCAUACAAUUAAGGCACGCGGUGAAUGCCAAGAGAAGAAUCUCUCCAGCAACGAGUUUGCGC
+..((...((((((((.........(((((((..(((((.((((((((.(((..((((((((............))))))))..))).))))))))).)))).)))).)))....)).))))))..))..
+>dre-mir-124-6 MI0001971 Danio rerio miR-124-6 stem-loop
+GGGUGGUGACACAGGCCCGCCACUCUGCGUGUUCACGGCGGACCUUGAUUUAAUAUCCAUACAAUUAAGGCACGCGGUGAAUGCCAAGAGAGGGGUCUUAAAACGACAAACCC
+(((((....)..((((((.(..(((((.((((((((.(((..((((((((............))))))))..))).))))))))).)))).)))))))...........))))
+>dre-mir-125a-2 MI0001973 Danio rerio miR-125a-2 stem-loop
+GAUCAGUCCAAAUCGAUGUAUGUCUGUGUCCCUGAGACCCUUAACCUGUGAUGUCUUCCAAGGUCACAGGUGAGGUCCUUGGGAACACGGCUGUAUAUGAUGACGUC
+.....(((...(((.(((((((.((((((.((..((..(((((.((((((((.(......).)))))))))))))..))..)).)))))).)))))))))))))...
+>dre-mir-125b-1 MI0001975 Danio rerio miR-125b-1 stem-loop
+UUCUGUUGCAGGUUGGCGGUUGGUCUGCAAAUGUGCCUCUCACAAUCCCUGAGACCCUAACUUGUGACGUUUUCCUGUUAUGUGCACGGGUUAGGUUCUUGGGAGCUGAGAGGGGUGCUCUGUCAUCAGCCCGCCGGCGUCGGAA
+.((((....(.(((((((((((((..(((...(..((((((.((.((((.((((.(((((((((((((((.........)))).))))))))))).))))))))..)).))))))..)..))).))))).)))))))).))))).
+>dre-mir-125b-2 MI0001976 Danio rerio miR-125b-2 stem-loop
+GUGCCCCUCUCCUUCCCUGAGACCCUAACUUGUGACGUUCUGCUUCGAUGUCCACGGGUUGGGUUCUCGGGAGCUGUGAGAGGCAC
+(((((.(((.(.(((((.((((.((((((((((((((((.......))))).))))))))))).)))))))))..).))).)))))
+>dre-mir-125b-3 MI0001977 Danio rerio miR-125b-3 stem-loop
+CCCGUGCGGCCACCGCUGCACUCCUCCUGGUCCCUGAGACCCUAACUUGUGAGCUUUGUGUGCUAAAAAUCACAGGUUAAGCUCUUGGGACCUGGGCAGAGGGCAAAAGCACUGG
+((.((((.(((....((((......((.((((((.((((.(.((((((((((..((((.....))))..)))))))))).).)))))))))).))))))..)))....)))).))
+>dre-mir-126a MI0001979 Danio rerio miR-126a stem-loop
+GAGCCAUUUUAACUGCUUCACAGUCCAUUAUUACUUUUGGUACGCGCUAGGCCAGACUCAAACUCGUACCGUGAGUAAUAAUGCACUGUGGCAGUGGGUUU
+(((((......(((((..((((((.(((((((((((.(((((((.(..((......))....).))))))).))))))))))).))))))))))).)))))
+>dre-mir-128-1 MI0001980 Danio rerio miR-128-1 stem-loop
+UGGAGGAGGAGUGCUGGGAGACGGGGCCGUGGCACUGUAUGAGAUUCAUGUAGGCUUUCUCACAGUGAACCGGUCUCUUUUUCCAGCCCUCACUGACA
+.(..((..(((.(((((((((.(((((((...((((((..((((..(.....)..))))..))))))...))))))).))))))))).))).))..).
+>dre-mir-128-2 MI0001981 Danio rerio miR-128-2 stem-loop
+UCUGCUCAUGGGUCUGUCAGUAGUAGGACAGGGGGCCGUUUCUACUGUCAGAGAUGCUGCCACUCGUCUCACAGUGAACCGGUCUCUUUUCCUGCUAUUCACUUCUGCAAUAAUAUGAGCAGA
+((((((((((.((..((.((((((((((.(((((((((.(((.(((((..((((((........)))))))))))))).))))))))).)))))))))).))....)).....))))))))))
+>dre-mir-130a MI0001984 Danio rerio miR-130a stem-loop
+UGUCUGUCCAGUGCCCCUUUUAUAUUGUACUACUGAUAACCCAGUUAUUAAAGCAGUGCAAUGUUAAAAGGGCAUUGGCCAGGGA
+..((((.(((((((((.(((.((((((((((.((((((((...))))))..)).)))))))))).))).))))))))).))))..
+>dre-mir-130c-1 MI0001987 Danio rerio miR-130c-1 stem-loop
+GGGAGAGGUCUGUACGGUGAUAUUGACCAUGUUUUGUCCAUUGCCCUUUUUCUGUUGUACUACUGGCCAAUCAGAAGAGCAGUGCAAUAUUAAAAGGGCAUUGGCUGAUAGAACAGAGUCCUUCACCUCUCACCCUCUCCU
+((((((((..((...(((((....(((..(((((((((((.(((((((((..(((((((((.((.............)).)))))))))..))))))))).)))...))))))))..)))..)))))...)).))))))))
+>dre-mir-132-1 MI0001989 Danio rerio miR-132-1 stem-loop
+GUCUCCAUGGCGACCGUGGCAUUAGAUUGUUACUGUAGGAACAGAAUUUUUGGUAACAGUCUACAGCCAUGGUCGCUAGUGGGCA
+(((..(.(((((((((((((..(((((((((((((.((((......)))))))))))))))))..))))))))))))))..))).
+>dre-mir-132-2 MI0001991 Danio rerio miR-132-2 stem-loop
+UCCCUUCCUCUGCUGUCUCCAUGCUGACCGUGGCUUUAGAUUGUUACUGUAGCGUUGGCACGUGGUAACAGUCUACAGCCAUGGUCGCCAAGGGGCAGGUGUUACAGCGACUACUGGGA
+((((......((((((((((.((.(((((((((((.((((((((((((...((((....)))))))))))))))).))))))))))).)).))))........))))))......))))
+>dre-mir-133c MI0001995 Danio rerio miR-133c stem-loop
+GAAACACGGCUUAGUUGCUGGUAAAACGGAACCAAGUCGGGUGUUUGCGAGAGGUUUGGUCCCUUUCAACCAGCUACUGCGCCGUGAAUUC
+....((((((.((((.((((((..((.((.(((((..(...((....))...)..))))).)).))..)))))).)))).)))))).....
+>dre-mir-135c-2 MI0001997 Danio rerio miR-135c-2 stem-loop
+UGCAGUCUAAAGCAACUCAAAACACUACUGUGCUUUAUGGCUUUCUAUUCCUAUGUGAUUUUGAUAUGAUGUAUCAUGUAGGGUUCAAAGCCAUUAGGUACAGAGUGGCUUAUCAGCAGUGGAUGUA
+((((.((((..((.........((((.((((((((.((((((((....(((((((((((.............)))))))))))...)))))))).))))))))))))........))..))))))))
+>dre-mir-137-2 MI0002001 Danio rerio miR-137-2 stem-loop
+GUUCUGUUGUUUCCCUCUAUAAAGGACUCUCUUCGGUGACGGGUAUUCUUGGGUGGAUAAUACGGCUCUCGUUGUUAUUGCUUAAGAAUACGCGUAGUCGAGGAGAGUCAUGUCGGCGGCGAGAGAGC
+(((((.((((..((..(.......((((((((((((..(((.(((((((((((..(.(((((((.....)).))))))..))))))))))).)))..))))))))))))..)..))..)))).)))))
+>dre-mir-140 MI0002003 Danio rerio miR-140 stem-loop
+GUGUUUGUCUCCUGUGUCCCGUCAGUGGUUUUACCCUAUGGUAGGUUACGUCAUGCUGUUCUACCACAGGGUAGAACCACGGACGGGAUGUCUGGAGGUGUCUGC
+(((..(..((((.(..(((((((.(((((((((((((.(((((((..(((......)))))))))).))))))))))))).)))))))..)..))))..)..)))
+>dre-mir-141 MI0002004 Danio rerio miR-141 stem-loop
+GUCUCUAGGGUACAUCUUACCUGACAGUGCUUGGCUGUUCACUGAUGUUCUAACACUGUCUGGUAACGAUGCACUCUGGUGAC
+(((.(((((((.(((((((((.(((((((.((((....((...))....))))))))))).))))).)))).))))))).)))
+>dre-mir-143-1 MI0002007 Danio rerio miR-143-1 stem-loop
+GAUCUACAGUCGUCUGGCCCGCGGUGCAGUGCUGCAUCUCUGGUCAACUGGGAGUCUGAGAUGAAGCACUGUAGCUCGGGAGGACAACACUGUCAGCUC
+((.(((((((.((((..((((.(.(((((((((.((((((.((((......)).)).)))))).))))))))).).)))).))))...))))).)).))
+>dre-mir-145 MI0002010 Danio rerio miR-145 stem-loop
+UCAGUCUUCAUCAUUUCCUCAUCCCCGGGGUCCAGUUUUCCCAGGAAUCCCUUGGGCAAUCGAAAGGGGGAUUCCUGGAAAUACUGUUCUUGGGGUUGGGGGUGGACUACUGA
+(((((..((......((((((.((((((((..((((.((.(((((((((((((...(....)...))))))))))))).)).)))).)))))))).))))))..))..)))))
+>dre-mir-146a MI0002012 Danio rerio miR-146a stem-loop
+GAGUUUGUUUUGAGCACUUUUCCCUGAGAACUGAAUUCCAUAGAUGGUGUUCAUGAAAAGUUCAUCUAUGGGCUCAGUUCUUCUGGCAAUCUGUUUAAUGUCUGCUACAAAUUC
+((((((((.(((((((..((.((..(((((((((..(((((((((((..............))))))))))).)))))))))..)).))..)))))))........))))))))
+>dre-mir-146b MI0002013 Danio rerio miR-146b stem-loop
+GCUCUUGGCUUUGAGAACUGAAUUCCAAGGGUGUCUGCUUUAUAUUCAGCCCACGGAGUUCAGUUCUUAAGUUUGGAUGC
+(((((..((((.((((((((((((((..((((................))))..))))))))))))))))))..))).))
+>dre-mir-150 MI0002016 Danio rerio miR-150 stem-loop
+CAUCUCCGUCUCUCCCAAUCCUUGUACCAGUGUCUGAUUUACAGAUGACGCUGGACGGGGUUUGGGGGGGGCUGAGGGA
+..((((.(((((((((((.((((((.((((((((............)))))))))))))).))))))))))).))))..
+>dre-mir-152 MI0002017 Danio rerio miR-152 stem-loop
+CUGUUCACCUGGCUCAAGUUCUGUGAUACACUCAGACUUUGAAUCAGUGGUAGUCAGUGCAUGACAGAACUUUGGCCCGG
+.......((.((((.(((((((((.((.((((..((((.............)))))))).)).))))))))).)))).))
+>dre-mir-153b MI0002019 Danio rerio miR-153b stem-loop
+GAGCGAUGGAGCGCGGUAGCGAGGUAUUGCACAGCUGUCUGUGUCAUUUUUGUGGUUUGCAGCUAGUAGUCUGGUUCCAGUUGCAUAGUCACAAAAAUGAGCACAGACAGAUGUGACUGCAGCAACGCUGAUGAAACGCUCCAUCGCC
+..(((((((((((((.(((((..((...(((((.((((((((((((((((((((..((((((((.(..........).))))))).)..))))))))))).))))))))).)))).)....))..))))).))...))))))))))).
+>dre-mir-153c MI0002022 Danio rerio miR-153c stem-loop
+GAUGGAGAUCAGUAGGUCCCUGGACGUAGCACACCUCCCAGUGUCAUUUUUGUGAUUUGCAGCUAGUAGUCUGGGUCCAGUUGCAUAGUCACAAAAAUGAUCAUUGGUAGGUGUGAGUGCAGCAGGAGUGAGGCUUACCGGAUCCUCCAUC
+((((((((((.(((((((((((...(((.(((((((.(((((((((((((((((((((((((((.(..........).))))))).)))))))))))))).)))))).)))))))..)))..)))).....)))))))..))).)))))))
+>dre-mir-155 MI0002023 Danio rerio miR-155 stem-loop
+UGGUGCAGGUUUAAUGCUAAUCGUGAUAGGGGUUUAGUGCUGAUGAACACCUAUGCUGUUAGCAUUAAUCUUGCGCUA
+(((((((((.(((((((((((.((.(((((.(((((.......))))).))))))).))))))))))).)))))))))
+>dre-mir-190a MI0002027 Danio rerio miR-190 stem-loop
+UCUGGAGGUGAGGUAGACCUGGAAGCCUUUCUGCAGGCCUCUGUUUGAUAUGUUUGAUAUAUUAGGUUGUUAUUCUGUCCAACUAUAUAUCAAACAUAUUCCUACAGUGUCCUGCUCUGUCUCCAG
+.(((((((.(((((..........)))))...(((((.(.((((..((((((((((((((((..(((((..........)))))))))))))))))))))...)))).).)))))....)))))))
+>dre-mir-462 MI0002028 Danio rerio miR-462 stem-loop
+GUCUGGAUGGUAACGGAACCCAUAAUGCAGCUGUUUGGUUGAUUGAUUGACAGCUGUCUGUGGAUUCCGUGCCCCUCCUUUCUUGCAGGAGCUCAUUGAGAU
+((((.(((((..((((((.(((((..(((((((.(..(((....)))..)))))))).))))).))))))....(((((.......))))).))))).))))
+>dre-mir-193a-2 MI0002030 Danio rerio miR-193a-2 stem-loop
+GAGAGUGUGUCAGAGGCUGGGUCUUUGCGGGCAAGGUGAGUUUUCCUUUCAUUCAACUGGCCUACAAAGUCCCAGUUUUCGGCCCAUGUGACCAUCUC
+(((((((.(((..((((((((.(((((..(((.((.(((((.........))))).)).)))..))))).))))))))..))).))).......))))
+>dre-mir-193b MI0002032 Danio rerio miR-193b stem-loop
+GUGAUUUCAGUGACGGGACUUUGGGGGCGAGAUGAGUAUUGAUCUCUAUCCAACUGGCCCGCAAAGUCCCGCUUCUGGGACUCAC
+(((((..(((...((((((((((.((((.((.((..((........))..)).)).)))).))))))))))...)))..).))))
+>dre-mir-194b MI0002034 Danio rerio miR-194b stem-loop
+GCUCGCUGGGUGUAACAGCCGCUCCAUGUGGAAAAUGCAUUCAAGUGCCCAUGGAGAAGCUGUUACCUGCAGAGAGU
+((((.(((.(.((((((((..(((((((.((...((........)).)))))))))..)))))))).).))).))))
+>dre-mir-196a-2 MI0002035 Danio rerio miR-196a-2 stem-loop
+UCGAGUGGUUUAGGUAGUUUCAUGUUGUUGGGAUUACAUUCAAACUCUGCAACGUGAAACUGUCUUAAUUGCCCCA
+....(..(((.((..(((((((((((((.(((.((......)).))).)))))))))))))..)).)))..)....
+>dre-mir-200c MI0002039 Danio rerio miR-200c stem-loop
+UGGAUGCCUGGCUCCAUCUUACAAGGCAGUUUUGGAUGUUAUAUCUUCUCUAAUACUGCCUGGUAAUGAUGCAGAUGGUCAUCUA
+((((((((...((.((((((((.(((((((.(((((.(........).))))).))))))).)))).)))).))..)).))))))
+>dre-mir-202 MI0002040 Danio rerio miR-202 stem-loop
+CUGUUCCUUUUUCCUAUGCAUAUACCUCUUUGACAUGCUGCUUUAAAGAGGCAUAGGGCAUGGGAAAAUGGGGCGG
+(((((((.(((((((((((.(((.(((((((((.........))))))))).)))..))))))))))).)))))))
+>dre-mir-204-2 MI0002042 Danio rerio miR-204-2 stem-loop
+GUGUUGCUCUAGUGACCAGUUUGUGACCUCCUGGGUUUCCCUUUGUCAUCCUAUGCCUGCAGUUCCUGAUGAGGCUGGGACAGCAAAGGGAGGUUCAGAUGUCGACCUGUACUACAGUCAAUAC
+((((((((.(((((..(((....((((...(((..(((((((((((..(((((.((((.((........)))))))))))..)))))))))))..)))..))))..)))))))).)).))))))
+>dre-mir-206-1 MI0002045 Danio rerio miR-206-1 stem-loop
+GAAUGUUGCCUCUUGUGAAGACAUGCUUCCUUAUAUGCCCAUAUUAAUGCUCAAGUUAUGGAAUGUAAGGAAGUGUGUGGUUUCAGGGGGAAAUUUGUC
+((((....(((((((.((..((((((((((((((((..(((((.............))))).))))))))))))))))..)).)))))))..))))...
+>dre-mir-206-2 MI0002046 Danio rerio miR-206-2 stem-loop
+GAGUUGGCUGUUGCUUAUUGAGACGACAUACUUCCUUAUAUCCCCAUAUUCAGAAUUAAUCUAUGGAAUGUAAGGAAGUGUGUGGCUUCAGUGAGAUCUCAUCAUCAUC
+..(.(((.((...((((((((..(.((((((((((((((((..(((((.............))))).)))))))))))))))).)..))))))))....))))).)...
+>dre-mir-216b MI0002048 Danio rerio miR-216b stem-loop
+ACUGACUGGGUAAUCUCUGCAGGCAACUGUGAUGUGAUUACAGUCUCACAUUGACCUGAAGAGGUUGAGCAGUCUGU
+((.(((((..((((((((.(((((((.(((((...(((....))))))))))).)))).))))))))..))))).))
+>dre-mir-218a-2 MI0002052 Danio rerio miR-218a-2 stem-loop
+GCGGGGUUUUCCUUUGUGCUUGAUCUAACCAUGUGGUUGCAGACUCAGACUAAUACAUGGUUCUGUCAAGCACCAUGGAAGGUCUUGC
+(((((..(((((...(((((((((..((((((((((((.........))))...))))))))..)))))))))...)))))..)))))
+>dre-mir-218b MI0002053 Danio rerio miR-218b stem-loop
+CAGGACACCAUUGUGCUUGAUCUAACCAUGCAGUUCCCUUUCUGUCCAUGGUUGUGCCAAGCACUUUGGAGACUUG
+((((.(.(((..(((((((...(((((((((((........)))..))))))))...)))))))..))).).))))
+>dre-mir-219-3 MI0002054 Danio rerio miR-219-3 stem-loop
+CUUCUCUUUUAAGUUCAUCUGUCUGGUUUGAUACUGACGGUCAGGUGCUGAUUGUCCAAACGCAAUUCUUGUGCUUGUGUGAAACAGGAGUUGUGGAUGGACAUCACGCUCCUGUCUGGUCCUCACAUCUACAGGAUGGGCCAAGUAAAG
+(((..(((....((((((((....(((.(((......(((.((((.((((((.(((((..((((((((((((...........))))))))))))..))))))))).)).)))).)))....))).)))....)))))))).)))..)))
+>dre-mir-301b MI0002061 Danio rerio miR-301b stem-loop
+AAGGUCUGUUGCUUUGACGAUGUUGCACUACUGAACCAUCUAAUCAAGCAGUGCAAUAGUAUUGUCAUUGCAUUCGGCUUU
+((((((...(((..(((((((((((((((.((((.........)).)).))))))))...)))))))..)))...))))))
+>dre-mir-338-1 MI0002063 Danio rerio miR-338-1 stem-loop
+GGUUUCUCCCUGCAACAAUCUCCUGAUGCUGCCUGAGUGUUUUUCUUCCACUCCAGCAUCAGUGAUUUUGUUGCCGGAGGUCACC
+(((.(((((..(((((((..(((((((((((...(((((.........)))))))))))))).))..))))))).)))))..)))
+>dre-mir-338-2 MI0002064 Danio rerio miR-338-2 stem-loop
+GUGUGUGUGUGUGUUUCUGGUGCCUGCUGAGAACAAUAUCCUGAUGCUGAAUGAGUGUGUUGAAGGAAACUCCAGCAUCAGUGAUUUUGUUGCCAGAGGAGCACUUUGGGCAUCCUGUGUAUAU
+(((((..((..(((((..(((((((.(((..(((((.((((((((((((...((((............))))))))))))).))).)))))..))).)).)))))..)))))..).)..)))))
+>dre-mir-363 MI0002067 Danio rerio miR-363 stem-loop
+UAAAUGCAAAUAUUUGUCUUGCUGUUUUCGGGUGGAUGACUCUGCAAUUUUAUUAGUGAUGGAAAAACUUCAAUAAAAAUUGCACGGUAUCCAUCUGUAAUCCGCUGGAUUCCAUUACCUGCGUUUG
+((((((((..((...((((.((.(....((((((((((.((.(((((((((.....(((.(......).)))...))))))))).))))))))))))....).)).)))).....))..))))))))
+>dre-mir-365-1 MI0002068 Danio rerio miR-365-1 stem-loop
+CCGCAGGGAGAAUGAGGGGCUUUUGGGGGCACUUGUGUUUCAGUUUCACCAUCAUAAUGCCCCUAAAAAUCCUUAUUGCUCUUGCACUG
+..((((((..((((((((..(((((((((((.(((((...............)))))))))))))))).))))))))..))))))....
+>dre-mir-365-3 MI0002070 Danio rerio miR-365-3 stem-loop
+AAGUCAGCAAGAAAAGUGAGGGACUUUUAGGGGCAGCUGUGUUAUACUGACCCAGUCAUAAUGCCCCUAAAAAUCCUUAUUGCUCUUGCAGUGCUCAAC
+......((((((..((((((((..(((((((((((((((.(((.....))).)))).....))))))))))).))))))))..))))))..........
+>dre-mir-375-1 MI0002072 Danio rerio miR-375-1 stem-loop
+UGCACUUGCUUUACGUUGAGCCACACGCACAAUACAUGUGGAUUCAGUUUUGUUCGUUCGGCUCGCGUUAAGCAAGUGCA
+.((((((((((.((((.(((((..(((.((((.((.((......)))).)))).)))..))))))))).)))))))))).
+>dre-mir-454a MI0002074 Danio rerio miR-454a stem-loop
+UUGCAGGUCGUUUAAGAAUUAAUCCUAAUUCUUGGGACCCUAUCAGUAUUGCCUCUGCUGUCCACUGUGUUCAGAGUAGUGCAAUAUUGCUAAUAGGGUUUUAGGUUUUAGGUUGUACCUUCAG
+.((.((((((.............(((((..((((((((((((((((((((((..(((((.....(((....)))))))).)))))))))...)))))))))))))..))))).)).)))).)).
+>dre-mir-454b MI0002076 Danio rerio miR-454b stem-loop
+GAUAAAUGCAUCUUGCAGGCGAGACCCUAUCAAUAUUGCCUCUGCUUUUCUCACUGUUUAUGGAGUAGUGCAAUAUUGCUUAUAGGGUCUUGACUUUAAGGCUAAUCUGCAAUAUC
+((((..(((((((((.((.((((((((((((((((((((..(((((((.............))))))).)))))))))...))))))))))).)).)))))......)))).))))
+>dre-mir-430a-18 MI0002131 Danio rerio miR-430a-18 stem-loop
+GUCAGGCUUUCACAAGCCAGCCUCAAAGUUUGUUCUCAAACUUUAAGAAUCUAGUUGGUAAGUGCUAUUUGUUGGGGUAGUUUCAAGUGA
+.........((((..((((((((.((((((((....)))))))).))......))))))..(.((((((......))))))..)..))))
+>dre-mir-456 MI0002176 Danio rerio miR-456 stem-loop
+GCUGGUUGUGUGUGCAGGCAUCUUUCCAGUCUACAUGUGGAUCCAGGAGUCUGCAGGCUGGUUAGAUGGUUGUCACGUACCCAGC
+(((((.((((((.((((.(((((..(((((((....(..(((......)))..))))))))..))))).)))))))))).)))))
+>dre-mir-457a MI0002177 Danio rerio miR-457a stem-loop
+UGCCUGACAGAAGCAGCACAUCAAUAUUGGCAGCUGCCCUCUCUCUGGGUUGCCAGUAUGGUUUGUGCUGCUCCCGUCAGACA
+...(((((.(.(((((((((...(((((((((...((((.......)))))))))))))....))))))))).).)))))...
+>dre-mir-457b MI0002178 Danio rerio miR-457b stem-loop
+GAAUGUACUAAAGCAGCACAUAAAUACUGGAGGUGAUUGUGGUGUUAUCCAGUAUUGCUGUUCUGCUGUAGUAAGACC
+.....(((((.(((((.(((..(((((((((..((((......)))))))))))))..))).))))).))))).....
+>dre-mir-458 MI0002179 Danio rerio miR-458 stem-loop
+GUGCAGAUAGCAGCGCCAUUUACAGAGCUAUAAGCAUCAUAGUUGUCAUAGCUCUUUGAAUGGUACUGCCAUAUGCAC
+(((((.((.((((..(((((((.((((((((.(((......)))...)))))))).)))))))..)))).)).)))))
+>dre-mir-461 MI0002183 Danio rerio miR-461 stem-loop
+AUUUUGAAAAUCAGGAAUGGGCUAAAUGCCAAUCAAAAUAAAGCAAGUCUUUGGUCCAGACCAGGUAAUACAAAAUAAG
+((((((...(((.((..((((((((((((.............)))....)))))))))..)).)))....))))))...
+>dre-mir-184-2 MI0003243 Danio rerio miR-184-2 stem-loop
+CACAUCUCCUUAUCACUUUUCCAGCCCAGCUAACGAUGGUGAAUCCGUUGGACGGAGAACUGAUAAGGGCAUGUGGCUG
+(((((.(((((((((.((((((.((...))...((((((.....))))))...)))))).))))))))).)))))....
+>dre-mir-489 MI0003256 Danio rerio miR-489 stem-loop
+ACUGACUUGAGUGGUGGCCUGGUGGUCGUAUGUAUGACGUCAUUUACUUCAAAGUUUGGAGUGACAUCAUAUGUACGGCUGCUAAACUGCUACAUGGCUCAUCA
+.......(((((.(((((.(((..(((((((((((((.((((((((((....)))...))))))).)))))))))))))..)))....)))))...)))))...
+>dre-mir-135b MI0003364 Danio rerio miR-135b stem-loop
+CUCUUUGCCCCGUAUGGCUUUUUAUUCCUAUCUGAGAAUUGCUCAGGACUCAUAUAGGGAUGGAAGCCAUGCAGGGCUGGGG
+((((..((((.(((((((((((.((((((((.((((..((....))..)))).))))))))))))))))))).)))).))))
+>dre-mir-181a-2 MI0003387 Danio rerio miR-181a-2 stem-loop
+UUGGUGAACAUUCAACGCUGUCGGUGAGUUUUGCGCUUCUGUAACAAACCAUCGACCGUUGACUGUACCCUGAGGGUGG
+.......(((.((((((..(((((((.((((((((....))))..))))))))))))))))).)))((((...))))..
+>dre-mir-34b MI0003690 Danio rerio miR-34b stem-loop
+GGGGUUGGUCUGUAGGCAGUGUUGUUAGCUGAUUGUUUCAUAUGAACUAUAAUCACUAACCAUACUGCCAACACAACAACCUACA
+.((((((...(((.((((((((.(((((.((((((((((....)))..)))))))))))).)))))))).)))...))))))...
+>dre-mir-31 MI0003691 Danio rerio miR-31 stem-loop
+GAAGAGAUGGCAAGAUGUUGGCAUAGCUGUUAAUGUUUAUGGGCCUGCUAUGCCUCCAUAUUGCCAUUUCUG
+..(((((((((((.(((..((((((((.((..((....))..))..))))))))..))).))))))))))).
+>dre-mir-135a MI0003692 Danio rerio miR-135a stem-loop
+ACAGCUGUCGUGUCUUAUGGCUUUUUAUUCCUAUGUGAAGGUGAACAAGGCUCAUGUAGGGAUACAAGCCACUAAACACGCAGUCAGAAAUCAGCUUU
+...((((.(((((.(((((((((..(((((((((((((.(.(......).)))))))))))))).)))))).))))))))))))..............
+>dre-mir-190b MI0004764 Danio rerio miR-190b stem-loop
+UGUUACAGACUAUGUGAUAUGUUUGAUAUUCGGUUGCUUUCUUUAUAUCAUGUCAACUAAAUAUCAGACAUAUUCCUAUAGACUGUGACA
+.(((((((.(((((..((((((((((((((..(((((..............).))))..))))))))))))))..).)))).))))))).
+>dre-mir-499 MI0004766 Danio rerio miR-499 stem-loop
+ACUGAGAGGGAGGCAGUUAAGACUUGCAGUGAUGUUUAGAGAAAUGUCACAUGAACAUCACUUUAAGUCUGUGCUGGCUCCUGUUCUGAGU
+(((.((((((((.((((..(((((((.(((((((((((..((....))...))))))))))).)))))))..)))).)))))..))).)))
+>dre-mir-723 MI0004767 Danio rerio miR-723 stem-loop
+UGCGUAGAGAUAAAGACAGUUUUAAAUGAUGUUACUUUUUUUCAAAUGGAGAAAGACAUCAAUUAAAUCUGUGCUUAUCUCUACAAGCA
+.((((((((((((..((((.(((((.(((((((...(((((((....)))))))))))))).))))).))))..))))))))))..)).
+>dre-mir-726 MI0004770 Danio rerio miR-726 stem-loop
+UCAGUCGUAUGCCUGGAAUUCCGCUAGUUCUGAACUAUUCGUGAUUGGCAAAAGUUCACUACUAGCAGAACUCGGAUAUACAACUGA
+(((((.(((((.((((..(((.((((((..((((((.((.((.....)))).))))))..)))))).))).)))).))))).)))))
+>dre-mir-727 MI0004771 Danio rerio miR-727 stem-loop
+CUGUAUGUCAUUUUCAGUCUUCAAUUCCUCCCAGCCCGUACCCAUCGAAACUGUGAGUUGAGGCGAGUUGAAGACUUAAAGUGCUGUACAG
+(((((((.((((((.((((((((((((..((((((...(((...........))).)))).)).)))))))))))).)))))).)))))))
+>dre-mir-728 MI0004772 Danio rerio miR-728 stem-loop
+CAUCUUCUGAGGAAAUGUAGUAGACUAUAAGUAUACAGUGAACAUGAACGUAUACUAAGUACACUACGUUUUCUCAAGAGGUG
+(((((..((((((((((((((..(((...(((((((.((........))))))))).)))..))))))))))))))..)))))
+>dre-mir-729 MI0004773 Danio rerio miR-729 stem-loop
+CGUCAAGGGCCAUCCAGUGACCCGGGGUUGUAUUGUAACCAAGCUGUAAGUGUCCAUGAUGCAUGGGUAUGAUACGACCUGGGUUACAGAAUGGUGAUG
+((((....(((((.(.((((((((((.((((((..((.(((.((................)).))).))..)))))))))))))))).).)))))))))
+>dre-mir-34c MI0004774 Danio rerio miR-34c stem-loop
+UGCUGUGUGGUCACCAGGCAGUGCAGUUAGUUGAUUACAAUCCAUAAAGUAAUCACUAACCUCACUACCAGGUGAAGGCUAGUA
+(((((.((..(((((.((.((((..((((((.((((((..........))))))))))))..)))).)).)))))..)))))))
+>dre-mir-731 MI0004776 Danio rerio miR-731 stem-loop
+UGAUGCUGAUCUGGAAUGACACGUUUUCUCCCGGAUCGCCAGAAAUAUGUUUCGCCACCGGGAACUUCGUGUCAGCCAAGAUUGGCAUCA
+.(((((..((((((..(((((((.....((((((...((..((((....))))))..))))))....))))))).)).))))..))))).
+>dre-mir-732 MI0004777 Danio rerio miR-732 stem-loop
+AGAUAAAGUUCCACCGAGGGUUAAAUGUUUUGGUAUUUUAAUAGUGUCAAUCUCAAAGCAGAGAACUCUCGGUGGAGAUGUAUUU
+(((((...((((((((((((((...(((((((..(((...........)))..)))))))...))))))))))))))...)))))
+>dre-mir-733 MI0004778 Danio rerio miR-733 stem-loop
+UGGCUUUUCCGUAGUGUCGCUGUUGCGUUGGUUUAGCUCAGUGGUUACUUCUGUGAUCCCUGAAAAAUCAACCUUUCAUGGUCACCUCGGUGCCA
+.(((....(((..((((((.((..(.((((((((...((((.((((((....)))))).)))).)))))))).)..))))).)))..))).))).
+>dre-mir-15c MI0004779 Danio rerio miR-15c stem-loop
+CCUUAGACCGCUAAAGCAGCGCGUCAUGGUUUUCAACAUUAGAGAAGGUGCAAGCCAUCAUUUGCUGCUCUAGAGUUUUAAGG
+(((((((.(.(((.(((((((.((.(((((((.((...((....))..)).))))))).)).))))))).))).).)))))))
+>dre-mir-735 MI0004781 Danio rerio miR-735 stem-loop
+GGCUGGUCCGAAGGCGGUGGGUUAGUCUUCUCUCCCCUCUCCCACCGCUAAACUUGACCAGUC
+((((((((....(((((((((..((...........))..)))))))))......))))))))
+>dre-mir-736 MI0004782 Danio rerio miR-736 stem-loop
+UCUACUGACAGAGAAGCUUUUUGUUUGUGUUAUGUUUAUUUUCAAAUGUAAGACGAACAAAAAGUUUUUCUGUUAGUAGG
+.(((((((((((((((((((((((((((.((((((((......)))))))).))))))))))))))))))))))))))).
+>dre-mir-737 MI0004783 Danio rerio miR-737 stem-loop
+CCACAGCUGCUGUGCUGUUGUUUUUUUAGGUUUUGAUUUUUGUGAAAUGUCGAUGAGAAAAUCAAAACCUAAAGAAAAUACUGCGCAGAUAGAUGG
+(((...(((((((((.((..(((((((((((((((((((((.(((....)))....)))))))))))))))))))))..)).)))))).))).)))
+>dre-mir-738 MI0004784 Danio rerio miR-738 stem-loop
+GCUACGGCCCGCGUCGGGACCUCUCGUCUAGCGACUUCUCCCCUCGGGGGAGGGGGUAGGUCGCGGGGCGAGUGUCCUCCCCGGCGCGGUGCCUCGGC
+(((..(((((((((((((((..(((((((.(((((((..((((((....))))))..))))))).))))))).))....)))))))))).)))..)))
+>dre-mir-740 MI0004786 Danio rerio miR-740 stem-loop
+GCAUUUGUGUGCAUAAAAAGUGGUAUGGUACAGUUUGCUUUUAGGUACUUUUUGACAGUGGAAUCAGCCAUAAAAGCGUACUGUACCGUACCAUACCGUAUGGUACCAGGGGC
+((.((((.(((((((....(((((((((((((((.(((((((((((...((((......))))...))).)))))))).)))))))))))))))....))).)))))))).))
+>dre-mir-2184 MI0010834 Danio rerio miR-2184 stem-loop
+CUGAAUGAUGCCCUAAGCCCUAAACAGUAAGAGUUUAUGUGCUGAGGUUAAAAAUUCAGCACAUUGUCUCUUACUUGUAGGGAAAAGGGUUUCUAUCGGCCUGUCACAUU
+((((..((.(((((...(((((...((((((((...((((((((((........))))))))))...))))))))..)))))...))))).))..))))...........
+>dre-mir-2185-1 MI0010835 Danio rerio miR-2185-1 stem-loop
+CAGGUUCUCUGGCUUGACGUCCCGGUGCAGGACUCCGCGGCUCUCGCAGUGUUUCAGAGCCGCGAUCAGCUGCACCAGCACUUUCUUGGCCAGACGCU
+..(((..(((((((.((.((.(.(((((((.....(((((((((...........))))))))).....))))))).).))..))..))))))).)))
+>dre-mir-429b MI0010836 Danio rerio miR-429b stem-loop
+UCUAUACUGCAGUAAAAUCCUCUGAUUUGUGUCUUACCAGGCAAGUUUAGAUGUUGAUACUGUGUCUAAUACUGCCUGGUAAUGCCAUCAAUCACUGGGAAUUUGAUCGC
+........((..((((.((((.(((((.(((.(((((((((((.(((((((..(.......)..))))).)))))))))))).).))).)))))..)))).))))...))
+>dre-mir-1388 MI0010837 Danio rerio miR-1388 stem-loop
+UGAUGGAUGAGCAGUGCUUUCCAGGACUGUCCAACCUGAGAAUGCUUGAGUUUUGGUCAAUCUCAGGUUCGUCAGCCCAUGAAAAACUGUCUCGCUCAAAGCC
+...((..((((((((..((((..((.(((.(.(((((((((.((((........)).)).))))))))).).))).))..)))).)))).))))..)).....
+>dre-mir-1788 MI0010838 Danio rerio miR-1788 stem-loop
+UCAACCACUGUCUUGUAUCCGAGGCUUGUUUUAAGUUGCCUGCGAUCUCUUAAUGACUCAGGCAGCUAAAGCAAGUCUGGGAGGCCAGAGACAACACGACA
+........((((((((.(((.((((((((((((.((((((((.(.((.......))).)))))))))))))))))))).))).))..))))))........
+>dre-mir-2187 MI0010839 Danio rerio miR-2187 stem-loop
+UCUGAAUUGAUGAUUCUGGCUUUAAUUAGUAUAGCCUGUUUUAGUGAUCACAUCAAUUCUUUACAGGCUAUGCUAAUCUAUGCCAGAAUUAGCAAUGCAUGUGG
+..((.((((.((((((((((....(((((((((((((((.....((((...)))).......)))))))))))))))....)))))))))).)))).)).....
+>dre-mir-196c MI0010840 Danio rerio miR-196c stem-loop
+CCCGUCCAGCUGAUGCGUGGUUUAGGUAGUUUGAUGUUGUUGGGGUUGACUUCCUGGCUCGACAACAAGAAACUGCCUUGAUUACGUCAGUUUGCCUUCAUCAAGGCCGU
+.......(((((..((((((((.(((((((((..((((((((((.(.(.....).).))))))))))..))))))))).))))))))))))).(((((....)))))...
+>dre-mir-2191 MI0010842 Danio rerio miR-2191 stem-loop
+GUGCCUUGCUCAAGGGUCUCACCUCUGCCAUGGUAUUGAAGGUGGUAGAGAGUGUUUGUACAUUCACUCACACCUACAAUCCCUGGCAGUACUGAGACUCAAACCUGCAA
+......(((....((((((((...((((((.((.((((.(((((..((.((((((....)))))).))..))))).)))))).))))))...))))))))......))).
+>dre-mir-107b MI0010843 Danio rerio miR-107b stem-loop
+UCUGGCCACUCUGGGCUUCUCUACAGUGUUGCCUUGUAGCCUGGUGAUCAAGCAGCAUUGUACAGGGCUUUCAGCGUGUACAGAAC
+((((..(((.(((((((.((.(((((((((((.(((..((...))...)))))))))))))).))))))..))).)))..))))..
+>dre-mir-455b MI0010844 Danio rerio miR-455b stem-loop
+AUCGUUGUUCCCUGAAGUGAGGGUAUGUGCCCUUGGACUACAUUGUGGAGGCCAGCACCAUGCAGUCCAUGGGCAUAUACACUUACUUCAUGGCCUACAUCAACA
+...((((..((.(((((((((.((((((((((.((((((.(((.(((........))).))).)))))).)))))))))).))))))))).)).......)))).
+>dre-mir-222b MI0010845 Danio rerio miR-222b stem-loop
+GACGUGAUCUGCAGACUCAGUACUCGGUGUAGAGUCUGUGUGAUUCAGAAGAGCAGCUACAUCUGAAUACUGGGUCAGUGGAGACGUCACACGCUAC
+(((((..((..(.(((((((((.(((((((((..((((.......)))).......))))).)))).))))))))).)..)).))))).........
+>dre-mir-2196 MI0010846 Danio rerio miR-2196 stem-loop
+CAGGGUAAUUGCUUCGAAUGUUCCUCUCUGUGCUGCCAUUUGGGACCGUUCCGAAGCGAAAGGGAGGAUAAUGUUCCUGGGGUUUUUGAAACUGAAACAAAAAGUAAUAA
+(((..(((..(((((((((((((((((((....(((..(((((((...))))))))))..))))))))..))))))..)))))..)))...)))................
+>dre-mir-2198 MI0010847 Danio rerio miR-2198 stem-loop
+CGGCGAGCAAUACUCAUAACUCCCAAGCGCCUGCGAACGCAAGCUCUCCUUACCCCGGUGCAGAUGGAGCUCGUGUCCCAAGGCGCCUCCAGGCCUAAACCCGGGCCUGC
+.((.(((............)))))..((((((....((((.((((((.(((((....))).))..)))))).))))....))))))...(((((((......))))))).
+>dre-mir-126b MI0010848 Danio rerio miR-126b stem-loop
+GAGUCUUACCGGCCUCACGGUUCAUUAUUACUUUUGGUACGCGCUAUGCCACUCUCAACUCGUACCGUGAGUAAUAGUGCACUGUGACUGGUGAACACAACUA
+..((.(((((((..(((((((.(((((((((((.(((((((.(...............).))))))).))))))))))).)))))))))))))))).......
+>dre-mir-2186 MI0010849 Danio rerio miR-2186 stem-loop
+AAGUCUUGUCGCAUACGUUUUGUAACAACAAAUAAUAACUUGACUUCUAGUUGAUCAUUUCGUAUCAGAAGUGGCCUCUAAAAGUCUAAAAAUGGCCUCUAGAUUACGCU
+.(((((.(..((......(((((....))))).........(((((.(((..(..((((((......))))))..).))).)))))........))..).))))).....
+>dre-mir-2188 MI0010850 Danio rerio miR-2188 stem-loop
+GGACAAUAUCAGCAAUGUGAGAAAGGUCCAACCUCACAUGUCCUGUGAGGCUGAAGGAAGGCUGUGUGAGGUUAGACCUAUCCCACACGGCCCGUAUUCUUCCC
+(((.(((((..((..((((.((.(((((.(((((((((((.(((..............))).))))))))))).))))).)).))))..))..)))))..))).
+>dre-mir-2189 MI0010851 Danio rerio miR-2189 stem-loop
+UGCACAGUUUUGAUCCCGCCCAAAUUGAACACAGCUGAUGCAACCAAUCAAAUUGGUAACUAUUUUUGAUUGUUUGUAUCAGCUGUGUUUUAGUUAGGGCUUCUUCGUCC
+...........((....((((.(((((((((((((((((((((.((((((((.(((...)))..)))))))).)))))))))))))).))))))).))))....))....
+>dre-mir-2192 MI0010852 Danio rerio miR-2192 stem-loop
+GGCAGAAUGUUACAAAAUGGCAGCCUUGGUCACUAUUCACUUUCAUGUUUGGAUAAUAAAUUUACUGAAAGUGAAAGGUGACUGAGACUGUCAUUCUGGCUAACAUCUCC
+((.(((.(((((((.((((((((.((..((((((.((((((((((.(((((.....)))))....)))))))))).))))))..)).)))))))).))..))))))))))
+>dre-mir-196d MI0010853 Danio rerio miR-196d stem-loop
+AGUGAUUUAGGUAGUUUUAUGUUGUUGGGCUCUAUUUUAUAUCCCCGCAACACGAAACUGUCUUAAUUGCCU
+.(..(((.((..(((((..((((((.(((.............))).))))))..)))))..)).)))..)..
+>dre-mir-2193 MI0010854 Danio rerio miR-2193 stem-loop
+CAAAAUCUUCAUCAAUCAUGGGUAUGUGUGUAUCAAUUGUGUGAAAAAAUUCUUCACAUUUAUAAGCAUCAAACUUCGAUGAGUAAAGAUUUUUAUAAAAUGCGGCCACG
+.((((((((.((..(((..((((.((.((((.......(((((((.......)))))))......)))))).)))).)))..)).)))))))).................
+>dre-mir-2194 MI0010855 Danio rerio miR-2194 stem-loop
+ACCUGCUGGGUACUGAUUUCAUUUCUUCCAAAUUUUAAAUAGGAAAUCUUGUCAUUCAUUGCAAUUGUAAUGCUUCGACUGAUUGGUGUAAGAAAAAUCCUCAUCUUGUU
+....((.((((...(((((...(((((.((..............((((..((((..((((((....))))))..).))).))))..)).))))))))))...)))).)).
+>dre-mir-2195 MI0010856 Danio rerio miR-2195 stem-loop
+CCUCUGAUAACCACAUGAUUCUUAAAUGUAAACCACUAUCAAGUUUCUUUUUGGGGGAACAAUAUUGAGAUUGGGGUGAGUUAGGGUGCGUUCACACCUGUGAAUCGAUU
+.(((((((.(((.((....((((((.(((...((.(((..(((...)))..)))))..)))...)))))).)).)))..)))))))..(((((((....))))).))...
+>dre-mir-2197 MI0010857 Danio rerio miR-2197 stem-loop
+AGUGUAAAAGGAAAACGUUGUGAUGAUUCGACUCAUAUGGUGCUAUGCAGUAAUAGAGGGCUGGAAGCAUUUUGCUUGAGGAGAGUCUAAUCACUAGCAGGUACACAUUG
+.(((((..........(((((((((((((..((((...((((((.(.((((........)))).))))))).....))))..)))))..))))).)))...)))))....
+>dre-mir-3906 MI0016407 Danio rerio miR-3906 stem-loop
+GAUAGACCUACAGUGAAGCUCUGCAUAAACUCUUAUUCCAGUGGGACUUGUCCAAAGGUCAGAUAAAAGCAUUUUGAAUGCAGAUUUUUGAGGUUUCUC
+((.((((((.((..((((.(((((((...........((..((((.....))))..))(((((.........)))))))))))))))))))))))).))
+>dre-mir-7145 MI0023604 Danio rerio miR-7145 stem-loop
+UGGGACCUUGUUUUCCAUUUUGAAAACUGUUAUCAGUAAGUAUAGUAUUCAACACAAACUAAAUAAUCAAUAAUACAUACAUAAAUACAUACAUAAACAACAAUGGAAGCCAAUGGUUACCAG
+((((((((((.(((((((((((...((((....))))..((((.(((((......................))))))))).................))).)))))))).))).)))).))).
+>dre-mir-7146 MI0023605 Danio rerio miR-7146 stem-loop
+GACAGAAAAAGAGAUAUUUUGAAAAAUGUUGUAAGCCGGUAACCAUUGACCUCCAUAGUAUUUGUUUUCCCUGUUAUGAAGGUCAAUGGUUACCAGUUUUCAGCUUUCUUCUGAACAUCAUCUUUUUUGUU
+(((((((((.(((((.(((.(((.((.((((.((((.(((((((((((((((.(((((...............))))).))))))))))))))).)))).)))).)).))).))).))).)))))))))))
+>dre-mir-7147 MI0023606 Danio rerio miR-7147 stem-loop
+GAGUGCCCAGUGCUGUACCAUGCUGGUAGCCAGUAUGAAAUAGGGCUUGCUGGUAACCAGCGUUGUGCCCCACUGGUUGCUC
+((((..((((((..((((.((((((((.(((((((.(........).))))))).)))))))).))))..))))))..))))
+>dre-mir-7148 MI0023607 Danio rerio miR-7148 stem-loop
+GCUAAUACUAGUAAUGGAAAUACUCGCUGAUACUGCAAGAAUUGUGGCAUCGGUAUAAGCCAGUAUUUCCGAUACUAGUAUUGGU
+(((((((((((((.((((((((((.(((.((((((...............)))))).))).)))))))))).)))))))))))))
+>dre-mir-7149 MI0023608 Danio rerio miR-7149 stem-loop
+AGAAACUGUGAAUCCUACACUGGAAGGUUGAUGUUUUACAGUUCUCUUCCAAGUGUUAUGAGUCAAAGUUUCU
+(((((((.(((.((..(((((((((((....((.....))....)))))).)))))...)).))).)))))))
