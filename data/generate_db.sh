@@ -131,6 +131,13 @@ SPECIES="-s ncrna"
 MULTILOOP="-m"
 gen_dataset
 
+echo "Dataset mirbase12-nr: miRNAs from miRBase 12.0 as in (microPred,) MiRenSVM"
+NAME="mirbase12-nr"
+SRC="src/mirbase/12.0/hairpin.fa.gz"
+CLS="1"
+SPECIES=""
+gen_nr_dataset
+
 echo "Dataset mirbase20: miRNAs from miRBase 20"
 NAME="mirbase20"
 SRC="src/mirbase/20/hairpin.fa.gz"

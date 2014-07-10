@@ -821,6 +821,7 @@ def features_by_species ( infile, outdir, cls = 1, multiloop = False,
         else:
             triplet.append( triplet_feats(e[2],e[3]) )
             triplet_extra.append( triplet_feats_extra(e[2],e[3]) )
+
         s = [len(e[2])] # sequence length
         f = [e[4]] # mfe
         s.extend(mipred_feats(e[2],e[3])[:-1]) # mipred feats
@@ -836,6 +837,7 @@ def features_by_species ( infile, outdir, cls = 1, multiloop = False,
                 if species[i] == sp:
                     o.write( "{}\n{}\n{}\n".format(
                         desc[i],sequence[i],structure[i]))
+
         with open( os.path.join(outdir,sp+".3"), 'w') as o:
             if write_headers:
                 o.write("\t".join("{}".format(n+s) for n in 'AGCU' for
@@ -1053,9 +1055,11 @@ byspecies.add_argument ('--species', '-s',
 byspecies.add_argument ('--headers', '-j',
                         action='count',
                         help='write headers to generated files')
+
 byspecies.add_argument ('--multiloop', '-m',
                         action='count',
                         help='write headers to generated files')
+
 
 
 # main function
