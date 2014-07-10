@@ -79,6 +79,15 @@ valid_ids = set(['sci', 'pti', 'ptc', 'pta', 'aly', 'osa', 'lla',
 
 
 
+class EMultiloop(Exception):
+    def __init__(self, value):
+        self.value = value
+    def __str__(self):
+        return repr(self.value)
+
+
+
+
 def load_fasta ( f ):
     """
     Lee el archivo pasado como parámetro y lo guarda en una lista de entradas.
@@ -332,8 +341,8 @@ def triplet_feats_extra ( sequence, structure ):
 
     # si lr > rl probablemente haya mas de un loop
     if lr > rl:
-        raise Exception("couldn't guess hairpin structure "
-                        "(has more than one loop?)")
+        raise EMultiloop("couldn't guess hairpin structure "
+                         "(has more than one loop?)")
 
     gc_count = 0
     length = lr-ll + rr-rl + 2
@@ -522,8 +531,8 @@ def triplet_feats ( sequence, structure, normalize = True ):
 
     # si lr > rl probablemente haya mas de un loop
     if lr > rl:
-        raise Exception("couldn't guess hairpin structure"+
-                        " (has more than one loop?)")
+        raise EMultiloop("couldn't guess hairpin structure"+
+                         " (has more than one loop?)")
 
     # convierto todos los parentesis a '('
     structure = structure.replace(')','(')
@@ -770,7 +779,8 @@ def upred_out ( infile, outfile, extra = False ):
 
 
 
-def features_by_species ( infile, outdir, cls = 1, force_sp_name = None,
+def features_by_species ( infile, outdir, cls = 1, multiloop = False,
+                          force_sp_name = None,
                           write_headers = False):
 
     f = load_fasta ( infile )
@@ -785,7 +795,8 @@ def features_by_species ( infile, outdir, cls = 1, force_sp_name = None,
 
     for e in f:
         # step 0. validate reqs: structure, mfe and not multi-loop
-        if len(e[3]) < 1 or re.match( mult_fmt, e[3]) or not e[4]:
+        if len(e[3]) < 1 or not e[4] \
+           or (re.match( mult_fmt, e[3]) and not multiloop):
             continue
 
         # step 1. get species name (will determine output filename)
@@ -803,8 +814,13 @@ def features_by_species ( infile, outdir, cls = 1, force_sp_name = None,
         structure.append(e[3])
 
         # step 3. calculate features
-        triplet.append( triplet_feats(e[2],e[3]) )
-        triplet_extra.append( triplet_feats_extra(e[2],e[3]) )
+        if multiloop:
+            triplet.append( [0 for i in range(32)] )
+            triplet_extra.append( {"seq_length": 0, "basepair": 0,
+                                   "gc_content": 0, "len_bp_ratio": 0} )
+        else:
+            triplet.append( triplet_feats(e[2],e[3]) )
+            triplet_extra.append( triplet_feats_extra(e[2],e[3]) )
         s = [len(e[2])] # sequence length
         f = [e[4]] # mfe
         s.extend(mipred_feats(e[2],e[3])[:-1]) # mipred feats
@@ -820,7 +836,6 @@ def features_by_species ( infile, outdir, cls = 1, force_sp_name = None,
                 if species[i] == sp:
                     o.write( "{}\n{}\n{}\n".format(
                         desc[i],sequence[i],structure[i]))
-                
         with open( os.path.join(outdir,sp+".3"), 'w') as o:
             if write_headers:
                 o.write("\t".join("{}".format(n+s) for n in 'AGCU' for
@@ -894,7 +909,7 @@ def wrap_micropred (obj):
     upred_out(obj.file, obj.outfile, obj.extra)
 
 def wrap_fbysp (obj):
-    features_by_species(obj.file, obj.outdir, obj.cls, obj.species, obj.headers)
+    features_by_species(obj.file, obj.outdir, obj.cls, obj.multiloop, obj.species, obj.headers)
 
 
 
@@ -1036,6 +1051,9 @@ byspecies.add_argument ('--species', '-s',
                         default=None,
                         help="force species name")
 byspecies.add_argument ('--headers', '-j',
+                        action='count',
+                        help='write headers to generated files')
+byspecies.add_argument ('--multiloop', '-m',
                         action='count',
                         help='write headers to generated files')
 
