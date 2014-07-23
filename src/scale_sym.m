@@ -11,11 +11,17 @@ function [scaled, factor, offset] = scale_sym ( data, factor, offset )
     % number of columns
     n = size(data,2); 
     
+    div = max(data)-min(data);
+    for i=1:size(div,2)
+        if div(i) == 0
+            div(i) = 1;
+        end
+    end
+
     % compute factor if not given
     if nargin == 1
-        factor = 2./(max(data)-min(data));
+        factor = 2./(div);
     end
-    assert( max(factor) ~= Inf, 'scale_sym: division by zero!' )
     
     % scale the data
     scaled = data*diag(factor(1:n));

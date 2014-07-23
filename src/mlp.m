@@ -1,11 +1,14 @@
-function mlp ( dataset, featset, seed )
+function mlp ( dataset, featset, seed, balance )
     
-    if nargin < 3
-        seed = mod(5829,2^32);
-        if nargin < 2
-            featset = 1;
-            if nargin < 1
-                dataset = 'hsa';
+    if nargin < 4
+        balance = 0
+        if nargin < 3
+            seed = mod(5829,2^32);
+            if nargin < 2
+                featset = 1;
+                if nargin < 1
+                    dataset = 'hsa';
+                end
             end
         end
     end
@@ -58,7 +61,13 @@ function mlp ( dataset, featset, seed )
     rec.time = 0;
     rec.numcv = 0;
 
-    [rec.train rec.test] = load_data( dataset, rec.random_seed, true);
+    [rec.train rec.test] = load_data( dataset, rec.random_seed, false);
+    
+    outlabel = 'mlp';
+    if balance
+        rec.train.pseudo = stpick(rec.train.pseudo,size(rec.train.real,1));
+        outlabel = 'mlp-bal';
+    end
     
     fprintf('> dataset\t%s\n', dataset );
     fprintf('> featureset\t%s\n', fname{featset} );
@@ -172,11 +181,11 @@ function mlp ( dataset, featset, seed )
         fid = fopen( dlm_outfile, 'a' );
         fprintf( fid, '%f\t%d\t%s\t%s\t%s\t%d\t%s\t%9.8g\t%9.8g\t%9.8g\t%9.8g\t%9.8g\n', ...
                  datenum(rec.begintime), seed, 'train', dataset, 'train', featset, ...
-                 'mlp', [], [], 0, 0, 0 );
+                 outlabel, [], [], 0, 0, 0 );
         for i=1:length(rec.test)
             fprintf( fid, '%f\t%d\t%s\t%s\t%s\t%d\t%s\t%9.8g\t%9.8g\t%9.8g\t%9.8g\t%9.8g\n', ...
                  datenum(rec.begintime), seed, 'test', dataset, rec.test(i).name, featset, ...
-                     'mlp', [], [], [], [], 0 );
+                     outlabel, [], [], [], [], 0 );
         end
         fclose(fid)
         return
@@ -205,7 +214,7 @@ function mlp ( dataset, featset, seed )
     % fprintf( fid, [ 'id\ttrain/test\tsetup\tdataset\tfeatset\t'...
     %                 'classifier\tparam1\tparam2\tse\tsp\tgm/perf\n' ] ); 
     fprintf( fid, '%f\t%d\t%s\t%s\t%s\t%d\t%s\t%9.8g\t%9.8g\t%9.8g\t%9.8g\t%9.8g\n', ...
-                 datenum(rec.begintime), seed, 'train', dataset, 'train', featset, 'mlp', ...
+                 datenum(rec.begintime), seed, 'train', dataset, 'train', featset, outlabel, ...
              rec.hidden_sizes(bidx), [], rec.se(bidx), rec.sp(bidx), rec.gm(bidx) );
     
     if max(rec.gm) < 0.6
@@ -213,7 +222,7 @@ function mlp ( dataset, featset, seed )
         for i=1:length(rec.test)
             fprintf( fid, '%f\t%d\t%s\t%s\t%s\t%d\t%s\t%9.8g\t%9.8g\t%9.8g\t%9.8g\t%9.8g\n', ...
                  datenum(rec.begintime), seed, 'test', dataset, rec.test(i).name, featset, ...
-                     'mlp', [], [], [], [], 0 );
+                     outlabel, [], [], [], [], 0 );
         end
         fclose(fid)
         return
@@ -243,7 +252,7 @@ function mlp ( dataset, featset, seed )
 
         fprintf( fid, '%f\t%d\t%s\t%s\t%s\t%d\t%s\t%9.8g\t%9.8g\t%9.8g\t%9.8g\t%9.8g\n', ...
                  datenum(rec.begintime), seed, 'test', dataset, rec.test(i).name, featset, ...
-                 'mlp', rec.hidden_sizes(bidx), [], [], [], rec.test(i).avg_performance );
+                 outlabel, rec.hidden_sizes(bidx), [], [], [], rec.test(i).avg_performance );
         
         
         % clear data for saving space
@@ -251,8 +260,8 @@ function mlp ( dataset, featset, seed )
     end
     fclose(fid);
     
-    fprintf( ['#\n# saving results to ' './results/mlp-' ...
+    fprintf( ['#\n# saving results to ' './results/' outlabel '-' ...
              datestr(rec.begintime,'yyyy-mm-dd_HH.MM.SS') '.mat\n']);
-    save( ['./results/mlp-' datestr(rec.begintime,'yyyy-mm-dd_HH.MM.SS') '.mat'],'-struct', 'rec');
+    save( ['./results/' outlabel '-' datestr(rec.begintime,'yyyy-mm-dd_HH.MM.SS') '.mat'],'-struct', 'rec');
 
 end
