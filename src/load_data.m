@@ -470,7 +470,7 @@ function [ tr ts ] = load_data ( id, seed, symmetric )
 
         real1   =           loadset('mirbase12-multi', 'human', 0); % 691  hsa
         pseudo1 = stshuffle(loadset('coding', 'all', 2));           % 8494 hsa
-        pseudo2 = stshuffle(loadset('other-ncrna', 'all', 3));      % 754  hsa
+        pseudo2 = stshuffle(loadset('other-ncrna-multi', 'all', 3));% 754  hsa
 
         real0   = stshuffle(real1);
         

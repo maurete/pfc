@@ -31,9 +31,9 @@ for l in in_data.splitlines():
 
 errflag = 0
 
-for d in ('all','hsa','all+human','all+coding','xue','batuwita','ng'):
+for d in ('all','hsa','all+human','all+coding','xue','batuwita','ng', 'batuwita-multi', 'ng-multi'):
     for f in range(1,16):
-        for cl in ('svm-linear','svm-rbf','mlp'):
+        for cl in ('svm-linear','svm-rbf','mlp', 'mlp-bal'):
             s = set()
             for dset in c.execute('SELECT dataset FROM data WHERE data=? AND classifier=? AND fset=?', (d,cl,f)):
                 s.add(dset[0])
@@ -52,9 +52,9 @@ if errflag:
 
 c.execute('CREATE TABLE avg ( tt text, data text, dataset text, fset integer, classifier text, se real, sp real, acc real)')
 
-for d in ('all','hsa','all+human','all+coding','xue','batuwita','ng'):
+for d in ('all','hsa','all+human','all+coding','xue','batuwita','ng', 'batuwita-multi', 'ng-multi'):
     for f in range(1,16):
-        for cl in ('svm-linear','svm-rbf','mlp'):
+        for cl in ('svm-linear','svm-rbf','mlp', 'mlp-bal'):
             s = set()
             for dset in c.execute('SELECT dataset FROM data WHERE data=? AND classifier=? AND fset=?', (d,cl,f)):
                 s.add(dset[0])
