@@ -232,6 +232,9 @@ function svm_rbf ( dataset, featset, seed )
       nc = [];
       fprintf('#\n# idx\tlog(sigma)\tlog(C)\t\tsensitivity\tspecificity\tgeomean\n');
       fprintf(   '# ---\t----------\t------\t\t-----------\t-----------\t-------\n');
+      
+      % do not consider more than 50% of tests as "best"
+      brkcount = size(rec.gs(r).best)/2;
       for d=find(rec.gs(r).best)
           fprintf('< %d\t%8.6f\t%8.6f\t%8.6f\t%8.6f\t%8.6f\n', ...
                   d, log(rec.gs(r).l_sigma(d)), log(rec.gs(r).l_boxc(d)), ...
@@ -241,6 +244,10 @@ function svm_rbf ( dataset, featset, seed )
           % append new values to ns,nc
           ns = [ ns; neighbor(rec.gs(r).l_sigma(d),r,4)'];
           nc = [ nc, neighbor(rec.gs(r).l_boxc(d), r,4) ];
+          
+          % decrease break counter
+          brkcount = brkcount-1;
+          if brkcount < 0, break; end
       end % for d
       
       % delete non-best svm models as they take up too much space

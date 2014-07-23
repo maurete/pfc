@@ -11,9 +11,16 @@ function [scaled, factor, offset] = scale_data ( data, factor, offset )
     % number of columns
     n = size(data,2); 
 
+    div = max(data)-min(data);
+    for i=1:size(div,2)
+        if div(i) == 0
+            div(i) = 1;
+        end
+    end
+    
     % compute factor if not given
     if nargin == 1
-        factor = 1./(max(data)-min(data));
+        factor = 1./(div);
     end
     
     % scale the data

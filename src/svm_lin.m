@@ -200,7 +200,7 @@ function svm_lin ( dataset, featset, seed )
       % highlight best-performing paramsets
       rec.gs(r).best = [ abs(rec.gs(r).gm-max(rec.gs(r).gm)) < 4^(-r-2) ];
       
-      if max(rec.gs(r).gm) == 0
+      if max(rec.gs(r).gm) < 0.25
           fprintf('! no convergence, sorry\n')
           fid = fopen( dlm_outfile, 'a' );
           fprintf( fid, '%f\t%d\t%s\t%s\t%s\t%d\t%s\t%9.8g\t%9.8g\t%9.8g\t%9.8g\t%9.8g\n', ...
@@ -228,6 +228,9 @@ function svm_lin ( dataset, featset, seed )
       nc = [];
       fprintf('#\n# idx\tlog(C)\t\tsensitivity\tspecificity\tgeomean\n');
       fprintf(   '# ---\t------\t\t-----------\t-----------\t-------\n');
+      
+      % do not consider more than 50% of tests as "best"
+      brkcount = size(rec.gs(r).best)/2;
       for d=find(rec.gs(r).best)
           fprintf('< %d\t%8.6f\t%8.6f\t%8.6f\t%8.6f\n', ...
                   d, log(rec.gs(r).boxconstraint(d)), ...
@@ -236,6 +239,10 @@ function svm_lin ( dataset, featset, seed )
                   rec.gs(r).gm(d) );
           % append new values to ns,nc
           nc = [ nc, neighbor(rec.gs(r).boxconstraint(d), r,4) ];
+
+          % decrease break counter
+          brkcount = brkcount-1;
+          if brkcount < 0, break; end
       end % for d
       
       % delete non-best svm models as they take up too much space
