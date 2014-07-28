@@ -115,18 +115,18 @@ configuraciones de los conjuntos de datos, denominados XUE, NG y BTW, que replic
 utilizados en \cite{xue}, \cite{ng} y \cite{batuwita} respectivamente.
 
 Considerando los conjuntos de características obtenidos en la etapa
-anterior, se consideraron todas las combinaciones posibles de estos
+anterior, se consideraron todas las configuraciones posibles de estos
 conjuntos para cada clasificador.
 
-En lo que sigue de esta sección se describen el método general de
-entrenamiento y optimización de parámetros de los clasificadores, los
-conjuntos de datos y de características, y las particularidades
-consideradas en el entrenamiento de los clasificadores.
+%% En lo que sigue de esta sección se describen el método general de
+%% entrenamiento y optimización de parámetros de los clasificadores, los
+%% conjuntos de datos y de características, y las particularidades
+%% consideradas en el entrenamiento de los clasificadores.
 %
 \subsection{Método general de entrenamiento}
 Una llamada al método de entrenamiento recibe los siguientes
 parámetros: clasificador a utilizar, conjunto de datos a utilizar,
-combinación de características a considerar y una semilla para
+configuración de características a considerar y una semilla para
 inicialización de las funciones aleatorias utilizadas en el
 entrenamiento.
 
@@ -193,7 +193,7 @@ Fuente             & Clase & Especies  & Total  & Entrenamiento & Prueba  \\\mid
 \mrow{7}{*}{XUE}
 & mirbase50        & +1    & humano    & 193    & 163   &  30   \\
 & coding           & -1    & humano    & 8494   & 168   & 1000  \\
-& conserved-hairpin& -1?   & humano    & 2444   & 0     & 2444  \\
+& conserved-hairpin& -1*   & humano    & 2444   & 0     & 2444  \\
 & updated          & +1    & humano    & 39     & 0     &  39   \\
 & mirbase50        & +1    & no-humano & 1017   & 0     & 1017  \\
 & mirbase20        & +1    & humano    & 1265   & 0     & 1265  \\
@@ -302,19 +302,55 @@ tripletes-extra no están definidas. Sin embargo, en los conjuntos de
 datos utilizados para la generación de \sbs{mirbase82},
 \sbs{mirbase12}, \sbs{functional-ncrna} y \sbs{other-ncrna}, así como
 \sbs{mirbase20}, se presenta una proporción significativa de entradas
-con lazos múltiples. Teniendo en cuenta estas observaciones, y en pos
-de lograr una mayor fidelidad en los resultados, se generaron
-conjuntos y configuraciones de datos adicionales (denotados con sufijo
--multi), los cuales contienen todas las entradas originales, aunque incorporan
-únicamente las características de la secuencia y de la estructura
-secundaria.
+con lazos múltiples. Se generaron entonces conjuntos y configuraciones
+de datos adicionales (denotados con sufijo -multi), los cuales
+contienen todas las entradas originales, incorporando únicamente las
+características de la secuencia y de la estructura secundaria. En la
+tabla \ref{multidsets} se observa la composición de estas
+configuraciones adicionales.
+
+\begin{table}[h]
+\small
+  \caption{\small Configuraciones de los conjuntos de datos utilizados para las pruebas}
+  \center%\sffamily
+  \begin{tabular}{llrlrrrr}\toprule
+Config. &
+Fuente             & Clase & Especies  & Total  & Entrenamiento & Prueba  \\\midrule
+\mrow{7}{*}{NG}
+& mirbase82        & +1    & humano    & 323    & 200   & 108   \\
+& coding           & -1    & humano    & 8494   & 400   & 8094  \\
+& mirbase82        & +1    & no-humano & 1918   & 0     & 1918  \\
+& functional-ncrna & -1    & varias    & 12387  & 0     & 12387 \\
+& mirbase20        & +1    & humano    & 1311   & 0     & 1311  \\
+& mirbase20        & +1    & no-humano & 14132  & 0     & 14132 \\\midrule
+\mrow{5}{*}{BTW}
+& mirbase12        & +1    & humano    & 691    & 561   & 99    \\
+& coding           & -1    & humano    & 8494   & 1012  & 7482  \\
+& other-ncrna      & -1    & humano    & 754    & 118   & 19    \\
+& mirbase20        & +1    & humano    & 1311   & 0     & 1311  \\
+& mirbase20        & +1    & no-humano & 14132  & 0     & 14132 \\
+\bottomrule
+  \end{tabular}
+  \label{multidsets}
+\end{table}
 
 Se efectuaron entrenamientos y pruebas adicionales para las
 configuraciones de datos ``NG-multi'' y ``BTW-multi'' y las
 configuraciones de características posibles 4, 5 y 8.
 %
 \section{Pruebas y validación de los resultados}
-
+\subsection{Configuraciones de datos}
+\subsubsection{XUE}
+Baseline train 93.3-88.1-90.69
+Baseline test 89 conserved, 92.3 updated
+\begin{itemize}
+\item Train: P>98\% para SVM-RBF caracts 5,8,10 (2,s2,xs2)
+\item MLP,MLP-BAL P 97porciento
+\item Test: SE 98 (updated), SP 97.9(coding),  95.1 conserved-hairpin
+\end{itemize}
+\subsection{Configuraciones de características}
+\subsection{Clasificadores}
+\subsection{Conclusiones}
 \section{Clasificador definitivo}
 
 \section{Interfaz de línea de comandos del método}
