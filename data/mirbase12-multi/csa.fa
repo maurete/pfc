@@ -1,0 +1,81 @@
+>csa-mir-1473 MI0007131 Ciona savignyi miR-1473 stem-loop
+CGAAACAUCAUUAAAUAACCUACGUGGGUCUGGCUCCCAAAUCUUCGAUCUUGUGAGAUAUAUUCUCAAGCUCGGUUUUAUGGGUGCCGCAUCCAACGACA
+......................(((((((.((((.((((.....((((.((..(((((.....))))))).)))).....)))).)))).)))).)))...
+>csa-mir-1497 MI0007132 Ciona savignyi miR-1497 stem-loop
+ACCAUCAGGCUGGUAUAAGCGUAACCUCUUGUAAAUCUCCAACACUAAGCUUGGUUACAGCUCUGUUGAAGAAUUGCAGGUGGUAGGUGCUAUCCAUGCAUUA
+........(((((.(((.(((..(((.(((((((.(((.(((((...((((.(....))))).))))).))).))))))).)))...))))))))).))....
+>csa-let-7a MI0007181 Ciona savignyi let-7a stem-loop
+CAAAGCCGCUCAAAAUGAGGUAGUAGGUUAUAUCAGUUGAAUAUUUUACCAUGGUGAUAACUGUAUAACCAACUAGCUUUCUUAAACGGUUUACUAUCAGCA
+..((((((........(((.((((.(((((((.((((((......((((....))))))))))))))))).)))).))).......))))))..........
+>csa-let-7b MI0007182 Ciona savignyi let-7b stem-loop
+UAGUAGUCUUGUUGUUGAGGUAGUAGGUUAUGUUGUUGCGUGAAUUACAACACACAGGAGAUACAACAUGACUUACUCAUCUCUGCAGAAGGGCUACAGCUA
+..((((((((.((((.((((((((((((((((((((((.(((........))).))......))))))))))))))).))))).)))).)))))))).....
+>csa-let-7c-1 MI0007183 Ciona savignyi let-7c-1 stem-loop
+GGGCUUCUCCCACAAUGAGGUAGUAGGUUAUGCAGUUUUUGCCUUGAAUGUUUUUAGAGGCACAGGAGCUACUGUGUAACCUUCUGCCUUUGUGGCAGAUG
+.....(((.(((((..(((((((.((((((((((((....((((((..(((((....))))))))).)).)))))))))))).)))))))))))).)))..
+>csa-let-7c-2 MI0007184 Ciona savignyi let-7c-2 stem-loop
+CUCUUGCUGAUAACAUGAGGUAGUAGGUUAUGCAGUUUGGCGACAAUAUUUCGUUGCAAAGGAGAUAACUGUGUAACUUGCUGGCUCUUUUAUCGACAACUC
+...(((.((((((...(((.(((((((((((((((((..(((((........))))).........))))))))))))))))).)))..)))))).)))...
+>csa-let-7d MI0007185 Ciona savignyi let-7d stem-loop
+GAGGCUAUUCACAGAUGAGGUAGUUGGUUGUAUUGUUUUACACCUUCGGCGAUAACUAUACAGCCAGCUAACUUUACUGUGGUUGCUAAAUAUCGUCCAGCA
+..(((...((((((.((((((((((((((((((.(((...(.((...)).)..))).)))))))))))).))))))))))))..)))...............
+>csa-mir-7 MI0007186 Ciona savignyi miR-7 stem-loop
+CCGUCCUCUACCACGUGGAAGACUAGUGAUUUUGUUGUUUCAUCAACAACAAUCUUUAGUCUACUGCACGGUUGAUGGAUGCUAUCAUCAUUUCUUAUUUUUG
+.(((((((.(((..(..(.(((((((.((((((((((......)))))).)))).))))))).)..)..))).)).)))))......................
+>csa-mir-31 MI0007187 Ciona savignyi miR-31 stem-loop
+AUGUGACUAGCACUAUGGCAAGAUGUUGGCAUAGCUAUAAAAAUGUUAAACAUAGUGUGCUAAUGUCUAGCCUUGGCGCUAG
+......(((((.(((.(((.(((((((((((((.((((.............))))))))))))))))).))).))).)))))
+>csa-mir-34 MI0007188 Ciona savignyi miR-34 stem-loop
+AUUCACGUGAUUCUGAGGCAGUGUAGUUAGCUAGUUGUUUUCUUAUCCGGGUGGGUUUGUACCCCACAUCGGUUUUCAUAUAAACAACUACUUUUUGCACUA
+.((((........))))..(((((((..((.(((((((((......(((((((((.......))))).)))).........)))))))))))..))))))).
+>csa-mir-92a MI0007189 Ciona savignyi miR-92a stem-loop
+AUCAUAACCACAACUAUGUAUCAAUAUGCCUAGACCAGACAAAGUGUAUUGCGUUGUUGCAAUCGUAUUGCACUUGUCCCGGUCUAAGCAUUUGGUAAGAAAG
+..................((((((.((((.((((((.(((((.(((((.(((((((...))).)))).))))))))))..)))))).))))))))))......
+>csa-mir-92b MI0007190 Ciona savignyi miR-92b stem-loop
+CCCAGCCUGACAAAGACCUACUGAAUACAGUGCUGCGGUCGGUUUAGGCGCAUUAUCUCUGUUGAUAUUGCACUUGUCCCGGUCUUAGUAAAGUAUGACU
+........................((((..(((((.(..(((..((((.(((.((((......)))).))).))))..)))..).)))))..))))....
+>csa-mir-92c MI0007191 Ciona savignyi miR-92c stem-loop
+GUAUAUAGCAGUCAGGAACGGCCGAGUGUGGUGUAUUGUACUCGUAGAAAUAACAGUAUUGCACCUGUCCCGGCCGAUCUUGGGUGCGCCU
+.......(((.((((((.((((((.(...((((((..(((((..((....))..)))))))))))...).)))))).)))))).)))....
+>csa-mir-124-1 MI0007192 Ciona savignyi miR-124-1 stem-loop
+UUAUAAUCGACGUCAUAGCCAAGUUCGAUCGUGUUUAUUGUGGACCUUGCCGUGUGACGUCACAGUAAGGCACGCGGUGAAUGCCAACGAACUCGCGCUGCAU
+...............(((((.((((((...((((((((((((..((((((.(((......))).))))))..))))))))))))...)))))).).))))...
+>csa-mir-124-2 MI0007193 Ciona savignyi miR-124-2 stem-loop
+GUGACGUAAAAUCAAUAAUGCGCUUCAUCCGCGUUUGCUGCGGACCUUCUUGUGUGACAUCACAAUAAGGCACGCGGUGAAUGCCAAUGAAACGUCAUCACU
+(((((((................(((((..(((((..(((((..((((.(((((......))))).))))..)))))..)))))..))))))))))))....
+>csa-mir-126 MI0007194 Ciona savignyi miR-126 stem-loop
+GUGUCAUAAUUAUGGUUUUCGAUGCUGCCUUGUUACCUACGGUACCAGGUAGAAAGUAAGUCAUCUCGUACCGUGAGUAAUAAAGCAUUCUCGGAGGCUCA
+.............(((((((((.(.(((.(((((((.((((((((.((((.((.......)))))).)))))))).))))))).))).).)))))))))..
+>csa-mir-133 MI0007195 Ciona savignyi miR-133 stem-loop
+UGAGUAAAAAAAACACUGCUUGUGACGGUUGUUGGUAAAGAGGAUCGAACCUGGAAAAUGAUGGUUUGGUCCCCUUCAACCAGCUACCGAUGCAACGCACG
+................((((((((.((((.((((((.(((.((((((((((...........)))))))))).)))..)))))).)))).))))).)))..
+>csa-mir-141 MI0007196 Ciona savignyi miR-141 stem-loop
+UUGGUCGUCGGUCGCAUCUUCAUCACGCGGUGUUCUAGAACUCAUUCUAACACUGUCUGGUAAAGAUGCGAUCGGCGGCUACUU
+.(((((((((((((((((((.((((.(((((((..(((((....)))))))))))).)))).)))))))))))))))))))...
+>csa-mir-153 MI0007197 Ciona savignyi miR-153 stem-loop
+GGAAAACAUUGUCUUUACUGUUCACGAGUGUCAUUUUAAUACUAUGCAGCUUUGAAUAAUGUUAGUUGCAUAGUAAUAAAAGUGAUCAUGCGUUUACAAGAA
+..................(((..(((.((((((((((..((((((((((((............))))))))))))...))))))).))).)))..)))....
+>csa-mir-155 MI0007198 Ciona savignyi miR-155 stem-loop
+UAGCUAAUUGUACUACUCUUACUGACGUGUCACAUAAUUAACAGCAAUUACGGGACGGAUCACUGAGCUGUAGUGAUACAGAAAGUCAGCGCAUCUGUAAUUAAUGCUAAUAAGUGAUUUAUGGUUUCGUUCUACAAA
+.......(((((..((....(((.....(((((....(((..((((.(((....(((((((.((((.(((((....)))))....)))).).))))))...)))))))..))))))))....)))...))..))))).
+>csa-mir-183 MI0007199 Ciona savignyi miR-183 stem-loop
+ACAGUGUUGACGAAAUAUGGCACUAGUAGAAAUCACUGUAGCCAACACCCAGUGGUUUCACAGGUGCCAUAAAUUGGAAACACUACUUUCUACAGCGAUAACA
+..((((((..(((..(((((((((.((.((((((((((...........)))))))))))).)))))))))..)))..))))))...................
+>csa-mir-200 MI0007200 Ciona savignyi miR-200 stem-loop
+GGUCACUGAAGCAUCAACCCGGUAGUACGAUAUGUGAGCUGUAUAAUACUGCCUGGUAAUGAUGAUUCAGUGGCGUCGCG
+.(((((((((.((((((((.(((((((..((((.......))))..))))))).)))..))))).)))))))))......
+>csa-mir-216a MI0007201 Ciona savignyi miR-216a stem-loop
+UGUCCCGGCUCAUUCUAAUCUCAGCUGGCAAUCUGUGAUUGGCUGAAAAUCACAGAUGCAGAUGGGAUUCUGAUGAGUCGGGA
+..((((((((((((..(((((((.(((.((.(((((((((.......)))))))))))))).)))))))..))))))))))))
+>csa-mir-216b MI0007202 Ciona savignyi miR-216b stem-loop
+GUGACGCUUGUCGUCUAAUCUCUGCAGGCAACUGUGAUGUCAUAGUCACAUAUGUGUGCAGAGGUUGGAUGAAAUGUAGUC
+..(((((...((((((((((((((((.(((..((((((......))))))..))).))))))))))))))))...)).)))
+>csa-mir-217 MI0007203 Ciona savignyi miR-217 stem-loop
+GAAAGUGGGGCGAGAUACUGCAUUAGGAACUGAUUGGUUGUUAAUUUCACUCAGUUUCAGGUGCAUUAAAUUGCUACACUAUAUGUCAUCCACCAGUAUGAG
+...((((..((((..((.(((((..((((((((.(((.........))).))))))))..))))).))..))))..)))).....((((.(....).)))).
+>csa-mir-219 MI0007204 Ciona savignyi miR-219 stem-loop
+AUGGCGACUGUUUCAUGAUUGUCCAAACGCAAUACAGGUGUUACAAUAAAUUCUGUGUUUUCGUAUGGACAUCGUAAUACAGAGUGUCACAUGCUUCAUCAA
+.(((((.((((...(((((.(((((.(((.((((((((.............))))))))..))).))))))))))...))))..))))).............
+>csa-mir-281 MI0007205 Ciona savignyi miR-281 stem-loop
+AAUUCGUUUAUUUUACAUGUCAAGUGCGUGUCGGAGGGUUAUUUCAUGCCGGUCUAGCAUUGCGCUGUCAUGGAGUUGCUCUCUCAUUGGCGCUAUGGCUUA
+..................(((((((((..((.(((((((.((((((((.((((...((...)))))).)))))))).))))))).))..))))).))))...
