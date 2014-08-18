@@ -189,14 +189,13 @@ gen_nr_dataset
 
 echo "Cleaning aux files.."
 rm -f work/*.*
+find work -name "multi.*" -exec rm "{}" ";"
 
 echo "Moving directories to data/"
-rm -rf mirbase50 coding updated conserved-hairpin
-rm -rf mirbase82-nr functional-ncrna mirbase12 other-ncrna
-rm -rf mirbase82-nr-multi functional-ncrna-multi mirbase12-multi other-ncrna-multi
-rm -rf mirbase20-nr mirbase20-nr-multi
-rm -rf mirbase20 mirbase20-multi mirbase50-xsp
-rm -rf mirbase12-micropred mirbase12-micropred-multi
+rm -rf mirbase50 coding updated conserved-hairpin cross-species
+rm -rf mirbase82-mipred functional-ncrna
+rm -rf mirbase12 mirbase12-micropred other-ncrna
+rm -rf mirbase20 mirbase20-nr 
 
 mv -f work/* .
 
