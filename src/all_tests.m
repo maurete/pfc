@@ -7,12 +7,10 @@ function all_tests
     for j=3:5
         for i=1:15
             fprintf('\n >>>>>>>> dataset %s, featset %d ....\n', ds{j}, i)
-            for k=1:3
-                svm_lin(ds{j},i,rn(k))
-                svm_rbf(ds{j},i,rn(k))
-                mlp(ds{j},i,rn(k))
-                mlp(ds{j},i,rn(k),1)
-            end        
+            svm_lin(ds{j},i,rn)
+            svm_rbf(ds{j},i,rn)
+            mlp(ds{j},i,0,rn)
+            mlp(ds{j},i,1,rn)
         end
     end
 
@@ -20,12 +18,10 @@ function all_tests
     for j=1:2
         for i=[4 5 8]
             fprintf('\n >>>>>>>> dataset %s, featset %d ....\n', ds{j}, i)
-            for k=1:3
-                svm_lin(ds{j},i,rn(k))
-                svm_rbf(ds{j},i,rn(k))
-                mlp(ds{j},i,rn(k))
-                mlp(ds{j},i,rn(k),1)
-            end        
+            svm_lin(ds{j},i,rn)
+            svm_rbf(ds{j},i,rn)
+            mlp(ds{j},i,0,rn)
+            mlp(ds{j},i,1,rn)
         end
     end
 
