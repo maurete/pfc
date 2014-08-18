@@ -1,0 +1,189 @@
+>sme-bantam-a MI0005119 Schmidtea mediterranea bantam-a stem-loop
+UAUUGGUUUUACUAGUGAUCUAAGAAUGAUAUAUAAAAAUCUGAGAUCACUAUGAAAGCUGGUA
+(((..(((((..(((((((((.(((..............))).)))))))))..)))))..)))
+>sme-bantam-b MI0005120 Schmidtea mediterranea bantam-b stem-loop
+CUUUAAAAACCGGUUUUCGUUGAGAUCUUAGAUAUAUUCAUCUGAGAUCACUGCGAAAGCUGAUUAUGAAGUCGCUUUC
+(((((.....((((((((((.(.((((((((((......)))))))))).).))))))))))....)))))........
+>sme-bantam-c MI0005121 Schmidtea mediterranea bantam-c stem-loop
+UAGUUUAAAGGCUUUCAUUAUGAUUUUAAAAUGUUAUUUUGAGAUCAUUAUGAAAGCUUUUUACUG
+((((..((((((((((((.(((((((((((((...))))))))))))).)))))))))))).))))
+>sme-let-7a MI0005122 Schmidtea mediterranea let-7a stem-loop
+AUCAAAUUCAUGAGGUAGAAUGUUGGAUGACUAAGGUAAAGGUAACAUAUCAGAGCUGUUCAAUUUUCUGCCUUUAAAAUUUGAU
+((((((((...(((((((((.(((((((..((..((((.........))))..))..))))))).)))))))))...))))))))
+>sme-let-7b MI0005123 Schmidtea mediterranea let-7b stem-loop
+GUAACAUUAACAAUUGAGGUAGAUUGUUGGAUGACUUAAUUUUAAAGCCAUUCAACUAUCUGUCUUCUCUUGUUAAAUUAC
+((((..(((((((..(((((((((.((((((((.(((.......))).)))))))).))))).))))..))))))).))))
+>sme-let-7c MI0005124 Schmidtea mediterranea let-7c stem-loop
+UCAUACUAACUAGAUGAGGUAGUGACUCAAAAGGUUGAAGAAAUACAUCAAAUGGAGUAAAACCUUUUGUUUCUCUAGCUUUAUCAGUUAUAUGA
+(((((.(((((.((((((((((.((..(((((((((.......(((..(....)..))).)))))))))..)).)).))))))))))))))))))
+>sme-lin-4 MI0005125 Schmidtea mediterranea lin-4 stem-loop
+AUCAGUUAUAAUCUCCCUGAGACCUUCGACUGUGUUUGACCAUUAAAUUAUCAGAAAUGAUUGCACAGUCGAUGAUCAUAGGGUUAAAAUAGCCGAU
+(((.(((((.....(((((.((.(.((((((((((..............((((....)))).)))))))))).).)).))))).....))))).)))
+>sme-mir-1a MI0005128 Schmidtea mediterranea miR-1a stem-loop
+AGCGAGCAUUUUUCGAGGCAUUUCAUAGAGUCAAAUGAAAAUAAACCUGUGGAAUGUCGAGAAAUAUGCAUGCU
+((((.((((.((((..((((((((((((.((...((....))..))))))))))))))..)))).)))).))))
+>sme-mir-1b MI0005129 Schmidtea mediterranea miR-1b stem-loop
+AACAACACACGGGCAUAAUUCAAGAUAUUCGAUAGGGUUUUUGGUAACUAAUGGAAUGUCGUGAAUUAUGGUCUUCAUUGUU
+(((((.....((.(((((((((.(((((((.((..((((......)))).)).))))))).))))))))).))....)))))
+>sme-mir-1c MI0005130 Schmidtea mediterranea miR-1c stem-loop
+GUUACGUGAGGUGCACAUUAUUCAAAACAUUGAAUCACAUCGAACUGUGGAAUGUUGUGAAUAGUGUCACAGACGUAAU
+(((((((...(((.((((((((((.((((((...(((((......))))))))))).)))))))))))))..)))))))
+>sme-mir-2a-1 MI0005131 Schmidtea mediterranea miR-2a-1 stem-loop
+GUUCAUUUAUGUGAGUUCCAGUGUGCUAUGAUGUAUAUUUCUAAAAAUUUCUAUAUAUCACAGCCCCGCUUGGAACGCUAAUUAAUGAAU
+(((((((.((....(((((((((.(((.(((((((((..............))))))))).)))..))).))))))....)).)))))))
+>sme-mir-2a-2 MI0005132 Schmidtea mediterranea miR-2a-2 stem-loop
+GUUCACUUAAUUGAGUUCUACGGUGUUGUGAUAUAAUGAUUAUUUAUAUCACAGCCCCGCUUGGAACGCUAAAAUAUGAAU
+(((((.........(((((((((.((((((((((((.......)))))))))))).)))..)))))).........)))))
+>sme-mir-2b MI0005133 Schmidtea mediterranea miR-2b stem-loop
+GGUUAUUGCUUUCAUCAUUGUUGGUUGUCAGUUAUUGUAUUCAAUAUCACAGCCAAUUUUGAUGAGAUGAGAUAGCU
+(((((((..((((((((..(((((((((....(((((....)))))..)))))))))..))))))))...)))))))
+>sme-mir-2c MI0005134 Schmidtea mediterranea miR-2c stem-loop
+UUUCUUUUUCAAAUACAAAAAUCAUCAAUUUGGUCUGUUAUAAAUGGCUUUUAUCACAGCCAAAACUGAUGAUCUUAUAAAUUUGUCAAACAU
+....(((..(((((......(((((((.(((((.((((.(((((.....))))).)))))))))..))))))).......)))))..)))...
+>sme-mir-2d MI0005135 Schmidtea mediterranea miR-2d stem-loop
+GUGACAUUUUGCCUCUUACGGACAUCAUUAUUUGACUGUCGAUAGAUAUUGGUAACAUUAUUUUGGUAGUAUCACAGCCAAAUUUGAUGUCCUAAAUAAGGUAGUCAC
+(((((....(((((.(((.((((((((..(((((.((((.((((..(((..(..........)..))).)))))))).))))).)))))))))))...))))))))))
+>sme-mir-7a MI0005136 Schmidtea mediterranea miR-7a stem-loop
+CAUAAUUUGGAAGACUAUUGAUUUAGUUGAAUUGGUUAAUUUAGUUUCAACUGAUUCUAGUCAUCCUUAUG
+(((((...(((.(((((..((.(((((((((((((.....)))).))))))))).))))))).))))))))
+>sme-mir-7b MI0005137 Schmidtea mediterranea miR-7b stem-loop
+GGAAUAACACAGAAAAAUAAUCAUGGAAGACUGUCGAUUUCGUUGUCAGAGCAUUUUUAAAUGUAACAACGAUUUUGAUAAUCUUCCUGGAUUUUUUUGUUGAAACUUCU
+((((....((((((((((..(((.((((((.((((((..(((((((....(((((....))))).)))))))..)))))).)))))))))))))))))))......))))
+>sme-mir-7c MI0005138 Schmidtea mediterranea miR-7c stem-loop
+UGAAUAAGUUUAAUAUUUUGUGGAAGACUGAUGAUUUGCUGAACGCAUGCAGCCAGCGGGUCUUCUUUCUUCUCAUUAUAUUUUAUUAAUCA
+.((.(((....(((((..((.((((((..((.(((((((((...((.....))))))))))).))..))))))))..)))))...))).)).
+>sme-mir-8 MI0005139 Schmidtea mediterranea miR-8 stem-loop
+AAUGACAUCGAAUCAGACAGUUUAAGACAGAAUUUAAUAAAAUCUAAUACUGUCAGGUAACGAUGCCAUU
+((((.(((((.(((.((((((...(((...............)))...)))))).)))..))))).))))
+>sme-mir-10 MI0005140 Schmidtea mediterranea miR-10 stem-loop
+CUGUCACCGAUCUGAACCCUGUAGAUCCGAGUUUGAUUAAUGCCAAUGUUGAGUUUUGAAGCAUUUCAAUCAAAAUCGAAUCUUCAAGGUGAAGCUGGUGAUAG
+(((((((((..((..(((.((.((((.(((.(((((((((((((((.........)))..)))))..))))))).))).)))).)).)))..)).)))))))))
+>sme-mir-12 MI0005141 Schmidtea mediterranea miR-12 stem-loop
+AUUUUAUCCAUCGCUCACUGAGUAUUCUAUCAGGAGUCGAAAAAUGCGUUAAGUUAACUAACGUUUCGUCUCUUGAUGGUUUACUUAAUAAGCAAAGGAUUUUU
+.....((((...(((.(.((((((..((((((((((.((((....((((((.......)))))))))).))))))))))..)))))).).)))...))))....
+>sme-mir-13 MI0005142 Schmidtea mediterranea miR-13 stem-loop
+GAGCCUUUGGCGGCUGUGAUAUGAUAAUUAUAUCAUAUCACAGUCAUGCUAAAGAGCUU
+((((((((((((((((((((((((((....)))))))))))))))..))))))).))))
+>sme-mir-745 MI0005143 Schmidtea mediterranea miR-745 stem-loop
+AUUAACUCUGUGAUGAUACGCUCUUACCAGCUAGAAUGCUGAUAAUUUACCACAUGCUGCCUGGUUAAGAGCUGUGUCAAACACCUUUCAAAC
+........(((..(((((((((((((((((.(((.(((.((.........))))).))).)))).))))))).)))))).)))..........
+>sme-mir-746 MI0005144 Schmidtea mediterranea miR-746 stem-loop
+UGAUAAUUCGCAUAACAUCUAGCCGGAUAAAUCCUGUGUGCAUUGAUAGAAAGUGAAAUGAUUUUAUUCAUAAGAUCUACCAUAUCUAGCACCAGGGUAUAUCGGGAUUGAAACGAACAUGAUCAUCA
+((((..((((.......((...((.((((.((((((.((((...((((....(((....(((((((....))))))))))..))))..)))))))))).)))).))...))..))))....))))...
+>sme-mir-31a MI0005145 Schmidtea mediterranea miR-31a stem-loop
+UUUUAUUGUUAUGUUUUAAGGCAAGAUGUUGGCAUAACUGACAACAAUUCGAAAGGAUUAAUUUCAGUUACGUUAGCACUUACCAGAUAGCAAAACAAA
+.....(((((.((((....((.(((.(((((((.(((((((....(((((....)))))....))))))).)))))))))).))....)))).))))).
+>sme-mir-31b MI0005146 Schmidtea mediterranea miR-31b stem-loop
+AUUGAUAAUGACAAGGCAAGAUGCUGGCAUAGCUGAUAAACUAUUUAUUACCAGCUAUUCAGGAUCUUUCCCUGAAUAUAUCAAU
+(((((((....((.((.(((((.((((.(((((((.(((........))).))))))))))).))))).)).))....)))))))
+>sme-mir-36 MI0005147 Schmidtea mediterranea miR-36 stem-loop
+AGCCACAGUGUUUUGAUGCAUGCUACUUGGUUUUGUUGUUAUUAUAUUAACAUCACCGGGUAGACAUUCAUUAUACAACUGUUGUU
+(((.(((((....(((((.((((((((((((..(((((.........)))))..))))))))).))).)))))....))))).)))
+>sme-mir-61 MI0005148 Schmidtea mediterranea miR-61 stem-loop
+UUUUUAGAAUAGAAACUCUUGAUACAGUUUGUGAGUUUCUAGGCAUAUAGAUUUUUCUAUGACUAGAAAGUUCACUUACUGUUGUACGAGUUUUAAACUUCAUU
+......(((..(((((((.....(((((..((((((((((((...((((((....)))))).))))))).)))))..))))).....)))))))....)))...
+>sme-mir-71a-1 MI0005149 Schmidtea mediterranea miR-71a-1 stem-loop
+AUUUUAAAUGCAUGAAUGAAAGACACGGGUAGUGAGAUAAGCUAUAUAUCAUCUCAUUGCCAAUGUCUUUUAAACGUGUUAUUU
+.........(((((..(((((((((..(((((((((((.(........).)))))))))))..)))))))))..))))).....
+>sme-mir-71a-2 MI0005150 Schmidtea mediterranea miR-71a-2 stem-loop
+UUGGAUAUAACUGAAAGACACGGGUAGUGAGAUAUGGAUUUUUCAUCUCUAUAUUCGUGUCUUUCAUAUUUAUUCACG
+.((((((....(((((((((((((((...(((.(((((...))))).))).)))))))))))))))....))))))..
+>sme-mir-71b MI0005151 Schmidtea mediterranea miR-71b stem-loop
+UGAUUCAGUACUCUUUGAAAGACACAGGUAGUGGGACAGAUAUUAUCUAAUAAAAGCUUGUCCUUCUAAUGUGUUUUUCGAAAACCAUUGAAUCAAUCAU
+(((((((((....(((((((((((((..(((.(((((((..................))))))).))).)))))))))))))....))))))))).....
+>sme-mir-71c MI0005152 Schmidtea mediterranea miR-71c stem-loop
+GUAGUUUUCUUGAAAGACAUGGGUAGUGAGAUUAUUUAAAUUAAAUAUUUAAAAUCUCAUUAUUCAAGUUUUUCUUAUAAGC
+...((((....(((((((.((((((((((((((..((((((.....)))))))))))))))))))).)))))))....))))
+>sme-mir-79 MI0005153 Schmidtea mediterranea miR-79 stem-loop
+UUGAAACAUAAUCUCUUCUUUGGUCAUCUGGCUUUGUGAUAGAGAAAUUAUCAUCGUAAAGCUAAAUUACCAAAGUGCUAGAAAAUGUUGGAU
+....(((((..(((...(((((((.((.((((((((((((.((.......)))))))))))))).)).)))))))....)))..)))))....
+>sme-mir-87a MI0005154 Schmidtea mediterranea miR-87a stem-loop
+UUUGCCAGUAUUUCAACACUUGGUAAUUUGCUCAAACCAAUGUCCGAAAAGGAGUCUGGUGAGCAAAGUUUCAAGUGUAUAUAUGUGGCAUUAAA
+..(((((((((....((((((((...(((((((..((((...(((.....)))...)))))))))))...))))))))..)))).))))).....
+>sme-mir-87b MI0005155 Schmidtea mediterranea miR-87b stem-loop
+UUCAUUGAUGCGUUGAUGCUUCAUUCGAAAUUUUGCUCAAAUCCAUUUUGAUAAUAAUAAUUUUCGAUGGUGAGCAAAGCUUCAAAUGAGAUUUCACGGAAUUCGGUC
+...((((((.(((.((...((((((.(((.(((((((((...(((((..((.(((....))).)))))))))))))))).))).))))))...))))).)..))))).
+>sme-mir-92 MI0005156 Schmidtea mediterranea miR-92 stem-loop
+AAUUGCUAAAUGGUAAAUAUCUAGUGCAAGUCUACAGGUGAAUUUCUUUUUAGAUUGCACUAGUUAAUUAUCAUCAUACAAUUU
+(((((....(((((((.((.(((((((((.((((.(((......)))...))))))))))))).)).)))))))....))))).
+>sme-mir-124a MI0005157 Schmidtea mediterranea miR-124a stem-loop
+UUCAAUCAGAUGUGCUUUUAACGCGGAGCUUUAGUAAUUUAACAUGUAUACUAAGGCACGCGGUGAAUGCUUACUUGAUUGAG
+.((((((((.((.((.((((.((((..(((((((((............))))))))).)))).)))).)).)).)))))))).
+>sme-mir-124b MI0005158 Schmidtea mediterranea miR-124b stem-loop
+GUAUCCAUGAAAAUUUGCAUUUACAACGUGUCUUUAGUUCAUGUGACACUAAGGCACGCGGUGAAUGCUGAAUUAAAUGGUUUA
+....((((...(((((((((((((..((((((((.(((((....)).)))))))))))..)))))))).)))))..))))....
+>sme-mir-124c MI0005159 Schmidtea mediterranea miR-124c stem-loop
+UGAUCCUAUUCUUUACUAGCGCUCACCUCGUGACCUUUGUCAGUGUUGGACUAAGGCACGCGGUGAAUGCCAGAUGAAAGGAUGA
+..(((((.(((....((.(((.(((((.((((.((((.(((.......))).)))))))).))))).))).))..))))))))..
+>sme-mir-125a MI0005160 Schmidtea mediterranea miR-125a stem-loop
+CUGUUGUCUGUAUUUAUAUCCCUGAGACCAUUGACUGCAUUUGUUUGAGGUUUCAAUGUAGUUUUUGGUAUCAGGAUUGUGGAUAUGGAGCAUUC
+.(((..((((((((((((..(((((.((((..(((((((((.............)))))))))..)))).)))))..)))))))))))))))...
+>sme-mir-125b MI0005161 Schmidtea mediterranea miR-125b stem-loop
+GCAAGUUAUUCGACAUCCCUGAGAUCAUAAUAUGCCUGAGAUUUGAACGCAAACCGGUAGAUUAUUGUCUCAGAGUAAUUGAUAAACUGCA
+(((.(((..((((...(.(((((((.(((((.((((.(.(.((((....)))))))))).))))).))))))).)...))))..)))))).
+>sme-mir-133 MI0005162 Schmidtea mediterranea miR-133 stem-loop
+AAAACACUUUUGUAUUUGCUGCUAGAUGGUGAAUCAAAACCGUUUGGGUCUUGGUCCCCAUCAACCAGCAAUUUUCAAGUGUUUAUC
+.((((((((......((((((...(((((.(.(((((.(((.....))).))))).))))))...)))))).....))))))))...
+>sme-mir-184 MI0005163 Schmidtea mediterranea miR-184 stem-loop
+GAUUUUCAUUAACUCCUUUGUGUAUCUCCGUUUCACAUUUAUUAUAUCAUUUAUACUGGACGGAGGUUUGCUAAGGAAUAUUUGAAAAUU
+((((((((.....(((((.(((.(((((((((..........................))))))))).))).))))).....))))))))
+>sme-mir-190a MI0005164 Schmidtea mediterranea miR-190a stem-loop
+GAUUAACUUCGAGAUAUGUUUGGUUAAUUGGUGAUAGGUAACCACCACUGACCGAGCAUAUCCAGUUGUUAAUU
+(((((((..(..((((((((((((((..(((((.........))))).))))))))))))))..)..)))))))
+>sme-mir-190b MI0005165 Schmidtea mediterranea miR-190b stem-loop
+GCACUUCAAAUCGUGAUAUGUUUGGUUUAUUGGUGAGUGUAAACUGAUUUCUAACACCAUUAGCCUAAUGUAUCGUGUCAUUGAGUGC
+(((((.(((..(((((((((((.((((...((((((((....))).........)))))..)))).)))))))))))...))))))))
+>sme-mir-747 MI0005166 Schmidtea mediterranea miR-747 stem-loop
+UCAGUUCUGUUCAUAAUCUCAUCUGGUAAUUGAAGUGAUCUAUUUUUUAAAAAAAGAAACUUCAUUAUCAUUUCAGAUUGUAAUCGAAAUGA
+(((.(((.(((.(((((((.(..(((((((.(((((..(((.(((.....))).))).))))))))))))..).)))))))))).))).)))
+>sme-mir-219 MI0005167 Schmidtea mediterranea miR-219 stem-loop
+CGGUAAUUUAUUGCUGAUUGUCCAUACGCAGUUCUCAAGGUCUAGAAUCGACGAAUUGCCGUUUAAGAAUUGCGAAUGGUCAUCAACAAUAAUUGCUG
+((((((((.((((.((((.(.((((.(((((((((...(((................))).....))))))))).)))).))))).))))))))))))
+>sme-mir-277a MI0005168 Schmidtea mediterranea miR-277a stem-loop
+UGGUAAACUGUUUUCUUUACGUAUUCGUUGGAGCAUUUUUACAAACAAAAUGUAUAAAUGCACUAUCGGAUAUGACAUAGAUACAGUUUAA
+...((((((((..(((...((((((((.(((.((((((.((((.......)))).)))))).))).))))))))....))).)))))))).
+>sme-mir-277b MI0005169 Schmidtea mediterranea miR-277b stem-loop
+GGUUGUAUUGAUCUUGAUCAGAAAUGCAGCUUCAGAGAAAUCACUGUGAAAAUGCAUUAUCUGGCCAAGAAAAUGAAGCCU
+((((.((((..(((((..((((((((((..((((.((......)).))))..)))))).))))..))))).)))).)))).
+>sme-mir-277c MI0005170 Schmidtea mediterranea miR-277c stem-loop
+AUCAUUUAUAUUAAUCAUAUCAGAUUUGCAUUAUUAUUAUGAAUUAAACAUCAAUAAAUGCAUUAUCUGGUAUGAUAUUUGAAAUGAU
+(((((((......((((((((((((.((((((..(((((((.......))).))))))))))..)))))))))))).....)))))))
+>sme-mir-278 MI0005171 Schmidtea mediterranea miR-278 stem-loop
+GGUCGUGAUCUUUGACUUCGAAUGCUAUUUUCACCAGAUGCUUGUUCAAGUUCAACAGUCAAGCUCGGUGGGAGUAACAUUCGAAAUUAAUUACGAUC
+(((((((((...(((.((((((((.((((..((((.((.(((((...............)))))))))))..)))).)))))))).))))))))))))
+>sme-mir-281 MI0005172 Schmidtea mediterranea miR-281 stem-loop
+UUACAGCUUACAAUGAAGAGCUAUUCAUGAGGUGCAGUAUAAUGACAAUUUCAUCUGUUCCCCAUGUCAUGGAUAUGCUCUUCAUAAAAGCUAUAA
+....(((((...((((((((((((((((((.(((..(.(((((((.....)))).))).)..))).))))))))).)))))))))..)))))....
+>sme-mir-67 MI0005173 Schmidtea mediterranea miR-67 stem-loop
+GUGUAAUAUUAGCCUCAUUCUAUGGGUUGUUAUGAUGCAAUAUCAUCACAACCUCCAUGAACGAGGGUAAUCGACAUG
+((((...((((.((((.(((...(((((((.((((((...)))))).)))))))....))).)))).))))..)))).
+>sme-mir-748 MI0005174 Schmidtea mediterranea miR-748 stem-loop
+CAAUCACAUUAUGUCCUUAUUAUAUUGCUGUCAAGUAAGCACUACUGGACGGAAGUGUAAUGAGGGUAAAAUUGUGAAA
+...(((((...(..((((((((((((.(((((.((((.....)))).))))).))))))))))))..)....)))))..
+>sme-mir-749 MI0005175 Schmidtea mediterranea miR-749 stem-loop
+AUCGCUGGGAUGAGCCUCGGUGGUCCGGGGUGCAGGCUUCAAACCUGUAGUCGGUUGACACCGAAGUGGUUCGAUUCCACCUUUCCAGCGAU
+((((((((((((((((((((((..(((.(.((((((.......)))))).))))....))))))...)))))).........))))))))))
+>sme-mir-750 MI0005176 Schmidtea mediterranea miR-750 stem-loop
+AUUGAAAUCAGAUUUUCAGCACUGGAAGGUUUGGUUUAGCUGCUGUGCACCGUCAUGUCGACACAGUCAGAUCUAACUCUUCCAGUUCUAAAGCUGAUAGCGAAC
+.(((..(((((.((((.((.((((((((..((((.....((((((((...((......)).))))).)))..))))..)))))))).)))))))))))..)))..
+>sme-mir-751 MI0005177 Schmidtea mediterranea miR-751 stem-loop
+ACUAAUUUUGUUUUCUUGUAAACUCCGAUAGAAUGAUUCAUAAGAUUGACUAUAAAACAUGUUUGAAUGGCCAUGACAAAGUAUU
+....((((((((..((..(((((....((((...((((.....))))..)))).......)))))...))....))))))))...
+>sme-mir-752 MI0005178 Schmidtea mediterranea miR-752 stem-loop
+AUUGAUUAUAGUUAUCUAAUUUGAAAACCUCCAAAGUGAUUGUGAAUAAAAGUUUUAUUAAUUUAAUCACAGUCAGCAUUGGUGGUUUGAAAGUAGAGUGAUCUUACAAUCGAA
+.((((((..(((((((((.(((..(((((.((((.((((((((((.((((...........)))).))))))))).).)))).)))))..))))))).))).))...)))))).
+>sme-mir-753 MI0005179 Schmidtea mediterranea miR-753 stem-loop
+UAAAGUAUAUUUUAGAGCUUGGAUUGUGAUCUCAUAUAUUUAUGAGAUCAUUAUUCAAGCUCUUAAAUAAUACUUUU
+.(((((((((((.(((((((((((.(((((((((((....))))))))))).))))))))))).)))).))))))).
+>sme-mir-754 MI0005180 Schmidtea mediterranea miR-754 stem-loop
+ACCCAGCAUGUUGCUUGGGGUUAUUACUAUAUUUAUUAAUAUAGUUUUAUCUUCAAGCAAUAUCAGAUGAGGA
+.((((..(((((((((((((.((..((((((((....))))))))..)).)))))))))))))....)).)).
+>sme-mir-755 MI0005181 Schmidtea mediterranea miR-755 stem-loop
+UUUCUGUAGUGGAGCUAUUGUAUUUCACCGUGGUUGGCUAUCGUGAGAUUCAAUUACUCCAACUACGAUUUA
+....((((((((((..((((.(((((((.((((....)))).))))))).))))..)))).)))))).....
+>sme-mir-756 MI0005182 Schmidtea mediterranea miR-756 stem-loop
+UAAAAGUUGGGAUAAAUCGAUAUGUGGUAAUUUGGAUGACAUAAUUAACUUUGUAAUCUCAUCCAUCUUAUCAUUUAUCAAAAUAUUCUGACAUG
+.....((..(((((....((((.(((((((..(((((((.((((......))))....)))))))..))))))).))))....)))))..))...
+>sme-mir-277d MI0005183 Schmidtea mediterranea miR-277d stem-loop
+AAGCAUCAAAAAUGUUGGUUAGUUGUGCAUUUUCAUUAAAUAUUAUGUAAAUGCAUUUAUCUGGCCAAGAAAUAGUUGCUU
+(((((.......(.((((((((..((((((((.(((........))).))))))))....)))))))).)......)))))

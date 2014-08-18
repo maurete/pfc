@@ -1,0 +1,132 @@
+>tca-mir-1 MI0008892 Tribolium castaneum miR-1 stem-loop
+UUCGCGAGUUCCGUGCUUCCUUACUUCCCAUAGUGCUUUAAACGUAUGGAAUGUAAAGAAGUAUGGAGCGAA
+.......((((((((((((.((((...(((((((.......)).)))))...)))).))))))))))))...
+>tca-mir-2-3 MI0008893 Tribolium castaneum miR-2-3 stem-loop
+AGUCUUGUCUGUCCUUAUCAGAGUUGGCGGUUUUAGAUUAACUGAUUCUAUCACAGCCAGCUUUGAUGAGCACAGUUGAGAUU
+(((((((.((((.(((((((((((((((.((..((((.........))))..)).))))))))))))))).)))).)))))))
+>tca-mir-2-1 MI0008894 Tribolium castaneum miR-2-1 stem-loop
+UUUAUGUGCUGUGUCGCUCAUCAACUGGAUGUGAAAUGGAUUUGUAGCUCAUAUCACAGCCAGCUUUGAUGAGCGCUACAACAUCUAA
+.(((.(((.((((.((((((((((((((.(((((.(((..(.....)..))).))))).))))..)))))))))).)))).))).)))
+>tca-mir-2-2 MI0008895 Tribolium castaneum miR-2-2 stem-loop
+GGUGUAGGCUUUCGCUCAUCAUCUGGUUGUGAAAUGUGAAUUUAUAUCAUAUCACAGCCAGCUUUGAUGAGCGCAAGAGUGCACU
+((((((..(((.(((((((((.((((((((((..(((((.......)))))))))))))))...))))))))).)))..))))))
+>tca-let-7 MI0008896 Tribolium castaneum let-7 stem-loop
+GUCUGUUUGAGGUAGUAGGUUGUAUAGUAAGUAUUACACCUAUUGGGAGUGCUGUACAGCCUGCUAACUUUCCCAGAC
+(((((...(((.(((((((((((((((((.........((....))...))))))))))))))))).)))...)))))
+>tca-mir-7 MI0008897 Tribolium castaneum miR-7 stem-loop
+UGGUGUUGUGUGGAAGACUAGUGAUUUUGUUGUUCUAAUUUUUACGUAACAAGGAAUCACUAAUCAUCCCACAAAGCC
+.(((.(((((.(((.((.((((((((((.((((((..........).))))))))))))))).)).)))))))).)))
+>tca-mir-8 MI0008898 Tribolium castaneum miR-8 stem-loop
+ACUGUUAACAUCUUACCGGGCAGCAUUAGAUUACAUUUUAUACUUCUAAUACUGUCAGGUAAAGAUGUCCUCC
+.......((((((((((.(((((.((((((..............)))))).))))).))).))))))).....
+>tca-mir-10 MI0008899 Tribolium castaneum miR-10 stem-loop
+CUCUACAUCUACCCUGUAGAUCCGAAUUUGUUUGAAAUCAGGCGACAAAUUCGGUUCUAGAGAGGUUUGUG
+.....(((..(((((.((((.(((((((((((((....))...))))))))))).)))).)).)))..)))
+>tca-mir-12 MI0008900 Tribolium castaneum miR-12 stem-loop
+UAAAAGUUCAGGGUUUGAGUAUUACAUCAGGUACUGGUUCGGUUUUGAAAAACCGGUCCCUGAGUAACACUUACAUUCUGGCUUUUA
+(((((((.((((((.(((((.((((.(((((.(((((((...........))))))).))))))))).))))).)))))))))))))
+>tca-mir-13a MI0008901 Tribolium castaneum miR-13a stem-loop
+GAGAUGCCCAAGUCGUCAAUUUGGUUGUGAACUCUUAAUUUAAACGAUAUCACAGCCACUUUGAUGAGCUUGGUUGUCUU
+(((((..((((((((((((..(((((((((..((...........))..)))))))))..))))))).)))))..)))))
+>tca-mir-13b MI0008902 Tribolium castaneum miR-13b stem-loop
+UGCCCUAUCAGUCAAUUUGGUUGUGAAACCUAGUAUUUAUUCGGGUAUCACAGCCAUUUUGACGAGUUUGGUUG
+.(((..((..(((((..(((((((((.(((..(.......)..))).)))))))))..)))))..))..)))..
+>tca-mir-14 MI0008903 Tribolium castaneum miR-14 stem-loop
+GACUCCAAUGGGUGAACAGGGGAGCGGAUUGGACUUACUUUUUUUCAAACAGUCAGUCUUUUUCUCUCUCCUAUUAAUCCAUUCGAU
+...((.(((((((.((.(((((((.(((..(((((.(((.((.....)).))).)))))..))).))))))).)).))))))).)).
+>tca-mir-31a MI0008904 Tribolium castaneum miR-31a stem-loop
+GAGGCAGAGCAGGCAAGAUGUCGGCAUAGCUGAAGGUGUUUGAAACGGCUAUGUCUCAUCCGGCCAACUUAAGCCUU
+(((((.(((..(((..((((..((((((((((.............)))))))))).))))..)))..)))..)))))
+>tca-mir-33 MI0008905 Tribolium castaneum miR-33 stem-loop
+AGAAGAUGAAUAUUAUGAUCUUAGGUGCAUUGUAGUUGCAUUGCAUGUUAUUCAAAGUGCAGUGUCUCUCCAGUGCAACUUAGCGCAUAAUUUCACACCUCU
+......((((.((((((...((((((((((((.((..(((((((((..........)))))))))..)).)))))).))))))..)))))))))).......
+>tca-mir-34 MI0008906 Tribolium castaneum miR-34 stem-loop
+AUGUACACGGUGGCAGUGUGGUUAGCUGGUUGUGUUUUUUUGAUCACGACCACUAUCCAUACUCCCUCCAUGAAUAUCG
+((((.((.((.((.(((((((.(((.((((((((.((....)).))))))))))).))))))).)).)).)).))))..
+>tca-mir-71 MI0008907 Tribolium castaneum miR-71 stem-loop
+GUCUCUUCUUGAAAGACAUGGGUAGUGAGAUGUUUAAUUAAUAAAUUUUGUCUCACUACCUUGUCUUUCAUGUAGCGAU
+(((.((...(((((((((.(((((((((((((((((.....)))))...)))))))))))))))))))))...)).)))
+>tca-mir-87 MI0008908 Tribolium castaneum miR-87 stem-loop
+CAGUCGUUGACGGGCUUGAAAUCUUGCUCUCCCGUGAUUAUUUCGUAAAGGGUGAGCAAAGUUUCAGGUGUGUCAAAGGCUU
+.((((.((((((.((((((((..((((((.(((.(((.....)))....))).))))))..)))))))).)))))).)))).
+>tca-mir-92a MI0008909 Tribolium castaneum miR-92a stem-loop
+CGCUUUCAGUAGUCCGUGAUGCGUGACAAUAUUUAGUUUUUUUCGAAUAUUGCACUAGUCCCGGCCUAUUGAGGGCGC
+((((((((((((.(((.(((..(((.(((((((..(......)..))))))))))..))).))).)))))))))))).
+>tca-mir-92b MI0008910 Tribolium castaneum miR-92b stem-loop
+CUGUGUCGUUUAGGUCGUGUCUUGUGCAACUUGUGGUUUUUUCAUUAGUCAAAUUGCACUUGUCCCGGCCUGCAAGGCACAG
+(((((((...(((((((.(.(..((((((((.((((.....)))).))).....)))))..).).)))))))...)))))))
+>tca-mir-100 MI0008911 Tribolium castaneum miR-100 stem-loop
+AUCCGGUGGAACCCGUAGAUCCGAACUUGUGGGGCUGUGGUCACAAGUUCUUGUUUAUGGGUACCUACUGGUAGAA
+..(((((((.((((((((((..((((((((((........))))))))))..)))))))))).)).))))).....
+>tca-mir-124 MI0008912 Tribolium castaneum miR-124 stem-loop
+GUCAUUCUCCUAGUGUUCACUGUUGGCCUGUAUGUUUUUGUAACGCAUAAGGCACGCGGUGAAUGCCAAGAGCAGACUU
+(((...(((...(((((((((((..((((.(((((.........)))))))))..)))))))))))...)))..)))..
+>tca-mir-125 MI0008913 Tribolium castaneum miR-125 stem-loop
+AUUUGCCUAUUCCCUGAGACCCUAACUUGUGAUGUUAAAUGGACUCUCACAAGCUAGCGACUCGGGUAUUGGCGGAU
+(((((((.....((((((.(.(((.(((((((.(((.....)))..))))))).))).).))))))....)))))))
+>tca-mir-133 MI0008914 Tribolium castaneum miR-133 stem-loop
+GCAAUGUGCAGCUUUAGCUGGUUGAAUCCGGGUCAAAUUGUAAAUGCUAUUUGGUCCCCUUCAACCAGCUGUGGUUGACAUUGC
+(((((((.(((((.((((((((((((...((..(((((.((....)).)))))..))..)))))))))))).))))))))))))
+>tca-mir-137 MI0008915 Tribolium castaneum miR-137 stem-loop
+UGGUUGGUCACGUGUAUUCUUGGGUAAUUAACACAUAUUCAGGGAUGUUAUUGCUUGAGAAUACACGUAGCUGACAA
+..((..(..(((((((((((..((((((.((((..(......)..))))))))))..)))))))))))..)..))..
+>tca-mir-184 MI0008916 Tribolium castaneum miR-184 stem-loop
+UUUUCUUCCAGUCCCUUGUCAUUCUCUCGCCCGGUGUAUUUUAACAACUGGACGGAGAACUGAUAAGGGCUUGUGGGAA
+..((((..(((.((((((((((((((.((.(((((((......)).))))).))))))).))))))))).)))..))))
+>tca-mir-190 MI0008917 Tribolium castaneum miR-190 stem-loop
+GUGAGUUGCUAUAAGAUAUGUUUGAUAUUCUUGGUUGUAUUUUUAAUUCACCCAGGAGUCAAACAUAUUAUUAUAGAAGCGUCACG
+(((((((.((((((((((((((((((..((((((.((...........)).)))))))))))))))))).)))))).))).)))).
+>tca-mir-210 MI0008918 Tribolium castaneum miR-210 stem-loop
+CUCACUGCAGCUGCUGGACGCUGCACAAGAUUAGAUAUUUUAGAACUCUUGUGCGUGUGACAGCGGCUAUUGUGGG
+(((((...((((((((.((((.(((((((((((((...)))))...))))))))))))..))))))))...)))))
+>tca-mir-219 MI0008919 Tribolium castaneum miR-219 stem-loop
+UUUCAGGCCCUGAUUGUCCAAACGCAAUUCUUGUUUGCAAUUUUAUCAAGGACUGUGUGUGGACAUCAUCGCUUGAGA
+((((((((..((((.(((((.(((((.((((((.............)))))).))))).)))))))))..))))))))
+>tca-mir-263b MI0008920 Tribolium castaneum miR-263b stem-loop
+CUUACGAACCUUGGCACUGGAAGAAUUCACAGAUUGUAUUUGAAUCGUGAUUCUUUUAAUGCCAUAUUUCGUGGG
+((((((((...(((((.(((((((((.(((.((((.......)))))))))))))))).)))))...))))))))
+>tca-mir-275 MI0008921 Tribolium castaneum miR-275 stem-loop
+GCUACGCGUGUUACCUCAGUACCUAGGCUGGGGUUUUUCGAAAGUCAGGUACCUGAAGUAGCGCGCGCAGC
+(((.((((((((((.(((((((((.((((..((....))...))))))))).)))).)))))))))).)))
+>tca-mir-276 MI0008922 Tribolium castaneum miR-276 stem-loop
+UAGACCACUAGCGAGGUAUAGAGUUCCUACGUGAUUUUUCGGCUGUAGGAACUUCAUACCGUGCUCUUGGA
+....(((..((((.(((((..(((((((((((((....)))..))))))))))..))))).))))..))).
+>tca-mir-277 MI0008923 Tribolium castaneum miR-277 stem-loop
+GUGGGCUCCGUGCCAGAUGCGCGUUUACACUGCACCGUUCUAAAGAAUUCUGUAAAUGCACUAUCUGGUACGACAGCCCAC
+(((((((.(((((((((((.(((((((((.......((((....))))..))))))))).).))))))))))..)))))))
+>tca-mir-279 MI0008924 Tribolium castaneum miR-279 stem-loop
+CUUGAUGGGUUCGGGUCUAGUGGCACGGUUUUUUCAACUUCGUGACUAGAUCCACACUCAUUAAG
+((((((((((..(((((((((.((..((((.....))))..)).)))))))))..))))))))))
+>tca-mir-281 MI0008925 Tribolium castaneum miR-281 stem-loop
+UCGAAAAUGAAGAGAGCUAUCCGUCGACAGUAUAUAAUUUACACUGUCAUGGAGUUGCUCUCUUUAU
+......(((((((((((..(((((.((((((.((.....)).)))))))))))...)))))))))))
+>tca-mir-282 MI0008926 Tribolium castaneum miR-282 stem-loop
+UGUAGAGGUAGCCUCUCCUAGGCUUUGUCUGUGAAUUUGGCCGAGACAUAGCCUGAUUGAGGCUAACUUUAGC
+..(((((.(((((((...((((((.(((((.((........))))))).))))))...))))))).)))))..
+>tca-mir-283 MI0008927 Tribolium castaneum miR-283 stem-loop
+GUUGUCUGUGAAAUAUCAGCUGGUAAUUCUGGGUUGAUGAGAUCCCAGAAUAUCGACUGAUAUUAUCAUAAACAAC
+(((((.(((((((((((((.(((((.(((((((..........)))))))))))).)))))))).))))).)))))
+>tca-mir-305 MI0008928 Tribolium castaneum miR-305 stem-loop
+CACAUGUCUAUUGUACUUCAUCAGGUGCUCUGGUAUACUUUUUCCCGACACCUGUUGGAGUGCACUAAUUAUGUG
+((((((..((.(((((((((.((((((.((.((..........)).)))))))).))))))))).))..))))))
+>tca-mir-307 MI0008929 Tribolium castaneum miR-307 stem-loop
+GGUGACUCACUCAACCUGGGUGUGAUGUGUUUGCUGUACCAUCACAACCUCCUUGAGUGAGCGACCGG
+(((..(((((((((...((.(((((((.((.......))))))))).))...)))))))))..)))..
+>tca-mir-317 MI0008930 Tribolium castaneum miR-317 stem-loop
+GGCGGUGCUGGGGACCACCCUGUGUUUACUCUGUAUUUCGACCAGUGAACACAGCUGGUGGUAUCUCAGUUUCUUCC
+((.((.((((((((((((((((((((((((..((......)).)))))))))))..)))))).)))))))..)).))
+>tca-mir-927 MI0008931 Tribolium castaneum miR-927 stem-loop
+UUUCGGUUUAGAAUUCCUACGCUUUACCGUGUGAAAGGCUGGCAAAGCGUUUGGAUUCUGAAUCGAAC
+.(((((((((((((((..(((((((.(((.((.....))))).)))))))..))))))))))))))).
+>tca-mir-932 MI0008932 Tribolium castaneum miR-932 stem-loop
+GGAGUGCGUGUCUUCAAUUCCGUAGUGCAUUGCAGUGUUUGUAGCAGCAGUCUGCAAGCAGUGCGGAAGUGAGGAUUCGUCUCU
+((((.(((.(((((((.(((((((.(((.((((((...((((....)))).))))))))).))))))).))))))).)))))))
+>tca-mir-iab-4 MI0008933 Tribolium castaneum miR-iab-4 stem-loop
+UUAAACCCCCUGUACGUAUACUGAAUGUAUCCUGAGUGUUUUCUGUCCGGUAUACCUUCAGUAUACGUAACAGGAGGCCAC
+.....((.(((((((((((((((((.((((((.((..(....)..)).)).)))).)))))))))))).))))).))....
+>tca-mir-929 MI0008934 Tribolium castaneum miR-929 stem-loop
+AGACGGCCAUCUUAAUCGGGGUCAAAUUGACUCUAGUAGGGAGUCCGUUACUUUAUAGCGACUCCCUAACGGAGUCAGGUUGACUCCCUUUGAGGGAAAUCUA
+(((...((..(((((..((((((((.((((((((..(((((((((.((((.....)))))))))))))..)))))))).))))))))..)))))))...))).
+>tca-mir-9a MI0008936 Tribolium castaneum miR-9a stem-loop
+AUCUCCACGACGCAAUGCCAACCGCAUUGCUUUGGUAAUCUAGCUUUAUGACUCAAAUAAAAUCACAAACGCUAAAUUACCAAAGUAACAAAAUCGGCCCCCACCUGUUGGAA
+...((((((.......(((.......(((((((((((((.(((((((.(((...........))).))).)))).))))))))))))).......))).......)).)))).

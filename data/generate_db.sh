@@ -43,6 +43,14 @@ SPECIES=""
 MULTILOOP=""
 gen_dataset
 
+echo "Dataset cross-species: from mirBase v5.0 as in Triplet-SVM for CROSS-SPECIES"
+NAME="cross-species"
+SRC="src/triplet/7_test_dataset/*.secondstructure"
+CLS="1"
+SPECIES=""
+MULTILOOP=""
+gen_dataset
+
 echo "Dataset updated: UPDATED test set as in Triplet-SVM"
 NAME="updated"
 SRC="src/triplet/7_test_dataset/39_hsa_miRNAs_one_stemloop.txt"
@@ -55,7 +63,7 @@ echo "Dataset coding: CODING pseudo-miRNAs set as in Triplet-SVM"
 NAME="coding"
 SRC="src/triplet/4_pseudo_miRNAs/8494_hairpins_over_fe_15_bp_18_from_cds.txt"
 CLS="-1"
-SPECIES="-s pseudo"
+SPECIES="-s hsa"
 MULTILOOP=""
 gen_dataset
 
@@ -63,20 +71,20 @@ echo "Dataset conserved-hairpin: mostly-pseudo miRNA tst set as in Triplet-SVM"
 NAME="conserved-hairpin"
 SRC="src/triplet/7_test_dataset/genome_chr19.txt"
 CLS="0"
-SPECIES="-s unknown"
+SPECIES="-s hsa"
 MULTILOOP=""
 gen_dataset
 
-echo "Dataset mirbase82-nr: non-redundant miRNAs as in miPred"
-NAME="mirbase82-nr"
+echo "Dataset mirbase82-mipred: non-redundant miRNAs as in miPred"
+NAME="mirbase82-mipred"
 SRC="src/mipred/miRNAs8.2h/rnafold/*"
 CLS="1"
 SPECIES=""
 MULTILOOP=""
 gen_dataset
 
-echo "Dataset mirbase82-nr-multi: non-redundant miRNAs as in miPred"
-NAME="mirbase82-nr-multi"
+echo "Dataset mirbase82-mipred-multi: non-redundant miRNAs as in miPred"
+NAME="mirbase82-mipred/multi"
 SRC="src/mipred/miRNAs8.2h/rnafold/*"
 CLS="1"
 SPECIES=""
@@ -92,24 +100,40 @@ MULTILOOP=""
 gen_dataset
 
 echo "Dataset functional-ncrna-multi: functional ncRNAs from Rfam 7.0 as in miPred"
-NAME="functional-ncrna-multi"
+NAME="functional-ncrna/multi"
 SRC="src/mipred/Rfam7.0/rnafold/*"
 CLS="-1"
 SPECIES="-s ncrna"
 MULTILOOP="-m"
 gen_dataset
 
-echo "Dataset mirbase12: miRNAs from miRBase 12.0 as in microPred"
-NAME="mirbase12"
+echo "Dataset mirbase12-micropred: miRNAs from miRBase 12.0 as in microPred"
+NAME="mirbase12-micropred"
 SRC="src/micropred/691-pre-miRNAs.fasta"
 CLS="1"
 SPECIES=""
 MULTILOOP=""
 gen_dataset
 
-echo "Dataset mirbase12-multi: miRNAs from miRBase 12.0 as in microPred"
-NAME="mirbase12-multi"
+echo "Dataset mirbase12-micropred-multi: miRNAs from miRBase 12.0 as in microPred"
+NAME="mirbase12-micropred/multi"
 SRC="src/micropred/691-pre-miRNAs.fasta"
+CLS="1"
+SPECIES=""
+MULTILOOP="-m"
+gen_dataset
+
+echo "Dataset mirbase12: miRNAs from miRBase 12.0 for testing microPred"
+NAME="mirbase12"
+SRC="src/mirbase/12.0/hairpin.fa.gz"
+CLS="1"
+SPECIES=""
+MULTILOOP=""
+gen_dataset
+
+echo "Dataset mirbase12-multi: miRNAs from miRBase 12.0 for testing microPred"
+NAME="mirbase12/multi"
+SRC="src/mirbase/12.0/hairpin.fa.gz"
 CLS="1"
 SPECIES=""
 MULTILOOP="-m"
@@ -124,7 +148,7 @@ MULTILOOP=""
 gen_dataset
 
 echo "Dataset other-ncrna: other ncRNAs compiled by microPred authors"
-NAME="other-ncrna-multi"
+NAME="other-ncrna/multi"
 SRC="src/micropred/754-other-ncRNAs-fix.fasta"
 CLS="-1"
 SPECIES="-s ncrna"
@@ -139,6 +163,14 @@ SPECIES=""
 MULTILOOP=""
 gen_dataset
 
+echo "Dataset mirbase20: miRNAs from miRBase 20"
+NAME="mirbase20/multi"
+SRC="src/mirbase/20/hairpin.fa.gz"
+CLS="1"
+SPECIES=""
+MULTILOOP="-m"
+gen_dataset
+
 echo "Dataset mirbase20-nr: miRNAs from miRBase 20+CD-HIT"
 NAME="mirbase20-nr"
 SRC="src/mirbase/20/hairpin.fa.gz"
@@ -148,7 +180,7 @@ MULTILOOP=""
 gen_nr_dataset
 
 echo "Dataset mirbase20-nr-multi: miRNAs from miRBase 20+CD-HIT"
-NAME="mirbase20-nr-multi"
+NAME="mirbase20-nr/multi"
 SRC="src/mirbase/20/hairpin.fa.gz"
 CLS="1"
 SPECIES=""
@@ -163,6 +195,8 @@ rm -rf mirbase50 coding updated conserved-hairpin
 rm -rf mirbase82-nr functional-ncrna mirbase12 other-ncrna
 rm -rf mirbase82-nr-multi functional-ncrna-multi mirbase12-multi other-ncrna-multi
 rm -rf mirbase20-nr mirbase20-nr-multi
+rm -rf mirbase20 mirbase20-multi mirbase50-xsp
+rm -rf mirbase12-micropred mirbase12-micropred-multi
 
 mv -f work/* .
 
