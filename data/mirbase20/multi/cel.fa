@@ -1,0 +1,669 @@
+>cel-let-7 MI0000001 Caenorhabditis elegans let-7 stem-loop
+UACACUGUGGAUCCGGUGAGGUAGUAGGUUGUAUAGUUUGGAAUAUUACCACCGGUGAACUAUGCAAUUUUCUACCUUACCGGAGACAGAACUCUUCGA
+....((((...(((((((((((((.((((((((((((((((..........))...)))))))))))))).))))))))))))).))))..........
+>cel-lin-4 MI0000002 Caenorhabditis elegans lin-4 stem-loop
+AUGCUUCCGGCCUGUUCCCUGAGACCUCAAGUGUGAGUGUACUAUUGAUGCUUCACACCUGGGCUCUCCGGGUACCAGGACGGUUUGAGCAGAU
+.((((((((.((((..(((.((((.((((.(((((((.((((....).)))))))))).)))).)))).)))...)))).)))...)))))...
+>cel-mir-1 MI0000003 Caenorhabditis elegans miR-1 stem-loop
+AAAGUGACCGUACCGAGCUGCAUACUUCCUUACAUGCCCAUACUAUAUCAUAAAUGGAUAUGGAAUGUAAAGAAGUAUGUAGAACGGGGUGGUAGU
+......((((..(((..(((((((((((.((((((..(((((((((.......)))).))))).)))))).)))))))))))..)))..))))...
+>cel-mir-2 MI0000004 Caenorhabditis elegans miR-2 stem-loop
+UAAACAGUAUACAGAAAGCCAUCAAAGCGGUGGUUGAUGUGUUGCAAAUUAUGACUUUCAUAUCACAGCCAGCUUUGAUGUGCUGCCUGUUGCACUGU
+...(((((..((((..(((((((((((((((...(((((((..(((.....)).)...)))))))..))).))))))))).)))..))))...)))))
+>cel-mir-34 MI0000005 Caenorhabditis elegans miR-34 stem-loop
+CGGACAAUGCUCGAGAGGCAGUGUGGUUAGCUGGUUGCAUAUUUCCUUGACAACGGCUACCUUCACUGCCACCCCGAACAUGUCGUCCAUCUUUGAA
+.((((.(((.(((.(.(((((((.(((.(((((.(((((........)).)))))))))))..))))))).)..))).)))...)))).........
+>cel-mir-35 MI0000006 Caenorhabditis elegans miR-35 stem-loop
+UCUCGGAUCAGAUCGAGCCAUUGCUGGUUUCUUCCACAGUGGUACUUUCCAUUAGAACUAUCACCGGGUGGAAACUAGCAGUGGCUCGAUCUUUUCC
+....(((..(((((((((((((((((((((((.((.(.((((((.(((......))).)))))).))).)))))))))))))))))))))))..)))
+>cel-mir-36 MI0000007 Caenorhabditis elegans miR-36 stem-loop
+CACCGCUGUCGGGGAACCGCGCCAAUUUUCGCUUCAGUGCUAGACCAUCCAAAGUGUCUAUCACCGGGUGAAAAUUCGCAUGGGUCCCCGACGCGGA
+..((((.((((((((.(((.((.(((((((((((..(((.((((((.......).))))).))).))))))))))).)).))).)))))))))))).
+>cel-mir-37 MI0000008 Caenorhabditis elegans miR-37 stem-loop
+UUCUAGAAACCCUUGGACCAGUGUGGGUGUCCGUUGCGGUGCUACAUUCUCUAAUCUGUAUCACCGGGUGAACACUUGCAGUGGUCCUCGUGGUUUCU
+....((((((((..((((((.((..(((((....(.(((((.((((..........)))).))))).)...)))))..)).))))))..).)))))))
+>cel-mir-38 MI0000009 Caenorhabditis elegans miR-38 stem-loop
+GUGAGCCAGGUCCUGUUCCGGUUUUUUCCGUGGUGAUAACGCAUCCAAAAGUCUCUAUCACCGGGAGAAAAACUGGAGUAGGACCUGUGACUCAU
+((((((((((((((((((((((((((..(.((((((((..((........))...)))))))).)..)))))))))))))))))))).).)))))
+>cel-mir-39 MI0000010 Caenorhabditis elegans miR-39 stem-loop
+UAUACCGAGAGCCCAGCUGAUUUCGUCUUGGUAAUAAGCUCGUCAUUGAGAUUAUCACCGGGUGUAAAUCAGCUUGGCUCUGGUGUC
+.(((((.((((((.(((((((((((.((((((.((((.((((....)))).)))).)))))))).))))))))).))))))))))).
+>cel-mir-40 MI0000011 Caenorhabditis elegans miR-40 stem-loop
+UCCUGUCCGCACCUCAGUGGAUGUAUGCCAUGAUGAUAAGAUAUCAGAAAUCCUAUCACCGGGUGUACAUCAGCUAAGGUGCGGGUACAGGU
+.(((((((((((((.(((.((((((((((.((.(((((.(((.......))).))))).)))))))))))).))).))))))))..))))).
+>cel-mir-41 MI0000012 Caenorhabditis elegans miR-41 stem-loop
+GGGUCCCAGAGACCUUGGUGGUUUUUCUCUGCAGUGAUAGAUACUUCUAACAACUCGCUAUCACCGGGUGAAAAAUCACCUAGGUCUGGAGCCUCCU
+((.(((...((((((.(((((((((((((((..(((((((.................))))))))))).))))))))))).))))))))).))....
+>cel-mir-42 MI0000013 Caenorhabditis elegans miR-42 stem-loop
+UUCGCGGACCUUUGUGGGUGUUUGCUUUUUCGGUGAAGUUGUCUUCCGUAGCUUCUUCUUCACCGGGUUAACAUCUACAGAGGUCCAAAAAGGGG
+.....(((((((((((((((((.(((....((((((((..((........)).....))))))))))).))))))))))))))))).........
+>cel-mir-43 MI0000014 Caenorhabditis elegans miR-43 stem-loop
+UAUUGGCACUAGUCGCCCGUGACAUCAAGAAACUAGUGAUUAUGCCAAACCACAGGGACAUAUCACAGUUUACUUGCUGUCGCGGGCGGUGCUGAGUU
+..(..((((....(((((((((((.(((((((((.(((((.(((((.........)).))))))))))))).)))).)))))))))))))))..)...
+>cel-mir-44 MI0000015 Caenorhabditis elegans miR-44 stem-loop
+GAGAAAAUGGCCAAUCUGGAUGUGCUCGUUGGUCAUAGACGUCAACACGAACUGUUCAUAUGACUAGAGACACAUUCAGCUUGGCCUGCUUCUCUA
+(((((...((((((.((((((((((((..(((((((((((.((.....))...)))..))))))))))).))))))))).))))))...)))))..
+>cel-mir-45 MI0000016 Caenorhabditis elegans miR-45 stem-loop
+CACCAUGUGCCACGCUGGAUGUGCUCGUUAGUCAUAAUAUCCUCCACAAAGCAAGGACUAUGACUAGAGACACAUUCAGCUUGGCGCCGAAUGCAU
+......((((((.(((((((((((((..((((((((...((((..........)))).))))))))))).)))))))))).)))))).........
+>cel-mir-46 MI0000017 Caenorhabditis elegans miR-46 stem-loop
+CUGAGGUGAAGCUGAAGAGAGCCGUCUAUUGACAGUUCAAGACCACGAGUCGUUGUGUGCUGUCAUGGAGUCGCUCUCUUCAGAUGAUCCGGUCAAU
+....((.....(((((((((((..(((((.((((((.((((((.....))).)))...)))))))))))...))))))))))).....)).......
+>cel-mir-47 MI0000018 Caenorhabditis elegans miR-47 stem-loop
+GAGAGCCGACUGAAACUGAAGAGAGCAGUCUAUUGACAGUCGGUUACUCGAAAUCUUUACUGUCAUGGAGGCGCUCUCUUCAGAUGAUGUCUGGCCC
+....((((((.....(((((((((((.((((..(((((((.((((......))))...)))))))...))))))))))))))).....))).)))..
+>cel-mir-48 MI0000019 Caenorhabditis elegans miR-48 stem-loop
+AAACUCCCGGGAACUUGAGGUAGGCUCAGUAGAUGCGAAUUGAACGGUAUCUCACAUCCACCAGCCUAGCUCGCAUUCCCAGAGUUUACGGUAUUGUU
+((((((..(((((..((((.((((((..((.((((.((..((.....))..)).)))).)).)))))).))))..))))).))))))...........
+>cel-mir-49 MI0000020 Caenorhabditis elegans miR-49 stem-loop
+UUUUGAAAAAGACCACCGUCCGCAGUUUGUUGUGAUGUGCUCCAAGCAAUCAUGAGUCUGAAGCACCACGAGAAGCUGCAGAUGGAGGUUCUGAUUU
+..........((((.(((((.(((((((.(((((..(((((.((..(........)..)).)))))))))).))))))).))))).)))).......
+>cel-mir-50 MI0000021 Caenorhabditis elegans miR-50 stem-loop
+CUGCCCGCCGGCCGCUGAUAUGUCUGGUAUUCUUGGGUUUGAACUUCCAGCGUUGAACCCGCAUAUUAGACGUAUCGACGGCCGGCGGGGCAGGUAAUG
+((((((((((((((.(((((((((((((((...(((((((.(((.......)))))))))).))))))))))))))).)))))))).))))))......
+>cel-mir-51 MI0000022 Caenorhabditis elegans miR-51 stem-loop
+GUCCGAAAAGUCCGUCUACCCGUAGCUCCUAUCCAUGUUACUGGUCAAAAAGUGAACAUGGAAGCAGGUACAGGUGCACGGCGAGUAGGGUCAUGAAGCU
+((((.....(.((((.((((.(((.((.((.(((((((((((........)))).))))))))).)).))).)))).))))).....))).)........
+>cel-mir-52 MI0000023 Caenorhabditis elegans miR-52 stem-loop
+UCCAACUCUAACAGUCCACCCGUACAUAUGUUUCCGUGCUUGACAGCGAAGCUCAAUCACGUUACAAUGAAAGGGUAGCCGGUUAUUGAAGUUGGGUCUU
+((((((((((((.(.(.((((...(((.(((...((((.(((((......).)))).))))..))))))...)))).).).))))..).)))))))....
+>cel-mir-53 MI0000024 Caenorhabditis elegans miR-53 stem-loop
+CCGAUUCUGACAGUCCACCCGUACAUUUGUUUCCGUGCUUGACUUCAAAGCUCAAUCACGGCACAAUAUAUGGGUCGCCAGUCAUUGUAGUCGGAAUUU
+(((((((((((.(.(.(((((((...((((..(((((.((((((....)).)))).))))).))))..))))))).).).))))..).)))))).....
+>cel-mir-54 MI0000025 Caenorhabditis elegans miR-54 stem-loop
+GUGAGUCGCGCUCUGACUAGGAUAUGAGACGACGAGAACAUUGCUUUUUUAAAAGACUUGUACCCGUAAUCUUCAUAAUCCGAGUCAGGGCUAGCUGAC
+((.(((...(((((((((.((((((((((..(((.(.(((...((((....))))...))).).)))..)).)))).)))).)))))))))..))).))
+>cel-mir-55 MI0000026 Caenorhabditis elegans miR-55 stem-loop
+AGAUUUGGAACUUAAUGGGACUCGGCAGAAACCUAUCGGUUAUACUUUUUGGAUAUGCUAUACCCGUAUAAGUUUCUGCUGAGCCCCUUAUUCCUGUU
+......((((..(((.(((.((((((((((((.((((((.(((((...........).)))).))).))).))))))))))))))).)))))))....
+>cel-mir-56 MI0000027 Caenorhabditis elegans miR-56 stem-loop
+GAGCCAGUGUCUGUUCUUGGCGGAUCCAUUUUGGGUUGUACCUCAUCCUAAAUUUGACGGUACCCGUAAUGUUUCCGCUGAGAACCGACUGUGCACC
+..((((..(((.(((((..(((((..((((.(((((...((((((.........))).)))))))).))))..)))))..))))).))))).))...
+>cel-mir-57 MI0000028 Caenorhabditis elegans miR-57 stem-loop
+AUCGACAUGCUCGUCUACCCUGUAGAUCGAGCUGUGUGUUUGAAACAAUCAUACACGAGCUAGACUACAAGGUGCACGAACAAACCGAAGAUUUAUGAA
+.(((...((.((((.((((.(((((.((.((((.(((((.(((.....))).))))))))).))))))).)))).)))).))...)))...........
+>cel-mir-58 MI0000029 Caenorhabditis elegans miR-58 stem-loop
+GCUCGUCAUAUCCAUUGCCCUACUCUUCGCAUCUCAUCACUUCGUCCAAUACCAUAGGGAUGAGAUCGUUCAGUACGGCAAUGGACUGAGCUAGAGU
+(((((.....(((((((((.((((...((.((((((((.((..((.....))...)).))))))))))...)))).))))))))).)))))......
+>cel-mir-59 MI0000030 Caenorhabditis elegans miR-59 stem-loop
+AGUUGAUCUAGAUAUGACAUCGUCCUGAAAACGAAACGGAACAAAAGUUCAAGAUAUUGAUUUCGAAUCGUUUAUCAGGAUGAUGUGAUUAAAAUCAACU
+(((((((......((.((((((((((((((((((..(((((.......((((....)))))))))..)))))).)))))))))))).))....)))))))
+>cel-mir-60 MI0000031 Caenorhabditis elegans miR-60 stem-loop
+CUCGAAAACCGCUUGUUCUUGAACUGGAAGAGUGCCAUAAAAUCAUGACAAAGUACGUGAUAUUAUGCACAUUUUCUAGUUCAAGACUUGAGAAAUCG
+................(((((((((((((((((((.((((.((((((........)))))).)))))))).)))))))))))))))...((....)).
+>cel-mir-61 MI0000032 Caenorhabditis elegans miR-61 stem-loop
+UUCCAUUAUCGCUGAACCUCGAGAUGGGUUACGGGGCUUAGUCCUUCCUCCGUAUGGCAAUGACUAGAACCGUUACUCAUCUCGAGGUUUCGGUGAU
+.......((((((((((((((((((((((.((((..((.((((.((((.......)).)).))))))..)))).))))))))))))).)))))))))
+>cel-mir-62 MI0000033 Caenorhabditis elegans miR-62 stem-loop
+GUGAGUUAGAUCUCAUAUCCUUCCGCAAAAUGGAAAUGAUAUGUAAUCUAGCUUACAG
+(((((((((((..((((((.(((((.....)))))..))))))..)))))))))))..
+>cel-mir-63 MI0000034 Caenorhabditis elegans miR-63 stem-loop
+UCAACAAGCAGACACAAUUUCUAACUCGUCGGUAGUCAUCGUUCUAGCUGAAAAGGACACUAUGACACUGAAGCGAGUUGGAAAUAGUGGUUCUACUUGAGCAA
+....((((.((((((.(((((((((((((((((.(((((.(((((........)))))...)))))))))..))))))))))))).)))..))).)))).....
+>cel-mir-64 MI0000035 Caenorhabditis elegans miR-64 stem-loop
+CUCCCCGCUGACCUCGCCGAAUAUGACACUGAAGCGUUACCGAACCGUUUUCCCACACCUGGAUUCGGUGCAACGAUCAGUGGCAUGCUCGGCUAGCGCCAGUUAAGUAU
+......((((.(((.(((((.((((.((((((..(((((((((((((............))).)))))))..))).)))))).)))).))))).)).).)))).......
+>cel-mir-65 MI0000036 Caenorhabditis elegans miR-65 stem-loop
+AUGGAGCCUUCGCCGAUUAUGACACUGAAGCGUAACCGAACACCAUAUUUUGAGAUUCUGCUACGCGCAGUGCCAUGCUCGGCGCGUUGGCUCCAUUAAA
+((((((((..((((((.((((.(((((..(((((.(.(((...((.....))...))).).))))).))))).)))).))))))....))))))))....
+>cel-mir-66 MI0000037 Caenorhabditis elegans miR-66 stem-loop
+CCACAAAAAUGCCAUACAUGACACUGAUUAGGGAUGUGAUGAAUGUUAAGAUCCCGAUCAAAUUCCUAACGGUGUCAAACAUGGCGUAUGUGGUUGUAG
+(((((...(((((((...((((((((.((((((((.((((................)))).))))))))))))))))...))))))).)))))......
+>cel-mir-67 MI0000038 Caenorhabditis elegans miR-67 stem-loop
+GAUCAAAGAUUCGUCGAUCCGCUCAUUCUGCCGGUUGUUAUGCUAUUAUCAGAUUAAGCAUCACAACCUCCUAGAAAGAGUAGAUCGAUUUUAAAACUU
+............(((((((..(((.(((((..((((((.(((((............))))).))))))...))))).)))..)))))))..........
+>cel-mir-70 MI0000041 Caenorhabditis elegans miR-70 stem-loop
+UCAAAAUAAAACGAUGAAAACUAUCGAAAUACUAUCGACGAAUAACACUUAUGAAGAAAUGUAAUACGUCGUUGGUGUUUCCAUAGUUUGAAUUGUUUAU
+........(((((((..(((((((.(((((((((.(((((.((.(((.((......)).))).)).))))).))))))))).)))))))..)))))))..
+>cel-mir-71 MI0000042 Caenorhabditis elegans miR-71 stem-loop
+GUCUGCUCUGAACGAUGAAAGACAUGGGUAGUGAGACGUCGGAGCCUCGUCGUAUCACUAUUCUGUUUUUCGCCGUCGGGAUCGUGACCUGGAA
+(((((.(((..(((.(((((((((.(((((((((.(((.(((....))).))).)))))))))))))))))).)))..))).)).)))......
+>cel-mir-72 MI0000043 Caenorhabditis elegans miR-72 stem-loop
+AGGUCCCGUCAGAGCUAGGCAAGAUGUUGGCAUAGCUGAAUGAUCGCUAUAACAACUAUCAGCUUCGCCACAUUCUGCCACGCACUGAUGUGAGGACCU
+((((((((((((.((..((((..((((.(((..((((((...................))))))..)))))))..))))..)).))))))...))))))
+>cel-mir-73 MI0000044 Caenorhabditis elegans miR-73 stem-loop
+CAGUGAGAGUCCCACACACGACUGGACUUCCAUAUCGAGCCACAGCUAUCAACGAAUUUGCUGGCAAGAUGUAGGCAGUUCAGUUGUGCGUUUAUGGAG
+.........(((.((.((((((((((((.(((((((..((((..((.............))))))..))))).)).)))))))))))).))....))).
+>cel-mir-74 MI0000045 Caenorhabditis elegans miR-74 stem-loop
+AAAUGGUUCAAAAAACGUUCGGGCUUCCAUCUCUUUCCCAGCCUACAUCUCAACCUGGGCUGGCAAGAAAUGGCAGUCUACACGUUUUUCAACCAAA
+...(((((..((((((((..(((((.((((.((((..((((((((..........)))))))).)))).)))).)))))..)))))))).)))))..
+>cel-mir-75 MI0000046 Caenorhabditis elegans miR-75 stem-loop
+UUCUUGUUGCUUUGAAGAAUUGCAGUCGGUUGCAAGCUUAAAUACAAAUCCGAAUUGUUAUUAAAGCUACCAACCGGCUUCAAGUCUGAAAGAGCAG
+.......((((((..(((.(((.(((((((((..(((((.(((((((.......))).)))).)))))..))))))))).))).)))...)))))).
+>cel-mir-76 MI0000047 Caenorhabditis elegans miR-76 stem-loop
+AUUUCAGCUCCUGUCUGGGCUUCACAAUAGUCGAAUACCUUAAAUUUCAAAAUUUGGAUAUUCGUUGUUGAUGAAGCCUUGAUGGGGGUGAGAAAGA
+.((((.(((((((((.((((((((((((((.((((((((..(((((....))))))).)))))))))))).)))))))).)))))))))..))))..
+>cel-mir-77 MI0000048 Caenorhabditis elegans miR-77 stem-loop
+GCAUCUGCCAAACCGCCCGUUUGGAUGGUUGUGCUCUGAGGAAAUACGCACAGAAUGUCAUUUCAUCAGGCCAUAGCUGUCCAAAUUGGUAUAGAGUUUG
+........(((((((((.(((((((((((((((..((((.(((((..(((.....))).))))).))))..))))))))))))))).)))...).)))))
+>cel-mir-78 MI0000049 Caenorhabditis elegans miR-78 stem-loop
+AAUAAAAUAUAUUGUUUCAUAGUGUCCGUAAAAUAACUAGAUUUAUUUUGUAAAAACUAUUGGAGGCCUGGUUGUUUGUGCUGGAAUGUUUCGAGA
+..............((((..((..((((((((((((((((.(((.....((....)).....)))..)))))))))).))).)).)..))..))))
+>cel-mir-79 MI0000050 Caenorhabditis elegans miR-79 stem-loop
+UAGUAGACAUUCUCCGAUCUUUGGUGAUUCAGCUUCAAUGAUUGGCUACAGGUUUCUUUCAUAAAGCUAGGUUACCAAAGCUCGGCGUCUUGAUCUAC
+..(((((((..(.((((.((((((((((..(((((..((((..(((.....)))....)))).)))))..)))))))))).)))).)...)).)))))
+>cel-mir-80 MI0000051 Caenorhabditis elegans miR-80/miR-227 stem-loop
+AUGGACACUCGUUCGCUCAGCUUUCGACAUGAUUCUGAACAAUCCGCAAGCCCAUGUUGUUGAGAUCAUUAGUUGAAAGCCGAAUGAUCAGAGAUAUC
+.......(((..(((.((.((((((((((((((.((.((((((.(....).....)))))).)))))))..))))))))).)).)))...))).....
+>cel-mir-81 MI0000052 Caenorhabditis elegans miR-81 stem-loop
+AUCAGUGCCAUCGUGCCCAACAGUCGGUUUUCACCGUGAUCUGAGAGCAAUCCAAAAAUGCUUUUCUGAGAUCAUCGUGAAAGCUAGUUGUUGGUCUACGGGCUUUUG
+......(((..((((.(((((((..(((((((((.(((((((.((((((.........)))...))).))))))).)))))))))..)))))))..))))))).....
+>cel-mir-82 MI0000053 Caenorhabditis elegans miR-82 stem-loop
+GAAAUAGGUUCUUUUAGCAACCGGUUUUCUCUGUGAUCUACAGAAUGACAGCUAAUCGUCUGAGAUCAUCGUGAAAGCCAGUUGUUUUUAUGAACUC
+......(((((....((((((.(((((((.(.(((((((.((((.(((.......)))))))))))))).).))))))).)))))).....))))).
+>cel-mir-83 MI0000054 Caenorhabditis elegans miR-83 stem-loop
+AGCACCACUCGGAACCACUGAAUUUAUGUGUGUACUUGACGGCCAACAAGAGCAUCGAUCUAGCACCAUAUAAAUUCAGUAAUUUCGCGUCGAGAGCU
+(((.((((.(((((..((((((((((((((.((.((.((((((........))..)).)).)).))))))))))))))))..))))).)).).).)))
+>cel-mir-84 MI0000055 Caenorhabditis elegans miR-84 stem-loop
+GUGGCAUCUGAGGUAGUAUGUAAUAUUGUAGACUGUCUAUAAUGUCCACAAUGUUUCAACUAACUCGGCUGUUCU
+..((((.(((((.((((.((.((((((((.(((..........))).)))))))).)))))).))))).))))..
+>cel-mir-85 MI0000056 Caenorhabditis elegans miR-85 stem-loop
+UAUAGAAUUUUGGCGUCGGAGCCCGAUUUUUCAAUAGUUUGAAACCAGUGUACACAUAAAUGGUUACAAAGUAUUUGAAAAGUCGUGCUCUGAAAAUGAAUUCUUA
+...(((((((.....(((((((.(((((((((((((.((((.((((((((....)))...))))).)))).)).))))))))))).)))))))....)))))))..
+>cel-mir-86 MI0000057 Caenorhabditis elegans miR-86 stem-loop
+CGUGUCCACGCCGUCUAAGUGAAUGCUUUGCCACAGUCUUCGAUGUUCUGAAAUGAAGCCUGGGCUCAGAUUCGCUUAGGCCGGAGUUUGACACGGCA
+((((((.((.((((((((((((((.((..(((.(((.(((((.(.......).))))).))))))..))))))))))))).))).))..))))))...
+>cel-mir-87 MI0000058 Caenorhabditis elegans miR-87 stem-loop
+GGUUGUGCCAUCCGGCCGCCUGAUACUUUCGUCUCAACCUCGCUGUCAGAUUGGUCGUAGGUGAGCAAAGUUUCAGGUGUGCCGGAACACACCC
+(((.(((...(((((((((((((.(((((.(.((((.((((((((......))).)).))))))))))))).))))))).)))))).)))))).
+>cel-mir-90 MI0000059 Caenorhabditis elegans miR-90 stem-loop
+GGGCGCCAUUUCGAGCGGCUUUCAACGACGAUAUCAACCGACAACUCACACUUUUGCGUGUUGAUAUGUUGUUUGAAUGCCCCUUGAAUUGGAUGCCA
+.(((((((.((((((.(((.(((((((((.((((((((((.(((.........))))).)))))))))))).))))).))).)))))).))).)))).
+>cel-mir-124 MI0000302 Caenorhabditis elegans miR-124 stem-loop
+GUCCCACUUGUCAUCUGGCAUGCACCCUAGUGACUUUAGUGGACAUCUAAGUCUUCCAACUAAGGCACGCGGUGAAUGCCACGUGGCCAUGAUGGG
+..(((((..(((((.((((((.((((...(((.(((((((((((......))))....))))))))))..)))).)))))).)))))...).))))
+>cel-mir-228 MI0000303 Caenorhabditis elegans miR-228 stem-loop
+CCUUAUCCCGUUCGCAAUGGCACUGCAUGAAUUCACGGCUAUGCAUAACGACAGACCGCGGAUCAUACGGUACCAUAGCGGACGGUGAUGAGGUUAAU
+(((((((((((((((.((((.((((.((((.(((.(((((...(.....)..)).))).))))))).)))).)))).)))))))).))))))).....
+>cel-mir-229 MI0000304 Caenorhabditis elegans miR-229 stem-loop
+CGCCGGCAAUGACACUGGUUAUCUUUUCCAUCGUGGAAUGCCCCCCAUUGAUUUUUUCCCCUUUUCGGGGGGAAAAAAUUGGAAACGAGAAAGGUAUCGGGUGUCAUAGCCGGCG
+(((((((.((((((((.(.((((((((...((((((........)).(..((((((((((((.....))))))))))))..)..)))))))))))).).)))))))).)))))))
+>cel-mir-230 MI0000305 Caenorhabditis elegans miR-230 stem-loop
+UUGAUGUAAUGCCGUCACUUGGUCGGCGAUUUAAUAUUAUCAGAACAUAGGAAAUUGUUAGUAUUAGUUGUGCGACCAGGAGACGGUAUUCGCAUAUU
+...(((((((((((((.((((((((((((((.(((((((.(((...........))).))))))))))))).)))))))).))))))))).))))...
+>cel-mir-231 MI0000306 Caenorhabditis elegans miR-231 stem-loop
+UAGCACCACAGGUUGUUCUGACUGUUUCAAAAGCUUGUAGUAUCUUAAUAAAUAAACAUAUAAGCUCGUGAUCAACAGGCAGAACAACUCGGUUUUGUG
+..(((..((.((((((((((.((((((((..((((((((.(((........)))....))))))))..)))..))))).))))))))))..))..))).
+>cel-mir-232 MI0000307 Caenorhabditis elegans miR-232 stem-loop
+AAGUUCAAUUUUUGGAUCCCUGCAGUUUCGAUGAUUUUAUCCUUAAUUCUGAAGAUGUGAUAAAUGCAUCUUAACUGCGGUGAUCUAGAUCAUGAACA
+..(((((...((((((((.((((((((..((((..(((((((.....((....)).).))))))..))))..)))))))).))))))))...))))).
+>cel-mir-233 MI0000308 Caenorhabditis elegans miR-233 stem-loop
+AUAUAGCAUCUUUCUGUCUCGCCCAUCCCGUUGCUCCAAUAUUCUAACAACAAGUGAUUAUUGAGCAAUGCGCAUGUGCGGGAUAGACUGAUGGCUGC
+...(((((((..((((((((((.(((.(((((((((.((((.((...........)).)))))))))))).).))).))))))))))..))).)))).
+>cel-mir-234 MI0000309 Caenorhabditis elegans miR-234 stem-loop
+CAAAAAAUGAUCAAACGGUAUUCCAGAGUUGAUAAUAAAAAUGCGUCAGUCCGCAAUCUAUUAUUGCUCGAGAAUACCCUUUGACUACUAUGUGUA
+..........(((((.(((((((..((((.(((((((....((((......))))...)))))))))))..))))))).)))))............
+>cel-mir-235 MI0000310 Caenorhabditis elegans miR-235 stem-loop
+UCCGAAGAUAUCAGGAUCAGGCCUUGGCUGAUUGCAAAAUUGUUCACCGUGAAAAUUAAAUAUUGCACUCUCCCCGGCCUGAUCUGAGAGUAAGGCG
+.((.......((((.((((((((..((..((.(((((.(((.(((.....))).....))).))))).))..)).))))))))))))......))..
+>cel-mir-236 MI0000311 Caenorhabditis elegans miR-236 stem-loop
+UCGGUGACCGAUGUCCAGCGUCUUACCUGUUCAAUAUUUAGACUGACUAUCAAAGAGAUCUAAUACUGUCAGGUAAUGACGCUGGAUUGUCAUGUCAU
+...(((((.((((((((((((((((((((..((.((((.(((((...........)).))))))).)).))))))).))))))))).))))..)))))
+>cel-mir-237 MI0000312 Caenorhabditis elegans miR-237 stem-loop
+UUCUACAUUGCGUGGUCCCUGAGAAUUCUCGAACAGCUUCAAAGUGUUCAAGCUGUCGAGUUUUGUCAAGGACCAAACAAUAGAAGAUCACUUGGGAAC
+(((((..(((..((((((.(((.((..(((((.((((((.((....)).)))))))))))..)).))).))))))..))))))))..............
+>cel-mir-238 MI0000313 Caenorhabditis elegans miR-238 stem-loop
+UCUCCAUUGACUGUUUGGAUGUUCUCGGACGUUCAAAGCUACAUCCAACAAAUUGGUAGCUUUGUACUCCGAUGCCAUUCAGAUAGUUAUGAGCCAUG
+.(((...((((((((((((((...(((((.((.((((((((...((((....)))))))))))).)))))))...)))))))))))))).))).....
+>cel-mir-239a MI0000314 Caenorhabditis elegans miR-239a stem-loop
+UACACGUUUGCAAUUUUUGUACUACACAUAGGUACUGGACAAUUUUCAAAAUAUAUCCAGUGUCUAGUCUAGUGCAAACAUUGCUCGGUGUUGUUUGA
+.((((....(((((.(((((((((.((.(((..((((((................))))))..))))).))))))))).)))))...)))).......
+>cel-mir-239b MI0000315 Caenorhabditis elegans miR-239b stem-loop
+GCGACAGAUGCAAUUUUUGUACUACACAAAAGUACUGGUCAUUUAAGUUGAGGCUCAGCACUUUUGUGGUGUGCAAAAAUGGCAAGUUGCUUUUAUCU
+(((((...(((.((((((((((..(((((((((.((((((.((......))))).))).)))))))))..)))))))))).))).)))))........
+>cel-mir-240 MI0000316 Caenorhabditis elegans miR-240 stem-loop
+UUGUUAGAAACUUUUUCAAAUCGAGGAUUUUGAGACUAGAAUGCUUGAAUUGUACUAGCAUACUGGCCCCCAAAUCUUCGCUUAGAAAUACAGUUCA
+......(((....((((.((.(((((((((.(.(.((((.(((((...........))))).)))).).).))))))))).)).)))).....))).
+>cel-mir-241 MI0000317 Caenorhabditis elegans miR-241 stem-loop
+CGGGGGUGUCAAAGUUGAGGUAGGUGCGAGAAAUGACGGCAUCCAUAUAGUAAUCGUUCAUUGUCUCUCAGCUGCUUCAUCUGUGACAUGGCUACG
+.((..((((((.((.((((((((.((.((((((((((((...(......)...))).))))).)))).)).)))))))).)).))))))..))...
+>cel-mir-242 MI0000318 Caenorhabditis elegans miR-242 stem-loop
+UGGCUCGCGAGAGUAUUGCGUAGGCCUUUGCUUCGAGAGAGAAGCUUCAGUUCGCAGCAAUAUCCUCCGCAAAACUUUCCCCGGCUAUGCAAAAAA
+(((((.(.((((((.(((((.(((...(((((.((((.(((....)))..)))).)))))...))).))))).)))))).).))))).........
+>cel-mir-243 MI0000319 Caenorhabditis elegans miR-243 stem-loop
+UGUUCACGCAUAAGCCUGAUAUCUCGGUGCGAUCGUACCGUAUCGCUCACACUUAGAUUACGGUACGAUCGCGGCGGGAUAUCAGGUACGUGAUUGGA
+...(((((.....(((((((((((((.(((((((((((((((((...........)).))))))))))))))).))))))))))))).))))).....
+>cel-mir-244 MI0000320 Caenorhabditis elegans miR-244 stem-loop
+CUCCAUAUCUCAAUCUCUUUGGUUGUACAAAGUGGUAUGGCUCAUCGAAUAAGCACAUACUGCUUUUCAGCUAAAGGAAUUGAGAUUUUGUAGGCUUUU
+((.((.((((((((..(((((((((...((((..((((((((.........))).)))))..)))).)))))))))..))))))))..)).))......
+>cel-mir-245 MI0000321 Caenorhabditis elegans miR-245 stem-loop
+CUGAAUUCAAUGUUGGAGAGCUAUUUGCAAGGUACCUAAUUGUUUGAUUAUUGAUUCUCAAUUGGUCCCCUCCAAGUAGCUCUAUUGCAUUGUUUGC
+.......((((((...(((((((((((...((.(((.(((((...((........)).)))))))).))...)))))))))))...)))))).....
+>cel-mir-246 MI0000322 Caenorhabditis elegans miR-246 stem-loop
+AUCUGAAUUAUAAAACAUCGCCUAACCGUUGUCAUGUAAUAUUUCCCAGAGAAAAUGAUAUUACAUGUUUCGGGUAGGAGCUGUUCAAACUUUGGAC
+.((..((......((((.(.((((.(((....(((((((((((.............)))))))))))...))).)))).).)))).....))..)).
+>cel-mir-247 MI0000323 Caenorhabditis elegans miR-247 stem-loop
+AUUACCAGCUAUUUUCCAAGUAGAGAAAAGUUUCUAAUUACCCAUCAUGCACAAAUGUGGUGACUAGAGCCUAUUCUCUUCUUGGAAAAGUGGCGACU
+.......(((((((((((((.((((((.((.(((((.(((((...(((......))).))))).))))).)).)))))).))))).))))))))....
+>cel-mir-248 MI0000324 Caenorhabditis elegans miR-248 stem-loop
+UUUCCCGGCUGCAACUACGGUAAGCGGUAUCCAGCCGAUGUUUUCAAUACUGCAUUUGAAUACACGUGCACGGAUAACGCUCAUUGUUUUUCGCAUGC
+.......(((((((..(((((.((((.(((((.((((.(((.(((((........))))).))))).))..))))).)))).)))))..)).))).))
+>cel-mir-249 MI0000325 Caenorhabditis elegans miR-249 stem-loop
+AUACUCUUGAACGACUAGCAACGCACAAACGUCUUCUGUGCGACAACAUCUGAAUGUUUGUCACAGGACUUUUGAGCGUUGCCAGUCGAAAGAGGAA
+...(((((...(((((.(((((((.((((.(((..((((((((..((((....))))))).)))))))).)))).))))))).))))).)))))...
+>cel-mir-250 MI0000326 Caenorhabditis elegans miR-250 stem-loop
+AGGGUCUUCGGACCACGCCUUCAGUUGCCUCGUGAUCCGCCAAACACAAUAAAUGGACGAAUCACAGUCAACUGUUGGCAUGGUGCUCGUACCCAUUUU
+.((((....(.((((.(((..((((((.((.(((((.(((((...........))).)).))))))).))))))..))).)))).)....)))).....
+>cel-mir-251 MI0000327 Caenorhabditis elegans miR-251 stem-loop
+ACUUUCAAUGACCCCUUGUUAAGUAGUGGUGCCGCUCUUAUUAGGUUGAAAAGUAAUAAGAGUAGUUCACUACUUAUCAAGGUGAAAUUUGAAAUUU
+..((((((....((((((.((((((((((.((..(((((((((..((....)))))))))))..)))))))))))).))))).)....))))))...
+>cel-mir-252 MI0000328 Caenorhabditis elegans miR-252 stem-loop
+UCCAGGGGUCUCUUUCAGUUAUAAGUAGUAGUGCCGCAGGUAACCGCCAGUCUAAAAGGCUUACCUACUGCCUUCUGCUUAAAAUUGAAAUAUUGAUG
+.......(((..((((((((.(((((((.((.((.(.((((((..(((.........))))))))).).)))).))))))).))))))))....))).
+>cel-mir-253 MI0000329 Caenorhabditis elegans miR-253 stem-loop
+GAAUUGUUCCGAUCGCCGCUCUUUUCACACACCUCACUAACACUGACCACCGAUGCAUAGAUGUUAGUAGGCGUUGUGGGAAGGGCGGCGACAGUGAACGUCGUUUC
+((...(((((..(((((((((((..(((((.(((.((((((((((..((....))..))).)))))))))).).))))..)))))))))))..).)))).)).....
+>cel-mir-254 MI0000330 Caenorhabditis elegans miR-254 stem-loop
+ACUAUGCAUAUUGCCGCCUACAGAAGCAUAGAUUUCCACAAACCAUUCGAGGUGUUUGUGCAAAUCUUUCGCGACUGUAGGCGGCGAACAUGCAGUUUUU
+....(((((.(((((((((((((..((..((((((.((((((((.......).))))))).))))))...))..)))))))))))))..)))))......
+>cel-mir-255 MI0000331 Caenorhabditis elegans miR-255 stem-loop
+CAGUGGUUCGACUAAAUUUUGGAGGUAAGAAAUCUUUGUAGUUCUCCGUAUUGUGACGUGAAAACUGAAGAGAUUUUUUACAGACUUCACAAAUUUGAAAUAUAUUCCUG
+(((..((.....(((((((((((((((((((((((((.(((((.(((((......))).)).))))).)))))))))))))...))))).)))))))......))..)))
+>cel-mir-256 MI0000333 Caenorhabditis elegans miR-256 stem-loop
+GCAAGGAGUGCAGAGGCUUACUAUGAGACGGUCAAGAGGCGCCUCCGUCACGUGGAUACGUCGGGUGGAAUGCAUAGAAGACUGUACUCAAAAAAUUUUAC
+.....((((((((...(((.(((((......(((...((((..((((.....))))..))))...)))....)))))))).))))))))............
+>cel-mir-257 MI0000334 Caenorhabditis elegans miR-257 stem-loop
+AUAAUAUUUCCCGCUGAGUAUCAGGAGUACCCAGUGAUCGCCUUCACAUAUUGGGAAGAAGUAUGUGAUUGCGUCCUGCAGUUCUUCCAUGAUGUACUCAGG
+.............((((((((((((((.((.(((.((.(((..(((((((((.......)))))))))..))))))))..))..)))).)))..))))))).
+>cel-mir-258-1 MI0000335 Caenorhabditis elegans miR-258-1 stem-loop
+GCAAUGGUUUUGAGAGGAAUCCUUUUACAUAUUUGUUGAAGUUUUCGCUCGAAUUUGUGGUCGAAUACUGUAGAAGGAAGCCUGCACGAAGUUUUG
+.......(((((.((((..((((((((((((((((.....(..(((....)))..).....)))))).))))))))))..))).).))))).....
+>cel-mir-259 MI0000336 Caenorhabditis elegans miR-259 stem-loop
+UCAGUCAUUGAAACGAGUAAAUCUCAUCCUAAUCUGGUAGCAUCUUUCGAACCUUGCCACCGAUUUGGCAUGGGAUUGACUUGUUAAAUAGUGACUUUUUU
+..((((((((.(((((((.((((((((((.((((.(((.(((............))).))))))).)).)))))))).)))))))...)))))))).....
+>cel-mir-260 MI0000337 Caenorhabditis elegans miR-260 stem-loop
+CGUACAACAAAAUUAUUGCGAGAGAAUUUUUUAACAUGGCGUUUGCUUUACCAGGUCGAUAGACUAUCGUGAUGUCGAACUCUUGUAGGACAAUCUGGUAUUU
+.((((..........(((((((((.....((..((((.(((............((((....))))..))).))))..))))))))))).........))))..
+>cel-mir-261 MI0000338 Caenorhabditis elegans miR-261 stem-loop
+UGAUGGCUUUUCUGGAUUUGUUCCCUUCACGUGUAGAAAGAAACGAGCAAAAAAAAUCUUAGUGUUAGCUUUUUAGUUUUCACGGUGAAUAUGGAUAUU
+.....(((((((((.((.((.......)).)).)))))......))))........((...(((..((((....))))..)))...))...........
+>cel-mir-262 MI0000339 Caenorhabditis elegans miR-262 stem-loop
+GUGCAAAAUUGUAUUAAAAUAAACUUUAUUGGAUUACAAAAAAAAUGUAUCAAUUUUUCUUUUUCAUUUUUACGUUUCUCGAUGUUUUCUGAUACUGUUGCUAGCAGU
+(((((....))))).......(((..(((..((..(((....(((((((.....................))))))).....)))..))..)))..))).........
+>cel-mir-264 MI0000344 Caenorhabditis elegans miR-264 stem-loop
+UGGCGGCGGUCGACAUGUACAUAUCACCAGUCUGGCUUUUCCCGUUUCCGCGAGCAAGCGGCGGGUGGUUGUUGUUAUGGGAUACCGGAGCCA
+.(((..((((...((((.(((.((((((.(((..(((((((.((....)).))).))))))).))))))...)))))))....))))..))).
+>cel-mir-265 MI0000345 Caenorhabditis elegans miR-265 stem-loop
+GGUUUGACUUACCCCCUCCUUCCGCUGGCCGCCGUUUUUAUUAUGAACUUGAUGUGGUUUGAGGGAGGAAGGGUGGUAUUUGAACC
+((((..(..((((((((((((((.(..(((((.((((.......)))).....)))))..).)))))).)))).)))).)..))))
+>cel-mir-266 MI0000346 Caenorhabditis elegans miR-266 stem-loop
+UGUCUAAACUUGGGCAAAAGUUAGGCAAGACUUUGGCAAAGCUUGAAUCCAAGUUUUGCCAAAGUUUUGCCCAACUUUUGCCCAAAUUCAGCCA
+.(.((.((.(((((((((((((.((((((((((((((((((((((....)))))))))))))))))))))).))))))))))))).)).)).).
+>cel-mir-267 MI0000347 Caenorhabditis elegans miR-267 stem-loop
+UAAAAGUUUCAAAACCCCGUGAAGUGUCUGCUGCAAUCUAAAUUUUUAGAUAUAGAUGCAGUCGACUCUUCAUUGGGUUUUCAGGAACCCGUA
+.....((((((((((((.((((((.(((.((((((.((((.(((....))).)))))))))).))).)))))).)))))))..))))).....
+>cel-mir-268 MI0000348 Caenorhabditis elegans miR-268 stem-loop
+GGAAGUGGCUUUGAAGCGGCAAGAAUUAGAAGCAGUUUGGUGUCAGACACACUACUCACUCACUGCUUCUUGUUUUUUCUGCUUUCUUUGCUUUU
+.((((..(....(((((((.((((((.(((((((((..((((..((.....))...)))).))))))))).)))))).)))))))..)..)))).
+>cel-mir-269 MI0000349 Caenorhabditis elegans miR-269 stem-loop
+GGGCAAAAGUUGGGCAAGACUCUGGCAAAACUUGGAUUUAUGCUGCGCCAAAGUUUAACCCAAGUUUGACCCAACUCUUGUCAAAUUUUUGUCC
+(((((((((((.(((((((...(((..((((((((.((...(((.......)))..)).))))))))...)))..))))))).)))))))))))
+>cel-mir-270 MI0000350 Caenorhabditis elegans miR-270 stem-loop
+GUCGCUAGCCUCUUUACCUGCCUACACACCUUUCUGCCUACGUGGCACAUUGGUAGGCAAGAGGGCAUGAUGUAGCAGUGGAGAUGGACUGCCAC
+...((.(((((((((((.(((.((((((((((..(((((((...........)))))))..))))..)).)))))))))))))).)).))))...
+>cel-mir-271 MI0000351 Caenorhabditis elegans miR-271 stem-loop
+AAUAGAAAACGGGGCCCGCCGGCUCGCCGGGUGGGAAAGCAUUCGACAGCAAGACGUGUUUUUCAAUCUGCGACUCGGCGAUUCCCAUCAUCACU
+..........((((..(((((..((((.((((.(((((((((((........)).))))))))).))))))))..)))))..)))).........
+>cel-mir-272 MI0000352 Caenorhabditis elegans miR-272 stem-loop
+CGCAGGCACGUGCAGGUAUGUAGGCAGGCGUAGGCCCGUAGGCAAGUGUAGGUCUGCAGGCAUGAAUGUAGGCAUGGGUGUUUGGAAGACCUGCG
+(((..((.(.((((....)))))))..)))...(((....)))....((((((((.(((((((..(((....)))..)))))))..)))))))).
+>cel-mir-273 MI0000353 Caenorhabditis elegans miR-273 stem-loop
+ACCUCGUUUUGGGAGCAGCCGGCAUUUUACGGGCUACACUUUUUUUAAAAUUGAUGUGUGCCCGUACUGUGUCGGCUGCUUUGAAAAUUUCGGU
+(((..(((((.((((((((((((((..(((((((.((((................)))))))))))..)))))))))))))).)))))...)))
+>cel-mir-353 MI0000752 Caenorhabditis elegans miR-353 stem-loop
+UGUUGAAGUAUUGCAAAAGCAAAGGACGGGCACAAUUGCCAUGUGUUGGUAUUAUUGCUUCAAGUUAUUUGAAGCUGUAAUAUCAAUAAGCAUGUCUCGUGUGAAGUCCG
+..........((((....)))).((((...((((...(.((((((((((((((((.((((((((...)))))))).)))))))))))..))))).)...))))..)))).
+>cel-mir-354 MI0000753 Caenorhabditis elegans miR-354 stem-loop
+CAGAGCCGACUAAGCACCUUGGUGCGGCUGCAGACGGGUAUCCGGCUCGACGUUCAUACAUCACGACUUCUUUCCUUUUACCUUGUUUGUUGCUGCUCCUAUUGGUUUUG
+(((((((((...........((.(((((.(((((((((((...((...((.(((..........))).))...))...)))).))))))).))))).))..)))))))))
+>cel-mir-355 MI0000754 Caenorhabditis elegans miR-355 stem-loop
+AAUAAUGUCAAGAAUUGAAUGGUUUGUUUUAGCCUGAGCUAUGAGUCAUCGGAAUAUGCAUAGCUUCUUGCUAAAACAUGCCAAUCAAUCUUAAUUGACGAAGUUUUUGA
+.....((((((..(((((.((((.(((((((((..((((((((..((....)).....))))))))...))))))))).)))).))))).....))))))..........
+>cel-mir-356a MI0000755 Caenorhabditis elegans miR-356 stem-loop
+UAAAGUUUCCUUGAGAACAAUGUGGUUGAGCAACGCGAACAAAUCAUCAAUGUAAAUUUCAGCGGAUUCGUUACGACGUGUCUCACCACAUCGUUAGUAGGAUUUCAGAA
+.......((((....(((.(((((((.(((..((((((((.((((.....((.......))...)))).))).)).)))..)))))))))).)))...))))........
+>cel-mir-357 MI0000756 Caenorhabditis elegans miR-357 stem-loop
+ACGCUGUACUACUCACCAGCGGAUCCCUACAACGCUGCGCAUAUGCAUGAACACAAUGAAAAUGUAAAUGCCAGUCGUUGCAGGAGUUCGCAUACAGUAGUAAAAUGCGC
+.(((..(((((((.....(((((..(((.((((((((.((((.(((((.............))))).))))))).))))).)))..)))))....)))))))....))).
+>cel-mir-358 MI0000757 Caenorhabditis elegans miR-358 stem-loop
+AAACUCGCGACGGCUGGCGACCUGGCCAGGCAUUCCAACUGUCAAACUUACAAAGCUUUCUCGACAAUUGGUAUCCCUGUCAAGGUCUCAAUCCGUUCAGCGAAUUCGUU
+....(((((((((...(.((((((((.(((.((.((((.((((...................)))).)))).)).)))))).))))).)...)))))..)))).......
+>cel-mir-359 MI0000758 Caenorhabditis elegans miR-359 stem-loop
+AAUGCUCCUUGAAAUUUCAAUCGUUAGAGUAACACACAGUUACACGACCUCAUCAAUCGUGUCACUGGUCUUUCUCUGACGAAUUGAAGUUCUGGAGACAAUUUUGGUUG
+..((((((..(((.(((((((((((((((.((.((.((((.((((((.........)))))).)))))).)).)))))))).)))))))))).)))).))..........
+>cel-mir-360 MI0000759 Caenorhabditis elegans miR-360 stem-loop
+CAUUCUGUUAGGAAGCAUCAAUGUGUUGUGACCGUUGUUACGGUCAAUUUGCAAAUUGAAAAAAUGACCGUAAUCCCGUUCACAAUACAUUGUUCGUUUUCUCCAAAGGU
+...(((...(((((((..(((((((((((((.((..((((((((((.(((..........))).))))))))))..)).)))))))))))))...)))))))....))).
+>cel-lsy-6 MI0000801 Caenorhabditis elegans lsy-6 stem-loop
+CCAUCAAAUGCGUCUAGUAUCAAAAUCAUGUAAAAACUGUAAAACAGAUUUUGUAUGAGACGCAUUUCGAUGA
+.((((((((((((((.(((.(((((((.(((............))))))))))))).)))))))))).)))).
+>cel-mir-392 MI0000819 Caenorhabditis elegans miR-392 stem-loop
+UUUUUGAAAAUCUCGCAGACGUGUUCAGUCAGCAUUCGUGGUUGAGGAUAUCGAACACAAAAAAAGAUAUCAUCGAUCACGUGUGAUGACAGAUUUUCUGCGACUAACAG
+............(((((((.....((.((((.(((.(((((((((.((((((.............)))))).))))))))).))).)))).))...))))))).......
+>cel-mir-784 MI0005184 Caenorhabditis elegans miR-784 stem-loop
+UUCGACGUCCACGUGGCACAAUCUGCGUACGUAGAAAGAUCAAAAAGUCACUUCUAUGUACAAAUGUUGCGCUGCCUGGCACAGUGAA
+.(((..(((((.(..((.((((.(..((((((((((.(((......)))..))))))))))..).)))).))..).))).))..))).
+>cel-mir-785 MI0005185 Caenorhabditis elegans miR-785 stem-loop
+GCUCUUUUUCUCACCCAUCAGCACAGAAUUUUUCGCUAACAGAAACCUCAAAACAAUGUAAGUGAAUUGUUUUGUGUAGAUGGUGGAAAUGAGC
+((((..((((.((((.(((.(((((((((..((((((.(((...............))).))))))..))))))))).))))))))))).))))
+>cel-mir-786 MI0005186 Caenorhabditis elegans miR-786 stem-loop
+GGGAUAGUUCCCGAUCGAAUAUCAGUUGGGGUAUUUACAAAAAGACAAAAUUGUAAUGCCCUGAAUGAUGUUCAAUCGGUGAUGAAUCUC
+(((((.((..(((((.((((((((.(..(((((((.((((..........)))))))))))..).)))))))).)))))..))..)))))
+>cel-mir-787 MI0005187 Caenorhabditis elegans miR-787 stem-loop
+GAUGUAUCAGUGGACGAAAGAUACAUACGAUCUUACAUCUUCAAAAUGGUAUGUAAGCUCGUUUUAGUAUCUUUCGUCUCUGAUCACAUU
+((((((((((.(((((((((((((..((((.(((((((((.......)).))))))).))))....)))))))))))))))))).)))))
+>cel-mir-788 MI0005188 Caenorhabditis elegans miR-788 stem-loop
+GCUCACUUUUCCGCUUCUAACUUCCAUUUGCAGAGUUCAAGUAAUCUGGAAAUGGAUUAGAAUCGUGGAAAAGUUAGU
+(((.((((((((((((((((..(((((((.((((..........)))).)))))))))))))..)))))))))).)))
+>cel-mir-789-1 MI0005189 Caenorhabditis elegans miR-789-1 stem-loop
+UGUCCUGAAGGCAGGCAAUUGAUGACCCAGACAAGGACUAAUCAAGAUUGUCGAUCUAGUCCCUGCCUGGGUCACCAAUUGUCGGCCCCCGCGGGCA
+.((((((..(((.((((((((.((((((((.((.(((((((((.........))).)))))).)).)))))))).)))))))).)))..)).)))).
+>cel-mir-789-2 MI0005190 Caenorhabditis elegans miR-789-2 stem-loop
+UGUCCUGAAGGCGGACAAUUGAUGACUCAGGCAGGGACUAAUCAUGAUUGUCGAUUUAGUCCCUGCCUGGGUCACCAAUUGUCGGCCCCCGCGGACA
+.((((((..(((.((((((((.(((((((((((((((((((...((.....))..))))))))))))))))))).)))))))).)))..)).)))).
+>cel-mir-790 MI0005191 Caenorhabditis elegans miR-790 stem-loop
+GCCGGCUUGGCACUCGCGAACACCGCGAUUUCACUUAUAACUCGCGGCGUUAGCUCUGUGUCAAACCGGC
+(((((.(((((((..((.(((.((((((.............)))))).))).))...))))))).)))))
+>cel-mir-791 MI0005192 Caenorhabditis elegans miR-791 stem-loop
+GAACCUUCGAUUACCUUAUCCGUUGUAGCCAAAGUUCAACGAAGCGGCAACUUUGGCACUCCGCAGAUAAGGCAAUCGAUUGUUU
+((((..((((((.(((((((((..((.(((((((((...((...))..)))))))))))..))..))))))).))))))..))))
+>cel-mir-792 MI0005193 Caenorhabditis elegans miR-792 stem-loop
+AAGUUGGUCAACGUUUGAGAGUUCAAAAGAUUUAGCAAUUUUAUACGAGUGAAAUUGAAAUCUCUUCAACUUUCAGACGUUUUCUGAUUU
+((((..(..((((((((((((((.((.(((((...(((((((((....))))))))).))))).)).))))))))))))))..)..))))
+>cel-mir-793 MI0005194 Caenorhabditis elegans miR-793 stem-loop
+UGGUUGGUAAAAGUCUGUUUAACUAUUGUACAUCACAAUUUUCACUGCGAAAAAUUGAGGUAUCUUAGUUAGACAGACAUAUACUACAACCA
+.((((((((...(((((((((((((..((((.(((...(((((.....)))))..))).))))..)))))))))))))...)))..))))).
+>cel-mir-794 MI0005195 Caenorhabditis elegans miR-794 stem-loop
+CUGAGCGUGUCUCUUGAGGUAAUCAUCGUUGUCACUUCGCAAAGUUGGAAUUGAAAACGUUGUCUAUCUCGAAAGGCUUAUCAG
+((((....((((.((((((((..((.((((.(((.(((.((....))))).))).)))).))..)))))))).))))...))))
+>cel-mir-795 MI0005196 Caenorhabditis elegans miR-795 stem-loop
+GAAACGUUACCUGCUGAGGUAGAUUGAUCAGCGAGCUUGAUACCCCGUUCAAAAUCGUGAUCAGUAUACUUCGUCAGGCAGCUUGUUUU
+((((((((.((((.(((((((.((((((((.(((..((((........))))..))))))))))).))))))).)))).)))..)))))
+>cel-mir-796 MI0005197 Caenorhabditis elegans miR-796 stem-loop
+ACUCUAAUGACAAGCUGGAAUGUAGUUGAGGUUAGUAAAAGCACUAUACUUGUUACAAACCUUGCCACGUUCCGACUUGUCAAAAGAGU
+(((((..(((((((.((((((((.(..((((((.(((((((.......))).)))).))))))..))))))))).)))))))..)))))
+>cel-mir-797 MI0005198 Caenorhabditis elegans miR-797 stem-loop
+CGUCCAAUGGACGAUAUCACAGCAAUCACAAUGAGAAGAAUACAUCUAGAUACUCUUUUCAUUGGUUUCUGUGAAAUCGUAUUUGAAUG
+(((.(((...(((((.((((((.((...(((((((((((.((........)).)))))))))))..)))))))).)))))..))).)))
+>cel-mir-798 MI0005199 Caenorhabditis elegans miR-798 stem-loop
+UACUGUUUCAUGUAGGUGUUAAAGUUUGUACAAGAAGUUAGUUUUCUGUUAAGCCUUACAUAUUGACUGAGCAGUA
+(((((((.((.((..(((((((.(((((.(((.((((.....)))))))))))).))).))))..)))))))))))
+>cel-mir-799 MI0005200 Caenorhabditis elegans miR-799 stem-loop
+GUUUUUCAAUUUUUUUCACCGGUUUUAAAAAGUGGUUUCACAUUCAAUAAAGACAUGUGAACCCUGAUAAAGCUAGUGGAAAUAUCGGAAAAC
+(((((((.((..(((((((..((((((...((.((((.(((((((......)).)))))))))))..))))))..))))))).)).)))))))
+>cel-mir-800 MI0005201 Caenorhabditis elegans miR-800 stem-loop
+ACGGCGGCUGACAAUUUCCGAGUUAGGCCACUCUUAUAAUCAGUGGCCAAACUCGGAAAUUGUCUGCCGCCGU
+((((((((.(((((((((((((((.(((((((.........))))))).))))))))))))))).))))))))
+>cel-mir-1018 MI0005879 Caenorhabditis elegans miR-1018 stem-loop
+GUAAGUUCAUGAUUUCUCCCAUAUAUUUUUCAUGAGAGAGAUCAUUGGACUUACAG
+((((((((((((((((((.(((.........))).))))))))).)))))))))..
+>cel-mir-1019 MI0005880 Caenorhabditis elegans miR-1019 stem-loop
+GUGAGCAUUGUUCGAGUUUCAUUUUUAAUAAAAUUUAUUUAAAAACUGUAAUUCCACAUUGCUUUCCAG
+..(((((.(((..(((((.(((((((((..........))))))).)).))))).))).))))).....
+>cel-mir-1020 MI0005881 Caenorhabditis elegans miR-1020 stem-loop
+GUAAGUGUUACAGAAUAAUCUUAGACAAAACAACUAAAAUUAAUGAAAAAUUAUUCUGUGACACUUUCAG
+(.(((((((((((((((((..............................))))))))))))))))).)..
+>cel-mir-1021 MI0005899 Caenorhabditis elegans miR-1021 stem-loop
+UACUGUUUUGAAACAAGUGAGAUCAUGUGAAAUCCUCGGAGCUCGGAGCUUUGAAUUUUCCAAAUAUUCAUAUUUAAAUUAUUUGUUUCAAACAGUA
+((((((((.(((((((((((....(((((((....(((((((.....)))))))............))))))).....)))))))))))))))))))
+>cel-mir-1022 MI0005900 Caenorhabditis elegans miR-1022 stem-loop
+GGUCCAAAAUCGGCAAGAUCAUUGUUAGGACGCCAUCUUGAAGCAAUAUAAAGAUGAUAGUCCAAUGAUGAUCCAGCUGUUCAAGGCU
+((((......((((..((((((..((.((((..((((((...........))))))...))))))..))))))..)))).....))))
+>cel-mir-1817 MI0007979 Caenorhabditis elegans miR-1817 stem-loop
+UGUACAUUUCAAUUUUCGAGUAGCCAAUGUCUUCUCUAUCAUGCAUUUUACAAAUAAUGAGUACAUGAUAGUGAAAUAUUUGCUUCCUGAAUUUCAGAGAUGUUU
+...(((((((....((((.(.(((.(((((.(((.((((((((.((((..........)))).)))))))).)))))))).))).).)))).....)))))))..
+>cel-mir-1818 MI0007980 Caenorhabditis elegans miR-1818 stem-loop
+CUGGAAAGAGUGGCCUUUUGUGGUCUUCAUGCCAUGAUUUUAUCACUCAAACUGAUAAAAUCAUAGUUUGGAAACCUCGACAGGCUUUUCUUUUCUU
+..((((((((.(((((.(((.(((.((((.((.((((((((((((.......)))))))))))).)).)))).))).))).))))).))))))))..
+>cel-mir-1819 MI0007981 Caenorhabditis elegans miR-1819 stem-loop
+AAUCAGUGAUCAAUCAUGCUCAAAACAUUCGACAUAACUUAAUUUCUUUGUGGAAUGAUUGAGCUUGAUGGAUCGAUGAAA
+..(((.(((((.((((.((((((..(((((.(((..............))).))))).)))))).)))).))))).)))..
+>cel-mir-1820 MI0007982 Caenorhabditis elegans miR-1820 stem-loop
+UUCAAAAAUUGCAUUUUCCAUCUUUUGAUUGUUUUUCGAUGAUGUUCGUUAAAUCGGUAUAAGCGAACCAUUGUAAACAAUCAAAGAAUGGAGAAUCAAUUUAUGAU
+.(((.((((((.(((((((((..(((((((((((..(((((..(((((((...........)))))))))))).)))))))))))..))))))))))))))).))).
+>cel-mir-1821 MI0007983 Caenorhabditis elegans miR-1821 stem-loop
+AUAUGUAGUUGGUACAAGUUUGCCCAACUUGCAGACUUUUCAAUUUUCGGCAAGUGGAAUUGAGGUCUUAUAGUUAGGUAGACAUUUACUACAACUAAUAUAUA
+((((((((((((((...(((((((.((((...(((((..((((((((........)))))))))))))...)))).)))))))...)))..))))).)))))).
+>cel-mir-1822 MI0007984 Caenorhabditis elegans miR-1822 stem-loop
+AUUCUUGAAAACUCCAAUAGUUUCUCUGGGAAAGCUAUCGGCCAAAUUUAACUGUCCGAGCUGCCCUCAGAAAAACUCUUGGCUCAUCGAGAAA
+.(((((((.....((((.(((((.((((((..(((..((((.((........)).)))))))..)).)))).))))).))))....))))))).
+>cel-mir-1823 MI0007985 Caenorhabditis elegans miR-1823 stem-loop
+CUUUGACCUGAACGUCACCCCUAACCCUAUGCAGUAUUUGGAGCUCAUAAAAUACUGGAAGUGUUUAGGAGUAAUGCUCAGUUGUCAGAA
+.((((((((((.(((.((.(((((.(((.(.((((((((.(....)...)))))))).))).).))))).)).))).))))..)))))).
+>cel-mir-1824 MI0007986 Caenorhabditis elegans miR-1824 stem-loop
+GUUCACCAGAGUUGGCAGUGUUUCUCCCCCAACUUUUGUUACAGAAUUGCAAAAAUGUUGGCCGUGGUGAACACUUCCGCCUCUGGUUUGAAG
+.((((((((((.(((.(((((((..((((((((((((((.........))))))..)))))..).)).))))))).))).)))))))..))).
+>cel-mir-1828 MI0008196 Caenorhabditis elegans miR-1828 stem-loop
+GAUCACUUUUAUCGGUUCCGGUCCCUCUGCAAAAAAGUGGACUGGAAGCAUUUAAGUGAUAGU
+.(((((((..((.(.(((((((((..((.......)).))))))))).)))..)))))))...
+>cel-mir-1829a MI0008197 Caenorhabditis elegans miR-1829a stem-loop
+AAGGGGACUUCUAAUUGUUUGUAAAAAAUCGAGUAUUACAACCAUUGGAAUUUCUCUAUU
+.((((((.(((((((.(((.((((...........))))))).))))))).))))))...
+>cel-mir-1829b MI0008198 Caenorhabditis elegans miR-1829b stem-loop
+AAGCGAUCUUCUAGAUGGUUGUAAAACAUCGAGUAUUACAACCACUGGAAUUUCUCUAUU
+.((.((..((((((.(((((((((.((.....)).)))))))))))))))..)).))...
+>cel-mir-1829c MI0008199 Caenorhabditis elegans miR-1829c stem-loop
+AAGCGAAAUUCAAGAUGGUUGUAAAACAUCGAGUACUACAACCACUGGAAUUUCUCUAUUGC
+.((.(((((((.((.((((((((..((.....))..)))))))))).))))))).)).....
+>cel-mir-1830 MI0008200 Caenorhabditis elegans miR-1830 stem-loop
+CGAGGUUUCACGUUUUCUAGGCCACGCCGCAAAUAGCCAGCUUGUGGCCUAGGAAAUGAGAAAACUCGGC
+((((.((((.(((((((((((((((((.((.....))..))..))))))))))))))).)))).))))..
+>cel-mir-1832a MI0008202 Caenorhabditis elegans miR-1832 stem-loop
+CAGCGAUUCGAACUCCGCCCACUGCACCUGAUUGGUUGACAAGUGGGCGGAGCGAAUCGAUGAU
+((.(((((((..(((((((((((.((((.....)).))...)))))))))))))))))).))..
+>cel-mir-1833 MI0008203 Caenorhabditis elegans miR-1833 stem-loop
+ACGCUUACUUCGCAAGCCUCGCGCGUUUUCUUUUCAAGAGAAAAAGCGUGCGAGGCUUGCGAAAUAAGUGUGC
+(((((((.((((((((((((((((((((((((.....))))))..)))))))))))))))))).)))))))..
+>cel-mir-58b MI0008204 Caenorhabditis elegans miR-58b stem-loop
+UGACUCGGUGUGUGAUCUCUUACCGUUUUAUGGAUAAGAGAUCAACCAUUGAGAUCCAA
+...(((((((..((((((((((((((...)))).))))))))))..)))))))......
+>cel-mir-258-2 MI0010691 Caenorhabditis elegans miR-258-2 stem-loop
+GCAAUGGUUUUGAGAGGAAUCCUUUUACAUAUUUGUUGAAGUUUUCGCUCGAAUUUGUGGUCGAAUACUGUAGAAGGAAGCCUGCACGAAGUUUUG
+.......(((((.((((..((((((((((((((((.....(..(((....)))..).....)))))).))))))))))..))).).))))).....
+>cel-mir-2207 MI0010955 Caenorhabditis elegans miR-2207 stem-loop
+UGUGAAUUGAGACUGUGUAUAAGAAUGUAAGGAGGAGAGGGGCCGUUCGUAUCGUUCGUCUUAUGCACAGGCUCAAUGCACACA
+((((.((((((.((((((((((((.((.((.((...(((......)))...)).)))))))))))))))).)))))).))))..
+>cel-mir-2208a MI0010956 Caenorhabditis elegans miR-2208a stem-loop
+AAGUGUACCCGAAUCUGAUAUCCUAUCAUCUGAAAAAGGAUGCAGUUUCUGGUAUACUUCA
+(((((((((.(((.(((.((((((.((....))...))))))))).))).)))))))))..
+>cel-mir-2208b MI0010957 Caenorhabditis elegans miR-2208b stem-loop
+AAGUGUACCCGGAUCUGAUAUCCUAUCACCAAAAAGAGGAUGCAGAUUUUGGUACACUUCA
+(((((((((..((((((.((((((............))))))))))))..)))))))))..
+>cel-mir-2209a MI0010958 Caenorhabditis elegans miR-2209a stem-loop
+GAGUGUAACCACUCUUCUCCUUCCGAGUAUUGAUUAUCGAGAAGAGAUCAGCGGUUACACUACA
+.(((((((((.((..((((.((((((..........))).)))))))..)).)))))))))...
+>cel-mir-2209c MI0010959 Caenorhabditis elegans miR-2209c stem-loop
+GAGUGUAACCGCACGUCUUGUUUCAAAACUCAAUAUAUGGAAAAAGACCACCGGUUACACUACA
+.((((((((((...(((((.(((((............))))).)))))...))))))))))...
+>cel-mir-2210 MI0010960 Caenorhabditis elegans miR-2210 stem-loop
+AGGCAGAUCAAUCAAUUUUUAGGUUUAUAUAAAUAAUCCUAAAGUCGAUUGCUCUACCCAC
+.((.(((.(((((...(((((((.((((....)))).)))))))..))))).))).))...
+>cel-mir-2211 MI0010961 Caenorhabditis elegans miR-2211 stem-loop
+CCUCCAUCUAUUCUCCAUCUGACGACGUCCCGUCCCGUCAGGUAGAAUUUAGAGGAGAAA
+.((((.((((...((.(((((((((((...))))..))))))).))...))))))))...
+>cel-mir-2212 MI0010962 Caenorhabditis elegans miR-2212 stem-loop
+UGGCAGAUCAUAGGCUGACUUUGCAAGCAUUUUAUACAAAGUGGCAUUUGAUAAGCCAUC
+((((..((((...(((.((((((.............)))))))))...))))..))))..
+>cel-mir-2213 MI0010963 Caenorhabditis elegans miR-2213 stem-loop
+UGGCGGACUCUUCACAGUUUGACCUCGGAGAUCAAGCUGUAAGAGGACUGCCUAA
+.(((((.(((((.(((((((((.(.....).))))))))))))))..)))))...
+>cel-mir-2214 MI0010964 Caenorhabditis elegans miR-2214 stem-loop
+AUUCGGUCCGGAGUCAAUGGGUUAUCUUUCAAAACCCCCCAUUGACAACAACUUGACCGGCGUU
+..((((((.((.(((((((((................))))))))).....)).))))))....
+>cel-mir-2215 MI0010965 Caenorhabditis elegans miR-2215 stem-loop
+ACAGCACGUGUUACGAUGCUCCGUUAGUUCGGAGUUUUUACGGAGAAUCGUAGCGCGUGUUGUUU
+(((((((((((((((((.((((((...............)))))).)))))))))))))))))..
+>cel-mir-2216 MI0010966 Caenorhabditis elegans miR-2216 stem-loop
+GCACAUUUUAAGUCGGUAGGCGUCCAAUUUUGAUGCCUAUCUACUUAAAAUGUGCCU
+(((((((((((((.((((((((((.......)))))))))).)))))))))))))..
+>cel-mir-1832b MI0010967 Caenorhabditis elegans miR-1832b stem-loop
+CAGCGAAUCGCUCGGCCCACUUUUGUGAACCAAUCAGCGUCAAAAGUGGGCAGAGCGAUUCGCUGAU
+(((((((((((((.((((((((((((((.....)))....))))))))))).)))))))))))))..
+>cel-mir-2217 MI0010968 Caenorhabditis elegans miR-2217 stem-loop
+CAGAGUGGGCAGUCGGUGUCGAUCUACAUCAUUCGCAGGUCGACCCUUGUGCCUGUUUCGGU
+(..((..((((...((.((((((((.(.......).))))))))))...))))..))..)..
+>cel-mir-2209b MI0010969 Caenorhabditis elegans miR-2209b stem-loop
+AGUGUAACAACUCUUCUCCUUCCGAAAACCAAUAAUCGAGAAGAGAUGAGCGGUUGUGCUUCA
+((..((((..(((.((((.((((((..........))).))))))).)))..))))..))...
+>cel-mir-2218a MI0010970 Caenorhabditis elegans miR-2218a stem-loop
+CAAACUACAAGUUUUAAGCCUCACCAAAAGUUGGGUGAGGCCAGAAUAGUGUAGUUUGUA
+(((((((((...(((..((((((((........))))))))..)))...)))))))))..
+>cel-mir-2218b MI0010971 Caenorhabditis elegans miR-2218b stem-loop
+AGACUACAAACUACAUCAUUUUCCAUCUCUUUGGUGAGGCUAGAAAAUUUGUAGUUUGUAGUGAGA
+..(((((((((((((..((((((..((((......))))...)))))).)))))))))))))....
+>cel-mir-2219 MI0010972 Caenorhabditis elegans miR-2219 stem-loop
+ACAGCUUUCUCUCGCACAUCGUCAGCUAGAUUUGAACUCUGUAUGAAAGCUGACGAAGUGCGAGGGAAAGCUGAAG
+.((((((((((((((((.((((((((((((.......))).......))))))))).))))))))))))))))...
+>cel-mir-2220 MI0010973 Caenorhabditis elegans miR-2220 stem-loop
+GUAAGACCAUAAACUAUUUAUCAAUUCAUCAUUUGAUCAAUUGUUUGUGGACUUACAG
+(((((.((((((((.(((.(((((........))))).))).)))))))).)))))..
+>cel-mir-2221 MI0010974 Caenorhabditis elegans miR-2221 stem-loop
+UACAUUUAUUCUUACUGUCCUCGAAUACAAACUGGCGGUUUGCAUUCACUUACAUUUAUAAGACAAAAAUGCAAGUGAUACCAGACCGCUAGUUUGUAAAAGGGAUAAUUUUAUGUGA
+(((((..........((((((....(((((((((((((((((...((((((.(((((.........))))).))))))...)))))))))))))))))...)))))).....))))).
+>cel-mir-2953 MI0013633 Caenorhabditis elegans miR-2953 stem-loop
+UACAGAAGUGUUCGUGAAAAUAAAUAUGUGUUUUUUUUAUGAUCACUAGCUCUUCUGUAGC
+((((((((.(((.((((..(((((...........)))))..)))).))).))))))))..
+>cel-mir-4805 MI0017535 Caenorhabditis elegans miR-4805 stem-loop
+AGUCGGAGGCAGGGGUGUGCGGCAAAUUUGCCGAAUUUGCCGUUUGUCGAGCUCGGCAAAUUUUGAGAUUUUCCGCACACCCCUGAUCGGAGCC
+..((.((..(((((((((((((.((((((.(.((((((((((...(.....).)))))))))).))))))).))))))))))))).)).))...
+>cel-mir-4806 MI0017536 Caenorhabditis elegans miR-4806 stem-loop
+GGAUUCAGUGGCGAGCCACUUACCGGCUGAGCCAUGCGCGCUGCGCUGCAUAGCUCAGCCGGUAAGAGGCUUGCCUUUGGAGC
+...(((((.((((((((.((((((((((((((.(((((((...))).)))).)))))))))))))).)))))))).)))))..
+>cel-mir-4807 MI0017537 Caenorhabditis elegans miR-4807 stem-loop
+GUGAGUUCAAAGUUACAUUUUCAAUAUAUCUAUUUUGAAAAUGCGACUUCUGGGCUUACAG
+(((((((((((((..(((((((((..........)))))))))..)))).)))))))))..
+>cel-mir-4808 MI0017538 Caenorhabditis elegans miR-4808 stem-loop
+GUAAGAUAGAUUAGUGCUUUCAAUUAUUUCAAACGAAAGCUCUAUUCUCUCUUACAG
+((((((.(((.(((.((((((.............)))))).))).))).))))))..
+>cel-mir-4809 MI0017539 Caenorhabditis elegans miR-4809 stem-loop
+GUAAGUUCAGAGUUGAAUUAUCUUGAUCAUAUUUGAUAAUACAACUUCUGGGCUUCCAG
+(.(((((((((((((.((((((............)))))).)))).))))))))).)..
+>cel-mir-4810 MI0017540 Caenorhabditis elegans miR-4810 stem-loop
+GUAAGUUCAUGAGUUCUCUUAUAAAAAGGUUUUUAUGAGUAUCGCAUCAACUUACAG
+(((((((.(((.(....(((((((((....)))))))))...).))).)))))))..
+>cel-mir-4811 MI0017541 Caenorhabditis elegans miR-4811 stem-loop
+AAAAUUGUGGUAUUGAACAAUACCUGUGUUAAAAGACAUACAUAGCAGCACCUUAUAACACUCGUAUUGUUCGCUACUACAGU
+...(((((((((.((((((((((..((((((.(((................))).))))))..)))))))))).)))))))))
+>cel-mir-4812 MI0017542 Caenorhabditis elegans miR-4812 stem-loop
+AGAAGUAAGAGCGCUUGUAGUGAGUUGUCAAAAAUUGAGUAUGACAACCACUGCAAUUUCUCUAUUACAUUUUUGG
+....(((((((...((((((((.(((((((...........)))))))))))))))...))))..)))........
+>cel-mir-4813 MI0017543 Caenorhabditis elegans miR-4813 stem-loop
+AUUUCACCAGACUAUCUAGGAAAUAUUGAACUAAUACAAAUUUUAGUUCAAUAUACCGGAUGGUCUGGUGAAAGCAA
+.((((((((((((((((.((..((((((((((((........)))))))))))).))))))))))))))))))....
+>cel-mir-4814 MI0017544 Caenorhabditis elegans miR-4814 stem-loop
+UAAACCAACUUUACCCACUUCUCAACCAACUUUGGCCACUUUUCAACUGCCAUUCACAGAAGUGGGCAAAGUUGGUUGAGAAGUGGGUAAAGUUGGGCAA
+....((((((((((((((((((((((((((((((.((((((((..............)))))))).))))))))))))))))))))))))))))))....
+>cel-mir-4815 MI0017545 Caenorhabditis elegans miR-4815 stem-loop
+UUGCCUCGUUCGUCGUAUAUUCGUCGUAUAUUGCGUCGUACAUUCCGGACUUCCUUCUAAAUGUAUGAGCAAAAUGCGAGGAAUGUACGAUGCGAAUUG
+.....((((..(((((((((((.((((((.((((.(((((((((..(((......))).))))))))))))).)))))).)))))))))))))))....
+>cel-mir-4816 MI0017546 Caenorhabditis elegans miR-4816 stem-loop
+GUAAGUGGUUUUUGUAGAUCAAAAUAGUUAAGAAAUUUUUUGAUCUACAAUUUUCGCACUUACAG
+((((((((...(((((((((((((.((((....)))))))))))))))))....).)))))))..
+>cel-mir-4920 MI0017705 Caenorhabditis elegans miR-4920 stem-loop
+GUAAGGAAAACUUUUGAAUUUCUUUUGAGAGAAAAUUCAUUUGUGAUUCUUUUCAG
+(.((((((.((...((((((((((....))).)))))))...))..)))))).)..
+>cel-mir-4921 MI0017706 Caenorhabditis elegans miR-4921 stem-loop
+GUAAGUUGAUGAGUUCACACAUAAAUUUUGGAUAUAUAUGUGCCACUCACUUUCUUGCAG
+(((((..(.(((((...((((((.((.......)).))))))..))))).)..)))))..
+>cel-mir-4922-1 MI0017707 Caenorhabditis elegans miR-4922-1 stem-loop
+GUGAGUAGAACAAUUUCAUAUUGAAAAAAGUAAAAUUGUCCUCUAUAUAACUGUUCUAUUCACAG
+((((((((((((.((((.....)))).........((((.......)))).))))))))))))..
+>cel-mir-4922-2 MI0017708 Caenorhabditis elegans miR-4922-2 stem-loop
+GUGAGUAGGACAAUUCAUAUUGAAAAUAUUGUCUUUUAUAUAACUGUUCUAUUCACAG
+((((((((((((.((.((((.((((........)))))))))).))))))))))))..
+>cel-mir-4923a MI0017709 Caenorhabditis elegans miR-4923a stem-loop
+GUAAGCAAUUGCUUCUCAUUUUCAGAAAUUGUAUGUGAAAAAGAGAGCCUUUUGUUUACAG
+((((((((..(.(((((.((((((.(.......).)))))).))))).)..))))))))..
+>cel-mir-4924 MI0017710 Caenorhabditis elegans miR-4924 stem-loop
+GUAAGUAUCAUCAAUAUUAAUAAUUGAUAAUUAUUAGUAUUGGAUAAACUUAAG
+.(((((....((((((((((((((.....))))))))))))))....)))))..
+>cel-mir-4923b MI0017711 Caenorhabditis elegans miR-4923b stem-loop
+GUAAGCAAAUUCCCGUCAUUUUCUGGAAAUAUUUUGAAACGGCGGCAAUUUGUUUACAG
+(((((((((((.(((((..((((..((....))..)))).))))).)))))))))))..
+>cel-mir-4925 MI0017712 Caenorhabditis elegans miR-4925 stem-loop
+GUAAGUGCAUAUGUUUCAAAAACUUGUUCAAAUUGUUUUCGAAAACAUUGCAUUUACAG
+(((((((((.(((((((.(((((...........))))).).)))))))))))))))..
+>cel-mir-4926 MI0017713 Caenorhabditis elegans miR-4926 stem-loop
+GUAGGAGUGAAUUUUGAUUUUUUAUAUGUAAAUUUAAAAUUUAUUCUUACAG
+(((((((((((((((((.(((........))).)))))))))))))))))..
+>cel-mir-4927 MI0017714 Caenorhabditis elegans miR-4927 stem-loop
+GUGGGUUUUUUCAAAAUUUUUUUAAUUAAAUAAAAAAAUUUGGAAAAAAGUUCCAG
+.(((((((((((.(((((((((((......))))))))))).)))))))..)))).
+>cel-mir-4929 MI0017715 Caenorhabditis elegans miR-4929 stem-loop
+UAAAAUAUUUUAAUUCAUUAAAUAAAUUUGCGCGUAAGAUAAAAUGCACUGCACACAAAUGCACACAAUGCACCACAUCUUACGCUCAAAUUUUCUUUAAUUAAUUUUCA
+...........((((.((((((.(((((((.(((((((((....((((.((((......)))).....))))....))))))))).)))))))..)))))).))))....
+>cel-mir-4930 MI0017716 Caenorhabditis elegans miR-4930 stem-loop
+GUCUGCCUAGGGGGCUGGCUAGGGCUGCCUAGGGGGCUGGCUAGGGCUGCCUAGGGGCUGGCUGCCUAGGGGCUGGCUAGGGCUGCCUAGGGGCUGGCUAGGGUAGGCUU
+((((((((....(((..(((.((((.((((....(((..(((.((((.(((........))).))))...)))..))).)))).))))...)))..))).))))))))..
+>cel-mir-4931 MI0017717 Caenorhabditis elegans miR-4931 stem-loop
+GAAUUUUGCUCGCGCCAAAAUGAGAACUACACGACCAAUCAGUGAUGUGCUCCACCCAAUAUUGAACCAAUCGCUGAUUGGUUGAGCAGUUCUCAUUUUGGGUGG
+..........(((.((((((((((((((.(.(((((((((((((((.......................))))))))))))))).).))))))))))))))))).
+>cel-mir-4932 MI0017718 Caenorhabditis elegans miR-4932 stem-loop
+GUGCAAAAAGGGAUCUGGGAAGGGGGAUCAACGAAAAGGGGAUCUGGCACAGUGCCAGAUCUCCUUUUCGUGGGGCCUCAUAAAUUUUUGAUCUUUUUUAAAUUGUUGAC
+.....((((((((((.(((((.((((..(.((((((((((((((((((.....)))))))))))))))))).)..)))).....)))))))))))))))...........
+>cel-mir-4933 MI0017719 Caenorhabditis elegans miR-4933 stem-loop
+CUCGUGAGCUUGCCAGAAUCGGUGGCAGUGACCUAUUCUGGCCAGAUCUAGCCAGGUUGGGUCGCUGCCACCAAUUCUGGCCAGAUCUAGCCAGGUUGGGACGCUGCCAC
+...(((.((..((((((((.(((((((((((((((..(((((........)))))..))))))))))))))).))))))))..(.((((((...)))))).)...)))))
+>cel-mir-4934 MI0017720 Caenorhabditis elegans miR-4934 stem-loop
+AUUUAAUUCUAAAAAUCAUUUCUGACUGUUGGCCUCUUCAUUUUCGAAUUCCGCGGCAAAAAAGCAGUGCCGAGCUUCUGUCUAGAUGUCUGCGUCAUUUUGUGAUAGCU
+..............(((((...((((.((.(((.(((..((....(((.....(((((.........)))))...))).))..))).))).))))))....)))))....
+>cel-mir-4935 MI0017721 Caenorhabditis elegans miR-4935 stem-loop
+AGUUACGGCGGGUUUUGCAAGCGCCGGCGAGAGAGGUGGAGAGCGCAGAGAAAGCAGUCGCGCUAGCUGUCGGCGCCCUCCACUCUCUCGCCGCGGCUGACAAAUACGCU
+......((((...((((..(((.((((((((((((.(((((.((((...((.(((((.....)).))).)).)))).)))))))))))))))).))))..))))..))))
+>cel-mir-4936 MI0017722 Caenorhabditis elegans miR-4936 stem-loop
+UAUACGCUAUCGAGAUAAUAAGCAUUUAUGGCUACAAUGUAUACGCCUCUCAAAAUUACGUUCACAUUGCUUUGUGGCUUUGCUGGUAACUCUUUUGCCUUUCACGCAAC
+...........(((.((...((((.....((((((((.(((.(((.............)))......))).)))))))).))))..)).)))..((((.......)))).
+>cel-mir-4937 MI0017723 Caenorhabditis elegans miR-4937 stem-loop
+GAUUUUGGGCGCAGUGGCGCAACUGGGUAGAGGUUGGGCGGUGGAUCGCAGGUCCGAGGUUCGAACCCCCGGGGUGGUAAAUAUUUUUGUUUUGAUGAUAUUGACUUUAU
+........((((....))))..(((((....((((((((..(((((.....)))))..)))).)))))))))...(((.((((((.((.....)).)))))).)))....
+>cel-mir-4938 MI0017724 Caenorhabditis elegans miR-4938 stem-loop
+UCCGUAUUGCUGCCACAUUGACAUCAUCAUGCAUCAUCAGCAUGCUGCGCAGAGCCUGAAAUGAUAAAUGUUGUUGUCAAAAUAUUAUUGCAACCGACGAAUAAUUUAAA
+..(((.((((.......((((((.((.(((..(((((...((.(((......))).))..)))))..))).)).)))))).........))))...)))...........
+>cel-mir-5545 MI0019066 Caenorhabditis elegans miR-5545 stem-loop
+GGUGAGGGGUGUGUCCCAUGCCGGUUUGAUCUACAAAAAAUGCGGGAGCAUAGAAAAAUCCCGCACUUUUGUAGAUCAAACCGACAUGGGACAACCUGACACUGUGUUCA
+((((..((((.(((((((((.(((((((((((((((((..(((((((...........))))))).))))))))))))))))).)))))))))))))..)))).......
+>cel-mir-5546 MI0019067 Caenorhabditis elegans miR-5546 stem-loop
+AGCUAAAUAAUUGCAUUUUCGCAACCCUUUCGCCAAUUUUUUUCGUGAAAAAACGUGUAAUUUUACGAAAAAUUGCGCGCAUGGGUUGCGAAAACGCAUUAACCGCACGG
+.((........(((.((((((((((((...((((((((((..((((((((..........))))))))))))))).)))...)))))))))))).)))......))....
+>cel-mir-5547 MI0019068 Caenorhabditis elegans miR-5547 stem-loop
+CUGCGGAAUUUUGUUGAUUGAGACAACUUUUAGACCAAUAGGCAUCCAAAAAUGAUCAAAAUUGGAUGCCUAUCGGCCUAAAAGUUGUCUCAAUCAACGAAUGAGAUAAA
+.........((((((((((((((((((((((((.((.((((((((((((............)))))))))))).)).)))))))))))))))))))))))).........
+>cel-mir-5548 MI0019069 Caenorhabditis elegans miR-5548 stem-loop
+GUUCCAUCCUUGACCGCCGAACUGGUGUUUCAUAAAGCCUUCUCACUCUCCACGGCGGUAGGCAAGCCCUGUGGAUUGGAGAAGGAGAAGCCCCACAGGAUGUCCCGAAA
+....((((((((..((((.....))))..........(((((((.(..(((((((.(((......))))))))))..))))))))........)).))))))........
+>cel-mir-5549 MI0019070 Caenorhabditis elegans miR-5549 stem-loop
+ACGAGAGGGGGAGAGAUUUUUUUGGGCCUUGUGAAAUUAACGUGAGUUUUCUGGUCAUCUGACUAAUCAUGUUGGUUUUUUGUUGGUUUAUUUUGUUUUUAUCUUUGUUU
+..((.((((..((((((.....((((((....(((((((((((((......(((((....))))).))))))))))))).....))))))....))))))..)))).)).
+>cel-mir-5550 MI0019071 Caenorhabditis elegans miR-5550 stem-loop
+UGACACUCCACCGUUUCUAAACCCCGCCCAAGAUUUCAUUUGCACUGAAAUGUGUCGGCCGCAGUGCAAAUGAAAUCGUGGGCGGGUCUCAGAAACAGCGGAGUGUCGUUG
+.((((((((.(.((((((.(..((((((((.((((((((((((((((....((....))..)))))))))))))))).))))))))..).)))))).).))))))))....
+>cel-mir-5551 MI0019072 Caenorhabditis elegans miR-5551 stem-loop
+UUAAUUAUUUUUGGAGUGGAGCUGUAAAUGGUUGGAAUCUGGUAUAAUGGCUUCGAGACUUUUUAUACCAAUUUCUUACCAUUAGCAUCUACACUUUCAAAUCUAAAUC
+....(((..(((((((((.((.(((.((((((.((((..((((((((.(((.....).))..))))))))..)))).)))))).))).)).))).))))))..)))...
+>cel-mir-5552 MI0019073 Caenorhabditis elegans miR-5552 stem-loop
+GGUCUGCUAAUUAUUUUUGUAGUUUGUAGUCUAGCAGACCAAUACCAAAAGCUUUGGGUCUGCCAGACUACAAACCACACAAAUCACUAGCAGACCCUUUUUUUUUUUUU
+(((((((((.(.((((.(((.(((((((((((.(((((((.....(....).....))))))).))))))))))).))).)))).).)))))))))..............
+>cel-mir-5553 MI0019074 Caenorhabditis elegans miR-5553 stem-loop
+AAGGGUCGCAUUUAUACGAAAUGGUCUUGCCACGCGCCAUCCAUUGAUUUUUAAAUCUUUUUUAAUCAAUGGGUAGCACGUGGCAAGACUAUUUUGCAUAAACAAACCCU
+.(((((....(((((.((((((((((((((((((.((.(((((((((((...(((....))).))))))))))).)).)))))))))))))))))).)))))...)))))
+>cel-mir-5592-1 MI0019153 Caenorhabditis elegans miR-5592-1 stem-loop
+CGGCCCUUACCGUUUAAUACAUGUUCCCGGUCGAUGCACCAUGUAUUAAACGGUAAGGGCCGGC
+(((((((((((((((((((((((....((.....))...)))))))))))))))))))))))..
+>cel-mir-5592-2 MI0019154 Caenorhabditis elegans miR-5592-2 stem-loop
+CGGCCCUUACCGUUUAAUACAUGGUGCAUCGACCGGGAACAUGUAUUAAACGGUAAGGGCCGGC
+(((((((((((((((((((((((...(.((....)))..)))))))))))))))))))))))..
+>cel-mir-5593-1 MI0019155 Caenorhabditis elegans miR-5593-1 stem-loop
+GAUGGCUGGAAUAUCGGUAUUCUCGGCUGAAACAUGCACUAAAUACCGCAUUCCAACCAACAA
+..(((.((((((..(((((((....((........))....))))))).)))))).)))....
+>cel-mir-5593-2 MI0019156 Caenorhabditis elegans miR-5593-2 stem-loop
+GAUGGCUGGAAUAUCGGUAUUCUCGGCUGAAACAUGCACUAAAUACCGCAUUCCAACCAACAA
+..(((.((((((..(((((((....((........))....))))))).)))))).)))....
+>cel-mir-5594 MI0019157 Caenorhabditis elegans miR-5594 stem-loop
+AAGAGUACUGUAGUUUCAAAAUUUCAUUGAUUAAAAUUUUGAACUACAGUACUCUUCA
+(((((((((((((((.((((((((.........)))))))))))))))))))))))..
+>cel-mir-356b MI0019158 Caenorhabditis elegans miR-356b stem-loop
+UGGUGAGACACGUCGUAACGAAUCCGCUGAAAUUUACAUUGAUGAUUUGUUCGCGUUGCUCAACCACA
+(((((((..(((.((.((((((((..(.............)..)))))))))))))..))).))))..
+>cel-mir-5595 MI0019159 Caenorhabditis elegans miR-5595 stem-loop
+UCUCUUUUUUCUCGCAUGCCAUCUCAAAACAUCGAUGGCGAGAGAGCGUGUGGAGAAGAGAGACG
+(((((((((((.(((((((..((((....((....))..))))..))))))))))))))))))..

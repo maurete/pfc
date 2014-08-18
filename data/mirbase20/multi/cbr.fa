@@ -1,0 +1,531 @@
+>cbr-let-7 MI0000491 Caenorhabditis briggsae let-7 stem-loop
+ACUGGGGUACGGUGAGGUAGUAGGUUGUAUAGUUUAGAAUAUUACUCUCGGUGAACUAUGCAAGUUUCUACCUCACCGAAUACCAGG
+.((((..(.(((((((((((.((.((((((((((((((.......)))....))))))))))).)).))))))))))).)..)))).
+>cbr-lin-4 MI0000492 Caenorhabditis briggsae lin-4 stem-loop
+AUCAGAUGCUUUCGGCCUGUUCCCUGAGACCUCAAGUGUGAGCGUUCUGAACAUGCUUCACGCCUGGGCUCUCCGGGUACCAGGACGGUCUGAG
+.((((((.....((.((((..(((.((((.((((.((((((((((.......)))).)))))).)))).)))).)))...)))).)))))))).
+>cbr-mir-1 MI0000493 Caenorhabditis briggsae miR-1 stem-loop
+UGCUGUGCCGAGCUGCAUACUUCCUUACAUGCCCAUACUGUACUGUGAAUGGAUAUGGAAUGUAAAGAAGUAUGUAGAACGGAAUCUAACGGCG
+.(((((.(((..(((((((((((.((((((..(((((((((.......)))).))))).)))))).)))))))))))..)))......))))).
+>cbr-mir-34 MI0000494 Caenorhabditis briggsae miR-34 stem-loop
+AAGCACUCAUGGUCGUGAGGCAGUGUGGUUAGCUGGUUGCAUACACAGGUUGACAACGGCUACCUUCACUGCCACCCCGAACAUGUAGUCCUC
+.((.(((((((.(((.(.(((((((.(((.(((((.(((((.((....)))).)))))))))))..))))))).)..))).)))).))).)).
+>cbr-mir-42 MI0000495 Caenorhabditis briggsae miR-42 stem-loop
+UAACCCUUGUCGGACCUUUGUGGGUGUUCGCCUUUUCGGUGAAGUUACUGAAUGCUUCUUCACCGGGUUAACAUCUACAGAGGUCCUAAAGGGUUC
+.(((((((...(((((((((((((((((.(((....((((((((...(.....)...))))))))))).)))))))))))))))))..))))))).
+>cbr-mir-43 MI0000496 Caenorhabditis briggsae miR-43 stem-loop
+AGGCGAUUCUGCCCGUGACAUCAAGAUGCUUGUGAUUAUGCGAAAAUGUUGGGACAUAUCACAGUUUACUUGCUGUCGCAGGCGGAUUAUUGCUA
+.((((((((((((.((((((.((((..(((.(((((.((((...........).)))))))))))...)))).)))))).))))))..)))))).
+>cbr-mir-44 MI0000497 Caenorhabditis briggsae miR-44 stem-loop
+GAGAAGGGCCGAUCUGGAUGUGCUCGUUAGUCAUAGACGAAUCACACUUGAAAGGUCAUAUGACUAGAGACACAUUCAGCUUGGCCUGGAUCUCA
+((((.(((((((.((((((((((((..(((((((((((...(((....)))...))).))))))))))).))))))))).)))))))...)))).
+>cbr-mir-45-1 MI0000498 Caenorhabditis briggsae miR-45-1 stem-loop
+AGUGCCACGCUGGAUGUGCUCGUUAGUCAUAGUAACCUCAUCAAUUCAGGCUUAUGACUAGAGACACAUUCAGCUUGGCGCC
+.((((((.(((((((((((((..(((((((((...(((.(.....).))).)))))))))))).)))))))))).)))))).
+>cbr-mir-45-2 MI0000499 Caenorhabditis briggsae miR-45-2 stem-loop
+AGUGCCACGCUGGAUGUGUUCGUUAGUCAUAGUAACCUCAUCAAUUCAGGCUUAUGACUAGAGACACAUUCAGCUUGGCGCC
+.((((((.((((((((((((..((((((((((...(((.(.....).))).)))))))))).)))))))))))).)))))).
+>cbr-mir-46 MI0000500 Caenorhabditis briggsae miR-46 stem-loop
+GAGAUACAAGUGAAGCUGAAGAGAGCCGUCUAUUGACAGUUCGCUUGUUUCAUGUGCUGUCAUGGAGUCGCUCUCUUCAGAUGAUCUGAAUCUA
+.((((.((..(.(..(((((((((((..(((((.((((((..((.........)))))))))))))...))))))))))).).)..)).)))).
+>cbr-mir-47 MI0000501 Caenorhabditis briggsae miR-47 stem-loop
+UAGCUGAGGAAGACUGAAGGGAGCUUUCUUUUGACAGUUCGAUUUCGAACUCUUACUGUCAUGGAGGCGCUCUCUUCAGGUGAACUCUGGCUC
+.(((((((.....((((((((((((((((..((((((((((....)))......))))))).))))).))))))))))).....))).)))).
+>cbr-mir-48 MI0000502 Caenorhabditis briggsae miR-48 stem-loop
+AGAACCAUUCGGGAUGUUGAGGUAGGCUCAGUAGAUGCGAGGAGAUCCACCAUUCCUCACAUCGUCUGUCCUAACUCGCCUUCCCUUGUGCUUCA
+.(((.(((..((((.(.((((.((((..(((..((((.((((((........)))))).))))..))).)))).)))).).))))..))).))).
+>cbr-mir-49 MI0000503 Caenorhabditis briggsae miR-49 stem-loop
+ACCGAAACCAUUUGCCAUCCGCAGUUUUUUGUAGUGUGCUCCGCGCCAUCUUAGUGCCCGAAGCACCACGAGAAGCUGCAGAUGGAAGUUUUGGUU
+((((((((......(((((.((((((((((((.(.(((((.((.(((......).)).)).)))))))))))))))))).)))))..)))))))).
+>cbr-mir-50 MI0000504 Caenorhabditis briggsae miR-50 stem-loop
+UUCCACCCACCGGCCGCUGAUAUGUCUGAUAUUCUUGGGUUAUCUGAUAAUGAUUGUUGUAACUCAAGUAUUAGACGUAUCGACGGCCGGCUGGGUUGGAA
+.(((((((((((((((.((((((((((((((..((((((((((..((((.....)))))))))))))))))))))))))))).))))))).)))).)))).
+>cbr-mir-52 MI0000505 Caenorhabditis briggsae miR-52 stem-loop
+UUUCCCGCUCUGACAGUCCACCCGUACAUAUGUUUCCGUGCUUGACAUAGAGCUCAAUCACGAUACAAUGAGCGGGUAGCCGGUCAUCGAGUCGGAAC
+.((((.((((((((.(.(.((((((.(((.(((...((((.((((........)))).))))..)))))).)))))).).).))))..)))).)))).
+>cbr-mir-57 MI0000507 Caenorhabditis briggsae miR-57 stem-loop
+GCUCUGAGUUCGUCUACCCUGUAGAUCGAGCUGUGUGUUCUGAAGUAUCAUACACGAGCUAGACUACUAGGUGAACGAUGGAAUGGAGCA
+(((((...((((((((((..((((.((.((((.(((((..(((....))).))))))))).))))))..))))...))))))..))))).
+>cbr-mir-58 MI0000508 Caenorhabditis briggsae miR-58 stem-loop
+AUCCAUUGCCCUACUAUUCGCAUCUCAUCACUCCAGUAUAUAUAUAUAUAUAUAAGGAUGAGAUCGUUCAGUACGGCAAUGGAA
+.(((((((((.((((...((.((((((((.((...(((((((....))))))).))))))))))))...)))).))))))))).
+>cbr-mir-60 MI0000509 Caenorhabditis briggsae miR-60 stem-loop
+UUCUUGAGCUGGAAAGGUGACAUAAAAUCAUGUCCAAGCACGCGAUAUUAUGCACAUUUUCUAGUCCAAGAC
+.(((((..(((((((((((.(((((.(((.(((......))).))).)))))))).))))))))..))))).
+>cbr-mir-67 MI0000510 Caenorhabditis briggsae miR-67 stem-loop
+UAGAUAUUUCGAUCAACUCAUUCUGCUGGUUGUUAUGCUGACAAUUGAUGAUUAAGCAUCACAACCUCCUAGAAAGAGUAGACCGAUUCUAUCUU
+.(((((..(((.((.((((.(((((..((((((.(((((...............))))).))))))...))))).)))).)).)))...))))).
+>cbr-mir-71 MI0000511 Caenorhabditis briggsae miR-71 stem-loop
+AGCUGAACGAUGAAAGACAUGGGUAGUGAGACGUCGGAGCCUCGUCGUAUCACUAUUCUGUUUUUCGCCGAUCAGUC
+.(((((.((.(((((((((.(((((((((.(((.(((....))).))).)))))))))))))))))).)).))))).
+>cbr-mir-73a MI0000512 Caenorhabditis briggsae miR-73 stem-loop
+CGGUCCCUCAAACAACCGAGCUUCCCCGUCAAGCCACAGCUAUCUCUGACAUUGCUGGCAAGAUGUUGGCAGUUCAGUUGUAUGACGGAGACCA
+.(((((((((.(((((.(((((.((.((((..((((..((.............))))))..))))..)).))))).))))).))).)).)))).
+>cbr-mir-74a MI0000513 Caenorhabditis briggsae miR-74 stem-loop
+CGCACUUUUGGGCUUCCAUAUCUUUCCCAGCUCCUCUCAUUUACUAUGGAUGCUGGCAAGAAAUGGCAGUCUAGAUGUGCA
+.((((.((((((((.((((.((((..((((((((.............))).))))).)))).)))).)))))))).)))).
+>cbr-mir-75 MI0000514 Caenorhabditis briggsae miR-75 stem-loop
+UGCGAGACCGAAUUGCAGUCGGUUGCAAGCUUCAAUACAGACAAUGGUUCUUGAUAUUAAAGCUACCAACCGCCUUCAAAUCGUGCAUCGCG
+.((((..((((.(((.((.((((((..(((((.(((((((((....)))..)).)))).)))))..)))))).)).))).))).)..)))).
+>cbr-mir-77-1 MI0000515 Caenorhabditis briggsae miR-77-1 stem-loop
+GAGCUGUGAAUUUGGAUAGCUGUGCUCUGAGGAAAUAACAAUAGUCACACCCCAUGUCAUUUCAUCAGGCCAUAGCUGUCCAAAUUUCUCGGUUCG
+((((((.(((((((((((((((((..((((.(((((.(((..............))).))))).))))..)))))))))))))))))..)))))).
+>cbr-mir-79 MI0000517 Caenorhabditis briggsae miR-79 stem-loop
+AGAACAUUCUCCGAUCUUUGGUGAUUCAGCUUAAAUGAUAGAAUUCAGACGUCUUCAUAAAGCUAGGUUACCAAAGCUCGGCGUUCCAGUUCG
+.((((...(.((((.((((((((((..(((((..((((.(((.........))))))).)))))..)))))))))).)))).).....)))).
+>cbr-mir-80 MI0000518 Caenorhabditis briggsae miR-80 stem-loop
+UGGACACUCUUUCGCUCAGCUUUCGACAUGAUUCUAAACAAUACGCUGUCGCAAUGUUGUUGAGAUCAUUAGUUGAAAGCCGAACGAUUCGAGAUAUCCA
+.(((..(((..(((.((.((((((((((((((.((.(((((((.((....))..))))))).)))))))..))))))))).)).)))...)))...))).
+>cbr-mir-81 MI0000519 Caenorhabditis briggsae miR-81 stem-loop
+CGUGAUUAACGGUCGGUUUUCACCUUGAUCUGAGAGCAAUAACCAGAAUGCUUAUCUGAGAUCAUCGUGAAAGCUAGUUGUUACUUCACU
+.((((.((((((..(((((((((..((((((.((((((..........)))...))).))))))..)))))))))..))))))..)))).
+>cbr-mir-82 MI0000520 Caenorhabditis briggsae miR-82 stem-loop
+AAGUUCUUCUAGCGACAGGUUUUCGCCGUGAUCUGCAGAGUUCCAUGAAGAAAACAUCUGAGAUCAUCGUGAAAGCCAGUUGCUUAAGAGGACUC
+.(((((((..((((((.(((((((((.(((((((.((((.(((......)))....))))))))))).))))))))).))))))...))))))).
+>cbr-mir-85 MI0000521 Caenorhabditis briggsae miR-85 stem-loop
+CCCCGGUGCCCGCUUUUUCAGUAGUUUGAAACCAGAGAUGAUAGUUGGUUACAAAGUAUUUGAAAAGGCGUGCACUGGGU
+.((((((((.(((((((((((((.((((.((((((.........)))))).)))).)).))))))))))).)))))))).
+>cbr-mir-86 MI0000522 Caenorhabditis briggsae miR-86 stem-loop
+CGAGUCAAUGCCGUUUAAGUGAAUGCUUUGCCACAGUCUUCGAUCAUGUCACAUGAAGCCUGGGCUUAGAUUCACUUAGGCCGGCGUUCCUUGACUCA
+.(((((((((((((((((((((((.((..(((.(((.(((((...........))))).))))))..))))))))))))).))))))....)))))).
+>cbr-mir-87 MI0000523 Caenorhabditis briggsae miR-87 stem-loop
+GGUUGUGCCCACCCGGCCGCCUGAUACUUUCGUCUCAACCUCGCUGUCAGAAUGUCGUAGGUGAGCAAAGUUUCAGGUGUGCCGGAACACACCCA
+((.((((.....((((((((((((.(((((.(.((((.((((((.........).)).))))))))))))).))))))).)))))..)))).)).
+>cbr-mir-90a MI0000524 Caenorhabditis briggsae miR-90 stem-loop
+CGCACUCAUUUCAAGCGGCUUUCAACGACUAUAUCAACCAAAUCAAGCUAGAUACGUUGAUAUGUUGUUUGAAUGCCCCUUGAGAUUUUGGAGUGUU
+.((((((((((((((.(((.(((((((((.((((((((...(((......)))..)))))))))))).))))).))).))))))))....)))))).
+>cbr-mir-124 MI0000525 Caenorhabditis briggsae miR-124 stem-loop
+UUUCCAGUCGUCAUAUGGCGUCCACCUGAGUGACUUUAGUGGACAUGUAUAGUUUCCAACUAAGGCACGCGGUGAAUGCCACGUGGCAAUUCUGGGAU
+.((((((..((((..((((((.((((...(((.((((((((((.((.....)).))).))))))))))..)))).))))))..))))....)))))).
+>cbr-mir-228 MI0000526 Caenorhabditis briggsae miR-228 stem-loop
+AUCCCACCCUGUUCGCAAUGGCACUGCAUGAAUUCACGGAUGCAAAGCGACAGACCGCGGAUCAUGCGGUACCAUAGCUGACGGUGGUGAGAU
+(((.(((((((((.((.((((.(((((((((.(((.(((.((........))..))).)))))))))))).)))).)).))))).)))).)))
+>cbr-mir-230 MI0000527 Caenorhabditis briggsae miR-230 stem-loop
+AAAAUGCCUUACCGAUACUUGGUCGACAAUUUAAUAGUAUCUGAUUAAUUGAUGGAUAGUAUUAGUUGUGCGACCAGGAAAUGGUAUGAGCAUUUC
+.(((((((.(((((...((((((((((((((.((((.(((((.(((....)))))))).)))))))))).))))))))...))))).).)))))).
+>cbr-mir-232-1 MI0000528 Caenorhabditis briggsae miR-232-1 stem-loop
+AUUCAAGAUUUCGGAUCUCCGUAGUUUUGACCAUUUUAUCCAACCUAAUAAUGUGAUAAAUGCAUCUUAACUGCGGUGAUCUGGAUUUUGUGAAC
+.(((((((.((((((((.((((((((..((....((((((((.........)).))))))....))..)))))))).)))))))).))).)))).
+>cbr-mir-233 MI0000530 Caenorhabditis briggsae miR-233 stem-loop
+AAGCAUUUUUCUGUCCCGCGCAUCCCUUUGUUCCAAUAUUCAAACCAGUAGAAAGAUUAUUGAGCAAUGCGCAUGUGCGGGACAGAUUGAAUAGCUG
+.(((((((.((((((((((((((.((.((((((.((((.((.............)).)))))))))).).).))))))))))))))..)))).))).
+>cbr-mir-234 MI0000531 Caenorhabditis briggsae miR-234 stem-loop
+GACUCUAGCAAAGAUCAAACGGUAUUCCUGAGUGAAUAAUAAAAAUGAGUCCAUUCUAUUAUUGCUCGAGAAUACCCUUUGACAAGCUGAAAAGUG
+.(((.((((...(.(((((.(((((((.(((((.(((((((..((((....)))).)))))))))))).))))))).))))))..))))...))).
+>cbr-mir-236 MI0000532 Caenorhabditis briggsae miR-236 stem-loop
+AAGUGACCAAUGUCCAGCGUCUUACCUGUUCAAUAUUUAGACUGACCAAACCCAUAGCUCUAAUACUGUCAGGUAAUGACGCUGGAUAGUCUUGUCAUUG
+.((((((...((((((((((((((((((..((.((((.((((((..........))).))))))).)).))))))).))))))))))).....)))))).
+>cbr-mir-241 MI0000533 Caenorhabditis briggsae miR-241 stem-loop
+ACGGUGUCAAAGCUGAGGUAGGUGUGAGAAAUGACGAAAGGCUCUUAAUCGUUUCAUUGUCUCGCAGCUGCUUCAACUGUGAUUUACCGA
+.((((((((.((.((((((((.(((((((((((((((...........)))..))))).))))))).)))))))).)).))))..)))).
+>cbr-mir-244 MI0000534 Caenorhabditis briggsae miR-244 stem-loop
+ACCCAAAUUUCUCGAUUUCUUUGGUUGUACAAAGUGGUAUGGCUCUCUUGCUCAUACCGCUUUACAGCUAAAGGAAUCGAUUGAUUUUGGA
+.((.(((((..((((((((((((((((((..((((((((((((......)).))))))))))))))))))))))))))))..))))).)).
+>cbr-mir-245 MI0000535 Caenorhabditis briggsae miR-245 stem-loop
+UCAAUGUCGAAGAGCUGCUUGCAAGGUACCUAAUUGUUUGACUCUAUUCUCAAUUGGUCCCCUCCAAGUAGCUCUAUUGCAUUGU
+.(((((.((((((((((((((...((.(((.(((((...((......)).)))))))).))...))))))))))).)))))))).
+>cbr-mir-248 MI0000536 Caenorhabditis briggsae miR-248 stem-loop
+UGCAAACUGAUAUUCACGAUAAGCGCUAUCCUUCCGUUGUAUUCAAGCUUGGUUGUCGAGUACACGUGCUCGGAUAACGCUCAUCGAGUCUGAUCGGUUAUGUU
+.((((((((((...(.((((.((((.(((((..((((.((((((..((......)).))))))))).)...))))).)))).)))).)....))))))).))).
+>cbr-mir-250 MI0000537 Caenorhabditis briggsae miR-250 stem-loop
+UCUUCGGACCACGCCUUCAGUUGCCUCGUGAUCCGCCGAAUCUGUAAUGGACGAAUCACAGUCAACUGUUGGCACGGUCCUUGAAGU
+.(((((((((..(((..((((((.((.(((((.(((((.........))).)).))))))).))))))..)))..)))))..)))).
+>cbr-mir-251 MI0000538 Caenorhabditis briggsae miR-251 stem-loop
+CCCAAAUGACAUCUCGUUAAGUAGUGGUGCCGCUCUUAUUAGAAUUAUCAAGUAAUAAGAGUUGUUCGCUACUUAACGAGAGGAAAUUUGGA
+.((((((....((((((((((((((((.((.((((((((((...........)))))))))).))))))))))))))))))....)))))).
+>cbr-mir-252 MI0000539 Caenorhabditis briggsae miR-252 stem-loop
+AGGUCUCUCCCAGUUAUAAGUAGUAGUGCCGCAGGUAACCGCUUCCAGAAAAUUGGUUUACCUACUGCCUUCUGCUUAGAAUUGGGAUUUUGAUGACCG
+.((((((((((((((.(((((((.((.((.(.(((((((((.((......)).))).)))))).).)))).))))))).))))))))....)).)))).
+>cbr-mir-259 MI0000540 Caenorhabditis briggsae miR-259 stem-loop
+AGUCAUCGAAACGAGUAAAUCUCAUCCUAAUCUGGUUGCAUUUUCAAUACUUUUUGCUACCGAUUUGGUUUGGGAUUGGCUUGUCUAGUAUUGAC
+.((((.(...((((((.(((((((..((((..((((.(((..............))).))))..))))..))))))).))))))...)...))))
+>cbr-mir-268 MI0000541 Caenorhabditis briggsae miR-268 stem-loop
+UGAAGCGGCAAGAAUUAGAAGCAGUUUUGGUGUCAGACACACUCACUGACUCACUGCUUCUUGUUUUUCUUCUUCUUCU
+.((((.((.((((((.(((((((((....(.(((((.........))))).)))))))))).)))))))).))))....
+>cbr-mir-72 MI0000751 Caenorhabditis briggsae miR-72 stem-loop
+UGGACUCGCCCGAGCUAGGCAGAUGUUGGCAUAGCUGAAUGCAAAUCAGAAAUCGAAAUUCGAAAAGUUUGAAUUUCGCGCGCUCAGCUUCGCCACAUCGUGCCAUGCGUAGGCUUGAGACCA
+.((.((((((...((..(((((((((.(((..((((((.(((.....(....)((((((((((.....)))))))))).))).))))))..)))))))).))))..))...)))..))).)).
+>cbr-lsy-6 MI0000818 Caenorhabditis briggsae lsy-6 stem-loop
+CCACAGAAUGCGUCCAGUAUCAAAAUCACAUCAAAGAGAAUACGGUGGAUUUUGUAUGAGACGCAUUCCGUGGC
+((((.(((((((((..(((.(((((((.((((...........))))))))))))))..))))))))).)))).
+>cbr-mir-353 MI0001390 Caenorhabditis briggsae miR-353 stem-loop
+GAAGAUAUGCAAAAUAAAAAGCAUGGGCACAAGUAUCAUGUGUUGGUAUCAUUGUUUCAAGUUAUUUGUUGCUAUGGUAUCGAUAAGCAUGCUACGUGUGAAGUGCGACAA
+....................((((...((((.(((.((((((((((((((((.((..((((...))))..)).)))))))))))..))))).))).))))..)))).....
+>cbr-mir-64a MI0001392 Caenorhabditis briggsae miR-64 stem-loop
+UCAAGAAUCCUCGGCCUCGCCGACCAUGACACUGAAGCGUGUACGGAUGGAAAGUUGAAGCCUUCCGUUCCGCUAGUGUGCCAUGCAACGGCGAGUGCCUUGGCACUUUG
+.((((...((..((((((((((..((((.(((...((((.(.(((((.((..........)).))))).)))))...))).))))...))))))).)))..))...))))
+>cbr-mir-231 MI0001394 Caenorhabditis briggsae miR-231 stem-loop
+CUAGCACCUCAAUGUUGUUCUGUCUGUUUCCAUAGCUUAUAUUGUAAGGUACUUAUAAGCUCGUGAACAACAGGCAGGACAACUGGAAGUGGUGUUUUUUUUCA
+..((((((((...(((((((((((((((..(((((((((((..(((...))).)))))))).)))...)))))))))))))))..))...))))))........
+>cbr-mir-356 MI0001395 Caenorhabditis briggsae miR-356 stem-loop
+CCUCAUCCAACCAAUGUGGAUGAGCAACGCGAACAAAUCCUCUUAUAAGAGAUUUGCCACGCCGCCGCUCACCACACUGGCUUUCAGAAGGUGCCAGGAAUCAGAAGACGAG
+.(((.((.......(((((.(((((...(((..((((((.(((....)))))))))...)))....))))))))))(((((...........))))).........)).)))
+>cbr-mir-83 MI0001396 Caenorhabditis briggsae miR-83 stem-loop
+GCAGAAGGCACCACUCGAAAAAACUGAGUUUAUGUGUGUACUUGACGGCGAUCAGAGCAACGAUCUAGCACCAUAUAAAUUCAGUGUUUUCGUGGACAGAGAGCCAAGUUU
+......(((.((.(.((((((.((((((((((((((.((.((.((((((.......))..)).)).)).)))))))))))))))).)))))).)....).).)))......
+>cbr-mir-246 MI0001397 Caenorhabditis briggsae miR-246 stem-loop
+GAAAAGUCCUAGUGAUAAAACAGCACCUGGCCAAUAUUAUGUAAUAUCAGAAGCAAAUUGAUUAUUACAUGUAUUGGGUAGGAGCUGUUCAAGCUAUGGUUAAAUGGGU
+.......((((((.....((((((.((((.(((((((.((((((((((((.......)))).))))))))))))))).)))).))))))...)))).))..........
+>cbr-mir-51 MI0001398 Caenorhabditis briggsae miR-51 stem-loop
+CGUCAUCGAAUCUCAACGUCAAACGGAUCCGAAGACGUCCAUCUACCCGUAGCUCCUUGCCAUGUUACUGGUAAAAGUGAACAUGGAAGUUGGUCCGGGUACAUGGCCAGUAGGAGUUAUGAAGACGUGUUGAGGUUUCAAGAUU
+.(((...(((((((((((((....((((........)))).......((((((((((.(((((((..((((...((.(.........).))...))))..)))))))....))))))))))..)))))..))))))))...))).
+>cbr-mir-357-1 MI0001400 Caenorhabditis briggsae miR-357-1 stem-loop
+CUACAUCAGAAGAGACAGCGAAUCCCGGCAAUCACCGUGCAUUUUCAUCUACCAGAGGCACUAAUGAAAAUGCCAGUCAUUGACGGAAUUCGUUGAAUCUGGAAUUAAAGCAU
+.....((...(((..((((((((.(((.((((.((.(.((((((((((...((...)).....))))))))))).)).)))).))).))))))))..))).))..........
+>cbr-mir-253 MI0001401 Caenorhabditis briggsae miR-253 stem-loop
+AACAUUUUUCGAGUUUCAGUCCUUCUCACACACCUCACUAACACUAACUACAGAUUUCUAGAUGUUAGUAGGCGUUGUGGGAAGGGCGGAGAUGACGAAUACUUUGUGCA
+.(((...((((.(((((.(((((((((((((.(((.((((((((((............))).)))))))))).).)))))))))))).)))))..)))).....)))...
+>cbr-mir-70 MI0001402 Caenorhabditis briggsae miR-70 stem-loop
+AAAACGGAUGUAUCUCUAGGAACAGCCAUCAUGUAAGACAUUUCUAACUGAAAGAUGUAAUACGUGAUUGGUGUUCCCAGAGUUUACCGUUUCCUUCUUUUAUUUUUCCAAA
+.((((((.((...((((.((((((.((((((((((..(((((((.....))..)))))..))))))).))))))))).))))..))))))))....................
+>cbr-mir-358 MI0001403 Caenorhabditis briggsae miR-358 stem-loop
+ACUCCCCAUUCGGAUUGAUACCCGACUUCCGGAUACCAAAUGUCAUAUCCAACUCGUUUCGUCAAUUGGUAUCCUUAGUCGUGGUCUCAAUCUGUACACGGCGAGAGUGUUGU
+.(((((....((((((((.((((((((...(((((((((.((.(................).)).)))))))))..))))).))).)))))))).....)).)))........
+>cbr-mir-61 MI0001404 Caenorhabditis briggsae miR-61 stem-loop
+UACUUGAUCGGUGUCUCGAGCCGAGUUAAGGCUAAUAGUCCUUCCGGUGUAUGGUAAUGACUAGAACCUUGACUCUGCUCGAGUUACUGAGCUCUUUGACCCCGCCC
+.......((((((.(((((((.(((((((((....(((((.(((((.....))).)).)))))...))))))))).))))))).)))))).................
+>cbr-mir-360 MI0001405 Caenorhabditis briggsae miR-360 stem-loop
+UUCCAUAAAAAAGCGCCUAGGGUUUUGUGACCGUUGUUACGGUCAAUUCAUGUCUGACACAAUGACCGUAAUCCCGUUCACAACACCUUGUGUGGCUUGAAUAAUGAAAUU
+...(((....((((((.((((((.((((((.((..((((((((((..(((....))).....))))))))))..)).)))))).)))))).)).)))).....))).....
+>cbr-mir-239a MI0001406 Caenorhabditis briggsae miR-239a stem-loop
+GAGAAUGACGAUCCAAGUUUAUGCGAUUUUUGUACUACAAUUAGGUACUGGACACCAGCAGCGAGUGUAUCCAGAAUCUAUACUAGUACAAAAAUAGCUAACAGGAUUAAGAU
+.........(((((..(((...((.((((((((((((....(((((.(((((((((......).)))..))))).)))))...)))))))))))).)).))).))))).....
+>cbr-mir-249 MI0001407 Caenorhabditis briggsae miR-249 stem-loop
+AUUUGUUAUUUUGUGCGCCCUCAAUGCUACUAGCAACGCUCAAAAAUCACUGUACGACAAAUGACUAUAUUUUGUCACAGGAUUUUUGAGUGUUGCUAGUCGGAGAAGG
+..................(((...(.(.((((((((((((((((((((.((((..((((((.........)))))))))))))))))))))))))))))).).)..)))
+>cbr-mir-240 MI0001408 Caenorhabditis briggsae miR-240 stem-loop
+CGCUGUCUUUAUUUUGAAACUGUUUUCAAAUCGAGAAUUUCGAGGCCUGAAUGCAAGAACCGUUUUGAGCAUACUGGCCUCCAAAUUUUCGCUUUGAAUUUUAGUUACGCGUG
+(((..((........))(((((..((((((.(((((((((.((((((.(.((((..(((....)))..)))).).)))))).))))))))).))))))...)))))..)))..
+>cbr-mir-254 MI0001409 Caenorhabditis briggsae miR-254 stem-loop
+CUCCACUCUAUGCGGGUUGCCGUAUACAGAAGCAUCGAUUUUCACACGCCAUGAUGCGCCUGUGCAAAUCUUUUGCAACUGUAUACGGCGAUUUAGCAGACCAUAUUG
+..........(((((((((((((((((((..(((..(((((.((((.(((.....).)).)))).)))))...)))..)))))))))))))))).)))..........
+>cbr-mir-239b MI0001410 Caenorhabditis briggsae miR-239b stem-loop
+UAGGACAGACAUGCAAUUUUUGUACUGCACAAAAGUACUGACUAUUUCUCAGCGCUUUUGUCCAGUGCAAGAAUGGCAAGAGCUGGUCCAUUUUUUUAGGGAUUAAACAAUU
+..((((((...(((.((((((((((((.(((((((..((((.......))))..))))))).)))))))))))).)))....)).)))).......................
+>cbr-mir-62 MI0001411 Caenorhabditis briggsae miR-62 stem-loop
+CCCUUGCAACUCGGCUAUUAUAAGGUGGGUUAGAUCCCAUAUCCUUCCGCUUGAUGGAAAUGAUAUGUAAUCUAGCUUACAGGUCUCUCAACAUCUCCAAGACGGUGCUA
+.....(((................(((((((((((..((((((.(((((.....)))))..))))))..)))))))))))..((((.............))))..)))..
+>cbr-mir-55 MI0001412 Caenorhabditis briggsae miR-55 stem-loop
+AAAAUUGAAUCGUCACAAAGGGGGACUCGGCGGAAAAUAUGGUGGUAUACUACACAGUGAAUAGAUAUACCCGUAUAUUUUUCUGCCGAGCCCCUCCACGACAUCAAUAAGG
+...(((((.((((......(((((.((((((((((((((((..(((((((((.........))).))))))..)))).)))))))))))))))))..))))..)))))....
+>cbr-mir-84 MI0001413 Caenorhabditis briggsae miR-84 stem-loop
+UUGCUAUAUAUUCAGCCGUACUGUCUGAAAAUAACAUCUGAGGUAGUUUGCAAUGCUGUCGACGUAACUGAAAAGUCAACAUCAUUCCAACUUCCUCGGCUGUUCAAAAGGCUA
+..(((.....(((((.(.....).)))))...((((.((((((.((((.(.((((.(((.(((...........))).))).))))).)))).)))))).)))).....)))..
+>cbr-mir-354 MI0001414 Caenorhabditis briggsae miR-354 stem-loop
+CCAGAGCCGACUAAGUGCCUUGGUGCGGCUACAGACGGGUAUCCGGCUCGAUGUUCAUACACCGCGACUCUUUCCUUUUACCUUGUUUGUUGCUGCUCCUUUUGGUUUU
+..((((((((...........((.(((((.(((((((((((...((.(((.(((....)))...)))......))...)))).))))))).))))).))..))))))))
+>cbr-mir-35a MI0001415 Caenorhabditis briggsae miR-35 stem-loop
+UAGUCCAGUUCUGGACAUUCGCGGGUUUUUUCCUUCGGUGAUAUUCGAAGAAUCGCUAUCACCGGGUGAAAACUUGCAAGUGUCUUGCUUCGACUGGUCAUUUUGCUUGUAU
+..(.((((((..(((((((.((((((((((.((..((((((((..(((....))).)))))))))).)))))))))).)))))))......)))))).).............
+>cbr-mir-36 MI0001416 Caenorhabditis briggsae miR-36 stem-loop
+UGAAACCUUCGGACCAUUGUGAAUUUUUGCUGCGGUGUUACAACUAACAUCUGUAUCACCGGGUGAAAAUUCGCAAUGGUCCGAUGGGUAUUCA
+.((((((((((((((((((((((((((..((.(((((.((((.........)))).)))))))..))))))))))))))))))).)))).))).
+>cbr-mir-38 MI0001418 Caenorhabditis briggsae miR-38 stem-loop
+GAGCCUGGACCUGUACCGGGUUCUCUUUGUGGUGAUAUGACAACUCAUAACCAUUCCUUAUCACCGGGAGACAACCUGGUAUAGGUCCAGCGACUC
+((((((((((((((((((((((((((..((((((((((((....)))))........)))))))..)))))..))))))))))))))))).).)))
+>cbr-mir-39 MI0001419 Caenorhabditis briggsae miR-39 stem-loop
+CAGAGAUGCAGGGAGCCCAACUGGUUCUCACUGCAGUGAUAAGCUAUGUUACAGUCUAUCACCGGGUGAAAAACGGUUAGGCUCUUUAAGCAUCUCUG
+(((((((((((((((((.(((((.((.(((((.(.((((((..((.......))..)))))).)))))).)).))))).))))))))..)))))))))
+>cbr-mir-40 MI0001420 Caenorhabditis briggsae miR-40 stem-loop
+CCCCUGCCCUCACCCCAGCGGGUUUUCAUCGCAGUGAUAUGACGCAUUCAAACCAUUUCUUAUCACCGGGUGUCAAUCAGCUAGGGUGUGGGCGCGGG
+(((.(((((.(((((.(((.((((..((((.(.((((((.((...............)).)))))).)))))..)))).))).))))).))))).)))
+>cbr-mir-41a MI0001421 Caenorhabditis briggsae miR-41 stem-loop
+UGAAAGCAGGUCCCAAAUGCCUUGGUGGUUUUUCGCCGUAGUGAUACAACAUCGAAGCCAUACGAUAUCACCGGGUGAAAAACUCCCAAGGUCGGGACAUUUUUAUUUGU
+((((((...(((((....(((((((..((((((((((...((((((.....(((........)))))))))..))))))))))..))))))).))))).)))))).....
+>cbr-mir-355 MI0001422 Caenorhabditis briggsae miR-355 stem-loop
+CUACUGAUUAUGAUUAGUCAGCAAUCGGAUGGUUUGUUUUAGCCUGAGCUAUGUGUUAUUGCAUAUUCAUAGCUACUUGCUAAAACAUACCAAUCGAGUUGACUGACAU
+.........(((.(((((((((..((((.((((.(((((((((..(((((((((((....)))....))))))).)..))))))))).)))).))))))))))))))))
+>cbr-mir-784 MI0005417 Caenorhabditis briggsae miR-784 stem-loop
+CUACCAAGUGGCACAAUACCUGUAUGUAGAUAGUGAAGUAAUAUUGUUCUACAUACACCUAUUGAGCCACCUGGUGG
+((((((.(((((.(((((..(((((((((((((((......))))).))))))))))..))))).))))).))))))
+>cbr-mir-785 MI0005418 Caenorhabditis briggsae miR-785 stem-loop
+UUGCUCUUUCGCAACCGUCAGCACAGAGUGCUUCGACUUACACAGAAUUCGUAAAACCAACUGAUGUAAGUGAAUACUCUGUGUUGAUGGUGAUGAUGCUGAA
+..((....(((..(((((((((((((((((.(((.((((((((((...............))).)))))))))))))))))))))))))))..))).))....
+>cbr-mir-786 MI0005419 Caenorhabditis briggsae miR-786 stem-loop
+GGGACCCUUCCCAACAAAAUCUCAAAUAGUGGCAUUUACACAAGCAAUGGUAUGUAAUGCCCUGUACGAGAUUUGGUUGGUGAGAAGUCUC
+(((((.((..(((((.(((((((..((((.((((((...(((.((....)).)))))))))))))..))))))).)))))..))..)))))
+>cbr-mir-787 MI0005420 Caenorhabditis briggsae miR-787 stem-loop
+CCUCAAAAUGGAGAAGAAGGAAACUAGACAAUCUUACAUAGCUCAAAAUAAUCUGUAAGCUCGUCUUAGUUUUCCUCUCCUCUCUAGGGA
+(((.....(((((((((.(((((((((((...((((((...............))))))...))).)))))))).)))..))))))))).
+>cbr-mir-788 MI0005421 Caenorhabditis briggsae miR-788 stem-loop
+ACUAACUUUUCCGCUUCUCAAUGCUCCAUUUGCAAAAUCAAAUUGAUUUUCUUGCAAAUGGGAUGAGAACCGGAAACGUUUGA
+.(.(((.((((((.((((((...(.((((((((((((((.....))))...))))))))))).)))))).)))))).))).).
+>cbr-mir-789 MI0005423 Caenorhabditis briggsae miR-789 stem-loop
+UUGCCCGACUUCGGAUUCACGUGGUCAUCCAGGCGGUGCACGUUAAAAGAUAUAAAUGCCCUGCCUGGGUCACCAUGUGAAUAGGGAAUACGGUCA
+.((.(((..(((..(((((((((((.((((((((((.(((..(((.......))).))).)))))))))).)))))))))))..)))...))).))
+>cbr-mir-790-1 MI0005424 Caenorhabditis briggsae miR-790-1 stem-loop
+AAGUCCCUUCCGAUUGCUUGGCACUCGCGAACACCGCGAUCACUUCCAAUAUCGAUCCGCGGAGUUAGCCAGUGUCAACCAAAUGGAUGUUUGAGACUU
+(((((.(.((((.(((.((((((((.((.(((.((((((((............))).))))).))).)).)))))))).))).)))).....).)))))
+>cbr-mir-790-2 MI0005425 Caenorhabditis briggsae miR-790-2 stem-loop
+GACUGCUUGGCACUCGCGAACACCGCGGUCGAAGUUACUCGCGGAGUUAGCCAGUGUCAACCAGAUG
+..(((.((((((((.((.(((.(((((((.......)).))))).))).)).)))))))).)))...
+>cbr-mir-791 MI0005426 Caenorhabditis briggsae miR-791 stem-loop
+GAAUUCUCGAUCACCGUAUCACGUGUGGCCAAAGUCAAAUCCAUUAUUGAACAUUGGCACUCCGCUGAUUUGGUGAUCGACUUUUC
+(((...((((((((((.((((.(((..(((((..((((........))))...)))))....))))))).))))))))))...)))
+>cbr-mir-792 MI0005427 Caenorhabditis briggsae miR-792 stem-loop
+GAAAACAUCGAAAAAUGAGAAAAUUAUAAUUGUUGGAGGUUGUGACACAAAACUAUGAAAUUGAAAUUUUUUCUAUUUUCGGUCCUUUUUC
+(((((.((((((((..(((((((((.(((((..(((...(((.....)))..)))...))))).)))))))))..))))))))...)))))
+>cbr-mir-235a MI0005428 Caenorhabditis briggsae miR-235 stem-loop
+UCCGAUCCGGCCAUGGCCAAUUGCAUAUAUUGCUUUUACUUUUUCAAAAUGCGAAUAUUGCACUUUCCCUGGCCAGAUCUGA
+...((((.(((((.((..((.((((.(((((((((((........)))).)).))))))))).))..))))))).))))...
+>cbr-mir-242 MI0005429 Caenorhabditis briggsae miR-242 stem-loop
+CAAUUCUUCUAAGCCAAAAAAAGAAUAUUGCGUAGGCCUUUGUUUCGAAAGACCCAAAAAUUGUUCGCAGCAAUCUCCUUCGCAAUAUUUUUUGGAAGAGGAAAUG
+...(((((((...(((((....((((((((((.(((...(((((.((((.((........)).)))).)))))...))).))))))))))))))).)))))))...
+>cbr-mir-255 MI0005430 Caenorhabditis briggsae miR-255 stem-loop
+GAUGUCUCUUCAUUAUCAGGUAAGAAAUCUUUGUAGUUUUCCGCGAGUCAACGUGAAAACUGAAGAGAUUUUUUACAGAUUCCGGAGGAGCAUC
+((((.((((((...(((..(((((((((((((.((((((((.(((......))))))))))).))))))))))))).)))....))))))))))
+>cbr-mir-359 MI0005431 Caenorhabditis briggsae miR-359 stem-loop
+GACAAAUCUUCAUCCGUCAGAGCAUAUCUCAGUUACACAACUUCCUAAAUAGUGUCACUGGUUAUCCUCUGUCGAAAUGAAGAUGUC
+((((..(((((((.((.(((((.(((.(.((((.((((.............)))).))))).))).))))).))..)))))))))))
+>cbr-mir-392 MI0005432 Caenorhabditis briggsae miR-392 stem-loop
+AAAUCCUGCAUUUAUCUGACAUCUCACAUUAUUGAGGAUAUAAACUAAAUAAAGAAAUAUCAUCGAUCAUGUGAGCUGUUAGAUUAUCAGAUUU
+.....(((.((..((((((((.(((((((.(((((.(((((...((......))..))))).))))).))))))).)))))))).)))))....
+>cbr-mir-73b MI0010975 Caenorhabditis briggsae miR-73b stem-loop
+CGUCCCAAAAUUCCGAUCCGGCUUCCACAUCGAGCCUCAGCUAGAUCCAUAACUUGCUGGCAAGAUGUUGGCAGUCGCAUUGGAUAAAGGAGAC
+.(((((.....((((((.(((((.(((((((..(((..(((.((........)).))))))..)))).))).))))).))))))....)).)))
+>cbr-mir-238 MI0010976 Caenorhabditis briggsae miR-238 stem-loop
+UUCUUCUUAUCCUCAUGAAUAUGACUGUUUGGGUGUCCUUGGAUGUAAAAAGCUAUAAAUCUGUUAAGAUUGCUUUGUACUCCGAUGCCAUCCACAUGGUCUGACGACAAGAAGA
+.(((((((.((.(((.......((((((.((((((.(.(((((.(((.(((((....(((((....)))))))))).)))))))).).)))))).))))))))).)).)))))))
+>cbr-mir-76 MI0010977 Caenorhabditis briggsae miR-76 stem-loop
+AUCCCUCAUUCGCCAAUUAGGACUUCACAACAUGCGAAUACCACCACUUCUAUGGAUAUUCGUUGUUGAUGAAGUCUUAAUGGACGUCUGCGGGGU
+(((((.((..(((((.((((((((((((((((.((((((((((.........))).)))))))))))).)))))))))))))).))..)).)))))
+>cbr-mir-35c-1 MI0010978 Caenorhabditis briggsae miR-35c-1 stem-loop
+GAAGUUGAUAGUCUGGAUCGGACCUGCGUCAGUUUUUAUCACUGUGAUAUUCCAAGCAUAACGGUUAUCACCGGGUGAAAAUUGGUACAGGUCCGAUCCAUUCGAACGACUUCA
+(((((((...(..(((((((((((((..((((((((((((.(.((((((..((.........)).)))))).)))))))))))))..)))))))))))))..)...))))))).
+>cbr-mir-35e MI0010979 Caenorhabditis briggsae miR-35e stem-loop
+UAAUCUUUGAGGUCCGAGUCGGACCUGCCCUGAUUCUUGCUGCAGUGAUAUUUCGAACGGCUAGAUUAUCACCGGGUGACAAUUAGGACAGGUCCGACCCCUAGUGACCCGGAUUGC
+((((((..(.(((((..((((((((((.(((((((.(..((.(.((((((..((.........)).)))))).)))..).))))))).)))))))))).....).))))))))))).
+>cbr-mir-35c-2 MI0010980 Caenorhabditis briggsae miR-35c-2 stem-loop
+GACUCGGUCCUGCGCCACUUUCCACCGCGGUGAUAUUCCAAGCAAAACGGUUAUCACCGGGUGAAAAUUGGUACAGGUCCGAUCC
+((.((((.((((..(((.(((.((((.((((((((..((.........)).)))))))))))).))).)))..)))).)))))).
+>cbr-mir-35d MI0010981 Caenorhabditis briggsae miR-35d stem-loop
+CCCAGUUCCGGACACUCGCAGGUUUUUGCUUCGGUGAUAUUCGAAGAGCCGUUAUCACCGGGUGAAAAUUUGCAAGUGUCCGGUAACUGG
+.(((((((((((((((.(((((((((..((.((((((((..((......)).))))))))))..))))))))).))))))))).))))))
+>cbr-mir-90b MI0010982 Caenorhabditis briggsae miR-90b stem-loop
+AGAUCCUGCAGCACCAUUUCAAGCGGCCUUCAACGACUAUAUCAACCGAAUCCAAAUUCGCGAGUUGAUAUGUUGUUUUGAAUGUCACUUGAGGUUUUUGCUUUUUCGGAUUU
+((((((...((((..((((((((.(((.(((((((((.(((((((((((((....)))))...)))))))))))))..)))).))).))))))))...)))).....))))))
+>cbr-mir-235b MI0010983 Caenorhabditis briggsae miR-235b stem-loop
+UCUGAAAUCUUGGAUCAGGCUCUGGUCAUGUGCAUAUAUUGCGCUAUAUAUGCUAAUAUUGCACUUGACCAUGGCCUCGUCUAGAAAGUAAGACAGUUUCAGA
+((((((((.((((((.(((((.((((((.(((((.((((((.((.......))))))))))))).)))))).))))).))))))...(.....).))))))))
+>cbr-mir-56 MI0010984 Caenorhabditis briggsae miR-56 stem-loop
+UGGAACGGAACAUCAGUUUCUGUUCUCAGGGGAUCCAGUUCCGGUUGUGCCUCAUCUCAAUACCCAGAUGGCACCCGUAUUGCUUCCUCUGAGAAUCGACUGCGUACCGCAUUCAG
+((((.(((.((..(((((...((((((((((((..((((..(((..(((((..((((........)))))))))))).))))..)))))))))))).))))).)).)))..)))).
+>cbr-mir-54a MI0010985 Caenorhabditis briggsae miR-54a stem-loop
+CAGGACGUCUAAGCCGAUCCUUGGCUGGGAUAUGAGCAAACGUGUACACGAUACUUAUUCCCUGUACCCGUAUUCUCAUAUCUGAGCCAAGGAUCGUCGCAAAAGGCGGUGCUUCCUG
+((((((((((..((((((((((((((.(((((((((...(((.(((((.((.......))..))))).)))...))))))))).))))))))))))..))...))))).....)))))
+>cbr-mir-237 MI0010986 Caenorhabditis briggsae miR-237 stem-loop
+UCUUGAAAACCAUGUUUGGUGGUCCCUGAGAAUGCUCCGACAUCUUCGAAGUAGCGUAGCUGUCGAGCACCAUUGGGGACCAGCGGAUUUUUGGUUAUAAUUUUUUUCAAG
+.(((((((((((.(((((.(((((((..(...(((((.((((.((.((......)).)).)))))))))...)..))))))).)))))...)))).........)))))))
+>cbr-mir-1822 MI0010987 Caenorhabditis briggsae miR-1822 stem-loop
+GUCUAGAAAGGUCCGAGAGCCUAUCCCGGAACGCUAUCGGUUGCACUUUUCAAAAAACCGAGCUGCCCGGGGAUAGACUCUUGGCUUCAGAAAGAC
+((((....(((.(((((((.(((((((((...((..((((((.............))))))...)))).))))))).)))))))))).....))))
+>cbr-mir-58b MI0010988 Caenorhabditis briggsae miR-58b stem-loop
+UGAAAUUUUCAAUACGUUGGCUUUUUGGCUGGUCUCAUACCGUUUAGUACUGGAUAUGAGAUCAUUCAAGAAGCCCAAAAAAGAGUUCAUUUCA
+.(((((.(((........(((((((((..(((((((((((((........))).))))))))))..))))))))).......)))...))))).
+>cbr-mir-35b-1 MI0010989 Caenorhabditis briggsae miR-35b-1 stem-loop
+UUGGAUCGGACCUCUGCUGGUUUCUGCCGCAGUGAUAUUCCAACGUAGUGGUUAUCACCGGGUGAAAACUGGUAGAGGUCCGAUCCAGA
+(((((((((((((((((..((((..(((.(.((((((..(((......))).)))))).))))..))))..))))))))))))))))).
+>cbr-mir-35b-2 MI0010990 Caenorhabditis briggsae miR-35b-2 stem-loop
+UCUGAUAGUCUGGAUCGAAUCUUUGCUGGUUUCCUCUGCGGUGAUAUUCCAAAUGAAGUGCUUAUCACCGGGUGAAAACUGGUAGAGAUCCGAUCCCGUCGGA
+((((((.....((((((.((((((((..((((.(.((.((((((((..((.......).)..)))))))))).).))))..)))))))).)))))).))))))
+>cbr-mir-35b-3 MI0010991 Caenorhabditis briggsae miR-35b-3 stem-loop
+UGGUCUGGAUCGGACCUCCACCGAUUUUUUCUGCGGUGAUACUCCAAUGGGACGAUUAUCACCGGGUGAAAACUGGUAGAGGUCCGAUCCAGUCAGACCA
+.(((((((((((((((((.((((.(((((.((.((((((((.(((....)))....)))))))))).))))).)))).))))))))))))....))))).
+>cbr-mir-35b-4 MI0010992 Caenorhabditis briggsae miR-35b-4 stem-loop
+AUGGUCUGGGUCGGACCUUUGCCAAUUUUCUCCGCGGUGAUACUCCAAUGCGACGAUUAUCACCGGGUGAAAACUGGUAGAGGUCCGAGCCAGUCAGACCAUC
+((((((((((((((((((((((((.(((((.((.((((((((.((.........)).)))))))))).))))).)))))))))))))).))...)))))))).
+>cbr-mir-35b-5 MI0010993 Caenorhabditis briggsae miR-35b-5 stem-loop
+AUGAAGCGUAGUUUGGGUCGGACCUCCGCUGGCUUUUUCCACGGUGAUACUCCAAAGCAAGUGGUUAUCACCGGGUGAAAACUGGUAGAGGUCCGAUCCACUCGGACCACCAUCAUU
+((((.(.((.((((((((((((((((..(..(.((((.((.((((((((..(((.......))).)))))))))).)))).)..)..)))))))))))))....))).))).)))).
+>cbr-mir-35b-6 MI0010994 Caenorhabditis briggsae miR-35b-6 stem-loop
+GACUGGAUCGGACCUCCGCUGGUUUUUCCCGCGGUGAUAUUCCGAAGCAAGUGGUUAUCACCGGGUGAAAACUGGUAGAGGUCCGAUCCAGUC
+((((((((((((((((..(..(((((..((.((((((((..(((.......))).))))))))))..)))))..)..))))))))))))))))
+>cbr-mir-35b-7 MI0010995 Caenorhabditis briggsae miR-35b-7 stem-loop
+GGUCUGGGUCGGACCUCCGCUGUUUUUCUCCGCGGUGAUACUCCAAAGAAAGUCGUUAUCACCGGGUGAAAACUGGUAGAGGUCCGAUUCAGUCGGACCA
+(((((((((((((((((..((..(((((.((.(((((((((..(.......)..).)))))))))).)))))..))..))))))))))....))))))).
+>cbr-mir-35b-8 MI0010996 Caenorhabditis briggsae miR-35b-8 stem-loop
+CGAAGGUCUGGAUCGGACCUCCGCUGGUUUUUCCCGCGGUGAUAUUCCGAAGCAAGUGGUUAUCACCGGGUGAAAACUGGUAGAGGUCCGAUCCAGUCGUACCAUCG
+(((.(((((((((((((((((..(..(((((..((.((((((((..(((.......))).))))))))))..)))))..)..))))))))))))))....))).)))
+>cbr-mir-35b-9 MI0010997 Caenorhabditis briggsae miR-35b-9 stem-loop
+GGUCUGGGUCGGACCUCCGCUGUUUUUCUCCGCGGUGAUACUCCAAAGAAAGUCGUUAUCACCGGGUGAAAACUGGUAGAGGUCCGAUUCAGUCGGACCA
+(((((((((((((((((..((..(((((.((.(((((((((..(.......)..).)))))))))).)))))..))..))))))))))....))))))).
+>cbr-mir-35b-10 MI0010998 Caenorhabditis briggsae miR-35b-10 stem-loop
+CGAAGGUCUGGAUCGGACCUCCGCUGGUUUUUCCCGCGGUGAUAUUCCGAAGCAAGUGGUUAUCACCGGGUGAAAACUGGUAGAGGUCCGAUCCAGUCACAUCAUCG
+.((.((.((((((((((((((..(..(((((..((.((((((((..(((.......))).))))))))))..)))))..)..)))))))))))))).).).))....
+>cbr-mir-35b-11 MI0010999 Caenorhabditis briggsae miR-35b-11 stem-loop
+CCGAAGGUCUGGGUCGAGCCUCCGCUGGUUUUUUACCGCGGUGAUAUUCCAAAUAAAAUGGUUAUCACCGGGUGAAAACUGGUAGAGGUCCGAUCCAGUCGUACCAUCG
+.(((.(((((((((((..((((..(..((((((.(((.((((((((..(((.......))).)))))))))))))))))..)..))))..))))))))....))).)))
+>cbr-mir-35b-12 MI0011000 Caenorhabditis briggsae miR-35b-12 stem-loop
+AAUGGUCUGGGUCGGACCUCCGCUGUUUUUCUCCGCGGUGAUACUCCAAAGAAAGUCGUUAUCACCGGGUGAAAACUGGUAGAGGUCCGAUUCAGUCGGACCAU
+.(((((((((((((((((((..((..(((((.((.(((((((((..(.......)..).)))))))))).)))))..))..))))))))))....)))))))))
+>cbr-mir-35b-13 MI0011001 Caenorhabditis briggsae miR-35b-13 stem-loop
+CUGGGUCGGACCUCUGCUGGUAUUCUCUGCGAUGAUAUUUUGAAAAAAGCUUAUCACCGGGUGAAAACUGGUAGAGGUCCGAUCCAGU
+(((((((((((((((((..((.(((.((.((.(((((((((....))))..))))).)))).))).))..))))))))))))))))).
+>cbr-mir-65 MI0011002 Caenorhabditis briggsae miR-65 stem-loop
+AGACCCUCACCAAUCAUGACACUGAAGCGGGAAUGGAAGCGUAGUCAGAUUGCAAUUCCUACCGGGUUCAGUGUCAUACUUGGUGCGGAUGAGUCUG
+((((((.((((((..(((((((((((.(.((...((((..(((((...)))))..))))..)).).)))))))))))..)))))).))....)))).
+>cbr-mir-1817 MI0011003 Caenorhabditis briggsae miR-1817 stem-loop
+UUCAUAUUUUGAGCAGCCAAUGCCACGACUGUCAUGGUCUAAAAAUCCGAUAGCUGGAUAAUCCGAUAGUUCAUGACAGUGGUACAUUGUCUACUCGAAAUUUUUGAA
+.(((.((((((((.((.(((((..((.(((((((((..(((...(((((.....))))).......)))..))))))))).)).))))).)).))))))))...))).
+>cbr-mir-2222-1 MI0011004 Caenorhabditis briggsae miR-2222-1 stem-loop
+CAUGAAUGGUCAGGUUACCAGUCGACCUGUGCUGCCUCUUUCUUUCGUGAUAUUUUUCACAGCGUAAAAAUAUCACAAGAACAGAUCCAGCACAGGUCGUUUACCUGACAUUUAU
+.(((((((.((((((.......((((((((((((..((((((((..((((((((((((.....).)))))))))))))))).)))..))))))))))))...)))))))))))))
+>cbr-mir-2227 MI0011005 Caenorhabditis briggsae miR-2227 stem-loop
+UUCUUCGCCACGUGUCUCCAAUGCUCUUCACCUCUAUUUCCACUUCCACCCAAGUAAUUUGAAGUGGCAGUGUAAGUAGCUGGUGAAGAAAUUGUUUUGAGACGAAGAG
+.(((((.......(((((((((..((((((((.((((((.((((.((((.((((...))))..)))).)))).))))))..)))))))).))))....)))))))))).
+>cbr-mir-41b MI0011006 Caenorhabditis briggsae miR-41b stem-loop
+GCGGAUCUCUCUGGCCUUGGAGGUUUCUCAUCGUAGUGAUACAAAACCAAAACCAUACGAUAUCACCGGGUGAGAAUCUUCCAAGGUAGGAGGAUCCUGC
+(((((((.((((.((((((((((.((((((((...((((((...................))))))..)))))))).)))))))))).))))))))).))
+>cbr-mir-2222-2 MI0011007 Caenorhabditis briggsae miR-2222-2 stem-loop
+CAUGAAUGGUCAGGUUACCAGUCGACCUGUGCUGCCUCUUUCUUUCGUGAUAUUUUUCACAGCGUAAAAAUAUCACAAGAACAGAUCCAGCACAGGUCGUUUACCUGACAUUUAU
+.(((((((.((((((.......((((((((((((..((((((((..((((((((((((.....).)))))))))))))))).)))..))))))))))))...)))))))))))))
+>cbr-mir-64b MI0011008 Caenorhabditis briggsae miR-64b stem-loop
+UCCGUUAUUCUUUCCGAAGGCCCCGCCUUCCAUGACACCCAAGCGUGUCUGGAAUGACAGAAUGGUCCUCCGGACCGCUGAUGUGGCAUGAACGGCGGGAGUUGGUCCCUAAAAGGA
+(((..........((((....((((((...((((.(((...((((.(((((((..(((......))).)))))))))))...))).))))...))))))..)))).........)))
+>cbr-mir-2214 MI0011009 Caenorhabditis briggsae miR-2214 stem-loop
+UCAUUCUCACUCGGUCCGGAGUCAAUGGGUUAUCAUUCUCAACCUUCCCAUUGGCACCAACUUGCACCGUUGUGUUUUGU
+.((....(((.((((.(((.(((((((((.................))))))))).)).....).))))..)))...)).
+>cbr-mir-2223 MI0011010 Caenorhabditis briggsae miR-2223 stem-loop
+UCCAAUAUUUUCGGCAAUUUUUGUACUCAUGUAAGGUGACAAAGAUAGCAAAUUUGACCGUAUCCACGUCAAUUAUCAUGCAUCUUCAUCAGUGCAAGAAUGGCCUUUUUUGGA
+(((((.......(((.(((((((((((.(((.((((((.((..(((((.....(((((.((....)))))))))))).))))))))))).))))))))))).)))....)))))
+>cbr-mir-2224 MI0011011 Caenorhabditis briggsae miR-2224 stem-loop
+UUUUUUUUUGAGGUUCGAGGCUAUCAAGCCCAAAUGAAUACCUUUCAACUAGAAUCCAAAGUUGAGGUAAUCUUUGGUUUUGACAGACGAUUCGAGCUGAUCAUGACCUUCAAAAAGAGA
+(((((((((((((((((((.((.(((((.(((((.((.((((..((((((.........)))))))))).))))))).))))).))....))))))))...........)))))))))))
+>cbr-mir-54b MI0011012 Caenorhabditis briggsae miR-54b stem-loop
+GAGCACGAGCUGAUCUUUGACUCGAACCUGGACAUCGUUUUGUACACGAAGUCAAGCUGCUGUACCCGUGAUUCCAUGUAUCGAGUCAACGAUCGCCUUUAAAAAUGUGCUU
+(((((((((.(((((.(((((((((((.((((.((((....(((((...((.....))..)))))...)))))))).)).))))))))).))))).))).......))))))
+>cbr-mir-54c MI0011013 Caenorhabditis briggsae miR-54c stem-loop
+CGUGAGCCGAUCCUUGACUGGAACUUGGAUAUCGUUCGUAUACAGCAAAAUAGUCCUGUACCCGUACUUCCAACUUCCAAAUCAAGGAUCGUCGUG
+.....(.((((((((((.(((((.(((((....((.((..(((((..........)))))..)).)).))))).)))))..)))))))))).)...
+>cbr-mir-54d MI0011014 Caenorhabditis briggsae miR-54d stem-loop
+AAAGCGCUAGGUGAUCCUUGACUAGGAUAUAAAAAGAACGUGUGUACAUGAAUCCAGUGAAUACUUGUACCCGUAUUUUUAUAUCCGAGCCAAGGAUUGCCGUUGAUCGUUUUC
+((((((...((..(((((((.((.(((((((((((..(((.(.(((((.................))))))))).))))))))))).)).)))))))..))......)))))).
+>cbr-mir-2225 MI0011015 Caenorhabditis briggsae miR-2225 stem-loop
+AGUCCCUCUCUUUGUCACCGCUUCCUUCCUUGCGCACACCUAAUUCCAGUAGUAAAGGAUGUGGCAAGACAGGCAGCGGUAGAUAAGGGAGAUUGAGACA
+.(((((((.(((((((((((((.(((..(((((.(((((((..............))).)))))))))..))).)))))).))))))))))...).))).
+>cbr-mir-2226 MI0011016 Caenorhabditis briggsae miR-2226 stem-loop
+GGCUAGACAUGCCUGCAAUGACACAGAAGAACUGGCAAUGAAACCAAUACUACUUAUUUCAUUACGGUCUGUGUGCCAUAGCUGGCGUGUCUCUAGCCA
+(((((((((((((.((.(((.((((..(((.(((..(((((((.............))))))).)))))).)))).))).)).)))))))))..)))).
+>cbr-mir-74b MI0011017 Caenorhabditis briggsae miR-74b stem-loop
+GCUACUAUUCAAGCCCCUGCCACACUUUUGGACUUCCUUCUCGUUCCCAGCAAAAUGCACAGUUUGCUGGCAAGACUAGGCAGUCCAGAUGUGUGGCAGCGGCAGUUUUUGGUGAGU
+(((((((.....(((.(((((((((.((((((((.(((..((....((((((((........))))))))...))..))).)))))))).))))))))).)))......)))).)))
+>cbr-mir-232-2 MI0015957 Caenorhabditis briggsae miR-232-2 stem-loop
+AUUCAAGAUUUCGGAUCUCCGUAGUUUUGACCAUUUUAUCCAACCUAAUAAUGUGAUAAAUGCAUCUUAACUGCGGUGAUCUGGAUUUUGUGAAC
+.(((((((.((((((((.((((((((..((....((((((((.........)).))))))....))..)))))))).)))))))).))).)))).
+>cbr-mir-357-2 MI0015958 Caenorhabditis briggsae miR-357-2 stem-loop
+CUACAUCAGAAGAGACAGCGAAUCCCGGCAAUCACCGUGCAUUUUCAUCUACCAGAGGCACUAAUGAAAAUGCCAGUCAUUGACGGAAUUCGUUGAAUCUGGAAUUAAAGCAU
+.....((...(((..((((((((.(((.((((.((.(.((((((((((...((...)).....))))))))))).)).)))).))).))))))))..))).))..........
+>cbr-mir-77-2 MI0015959 Caenorhabditis briggsae miR-77-2 stem-loop
+GAGCUGUGAAUUUGGAUAGCUGUGCUCUGAGGAAAUAACAAUAGUCACACCCCAUGUCAUUUCAUCAGGCCAUAGCUGUCCAAAUUUCUCGGUUCG
+((((((.(((((((((((((((((..((((.(((((.(((..............))).))))).))))..)))))))))))))))))..)))))).
+>cbr-mir-7579 MI0024716 Caenorhabditis briggsae miR-7579 stem-loop
+ACAGUAUUCUCUGUAGCCUUAUCAAUUUUCACUGUGUAAAAUUGAGGACCAGUAGAAUGCUGUAG
+(((((((((((((...((...(((((((((.....).))))))))))..))).))))))))))..
+>cbr-mir-7580-1 MI0024717 Caenorhabditis briggsae miR-7580-1 stem-loop
+AGCCACUUCGGUUGUGGUUAUACAAACAGAAGUUGAUAUAACCCAAUCACGAAAAUGGCUGA
+(((((.((((((((.(((((((..(((....)))..)))))))))))..))))..)))))..
+>cbr-mir-7580-2 MI0024718 Caenorhabditis briggsae miR-7580-2 stem-loop
+AGCCACUUCGGUUGUGGUUAUACAAACAGAAGUUGAUAUAACCCAAUCACGAAAAUGGCUGA
+(((((.((((((((.(((((((..(((....)))..)))))))))))..))))..)))))..
+>cbr-mir-7581 MI0024719 Caenorhabditis briggsae miR-7581 stem-loop
+UGCCGAUGUCGGCUUGGGUUGUACCAUCUCGAAAUCCGGCUAUAACCAGGUCCACAUCUGCAUU
+(((.(((((.(((((((.(((((((............)).)))))))))))).))))).)))..
+>cbr-mir-7582 MI0024720 Caenorhabditis briggsae miR-7582 stem-loop
+GUAAGGAUUAUUGCUUGUCUCACAUAAAAAUCUCAUGUGACAUGCCAUAAUUUCUUACAG
+(((((((((((.((.((((..((((.........)))))))).)).)))).)))))))..
+>cbr-mir-7583a MI0024721 Caenorhabditis briggsae miR-7583a stem-loop
+AGUUGCAAAUAUCGUGGUGGCAUUACAAGUAGUCUUGCCAUCCGAAAUUUGUGAUUGA
+(((..(((((.(((.(((((((..((.....))..)))))))))).)))))..)))..
+>cbr-mir-7583b MI0024722 Caenorhabditis briggsae miR-7583b stem-loop
+AGUCACAAAUAUCGUGAUGGCAUUGAAAGGCAUCAUUGCCAUCCGACAUUUGUGGUUGA
+(..(((((((.(((.(((((((.(((......))).)))))))))).)))))))..)..
+>cbr-mir-7584 MI0024723 Caenorhabditis briggsae miR-7584 stem-loop
+UGAGAUACAGCGGUCGUUUGAUACUCAGCGAUUUUGUCUCAGCUUCAAACGCAUGUAUCUUGAC
+.((((((((...(.(((((((..((.((((....)).)).))..)))))))).))))))))...
+>cbr-mir-7585 MI0024724 Caenorhabditis briggsae miR-7585 stem-loop
+UGAGGUGAGCACGUACCUCCCUAGUAAUAGACAGUGUGCUAGUGAGAUACUGCUCAUCUCAGA
+(((((((((((.(((.(((.((((((..........)))))).))).))))))))))))))..
+>cbr-mir-7586 MI0024725 Caenorhabditis briggsae miR-7586 stem-loop
+UGGUAAACGGAGUAGUGGUUCCUGAAAAAUGAUUUCUUCUGGAAUCCUCUCUGUUUGCUUGA
+.(((((((((((.((.((((((.(((.((....)).))).)))))))))))))))))))...
+>cbr-mir-7587 MI0024726 Caenorhabditis briggsae miR-7587 stem-loop
+UCUAGAAUCCCUUCAGGCGUUACUCACCUAGUGUUGUGAGUAACGUUGAGGAAUUUUAGAAC
+((((((((.((((..((((((((((((........)))))))))))))))).))))))))..
+>cbr-mir-7583d MI0024727 Caenorhabditis briggsae miR-7583d stem-loop
+AGUUGCAAAUAUCGUGGUGGCAUUACAUGUUGUCUUGCCAUCCGUCAUUUGUGGUUGA
+((..((((((..((.(((((((..((.....))..)))))))))..))))))..))..
+>cbr-mir-7588 MI0024728 Caenorhabditis briggsae miR-7588 stem-loop
+GUAAGUUGUUGAUUGUGUUUCUUCCCAUAUUCAAAAUGAGGAAAACCGAUCAAUAAGCUUACAG
+(((((((((((((((.((((..((((((.......))).))))))))))))))).)))))))..
+>cbr-mir-7583c MI0024729 Caenorhabditis briggsae miR-7583c stem-loop
+AGCUGCAAAAGUCGUGGUGGCAUCACAAGUUGUCUUGCCAUCCGACAUUUGUGGUUGA
+(((..((((.((((.(((((((..((.....))..))))))))))).))))..)))..
+>cbr-mir-7589 MI0024730 Caenorhabditis briggsae miR-7589 stem-loop
+GUAAGAUUCCUUCAUUUCAUCCAAAAAGUUGGUUGAAUUAUUUGGAAAUGGAGAAAUCUUACAG
+((((((((.(((((((...((((((.((((.....)))).))))))))))))).))))))))..
+>cbr-mir-7590 MI0024731 Caenorhabditis briggsae miR-7590 stem-loop
+AGGUCUUAAAGGUUGGUGGCCUAGAAAAAUCAACUUGCCAAAGUUAGGCCACCAUUUGUUAAGGCCUAG
+(((((((((....((((((((((.........((((....))))))))))))))....)))))))))..
+>cbr-mir-7591 MI0024732 Caenorhabditis briggsae miR-7591 stem-loop
+AAGAGAUUCCUGAGACCUGAUUCUAGAAGCUUCCCCUAGAAUCGGUAUCCGGACCCUCUGGU
+.((((..(((.((.(((.((((((((.........))))))))))).)).)))..))))...
+>cbr-mir-7592 MI0024733 Caenorhabditis briggsae miR-7592 stem-loop
+UUCGAAAUGAUCUUUAAAAGUGGGGGAAAGGAGAUUUUUCGGAGAUUUUUUGGAGCC
+(((((((.((((((..((((...............))))..)))))))))))))...
+>cbr-mir-7593 MI0024734 Caenorhabditis briggsae miR-7593 stem-loop
+AAGCUUGCACGAUCACCUCUCAACCAGCACAAUGAGUUGAGGUAUUGUAAAAGCUUAC
+((((((..(((((.(((((..(((((......)).)))))))))))))..))))))..
+>cbr-mir-7594a-1 MI0024735 Caenorhabditis briggsae miR-7594a-1 stem-loop
+UCGGGUUUCAUCGUCGCCCUCGACACUCACAGCGAAGUGUUGAGGUAGGCAUGUAGCCCGAAA
+(((((((.(((.(((..((((((((((........))))))))))..)))))).)))))))..
+>cbr-mir-7594a-2 MI0024736 Caenorhabditis briggsae miR-7594a-2 stem-loop
+UCGGGUUUCAUCGUCGCCCUCGACACUCACAGCGAAGUGUUGAGGUAGGCAUGUAGCCCGAAA
+(((((((.(((.(((..((((((((((........))))))))))..)))))).)))))))..
+>cbr-mir-7594b-1 MI0024737 Caenorhabditis briggsae miR-7594b-1 stem-loop
+CCGGGACUGAUCGUAGCCUUCAACACUCGAAGCGAAGUGUUGAGGUAGACGUUUAGCCCGAAA
+.((((.((((.(((...((((((((((((...)).))))))))))...))).))))))))...
+>cbr-mir-7594b-2 MI0024738 Caenorhabditis briggsae miR-7594b-2 stem-loop
+CCGGGACUGAUCGUAGCCUUCAACACUCGAAGCGAAGUGUUGAGGUAGACGUUUAGCCCGAAA
+.((((.((((.(((...((((((((((((...)).))))))))))...))).))))))))...
+>cbr-mir-7595 MI0024739 Caenorhabditis briggsae miR-7595 stem-loop
+UACCCGUUAACUCGAAGAAAGUGUUAAGCAUCAUCUUUCACACUUUCUCGGUUGACGGGUACC
+(((((((((((.(((.((((((((.(((......)))..))))))))))))))))))))))..
+>cbr-mir-64c MI0024740 Caenorhabditis briggsae miR-64c stem-loop
+CAUGACACACUGGCUGGUCUGGAAUGAUUUCGGCUCCUCCGGUCCGCCCGAGUGCCACGAA
+..((.(((.(.(((.((.(((((..((.......)).))))).))))).).))).))....
+>cbr-mir-7596 MI0024741 Caenorhabditis briggsae miR-7596 stem-loop
+UGGAAUGGCUUACGAGACCAACAAUGAGAUUAUCGUUGACCUCGGAGUCAAGCCAAC
+(((..((((((.((((..((((.(((....))).))))..))))))))))..)))..
+>cbr-mir-247 MI0024742 Caenorhabditis briggsae miR-247 stem-loop
+AGAGUUCAGACCCUGGUGACCUACAGCAGUAGCAUGAGGUGACUAGAGUGCUGAGCUCUCC
+(((((((((((.(((((.((((.((((....)).)))))).))))).)).)))))))))..
+>cbr-mir-2 MI0024743 Caenorhabditis briggsae miR-2 stem-loop
+CCGUCAAAGUGGUGUGUGUUAUGCCGCAUAAGUGAACUUCUUUUCGGAAGUUUUGGUUCAUAUCACAGCCAGCUUUGAUGUGC
+.((((((((((((.((((.(((((((.......((((((((....)))))))))))..)))).)))))))).))))))))...
+>cbr-mir-124b MI0024744 Caenorhabditis briggsae miR-124b stem-loop
+ACAGAGUUUGUCGUUGCGUUUAAUUAGGAACAGAACCAAAUUAAGGCACGCCUAACUCUGUCU
+((((((((.(.(((.((.(((((((.((.......)).)))))))))))).).))))))))..
+>cbr-mir-124c MI0024745 Caenorhabditis briggsae miR-124c stem-loop
+ACGGCAUUGGCAGUGACCUUAAUAGAGAACAGUCAACUCAUUAAGGCACUUCCAAGCCGUAC
+(((((.((((.((((.(((((((.(((.........)))))))))))))).)))))))))..
+>cbr-mir-785b MI0024746 Caenorhabditis briggsae miR-785b stem-loop
+AGAAGUUAGAGUAUUUUCUCUUAGCCAACACAUUGAUUCGCUAAGUGAAUUCUCUACCUUCGGU
+.((((.(((((....(((.((((((.(((.....).)).)))))).)))..))))).))))...
+>cbr-mir-4813 MI0025046 Caenorhabditis briggsae miR-4813 stem-loop
+AGGCUUUCCCGUUUUGUUGAACUAAUAGCAAAUUUAAGUUCAAUAUACAGGAUAGCCCCG
+.((((.(((.((..(((((((((((........)).))))))))).)).))).))))...
+>cbr-mir-2231 MI0025047 Caenorhabditis briggsae miR-2231 stem-loop
+AACGGUAUCAACCUCAGGUAGCAGAGACCACAUGACUGCUAGCUCCCUGAGUAGCUGCCGUUGA
+(((((((.(...((((((((((((...........))))))....))))))..).)))))))..
+>cbr-mir-35f MI0025048 Caenorhabditis briggsae miR-35f stem-loop
+CGCUGGUUUCUGCCGCAGUGAUAUUCCAACGUAGUGGCUAUCACCGGGUGAGAACUGGUAGA
+.((..((((..(((.(.((((((..(((......))).)))))).))))..))))..))...
+>cbr-mir-35g-1 MI0025049 Caenorhabditis briggsae miR-35g-1 stem-loop
+GCUGGUUUUUUUUUCCGCGGUGAUACUUCAAUGCGAAUGUGUAUCACCGGGUAAAAACUGGUAGA
+((..((((((....((.((((((((((((.....)))...))))))))))).))))))..))...
+>cbr-mir-35g-2 MI0025050 Caenorhabditis briggsae miR-35g-2 stem-loop
+AGCCAAUUUUUUCCGUGGUGAUAUUCCGAAACAAGUGGUUAUCACCGGGUAAAAACUGGUAGA
+.((((.(((((.((.((((((((..(((.......))).)))))))))).))))).))))...
+>cbr-mir-35g-3 MI0025051 Caenorhabditis briggsae miR-35g-3 stem-loop
+CGCUGGUUUUUUUCCGCGGUGAUAUUCCAAAAAAAGGUUAUCACCGGGUAAAAACUGGUAGA
+.((..((((((..((.((((((((..((.......)).)))))))))).))))))..))...

@@ -1,0 +1,600 @@
+>cgr-mir-21 MI0005725 Cricetulus griseus miR-21 stem-loop
+UGUACCACCUUGUCGGGUAGCUUAUCAGACUGAUGUUGACUGUUGAAUCUCAUGGCAACAGCAGUCGAUGGGCUGUCUGACAUUUUGGUAUC
+.((((((...((((((..((((((((.(((((.(((((.((((.(.....)))))))))).)))))))))))))..))))))...)))))).
+>cgr-mir-7a MI0016998 Cricetulus griseus miR-7a stem-loop
+GGUGGUGGCCAAGGCCCAGAGGAGGUGGUUAGCAAGGCCAUGGACAGGCCAGCCCCGCCUGGAAGACUAGUGAUUUUGUUGUUGUCUCUCUAUACUCAACAACAAGUCCCAGUCUACCACACGGUGCGGGUCCUCUGAGCAUCAGGGGGAGGUAUGGGAGCACCAUUUCUGGAUGUAUUUUCUCUGCCUUCUAUGUUCCCUAGCAAACUACCAAAAUAUUCCUC
+....(.(((....)))).((((((((((((.((.(((.((((((.((((..(((((((((((.(((((.(.(((((.(((((((............))))))))))))).))))).)))...)))).))))((((((.....)))))).......((((((((((....))).)))....)))).))))))))))...))).)).))))))).......)))))
+>cgr-let-7a MI0020368 Cricetulus griseus let-7a stem-loop
+CACUGUGGGAUGAGGUAGUAGGUUGUAUAGUUUUAGGGUCACACCCACCACUGGGAGAUAACUAUACAAUCUACUGUCUUUCCUAAGGUGAUGGAAAAGU
+((((.(((((.(((..((((((((((((((((...(((.....))).((....))....))))))))))))))))..)))))))).))))..........
+>cgr-let-7b MI0020369 Cricetulus griseus let-7b stem-loop
+ACCGCAGGGUGAGGUAGUAGGUUGUGUGGUUUCAGGGCAGUGAUGUUGCCCCUUAGAAGAUAACUAUACAACCUACUGCCUUCCCUGAGGGGCCCAGGGA
+.((.(((((.(((((((((((((((((((((((.((((((.....))))))....))....)))))))))))))))))))))))))).))..........
+>cgr-let-7c MI0020370 Cricetulus griseus let-7c stem-loop
+GGGUUGAGGUAGUAGGUUGUAUGGUUUAGAGUUACACCCUGGGAGUUAACUGUACAACCUUCUAGCUUUCCUUGGAGCAC
+(((..(((.(((.(((((((((((((..((.(..(.....)..).))))))))))))))).))).))).)))........
+>cgr-let-7d MI0020371 Cricetulus griseus let-7d stem-loop
+GCUCCUAGGAAGAGGUAGUAGGUUGCAUAGUUUUAGGGCAGGGAUUUUGCCCACAAGGAGGUAACUAUACGACCUGCUGCCUUUCUUAGGGCCUU
+((.(((((((.((((((((((((((.((((((...((((((.....)))))).(.....)..)))))).)))))))))))))))))))))))...
+>cgr-let-7f MI0020372 Cricetulus griseus let-7f stem-loop
+UCUAUCAGAGUGAGGUAGUAGAUUGUAUAGUUGUGGGGUAGUGAUUUUACCCUGUUCAGGAGAUAACUAUACAAUCUAUUGCCUUCCCUGAGGAGUAGAC
+(((.((((.(..(((((((((((((((((((((((((((((.....))))))).........))))))))))))))))))))))..))))))))......
+>cgr-let-7g MI0020373 Cricetulus griseus let-7g stem-loop
+AUUCCAGGCUGAGGUAGUAGUUUGUACAGUUUGAGGGUCUAUGAUACCACCCGGUACAGGAGAUAACUGUACAGGCCACUGCCUUGCCAGGAACAGC
+.((((.(((.((((((((.((((((((((((.....((((.((.((((....))))))..)))))))))))))))).))))))))))).))))....
+>cgr-let-7i MI0020374 Cricetulus griseus let-7i stem-loop
+UGGCUGAGGUAGUAGUUUGUGCUGUUGGUCGGGUUGUGACAUUGCCCGCUGUGGAGAUAACUGCGCAAGCUACUGCCUUGCUAGUGCUGG
+((((.(((((((((((((((((.(((((.(((((.........)))))))........))).))))))))))))))))))))).......
+>cgr-mir-1 MI0020375 Cricetulus griseus miR-1 stem-loop
+CGAACUACCUGCUUGGGGCACACACUUCUUUAUAUGCCCAUAUGGACCUGCUAAACUAUGGAAUGUAAAGAAGUGUGUAUUUCAGGCCAG
+..........(((((..(.((((((((((((((((..((((((((.....)))...))))).)))))))))))))))).)..)))))...
+>cgr-mir-100 MI0020376 Cricetulus griseus miR-100 stem-loop
+UGUUGCCACAAACCCGUAGAUCCGAACUUGUGUUGAUCGUCCACACAAGCUUGUGUCUAUAGGUAUGUGUCUGGUA
+......((((.(((..((((..(((.(((((((.(.....).))))))).)))..))))..))).)))).......
+>cgr-mir-101b MI0020377 Cricetulus griseus miR-101b stem-loop
+GUCCUUUUUCGGUUAUCAUGGUACCGAUGCUGUAUAUCUGAAAGGUACAGUACUGUGAUAACUGAAGAAUGGUGGUG
+..((((((((((((((((((((((.(.((((............))))).)))))))))))))))))))).)).....
+>cgr-mir-103 MI0020378 Cricetulus griseus miR-103 stem-loop
+UCGUGCUUUCAGCUUCUUUACAGUGCUGCCUUGUAGCAUUCAGGUCAAGCAGCAUUGUACAGGGCUAUGAAAGAACCAA
+..((.(((((((((.((.(((((((((((((((.......))))....))))))))))).)))))..)))))).))...
+>cgr-mir-106b MI0020379 Cricetulus griseus miR-106b stem-loop
+CUGCUGGGGCUAAAGUGCUGACAGUGCAGAUAGUGGUCCUCUCUGUGCUACCGCACUGUGGGUACUUGCUGCUCCAGCAGG
+((((((((((..(((((((.(((((((.....((((..(.....)..)))).))))))).)))))))...)))))))))).
+>cgr-mir-107 MI0020380 Cricetulus griseus miR-107 stem-loop
+CUCUCUGCUUUCAGCUUCUUUACAGUGUUGCCUUGUGGCAUGGAAUUCAAGCAGCAUUGUACAGGGCUAUCAAAGCACUG
+.....((((((.((((.((.(((((((((((.(((............)))))))))))))).))))))...))))))...
+>cgr-mir-10a MI0020381 Cricetulus griseus miR-10a stem-loop
+UUCUGUAUAUACCCUGUAGAUCCGAAUUUGUGUAAGGAAUUUUGUGGUCACAAAUUCGUAUCUAGGGGAAUAUGUAGUUGA
+..((((((((.((((.(((((.((((((((((................)))))))))).))))))))).))))))))....
+>cgr-mir-10b MI0020382 Cricetulus griseus miR-10b stem-loop
+UGUCUAUAUAUACCCUGUAGAACCGAAUUUGUGUGGUACCCACAUAGUCACAGAUUCGAUUCUAGGGGAAUAUAUGGUCG
+.(.((((((((.((((.(((((.((((((((((..((......))...)))))))))).))))))))).)))))))).).
+>cgr-mir-122 MI0020383 Cricetulus griseus miR-122 stem-loop
+AGCAGAGCUGUGGAGUGUGACAAUGGUGUUUGUGUCCAAACUAUCAAACGCCAUUAUCACACUAAAUAGCUACUGCUAGG
+(((((((((((..(((((((.(((((((((((.((....))...))))))))))).)))))))..)))))).)))))...
+>cgr-mir-124 MI0020384 Cricetulus griseus miR-124 stem-loop
+ACUCUGCCCUCCGUGUUCACAGCGGACCUUGAUUUAAUGUCAUACAAUUAAGGCACGCGGUGAAUGCCAAGAGCGGAGCC
+.((((((.((..((((((((.(((..((((((((...........))))))))..))).))))))))..)).))))))..
+>cgr-mir-125a MI0020385 Cricetulus griseus miR-125a stem-loop
+GCCUCUGGGUCCCUGAGACCCUUUAACCUGUGAGGACGUCCAGGGUCACAGGUGAGGUUCUUGGGAGCCUGGCGCCUG
+(((...((.((((.((((.((((..((((((((((....))....)))))))))))).)))))))).)).))).....
+>cgr-mir-125b MI0020386 Cricetulus griseus miR-125b stem-loop
+CUUUUCCUAGUCCCUGAGACCCUAACUUGUGAGGGAUUUUAGUAACAUCACAAGUCAGGCUCUUGGGACCUAGGCGGA
+.((..(((((..((..(((.(((.(((((((((..((....))..).)))))))).))).)))..))..)))))..))
+>cgr-mir-126 MI0020387 Cricetulus griseus miR-126 stem-loop
+CGGUGACAGCACAUUAUUACUUUUGGUACGCGCUGUGACACUUCAAACUCGUACCGUGAGUAAUAAUGCGCUGUCAGCAG
+.(.(((((((.(((((((((((.(((((((.(...(((....)))..).))))))).))))))))))).))))))).)..
+>cgr-mir-1260 MI0020388 Cricetulus griseus miR-1260 stem-loop
+ACUUGGGAAAUCCCACCGCUGCCACCAAAUAAAGUGAAACACAGUAAAUGGGGAUCGCUAUGGAGUCAAAGCAAGUUUGA
+...((((....))))..(((..(.(((.....(((((..(.((.....)).)..))))).))).)....)))........
+>cgr-mir-1271 MI0020389 Cricetulus griseus miR-1271 stem-loop
+CACCCAGAUCAGUGCUUGGCACCUGGUAAGCACUCAGUAAAUAUUUGAUGAGUGCCUGCUGUGUGCCAAGGCAUUGUGCU
+.....((..(((((((((((((.(((((.(((((((.(((....))).))))))).))))).))))))).))))))..))
+>cgr-mir-1285 MI0020390 Cricetulus griseus miR-1285 stem-loop
+GGUCAGAACUCCUGUGCUGAUCAGUAAGUAGUGGGAUGGUGUCUGUGCAUAGCUACUGCACUCCAGCCUGGGCAACAUAGUGAGACCUCG
+((((...(((((((.((((...(((.((((((.(.((((...)))).)...))))))..))).)))).))))......)))..))))...
+>cgr-mir-128 MI0020391 Cricetulus griseus miR-128 stem-loop
+UGUUGGAUUCGGGGCCGUAGCACUGUCUGAGAGGUGUAUAUUUCUCACAGUGAACCGGUCUCUUUUUCAGCUGCU
+.((((((...(((((((...((((((..(((((((....)))))))))))))...)))))))...))))))....
+>cgr-mir-129 MI0020392 Cricetulus griseus miR-129 stem-loop
+CCUUUGGAUCUUUUUGCGGUCUGGGCUUGCUGUUCUCUAGACAGUAGUCAGGAAGCCCUUACCCCAAAAAGUAUCUACGG
+.((.((((((((((((.(((..((((((.(((..((((....)).)).))).))))))..))).))))))).))))).))
+>cgr-mir-1306 MI0020393 Cricetulus griseus miR-1306 stem-loop
+CAGUCUCCACCACCUCCCCUGCAAACGUCCAGUGAUGCAGAGGUAAUGGACGUUGGCUCUGGUGGUGAUGGACAGUCCGA
+..((((.(((((((......((.((((((((....(((....))).)))))))).))...)))))))..)))).......
+>cgr-mir-130a MI0020394 Cricetulus griseus miR-130a stem-loop
+GCUGGCCGGAGCUCUUUUCACAUUGUGCUACUGUCUUCACCUAUAACGAGCAGUGCAAUGUUAAAAGGGCAUCGGCCUUGU
+...(((((..((((((((.((((((..((.((((...........)).)).))..)))))).))))))))..)))))....
+>cgr-mir-130b MI0020395 Cricetulus griseus miR-130b stem-loop
+CUUGCUGGACACUCUUUCCCUGUUGCACUACUGUGGGCCACUGGGGAGCAGUGCAAUGAUGAAAGGGCAUCUGUCAGGC
+...(((.(((((((((((..(((((((((.((.(((....))).))...)))))))))..)))))))....)))).)))
+>cgr-mir-132 MI0020396 Cricetulus griseus miR-132 stem-loop
+UCCAGGGCAACCGUGGCUUUCGAUUGUUACUGUGGGAACCGGAGGUAACAGUCUACAGCCAUGGUCGCCCCGCAGCA
+....((((.(((((((((...((((((((((.(((...)))..))))))))))...))))))))).)))).......
+>cgr-mir-134 MI0020397 Cricetulus griseus miR-134 stem-loop
+UUCAGGGUGUGUGACUGGUUGACCAGAGGGGCAUGCACUCUGUUUACCCUGUGGGCCACCUAGUCACCAACCCUCAGCAU
+...(((((..((((((((.((.(((.((((....((.....))...)))).)))..)).))))))))..)))))......
+>cgr-mir-1343 MI0020398 Cricetulus griseus miR-1343 stem-loop
+AAUGCUGCUGGCUUCGGUGCCGGGGAGCGGCUCCCGGGCAGGCCUCUGCUCUGGCCCCUCCUGGGGCCCGCACUCUCGCUCCGGGCCCGC
+......((.((((.(((.((.((((.((((..((((((..((((........))))...))))))..)))).)))).)).))))))).))
+>cgr-mir-137 MI0020399 Cricetulus griseus miR-137 stem-loop
+CUCUUCGGUGACGGGUAUUCUUGGGUGGAUAAUACGGAUUACGUUGUUAUUGCUUAAGAAUACGCGUAGUCGAGGAGA
+((((((((..(((.(((((((((((..(.(((((((.....)).))))))..))))))))))).)))..)))))))).
+>cgr-mir-138 MI0020400 Cricetulus griseus miR-138 stem-loop
+GGUUGCUGCAGCUGGUGUUGUGAAUCAGGCCGACGAGCAGCGCAUCCUCUUACCCGGCUAUUUCACGACACCAGGGUUGC
+....((.((..(((((((((((((...(((((..(((.((......)))))...)))))..))))))))))))).)).))
+>cgr-mir-139 MI0020401 Cricetulus griseus miR-139 stem-loop
+CAGGUGUAUUCUACAGUGCACGUGUCUCCAGUGUGGCUCAGAGGCUGGAGACGCGGCCCUGUUGGAGUAACAACUGAA
+(((.((((((((((((.((.((((((((((((.(.......).)))))))))))))).))).)))))).))).)))..
+>cgr-mir-140 MI0020402 Cricetulus griseus miR-140 stem-loop
+GUGUCCUGCCAGUGGUUUUACCCUAUGGUAGGUUACGUCAUGCUGUUCUACCACAGGGUAGAACCACGGACAGGAUACCGG
+((((((((((.(((((((((((((.(((((((..(((......)))))))))).))))))))))))))).))))))))...
+>cgr-mir-141 MI0020403 Cricetulus griseus miR-141 stem-loop
+GACUGGCUUUGGGUCCAUCUUCCAGUGCAGUGUUGGAUGGUUGAAGUAUGAAGCUCCUAACACUGUCUGGUAAAGAUGGCCCCCGGGUCA
+....((((..(((.(((((((((((.((((((((((..((((.........)))).))))))))))))))..))))))).)))..)))).
+>cgr-mir-142 MI0020404 Cricetulus griseus miR-142 stem-loop
+AGUGCAGUCACCCAUAAAGUAGAAAGCACUACUAACAGCACUGGAGGGUGUAGUGUUUCCUACUUUAUGGAUGAGUGUA
+..((((.(((.(((((((((((.(((((((((...(..(....)..)..))))))))).))))))))))).))).))))
+>cgr-mir-143 MI0020405 Cricetulus griseus miR-143 stem-loop
+CUGUCUCCCAGCCUGAGGUGCAGUGCUGCAUCUCUGGUCAGUUGGGAGUCUGAGAUGAAGCACUGUAGCUCAGGAAGGGA
+.....((((..((((((.(((((((((.((((((.((((......)).)).)))))).))))))))).))))))..))))
+>cgr-mir-144 MI0020406 Cricetulus griseus miR-144 stem-loop
+CCCUGGCUGGGAUAUCAUCAUAUACUGUAAGUUUGUGAUGAGACACUACAGUAUAGAUGAUGUACUAGUCUGGGUACCCG
+(((.((((((.((((((((.(((((((((.((((......))))..))))))))))))))))).)))))).)))......
+>cgr-mir-146a MI0020407 Cricetulus griseus miR-146a stem-loop
+CCUCAGCUCUGAGAACUGAAUUCCAUGGGUUGUGUCAAUGUCAGACCUGUGAAGUUCAGUUCUUCAGCUGGGAUAGCUCU
+.(((((((..((((((((((((.((((((((.((.......)))))))))).)))))))))))).)))))))........
+>cgr-mir-146b MI0020408 Cricetulus griseus miR-146b stem-loop
+ACCUGGCUCUGAGAACUGAAUUCCAUAGGCUGUGAGCUCUAGCAAAUGCCCUAGGGACUCAGUUCUGGUGCCCGGUUGU
+(((.(((.((.((((((((.((((.((((..((..((....))..))..)))))))).)))))))))).))).)))...
+>cgr-mir-147 MI0020409 Cricetulus griseus miR-147 stem-loop
+UACUCUAUGAAUCUAGUGGAAACACUUCCGCACAAACUAGAUUUUGAUACCAGUGUGCGGAAAUGCUUCUGCUACAUUUU
+........((((.(((..(((.((.(((((((((...((........))....))))))))).)).)))..))).)))).
+>cgr-mir-148b MI0020410 Cricetulus griseus miR-148b stem-loop
+AUUUGAGGUGAAGUUCUGUUAUACACUCAGGCUGUGGCUCUGAAAGUCAGUGCAUCACAGAACUUUGUCUCGAAAGCU
+.(((((((..(((((((((.((.(((((((((....)).))))......))).)).)))))))))..)))))))....
+>cgr-mir-149 MI0020411 Cricetulus griseus miR-149 stem-loop
+UGCCCGGGCUCUGGCUCCGUGUCUUCACUCCCGUGUUUGUCCGAGGAGGGAGGGAGGGACGGGGGCGGUGCUGGGGCAACU
+(((((.(((.(((.((((((.(((((.(((((.(.(((....))).))))))))))).)))))).))).))).)))))...
+>cgr-mir-151 MI0020412 Cricetulus griseus miR-151 stem-loop
+UUCCUGCCCUCGAGGAGCUCACAGUCUAGUAUGUCUCCUUCCUACUAGACUGAGGCUCCUUGAGGACAGGGAUCG
+((((((.((((((((((((..((((((((((.(.......).)))))))))).)))))))))))).))))))...
+>cgr-mir-152 MI0020413 Cricetulus griseus miR-152 stem-loop
+CCCGGGCCCAGGUUCUGUGAUACACUCCGACUCGGGCUCUGGAGCAGUCAGUGCAUGACAGAACUUGGGCCCGGUAGG
+.(((((((((((((((((.((.((((..((((...(((....))))))))))).)).)))))))))))))))))....
+>cgr-mir-154 MI0020414 Cricetulus griseus miR-154 stem-loop
+GCUUGAAGAUAGGUUAUCCGUGUUGCCUUCGCUUUAUUCAUGACGAAUCAUACACGGUUGACCUAUUUUUCAGUACC
+(((.((((((((((((.((((((....(((((.........).))))....)))))).)))))))))))).)))...
+>cgr-mir-155 MI0020415 Cricetulus griseus miR-155 stem-loop
+CUGUAUGCUGUUAAUGCUAAUCGUGAUAGGGGUUUUUGCGUCUGACUGACUCCUACAUGUUAGCAUUAACAGGGUACGAUGCCUGCCUGC
+.(((((.(((((((((((((.((((.((((((((.............))))))))))))))))))))))))).)))))............
+>cgr-mir-15a MI0020416 Cricetulus griseus miR-15a stem-loop
+GGAGUAAAGUAGCAGCACAUAAUGGUUUGUGGAUUUUGAAAAGGUGCAGGCCAUAUUGUGCUGCCUCAAAAUACAAGG
+........(..((((((((..((((((((((..((.....))..))))))))))..))))))))..)...........
+>cgr-mir-15b MI0020417 Cricetulus griseus miR-15b stem-loop
+AAAGUACUAUAGCAGCACAUCAUGGUUUACAUACUAUAGUCAAGAUGCGAAUCAUUAUUUGCUGCUCUAGAAAUUUAA
+......(((.(((((((.((.((((((..(((.((.......)))))..)))))).)).))))))).)))........
+>cgr-mir-16 MI0020418 Cricetulus griseus miR-16 stem-loop
+GCAGUGCCUUAGCAGCACGUAAAUAUUGGCGUUAAGAUUCUGAAAUUAUCUCCAGUAUUAACUGUGCUGCUGAAGUAAGGUUGG
+((..(((.((((((((((((.((((((((.(.(((..........))).).)))))))).)).)))))))))).)))..))...
+>cgr-mir-17 MI0020419 Cricetulus griseus miR-17 stem-loop
+AGGAUAAUGUCAAAGUGCUUACAGUGCAGGUAGUGAUAUGCACAUCUACUGCAGUGCAGGCACUUGUGGCAUUAUGGU
+...(((((((((((((((((.((.(((((...(((.....))).....))))).)).)))))))).)))))))))...
+>cgr-mir-181a MI0020420 Cricetulus griseus miR-181a stem-loop
+GCUUCAGUGAACAUUCAACGCUGUCGGUGAGUUUGGAAUUCAAAUAAAAACCAUCGACCGUUGAUUGUACCCUAUAGCUAA
+(((..((.(.(((.((((((..(((((((.((((.............))))))))))))))))).))).).))..)))...
+>cgr-mir-181b MI0020421 Cricetulus griseus miR-181b stem-loop
+GUCACAAUCAACAUUCAUUGCUGUCGGUGGGUUGAACUGUGUAGAAAAGCUCACUGAACAAUGAAUGCAACUGUGGCC
+((((((.....(((((((((...((((((((((...((....))...)))))))))).)))))))))....)))))).
+>cgr-mir-181c MI0020422 Cricetulus griseus miR-181c stem-loop
+GUUUGGGGGAACAUUCAACCUGUCGGUGAGUUUGGGCAGCUCAGACAAACCAUCGACCGUUGAGUGGACCCCGAGGCCUG
+((((.((((..((((((((..(((((((.(((((...........)))))))))))).))))))))..)))).))))...
+>cgr-mir-181d MI0020423 Cricetulus griseus miR-181d stem-loop
+GUCACAAUCAACAUUCAUUGUUGUCGGUGGGUUGUGAUGAGGAGGCCAGACCCACCGGGGGAUGAAUGUCACUGUGGCUGG
+((((((....(((((((((.(..((((((((((.((..........))))))))))))).)))))))))...))))))...
+>cgr-mir-182 MI0020424 Cricetulus griseus miR-182 stem-loop
+UCCCACCCUUUUUGGCAAUGGUAGAACUCACACCGGUGAGGUACUGGGACCCGGUGGUUCUAGACUUGCCAACUAUGGUGUAAGUGCUGAGCUGCUGAAG
+..........((..(((....(((.(((.(((((((..((...((((((((....)))))))).))..))......))))).))).)))...)))..)).
+>cgr-mir-183 MI0020425 Cricetulus griseus miR-183 stem-loop
+UGUUCUGUGUAUGGCACUGGUAGAAUUCACUGUGAACAGUCUCAGUCAGUGAAUUACCGAAGGGCCAUAAACAGAGCAGA
+((((((((.((((((..(((((..(((((((((((......)))..)))))))))))))....)))))).))))))))..
+>cgr-mir-1839 MI0020426 Cricetulus griseus miR-1839 stem-loop
+CUAAAUGAAAAGGUAGAUAGAACAGGUCUUGUUUGCAAAAUAAAUCCAAGACCUACUUAUCUACCAACAGCCAUUACCUA
+...........(((((((((...((((((((..(.........)..))))))))..)))))))))...............
+>cgr-mir-184 MI0020427 Cricetulus griseus miR-184 stem-loop
+UCGCCUGGCAAUCACGUUUCCUUAUCACUUUUCCAGCCAGCUUUGUGACUCUAAGUGUUGGACGGAGAACUGAUAAGGGUAGGUGAUUGG
+........(((((((.(.(((((((((.((((((..(((((((((......)))).)))))..)))))).))))))))).).))))))).
+>cgr-mir-1843 MI0020428 Cricetulus griseus miR-1843 stem-loop
+CCUACAUGAAUAUGGAGGUCUCUGUCUGACUUAGGGCAGCUGGCUAAGUCUGAUCGUUCACCUCCAUACAAGCUUUUAAA
+..........(((((((((..(.(((.(((((((.........))))))).))).)...)))))))))............
+>cgr-mir-185 MI0020429 Cricetulus griseus miR-185 stem-loop
+GUGAGGGAUUGGAGAGAAAGGCAGUUCCUGAUGGUCCCCUCCCAGGGGCUGGCUUUCCUCUGGUCCUUCUCUCC
+(.(((((((..(((.(((((.(((((((((..((......))))))))))).))))))))..))))))).)...
+>cgr-mir-186 MI0020430 Cricetulus griseus miR-186 stem-loop
+UACAACUUUCCAAAGAAUUCUCCUUUUGGGCUUUCUCAUUUUAUUUUAAGCCCAAAGGUGAAUUUUUUGGGAAGUAUGA
+..((((((((((((((((((.(((((.((((((..............))))))))))).)))))))))))))))).)).
+>cgr-mir-187 MI0020431 Cricetulus griseus miR-187 stem-loop
+GAUGCGGGUCCUCAGGCUACAACACAGGACCCGGGCGCUCCUCUGACCCCUCGUGUCUUGUGUUGCAGCCGGAGGGACGC
+...(((..(((((.((((.(((((((((((.((((.(.((....)).).)))).))))))))))).)))).))))).)))
+>cgr-mir-188 MI0020432 Cricetulus griseus miR-188 stem-loop
+CCUCUCUCACAUCCCUUGCAUGGUGGAGGGUGAGCUCUCGGAAAACCCCUCCCACAUGCAGGGUUUGCAGGAUGGUGAGC
+((..(((..((..(((((((((..(((((((((....)))......))))))..)))))))))..))..))).)).....
+>cgr-mir-18a MI0020433 Cricetulus griseus miR-18a stem-loop
+GUGCUGAGUGCUUUUUGUUCUAAGGUGCAUCUAGUGCAGAUAGUGAAGUAGACUAGCAUCUACUGCCCUAAGUGCUCCUUCUGGCAUAAGAAGUUAUGUCGUC
+.....((..(((((((((.((((((.(((..(((.((((.(((((.((....))..)).))))))).)))..))).)))..))).)))))))))....))...
+>cgr-mir-190a MI0020434 Cricetulus griseus miR-190 stem-loop
+GCCUCUGUGUGAUAUGUUUGAUAUAUUAGGUUGUUAUUUAAUCCAACUAUAUAUCAAGCAUAUUCCUACAGUGUCUUGCC
+..(.(((((..(((((((((((((((..(((((..........))))))))))))))))))))..).)))).).......
+>cgr-mir-1903 MI0020435 Cricetulus griseus miR-1903 stem-loop
+UGUGAGCCACUAUGUUGGUGCUAGGAAUUGAACUCAGGUCCUCUGGAAGAGGAACAAGUGCUCUCACCUG
+.(((((.((((...(..((.......))..).....(.(((((.....))))).).))))..)))))...
+>cgr-mir-190b MI0020436 Cricetulus griseus miR-190b stem-loop
+GCUUCUGUGUGAUAUGUUUGAUAUUGGGUUGUUAAAUUAGGAACCAACUAAAUGUCAAACAUAUUCUCAUAGCAGUGAGG
+(((.(((((.(((((((((((((((.((((.(((...))).)))).....)))))))))))))))..))))).)))....
+>cgr-mir-191 MI0020437 Cricetulus griseus miR-191 stem-loop
+GACAGCGGGCAACGGAAUCCCAAAAGCAGCUGUUGUCUCGAGAGCAUUCCAGCUGCGCUUGGAUUUCGUUCCCUGCUCUCCUG
+((.((((((.((((((((((.((..(((((((..((((....)).))..)))))))..)))))))))))).)))))).))...
+>cgr-mir-192 MI0020438 Cricetulus griseus miR-192 stem-loop
+GCACAGGGCUCUGACCUAUGAAUUGACAGCCAGUGCUCUGGUCUCUCCUCUGGCUGCCAAUUCCAUAGGUCACAGGUAUG
+...((.(.((.((((((((((((((.(((((((......((.....)).))))))).))))).))))))))).)).).))
+>cgr-mir-193b MI0020439 Cricetulus griseus miR-193b stem-loop
+GCCCAGAAUCGGGGUUUUGAGGGCGAGAUGAGUUUGUGUUUUAUCCAACUGGCCCACAAAGUCCCGCUUUUGGGGUCA
+.(((((((.((((..((((.((((.((.((..(.........)..)).)).)))).))))..)))).)))))))....
+>cgr-mir-194 MI0020440 Cricetulus griseus miR-194 stem-loop
+GUCAUCACAUGUAACAGCAACUCCAUGUGGACUGUGGGCUGACUUCCAGUGGAGGUGCUGUUACUCUUGAUGGCCACCAA
+(((((((...(((((((((.((((((.((((..((......)).)))))))))).)))))))))...)))))))......
+>cgr-mir-1949 MI0020441 Cricetulus griseus miR-1949 stem-loop
+CAGCAGCCAAUAGCUGGUUGGCAUUCUGGCCUGGUUCAUGCCAACUCUGUUGUUAACUAUACCAGGAUGUCAGCAUAGUUUCUUACCCCC
+((((........))))(((((((((((((..(((((.((..((....))..)).)))))..)))))))))))))................
+>cgr-mir-195 MI0020442 Cricetulus griseus miR-195 stem-loop
+UCCUGGCUCUAGCAGCACAGAAAUAUUGGCACUGGGAAGCGAGUCUGCCAAUAUUGGCUGUGUUGCUCCAGGCAGGGUGG
+(((((.((..((((((((((.((((((((((((.(....).)))..)))))))))..))))))))))..)).)))))...
+>cgr-mir-1956 MI0020443 Cricetulus griseus miR-1956 stem-loop
+CCUGACCUUCAGUCCAGGGCUGAGUCAGCGGAGCCCCGAGUGGCUUCCCUGGCUGGCACCUGGACGUAGGCUAUUUCCGU
+.....(((...((((((((((.((((((.((((((......)))))).))))))))).)))))))..)))..........
+>cgr-mir-196a MI0020444 Cricetulus griseus miR-196a stem-loop
+AUCUGUGGCUUAGGUAGUUUCAUGUUGUUGGGAUUGAGUUUUGAACUCGGCAACAAGAAACUGCCUGAGUUACAUCA
+...((((((((((((((((((.((((((((((.(..(...)..).)))))))))).))))))))))))))))))...
+>cgr-mir-196b MI0020445 Cricetulus griseus miR-196b stem-loop
+GUCGGUGAUUUAGGUAGUUUCCUGUUGUUGGGAUCCACCUUUCUCUCGACAGCACGACACUGCCUUCAUUACUUCAGUUG
+...((((((..(((((((.((.(((((((((((..........))))))))))).)).)))))))..)))))).......
+>cgr-mir-196c MI0020446 Cricetulus griseus miR-196c stem-loop
+UGAGUGAAUUAGGUAGUUUCGUGUUGUUGGGCCUGGCUUUCUGAACACAACGACAUCCAACCACCUGAUUCACGGCAGUU
+((.(((((((((((.(((..((((((((((..(.........)..).)))))))))..))).)))))))))))..))...
+>cgr-mir-1973 MI0020447 Cricetulus griseus miR-1973 stem-loop
+CCCAGUGACAGAGUUAAACGGCUGCAUUAUCCUGACCGUGCAAAGGUAGCAUAAACACUU
+...((((.(((.(.....)..)))..((((.(((.((.......))))).)))).)))).
+>cgr-mir-199a MI0020448 Cricetulus griseus miR-199a stem-loop
+CCCCGCCAUCCCAGUGUUCAGACUAGCUGUUCAGCAGGCUGUGAUAUGUACAGUAGUCUGCACAUUGGUUAGGCUGGGCG
+(((.(((...(((((((.((((((.(((....)))..((((((.....)))))))))))).)))))))...))).)))..
+>cgr-mir-199b MI0020449 Cricetulus griseus miR-199b stem-loop
+CUUCCGAUCUCCCAGUGUUUAGACUACCUGUUCAGGACUCCCAAAUUGUACAGUAGCCUGCACAUUGGUUAGAGAUCGGA
+..((((((((((((((((.(((.((((.(((.((((....))....)).))))))).))).)))))))...)))))))))
+>cgr-mir-19a MI0020450 Cricetulus griseus miR-19a stem-loop
+GCAGCCCUCUGUUAGUUUUGCAUACUUGCACUACAAGAAGAAUGCAGUUGUGCAAAUCUAUGCAAAACUGAUGGUGGCCU
+...(((..((((((((((((((((.((((((.((............)).))))))...)))))))))))))))).)))..
+>cgr-mir-19b MI0020451 Cricetulus griseus miR-19b stem-loop
+GUCUAUGGUUAGUUUUGCAGGUUUGCAUCCAGCUGUAUAAUACUCUGCUGUGCAAAUCCAUGCAAAACUGACUGUGGUGG
+..(((((((((((((((((((((((((..((((.(((...)))...)))))))))).)).)))))))))))))))))...
+>cgr-mir-200b MI0020452 Cricetulus griseus miR-200b stem-loop
+UCCAACUUGGGCAGCCGUGGCCAUCUUACUGGGCAGCAUUGGAUAGUGUCUGAUCUCUAAUACUGCCUGGUAAUGAUGACGGCGGAGCCC
+........((((..((((.(.((((((((..(((((.((((((.(........).)))))).)))))..)))).)))).).)))).))))
+>cgr-mir-200c MI0020453 Cricetulus griseus miR-200c stem-loop
+GGUUGGGUAGGGGCCCUCGUCUUACCCAGCAGUGUUUGGGUGCUGGUUGGGAGUCUCUAAUACUGCCGGGUAAUGAUGGAGGCCCCUGUC
+.....(..(((((((..((((((((((.((((((((.(((.(((.......)))))).)))))))).)))))).))))..)))))))..)
+>cgr-mir-204 MI0020454 Cricetulus griseus miR-204 stem-loop
+ACUCGUGGACUUCCCUUUGUCAUCCUAUGCCUGAGAAUAUAUGAAGGAGGCUGGGAAGGCAAAGGGACGUUCAAUUGUCA
+((...(((((.((((((((((.(((((.((((...............))))))))).)))))))))).)))))...))..
+>cgr-mir-205 MI0020455 Cricetulus griseus miR-205 stem-loop
+GAUCCUCUUGUCCUUCAUUCCACCGGAGUCUGUCUUAUGCCAACCAGAUUUCAGUGGAGUGAAGCUCAGGAGGCAUGGAG
+...(((((((..(((((((((((.((((((((............)))))))).)))))))))))..))))))).......
+>cgr-mir-206 MI0020456 Cricetulus griseus miR-206 stem-loop
+UUCCCGAGGCCACAUGCUUCUUUAUAUCCGCAUAGAUAUCACUGCACUAUGGAAUGUAAGGAAGUGUGUGGUUUUGGCAA
+...((((((((((((((((((((((((.(.(((((...........)))))).))))))))))))))))))))))))...
+>cgr-mir-20a MI0020457 Cricetulus griseus miR-20a stem-loop
+UCUGUGGCACUAAAGUGCUUAUAGUGCAGGUAGUGUCCACUCAUCUACUGCAUUACGAGCACUUCCAGUGCUGCCAGCUG
+.(((..(((((.(((((((..((((((((.(((((......)).)))))))))))..)))))))..)))))..).))...
+>cgr-mir-210 MI0020458 Cricetulus griseus miR-210 stem-loop
+GGCUCAGGACAGCCACUGCCCACCGCACACUGCGUUGCUCCGGACCCACUGUGCGUGUGACAGCGGCUGAUCUGUCCCU
+((..((((.(((((.(((..(((((((((.((.(((......))).)).)))))).))).))).))))).))))..)).
+>cgr-mir-212 MI0020459 Cricetulus griseus miR-212 stem-loop
+CGCGCCGGCACCUUGGCUCUAGACUGCUUACUGCCCGGGCCGCCCUCAGUAACAGUCUCCAGUCAC
+.((....))....(((((..((((((.((((((...(((...))).))))))))))))..))))).
+>cgr-mir-214 MI0020460 Cricetulus griseus miR-214 stem-loop
+GUCAUGUGUCUGCCUGUCUACACUUGCUGUGCAGAACAUCCGCUCACCUGUACAGCAGGCACAGACAGGCAGUCACAU
+...(((((.((((((((((...((((((((((((.............))))))))))))...)))))))))).)))))
+>cgr-mir-215 MI0020461 Cricetulus griseus miR-215 stem-loop
+UACAGGAAAAUGACCUAUGAAUUGACAGACAGUAUGGCUGUGUAUGUCUGUCAUUCUGUAGGCCAAUAUUCUGUAUG
+(((((((.(.((.(((((((((.((((((((.(((......))))))))))))))).))))).)).).)))))))..
+>cgr-mir-218a MI0020462 Cricetulus griseus miR-218a stem-loop
+GGCUUUCCUUUGUGCUUGAUCUAACCAUGUGGUGGAACGAUGGAAACGGAACAUGGUUCUGUCAAGCACCGCGGAAAGUA
+.(((((((...(((((((((..((((((((..........((....))..))))))))..)))))))))...))))))).
+>cgr-mir-22 MI0020463 Cricetulus griseus miR-22 stem-loop
+GAGCCGCAGUAGUUCUUCAGUGGCAAGCUUUAUGUCCUGACCCAGCUAAAGCUGCCAGUUGAAGAACUGUUGCCCUCUG
+(((..((((((((((((((((((((.((((((.((.........))))))))))))).))))))))))))))).)))..
+>cgr-mir-221 MI0020464 Cricetulus griseus miR-221 stem-loop
+GGGGCAUGAACCUGGCAUACAAUGUAGAUUUCUGUGUUUAUUAGGCAACAGCUACAUUGUCUGCUGGGUUUCAGGCUACCUG
+(((((.((((((..(((.(((((((((....(((((((.....))).))))))))))))).)))..)).)))).))).))..
+>cgr-mir-222 MI0020465 Cricetulus griseus miR-222 stem-loop
+CUCAGUGGCUCAGUAGCCAGUGUAGAUCCUGUCCUUGGUAAUCAGCAGCUACAUCUGGCUACUGGGUCUCUGGUGGCAUCA
+.((((.(((((((((((((((((((...(((.(....)....)))...))))).)))))))))))))).))))........
+>cgr-mir-23a MI0020466 Cricetulus griseus miR-23a stem-loop
+UUGGCCGGCUGGGGUUCCUGGGGAUGGGAUUUGAUGCCAGUCACAAAUCACAUUGCCAGGGAUUUCCAACUGACCU
+..((.(((.((((((((((((.((((.((((((.((.....)))))))).)))).))))))).))))).))).)).
+>cgr-mir-23b MI0020467 Cricetulus griseus miR-23b stem-loop
+CUGGCUGCUUGGGUUCCUGGCAUGCUGAUUUGUGACUUGAGAUUAAAAUCACAUUGCCAGGGAUUACCACGCAACCA
+..((.(((.(((((((((((((((.((((((..............)))))))).))))))))))..))).))).)).
+>cgr-mir-24 MI0020468 Cricetulus griseus miR-24 stem-loop
+UCCGCCUCCUGUGCCUACUGAGCUGAAACAGUUGAUUCCAGUGCACUGGCUCAGUUCAGCAGGAACAGGAGUCCAGCC
+.....(((((((.(((.(((((((((..((((..((....))..))))..))))))))).))).))))))).......
+>cgr-mir-2424 MI0020469 Cricetulus griseus miR-2424 stem-loop
+CAAAGGACUUAGCUAUAUCAUGGCCACUGAGAGAUGACACACAGAUCUUUGGUAAUCUGAUGGCUACAAGUGCUA
+...((.((((((((((......((((..((((..((.....))..))))))))......)))))))..))).)).
+>cgr-mir-25 MI0020470 Cricetulus griseus miR-25 stem-loop
+CGGGACUGGCCAGUGUUGAGAGGCGGAGACUUGGGCAAUUGCUGGAAGCUGCCCUGGGCAUUGCACUUGUCUCGGUCUGACAGUGCCGGCCCAACACUG
+.(((.(((((.(.((((...((((.(((((..(.(((((.(((((.......))..)))))))).)..))))).)))))))).))))))))).......
+>cgr-mir-26a MI0020471 Cricetulus griseus miR-26a stem-loop
+UGUGGCUGGAUUCAAGUAAUCCAGGAUAGGCUGUUUCCAUGUGUGAGGCCUAUUCUUGAUUACUUGUUUCUGGAGGCAG
+(((..(..((..(((((((((.((((((((((..............)))))))))).)))))))))..))..)..))).
+>cgr-mir-26b MI0020472 Cricetulus griseus miR-26b stem-loop
+GGGACCCAGUUCAAGUAAUUCAGGAUAGGUUGUGGUGCUGGCCAGCCUGUUCUCCAUUACUUGGCUCGGGGGCCGGU
+((..((((((.((((((((..(((((((((..((((....)))))))))))))..))))))))))).)))..))...
+>cgr-mir-27a MI0020473 Cricetulus griseus miR-27a stem-loop
+CCUGAGGAGCAGGGCUUAGCUGCUUGUGAGCAAGGUCCGCAGCAAGUCGUGUUCACAGUGGCUAAGUUCCGCUCCCCCGGG
+((((.(((((.(((((((((..((.(((((((.((.(........))).)))))))))..))))))))).)))))..))))
+>cgr-mir-27b MI0020474 Cricetulus griseus miR-27b stem-loop
+AACAAGGUGCAGAGCUUAGCUGAUUGGUGAACAGUGAUUGGUUUCCGCUUUGUUCACAGUGGCUAAGUUCUGCACCUGAAGA
+....((((((((((((((((((....((((((((....(((...)))..))))))))..)))))))))))))))))).....
+>cgr-mir-28 MI0020475 Cricetulus griseus miR-28 stem-loop
+CCCUACCCUCAAGGAGCUCACAGUCUAUUGAGUUGCCUUUCUGAUUCUCCCACUAGAUUGUGAGCUCCUGGAGGGCAGGCA
+.(((.(((((.((((((((((((((((..(((((........)))))......)))))))))))))))).))))).)))..
+>cgr-mir-296 MI0020476 Cricetulus griseus miR-296 stem-loop
+GGCCUUUCUGGAGGGCCCCCCCUCAAUCCUGUUGUGCUCGCUUCAGAGGGUUGGGUGGAGGCUCUCCUGAAGGAG
+...(((((.((((((((.((.(((((((((.(((.(....)..)))))))))))).)).)))))))).)))))..
+>cgr-mir-298 MI0020477 Cricetulus griseus miR-298 stem-loop
+CAGGCCUUUGGCAGAGGAGGGCUGUUCUUCCCUUGUGUUUUGUGACUGGGAGGAACUAGCCUUCUCUCUGCUUAGGAGUGG
+((..(((..(((((((((((((((((((((((....(((....))).))))))))).))))))).))))))).)))..)).
+>cgr-mir-29a MI0020478 Cricetulus griseus miR-29a stem-loop
+UUAGAGGAUGACUGAUUUCUUUUGGUGUUCAGAGUCAAUAGAAUUUUCUAGCACCAUCUGAAAUCGGUUAUAAUGAUU
+.......((((((((((((...(((((((.((((...........)))))))))))...)))))))))))).......
+>cgr-mir-29b MI0020479 Cricetulus griseus miR-29b stem-loop
+CCUUCAGGAAGCUGGUUUCAUAUGGUGGUUUAGAUUUAAAUAGUGAUUGUCUAGCACCAUUUGAAAUCAGUGUUCUUGGUGGA
+((.(((((((((((((((((.((((((..((((((.............)))))))))))).)))))))))).))))))).)).
+>cgr-mir-29c MI0020480 Cricetulus griseus miR-29c stem-loop
+CACAGGCUGACCGAUUUCUCCUGGUGUUCAGAGUCUGUUUUUGUCUAGCACCAUUUGAAAUCGGUUAUGAUGUAGG
+.(((...(((((((((((...((((((((((((.....)))))...)))))))...)))))))))))...)))...
+>cgr-mir-300 MI0020481 Cricetulus griseus miR-300 stem-loop
+UAUCGUUUGCUACUUGAAGAGAGGUUAUCCUUUGUGUGUUUGCUUUACGCGAAAUGAAUAUGCAAGGGCAAGCUCUCUUCGAGGAGCAAA
+.....((((((.(((((((((((.((..(((((((((((((..(((....)))..))))))))))))).)).))))))))))).))))))
+>cgr-mir-301a MI0020482 Cricetulus griseus miR-301a stem-loop
+GCUCGCGAAUGCUCUGACUUUAUUGCACUACUGUACUUUACAGCUAGCAGUGCAAUAGUAUUGUCAAAGCAUCCGAAAG
+..(((.((.((((.((((.((((((((((.(((((...))))).....))))))))))....)))).)))))))))...
+>cgr-mir-3072 MI0020483 Cricetulus griseus miR-3072 stem-loop
+GGGAGUGCGAGGGACCCCGAGGGAGGGCAGGCUGCCCCAGGCCCUGCCCCCUCCAGGAAGCCUUCUCGCUCCAGCC
+.((((((.(((((..((.(..((.(((((((..(((...))))))))))))..).))...))))).))))))....
+>cgr-mir-30a MI0020484 Cricetulus griseus miR-30a stem-loop
+AGUGAGCGACUGUAAACAUCCUCGACUGGAAGCUGUGAAGCCACAAAUGGGCUUUCAGUCGGAUGUUUGCAGCUGCCUACUG
+((((.(((.((((((((((((..((((((((((((((....))).....))))))))))))))))))))))).))).)))).
+>cgr-mir-30b MI0020485 Cricetulus griseus miR-30b stem-loop
+GUUCAGUUCAUGUAAACAUCCUACACUCAGCUGUCAUACAUGAGUUGGCUGGGAUGUGGAUGUUUACGUCAGCUGUCUU
+...(((((.((((((((((((.((((((((((((((....)))..)))))))).))))))))))))))).)))))....
+>cgr-mir-30c MI0020486 Cricetulus griseus miR-30c stem-loop
+UGACAGAUACUGUAAACAUCCUACACUCUCAGCUGUGAAAAGUAAGAAAGCUGGGAGAAGGCUGUUUACUCUCUCUGCC
+...((((....(((((((.(((...(((((((((..............))))))))).))).)))))))....))))..
+>cgr-mir-30d MI0020487 Cricetulus griseus miR-30d stem-loop
+UCUCAGGAAGUCUGUGUCUGUAAACCUCCCCGACGGGAAGCGGUAAGCCACUUCCAAGCUUUCAGUCAGAUGUUUGCUGCCACCGGCUCU
+.....(((.(((.(((.(.((((((.((...(((.(((((.((....)).))))).........))).)).)))))).).))).))))))
+>cgr-mir-30e MI0020488 Cricetulus griseus miR-30e stem-loop
+CUUUGCUACUGUAAACAUCCUUGACUGGAAGCUGUAAGGUGUUGAGAAGAGCUUUCAGUCGGAUGUUUACAGCGGCAGGCUGC
+.(((((..((((((((((((..(((((((((((.(............).)))))))))))))))))))))))..)))))....
+>cgr-mir-31 MI0020489 Cricetulus griseus miR-31 stem-loop
+CCUGGAGAGGAGGCAAGAUGCUGGCAUAGCUGUUGAACUAGAACCUGCUAUGCCAACAUAUUGCCAUCUUUCCUGUC
+...((((((..(((((.(((.(((((((((.(((.......)))..))))))))).))).)))))..))))))....
+>cgr-mir-32 MI0020490 Cricetulus griseus miR-32 stem-loop
+CUGGUGGAGAUAUUGCACAUUACUAAGUUGCAUGUUGUCACGGCCUCAGUGCAAUUUAGUGUGUGUGAUAUUUUCACGUGA
+...((((((((((..(((((.(((((((((((((..((....))..)).))))))))))))))))..))))))))))....
+>cgr-mir-320a MI0020491 Cricetulus griseus miR-320a stem-loop
+GCGCCUCGCUACCCUCCGCCUUCUCUUCCCGGUUCUUCCCGGAGUCGGGAAAAGCUGGGUUGAGAGGGCGAAAAAAAAAG
+(((...))).......(((((((((..(((((((.((((((....)))))).)))))))..)))))))))..........
+>cgr-mir-322 MI0020492 Cricetulus griseus miR-322 stem-loop
+CGAAGGGAUGCAGCAGCAAUUCAUGUUUUGGAGUAUUGUAAAGGUUCAAAACAUGAAGCGCUGCAACACCCCUUCGCG
+(((((((.((..(((((..(((((((((((((.(........).)))))))))))))..)))))..)).)))))))..
+>cgr-mir-324 MI0020493 Cricetulus griseus miR-324 stem-loop
+AUGCCUCCUCGCAUCCCCUAGGGCAUUGGUGUAAAGCUGGAGACCCACUGCCCCAGGUGCUGCUGGGGGUUGUAGU
+..((((((..(((.(.(((.(((((.(((.((..........))))).))))).))).).))).))))))......
+>cgr-mir-325 MI0020494 Cricetulus griseus miR-325 stem-loop
+GUGCUUGGUUCCUAGUAGGUGCUCAGUAAGUGUUUGUGACAUAAUUCGUUUAUUGAGCACCUCCUAUCAAUCAAGCAC
+((((((((((..(((.((((((((((((((((..(........)..)))))))))))))))).)))..))))))))))
+>cgr-mir-326 MI0020495 Cricetulus griseus miR-326 stem-loop
+CUAUUGGGCUGGGGGCAGGGCCUUUGUGAAGGCGGGUUAUGCUCGGAUCGCCUCUGGGCCCUUCCUCCAGUCCCGAGGCA
+...((((((((((((.(((((((..((((...((((.....))))..))))....))))))).))))))).)))))....
+>cgr-mir-328 MI0020496 Cricetulus griseus miR-328 stem-loop
+CCUGGAGCGGGGGGGCAGGAGGGGCUCAGGGAGAAAGUGUCUACAGCCCCUGGCCCUCUCUGCCCUUCCGUCCCCUGACU
+...((..(((((((((((..(((((.(((((.(...((....))..)))))))))))..)))))))))))..))......
+>cgr-mir-33 MI0020497 Cricetulus griseus miR-33 stem-loop
+GCUGCUGUGGUGCAUUGUAGUUGCAUUGCAUGUUCCGGCAGUACCUGUGCAAUGUUCCCACAGUGCAUCACAGAGGCCUG
+(((.((((((((((((((.(..((((((((((....((.....))))))))))))..).)))))))))))))).)))...
+>cgr-mir-331 MI0020498 Cricetulus griseus miR-331 stem-loop
+UGGGUUUGUUCUAGGUAUGGUCCCAGGGAUCCCAGAUCAAACCAGGCCCCUGGGCCUAUCCUAGAACCAACCUA
+((((((.((((((((.((((.(((((((..(.............)..))))))).)))))))))))).))))))
+>cgr-mir-338 MI0020499 Cricetulus griseus miR-338 stem-loop
+GCCGUCCUCCCCAACAACAUCCUGGUGCUGAGUGAUGGCACAGGUGACUCCAGCAUCAGUGAUUUUGUUGAAGAGGGCAG
+...((((((..((((((.((((((((((((.(((....))).(....)..))))))))).))).))))))..))))))..
+>cgr-mir-339 MI0020500 Cricetulus griseus miR-339 stem-loop
+CAGCCACCGUCCCUGUCCUCCAGGAGCUCACGUAUGCCUGCCUGUGAGCACCUCGAUGACAGAGCCGGUGUCCACCCCUG
+....(((((.(.(((((.((.(((.(((((((((....)))..)))))).))).)).))))).).)))))..........
+>cgr-mir-340 MI0020501 Cricetulus griseus miR-340 stem-loop
+UUGGUGUGAUUAUAAAGCAAUGAGACUGAUUGUCAUAUGUCGUUUGUGGGAUCCGUCUCAGUUACUUUAUAGCCAUACCUGGUA
+..((((((..(((((((...((((((.((((.(((((.......))))))))).))))))....)))))))..)))))).....
+>cgr-mir-342 MI0020502 Cricetulus griseus miR-342 stem-loop
+CUCAAGGUGAGGGGUGCUAUCUGUGAUUGAGGGGCAUGGUCAAUGGAAUUGUCUCACACAGAAAUCGCACCCGUCACCUUGGCCU
+.(((((((((.((((((..((((((.....((((((...((....))..)))))).))))))....)))))).)))))))))...
+>cgr-mir-344 MI0020503 Cricetulus griseus miR-344 stem-loop
+UUUUAUCAGUCAGGCUCCUGGCUAGAAUCCAGGUACCAUCUGGUACCUGAUCUAGCCAAAGCCUGACUGUAAGCUGUGAA
+.((((.((((((((((..((((((((...((((((((....)))))))).)))))))).)))))))))))))).......
+>cgr-mir-345 MI0020504 Cricetulus griseus miR-345 stem-loop
+UCCAGGCCUGCUGACUCCUAGUCCAGUGCUUGUGGUGGCUACUGGGCCCUGAGCUAGGGGUCUGGAGGCCUGGGUUUGAU
+(((((((((.(.(((((((((..(((.((((((((...)))).)))).)))..))))))))).).)))))))))......
+>cgr-mir-34a MI0020505 Cricetulus griseus miR-34a stem-loop
+AGUGCUUCUUUGGCAGUGUCUUAGCUGGUUGUUGUGAGUAAUAGCGAAGGAAGCAAUCAGCAAGUAUACUGCCCUAGAAGUGCUG
+((..(((((..(((((((((((.((((((((((....((....))......))))))))))))).))))))))..)))))..)).
+>cgr-mir-34b MI0020506 Cricetulus griseus miR-34b stem-loop
+UCGGUUUGUAGGCAGUGUAAUUAGCUGAUUGUACCGCGGUGCUGACAAUCACUAACUCCACUGCCAUCAAAACAAGGC
+...((((...(((((((...((((.(((((((.(.((...)).))))))))))))...)))))))....)))).....
+>cgr-mir-34c MI0020507 Cricetulus griseus miR-34c stem-loop
+CUAGUUACUAGGCAGUGUAGUUAGCUGAUUGCUAAUAGUACCAAUCACUAACCACACGGCCAGGUAAAAAGACU
+((..(((((.(((.((((.(((((.((((((.((....)).))))))))))).)))).))).)))))..))...
+>cgr-mir-350 MI0020508 Cricetulus griseus miR-350 stem-loop
+UACAAGAGUAAAGUGCAUGCGCUUUGGGACAGUGAGGAAAAUAGUGUUCACAAAGCCCAUACACUUUCACCCUUUAGGAG
+...(((.((((((((.(((.(((((((((((.((.......)).))))).)))))).))).)))))).)).)))......
+>cgr-mir-361 MI0020509 Cricetulus griseus miR-361 stem-loop
+CUUGGAAGCUUAUCAGAAUCUCCAGGGGUACUUAUUAUUUGAAAAAGUCCCCCAGGUGUGGUUCUGAUUCGUUUCCUUCU
+...((((((..(((((((((.((.((((.((((.((.....)).)))).)))).))...)))))))))..))))))....
+>cgr-mir-362 MI0020510 Cricetulus griseus miR-362 stem-loop
+CUCCUCUCGAAUCCUUGGAACCUAGGUGUGAGUGCUGCUUCAGUGCAACACACCUGUUCAAGGAUUCAAAGAGGCUGAGC
+..(((((.(((((((((((...((((((((.(..(((...)))..)..)))))))))))))))))))..)))))......
+>cgr-mir-365 MI0020511 Cricetulus griseus miR-365 stem-loop
+GGGAAAAUGAGGGACUUUUGGGGGCAGAUGUGUUUCCAUUCCGCUAUCAUAAUGCCCCUAAAAAUCCUUAUUGCUCUUGCA
+((((.((((((((..(((((((((((..((((...............)))).))))))))))).))))))))..))))...
+>cgr-mir-369 MI0020512 Cricetulus griseus miR-369 stem-loop
+CUUGAAGGGAGAUCGACCGUGUUAUAUUCGCUUGGCUGACUUCGAAUAAUACAUGGUUGAUCUUUUCUCGGUAUC
+.((((..(((((((((((((((..((((((...(.....)..))))))..)))))))))))))))..))))....
+>cgr-mir-374 MI0020513 Cricetulus griseus miR-374 stem-loop
+CUCGGAUGGAUAUAAUACAACCUGCUAAGUGUUCUAGCACUUAUCAGGUUGUAUUAUCAUUGUCCGUGUUU
+(.((((..(..(((((((((((((.(((((((....))))))).)))))))))))))..)..)))).)...
+>cgr-mir-377 MI0020514 Cricetulus griseus miR-377 stem-loop
+UUCUGGAGCAGAGGUUGCCCUUGGUGAAUUCGCUUUAUUGAUGUUGAAUCACACAAAGGCAACUUUUGUUUGAGUAU
+..((.((((((((((((((.(((((((.(((((.........).)))))))).))).)))))))))))))).))...
+>cgr-mir-378 MI0020515 Cricetulus griseus miR-378 stem-loop
+CACCCAGGGCUCCUGACUCCAGGUCCUGUGUGUUACCUCGAAAUAGCACUGGACUUGGAGUCAGAAGGCCUGAGUGGAG
+(((.((((.((.((((((((((((((...((((((........)))))).)))))))))))))).)).)))).)))...
+>cgr-mir-379 MI0020516 Cricetulus griseus miR-379 stem-loop
+CUGAAGAGAUGGUAGACUAUGGAACGUAGGCGUUAUGUUUUUGACCUAUGUAACAUGGUCCACUAACUCUCAGUAUCCAA
+((((.(((.((((.(((((((..(((((((((.........)).)))))))..))))))).)))).))))))).......
+>cgr-mir-381 MI0020517 Cricetulus griseus miR-381 stem-loop
+UAUUGUUUGGUACUUAAAGCGAGGUUGCCCUUUGUAUAUUCGGUUUAUUGACAUGGAAUAUACAAGGGCAAGCUCUCUGUGAGUAUCAAA
+.....(((((((((((.((.(((.((((((((.((((((((.(((....)))...)))))))))))))))).))).)).)))))))))))
+>cgr-mir-382 MI0020518 Cricetulus griseus miR-382 stem-loop
+ACUUGAAGAGAAGUUGUUCGUGGUGGAUUCGCUUUACUUGUGACGAAUCAUUCACGGACAACACUUUUUUCAGUACCAAA
+..(((((((((.(((((((((((..(((((((.........).))))))..)))))))))))..))))))))).......
+>cgr-mir-384 MI0020519 Cricetulus griseus miR-384 stem-loop
+AAUCAGGAAUUGUAAACAAUUCCUAGGCAAUGUGUAUAAUGUUGGUAAGUCAUUCCUAGAAAUUGUUCACAAUGCCUGUAAC
+...((((.(((((.(((((((.(((((.((((..(((.......)))...))))))))).))))))).))))).))))....
+>cgr-mir-409 MI0020520 Cricetulus griseus miR-409 stem-loop
+CUCGGAGAGAGGUUACCCGAGCAACUUUGCAUCUGGAGGACGAAUGUUGCUCGGUGAACCCCUUUUCGGUAUC
+.((((((((.((((..((((((((((((((........).)))).)))))))))..)))).))))))))....
+>cgr-mir-410 MI0020521 Cricetulus griseus miR-410 stem-loop
+CUUGAGGAGAGGUUGUCUGUGAUGAGUUCGCUUUAUUAAUGACGAAUAUAACACAGAUGGCCUGUUUUCAAUACC
+.(((((((.((((..((((((.((.((((((.........).))))).)).))))))..)))).)))))))....
+>cgr-mir-412 MI0020522 Cricetulus griseus miR-412 stem-loop
+UGGGACGGAUGGUCGACCAGCUGGAAAGUAAUUGUCUCUAAUGUACUUCACCUGGUCCACUAGCCGUCGGUGCC
+...(((((.((((.((((((.(((..((((((((....)))).))))))).)))))).)))).)))))......
+>cgr-mir-423 MI0020523 Cricetulus griseus miR-423 stem-loop
+GAAGUUAGGCUGAGGGGCAGAGAGCGAGACUUUUCUAUUUUCCAAAAGCUCGGUCUGAGGCCCCUCAGUCUUGCUUCC
+(((((.((((((((((((..(((.((((.(((((.........))))))))).)))...)))))))))))).))))).
+>cgr-mir-425 MI0020524 Cricetulus griseus miR-425 stem-loop
+GUGCUUUGGAAUGACACGAUCACUCCCGUUGAGUGGGCACCCAAGAAGCCAUCGGGAAUGUCGUGUCCGCCCAGUGCUCU
+(.((.((((...(((((((.((.(((((.((..(((....)))......)).))))).)))))))))...)))).)).).
+>cgr-mir-429 MI0020525 Cricetulus griseus miR-429 stem-loop
+GGUACACUGCCUGCUGAUGGAUGUCUUACCAGACAUGGUUAGAUCUGGAUGCUCUGUCUAAUACUGUCUGGUAAUGCCGUCCAUCCAUGG
+(((.....)))....((((((((.(((((((((((..(((((((..((.....)))))))))..)))))))))).).)))))))).....
+>cgr-mir-450a MI0020526 Cricetulus griseus miR-450a stem-loop
+GCUGAACUGUUUUUGCGAUGUGUUCCUAAUAUGUACUACAAUUAUAUUGGGAACAUUUUGCAUAAAUAGUUUUGU
+((.(((((((((.(((((.((((((((((((((.........)))))))))))))).))))).))))))))).))
+>cgr-mir-450b MI0020527 Cricetulus griseus miR-450b stem-loop
+GCAGAAUUAUUUUUGCAGUAUGUUCCUGAAUACAUAAUAUAAGCGUAUUGGGAACAUUUUGCAUAUGUAAUUUUGU
+((((((((((...(((((.((((((((.(((((...........))))))))))))).)))))...))))))))))
+>cgr-mir-455 MI0020528 Cricetulus griseus miR-455 stem-loop
+GGUGUGAGCGUAUGUGCCUUUGGACUACAUCGUGGACGCAGCACCAUGCAGUCCACGGGCAUAUACACUUGCCUCAAG
+((.(..((.((((((((((.((((((.(((.(((.......))).))).)))))).)))))))))).))..).))...
+>cgr-mir-484 MI0020529 Cricetulus griseus miR-484 stem-loop
+UGCAGCCUCGUCAGGCUCAGUCCCCUCCCGAUAAACCUCUAAAUAGGGUGUUUCCCCGGGGGUGGCCUCCG
+((.(((((....)))))))...((((((((..((((((((....)))).))))...)))))).))......
+>cgr-mir-486 MI0020530 Cricetulus griseus miR-486 stem-loop
+CCUGAGGGGUCCUGUACUGAGCUGCCCCGAGGUCCUUCAUUGUGCUCAGCUCGGGGCAGCUCAGUACAAGACGCAUCGGGGUG
+(((((.(.(((.((((((((((((((((((((..(......)..)....))))))))))))))))))).))).).)))))...
+>cgr-mir-496 MI0020531 Cricetulus griseus miR-496 stem-loop
+UCCCGAAAUCAAGUGUUCGAACGGAGGUUGUCCAUGGUGUGUUCAUUUUAUUUAUGAUGAGUAUUACAUGGCCAAUCUCCUUUCGGCACU
+...........(((((.((((.((((((((.(((((..(((((((((........)))))))))..))))).)))))))).)))))))))
+>cgr-mir-497 MI0020532 Cricetulus griseus miR-497 stem-loop
+CUCCCGCCCCAGCAGCACACUGUGGUUUGUACGGCACUGUGGCCACGUCCAAACCACACUGUGGUGUUAGAGCGAGGGUGG
+...(((((((((((.((((.(((((((((.(((((......)))..)).))))))))).)))).)))).....).))))))
+>cgr-mir-499 MI0020533 Cricetulus griseus miR-499 stem-loop
+GGGCAGCUGUUAAGACUUGCAGUGAUGUUUAGCUCCUCUCUAUGUGAACAUCACAGCAAGUCUGUGCUGCUGCCUGC
+(((((((.((..((((((((.((((((((((.(..........))))))))))).))))))))..)).)))))))..
+>cgr-mir-500 MI0020534 Cricetulus griseus miR-500 stem-loop
+CUCCCCCUCUCUAAUCCUUGCUAUCUAGGUGCUAGUGCUAUCUCAAUGCAAUGCACCUGGGCAAGGGUUCAGAGAAGGUG
+....((.((((((((((((((...((((((((...(((.........)))..))))))))))))))))).))))).))..
+>cgr-mir-501 MI0020535 Cricetulus griseus miR-501 stem-loop
+CAUCCUCUCUAAUCCUUUGUCCCUGGGUGGAAAUGCUAUUUGUAUGCAAUGCACCCGGGCAAGGAUUUGGAGAAGGUGA
+((((.(((((((..(((((.(((.(((((.(.((((.....))))....).)))))))))))))..))))))).)))).
+>cgr-mir-503 MI0020536 Cricetulus griseus miR-503 stem-loop
+GUCGUGCCCUAGCAGCGUCCAAAACAGUACUGCAGUAUUUGGUAAGCUGGAGUAUUGUUUCCGCUGCUCGGGUAAGUCUG
+(.(.(((((.(((((((....((((((((((.((((.........)))).)))))))))).))))))).))))).).)..
+>cgr-mir-504 MI0020537 Cricetulus griseus miR-504 stem-loop
+UGCUGUUGGGAGACCCUGGUCUGCACCUCUAUCUGUAAACAUACUGAAGGGAGAGCAGGGCAGGGUUUCCCAUACAGGAGGCACAGGCUACCAUCUCUUG
+..((((((((((((((((.(((((.(((((.((.(((....))).)))))).).))))).)))))))))))).))))..(((....)))...........
+>cgr-mir-505 MI0020538 Cricetulus griseus miR-505 stem-loop
+CACCCAGUGGGGGAGCCAGGAAGUAUUGAUGUUUCUGCCAGUUUAGCGUCAACACUUGCUGGUUUCCUCUCUGGAGUAU
+.((((((.(((((((((((.((((.((((((((...........)))))))).)))).))))))))))).)))).))..
+>cgr-mir-532 MI0020539 Cricetulus griseus miR-532 stem-loop
+UUUCUCUUUCAUGCCUUGAGUGUAGGACCGUUAACAUCCUAAUUACCCUCCCACACCCAAGGUUUGCAGGAGAGCAA
+.(((((((.((.((((((.((((.(((..((.............))..))).)))).)))))).)).)))))))...
+>cgr-mir-542 MI0020540 Cricetulus griseus miR-542 stem-loop
+UCUCAGGCGUCUCGGGGAUCAUCAUGUCACGAGAUACACUGUGCCCUUGUGACAGAUUGAUAACUGAAAGGUCUUGGAA
+(((.((((.(.((((..((((...(((((((((.(((...)))..)))))))))...))))..)))).).)))).))).
+>cgr-mir-582 MI0020541 Cricetulus griseus miR-582 stem-loop
+GUACUCUUUGGUUACAGUUGUUCAACCAGUUACUAAUCUAACUAAUUGUAACCUGUUGAACAACUGAACCCAAAGGGUGC
+(((((((((((...((((((((((((..(((((..............)))))..))))))))))))...)))))))))))
+>cgr-mir-598 MI0020542 Cricetulus griseus miR-598 stem-loop
+GCUGAUGCUGGCGGUGAUGCCGAUGGUGCGAGCUGAAAAUGGGCUGCUACGUCAUCGUCGUCAUCGUUAUCAUCAUCAUC
+(.(((((.(((((((((((.((((((.((.((((.......))))))....)))))).))))))))))).))))).)...
+>cgr-mir-615 MI0020543 Cricetulus griseus miR-615 stem-loop
+GGGGCGGGAGGGGGGUCCCCGGUGCUCGGAUCUCGAGGGUGCUUAUUGUUCGGUCCGAGCCUGGGUCUCCCUCUUCCCCCCAUC
+((((.((((((((((..(((((.((((((((..((((.(.......).)))))))))))))))))..))))))))))))))...
+>cgr-mir-628 MI0020544 Cricetulus griseus miR-628 stem-loop
+UCGCUUCCUCAUGCUGACAUAUUUACUAGAGGGUAAAAUCAACAGACUUCUGGUAAGAGUGGCAGUCGAAGGGAAGGGCUCACCUGACUUCAGGAACCCG
+.(.((((((..(((((.(((.(((((((((((..............))))))))))).))).))).))..)))))).)....((((....))))......
+>cgr-mir-632 MI0020545 Cricetulus griseus miR-632 stem-loop
+CUCUCGCCGCGGUGGCCGACGGGAGGUGGAAAGAGAACGAGGGUGUCGGCCAUUUUGUGUCUGUUUCCUGUGGGACGCGGCGGUGGCGGU
+((.(((((((.(((.((.((((((((..((......((((.(((....)))...)))).))..)))))))).)).))).))))))).)).
+>cgr-mir-652 MI0020546 Cricetulus griseus miR-652 stem-loop
+AUGCACUGCACAACCCUAGGAGAGGGUGCCAUUCACAUAGACUAUAGUUGAAUGGCGCCACUAGGGUUGUGCAGUGCACA
+.((((((((((((((((((.....(((((((((((..((.....))..))))))))))).))))))))))))))))))..
+>cgr-mir-653 MI0020547 Cricetulus griseus miR-653 stem-loop
+AUUCUUUCAGUGUUGAAACAAUCUCUAUUGAGCCAAGCUCCAAAGCAAGUUCACUGGAGUUUGUUUCAAUAUUGCAAGAA
+.(((((.((((((((((((((.(((((.(((((...(((....)))..))))).))))).)))))))))))))).)))))
+>cgr-mir-664 MI0020548 Cricetulus griseus miR-664 stem-loop
+ACAUUGAAGCUGGCUGGGGAAAAUGAUUGGAUAGAAAGCACUGUUCUAUUCAUUUACUCCCCAGCCUACAAACAAAAAU
+........(..(((((((((((((((..((((((......))))))...))))))..)))))))))..)..........
+>cgr-mir-671 MI0020549 Cricetulus griseus miR-671 stem-loop
+CAGGAAGAGGAGGAAGCCCUGGAGGGGCUGGAGGUGAUGGAUGUUUUCCUCCGGUUCUCAGGGCUCCACCUCUUUCGAG
+..((((((((.(((.((((((..(((((((((((.(((....)))..)))))))))))))))))))).))))))))...
+>cgr-mir-672 MI0020550 Cricetulus griseus miR-672 stem-loop
+CUUUAGUUUUGAGGUUGGUGUACUGUGUGUGAGUAUACAUAUUUAUCACACACAGUCACCAUCUUCGAAAGUGAGGGUGC
+(((((.((((((((.(((((.(((((((((((.............)))))))))))))))).)))))))).)))))....
+>cgr-mir-674 MI0020551 Cricetulus griseus miR-674 stem-loop
+CAUCACCCUGAGCCUUGCACUGAGAUGGGAGUGGUGUAAGGCUUAAGUGUGCACAGCUCCCAUCUCAGAACAAGGCUCAG
+.......((((((((((..(((((((((((((.(((((..((....)).))))).)))))))))))))..))))))))))
+>cgr-mir-702 MI0020552 Cricetulus griseus miR-702 stem-loop
+CGGGACAAGGUGAGUGGGGUGGUUGGCAUGGGUUGCCAAGUCCGGGGACUUGAUGCUGUGUCGACAGCUUCCUGUUGUCC
+..((((((....((.(((((.((((((((((.....((((((....))))))...)))))))))).))))))).))))))
+>cgr-mir-708 MI0020553 Cricetulus griseus miR-708 stem-loop
+GACUGCCCUCAAGGAGCUUACAAUCUAGCUGGGGGUAAAUGACUUGCACUUGAACACAACUAGACUGUGAGCUUCUAGAGGGCAGGGGCCUUACCCUAGU
+..((((((((.(((((((((((.(((((.((.(..(((.((.....)).)))..).)).))))).))))))))))).))))))))(((.....)))....
+>cgr-mir-744 MI0020555 Cricetulus griseus miR-744 stem-loop
+UGGGCAAGGUGCGGGGCUAGGGCUAACAGCAGUCUUACUGAAGGUUUCCUGGAAACCACACACAUGCUGUUGCCACUAACCUCAACCUUACUCGGUC
+.(((.(((((..((((.((((((.(((((((.((.....)).((((((...)))))).......)))))))))).))).)))).))))).)))....
+>cgr-mir-7b MI0020556 Cricetulus griseus miR-7b stem-loop
+AGUGCUAUGUGGAAGACUUGUGAUUUUGUUGUUCUAAUGUGAUAUGACAACAAGUCACAGCCGGCCUCAUAGCGUGGACU
+...((((((.((..(.((.(((((((.((((((.((......)).))))))))))))))).)..)).)))))).......
+>cgr-mir-872 MI0020557 Cricetulus griseus miR-872 stem-loop
+GACUUGUCAGAAGGUUACUUGUUAGUUCAGGACCUCAUUACUUUCUGCCUGAACUAUUGCAGUAGCCUCCUAACUGGUU
+((((.((.((.((((((((.(((((((((((................)))))))))..)))))))))).)).)).))))
+>cgr-mir-874 MI0020558 Cricetulus griseus miR-874 stem-loop
+GGUGUUAGCCCUGCGGCCCCACGCACCAGGGUAAGAGAGACUUGCUUCCUGCCCUGGCCCGAGGGACCGACUGGCUGGGC
+....((((((...(((.(((.((..((((((((.(..((.....))..)))))))))..)).))).)))...))))))..
+>cgr-mir-9 MI0020559 Cricetulus griseus miR-9 stem-loop
+GAGUUGUUAUCUUUGGUUAUCUAGCUGUAUGAGUGUAUUGGUCUUCAUAAAGCUAGAUAACCGAAAGUAAAAACUCCUUC
+(((((.(((..(((((((((((((((.((((((..(....)..)))))).)))))))))))))))..))).)))))....
+>cgr-mir-92a MI0020560 Cricetulus griseus miR-92a stem-loop
+CUUUCUACACAGGCUGGGAUUUGUUGCAAUGCUGUGUUUCUCGAUGGUAUUGCACUUGUCCCGGCCUGUUGAGUUUGG
+..(((...((((((((((((..((.((((((((((........))))))))))))..)))))))))))).))).....
+>cgr-mir-92b MI0020561 Cricetulus griseus miR-92b stem-loop
+GGCGGGCGGGAGGGACGGGACGCGGUGCAGUGUUGUUCUUUCCCCCGCCAAUAUUGCACUCGUCCCGGCCUCCGGCCCCCUC
+((.((((.(((((..(((((((.((((((((((((.............))))))))))))))))))).))))).))))))..
+>cgr-mir-93 MI0020562 Cricetulus griseus miR-93 stem-loop
+AUGGGGGCUCCAAAGUGCUGUUCGUGCAGGUAGUGUAAUUACCUGACCUACUGCUGAGCUAGCACUUCCCGAGCCCCCAGG
+.(((((((((..((((((((((((.((((.(((.((.........)))))))))))))).)))))))...)))))))))..
+>cgr-mir-98 MI0020563 Cricetulus griseus miR-98 stem-loop
+AUGCUGGGGUGAGGUAGUAAGUUGUAUUGUUGUGGGGUAGGGAUUUUGGGCCCCAAUAAGAAGAUAACUAUACAACUUAC
+.((((.......))))(((((((((((.((((((((((...........)))))).........)))).)))))))))))
+>cgr-mir-99a MI0020564 Cricetulus griseus miR-99a stem-loop
+CGUUGACAUAAACCCGUAGAUCCGAUCUUGUGGUGAAAGUGGACGCACAAGCUCGCUUCUAUGGGUCUGUGGCAGUGU
+(((((.((((.(((((((((..(((.((((((((........)).)))))).)))..))))))))).)))).))))).
+>cgr-mir-6091 MI0020565 Cricetulus griseus miR-6091 stem-loop
+CCAAUGCGAGAAUGCCUGAGAAGGUGACCUGGAUUCGAAGAAUGUGGAUCCUGCGUCGACUUCUCAGGAGAUACUGGGAA
+....(.(.((.((.(((((((((.(((((.(((((((.......))))))).).)))).)))))))))..)).)).).).
+>cgr-mir-6092 MI0020566 Cricetulus griseus miR-6092 stem-loop
+GGUCCCUGCUUCAGAGCAGGGUCAUGUCUUUGUUCUAGCAGGUUGUACCAUGGACAAGGCUGUGCUCUGAGUGCUGAGGC
+.(((.(.(((((((((((.((((.(((((.(((....)))((.....))..))))).)))).))))))))).)).).)))

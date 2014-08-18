@@ -1,0 +1,843 @@
+>ipu-let-7a-7 MI0024433 Ictalurus punctatus let-7a-7 stem-loop
+UGAGGUAGUAGGUUGUAUAGUUUUAGGGUGACACCCUUCCUGUUAGAUAACUAUACAACUUACUGUCUUUCC
+.(((..((((((((((((((((..((((.....))))...........))))))))))))))))..)))...
+>ipu-let-7a-1 MI0024434 Ictalurus punctatus let-7a-1 stem-loop
+UGAGGUAGUAGGUUGUAUAGUUUUAGGGUCACACCCACACUGGGAGAUAACUAUACAACCUACUGUCUUUCU
+.(((..((((((((((((((((.....(((...(((.....))).)))))))))))))))))))..)))...
+>ipu-let-7a-3 MI0024435 Ictalurus punctatus let-7a-3 stem-loop
+UGAGGUAGUAGGUUGUAUAGUUUGAGGGUUUAACCCUUGCUGUCAGAUAACUAUACAACUUACUGUCUUUCC
+.(((..((((((((((((((((((((((.....)))))).........))))))))))))))))..)))...
+>ipu-let-7a-5 MI0024436 Ictalurus punctatus let-7a-5 stem-loop
+UGAGGUAGUAGGUUGUAUAGUUUGGUGGGAGGGAUCAAACCCUGUUCAGCUGAUAACUAUACAGUCUAUUGCCUUCCU
+.((((((((((..(((((((((.(.((((((((......)))).)))).)....)))))))))..))))))))))...
+>ipu-let-7a-6 MI0024437 Ictalurus punctatus let-7a-6 stem-loop
+UGAGGUAGUAGGUUGUAUAGUUUGUGGGAAGGAUCACAUCCUAUUCAGGUGAUAACUAUACAGUCUAUUGCCUUCC
+.((((((((((..((((((((((.((((.(((((...))))).)))).)....)))))))))..))))))))))..
+>ipu-let-7a-4 MI0024438 Ictalurus punctatus let-7a-4 stem-loop
+UGAGGUAGUAGGUUGUAUAGUUUAGAGUUACAACACGGGAGAUAACUGUACAGCCUCCUAGCUUUCC
+.(((.(((.(((((((((((((....((......)).......))))))))))))).))).)))...
+>ipu-let-7a-2 MI0024439 Ictalurus punctatus let-7a-2 stem-loop
+UGAGGUAGUAGGUUGUAUAGUUUAGAAUAACAUCACUGGAGAUAACUGUACAACCUCCUAGCUUUCC
+.(((.(((.(((((((((((((.........(((......)))))))))))))))).))).)))...
+>ipu-let-7b-2 MI0024440 Ictalurus punctatus let-7b-2 stem-loop
+UGAGGUAGUAGGUUGUGUGGUUUCAGGGUAGUGAUUUUGCCCCAUCAGGAGUUAACUAUACAACCUACUGCCUUCCC
+.(((((((((((((((((((((((.((((((.....))))))......))...)))))))))))))))))))))...
+>ipu-let-7b-1 MI0024441 Ictalurus punctatus let-7b-1 stem-loop
+UGAGGUAGUAGGUUGUGUGGUUUCAGGGUUGUGUUUUUGCCCCAUCAGGAGUUAACUAUACAACCUACUGCCUUCCC
+.(((((((((((((((((((((((.((((.........))))......))...)))))))))))))))))))))...
+>ipu-let-7c-1 MI0024442 Ictalurus punctatus let-7c-1 stem-loop
+UGAGGUAGUAGGUUGUAUGGUUUAGAAUUUUGCCCUGGGAGUUAACUGUACAACCUUCUAGCUUUCC
+.(((.(((.(((((((((((((...((((((......))))))))))))))))))).))).)))...
+>ipu-let-7c-2 MI0024443 Ictalurus punctatus let-7c-2 stem-loop
+UGAGGUAGUAGGUUGUAUGGUUUCGAAUGACACCAUGGGAGUUAACUGUACAACCUUCUAGCUUUCC
+.(((.(((.(((((((((((((((..(((....)))..))...))))))))))))).))).)))...
+>ipu-let-7d-2 MI0024444 Ictalurus punctatus let-7d-2 stem-loop
+UGAGGUAGUUGGUUGUAUGGUUUUGCAUCAUAAUCAGCCUGGAGUUAACUGUACAACCUUCUAGCUUUCC
+.(((.(((..((((((((((((..((..((.........))..)).))))))))))))..))).)))...
+>ipu-let-7d-1 MI0024445 Ictalurus punctatus let-7d-1 stem-loop
+UGAGGUAGUUGGUUGUAUGGUUUUGCAUAAUAAACAGCCCGGAGUUAACUGUACAACCUUCUAGCUUUCC
+.(((.(((..((((((((((((..((.................)).))))))))))))..))).)))...
+>ipu-let-7e-2 MI0024446 Ictalurus punctatus let-7e-2 stem-loop
+UGAGGUAGUAGAUUGAAUAGUUGUGGAGUAUAAAACCUCCCUUUGAGAUAACUAUACAAUCUACUGUCUUUCU
+.(((..(((((((((.((((((((((((........)))).......)))))))).)))))))))..)))...
+>ipu-let-7e-1 MI0024447 Ictalurus punctatus let-7e-1 stem-loop
+UGAGGUAGUAGAUUGAAUAGUUGUGGAGCCCUGCGCUCUCUCUCUGAGAUAACUAUACAAUCUACUGUCUUUC
+.(((..(((((((((.(((((((((((((.....))))).........)))))))).)))))))))..)))..
+>ipu-let-7f MI0024448 Ictalurus punctatus let-7f stem-loop
+UGAGGUAGUAGAUUGUAUAGUUGUAGGGUAGUGAUUUUAUCCUGUGUAGAAGAUAACUAUACAAUCUAUUGCCUUCC
+.((((((((((((((((((((((((((((((.....))))))).........)))))))))))))))))))))))..
+>ipu-let-7g-1 MI0024449 Ictalurus punctatus let-7g-1 stem-loop
+UGAGGUAGUAGUUUGUAUAGUUUGGGAUCACACCAGAUCUGGGAGAUAACUAUACAGCCUACUGUCUUUCU
+.(((..(((((.(((((((((((.(((((......))))).).....)))))))))).)))))..)))...
+>ipu-let-7g-2 MI0024450 Ictalurus punctatus let-7g-2 stem-loop
+UGAGGUAGUAGUUUGUAUAGUUUUAGGAUCACACCAGAUCUGGGAGAUAACUAUACAGUCUACUGUCUUUCC
+.(((..(((((.((((((((((...(((((......))))).......)))))))))).)))))..)))...
+>ipu-let-7h MI0024451 Ictalurus punctatus let-7h stem-loop
+UGAGGUAGUAAGUUGUGUUGUUGUUGGGGAUCAGUAUAGUAUGGCCCUUGAAGGAGAUAACUAUACAAUUUACUGCCUUCC
+.(((((((((((((((((.((((((((((.(((........))))))).......)))))).)))))))))))))))))..
+>ipu-let-7i MI0024452 Ictalurus punctatus let-7i stem-loop
+UGAGGUAGUAGUUUGUGCUGUUGGUUGGGAUGUGACAUUGCCCGUUAUGGAGAUGACUGCGCAAGCUACUCCCUUGC
+.((((.((((((((((((.((((.((....((((((.......))))))..)))))).)))))))))))).))))..
+>ipu-let-7j-1 MI0024453 Ictalurus punctatus let-7j-1 stem-loop
+UGAGGUAGUUGUUUGUACAGUUUUUAGGGUCUGUUAUUCUGCCCUGUUAAGGAGCUAACUGUACAGACUACUGCCUUGC
+.((((((((.((((((((((((..((((((..(.....).))))))..........)))))))))))).))))))))..
+>ipu-let-7j-2 MI0024454 Ictalurus punctatus let-7j-2 stem-loop
+UUGUGUAUGGCUGUUUAUCCUUGCCUGUUCUGGGUUGAGGUAGUUGUUUGUACAGUU
+(((((.(..((((.....((((((((.....))).)))))))))..)...)))))..
+>ipu-mir-1-1 MI0024455 Ictalurus punctatus miR-1-1 stem-loop
+ACAUACUUCUUUAUAUGCCCAUAUGAACAAGAGCAGCUAUGGAAUGUAAAGAAGUAUGUAU
+((((((((((((((((..(((((((........))..))))).))))))))))))))))..
+>ipu-mir-100-1 MI0024456 Ictalurus punctatus miR-100-1 stem-loop
+AACCCGUAGAUCCGAACUUGUGGUGACUGUCCACACAAGCUUGUAUCUAUAGGUAUC
+.(((..(((((.(((.((((((.((......)))))))).))).)))))..)))...
+>ipu-mir-100-2 MI0024457 Ictalurus punctatus miR-100-2 stem-loop
+AACCCGUAGAUCCGAACUUGUGGUGUCUCUGUGCACAAGCUCGUGUCUAUAGGUAUGU
+.(((..((((..(((.((((((...........)))))).)))..))))..)))....
+>ipu-mir-101a MI0024458 Ictalurus punctatus miR-101a stem-loop
+UCAGUUAUCACAGUGCUGAUGCUGUCCAUCUUAAAGGUACAGUACUGUGAUAACUGAAG
+((((((((((((((((((.((((............))))))))))))))))))))))..
+>ipu-mir-101b MI0024459 Ictalurus punctatus miR-101b stem-loop
+CAGUUAUCAUGGUACCGGUGCUGUGUGCCUGUCAAGUACAGUACUAUGAUAACUGAA
+(((((((((((((((..(((((.((.......))))))).)))))))))))))))..
+>ipu-mir-103-1 MI0024460 Ictalurus punctatus miR-103-1 stem-loop
+AGCCUCUUUACGGUGCUGCCUUGUGGAAUCUGGAUCAAGCAGCAUUGUACAGGGCUAUGA
+((((.((.(((((((((((.(((............)))))))))))))).))))))....
+>ipu-mir-103-2 MI0024461 Ictalurus punctatus miR-103-2 stem-loop
+UGAGCCUCUUUACAAUGCUGCCUUGUAGACCCAGAAUCAAGCAGCAUUGUACAGGGCUAUGA
+..((((.((.(((((((((((.(((............)))))))))))))).))))))....
+>ipu-mir-107a MI0024462 Ictalurus punctatus miR-107a stem-loop
+AGCUUCUUUACAGUGUUGUCUUGUGGCAUGGAGAUCAAGCAGCAUUGUACAGGGCUAUC
+((((.((.((((((((((.((((...(.....)..)))))))))))))).))))))...
+>ipu-mir-107b MI0024463 Ictalurus punctatus miR-107b stem-loop
+CUUCUCUACAGUGUUGCCUUGUAGCCUGGUGAUCAAGCAGCAUUGUACAGGGCU
+.((((.(((((((((((.(((..((...))...)))))))))))))).))))..
+>ipu-mir-10a MI0024464 Ictalurus punctatus miR-10a stem-loop
+UACCCUGUAGAUCCGAAUUUGUGUGAAUAUACAGUCGCAAAUUCGUGUCUUGGGGAAUA
+..(((((.(((..((((((((((............))))))))))..))))))))....
+>ipu-mir-10b-1 MI0024465 Ictalurus punctatus miR-10b-1 stem-loop
+UACCCUGUAGAACCGAAUUUGUGUGAAAAAAUAACAUUCACAGAUUCGAUUCUAGGGGAGU
+...(((.(((((.((((((((((...............)))))))))).))))).)))...
+>ipu-mir-10b-2 MI0024466 Ictalurus punctatus miR-10b-2 stem-loop
+UACCCUGUAGAACCGAAUUUGUGUCCAAAACAUCAAAAUCGCAAAUACGUCUCUACAGGAAUA
+...((((((((..((.(((((((................))))))).))..))))))))....
+>ipu-mir-10c MI0024467 Ictalurus punctatus miR-10c stem-loop
+UACCCUGUAGAUCCGGAUUUGUGUAAACAGACGCACAGUCACAAAUUCGUAUCUAGGGGAGUAUG
+((((((.(((((.((((((((((................)))))))))).))))).))).)))..
+>ipu-mir-10d MI0024468 Ictalurus punctatus miR-10d stem-loop
+UACCCUGUAGAACCGAAUGUGUGUUUACACAGCAAAUUCACAGAUUCGGUUUUAGGGGAGUA
+((((((.(((((((((((.((((...............)))).))))))))))).))).)))
+>ipu-mir-122 MI0024469 Ictalurus punctatus miR-122 stem-loop
+UGGAGUGUGACAAUGGUGUUUGUAUCAUCUGUCGUCAAACGCCAUUAUCACACUA
+...(((((((.(((((((((((...(....)....))))))))))).))))))).
+>ipu-mir-124a-5 MI0024470 Ictalurus punctatus miR-124a-5 stem-loop
+CGUGUUCACGGCGGACCUUGAUUUAAUAUCCAUACAAUUAAGGCACGCGGUGAAUGCC
+.((((((((.(((..((((((((............))))))))..))).)))))))).
+>ipu-mir-124a-4 MI0024471 Ictalurus punctatus miR-124a-4 stem-loop
+UGUGUUCACAGUGGACCUUGAUUUAAUUUCAAUACAAUUAAGGCACGCGGUGAAUGCC
+.((((((((.(((..((((((((............))))))))..))).)))))))).
+>ipu-mir-124a-2 MI0024472 Ictalurus punctatus miR-124a-2 stem-loop
+CGUGUUCACAGCGGACCUUGAUUUAAUGUCCAUACAAUUAAGGCACGCGGUGAAUGCC
+.((((((((.(((..((((((((............))))))))..))).)))))))).
+>ipu-mir-124a-1 MI0024473 Ictalurus punctatus miR-124a-1 stem-loop
+CGUGUUCACAGCGGACCUUGAUUUAAAUGUCCAUACAAUUAAGGCACGCGGUGAAUGCC
+.((((((((.(((..((((((((.............))))))))..))).)))))))).
+>ipu-mir-124a-3 MI0024474 Ictalurus punctatus miR-124a-3 stem-loop
+CGUGUUCACAGCGGACCUUGAUUUAAUGUCUUACAAUUAAGGCACGCGGUGAAUGCC
+.((((((((.(((..(((((((((((....))).))))))))..))).)))))))).
+>ipu-mir-125a-2 MI0024475 Ictalurus punctatus miR-125a-2 stem-loop
+UCCCUGAGACCCUUAACCUGUGAUGUCUUCCAAGGUCACAGGUGAGGUCCUUGGGAACA
+..((..((..(((((.((((((((.(......).)))))))))))))..))..))....
+>ipu-mir-125a-1 MI0024476 Ictalurus punctatus miR-125a-1 stem-loop
+UCCCUGAGACCCUUAACCUGUGAGGUCAAACUAGGUCACAGGUGAGGUCCUCAGGAACA
+..((((((..(((((.(((((((((.....))...))))))))))))..))))))....
+>ipu-mir-125b-1 MI0024477 Ictalurus punctatus miR-125b-1 stem-loop
+UCCCUGAGACCCUAACUUGUGACGUUUUCCUGUUAUGUGCACGGGUUAGGUUCUUGGGAGCU
+..((..(((.(((((((((((((((.........)))).))))))))))).)))..))....
+>ipu-mir-125b-2 MI0024478 Ictalurus punctatus miR-125b-2 stem-loop
+UCCCUGAGACCCUAACUUGUGACGUUCUGCUUCGAUGUCCACGGGUUGGGUUCUCGGGAGCU
+..(((((((.((((((((((((((((.......))))).))))))))))).)))))))....
+>ipu-mir-125b-3 MI0024479 Ictalurus punctatus miR-125b-3 stem-loop
+UCCCUGAGACCCUAACUUGUGAGCUUUGUGUGCUAAAAAUCACAGGUUAAGCUCUUGGGACCU
+..((..(((.(.((((((((((..((((.....))))..)))))))))).).)))..))....
+>ipu-mir-125c MI0024480 Ictalurus punctatus miR-125c stem-loop
+UCCCUGAGACCCUAACUCGUGAGGUCUUUUUCCAAAAUCACGGGUCAGGAGCUUGGGAGAC
+((((..((..(((.((((((((((.......))....)))))))).)))..))..)).)).
+>ipu-mir-126a MI0024481 Ictalurus punctatus miR-126a stem-loop
+CAUUAUUACUUUUGGUACGCGCUAGGCCAGACUCAAACUCGUACCGUGAGUAAUAAUGCA
+(((((((((((.(((((((.(..((......))....).))))))).)))))))))))..
+>ipu-mir-126b MI0024482 Ictalurus punctatus miR-126b stem-loop
+CAUUAUUACUUUUGGUACGCGCUAUGCCACUCUCAACUCGUACCGUGAGUAAUAGUGCA
+(((((((((((.(((((((.(...............).))))))).)))))))))))..
+>ipu-mir-128-2 MI0024483 Ictalurus punctatus miR-128-2 stem-loop
+GGGGGCCGUUUCUACUGUCAGAGAUGCUGCCACUCGUCUCACAGUGAACCGGUCUCUUU
+((((((((.(((.(((((..((((((........)))))))))))))).))))))))..
+>ipu-mir-128-1 MI0024484 Ictalurus punctatus miR-128-1 stem-loop
+CGGGGCCGUGGCACUGUAUGAGAUUCAUGUAGGCUUUCUCACAGUGAACCGGUCUCUUU
+.(((((((...((((((..((((..(.....)..))))..))))))...)))))))...
+>ipu-mir-129-1 MI0024485 Ictalurus punctatus miR-129-1 stem-loop
+CUUUUUGCGGUCUGGGCUUGCUGUUCCUUGAACCAGUAGCCAGGAAGCCCUUACCCCAAAAAGUA
+(((((((.(((..((((((.(((((.((......)).)).))).))))))..))).)))))))..
+>ipu-mir-129-3 MI0024486 Ictalurus punctatus miR-129-3 stem-loop
+CUUUUUGCGGUCUGGGCUUGCUGUUCAUAAGUAUCUAGCUGGGAAGCCCUUACCCCAAAAAGCA
+(((((((.(((..((((((.(((((...........))).)).))))))..))).)))))))..
+>ipu-mir-129-4 MI0024487 Ictalurus punctatus miR-129-4 stem-loop
+CUUUUUGCGGUCUGGGCUUGCUGUUCCUUAAAUCACCAGUCAGGAAGCCCUUACCCCAAAAAGUA
+(((((((.(((..((((((.(((.................))).))))))..))).)))))))..
+>ipu-mir-129-2 MI0024488 Ictalurus punctatus miR-129-2 stem-loop
+CUUUUUGCGGUCUGGGCUUGCUGUUCUCAACUAUCAAUGGGAAGCCCUUACCCCAAAAAGCA
+(((((((.(((..((((((.(((((..........))))).))))))..))).)))))))..
+>ipu-mir-130c-1 MI0024489 Ictalurus punctatus miR-130c-1 stem-loop
+GCCCUUUUUCUGUUGUACUACUGGCCAAUCAGAAGAGCAGUGCAAUAUUAAAAGGGCAU
+((((((((..(((((((((.((.............)).)))))))))..))))))))..
+>ipu-mir-130c-2 MI0024490 Ictalurus punctatus miR-130c-2 stem-loop
+GCCCUUUUUCUGUUGUACUACUGUGCAGUCAGAUGAGCAGUGCAAUAUUAAAAGGGCAU
+((((((((..((((((...(((((.((......)).)))))))))))..))))))))..
+>ipu-mir-132a MI0024491 Ictalurus punctatus miR-132a stem-loop
+ACCGUGGCUUUAGAUUGUUACUGUAGCGUUGGCACGUGGUAACAGUCUACAGCCAUGGUCG
+(((((((((.((((((((((((...((((....)))))))))))))))).)))))))))..
+>ipu-mir-132b MI0024492 Ictalurus punctatus miR-132b stem-loop
+ACCGUGGCAUUAGAUUGUUACUGUAGGAACAGAAUUUUUGGUAACAGUCUACAGCCAUGGUCG
+((((((((..(((((((((((((.((((......)))))))))))))))))..))))))))..
+>ipu-mir-133a MI0024493 Ictalurus punctatus miR-133a stem-loop
+AGCUGGUAAAAUGGAACCAAAUCAACUGUUUUAUGGAUUUGGUCCCCUUCAACCAGCUGU
+(((((((..((.((.((((((((............)))))))).)).))..)))))))..
+>ipu-mir-133b MI0024494 Ictalurus punctatus miR-133b stem-loop
+CUGGUCAAAUGGAACCAAGUCAGGUGUUUCUGCGAGGUUUGGUCCCCUUCAACCAGCU
+(((((..((.((.(((((..(..((......))..)..))))).)).))..)))))..
+>ipu-mir-133c MI0024495 Ictalurus punctatus miR-133c stem-loop
+CUGGUAAAACGGAACCAAGUCGGGUGUUUGCGAGAGGUUUGGUCCCUUUCAACCAGCU
+(((((..((.((.(((((..(...((....))...)..))))).)).))..)))))..
+>ipu-mir-135a MI0024496 Ictalurus punctatus miR-135a stem-loop
+UAUGGCUUUUUAUUCCUAUGUGAAGGUGAACAAGGCUCAUGUAGGGAUACAAGCCACUAAA
+..((((((..(((((((((((((.(.(......).)))))))))))))).)))))).....
+>ipu-mir-135b MI0024497 Ictalurus punctatus miR-135b stem-loop
+UAUGGCUUUUUAUUCCUAUCUGAGAAUUGCUCAGGACUCAUAUAGGGAUGGAAGCCAUGCA
+((((((((((.((((((((.((((..((....))..)))).))))))))))))))))))..
+>ipu-mir-135c-1 MI0024498 Ictalurus punctatus miR-135c-1 stem-loop
+UAUGGCUUUCUAUUCCUAUGUGAUUUUCUUCUGCCGUGUCACAUAGGGUUCAAAGCCAUUGG
+.((((((((....(((((((((((.............)))))))))))...))))))))...
+>ipu-mir-135c-2 MI0024499 Ictalurus punctatus miR-135c-2 stem-loop
+UAUGGCUUUCUAUUCCUAUGUGAUUUUGAUAUGAUGUAUCAUGUAGGGUUCAAAGCCAUUAG
+.((((((((....(((((((((((.............)))))))))))...))))))))...
+>ipu-mir-137 MI0024500 Ictalurus punctatus miR-137 stem-loop
+ACGGGUAUUCUUGGGUGGAUAAUACGGCUCUCGUUGUUAUUGCUUAAGAAUACGCGUAG
+(((.(((((((((((..(.(((((((.....)).))))))..))))))))))).)))..
+>ipu-mir-138-1 MI0024501 Ictalurus punctatus miR-138-1 stem-loop
+AGCUGGUGUUGUGAAUCAGGCCGAUGUCACACGUCAGCGAUAACCCGGCUAUUUCACAACACCAGGGU
+..(((((((((((((...(((((.((((.(......).))))...)))))..)))))))))))))...
+>ipu-mir-138-2 MI0024502 Ictalurus punctatus miR-138-2 stem-loop
+AGCUGGUGUUGUGAAUCAGGCCGCCGUGGUGAAAGGGUACGGCUUCUUCACAACACCAGGGU
+..(((((((((((((..((((((((.(......).))..)))))).)))))))))))))...
+>ipu-mir-1388 MI0024503 Ictalurus punctatus miR-1388 stem-loop
+AGGACUGUCCAACCUGAGAAUGCUUGAGUUUUGGUCAAUCUCAGGUUCGUCAGCCCAUGA
+.((.(((.(.(((((((((.((((........)).)).))))))))).).))).))....
+>ipu-mir-139 MI0024504 Ictalurus punctatus miR-139 stem-loop
+UCUACAGUGCAUGUGUCUCCAGUGUUUCUAUGGCGACUGGGGAGGCAGCGCUGUUGGAAU
+((((((((((.(((.(((((((((((.....))).)))))))).))))))))).))))..
+>ipu-mir-140 MI0024505 Ictalurus punctatus miR-140 stem-loop
+CAGUGGUUUUACCCUAUGGUAGGUUACGUCAUGCUGUUCUACCACAGGGUAGAACCACGGAC
+..(((((((((((((.(((((((..(((......)))))))))).)))))))))))))....
+>ipu-mir-141 MI0024506 Ictalurus punctatus miR-141 stem-loop
+CAUCUUACCUGACAGUGCUUGGCUGUUCACUGAUGUUCUAACACUGUCUGGUAACGAUG
+(((((((((.(((((((.((((....((...))....))))))))))).))))).))))
+>ipu-mir-142-1 MI0024507 Ictalurus punctatus miR-142-1 stem-loop
+CAUAAAGUAGAAAGCACUACUAAACCCCUCGCCACAGUGUAGUGUUUCCUACUUUAUGGA
+((((((((((.(((((((((..................))))))))).))))))))))..
+>ipu-mir-142-2 MI0024508 Ictalurus punctatus miR-142-2 stem-loop
+CAUAAAGUAGACAGCACUACUAAACUUCUCUACACAGUGUAGUGUUUCCUACUUUAUGGA
+((((((((((..((((((((..................))))))))..))))))))))..
+>ipu-mir-143 MI0024509 Ictalurus punctatus miR-143 stem-loop
+GGUGCAGUGCUGCAUCUCUGGUCAACUGGGAGUCUGAGAUGAAGCACUGUAGCUC
+(.(((((((((.((((((.((((......)).)).)))))).))))))))).)..
+>ipu-mir-144 MI0024510 Ictalurus punctatus miR-144 stem-loop
+GGAUAUCAUCGUAUACUGUAAGUUCAUUAUUGAGACACUACAGUAUAGAUGAUGUACU
+..((((((((.(((((((((..((((....))))....)))))))))))))))))...
+>ipu-mir-145 MI0024511 Ictalurus punctatus miR-145 stem-loop
+GUCCAGUUUUCCCAGGAAUCCCUUGGGCAAUCGAAAGGGGGAUUCCUGGAAAUACUGUUCUU
+(..((((.((.(((((((((((((...(....)...))))))))))))).)).))))..)..
+>ipu-mir-146a MI0024512 Ictalurus punctatus miR-146a stem-loop
+UGAGAACUGAAUUCCAUAGAUGGUGUUCAUGAAAAGUUCAUCUAUGGGCUCAGUUCUU
+.(((((((((..(((((((((((..............))))))))))).)))))))))
+>ipu-mir-146b MI0024513 Ictalurus punctatus miR-146b stem-loop
+UGAGAACUGAAUUCCAAGGGUGUCUGCUUUAUAUUCAGCCCACGGAGUUCAGUUCUUAAG
+(((((((((((((((..((((................))))..)))))))))))))))..
+>ipu-mir-148 MI0024514 Ictalurus punctatus miR-148 stem-loop
+AAGUUCUGUGAUACACUCCGACUCUGAAUGUUUGCAGUCAGUGCAUUACAGAACUUUGU
+((((((((((((.((((..(((((.........).)))))))).))))))))))))...
+>ipu-mir-150 MI0024515 Ictalurus punctatus miR-150 stem-loop
+UCUCCCAAUCCUUGUACCAGUGUCUGAUUUACAGAUGACGCUGGACGGGGUUUGGGGGGGG
+((((((((.((((((.((((((((............)))))))))))))).))))))))..
+>ipu-mir-152 MI0024516 Ictalurus punctatus miR-152 stem-loop
+AAGUUCUGUGAUACACUCAGACUUUGAAUCAGUGGUAGUCAGUGCAUGACAGAACUUUG
+(((((((((.((.((((..((((.............)))))))).)).)))))))))..
+>ipu-mir-153b MI0024517 Ictalurus punctatus miR-153b stem-loop
+UCAUUUUUGUGGUUUGCAGCUAGUAGUCUGGUUCCAGUUGCAUAGUCACAAAAAUGAGC
+(((((((((((..((((((((.(..........).))))))).)..)))))))))))..
+>ipu-mir-155 MI0024518 Ictalurus punctatus miR-155 stem-loop
+UUAAUGCUAAUCGUGAUAGGGGUUUAGUGCUGAUGAACACCUAUGCUGUUAGCAUUAAUC
+(((((((((((.((.(((((.(((((.......))))).))))))).)))))))))))..
+>ipu-mir-15a-1 MI0024519 Ictalurus punctatus miR-15a-1 stem-loop
+UAGCAGCACAGAAUGGUUUGUGAGUUAUAACGGGGGUGCAGGCCGUACUGUGCUGCGGC
+..(((((((((.((((((((((..((......))..)))))))))).)))))))))...
+>ipu-mir-15a-2 MI0024520 Ictalurus punctatus miR-15a-2 stem-loop
+UAGCAGCACAGAAUGGUUUGUGGUGAUACAGAGAUGCAGGCCAUGAUGUGCUGCAGCA
+..((((((((..((((((((((............))))))))))..))))))))....
+>ipu-mir-15b MI0024521 Ictalurus punctatus miR-15b stem-loop
+UAGCAGCACAUCAUGGUUUGUAAGUUAUAAGGGCAAAUUCCGAAUCAUGAUGUGCUGUCACU
+..((((((((((((((((((.(((((.....)))...)).))))))))))))))))))....
+>ipu-mir-16b MI0024522 Ictalurus punctatus miR-16b stem-loop
+UAGCAGCACGUAAAUAUUGGAGUCAAAGCACUUGCGAAUCCUCCAGUAUUGACCGUGCUGCU
+.(((((((((..((((((((((.....((....)).....))))))))))...)))))))))
+>ipu-mir-1788 MI0024523 Ictalurus punctatus miR-1788 stem-loop
+GGCUUGUUUUAAGUUGCCUGCGAUCUCUUAAUGACUCAGGCAGCUAAAGCAAGUCUG
+(((((((((((.((((((((.(.((.......))).)))))))))))))))))))..
+>ipu-mir-17a MI0024524 Ictalurus punctatus miR-17a stem-loop
+CAAAGUGCUUACAGUGCAGGUAGUAUUAUGGAAUAUCUACUGCAGUGGAGGCACUUCUAG
+..((((((((.((.(((((.(((((((....)))).)))))))).)).))))))))....
+>ipu-mir-17b MI0024525 Ictalurus punctatus miR-17b stem-loop
+CAAAGUGCUUACAGUGCAGGUAGUUCAAUAUAAUCUACUGCAGUGGAGGCACUUCAAGC
+..((((((((.((.(((((.(((...........)))))))).)).)))))))).....
+>ipu-mir-181a-1 MI0024526 Ictalurus punctatus miR-181a-1 stem-loop
+AACAUUCAACGCUGUCGGUGAGUUUGAGCUAAAUGGAAAAAAACCAUCGACCGUUGAUUGUACC
+.(((.((((((..(((((((.((((...((....))....))))))))))))))))).)))...
+>ipu-mir-181a-2 MI0024527 Ictalurus punctatus miR-181a-2 stem-loop
+AACAUUCAACGCUGUCGGUGAGUUUUGCGCUUCUGUAACAAACCAUCGACCGUUGACUGUACC
+.(((.((((((..(((((((.((((((((....))))..))))))))))))))))).)))...
+>ipu-mir-181a-3 MI0024528 Ictalurus punctatus miR-181a-3 stem-loop
+AACAUUCAACGCUGUCGGUGAGUUUUAGACAUUGAAAAACCAUCGACCGUUGACUGUGCC
+.(((.((((((..(((((((.(((((.........)))))))))))))))))).)))...
+>ipu-mir-181a-4 MI0024529 Ictalurus punctatus miR-181a-4 stem-loop
+AACAUUCAACGCUGUCGGUGAGUUUGGAUGCAUAAUAAACCAUCGACCGUUGGCUGUGCC
+.(((..(((((..(((((((.(((((.........)))))))))))))))))..)))...
+>ipu-mir-181a-5 MI0024530 Ictalurus punctatus miR-181a-5 stem-loop
+AACAUUCAACGCUGUCGGUGAGUUUGCAAGUGAGAAAAACCAUCGAGUGUUGAGUGUACC
+.(((((((((((..((((((.((((...........)))))))))))))))))))))...
+>ipu-mir-181b-2 MI0024531 Ictalurus punctatus miR-181b-2 stem-loop
+AACAUUCAUUGCUGUCGGUGGGUUGGAUUGUAAAAGAAAGCUCACUGAACAAUGAAUGCAA
+..(((((((((...((((((((((...((....))...)))))))))).)))))))))...
+>ipu-mir-181b-1 MI0024532 Ictalurus punctatus miR-181b-1 stem-loop
+AACAUUCAUUGCUGUCGGUGGGUUUAGUCUUGUAACAGCUCUCUGAACAAUGAAUGUAAC
+.((((((((((...((((.(((((..((......))))))).)))).))))))))))...
+>ipu-mir-181c MI0024533 Ictalurus punctatus miR-181c stem-loop
+CACAUUCAUUGCUGUCGGUGGGUUUUAUCUCUUCGACUCGCCGGACAAUGAAUGAGA
+..(((((((((...((((((((((..........)))))))))).)))))))))...
+>ipu-mir-182 MI0024534 Ictalurus punctatus miR-182 stem-loop
+UUUGGCAAUGGUAGAACUCACACUGGUGAGGUAGUCAGAUCCGGUGGUUCUAGACUUGCCAACUA
+.(((((((.(.((((((...(((((((((.....)))...))))))))))))..))))))))...
+>ipu-mir-183 MI0024535 Ictalurus punctatus miR-183 stem-loop
+AUGGCACUGGUAGAAUUCACUGUGAAAGCACACUAUCAGUGAAUUACCAAAGGGCCAUA
+(((((..(((((..((((((((..............)))))))))))))....))))).
+>ipu-mir-184 MI0024536 Ictalurus punctatus miR-184 stem-loop
+CCUUAUCACUUUUCCAGCCCAGCUAUCCAUUUAGUAUUCGUUGGACGGAGAACUGAUAAGGGC
+((((((((.((((((.(.(((((................))))).))))))).))))))))..
+>ipu-mir-187 MI0024537 Ictalurus punctatus miR-187 stem-loop
+GGCUGCAACACAGGACAUGGGAGCUGUCUCUCACUCCCGCUCGUGUCUUGUGUUGCAGCCAGU
+(((((((((((((((((((((((.((.....)))))))....))))))))))))))))))...
+>ipu-mir-18a MI0024538 Ictalurus punctatus miR-18a stem-loop
+UAAGGUGCAUCUAGUGCAGAUAGUGAAGUAGACUAGCACCUACUGCCCUAAGUGCUCCUUCUG
+.((((.(((..(((.((((.(((((.((....))..)).))))))).)))..))).))))...
+>ipu-mir-190a MI0024539 Ictalurus punctatus miR-190a stem-loop
+UGAUAUGUUUGAUAUAUUAGGUUGUUAUUCUGUCCAACUAUAUAUCAAACAUAUUCCU
+.((((((((((((((((..(((((..........)))))))))))))))))))))...
+>ipu-mir-190b MI0024540 Ictalurus punctatus miR-190b stem-loop
+UGAUAUGUUUGAUAUUCGGUUGCUUUCUUUAUAUCAUGUCAACUAAAUAUCAGACAUAUUCCU
+.(((((((((((((((..(((((..............).))))..)))))))))))))))...
+>ipu-mir-192 MI0024541 Ictalurus punctatus miR-192 stem-loop
+AUGACCUAUGAAUUGACAGCCAGUGUUUGCAGUCCAGCUGCCUGUCAGUUCUGUAGGCCACU
+.((.(((((((((((((((.((((............)))).)))))))))).))))).))..
+>ipu-mir-194a MI0024542 Ictalurus punctatus miR-194a stem-loop
+UGUAACAGCAACUCCAUGUGGAAGGUUUGUGUCUUCCAGUGGAGCUGCUGUUGCGUG
+.(((((((((.((((((.(((((((......))))))))))))).)))))))))...
+>ipu-mir-196a-1 MI0024543 Ictalurus punctatus miR-196a-1 stem-loop
+UAGGUAGUUUCAUGUUGUUGGGAUUGGCUUCCUGGCUCGACAACAAGAAACUGCCUUGA
+.((((((((((.((((((((((...((...))...)))))))))).))))))))))...
+>ipu-mir-196a-2 MI0024544 Ictalurus punctatus miR-196a-2 stem-loop
+UAGGUAGUUUCAUGUUGUUGGGAUUACAUUCAAACUCUGCAACGUGAAACUGUCUUAA
+.((..(((((((((((((.(((.((......)).))).)))))))))))))..))...
+>ipu-mir-196d-1 MI0024545 Ictalurus punctatus miR-196d-1 stem-loop
+UAGGUAGUUUUAUGUUGUUGGGCUCUAUUUUAUAUCCCCGCAACACGAAACUGUCUUAA
+.((..(((((..((((((.(((.............))).))))))..)))))..))...
+>ipu-mir-196d-2 MI0024546 Ictalurus punctatus miR-196d-2 stem-loop
+CCAAGAAACAAAGACAACUGCUAAGUGAUUUAGGUAGUUUUAUGUUGUUGGGC
+((((..(((((((((.(((...((....))..))).))))).)))).))))..
+>ipu-mir-199a-1 MI0024547 Ictalurus punctatus miR-199a-1 stem-loop
+CCCAGUGUUCAGACUACCUGUUCAGGAUCAUACUGGUGUACAGUAGUCUGCACAUUGGUU
+.(((((((.((((((((.(((((((.......))))...))))))))))).)))))))..
+>ipu-mir-199a-2 MI0024548 Ictalurus punctatus miR-199a-2 stem-loop
+CCCAGUGUUCAGACUACCUGUUCAGGAAUUAGUGUUUGUACAGUAGUCUGCACAUUGGUU
+.(((((((.((((((((.(((.((((........)))).))))))))))).)))))))..
+>ipu-mir-199a-4 MI0024549 Ictalurus punctatus miR-199a-4 stem-loop
+CCCAGUGUUCAGACUACCUGUUCAGGGCGUAGAGAUUGUACAGUAGUCUGCACAUUGGUU
+.(((((((.((((((((.(((.(((..(.....).))).))))))))))).)))))))..
+>ipu-mir-199a-3 MI0024550 Ictalurus punctatus miR-199a-3 stem-loop
+CCCAGUGUUCAGACUACCUGUUCAUCAUGCUGCAGCUGAACAGUAGUCCGCACAUUGGUU
+.(((((((.(.((((((.((((((....((....)))))))))))))).).)))))))..
+>ipu-mir-19a-1 MI0024551 Ictalurus punctatus miR-19a-1 stem-loop
+AGUUUUGCAUAGUUGCACUACAAGAAAACGGGAGUUGUGCAAAUCUAUGCAAAACUGA
+((((((((((((((((((........(((....)))))))))..))))))))))))..
+>ipu-mir-19a-2 MI0024552 Ictalurus punctatus miR-19a-2 stem-loop
+AGUUUUGCAUAGUUGCACUACAAGAAAUAUUGAGUUGUGCAAAUCUAUGCAAAACUGA
+((((((((((((((((((..(((......)))....))))))..))))))))))))..
+>ipu-mir-19b MI0024553 Ictalurus punctatus miR-19b stem-loop
+AGUUUUGCUGGUUUGCAUUCAGCUUUUAAGACUGUGCGCUGUGCAAAUCCAUGCAAAACUGA
+((((((((((((((((((...((............))...))))))).))).))))))))..
+>ipu-mir-200a MI0024554 Ictalurus punctatus miR-200a stem-loop
+CAUCUUACCGGACAGUGCUGGACUGUAUAACUGUUUUCUAACACUGUCUGGUAACGAUG
+(((((((((((((((((.((((..............)))).))))))))))))).))))
+>ipu-mir-200b MI0024555 Ictalurus punctatus miR-200b stem-loop
+CAUCUUACGAGGCAGCAUUGGAUUUCAUUACUUUUUCUAAUACUGCCUGGUAAUGAUGAU
+((((((((.((((((.((((((.............)))))).)))))).)))).))))..
+>ipu-mir-200c MI0024556 Ictalurus punctatus miR-200c stem-loop
+CAUCUUACAAGGCAGUUUUGGAUGUUAUAUCUUCUCUAAUACUGCCUGGUAAUGAUGC
+((((((((.(((((((.(((((.(........).))))).))))))).)))).)))).
+>ipu-mir-202 MI0024557 Ictalurus punctatus miR-202 stem-loop
+UUCCUAUGCAUAUACCUCUUUGACAUGCUGCUUUAAAGAGGCAUAGGGCAUGGGAAAA
+(((((((((.(((.(((((((((.........))))))))).)))..)))))))))..
+>ipu-mir-203a MI0024558 Ictalurus punctatus miR-203a stem-loop
+AGUGGUUCUUAACAGUUCAACAGUUCUAUCUCAAAAUUGUGAAAUGUUUAGGACCACU
+(((((((((.((((.((((.(((((.........))))))))).)))).)))))))))
+>ipu-mir-203b MI0024559 Ictalurus punctatus miR-203b stem-loop
+AGUGGUUCUCAACAGUUCAACAGUUCUUUUGAUGAUUGUGAAAUGUUCAGGACCACUUG
+(((((((((.((((.((((.(((((........))))))))).)))).)))))))))..
+>ipu-mir-204-2 MI0024560 Ictalurus punctatus miR-204-2 stem-loop
+UUCCCUUUGUCAUCCUAUGCCUGCAGUUCCUGAUGAGGCUGGGACAGCAAAGGGAGGU
+((((((((((..(((((.((((.((........)))))))))))..))))))))))..
+>ipu-mir-204-3 MI0024561 Ictalurus punctatus miR-204-3 stem-loop
+UUCCCUUUGUCAUCCUAUGCCUAGAGUUUGUGAUAAGGCAGGGACAGCAAAGGGAGGC
+((((((((((..((((.(((((.............)))))))))..))))))))))..
+>ipu-mir-204-1 MI0024562 Ictalurus punctatus miR-204-1 stem-loop
+UUCCCUUUGUCAUCCUAUGCCUGGAGUAAUAGAGGGGGCUGGGAAGU
+.(((((((((..(((.......)))...)))))))))..........
+>ipu-mir-205 MI0024563 Ictalurus punctatus miR-205 stem-loop
+UCCUUCAUUCCACCGGAGUCUGUGUAGUUGUUCAAUCAGAUUUCAGUGGUGUGAAGUGUA
+..((((((.((((.((((((((((........))..)))))))).)))).))))))....
+>ipu-mir-206-1 MI0024564 Ictalurus punctatus miR-206-1 stem-loop
+ACAUGCUUCCUUAUAUGCCCAUAUUAAUGCUCAAGUUAUGGAAUGUAAGGAAGUGUGUGG
+((((((((((((((((..(((((.............))))).))))))))))))))))..
+>ipu-mir-206-2 MI0024565 Ictalurus punctatus miR-206-2 stem-loop
+ACAUACUUCCUUAUAUCCCCAUAUUCAGAAUUAAUCUAUGGAAUGUAAGGAAGUGUGUGG
+((((((((((((((((..(((((.............))))).))))))))))))))))..
+>ipu-mir-20a MI0024566 Ictalurus punctatus miR-20a stem-loop
+UAAAGUGCUUAUAGUGCAGGUAGUAUUUCUGUCAUCUACUGCAGUGUGAGCACUUGAAGU
+..(((((((((((.(((((.(((............)))))))).))))))))))).....
+>ipu-mir-21-1 MI0024567 Ictalurus punctatus miR-21-1 stem-loop
+UAGCUUAUCAGACUGGUGUUGGCUGUUACAUUCGCCCGGCGACAACAGUCUGUAGGCUGUCU
+(((((((.(((((((.(((((.(((...........)))))))).))))))))))))))...
+>ipu-mir-21-2 MI0024568 Ictalurus punctatus miR-21-2 stem-loop
+UAGCUUAUCAGACUGGUGUUGGCUUUGAGUUUUUGGCAACAGCAGUCUAAUAGGCUGUC
+((((((((.((((((.(((((.(...........).))))).)))))).))))))))..
+>ipu-mir-210 MI0024569 Ictalurus punctatus miR-210 stem-loop
+AGCCACUGACUAACGCACAUUGCGCCUAUUCUCCACUCCACUGUGCGUGUGACAGCGGCU
+((((.(((....(((((((.((................)).)))))))....))).))))
+>ipu-mir-212-1 MI0024570 Ictalurus punctatus miR-212-1 stem-loop
+ACCUUGGCUCUAGACUGCUUACUGCUAAAUGUGUCUGAAAGUACAGUAACAGUCUACAGUCAUGGCU
+.((.(((((.(((((((.((((((.((..(........)..))))))))))))))).))))).))..
+>ipu-mir-212-2 MI0024571 Ictalurus punctatus miR-212-2 stem-loop
+ACCUUGGCUCUAGACUGCUUACUGCUUAUGGAGUCCGACAGUACAGUAACAGUCUACAGUCAUGGCU
+.((.(((((.(((((((.((((((....((........))...))))))))))))).))))).))..
+>ipu-mir-214 MI0024572 Ictalurus punctatus miR-214 stem-loop
+UGCCUGUCUACACUUGCUGUGCAGAACUUCCUGCACCUGUACAGCAGGCACAGACAGGCAGA
+(((((((((...((((((((((((............))))))))))))...)))))))))..
+>ipu-mir-216a MI0024573 Ictalurus punctatus miR-216a stem-loop
+UAAUCUCAGCUGGCAACUGUGAGUAGUGUUUUCAUCCCUCUCACAGGCGCUGCUGGGGUUCUG
+.(((((((((.(((..(((((((..(((....)))....)))))))..))))))))))))...
+>ipu-mir-216b MI0024574 Ictalurus punctatus miR-216b stem-loop
+UAAUCUCUGCAGGCAACUGUGAUGUGAUUACAGUCUCACAUUGACCUGAAGAGGUUGAG
+((((((((.(((((((.(((((...(((....))))))))))).)))).))))))))..
+>ipu-mir-217 MI0024575 Ictalurus punctatus miR-217 stem-loop
+UACUGCAUCAGGAACUGAUUGGAUGAUAUUCAGGAGCCAUCAGUUCCUGAUGCACUCCC
+...((((((((((((((((.((.((.....))....)))))))))))))))))).....
+>ipu-mir-2187 MI0024576 Ictalurus punctatus miR-2187 stem-loop
+UUAAUUAGUAUAGCCUGUUUUAGUGAUCACAUCAAUUCUUUACAGGCUAUGCUAAUCUAUGC
+...(((((((((((((((.....((((...)))).......)))))))))))))))......
+>ipu-mir-2188 MI0024577 Ictalurus punctatus miR-2188 stem-loop
+AAGGUCCAACCUCACAUGUCCUGUGAGGCUGAAGGAAGGCUGUGUGAGGUUAGACCUAUC
+.(((((.(((((((((((.(((..............))).))))))))))).)))))...
+>ipu-mir-218a-1 MI0024578 Ictalurus punctatus miR-218a-1 stem-loop
+UUGUGCUUGAUCUAACCAUGUGCCGCCGCCUACACAAGCCUCACAUGGUUCCGUCAAGCACCAGG
+..(((((((((..(((((((((..((...........))..)))))))))..)))))))))....
+>ipu-mir-218a-2 MI0024579 Ictalurus punctatus miR-218a-2 stem-loop
+UUGUGCUUGAUCUAACCAUGUGGUUGCAGACUCAGACUAAUACAUGGUUCUGUCAAGCACCAUG
+..(((((((((..((((((((((((.........))))...))))))))..)))))))))....
+>ipu-mir-218b MI0024580 Ictalurus punctatus miR-218b stem-loop
+UUGUGCUUGAUCUAACCAUGCAGUUCCCUUUCUGUCCAUGGUUGUGCCAAGCACUUUG
+..(((((((...(((((((((((........)))..))))))))...)))))))....
+>ipu-mir-219a-2 MI0024581 Ictalurus punctatus miR-219a-2 stem-loop
+AGUUGAUUGUCCAAACGCAAUUCUUGUGAAAUGUCGAGCGAUCAGUCGAGAAUUGUGCCUGGACAUCUGU
+....(((.(((((..(((((((((((.....((((....)).))..)))))))))))..))))))))...
+>ipu-mir-219a-1 MI0024582 Ictalurus punctatus miR-219a-1 stem-loop
+UGAUUGUCCAAACGCAAUUCUUGUAACAUAUAAUAUAAAUCCAAGAAUUGUGCCUGGACAUCUGU
+.(((.(((((..(((((((((((..................)))))))))))..))))))))...
+>ipu-mir-219b MI0024583 Ictalurus punctatus miR-219b stem-loop
+CUGAUUGUCCAAACGCAAUUCUUGUGCUUGUGUGAAACAGGAGUUGUGGAUGGACAUCACGC
+.((((.(((((..((((((((((((...........))))))))))))..)))))))))...
+>ipu-mir-221-1 MI0024584 Ictalurus punctatus miR-221-1 stem-loop
+ACCUGGCAUACAAUGUAGAUUUCUGUGUGGUACUAUCUACAGCUACAUUGUCUGCUGGGUUU
+(((..(((.(((((((((....(((((.(((...))))))))))))))))).)))..)))..
+>ipu-mir-221-2 MI0024585 Ictalurus punctatus miR-221-2 stem-loop
+CCCUGGCACACAGUGUAUUGGUCUGUGUGUGUGUGUGUCUACAGCUACAUUGUCUGCUGGGUUU
+.((..(((.(((((((...((.(((((..(......)..)))))))))))))).)))..))...
+>ipu-mir-221-3 MI0024586 Ictalurus punctatus miR-221-3 stem-loop
+AGCUACAUUGUCUGCUGGGUUUCAGGCCAGCAGAAUAAUUCUGCUCU
+(((...((((((((((((.(....).))))))).)))))...)))..
+>ipu-mir-222a MI0024587 Ictalurus punctatus miR-222a stem-loop
+UGCUCAGUAGUCAGUGUAGAUCCUGUGUCACAAUCAGCAGCUACAUCUGGCUACUGGGUCUC
+.((((((((((((((((((...(((.........)))...))))).)))))))))))))...
+>ipu-mir-223 MI0024588 Ictalurus punctatus miR-223 stem-loop
+GAGUAUUUGACAGACUGUGGUUGACACUCGAUCUAAAGGGGUGUCAGUUUGUCAAAUACC
+..((((((((((((((......(((((((.........))))))))))))))))))))).
+>ipu-mir-22a MI0024589 Ictalurus punctatus miR-22a stem-loop
+AGUUCUUCACUGGCAAGCUUUAUGUCCUUGUGUACCAGCUAAAGCUGCCAGCUGAAGAACUGU
+(((((((((((((((.((((((.((............)))))))))))))).)))))))))..
+>ipu-mir-22b MI0024590 Ictalurus punctatus miR-22b stem-loop
+UUCACUGGCUAGCUUUAUGUGGCAGCACCUUAAAGCUGCCAGUUGAAGAGCUGU
+(((((((((.(((((((.(((....)))..)))))))))))).)))).......
+>ipu-mir-23a-2 MI0024591 Ictalurus punctatus miR-23a-2 stem-loop
+GGAAUUCCUGGCAGAGUGAUUUUUAAACCUAAUGACUGAAUCACAUUGCCAGGGAUUUCC
+((((((((((((((.(((((((...............))))))).)))))))))))))).
+>ipu-mir-23a-3 MI0024592 Ictalurus punctatus miR-23a-3 stem-loop
+GGAUUCCUGGCAGAGUGAUUUGGGAUUAUAUCAUAAAAUCACAUUGCCAGGGAUUUCC
+(((((((((((((.(((((((..(((...)))...))))))).)))))))))))))..
+>ipu-mir-23a-1 MI0024593 Ictalurus punctatus miR-23a-1 stem-loop
+GGGUUCCUGGCACCGUGAUUUGGUGGAUAAACAGAAAUGAAAAUCACAUUGCCAGGGAUUUCC
+((((((((((((..(((((((..........((....)).)))))))..))))))))))))..
+>ipu-mir-23b-2 MI0024594 Ictalurus punctatus miR-23b-2 stem-loop
+GGGUUCCUGGCGUGCUGAUUUGUGACUUAAGAUAAAAAUCACAUUGCCAGGGAUUACC
+.(((((((((((((.((((((..............)))))))).)))))))))))...
+>ipu-mir-23b-1 MI0024595 Ictalurus punctatus miR-23b-1 stem-loop
+GGGUUCUUGGCAUGCUGAUUUGUGACUGUAGUAAAAAAAAAUCACAUUGCCAGGGAUUACC
+.(((((((((((((.((((((...((....))......)))))))).)))))))))))...
+>ipu-mir-24-2 MI0024596 Ictalurus punctatus miR-24-2 stem-loop
+UGCCUGCUGUGCUGAUAAUCAGUGGACGGCUGUGACUGGCUCAGUUCAGCAGGAACAGG
+..(((((((.(((((...(((((.(.......).))))).))))).)))))))......
+>ipu-mir-24-1 MI0024597 Ictalurus punctatus miR-24-1 stem-loop
+GGUGCCUUCUGAGCUGAUAUCAGUUGUAGUAAAUCACUGGCUCAGUUCAGCAGGAACAGG
+.((.(((.(((((((((..(((((.((.....)).))))).))))))))).))).))...
+>ipu-mir-24-3 MI0024598 Ictalurus punctatus miR-24-3 stem-loop
+UGCCUACUGAGCUGAUUACAGUACUGUGCAAACACUGGCUCAGUUCAGCAGGAACAGG
+..(((.(((((((((...((((...((....))))))..))))))))).)))......
+>ipu-mir-25 MI0024599 Ictalurus punctatus miR-25 stem-loop
+AGGCGGAGACUUGGGCAGCUGCCGUCAUUCCCAGAAGGCAUUGCACUUGUCUCGGUCUGA
+((((.(((((..(.((((.((((.((.......)).)))))))).)..))))).))))..
+>ipu-mir-26a-2 MI0024600 Ictalurus punctatus miR-26a-2 stem-loop
+UUCAAGUAAUCCAGGAUAGGCUGUCUGUCCUGGAGGCCUAUUCAUGAUUACUUGCACU
+..(((((((((..(((((((((..(......)..)))))))))..)))))))))....
+>ipu-mir-26a-3 MI0024601 Ictalurus punctatus miR-26a-3 stem-loop
+UUCAAGUAAUCCAGGAUAGGCUUUGUGGACUAGGGUUGGCCUGUUCUUGGUUACUUGCACU
+..(((((((((.((((((((((.....(((....))))))))))))).)))))))))....
+>ipu-mir-26a-1 MI0024602 Ictalurus punctatus miR-26a-1 stem-loop
+UUCAAGUAAUCCAGGAUAGGCUUGUGAUGUCCGGAAAGCCUAUUCGGGAUGACUUGGUUC
+.((((((.((((.((((((((((.((.....))..)))))))))).)))).))))))...
+>ipu-mir-26b MI0024603 Ictalurus punctatus miR-26b stem-loop
+UUCAAGUAAUCCAGGAUAGGUUAGUUCCCACUAGUACGGCCUAUUCUUGGUUACUUGUUUC
+..(((((((((.(((((((((((((....)))).....))))))))).)))))))))....
+>ipu-mir-27a MI0024604 Ictalurus punctatus miR-27a stem-loop
+CAGGACUUAGCUCACUCUGUGAACAGAUCUCGGAUAUCCUAUGUUCACAGUGGCUAAGUUCCGCU
+..((((((((((....(((((((((......((....))..))))))))).))))))))))....
+>ipu-mir-27b MI0024605 Ictalurus punctatus miR-27b stem-loop
+AGAGCUUAGCUGAUUGGUGAACAGUGAUUGAACUCUUUGUUCACAGUGGCUAAGUUCUGC
+((((((((((((....((((((((.((......)).))))))))..))))))))))))..
+>ipu-mir-27c MI0024606 Ictalurus punctatus miR-27c stem-loop
+GGACUUAACCCACUUGUGAACAAUGCAUCGAACUUCAAUGUUCACAGUGGUUAAGUUCUG
+((((((((((.(((.(((((((.((..........)).))))))))))))))))))))..
+>ipu-mir-27d MI0024607 Ictalurus punctatus miR-27d stem-loop
+GCAGAGCUUGGCUGAUUGGUGAACGUGCAUGGCUUGUGUUUUUGUUCACAGUGGCUAAGUUCUUCAC
+(.((((((((((((....(((((((.((((.....))))...)))))))..)))))))))))).)..
+>ipu-mir-27e MI0024608 Ictalurus punctatus miR-27e stem-loop
+AGAGCUUAGCUAAUCGGUGAGCAUUGAUCCCUUAAGAAAACUGUUCACAGUGGCUAAGUUCAGU
+.(((((((((((....(((((((.(..((......))..).)))))))..)))))))))))...
+>ipu-mir-29c MI0024609 Ictalurus punctatus miR-29c stem-loop
+CUGGUUUCACAUGGUGGUUUAGAUGUGUUCUACCAAAGUCUAGCACCAUUUGAAAUCAGUG
+(((((((((.((((((..((((((.((......))..)))))))))))).)))))))))..
+>ipu-mir-29b MI0024610 Ictalurus punctatus miR-29b stem-loop
+GCUGAAUUCAGAUGGUGCCAUAGAGUAUUUUAUGGCAUCUAGCACCAUUUGAAAUCAGUGU
+(((((.((((((((((((..((((((........)).)))))))))))))))).)))))..
+>ipu-mir-301a MI0024611 Ictalurus punctatus miR-301a stem-loop
+UCUGACUUCAUUGCACUACUGUAUUGGACAGCUAGCAGUGCAAUAGUAUUGUCAAAGC
+..((((..(((((((((.((((........)).)).)))))))).)....))))....
+>ipu-mir-301c MI0024612 Ictalurus punctatus miR-301c stem-loop
+GCUCUGACGAUGUUGCACUACUGUACCAUCCAUUCUAGCAGUGCAAUAGUAUUGUCAUAGC
+(((.(((((((((((((((.(((............))).))))))))...))))))).)))
+>ipu-mir-30a MI0024613 Ictalurus punctatus miR-30a stem-loop
+AAACAUUCCCGACUGGAAGUUGUAAUGCAGAAAAUCUCAGCUUUCAGUCUGAUGUUUGC
+(((((((...((((((((((((..((.......))..)))))))))))).)))))))..
+>ipu-mir-30b MI0024614 Ictalurus punctatus miR-30b stem-loop
+UGUAAACAUCCUACACUCAGCUGUGAGCUGCAGACGAGGCUGGGCGGAGGGUGUUUGCUGU
+.(((((((((((.(.(((((((.....(....)....))))))).).)))))))))))...
+>ipu-mir-30c MI0024615 Ictalurus punctatus miR-30c stem-loop
+UGUAAACAUCCUACACUCUCAGCUGGAGCGCAGCCGAGGCCGGGAGUGGGAUGUUUGCGCU
+.((((((((((..(((((((.(((...((...))...))).)))))))))))))))))...
+>ipu-mir-30d MI0024616 Ictalurus punctatus miR-30d stem-loop
+UGUAAACAUCCCCGACUGGAAGCUGUGCUACGCGGAAAACGAGCUUUCAGUUGGAUGUUUGCUGU
+.((((((((((..(((((((((((((.((....))...)).)))))))))))))))))))))...
+>ipu-mir-30e MI0024617 Ictalurus punctatus miR-30e stem-loop
+UGUAAACAUCCUUGACUGGAAGCUGGUGCACAUGAUGGAGCUUUCAGUCGGAUGUUUGCAGC
+(((((((((((..(((((((((((....(....)....))))))))))))))))))))))..
+>ipu-mir-31 MI0024618 Ictalurus punctatus miR-31 stem-loop
+UGGCAAGAUGUUGGCAUAGCUGUUAAUGUUUAUGGGCCUGCUAUGCCUCCAUAUUGCCAUU
+((((((.(((..((((((((.((..((....))..))..))))))))..))).))))))..
+>ipu-mir-338-3 MI0024619 Ictalurus punctatus miR-338-3 stem-loop
+AACAAUAUCCUGGUGCUGCCUGAGUACAUCUCACAGACUCCAGCAUCAGUGAUUUUGUUG
+(((((.((((((((((((...((((.(........)))))))))))))).))).))))).
+>ipu-mir-338-1 MI0024620 Ictalurus punctatus miR-338-1 stem-loop
+AACAAUCUCCUGAUGCUGCCUGAGUGUUUUUCUUCCACUCCAGCAUCAGUGAUUUUGUUG
+(((((..(((((((((((...(((((.........)))))))))))))).))..))))).
+>ipu-mir-338-2 MI0024621 Ictalurus punctatus miR-338-2 stem-loop
+AACAAUAUCCUGAUGCUGAAUGAGUGUGUUGAAGGAAACUCCAGCAUCAGUGAUUUUGUUG
+(((((.((((((((((((...((((............))))))))))))).))).))))).
+>ipu-mir-34a MI0024622 Ictalurus punctatus miR-34a stem-loop
+UGGCAGUGUCUUAGCUGGUUGUUGUGUGGAGUGAGAACGAAGCAAUCAGCAAGUAUACUGCCGCA
+.(((((((((((.((((((((((.(((.........))).))))))))))))).))))))))...
+>ipu-mir-34b MI0024623 Ictalurus punctatus miR-34b stem-loop
+AGGCAGUGUUGUUAGCUGAUUGUUUCAUAUGAACUAUAAUCACUAACCAUACUGCCAACA
+.((((((((.(((((.((((((((((....)))..)))))))))))).))))))))....
+>ipu-mir-34c MI0024624 Ictalurus punctatus miR-34c stem-loop
+AGGCAGUGCAGUUAGUUGAUUACAAUCCAUAAAGUAAUCACUAACCUCACUACCAGG
+.((.((((..((((((.((((((..........))))))))))))..)))).))...
+>ipu-mir-363 MI0024625 Ictalurus punctatus miR-363 stem-loop
+UCGGGUGGAUGACUCUGCAAUUUUAUUAGUGAUGGAAAAACUUCAAUAAAAAUUGCACGGUAUCCAUCUGUAA
+.((((((((((.((.(((((((((.....(((.(......).)))...))))))))).))))))))))))...
+>ipu-mir-365-1 MI0024626 Ictalurus punctatus miR-365-1 stem-loop
+AGGGACUUUUAGGGGCAGCUGUGUUAUACUGACCCAGUCAUAAUGCCCCUAAAAAUCCUUA
+(((((.(((((((((((((((.(((.....))).)))).....))))))))))).))))).
+>ipu-mir-365-2 MI0024627 Ictalurus punctatus miR-365-2 stem-loop
+AGGGACUUUUAGGGGCAGCUGUGUUUUAUUAACCCAGUCAUAAUGCCCCUAAAAAUCCUUA
+(((((.(((((((((((((((.(((.....))).)))).....))))))))))).))))).
+>ipu-mir-375-1 MI0024628 Ictalurus punctatus miR-375-1 stem-loop
+ACGUUGAGCCACACGCACAAUACAUGUGGAUUCAGUUUUGUUCGUUCGGCUCGCGUU
+((((.(((((..(((.((((.((.((......)))).)))).)))..))))))))).
+>ipu-mir-375-2 MI0024629 Ictalurus punctatus miR-375-2 stem-loop
+CGUUGAGCCACACGCACAAUGCCUGCAGAUGAAAGGGUUUUGUUCGUUCGGCUCGCGUU
+(((.(((((..(((.((((.((((.(....)...)))).)))).)))..))))))))..
+>ipu-mir-429a MI0024630 Ictalurus punctatus miR-429a stem-loop
+GUCUUACCAGACAUGGUUAGAUGUAAUAACUUGUGUCUAAUACUGUCUGGUAAUGCCG
+((.((((((((((..((((((..(((....)))..))))))..)))))))))).))..
+>ipu-mir-429b MI0024631 Ictalurus punctatus miR-429b stem-loop
+UCUUACCAGGCAAGUUUAGAUGUUGAUACUGUGUCUAAUACUGCCUGGUAAUGCCA
+..((((((((((.(((((((..(.......)..))))).)))))))))))).....
+>ipu-mir-454b MI0024632 Ictalurus punctatus miR-454b stem-loop
+CCUAUCAAUAUUGCCUCUGCUUUUCUCACUGUUUAUGGAGUAGUGCAAUAUUGCUUAUAGGGU
+((((((((((((((..(((((((.............))))))).)))))))))...)))))..
+>ipu-mir-455a MI0024633 Ictalurus punctatus miR-455a stem-loop
+UAUGUGCCCUUGGACUACAUCGUGGAAGCCAGCACCAUGCAGUCCAUGGGCAUAUACACU
+(((((((((.((((((.(((.(((........))).))).)))))).)))))))))....
+>ipu-mir-455b MI0024634 Ictalurus punctatus miR-455b stem-loop
+UAUGUGCCCUUGGACUACAUUGUGGAGGCCAGCACCAUGCAGUCCAUGGGCAUAUACACU
+(((((((((.((((((.(((.(((........))).))).)))))).)))))))))....
+>ipu-mir-456 MI0024635 Ictalurus punctatus miR-456 stem-loop
+GCAGGCAUCUUUCCAGUCUACAUGUGGAUCCAGGAGUCUGCAGGCUGGUUAGAUGGUUGUCA
+((((.(((((..(((((((....(..(((......)))..))))))))..))))).))))..
+>ipu-mir-457a MI0024636 Ictalurus punctatus miR-457a stem-loop
+AAGCAGCACAUCAAUAUUGGCAGCUGCCCUCUCUCUGGGUUGCCAGUAUGGUUUGUGCUG
+...(((((((...(((((((((...((((.......)))))))))))))....)))))))
+>ipu-mir-458 MI0024637 Ictalurus punctatus miR-458 stem-loop
+AGCGCCAUUUACAGAGCUAUAAGCAUCAUAGUUGUCAUAGCUCUUUGAAUGGUACUGC
+((..(((((((.((((((((.(((......)))...)))))))).)))))))..))..
+>ipu-mir-459 MI0024638 Ictalurus punctatus miR-459 stem-loop
+UCAGUAACAAGGAUUCAUCCUGUUGUGGUACUCAAAUCCAACAGGGAAUCUCUGUUACUGGGG
+(((((((((..(((((..(((((((.(((......)))))))))))))))..)))))))))..
+>ipu-mir-460 MI0024639 Ictalurus punctatus miR-460 stem-loop
+CCUGCAUUGUACACACUGUGCGGAAAACAUGGACAUGCACAGCGCAUACAAUGUGGAUGC
+.(..(((((((..(.(((((((.............))))))).)..)))))))..)....
+>ipu-mir-462 MI0024640 Ictalurus punctatus miR-462 stem-loop
+UAACGGAACCCAUAAUGCAGCUGUUUGGUUGAUUGAUUGACAGCUGUCUGUGGAUUCCGUGCCC
+..((((((.(((((..(((((((.(..(((....)))..)))))))).))))).))))))....
+>ipu-mir-489 MI0024641 Ictalurus punctatus miR-489 stem-loop
+UGGUCGUAUGUAUGACGUCAUUUACUUCAAAGUUUGGAGUGACAUCAUAUGUACGGCUGCU
+.((((((((((((((.((((((((((....)))...))))))).))))))))))))))...
+>ipu-mir-499-2 MI0024642 Ictalurus punctatus miR-499-2 stem-loop
+UUAAGACUUGCAGUGAUGUUUAGGUAAUCUGACCCAUGAACAUCACUUUAAGUCUGUGCU
+...(((((((.((((((((((((((......)))..))))))))))).))))))).....
+>ipu-mir-499-1 MI0024643 Ictalurus punctatus miR-499-1 stem-loop
+UUAAGACUUGCAGUGAUGUUUAGAGAAAUGUCACAUGAACAUCACUUUAAGUCUGUGCU
+...(((((((.(((((((((((..((....))...))))))))))).))))))).....
+>ipu-mir-724-1 MI0024644 Ictalurus punctatus miR-724-1 stem-loop
+UUAAAGGGAAUUUGCGACUGUUAGUCAGAUUUGUAGAACAGCCACACCUUCCUUUUAAGA
+((((((((((..((.(.(((((...(......)...))))).).))..))))))))))..
+>ipu-mir-724-2 MI0024645 Ictalurus punctatus miR-724-2 stem-loop
+UUAAAGGGAAUUUGCGACUGUUUAGUCACAUUAUUAGAACAGCCACACCUUCCUUUUAAGA
+((((((((((..((.(.(((((((((......))).)))))).).))..))))))))))..
+>ipu-mir-728-1 MI0024646 Ictalurus punctatus miR-728-1 stem-loop
+AAAUGUAGUAGACUAUAAGUAUACAGUGAACAUGAACGUAUACUAAGUACACUACGUUUUC
+(((((((((..(((...(((((((.((........))))))))).)))..)))))))))..
+>ipu-mir-728-2 MI0024647 Ictalurus punctatus miR-728-2 stem-loop
+AAAUGUAGUUGACUAUAAGUAUACUUAUAGCAGACAAUGUAUACUAAGUACACUACGUUUUC
+(((((((((..(((...(((((((..............))))))).)))..)))))))))..
+>ipu-mir-730-1 MI0024648 Ictalurus punctatus miR-730-1 stem-loop
+UCCUCAUUGUGCAUGCUGUGUGUCUUCAGUCUGGUCCUCACAGCGCCUGCAAUGUGGAGGC
+(((.(((((((..(((((((.(.((.......)).)..)))))))..))))))).)))...
+>ipu-mir-730-2 MI0024649 Ictalurus punctatus miR-730-2 stem-loop
+CAGGCGUCCAAUAAGGGGUUCUCCGGUCUCCUCAUUGUGCAUGCUGUGUG
+..((((((((((.(((((.........))))).)))).).))))).....
+>ipu-mir-737 MI0024650 Ictalurus punctatus miR-737 stem-loop
+GUUUUUUUAGGUUUUGAUUUUUGUGAAAUGUCGAUGAGAAAAUCAAAACCUAAAGAAAAUA
+.(((((((((((((((((((((.(((....)))....)))))))))))))))))))))...
+>ipu-mir-7a-4 MI0024651 Ictalurus punctatus miR-7a-4 stem-loop
+UGGAAGACUAGUGAUUUUGUUGUUUUUUUAUGAUGGAAGGAGACAACAAGUCAUAGUCUGCCUCA
+.((.((((((.((((((.(((((((((((.......))))))))))))))))))))))).))...
+>ipu-mir-7a-2 MI0024652 Ictalurus punctatus miR-7a-2 stem-loop
+UGGAAGACUAGUGAUUUUGUUGUUGUGACGUCAUCAGUACUGACAACAAGUCACAGUCUGCCUCA
+.((.(((((.(((((((.((((((...((.......))...)))))))))))))))))).))...
+>ipu-mir-7a-1 MI0024653 Ictalurus punctatus miR-7a-1 stem-loop
+UGGAAGACUAGUGAUUUUGUUGUUGUUUCUUCUGCUUUCUGACAACAAGUCACAGUCUACCUCA
+.((.(((((.(((((((.((((((................)))))))))))))))))).))...
+>ipu-mir-7a-3 MI0024654 Ictalurus punctatus miR-7a-3 stem-loop
+UGGAAGACUAGUGAUUUUGUUGUGAAAAUGAACAAAAACCAACAACAAACCGCAGUCGUCCUCU
+.(((.((((.(((..((((((((..................)))))))).))))))).)))...
+>ipu-mir-7a-5 MI0024655 Ictalurus punctatus miR-7a-5 stem-loop
+GGCUAAAAUUACUCCCAUUUCUCCAGACACCAGCACUGACCCGAUUCGCUGUGGAAGACUAGUGAUUUUGUUGU
+(((.(((((((((.....(..((((.....((((.............))))))))..)..))))))))))))..
+>ipu-mir-7b MI0024656 Ictalurus punctatus miR-7b stem-loop
+UGGAAGACUUGUGAUUUUGUUGUUGUUAGUUAGAUGAAGUGACAACAAAUCACGGUCUGCCCUA
+.((.(((((.(((((((.(((((..((..........))..)))))))))))))))))..))..
+>ipu-mir-9-4 MI0024657 Ictalurus punctatus miR-9-4 stem-loop
+UCUUUGGUUAUCUAGCUGUAUGAGUUUAUGUGAUAUCAUAAAGCUAGAGAACCGAAUGUA
+..(((((((.(((((((.((((((((.....))).))))).))))))).)))))))....
+>ipu-mir-9-2 MI0024658 Ictalurus punctatus miR-9-2 stem-loop
+UCUUUGGUUAUCUAGCUGUAUGAGUGUGCUGGCCGUCAUAAAGCUAGAUAACCGAAAGUA
+..(((((((((((((((.(((((.((.(....)))))))).)))))))))))))))....
+>ipu-mir-9-6 MI0024659 Ictalurus punctatus miR-9-6 stem-loop
+UCUUUGGUUAUCUAGCUGUAUGAGUGUUUAUCUGCCUUCAUAAAGCUAGAUAACCGAAAGUA
+..(((((((((((((((.((((((.((......)).)))))).)))))))))))))))....
+>ipu-mir-9-1 MI0024660 Ictalurus punctatus miR-9-1 stem-loop
+UCUUUGGUUAUCUAGCUGUAUGAGUGUUAUUCAUUCUUCAUAAAGCUAGAUAACCGAAAGUA
+..(((((((((((((((.((((((((.....)))...))))).)))))))))))))))....
+>ipu-mir-9-3 MI0024661 Ictalurus punctatus miR-9-3 stem-loop
+UCUUUGGUUAUCUAGCUGUAUGAGUUAUAACACUGUCAUAAAGCUAGAUAACCGAAAGU
+..(((((((((((((((.(((((((......))..))))).)))))))))))))))...
+>ipu-mir-9-7 MI0024662 Ictalurus punctatus miR-9-7 stem-loop
+UCUUUGGUUAUCUAGCUGUAUGAGUUAUGAAAUAUCAUAAAGCUAGAGAACCGAAAGU
+..(((((((.(((((((.(((((...........))))).))))))).)))))))...
+>ipu-mir-9-5 MI0024663 Ictalurus punctatus miR-9-5 stem-loop
+UCUUUGGUUAUCUAGCUGUAUGAGUAUUUUGCACUUCAUAAAGCUAGAUAACCGAAAGUA
+..(((((((((((((((.(((((((.......)).))))).)))))))))))))))....
+>ipu-mir-92a-2 MI0024664 Ictalurus punctatus miR-92a-2 stem-loop
+AGGUUGGGAUCGGCCGCAAUGCUCUGUGCUGGAAGUAUUGCACUUGUCCCGGCCUGU
+((((((((((.((..((((((((((.....)).)))))))).)).))))))))))..
+>ipu-mir-92a-1 MI0024665 Ictalurus punctatus miR-92a-1 stem-loop
+AGGUUGGGAUUGGUAGCAAUGCUGUGUGUUUUGAAGGUAUUGCACUUGUCCCGGCCUGU
+((((((((((.(((.((((((((............))))))))))).))))))))))..
+>ipu-mir-92b MI0024666 Ictalurus punctatus miR-92b stem-loop
+AGGUGUGGGAUGUUGUGCAGUGUUGUUCAAUCUCCCGCCAAUAUUGCACUCGUCCCGGCCUCC
+((((.(((((((..(((((((((((.............))))))))))).)))))))))))..
+>ipu-mir-96 MI0024667 Ictalurus punctatus miR-96 stem-loop
+UUUGGCACUAGCACAUUUUUGCUUUUUUAUAUAUACCUUGAGCAAUUAUGUGUAGUGCCAAUAU
+.(((((((((.(((((..((((((...............))))))..))))))))))))))...
+>ipu-mir-99a MI0024668 Ictalurus punctatus miR-99a stem-loop
+AACCCGUAGAUCCGAUCUUGUGGCGUAAUCGGCAACCCAAGCUCGAUUCUGUGGGUCU
+.(((((((((..(((.((((((.((....)).))...)))).)))..)))))))))..
+>ipu-mir-99b MI0024669 Ictalurus punctatus miR-99b stem-loop
+AACCCGUAGAUCCGAUCUUGUGAUAAGUUUGAUGGCACAAGCUCGAUUCUAUGGGUCUC
+.(((((((((..(((.((((((...(......)..)))))).)))..)))))))))...
+>ipu-mir-24b MI0024670 Ictalurus punctatus miR-24b stem-loop
+UGCCUACUGAGCUGAUAACAGUUGAUGUAUUUAGCACUGGCUCAGUUCAGCAGGAAC
+..(((.(((((((((...(((((((.....)))..))))..))))))))).)))...
+>ipu-mir-7547 MI0024671 Ictalurus punctatus miR-7547 stem-loop
+AGCGGCGUCAGAAGCGAUGGCCGUGUCUCUAUCCAAUAGGUCGGGUCGCUAAUGACGUCACC
+...(((((((..((((((((((.((........))...))))..))))))..)))))))...
+>ipu-mir-7147 MI0024672 Ictalurus punctatus miR-7147 stem-loop
+UGUACCAUGCUGGUAGCCAGUAUGAAAUAGGGCUUGCUGGUAACCAGCGUUGUGCCCC
+.((((.((((((((.(((((((.(........).))))))).)))))))).))))...
+>ipu-mir-29a MI0024673 Ictalurus punctatus miR-29a stem-loop
+ACUGAUUUCCUCUGGUGUUCAGAGUGGACUGGGUUUUUCUAGCACCAUUUGAAAUCGGUCG
+(((((((((...(((((((.((((.((((...)))))))))))))))...)))))))))..
+>ipu-mir-16c MI0024674 Ictalurus punctatus miR-16c stem-loop
+CCAGCAGCACGGUCAAUACUGGAGGAUUCGCAAGUGCUUUGACUCCAAUAUUUACGUGCUGCUACAG
+..(((((((((...((((.(((((.....((....)).....))))).))))..)))))))))....
+>ipu-mir-199b MI0024675 Ictalurus punctatus miR-199b stem-loop
+UAACCAAUGUGCAGACUACUGUACAAACACUAAUUCCUGAACAGGUAGUCUGAACACUGGGCAGG
+...(((.(((.(((((((((((.((............)).))).)))))))).))).))).....
+>ipu-mir-7548 MI0024676 Ictalurus punctatus miR-7548 stem-loop
+AGCCGCGGCUGUAGGAGCGACUGAAGAAGAGGGGGAUGGGGACAAUUGUUUUUUGUGUUGCAUUCCUGCAGUGUGUUUGA
+...((((.(((((((((((((...((((((.((...((....)).)).))))))..)))))..)))))))))))).....
+>ipu-mir-203c MI0024677 Ictalurus punctatus miR-203c stem-loop
+AGUGGUCCUAAACAUUUCACAAUUUUGAGAUAGAACUGUUGAACUGUUAAGAACCACUGC
+((((((.((.((((.((((((.(((((...))))).)).)))).)))).)).))))))..
+>ipu-mir-551 MI0024678 Ictalurus punctatus miR-551 stem-loop
+AAACCAAGCAUGGGUGUGGCCUGAAUCCUCCAAUGGCGACCCAUCCUUGGUUUCU
+((((((((.((((((...(((.............))).)))))).))))))))..
+>ipu-mir-7549 MI0024679 Ictalurus punctatus miR-7549 stem-loop
+GAUCGGUGCAGCGGCGGCAGCAAUGCGGUCGAUGUACUGGUCUG
+((((((((((.((((.(((....))).)))).))))))))))..
+>ipu-mir-129b MI0024680 Ictalurus punctatus miR-129b stem-loop
+UUUGGGGUAAGGGCUUCCUGGCUACUGGUUCAAGGAACAGCAAGCCCAGACCGCAAAAA
+((((.(((..((((((.(((....((......))...))).))))))..))).))))..
+>ipu-mir-7550 MI0024681 Ictalurus punctatus miR-7550 stem-loop
+AUCCGGCUCGAAGGACCAAUUUUGUAGAGGAGUUAGCUGGUUCUUAGGUGAAUUU
+.....(((..(((((((((((((.....)))))....)))))))).)))......
+>ipu-mir-3618 MI0024682 Ictalurus punctatus miR-3618 stem-loop
+GAUUUCCAAUAAUUGAGACAGUAAUUUCUAAAAAGCUGUCUACAUUAAUGAAAAGAAC
+......((.((((..(((((((............)))))))..)))).))........
+>ipu-mir-7551 MI0024683 Ictalurus punctatus miR-7551 stem-loop
+GGACGGAUGGCGUAACCGUAGCAAAACUUAUGCGUUUUCAAACUAAAACGCACUAGUGUAAACGGGGCCUGAGUCCUUCUGG
+((((....(((....((((......(((..((((((((......))))))))..)))....)))).)))...))))......
+>ipu-mir-7552 MI0024684 Ictalurus punctatus miR-7552 stem-loop
+UUACAAUUAAAGGAUAUUUCUUGCGGCUGAAUACGAGAACAGAAAUGUCCCUUAAUUGUUUGGUU
+..((((((((.((((((((((..((........)).....)))))))))).))))))))......
+>ipu-mir-7553 MI0024685 Ictalurus punctatus miR-7553 stem-loop
+UGACGUCAUUAGCGACCCGACCUAUUGGAUAGAGACACGGCCAUCGCUUCUGACGCCGCU
+.(.(((((..(((((.(((.(((((...)))).)...)))...)))))..))))).)...
+>ipu-mir-7554 MI0024686 Ictalurus punctatus miR-7554 stem-loop
+ACAUUUUGUCUAUCUGAAAUACGUUACUUGUAUAUUUGCGUUUCGUUGUACGUUUCAGAUGACAAAUCCACUAG
+....((((((.((((((((((((..((..(((....)))))..))).....)))))))))))))))........
+>ipu-mir-7555 MI0024687 Ictalurus punctatus miR-7555 stem-loop
+CUCCAGCCCGGACACCCAGGACGUAGCGAUGUGGAAGAACUGCGUGACUGGAUUGGGAG
+.((((..((((.(((.(((..(...((...))....)..))).))).))))..))))..
+>ipu-mir-7556 MI0024688 Ictalurus punctatus miR-7556 stem-loop
+AUUGUAUUCAAGUUACUGUACGUGUACAAGAGAUAUCCAUACAGUAACUUGAAGACAACGU
+.((((.((((((((((((((.(..(((....).))..).)))))))))))))).))))...
+>ipu-mir-7557 MI0024689 Ictalurus punctatus miR-7557 stem-loop
+UGCUUGCGUUCUGUCUGUUCCCUCUGUGGUCAUUUAACAGAAUGCAGACAGUUCCUGGGC
+.(((((.(..((((((((....(((((.........)))))..))))))))..).)))))
+>ipu-mir-7558a MI0024690 Ictalurus punctatus miR-7558a stem-loop
+GGCUGAGAUUGGGAGCACUCCCUUUAAGGGUGUGCUCCUGGUCUCGGCUCG
+(((((((((..(((((((.(((.....))).)))))))..)))))))))..
+>ipu-mir-7559 MI0024691 Ictalurus punctatus miR-7559 stem-loop
+UGCCACACGACUGCUCAGCUCAGCCCUGUUGCGCUGUGCAGUCCUGUGGUGCC
+.((((((.((((((.((((.((((...)))).)))).)))))).))))))...
+>ipu-mir-7560 MI0024692 Ictalurus punctatus miR-7560 stem-loop
+UACCUGUCUGCAAUCUUGAAGCGAAUGGCACACUGUAGUUUCCUGAGGCAGAUGGGACA
+..(((((((((..((..(((((..((((....)))).)))))..)).)))))))))...
+>ipu-mir-7558b MI0024693 Ictalurus punctatus miR-7558b stem-loop
+AGCUGAGAUUGGGAGCACACUCUUAAAGGGAGUGCUCCUGGUCUCGGCUCG
+(((((((((..(((((((.(((.....))).)))))))..)))))))))..
+>ipu-mir-7561 MI0024694 Ictalurus punctatus miR-7561 stem-loop
+GUCGAGUUCGCUUUCCUGAUUCAAAGUCGCAUUUACUUUCUUGAUUCAGAGUCGAGCUCGCUU
+(.((((((((((...((((.(((((((.......)))...)))).)))))).)))))))))..
+>ipu-mir-7562 MI0024695 Ictalurus punctatus miR-7562 stem-loop
+CACACACACUCAUGAACACACACUGUGCUUCUUAAUGGGUGUGUUUAUGCGUGUUUGUCUC
+.(((.((((.(((((((((((.((((........))))))))))))))).)))).)))...
+>ipu-mir-7563a MI0024696 Ictalurus punctatus miR-7563a stem-loop
+AACCGCGUACUUGCCUACUAUAGGACUGUAGUAGACGAAAUACAUGUAUCUCCGCUACUAUAUAGAAGGCAAGUACGCGGUUUG
+((((((((((((((((.(((((.....((((..((.((.((....)).))))..))))..))))).))))))))))))))))..
+>ipu-mir-7563b MI0024697 Ictalurus punctatus miR-7563b stem-loop
+ACCGCGUACUUACCUACUGUAUGGUAGCUAAGAUGCAUGUAUUUCGCCUAUUAUAUAGCGGGUAAGUACGCGGUUU
+((((((((((((((..(((((((((((...(((((....)))))...)))))))))))..))))))))))))))..
+>ipu-mir-7563c MI0024698 Ictalurus punctatus miR-7563c stem-loop
+UUUCAGAGCCAGAGAUCGACAGCCUGUUCCAGAUCACAUGGAGAUCUGUGACCUCGGGCUCUGACGCG
+..((((((((.(((.((.((((....(((((.......)))))..)))))).))).))))))))....
+>ipu-mir-7564 MI0024699 Ictalurus punctatus miR-7564 stem-loop
+ACCGCGUACUUACCUACUGUAUAGUAGCUGAUAUACAUGUAUUUUGUCUACUAUAGGCCUAUAGUAGGCGAGUACACGGUUU
+((((.(((((..((((((((((((((((.(((((....)))))..).))))))......)))))))))..))))).))))..
+>ipu-mir-7565 MI0024700 Ictalurus punctatus miR-7565 stem-loop
+UUCCUGCUGAACUGAGCCAGUGUUUCUGCAGUACUGUAAUCAGCUCAGUAGGCACG
+..((((((((.((((..(((((.........)))))...)))).))))))))....
+>ipu-mir-7566 MI0024701 Ictalurus punctatus miR-7566 stem-loop
+GGUUUGAGAGUCCCCGAUGAAACCAUUCGGAUAUUUUCAUCGGCUCAUCAGACACGC
+.(((((((((...(((((((((((....))....)))))))))))).))))))....
+>ipu-mir-7567 MI0024702 Ictalurus punctatus miR-7567 stem-loop
+UUGGGCCGAUCGUUCUGGGAAGAGAGUAAGCGUAUCGACAAAAGACUUGCCCAGAUCGAUCGCCAGCU
+...(((.(((((.((((((....((((....((....)).....)))).)))))).))))))))....
+>ipu-mir-7568 MI0024703 Ictalurus punctatus miR-7568 stem-loop
+UCAGCUUUCUGUCUGUCUGUCUGUCUGUCUGACUGACCGACCAAGUGCUGAAU
+(((((...((....(((.(((.(((.....))).))).)))..)).)))))..
+>ipu-mir-7569 MI0024704 Ictalurus punctatus miR-7569 stem-loop
+UAUAAUCUUGAUGUUUCUCCAUUUUUGUGUGGCUUCAUCGCUUGUGAAUUGUGAAACAUCUUCAAGAUUGUAAC
+(((((((((((((((((.(.((((....((((.....))))....)))).).))))))...)))))))))))..
+>ipu-mir-7570 MI0024705 Ictalurus punctatus miR-7570 stem-loop
+CGUGCCGGUGCGGCAGUUGGAGAAGGAGCGAUUUCCUUCUUAUGUGCGCCGGCACUCU
+.(((((((((((.((....(((((((((....))))))))).)))))))))))))...
+>ipu-mir-7571 MI0024706 Ictalurus punctatus miR-7571 stem-loop
+GAGGUGGUAACAGUAACUCGACUCGACAAUAACAUGUCAGGCUACAUGACACCACCCUGA
+..((((((..(((((.(..(((.............)))..).))).))..))))))....
+>ipu-mir-7572 MI0024707 Ictalurus punctatus miR-7572 stem-loop
+AAACACUUGAAGCUCCAAUUUGAGUUUUUCUCGUGCCAGAUUGCAGCUUUACAGUGUUUCC
+((((((((((((((.(((((((.((.........))))))))).))))))).)))))))..
+>ipu-mir-7573 MI0024708 Ictalurus punctatus miR-7573 stem-loop
+AGGCUGAGCCUGAUGGCACUGAGGUGGCUGAUAAAAUCGCCUACCUCAUUGGCCUGAACUCAGCCGACAUGC
+.(((((((......(((..(((((((((.(((...)))))).))))))...)))....))))))).......
+>ipu-mir-7574 MI0024709 Ictalurus punctatus miR-7574 stem-loop
+ACAAGUGAGUAAAGACAGCACGGGUUAUGAGACCGUUUAUCUCUACUCGCUCGUCU
+((.((((((((.(((.((.((((.........)))))).))).)))))))).))..
+>ipu-mir-7575 MI0024710 Ictalurus punctatus miR-7575 stem-loop
+GCAUGGUCAUGAUCAUGGUCAUGAUCAUGGACACGAUCAUGGACAUGGCC
+.((((..(((((((.((..(((....)))..)).)))))))..))))...
+>ipu-mir-7576 MI0024711 Ictalurus punctatus miR-7576 stem-loop
+UGCGGCGUUUGAAUGCUCUCCCCCUGCAGCGGAGAACAUUCAACCGCCGCACA
+(((((((.(((((((.((((((......).))))).))))))).)))))))..
+>ipu-mir-7577 MI0024712 Ictalurus punctatus miR-7577 stem-loop
+CUCGGACAUUUUGGACUCGGAAAUGUUUCCGAUUACAGUCGAGUC
+(((((.....(((...((((((....))))))...))))))))..
+>ipu-mir-457b MI0024713 Ictalurus punctatus miR-457b stem-loop
+UAGCAGCACAUCAAUAUUGGCAGCUGCCCUCUCCCUGGGUUGCCAGUAUGUUUUGUGCUGCUCCU
+.(((((((((...(((((((((...((((.......)))))))))))))....)))))))))...

@@ -1,0 +1,732 @@
+>pma-mir-1a MI0016999 Petromyzon marinus miR-1a stem-loop
+UUCGGCUGAGGCAAUGUGCCUCUUUACGUCCCCAUACGCAGCUCUGAGUCUAUGGAAUGUAAAGAAGUACGUUGCUUCUGCGGAG
+.((.((.((((((((((((.(((((((((..(((((.((........)).))))).))))))))).)))))))))))).)).)).
+>pma-mir-1b MI0017000 Petromyzon marinus miR-1b stem-loop
+UCCCAGCCAGAGCACGUACUUCUUUAUAAAGCCACGUGCGCGAGCUGGGAUCGUGGAAUGUAAAGAAGUAUGGGUUCUGGGUGGGA
+(((((.(((((((.((((((((((((((...(((((.((....))......)))))..)))))))))))))).))))))).)))))
+>pma-mir-1c MI0017001 Petromyzon marinus miR-1c stem-loop
+UCACCCUGCCAAGGGCACGUACUUAUUUGUAUUGCCAUACGAAUGAGCUGUAGCUAUGGAAUGUAAAGAAGUAUGUACCCUGGGCAGGGCUC
+...(((((((.((((.((((((((.((((((((.((((.......(((....))))))))))))))).)))))))).)))).)))))))...
+>pma-mir-1d MI0017002 Petromyzon marinus miR-1d stem-loop
+UGCUGAUUCCCACCCAGAACCCAUACUUCUUUACAUUCCACGAUCCCAGCUCGCGCACGUGGCUUUAUAAAGAAGUACGUGCUCUGGCUGGGAUUUAUUC
+...(((.(((((.(((((.(.(.((((((((((....(((((......((....)).))))).....)))))))))).).).))))).))))).)))...
+>pma-mir-7a-1 MI0017003 Petromyzon marinus miR-7a-1 stem-loop
+GGUCUUGCGGCCGGGUGGAAGACUAGUGAUUUUGUUGUUUCGAUCUAGAAACCAACAGCAAGUCACAGUCUCCCGUCCGGCUCAGAUC
+(((((.(.((((((..((.(((((.((((((((((((((((......)))).)))))..)))))))))))).))..))))))))))))
+>pma-mir-7a-2 MI0017004 Petromyzon marinus miR-7a-2 stem-loop
+CUGGUCUGCUGCCAGGUGGAAGACUAGUGAUUUUGUUGUUGAAAUAUGAAAAUGAGCAACAAGUCACAGUCUCCCGUCUAGCACAGACUUC
+..((((((.(((.((..((.(((((.(((((((.((((((....(((....))))))))))))))))))))).))..)).)))))))))..
+>pma-mir-7b MI0017005 Petromyzon marinus miR-7b stem-loop
+GGCGGAGCUGUGGGCCAUGUGGAAGACUUGUGAUUGUGUUGUUGUAUCGCUAAAGCAGGCAACAAAUCACAGUGUUCCGCAUGGAGCGGUGCUCCUU
+...(((((..((..((((((((((.(((.((((((.(((((((.....((....)).)))))))))))))))).))))))))))..))..)))))..
+>pma-mir-9a-1 MI0017006 Petromyzon marinus miR-9a-1 stem-loop
+AGGGACGGCCCCUGUCUUUGGUUAUCUAGCUGUAUGAGUGUCAGAAUCCCGCCAUAAAGCUACUUAACCAAAAGCAGGGAUCCGUUCC
+.(((((((.(((((..((((((((..(((((.((((.(((.........))))))).)))))..))))))))..)))))..)))))))
+>pma-mir-9a-2 MI0017007 Petromyzon marinus miR-9a-2 stem-loop
+UUCUAGUAGGUGGUAUCUUUGGUUAUCUAGCUGUAUGAGUGUGUCUGGCCGUCAUAAAGCUAGAUAACCGAAAGUACCAACGACUUCCA
+....(((...(((((..(((((((((((((((.(((((..((.....))..))))).)))))))))))))))..)))))...)))....
+>pma-mir-9b MI0017008 Petromyzon marinus miR-9b stem-loop
+GGAACGGAUCCCUGCUUUUGGUUAAGUAGCUUUAUGGCGGGAUUCUGACACUCAUACAGCUAGAUAACCAAAGACAGGGGCCGUCCCU
+((.((((.((((((..((((((((..(((((.(((((..(........)..))))).)))))..))))))))..)))))))))).)).
+>pma-mir-10b MI0017009 Petromyzon marinus miR-10b stem-loop
+CGGCCCGGGUCCGCUUACCCUGUAGGUACGACCUUGCGUGUCCACAAAAAGGUUGCAAGGUUGUGACUACAGCGUACGCGGCCCCGGGAAC
+...((((((.((((.(((.((((((.((((((((((((...((.......)).)))))))))))).)))))).))).)))).))))))...
+>pma-mir-10a MI0017010 Petromyzon marinus miR-10a stem-loop
+UAAGGGUGGCCGAUGUAUACCCUGUGGACUCGAAUUUGUGCUGGCUUCUGGAAUCCACAAAUUCGAUUCUUAAGGACUACAUAGUCACCUCCU
+...(((((((..(((((...(((..(((.(((((((((((....(.....)....))))))))))).)))..)))..))))).)))))))...
+>pma-mir-15a MI0017011 Petromyzon marinus miR-15a stem-loop
+GGAGCUGUAGCAGCACGUAAUGGUUUGUAUUUGGGAUGUCAGGAGUUACAGACCAUGCUGUGCUGCCGCAGUGGC
+...((((..((((((((..(((((((((((((..(....)..))).))))))))))..))))))))..))))...
+>pma-mir-15b MI0017012 Petromyzon marinus miR-15b stem-loop
+GGCCCUUGGCGCCGUAGCAGCACAUCAUGGAUUGCGGGUGUUGUAGAUGCAAGCCAUGCUGUGCGGCCUUGGUGCCAGGGAGCG
+.(((((((((((((..((.(((((.(((((.(((((...........))))).))))).))))).))..))))))))))).)).
+>pma-mir-16 MI0017013 Petromyzon marinus miR-16 stem-loop
+CCUGCACCGUAGCAGCACGUAAAUAUUGGAGUGUGAACUCUGCGAUUCCAGUAUUUCGUGCUGCUGCUGUGCGGU
+.((((((.(((((((((((.((((((((((((((.......)).))))))))))))))))))))))).)))))).
+>pma-mir-17a MI0017014 Petromyzon marinus miR-17a stem-loop
+CCUGGCCUUGCCAAAGUGCUGACAUUGCAGGUAGUGACGACUUAUCUUUCUACUGCAGUGCAAGCACUUGUAGCUGGGCCGU
+...(((((.((..(((((((..((((((((.(((.((.((....)))).)))))))))))..)))))))...)).)))))..
+>pma-mir-17b MI0017015 Petromyzon marinus miR-17b stem-loop
+CUGUGGGCGUGCAUUGUUAAAGUGCAGAUAGUGGUAGUUGGUCCUAAAAAUGACAGCUACUCUAUUUACACUUUAAACACUGUGCGGUCCCAAU
+...((((((..((.((((((((((.((((((.((((((((.((........)))))))))))))))).)))))).)))).))..))..))))..
+>pma-mir-17c MI0017016 Petromyzon marinus miR-17c stem-loop
+GAAUGAGCGCGCGGGGGAAAAGUGCAAAUAGUGGUAGGUAGUGAUCACUGCCGUCUGCCUACUCCAUUUGCAUUUUGGCCUCCGUGCGUCUCGCCG
+....(((((((((((((.(((((((((((.(..((((((((((........)).))))))))..))))))))))))..)))))))))).)))....
+>pma-mir-18a MI0017017 Petromyzon marinus miR-18a stem-loop
+CCUGUGCUUGCUUGUGCUAAGGUGCAUCUAGUGCAGAUAGUUCCGCUGCGUAAAUGCUACUGCUCUAUGUGCUCCUUUACCCACAAGAGGUCACGCU
+...((((((.((((((..((((.((((.(((.((((.((((..............)))))))).))).)))).))))....))))))))).)))...
+>pma-mir-18b MI0017018 Petromyzon marinus miR-18b stem-loop
+GUGCUUGCUUGUGUAAAGGUGCAUUUAGUGCAGAUAGUGGCAUAGCUGGCAUUCUACUGCUCUAUGUGCUCCUUCUUUCACAAGAAGUCAC
+((((((.((((((..((((.((((.(((.((((.(((..((.......))...))))))).))).)))).))))....))))))))).)))
+>pma-mir-19a MI0017019 Petromyzon marinus miR-19a stem-loop
+UCAUUGCCGGUCUCCGCAGUUUUGCGUGUUUAGCACCGCGUUUUGUUGGACAUUGCUGUGCAAACCUACGCAAAGCUGAGGGUACCGUGUAAAAA
+...((((((((..((.(((((((((((((((.((((.(((...((.....)).))).))))))))..))))))))))).))..)))).))))...
+>pma-mir-19b MI0017020 Petromyzon marinus miR-19b stem-loop
+CAUGCUCUCCCUGCCAGUUUUGCAUGUUUGCUGUCGGCUUGUCAAAAUGUGCUGUGCAAAUCCAUGCAAAACUGACGGUGAGUG
+...((((...(((.(((((((((((((((((...((((............)))).)))))..)))))))))))).))).)))).
+>pma-mir-19c MI0017021 Petromyzon marinus miR-19c stem-loop
+CCUCUGUCAGUUUUGCAGAUUUGCACUGCGGUGGUGCCUCGUUCCCAAGCUGUGCAAAUCCCCUGCAAAACUGAUGGCGA
+.(.(((((((((((((((((((((((.((..(((..........))).)).)))))))))...)))))))))))))).).
+>pma-mir-20a MI0017022 Petromyzon marinus miR-20a stem-loop
+CUGCCCACAGGGUGCCAAAGUGCUUAUAGUGCAGGUAGUUGAUCUUAGUCUACUGCAUUUUGAGCACUUGUAGCACCAGGUGUGGAAAAAC
+...(((((..(((((..(((((((((.(((((((.((((((....))).)))))))))).)))))))))...)))))..))).))......
+>pma-mir-20b MI0017023 Petromyzon marinus miR-20b stem-loop
+GUUGCCUCGCCAGGCGCCAAAGUGCUGAUAGUGCAGGUAGGCUCCCUUGAUGCGACUACUGCAUUGUGAGCACUUGCAGCGCCUGGGAGGUCAU
+...(((((.((((((((..(((((((.(((((((((.(((((((....)).))..)))))))))))).)))))))...)))))))))))))...
+>pma-mir-22a MI0017024 Petromyzon marinus miR-22a stem-loop
+CCCUGGCCGCCCCACUGCAGCCCUUCGCUGGCCAGCUUUAGUUCCGGCCGAGGCGAGUAAAGCUGCCAGUUGAAGAGCUAUAGUGGGCGGCCACGC
+...(((((((((.((((.(((.((((((((((.(((((((.((((......)).)).)))))))))))).))))).))).)))))))))))))...
+>pma-mir-22b MI0017025 Petromyzon marinus miR-22b stem-loop
+CUACACGCGCUCUCCACCGGCAGGUCUUUACGUCGCUUCUCUCGAGAGCCUAAAGCUGCCAGUUGAAGAGCUGAGGUCGCC
+........((((((.((.(((((..(((((....(((.((....))))).)))))))))).)).).)))))..........
+>pma-mir-23a MI0017026 Petromyzon marinus miR-23a stem-loop
+UGCUGAGUGGGGUUCCUGGCACGGUGAUUUGUAAUGUGCAGAGACAAAAAUCACAUUGCCAGGGAUUACCGCUCAGUG
+.((((((((((((((((((((..(((((((....(((......))).)))))))..))))))))))).))))))))).
+>pma-mir-23b MI0017027 Petromyzon marinus miR-23b stem-loop
+CGAGGGCCGGAGGGUUCCUGGCAAGGUGAUUUGCGACUGCGUUUCUAAGAAAAAUCACAUUGCCAGGGAUUACCACUGGCCCUCG
+((((((((((.(((((((((((((.((((((((((....))).........))))))).)))))))))))..)).))))))))))
+>pma-mir-24 MI0017028 Petromyzon marinus miR-24 stem-loop
+AUCUGGGCCGGAUCUUCUGUGCCUACUGUUCUGACAUCAGUCGUCUAUAAAAAGCACUGGCUCAGUUCAGCAGGAACAGAAGUCUCGUCCAUUG
+...(((((.(((.(((((((.(((.(((..((((..(((((.(.((......)))))))).))))..))).))).)))))))))).)))))...
+>pma-mir-25b MI0017029 Petromyzon marinus miR-25b stem-loop
+GUCUGGACGGCGCGAGCAGGCGGAGACUGGAGCAAGUGCUCUACCACUCGUGGUGGCAUUGCACUAGUCUCAGUCUGCCCGAGUCGCCGCCC
+....((.(((((((.((((((.((((((((.((((.((((..((((....)))))))))))).)))))))).)))))).))...))))))).
+>pma-mir-26a-1 MI0017030 Petromyzon marinus miR-26a-1 stem-loop
+GGAUGCAGCCUGGUUCAAGUAAUCCAGGAUAGGCUGGCGUCUCAGACCCCGCGGCCUGUCCUUGCUUACUUGGACCAGGAGGUAGUC
+...(((..((((((((((((((.(.((((((((((((.(((...))).))..)))))))))).).))))))))))))))..)))...
+>pma-mir-26a-2 MI0017031 Petromyzon marinus miR-26a-2 stem-loop
+CUUUAGGCUGACACCCUGUUCAAGUAAUCCAGGAUAGGCUGUGUUACUCGUGGGCCUUUCCUCGGUUGCUUGAUCCGGGUGUAGUCUGCAA
+...(((((((.(((((.(.((((((((((.((((.((((..((.....))..).))).)))).)))))))))).).))))))))))))...
+>pma-mir-26b MI0017032 Petromyzon marinus miR-26b stem-loop
+CUGGCCGUGGCCUGAUUCAAGUAAUCCAGGAUAGGUUGGUUUAUUACCAGAGAGCCUAUCCUCGACUACUUGGGUUAGGAGGCGGCGGA
+...(((((..(((((((((((((.((.(((((((((((((.....))))....))))))))).)).)))))))))))))..)))))...
+>pma-mir-27a MI0017033 Petromyzon marinus miR-27a stem-loop
+GCAGUGCAGGACUUAGUUGCUUGUGAGCAGUGCCUUGCUUUCUGUCUUGUUCACAGUGGCUAAGUUCCACACCUC
+...(((..(((((((((..((.((((((((.((..........)).))))))))))..)))))))))..)))...
+>pma-mir-27b MI0017034 Petromyzon marinus miR-27b stem-loop
+UCCGGUGAAGGGCUUAACCCACCUGUGAGCAGCGCUUUACGAUAAGUGUUCACAGUGGCUAAGUUCUGCAUCUGU
+...((((.((((((((..((((.(((((...((((((......))))))))))))))).)))))))).))))...
+>pma-mir-29a MI0017035 Petromyzon marinus miR-29a stem-loop
+ACCCAGAUGACUGAUUUCUCUUGGUGUUUAGAGUUCCGUAUGCCUGGUCUAGCACCAUUUGAAAUCAGUUAUGUGGAGAGGGU
+..(((.((((((((((((...(((((((.(((...(((......)))))))))))))...)))))))))))).))).......
+>pma-mir-29b MI0017036 Petromyzon marinus miR-29b stem-loop
+CGACUCGCGUGACCGAUUUCCCUUGGUGUUUAGAUGUGGAUGUGGUCUCUAGCACCAUUAGAAAUCGGUUAUGCGGGCG
+((.(((((((((((((((((...(((((((.((((.........))))..)))))))...)))))))))))))))))))
+>pma-mir-29c MI0017037 Petromyzon marinus miR-29c stem-loop
+GGAGCCUCCUACCAGGCUGGUUUCACGUGGUGGCUUGAUGUGAAAGUGCGAUUCUAGCACCAUUUGAAAUCAGUGUUGGUGGGCAGAGCACG
+...((((((((((((((((((((((.((((((.((.(((((......)))..)).)))))))).)))))))))).)))))))).)).))...
+>pma-mir-29d MI0017038 Petromyzon marinus miR-29d stem-loop
+CUGCUCCUGGGAGCUGGUUUCACGUGGUGGCUUAGACUGUGAUGUGCCUUCUCUAGCACCAUAUGAAAUCGGUGUCCCUGGAGUUG
+..(((((.((((((((((((((..(((((.((.(((..((.....))..)))..)))))))..)))))))))).)))).)))))..
+>pma-mir-30a MI0017039 Petromyzon marinus miR-30a stem-loop
+UGCACAUCUGUAAACAUCCUCGACUGGAAGCCCGUGCUUUGACAAGUGCUUUUAGUCGGAUGUUUGCGUCUGUCUC
+...(((..(((((((((((..((((((((((.(.((......)).).)))))))))))))))))))))..)))...
+>pma-mir-30b MI0017040 Petromyzon marinus miR-30b stem-loop
+UGGACAGGGUGGGAGCUGUAAACAUCCCUGACUGGAAGCUGGGAGCACUUGCUGCGGCAGCUUUCGCCCGGAUGUUUGCUGCUGCCAUCUGUCAA
+..((((((.(((.(((.((((((((((.....((((((((((.(((....))).)..)))))))))...)))))))))).))).)))))))))..
+>pma-mir-30c MI0017041 Petromyzon marinus miR-30c stem-loop
+GGGGCGAGCAACUGUAAACAUCCUCGACUGAAAGCUGUGCUCCGCUGCUGUGAAAGGGCUUUCAGUCAGAUGUUUGCGUUUGCCGCGUG
+...(((.((((.((((((((((...(((((((((((.(....(((....)))..).))))))))))).)))))))))).)))))))...
+>pma-mir-30d MI0017042 Petromyzon marinus miR-30d stem-loop
+CGUCCGGGAGCUGUAAACAUCCACGACUGGAAGCUGCCCCAGCUGUGUCCACGCGCUUUCAGUCCGGUGUUUACGGCUCCCGCCG
+....(((((((((((((((((...((((((((((.((....)).(((....))))))))))))).)))))))))))))))))...
+>pma-mir-30e MI0017043 Petromyzon marinus miR-30e stem-loop
+UGCGAGGGUGAUGUAAACAUCUCAACUGGAAGCUGUGACGUCAGUAAGGCUUUCAGUUAGGUGUUCACGUCAGCACGCU
+.(((..(.((((((.(((((((.(((((((((((...((....))..)))))))))))))))))).)))))).).))).
+>pma-mir-30f-1 MI0017044 Petromyzon marinus miR-30f-1 stem-loop
+CUCAGUCAAUGUAAACACCCUACACUCUCAGCUGUGCGCCAUUGGUUAGCUGGGAGUGGGGUGUUUAUGUUGACUGCC
+..((((((((((((((((((..((((((((((((...(((...)))))))))))))))))))))))))))))))))..
+>pma-mir-30f-2 MI0017045 Petromyzon marinus miR-30f-2 stem-loop
+CUGCAGGCAGUGUAAACACCCUACACUCUCAGCUGCUGACUGACAGAGGAAGCUGGGAGAGGGUGCUUACCUUGCCUGGCU
+...(((((((.((((.((((((...(((((((((.(((.....)))....))))))))))))))).)))).)))))))...
+>pma-mir-30g MI0017046 Petromyzon marinus miR-30c stem-loop
+GUUUCAGGUGGUGUAAACAUCCUUCACUCUCAGCUGUGAGAUGGAAGCACACUGAGAGGAGGGGUGUUGACACCAGCUGACUC
+...((((.((((((.((((((((((.(((((((.((((.........))))))))))))))))))))).)))))).))))...
+>pma-mir-31 MI0017047 Petromyzon marinus miR-31 stem-loop
+ACUGGACGAGUGGCAAGAUGCUGGCAUAGCCGCUCACUCUCAGAGGCGGCUGUGACUGCAUAGGGCCACCCGUCUUGU
+((.(((((.(((((...((((...(((((((((((.......)).)))))))))...))))...))))).))))).))
+>pma-mir-33a MI0017048 Petromyzon marinus miR-33a stem-loop
+UCAACUGUGGCUGUGGUGCAUUGUAGUUGCAUUGUAUGGGAAGGGAUGUACAAUGCAUCUGCAGUGCAGCACAGAUACAGUGAA
+(((.(((((.(((((.((((((((((.(((((((((((........))))))))))).)))))))))).))))).)))))))).
+>pma-mir-33b MI0017049 Petromyzon marinus miR-33b stem-loop
+CCGCUAUGCUGCAUUGUUGUUGCAUUGCAUCCUGCAGUGCCUUGUGGGUGCGAUGUAGUAACAGUGCUGCACAGAGA
+.(.((.(((.((((((((((((((((((((((.((((....)))))))))))))))))))))))))).))).)).).
+>pma-mir-92a MI0017050 Petromyzon marinus miR-92a stem-loop
+CCUGUCCCGCUGAGGUCAGGAUGGGCAGCAAUGCGUGACUAGAUCCUGUAUUGCACUCGUCCCGGCCUUAGCGAGAUUUA
+...(((.((((((((((.(((((((..((((((((.((.....)).)))))))).))))))).)))))))))).)))...
+>pma-mir-96a MI0017051 Petromyzon marinus miR-96a stem-loop
+UCUUACCCGCUUUGGCACUGGCACAUACUUGCUUCACUGUGAAACCCUGAGCAAUUAUGUGUAGUGCCGACUCGGGUAGAA
+..(((((((..(((((((((.((((((.(((((.((..(.....)..))))))).)))))))))))))))..)))))))..
+>pma-mir-100a MI0017052 Petromyzon marinus miR-100a stem-loop
+UCCGCCGGUCGCCACAAACCCGUAGAUCCGAACUUGUGGUGGGAGUUUUGCACAAGCUCGUGUCUACGGGUCUGUGUCGGCAGGGCACG
+...(((.((((.((((.(((((((((..(((.((((((............)))))).)))..))))))))).)))).))))..)))...
+>pma-mir-100b MI0017053 Petromyzon marinus miR-100b stem-loop
+CGAGCUGAUCGCCACAAACCCGUAGAUUCGAACUUGGGGGGGGCUGAAAUCCGAACACAAGGUCGCUUCUGUGGGUGUGUGGAGGUCACGCAAA
+...(((((((.(((((.(((((((((..(((.(((((..(((.......)))...).)))).)))..))))))))).))))).))))).))...
+>pma-mir-100c MI0017054 Petromyzon marinus miR-100c stem-loop
+GCCCUGCCGACACAGACCCGUAGACACGAGCUUGUGCAAAACUCCCACCACAAGUUCGGAUCUACGGGUUUGUGGCGACCGGCGGAAU
+...((((((.((((((((((((((..((((((((((............))))))))))..)))))))))))))).....))))))...
+>pma-mir-103a MI0017055 Petromyzon marinus miR-103a stem-loop
+CCGCUCCUUUCAGCCUCUCUAUGGUGCUGCCUUGUGUCAAACCUGCGUGUCAAGCAGCAUCGUACAGGGCUUGGAAAGUGUCG
+.((((..((((((((.((.(((((((((((.(((...((........)).)))))))))))))).))))).)))))))))...
+>pma-mir-103b MI0017056 Petromyzon marinus miR-103b stem-loop
+CCUGUUCUCUCGGCCUCUUUACAGUGCUAUCUUGUAGCCUCAAUCAAGCAGCAUUGUACAGGGCUAUGAGAGAGCAA
+..(((((((((((((.((.(((((((((..((((..........)))).))))))))).))))))..))))))))).
+>pma-mir-124 MI0017057 Petromyzon marinus miR-124 stem-loop
+CGUCCGCUCUUCGUGUUCACAGCGGACCUUGAUUUAAUGUGCUACAAUUAAGGCACGCGGUGAAUGCCAAGAGCGGUGU
+...((((((((.((((((((.(((..((((((((...........))))))))..))).)))))))).))))))))...
+>pma-mir-125 MI0017058 Petromyzon marinus miR-125 stem-loop
+CGAGCCUUUUGCGCGAUCCCUGAGACCCUAACUUGUGAGUUGGUUGCCCUGUCACUGGUUAGGCUCUUGGGAACCGUGCAGAAUGGCAAA
+...((((((((((((.((((.((((.(((((((.((((...((....))..)))).))))))).))))))))..))))))))).)))...
+>pma-mir-126 MI0017059 Petromyzon marinus miR-126 stem-loop
+UGCCCCCGCGUUAUUUCCCGGGGUACGCGCCGCGCUCUGUCGCCUCGUACCGUGAGUAAUAACGUGGGGUCC
+...((((((((((((.(.((.((((((.(..(((......)))).)))))).)).).))))))))))))...
+>pma-mir-128-1 MI0017060 Petromyzon marinus miR-128-1 stem-loop
+UGGGUGUCCGGGCUGGAGGCCGUCACACUGCCCGAGAGCAAUGAGCCUGGCUGUCUCACAGUGAACCGGUCUCUUUCCCUGGCAACCCC
+.(((((((.(((..((((((((...(((((...((.(((..........))).))...)))))...))))))))..))).))).)))).
+>pma-mir-128-2 MI0017061 Petromyzon marinus miR-128-2 stem-loop
+GGGGUGCCUGAGGAGGAGGCCGCAACGCUGCCUGGGAGUGAUGAGCCCUGUCCUCUCACAGUGAACCGGUCUCUUUCCCUGGCAGCCCA
+(((.((((.(.(((((((((((...(((((..((((((.(((.......))))))))))))))...))))))))))).).)))).))).
+>pma-mir-129a MI0017062 Petromyzon marinus miR-129a stem-loop
+UGUCUCUCGCGAAUCUUUUUGCGGUUUGGGCUUGCUGUUCAUCUAAUAGCCGGCAAGCCCUUACCCCAAAAAGCAUUCGAGGGGGAUG
+.(((((((.((((((((((((.(((..((((((((((.............))))))))))..))).))))))).))))).))))))).
+>pma-mir-130d MI0017063 Petromyzon marinus miR-130d stem-loop
+GGACGACCCGAUGCCCUUUCAACGUCGCACCGCUGUGAGCAGAGCGAGCAGUGCAAUGUUGAAAAAGGGCAUCGGUUCGGUU
+...(((.((((((((((((((((((.((((.(((((.......)).))).)))).)))))))..))))))))))).)))...
+>pma-mir-130e MI0017064 Petromyzon marinus miR-130e stem-loop
+UCUGCAGUCCGGCACCUUUUCAAGUUUGCACUCCUAUGGCGCUCCGUAUGAAGCAGUGCAAUAUUGAAAAAGGGUACGGGACUGCGGG
+.(((((((((.(.((((((((((..(((((((.((((((....))))....)).)))))))..))))))..)))).).))))))))).
+>pma-mir-130a MI0017065 Petromyzon marinus miR-130a stem-loop
+UCUGUGGGCCAAAGCCCUUUUUGUGUUGUACUACUGUCCGCUAUGGUGCUGAGCAGUGCAAUAUUAAAAAGGGCAUUGGCUGGCAG
+.((((.((((((.(((((((((((((((((((.((...(((....)))...)).))))))))).)))))))))).)))))).))))
+>pma-mir-130b MI0017066 Petromyzon marinus miR-130b stem-loop
+AUGUGGUGGAAAACUCCUUUUUAUAUUGUGCUACUGUGUCCUCUGCGAAGUAGUGCAAUGUGAAAAGGGCAUUGGGGAGUCGCGCCUUUC
+....((((((...(((((((((((((((..(((((.(((.....))).)))))..)))))))))))))......))...)).))))....
+>pma-mir-130c MI0017067 Petromyzon marinus miR-130c stem-loop
+UUUCCCCCGUCGCUCGCUUUUUUACUGUUGCACUCCUGUUGGAUGACGAUGAGCAGUGCAACAUAUAAUAGGGCACGCGGCGGCGGGAGA
+(((((((((((((..(((((.(((.((((((((((..((((.....))))..).)))))))))..))).)))))..))))))).))))))
+>pma-mir-132 MI0017068 Petromyzon marinus miR-132 stem-loop
+UCUUCGCUGCCCGGGCGCCCGUGGCGUUAGACUGAUGCUGUGAGGCUCCACAGAGGCAGUAACAGUCUACAGCCAUGGACACCCGGCGGCGGGCU
+..(((((((((.(((.(.(((((((..(((((((.((((((....(((....))))))))).)))))))..))))))).).))))))))))))..
+>pma-mir-133a MI0017069 Petromyzon marinus miR-133a stem-loop
+UGCUUUGCUGGAGCUGGUAAAAUGGAACCAGAUCAACUAACCAACGGAUUUGGUCCCCUUCAACCAGCUUGAGCUACG
+......(((.((((((((..((.((.((((((((............)))))))).)).))..)))))))).)))....
+>pma-mir-133b MI0017070 Petromyzon marinus miR-133b stem-loop
+UGGAAUGCCUUGCUGGCGCUGGUAAAAUGGAACCAAAUCAACAUUUCAACGGCUUUGGUCCCCUUCAACCAGCUCUAGAUAAGCAUUAUG
+...(((((.(((((((.((((((..((.((.((((((((...........)).)))))).)).))..)))))).)))).))))))))...
+>pma-mir-135a MI0017071 Petromyzon marinus miR-135a stem-loop
+UUGUAUCUGUGCUUUAUGGCUUUUUAUUCCUAUGUGAUUGCUUCUGUAACCUCGCGUAGGGGUGAAAGCCAUGGAACACGGUGCAA
+.((((.(((((.((((((((((((.((((((((((((((((....))))..)))))))))))))))))))))))).))))))))).
+>pma-mir-135b MI0017072 Petromyzon marinus miR-135b stem-loop
+UCCCCGCGUUGUAUGGCUUUUUAUUCCUACGUGAUCGUAACGCACGCUGAGCCUCAUGUAGGGAGGAAAGCCAUGCAACGACGGGUG
+..((((((((((((((((((((.(((((((((((..((...(....)...)).))))))))))))))))))))))))))).))))..
+>pma-mir-137-1 MI0017073 Petromyzon marinus miR-137-1 stem-loop
+AUAGCUCCUCGCGGCGACGCGUAUUCUUGGGUAAAUAAUACGUUUCCCGCUGUUAUUGCUUAAGAAUACACGUAGCCGGGGGGAGUGCG
+...(((((((.((((.(((.((((((((((((((.(((((((.....)).))))))))))))))))))).))).)))).)))))))...
+>pma-mir-137-2 MI0017074 Petromyzon marinus miR-137-2 stem-loop
+GGUGCCUCCCGCGGCCACGGGUAUUCUUGGGUAUAUAAUACAGAUUGCGUUGUUAUUGCUUAAGAAUACACGUAGCCGCGGCGGGCCGC
+.(.((((.(((((((.(((.(((((((((((((.((((..(.....)..))))...))))))))))))).))).))))))).)))))..
+>pma-mir-138a MI0017075 Petromyzon marinus miR-138a stem-loop
+CCGGCGGCAGCUGGUGUUGUGAAUCAGGCCGGUGGCGCAGCCCCUAGACACACGGCUGUUUCACUACAGCAGGGUCGCAU
+...(((((..(((.(((.(((((...((((((((..............))).)))))..))))).))).))).)))))..
+>pma-mir-138b MI0017076 Petromyzon marinus miR-138b stem-loop
+UGGUGCCGUGCCGCAGCUGGUGUUGUGAAUCAGGCUGAUCCUCUCCUGCUCCUCCGCCGCUUCACAGCACCGGCACGGCACGGCC
+....(((((((((..((((((((((((((...(((.((..............)).)))..)))))))))))))).))))))))).
+>pma-mir-140 MI0017077 Petromyzon marinus miR-140 stem-loop
+UCGACCGCUCAGUGGUUUUACCCUAUGGUAGCUUUGAAUGGCAGACUCUACCACAUGGUAGAAUCACGGCCCGGUGAC
+((.((((....(((((((((((...((((((.((((.....))))..))))))...)))))))))))....)))))).
+>pma-mir-143 MI0017078 Petromyzon marinus miR-143 stem-loop
+UACCCGGGGGUGCAGUGCUUUACCUCUGGUUGGGUUGAGAGUCUGAGAUGAAGCACUGUAACUCCGGAUG
+...((((((.((((((((((((.(((.(..(........)..).))).)))))))))))).))))))...
+>pma-mir-144 MI0017079 Petromyzon marinus miR-144 stem-loop
+ACGUCUGUGCAGGAUAUCAUACUAUACUGUAAAUCAAUGCUGAACCAUUACAGUAUAUAUGAUGUGCUGCGGAGGGCU
+..((((.(((((.((((((((.((((((((((.(((....)))....)))))))))))))))))).)))))..)))).
+>pma-mir-145 MI0017080 Petromyzon marinus miR-145 stem-loop
+UGCGUGGGCAUGGUCCAGUUUUCCCAGGAAUCCCUGUGCCCUUUUCCCGGGAUUCCAGGAAUAACUGUCCAAGCACACGUG
+.(((((.((.(((..(((((((((..((((((((..............)))))))).)))).))))).))).)).))))).
+>pma-mir-146 MI0017081 Petromyzon marinus miR-146 stem-loop
+CCGGGCGGUGAGAACUGAAUUCCAUAGGCUGUGACGACACUGCAGCAGCCUGGGUCUUCAGUUUUCUCCGUCAGG
+((.(((((.((((((((((..((.((((((((..((....))..))))))))))..)))))))))).))))).))
+>pma-mir-147 MI0017082 Petromyzon marinus miR-147 stem-loop
+CCAGGGAGAUUAGCGGAAUCGAUUCCGCUCAAACUCGUGUGAGUUUCGACUGCGAGUGUGCGGAUUUGCUUCUGCCAAUCUCCUCGG
+((..(((((((.((((((.(((.(((((....((((((...(((....)))))))))..))))).))).)))))).)))))))..))
+>pma-mir-152a MI0017083 Petromyzon marinus miR-152a stem-loop
+ACUGGCGCUCAGGGCGAGGUUCUGUCAUUCGCUCCGGACUCUUCUCGUUGCUUGCAGUCAGUGCAUGACAGAACUUGACCCUGGCUGCCCCG
+...(((((.(((((..((((((((((((.((((...(((((............).)))))))).))))))))))))..))))))).)))...
+>pma-mir-152b MI0017084 Petromyzon marinus miR-152b stem-loop
+CCAGGCUUUCGAGCCGAAGUUCUGUGAUACACUUGGGCUGUGCUGUCAAGGAAGUCAGUGCAAAACAGAACUUUGGUUGGAGAGCCGCG
+...(((((((.((((((((((((((....((((..((((...((.....)).))))))))....)))))))))))))).)))))))...
+>pma-mir-153-1 MI0017085 Petromyzon marinus miR-153-1 stem-loop
+CAGCCGAUGUCAUUUUUGUGAUUUGCAGCUGGUUUCAUUAGUAAAGUUGCAUAGUCACAAAAGUGAUCAUUGGAAG
+...(((((((((((((((((((((((((((..............))))))).)))))))))))))).))))))...
+>pma-mir-153-2 MI0017086 Petromyzon marinus miR-153-2 stem-loop
+CGGCUGAUGUCAUUUUUGUGAUUUGCAACUCGUUUUACGUGUGAAGUUGCAUAGUCACAAAAGUGAUCAUCAGAGG
+...(((((((((((((((((((((((((((((.....)).....))))))).)))))))))))))).))))))...
+>pma-mir-153-3 MI0017087 Petromyzon marinus miR-153-3 stem-loop
+UGGCCGAUAUCAUUUUUGUGACCUGCAGCUUGUACCCUCGCCGCCCAGUUGCAUAGUCACAAAAGUGAUCAUCGGAGG
+...(((((((((((((((((((.(((((((.((.........))..)))))))..)))))))))))))).)))))...
+>pma-mir-155 MI0017088 Petromyzon marinus miR-155 stem-loop
+UGUGUCGAGGUUAAUGCUAUCGUUGAUGGGGUUCCGUGCAUUGCUCAGUGGCCCUGCCAAAAGUAGCAUUGUCCACGCCACA
+.(((.((.((.(((((((((..(((..(((((..(..((...))...)..)))))..)))..))))))))).)).)).))).
+>pma-mir-181a MI0017089 Petromyzon marinus miR-181a stem-loop
+UCUCGAUGAACAUUCAACGCUGUCGGUGAGUUUUGUUCUUCCCGACCUUAAACCAUCGACCGUUGACUGUACCUCGCCA
+...(((.(.(((.((((((..(((((((.((((.(((......)))...))))))))))))))))).))).).)))...
+>pma-mir-181b-1 MI0017090 Petromyzon marinus miR-181b-1 stem-loop
+GCAGGAUCUCGCUUGACAUUCAGUGCUGUCGGUGGGUGUUGCGCGUGCCUGCCUCGAACACAUAACCCAGGGAGCACUGAAUGCACACCGUGAUCCGAG
+...(((((.((..((.(((((((((((.(((((..(((((.((.(.(....)).)))))))...)))..)).)))))))))))))...)).)))))...
+>pma-mir-182 MI0017091 Petromyzon marinus miR-182 stem-loop
+GGCGGACUGUGUUUGGCAAUGGUAGAACUCACACUGGCCAGAGAGCUCUCCGGGGGUUCUAGACUUGCCAAUUACAGUCCCAC
+.(.((((((((.(((((((.(.((((((((...((((..(((....)))))))))))))))..)))))))).)))))))))..
+>pma-mir-183 MI0017092 Petromyzon marinus miR-183 stem-loop
+CUGCCUGCCCUGUCUAUGGCACUGGUAGAAUUCACUGUUCCCGCUGACCUCAGUGAAUUACUAGAGGCCAUAAACAGAGCAGGGAA
+...(((((.((((.((((((.((((((..((((((((.((.....))...))))))))))))))..)))))).)))).)))))...
+>pma-mir-184 MI0017093 Petromyzon marinus miR-184 stem-loop
+UCGCCGCCCUCCCUUAUCACUCUUCUGCUCCAGCCCUGAGGUUUUAAUUCCGCUGGACGGAGGACUGAUAAGUGUGGGCGGGGU
+.(.((((((.(.(((((((.(((((((.((((((...(((.......))).))))))))))))).))))))).).)))))).).
+>pma-mir-190a MI0017094 Petromyzon marinus miR-190a stem-loop
+CGACUGCUGUCUGAUAUGUUUGGUAUAUAAGGUUGUAUUUGUGGAGACCCAACUAUAUAUCAAACAUAUUCUCACAGAGG
+...((.((((..((((((((((((((((..(((((..(((....)))..)))))))))))))))))))))...)))))).
+>pma-mir-190b MI0017095 Petromyzon marinus miR-190b stem-loop
+CUUGCAAGCCACUGUCUGAUAUGUUUGGUAUAAGGUUGUUUCAGUAACAAUCAACUGUAUAUCAAACAUAUGGUCACAGUAGCUUGCUCA
+...((((((.(((((.(.((((((((((((((.(((((((.....))))))).....)))))))))))))).)..))))).))))))...
+>pma-mir-192 MI0017096 Petromyzon marinus miR-192 stem-loop
+UUCGAGGCCGGGCCUUGACCUAUGAAUUGACAGCCGGUGGCCACCGCAUCUCGCCUGUCAGUUUCACAGGUCAAGCCACGGCCUC
+...((((((((((.(((((((.(((((((((((.(((..((....))...))).))))))).)))).)))))))))).)))))))
+>pma-mir-193 MI0017097 Petromyzon marinus miR-193 stem-loop
+GCGUCUGGUGCCGGGGUUUCACGGUGCCAGCCGAGCCCCACAGCGGAUCCACUGGCCCGUAAAGUCCCGACGCCCGGCGC
+(((((.((((.((((..((.((((.(((((..((..((......)).))..))))))))).))..)))).)))).)))))
+>pma-mir-194 MI0017098 Petromyzon marinus miR-194 stem-loop
+CACAGUGUGCAUCAGGUGUAACAGCAACUCCAUGUGGAUGUUCCAUCGCUCCCAGUGGAGUUACUGUUACUUUUGAUGGACAUUCAC
+...(((((.(((((((.(((((((.((((((((..(((.((......)))))..)))))))).))))))).))))))).)))))...
+>pma-mir-196a MI0017099 Petromyzon marinus miR-196a stem-loop
+GUCCGUGGUCUAGGUAGUUUCAUGUUGUUGGGGUUUACGCUCCAGAUGUCCGACAGCAGAAAACUGCCCGGACCGCGCCA
+...(((((((..((((((((..((((((((((((((.......)))).))))))))))..))))))))..)))))))...
+>pma-mir-196b MI0017100 Petromyzon marinus miR-196b stem-loop
+UCACGUGGUGUAGGUAGUAUCAUGUUGUUGGGUAUUUACAACAUCCUCGACAACGCGUCACUGCCUUCACCACGCCA
+...(((((((.(((((((..(.((((((((((.............)))))))))).)..))))))).)))))))...
+>pma-mir-199a MI0017101 Petromyzon marinus miR-199a stem-loop
+GUUCCGUCUCCCCAGUGUUCAGACUACCUGUUCAGGAGGUUAAUGUUGUACAGUAGUCUGCACAUUGGUUAGACUGAGC
+((((.((((..(((((((.((((((((.(((.(((.(......).))).))))))))))).)))))))..)))).))))
+>pma-mir-199b MI0017102 Petromyzon marinus miR-199b stem-loop
+GCCUCGUCUGCCCAGUGUUCUGACUACCUGUUCACGUGACAAGCAAAUGUACAGUAGUCUGCACAUUGGUUAGACUGGGU
+((((.(((((.(((((((.(.((((((.(((.((..((.....))..)).))))))))).).))))))).))))).))))
+>pma-mir-200b MI0017103 Petromyzon marinus miR-200b stem-loop
+GGAGCUGCUGCCAUCUUACCUGGUGGUAUUGGGUCAAACUGAAUUCUAAUACUGCCUGGUAAUGAUGGUGGCCGCCCA
+((.((.((..((((((((((.((..((((((((((.....))..))))))))..)).))))).)))))..)).)))).
+>pma-mir-203a MI0017104 Petromyzon marinus miR-203a stem-loop
+UCUGCUUCCCGGGCCCAGUGGUUCUCAUCAGUUCAACAGUUCUUUGGAGAAAUUGUGAAAUGUUUAGGACCACUGGGACCGGAGGGGCCUC
+...(((((((((.((((((((((((...((.((((.(((((((....)).))))))))).))...)))))))))))).)))).)))))...
+>pma-mir-203b MI0017105 Petromyzon marinus miR-203b stem-loop
+CAUGGUUACCGAGUGCAGUGGUUCUAACCAGUUCAACAGUUCUCUACUGAAAUUGUGAAAUGUUUAGGACCACUUGACUCGGUAGCUCCA
+...(((((((((((..(((((((((((.((.((((.(((((.((....))))))))))).)).)))))))))))..)))))))))))...
+>pma-mir-204 MI0017106 Petromyzon marinus miR-204 stem-loop
+UGGAGGGAUUCCCUUUGUCAUCCUAUGCCUGUAAUCGCCUCUAAGGCAAGGACAGCAAAGGGGACCCCUGU
+...((((.((((((((((..((((.(((((.............)))))))))..)))))))))).))))..
+>pma-mir-205a MI0017107 Petromyzon marinus miR-205a stem-loop
+UUUCCGACGUCCUUCAUUCCACCGGAGUCUGUCAGGCUUAAACGACAGAUUUCGGGGGAUGAAGUGCAUCGGUCG
+...((((.(..(((((((((.((((((((((((.(.......))))))))))))))))))))))..).))))...
+>pma-mir-205b MI0017108 Petromyzon marinus miR-205b stem-loop
+CUGUUGCCCUUCAUUCCACCGGAGUCUGUUAACGCAAGGGCCACGCCAGAUUCCGGUCGGAUGAAGUCCACCAG
+(((.((..((((((((.(((((((((((.....((....)).....))))))))))).))))))))..)).)))
+>pma-mir-208 MI0017109 Petromyzon marinus miR-208 stem-loop
+GAAGUGGCGCACGGGCGUGCUCCUCGCUCGUUUUAUUUUGGAAUCAAAAGUUAAAGAUAAGACGAGCAAGUAGUGGGUCCGAGCGCCGCACG
+...(((((((.(((((.((((.((.((((((((((((((..(((.....))).)))))))))))))).)).)))).))))).)))))))...
+>pma-mir-210 MI0017110 Petromyzon marinus miR-210 stem-loop
+GCCGUGUCCGGCAGCUCCUGUCGCUCGCAUAUUGUCCGCCUGUCUCAGUGUGCGUGUGACAGCGGCUGUCGGCUGCGCGCC
+((((((.(((((((((.(((((((.(((((((((...........))))))))).))))))).))))))))).)))).)).
+>pma-mir-212 MI0017111 Petromyzon marinus miR-212 stem-loop
+UUAGCCACGCCCCGCGCGUCGUGACGUGGGAUUGAUUACGUCAUCGCGCAGUAACAGUCUUACGUCAUGGCUGCGCGGGGCGGAGCACC
+...((..(((((((((((((((((((((((((((.((((((......)).))))))))))))))))))))).))))))))))..))...
+>pma-mir-216a MI0017112 Petromyzon marinus miR-216a stem-loop
+UGAUCUCGGCCCAAUCUCAGCUGGCAACUGUGAGUGCUGUGUUGGGAAUUGCCCACGGGAGUCACUGGGAUUAGGCUGUGAGCA
+...((.(((((.((((((((.((((..(((((.(.((.((.......)).))))))))..)))))))))))).))))).))...
+>pma-mir-216b MI0017113 Petromyzon marinus miR-216b stem-loop
+AUACUGCGGGUUGUAAAAUCUCUGCAGGCAACUGUGGAAAGGUGACCUUGUCACACAUUGGCCUGAAGGGAUUAUACAAACUGUAGCAG
+...((((((.(((((.(((((((.(((((...((((((((((...)))).)).))))...))))).))))))).))))).))))))...
+>pma-mir-217a MI0017114 Petromyzon marinus miR-217a stem-loop
+UGUUGUGGAUACUGCAUCAGGAACUGAUUGGAUAGUGAUGGAUUGCCAUCAGUUCUUAAUGCAUUGUCU
+......(((((.(((((.((((((((((.((.((((.....)))))))))))))))).))))).)))))
+>pma-mir-218a-1 MI0017115 Petromyzon marinus miR-218a-1 stem-loop
+GCCGUCCCUGCCUUGUGCUUGAUCUAACCAUGUGCUGCCCCAAACAACAUGGUUUGUUCAUGCACCAGGUAGAGGCAUG
+(((....((((((.((((.(((...((((((((.............))))))))...))).)))).)))))).)))...
+>pma-mir-218a-2 MI0017116 Petromyzon marinus miR-218a-2 stem-loop
+CGUCGCUUUCCCUUGUGCUUGAUCUAACCAUGUGCUUGCCGCGCUCAAGACAAAACAAAACAUGGUUCCUUCAAGCACCAGGGAAGGCCACG
+(((.(((((((((.((((((((...((((((((.((((.......))))..........))))))))...)))))))).))))))))).)))
+>pma-mir-218b MI0017117 Petromyzon marinus miR-218b stem-loop
+CGCGCGGUUUUCCGUUGUGCUUGAUCUAACCAUGCGAUGGGGAGCUACGGUAACACCAUGGUUCUGUCAAGCACCACGGGACGCCGCACA
+.(.(((((.((((((.(((((((((..(((((((.(.((....((....))..))))))))))..))))))))).)))))).))))).).
+>pma-mir-221 MI0017118 Petromyzon marinus miR-221 stem-loop
+CGAGGCCUGGACCUGGCACACAGUGUAGGAGACUGUGUAACCAUGGCAACAGCUACAUUGUCUGCUGGGUUCAGGUUGCC
+.(..(((((((((..(((.(((((((((....((((((.......)).))))))))))))).)))..)))))))))..).
+>pma-mir-222 MI0017119 Petromyzon marinus miR-222 stem-loop
+GCUGUUGGCACGCGAGACUCAGAGCCCAGUGUAGAUCCUGCCUCGUGCACACAGCAGCUACAUUUGACUACUGGGUCUCUGGUGCCAACCCA
+...((((((((..(((((((((((.(.(((((((...((((...((....)).))))))))))).).)).)))))))))..))))))))...
+>pma-mir-281a MI0017120 Petromyzon marinus miR-281a stem-loop
+AGCGACUGUCGAGCAGGGGAGCUCCGUCCAUGACGGGGAUUUGUCGUGUGUACUUGUCAUGGAGUUGCUCUCUUGCUCGCCGUUACG
+.(..((.(.(((((((((((((..(.(((((((((((...............))))))))))))..)))))))))))))).))..).
+>pma-mir-301a MI0017121 Petromyzon marinus miR-301a stem-loop
+AACUUGCAAGCCCCUGCUGGAGGCUCUGACACCAUUGCACUACUGUACGCAAUGGUGAGCAGUGCAAUUGUAUUGUCAAAGCUUCCGUCGGUGAGCCCA
+.........((.((((.((((((((.((.(((((((((((....))..))))))))).(((((((....))))))))).)))))))).))).).))...
+>pma-mir-301b MI0017122 Petromyzon marinus miR-301b stem-loop
+GCUGCCAGCAGACGCUCUGACAGCGUUGCACUACUGUGCAGCCUGCAGCAAGCAGUGCAAUAGCAUUGUCAAAGCAUCUGAGGGCAGC
+((((((..((((.((((((.(((.(((((((....)))))))))))))...(((((((....)))))))...))).))))..))))))
+>pma-mir-302 MI0017123 Petromyzon marinus miR-302 stem-loop
+UAGUCCUCGCCACUGCUACCCAGAUAGCAGUACUUGCUGUUAGAAUUAUGAGCCGCAGUAAGUGCUUACCUGUUUGGGCAUCAGCGGUAGAGGAAUU
+...((((((((.(((...(((((((((.((((((((((((..............))))))))))))...)))))))))...))).))).)))))...
+>pma-mir-315 MI0017124 Petromyzon marinus miR-315 stem-loop
+UUGUUCCCGAUUUGAUUGUUGCUCAGAAAGCCGUGAAUUGAACGUCGACUUUCGGGCAUCAAUCAAAACGGGAGGCG
+...((((((.((((((((.(((((.(((((.((((.......)).)).)))))))))).)))))))).))))))...
+>pma-mir-338b MI0017125 Petromyzon marinus miR-338b stem-loop
+GGCAGUGGGAACAAAUCACAGUGACUGCAGAGUCGGAGAUGUGGACAGAACUCCAGUGUCUGUGAUUUCGUUCUCCACUCUG
+((.((((((((((((((((((.((((....))))((((.((....))...)))).....))))))))).)))).))))))).
+>pma-mir-430f MI0017126 Petromyzon marinus miR-430f stem-loop
+UAUUCUGUUCACGUUUACAGCAAUUUCGAGCACUCUGCUUCAUUUAUAAUAGCAAGUGCUUUGAUUUUGUUGUGUACGAGAAACAGACGC
+...(((((((.(((.((((((((..(((((((((.((((...........))))))))).))))..)))))))).))).).))))))...
+>pma-mir-375a MI0017127 Petromyzon marinus miR-375a stem-loop
+ACGCCUCGUCUGCGUCACGCCGAGCCCGACGCGCAAUGCUGGCCGCCGCUGUGCGCGCUUUGUUCGUUCGGCUCGCGUUACGCAGGCGGGGGGC
+.(.((((((((((((.((((.(((((.((((.((((....((((((......))).))))))).)))).))))))))).)))))))))))).).
+>pma-mir-375b MI0017128 Petromyzon marinus miR-375b stem-loop
+CCUCUGCGUCUGCGCAACGCCGAGCCCGACGCACAAUGCCUGCUCUGUCACGGCGCGUUUUGUUCGUUCGGCUCGCGUUGCGCAGGCACGGCCA
+...(((.(((((((((((((.(((((.((((.((((.((.((((.......)))).)).)))).)))).)))))))))))))))))).)))...
+>pma-mir-429 MI0017129 Petromyzon marinus miR-429 stem-loop
+GCUUGCUGCCGGCGAUCCUUACCAGGCAAGCUUAGAUUCCUCUGCUGAUCCUAUCUAAUACUGUCUGGUUAUGUCGCCGGCGGUGUGC
+((.(((((((((((((....((((((((...((((((...((....))....))))))...))))))))...))))))))))))).))
+>pma-mir-430a MI0017130 Petromyzon marinus miR-430a stem-loop
+UCUUCUGGUCACGUUGACAGCAACUCCGAGCACUCUGCUUAAUGAUGACUAAUAAGUGCUUGCUGUUGUUGUGAAUGUGAGUCAGACCC
+...((((((((((((.((((((((..((((((((....................))))))))..)))))))).))))))).)))))...
+>pma-mir-430b MI0017131 Petromyzon marinus miR-430b stem-loop
+GUCUGUUCACGUUCACAACAACUUCGAGCGCUCUGCUUAAUAUGUUGACUGGCAAGAGCUUGAAUGUUGUUGUGAAUGUGAGUCAGAC
+(((((((((((((((((((((((((((((.((.((((.............)))))).))))))).))))))))))))))))).)))))
+>pma-mir-430c MI0017132 Petromyzon marinus miR-430c stem-loop
+UCUGUUCACGUUUACAGCAAUUUCGAGCACUCUGCUAAUUUAUAAUAGCAAGUGCUUGAUUUGUUGUGAACGAGAAUCAC
+...((((.((((((((((((..(((((((((.(((((........)))))))))))))).)))))))))))).))))...
+>pma-mir-430d MI0017133 Petromyzon marinus miR-430d stem-loop
+CAUUCUGUUCACGUUUACAGCAUUUCGAGCACUCUGCUUAAUUUAUAAUAGCAAGUGCUUGAUUUUGUUGUGAACGAAAACAGACGC
+...((((((..(((((((((((..(((((((((.((((...........)))))))))))))...)))))))))))..))))))...
+>pma-mir-430e MI0017134 Petromyzon marinus miR-430e stem-loop
+CUGCGUGGCGCAUCCCCAACAACGAGUGCUCAUUGUGAUAUAUAACUACCAAUAAGUGCUAUGUUGUUGGGGAAUUGCAAUGCAA
+.(((((.(((..((((((((((((((..((.((((..............)))).))..)).))))))))))))..))).))))).
+>pma-mir-451 MI0017135 Petromyzon marinus miR-451 stem-loop
+UGGGGGAGUGGCGACAAAACCGUUACCAUUAUUGUAACCAAUAAUGGUAAGGGUUCUCUUGCUGCUCCCCGCU
+..((((((..((((.(.((((.((((((((((((....)))))))))))).)))).).))))..))))))...
+>pma-mir-456 MI0017136 Petromyzon marinus miR-456 stem-loop
+GUUAUGCCCGUGUGCAGGCAUCUUUCCAGCCUACACGUGGGGUCCUGAUUCUGCAGGCUGGUUAGAUGGUUGUCACAUGCAUGAC
+(((((((..((((((((.(((((..(((((((....(..((((....))))..))))))))..))))).))).))))))))))))
+>pma-mir-459 MI0017137 Petromyzon marinus miR-459 stem-loop
+GCACGGCGUGGUGUGCUCAGUAACAUGGGUUCGAACCUCGCGUUGGUUCUCCGCCGAGGUUGGCCCUGCGUUGCUGUGCACAAAACGUCGAC
+...((((((..(((((.(((((((..(((..(.(((((((.((.((....))))))))))))..)))..))))))).)))))..))))))..
+>pma-mir-497 MI0017138 Petromyzon marinus miR-497 stem-loop
+CCGGCCACUGGUGCAGCAGCACAACACGAUCUGUUUAGCUUUGGCUCGGCCAGAGCGUGGUGUGCUGCAGCACAAGGGUAGG
+((.(((.((.((((.((((((((.((((.(((((..(((....)))..).)))).)))).)))))))).)))).))))).))
+>pma-mir-551 MI0017139 Petromyzon marinus miR-551 stem-loop
+AUGCCUCCGAAAUCAAGUGUGGGUAUGACCUUGUUGUUUUAAUCCUAGGCGACCCAUACUUGGUUUCAAAGGACU
+...(((..((((((((((((((((.((.(((...............)))))))))))))))))))))..)))...
+>pma-mir-875 MI0017140 Petromyzon marinus miR-875 stem-loop
+GUCUGCCUGAGACAAUACCUCAGAAUUGUCAGGGUGCUCAGCAAUCCGCACCUGACAGUGCUGGGGUUUAGUCUCAGCAGAC
+((((((.((((((...(((((((.(((((((((.(((..........)))))))))))).)))))))...))))))))))))
+>pma-mir-1329 MI0017141 Petromyzon marinus miR-1329 stem-loop
+UGCGUGGCGCAGCUACAGUGACCAGGUUAUGACGGAGUCAUAUCUCGAUUCGCCCAUCGUGGUCUGGUCACCCUGCCUGCCCACGUG
+.((((((.((((.((..((((((((..(((((.((((((.......))))...)).)))))..))))))))..)).)))))))))).
+>pma-mir-1788a MI0017142 Petromyzon marinus miR-1788a stem-loop
+CACCUGCCUCGGGCUUGUUUUACCUUGCCUGUGGCUCGCAGCGAUGACACACAGGCAGCUGAAGCAAGCCUGAGGCGGAGA
+...(((((((((((((((((((.((.(((((((..(((......)))..))))))))).)))))))))))))))))))...
+>pma-mir-1788b MI0017143 Petromyzon marinus miR-1788b stem-loop
+CUUCCCAUCUCCGCCUCAGGCUUGCUUCAGCUGCCUGUGUGUCAUCGCUGCGAGCCACAGGCAAGGUAAAACAAGCCCGAGGCAGGUGGGUGG
+((.(((((((..(((((.((((((.((.(.(((((((((..((........))..))))))).)).).)).)))))).)))))))))))).))
+>pma-let-7a-1 MI0017144 Petromyzon marinus let-7a-1 stem-loop
+UGUGGGCUCCUGGGUUGAGGUAGUAGGUUGUAUAGUUUAAGGGGCAGACAUUCAUCUUCCCUUAUCGGAGAUAAGCUAUGCAGCCAACUGCCUUUCCCAGGGCUUCGC
+.((((((.((((((..((((((((.(((((((((((((((((((.(((......))).)))))........)))))))))))))).)))))))).)))))))).))))
+>pma-let-7a-2 MI0017145 Petromyzon marinus let-7a-2 stem-loop
+UGAGUGCGCCCUGGGAUGAGGUAGUAGGUUGUAUAGUUUCAGGGUCACACCCAAACUGGGAGUUAACUGUACAAUCUACUCUCUUUCCCAAGGCGGCACGCUG
+...(((((((.(((((.(((..((((((((((((((((........((.(((.....))).)).))))))))))))))))..)))))))).))).))))....
+>pma-let-7a-3 MI0017146 Petromyzon marinus let-7a-3 stem-loop
+GCGUGGGAUGAGGUAGUAGGUUGUAUAGUUUGGGGAGUGUGACCCCGUUCAGGAGAUAACUGUACAAUCUACUGUCUUGCCCAAGC
+((.((((.((((..(((((((((((((((((((((.......)))))..........))))))))))))))))..)))))))).))
+>pma-let-7a-4 MI0017147 Petromyzon marinus let-7a-4 stem-loop
+GUUUUCGGGGUGAGGUAGUAGGUUGUAUAGUUUAGCAUUACACCUACGGAGAUAACUGUACAACCUUCUAGCUUUCCCCGCGGGC
+(((..(((((.(((.(((.(((((((((((((.....................))))))))))))).))).))).)))))..)))
+>pma-let-7b MI0017148 Petromyzon marinus let-7b stem-loop
+GCAGGGUGAGGUAGUAGGUUUUGUAGUUCUGCGGGCAGAGAUUUUGCCCAGCGAGUGGAGAUGAACUAUAUAAUCUACUGCCUUGCCCGGA
+...(((..((((((((((((.((((((((((((((((((...))))))).))).........)))))))).))))))))))))..)))...
+>pma-let-7c MI0017149 Petromyzon marinus let-7c stem-loop
+CCGGCUCGCGGGGUGAGGUAGUAGAUUGUAUGGUUUUAGGGUCACACCCUCGGUUGGGAGAUAACUAUGCAAUCUACUGUCUUUCCCGCGGGUGCG
+...((((((((((.(((..((((((((((((((((.....(((...(((......))).)))))))))))))))))))..)))))))))))))...
+>pma-let-7d MI0017150 Petromyzon marinus let-7d stem-loop
+GGUGAGGUGAGGUAGUAGGUUGUAAAGUUGUAGGGUGUCAUUUGUUUACACCCGAUUUGGAGAUAACUGUACAACCUAUUGCCUUC
+........((((((((((((((((.((((((.((((((.(.....).)))))).........)))))).)))))))))))))))).
+>pma-mir-4541 MI0017151 Petromyzon marinus miR-4541 stem-loop
+GCGCUCAGAGCAGCUGGUCGCGUCUAAGUACGUGUGUCUGCAUCGUCGCACAUAUUUAGCACGACUGGCUGUUCUGUAC
+.....(((((((((..((((.(.(((((((.(((((.(......).))))).)))))))).))))..)))))))))...
+>pma-mir-4542 MI0017152 Petromyzon marinus miR-4542 stem-loop
+UUUUUGGGUUGACAUGUCAUGUUCCAUGUUGCACUUCUGUGAAGAUGCUAGUCAGCAAGUGCAUUUUGGAAUGUGACAUGUUGACUCCAGUCAU
+...((((((..(((((((((((((((...((((((((((.............))).)))))))...)))))))))))))))..)).))))....
+>pma-mir-4543 MI0017153 Petromyzon marinus miR-4543 stem-loop
+ACCUGUUUAUAGGUCUGUGUUGUGAUGUGCGAUGUUUACAAUGCUCCACUUCACACACUGCCCUAUUGACAAUG
+...((((.(((((.(.((((.((((.(((.((.((.......))))))).)))))))).).))))).))))...
+>pma-mir-4544 MI0017154 Petromyzon marinus miR-4544 stem-loop
+UUAAGCUGUGGGUUCUACCCUAUUCUGACCCUUGACUUGUCCAAUCAGAGUGUCCGGGGUCGGUGUAGGCUAAAACCCAGGCUGUA
+...((((.((((((.((.(((((.((((((((.(((...((......))..))).)))))))).))))).)).))))))))))...
+>pma-mir-4545 MI0017155 Petromyzon marinus miR-4545 stem-loop
+CUCGCUCCCCGCCGGCCUUCACAACUGGCUGCUUUACUGUAGAGGAAGGGGUACAGCAUCCAGUUGUGUGAGACGGUGGUGGGCUCU
+...((((.((((((..((((((((((((.((((.((((.(.......).)))).)))).))))))))).))).)))))).))))...
+>pma-mir-4546 MI0017156 Petromyzon marinus miR-4546 stem-loop
+GGGCAGCAGCAGCAGCAAGUCGGCGUGGAAGGCGAUGGUCGCCUUCGGCCUCCUCGCCCUGGCUCACGCCGCCUUCUCUGCCGCGCA
+..((.((.((((.((.(((.((((((((..(((((.((..(((...)))..)))))))....).))))))).))))))))).)))).
+>pma-mir-4547 MI0017157 Petromyzon marinus miR-4547 stem-loop
+AUGUGGGCGAGUUGCGCUGUUUUCUGACAAAGGGUUGGCUUGUGAACUGUGUCUUCCGGCCCAUUGCUAGGAAACAUUGCCACUAGCCCAAGC
+...(((((.(((.(((.(((((((((.(((.(((((((.....((......))..))))))).))).))))))))).))).))).)))))...
+>pma-mir-4548 MI0017158 Petromyzon marinus miR-4548 stem-loop
+CGGGGCUGUGCGAGGGCAGGCCGGGCGGGGGAGGCAUGCUGCCUGGCUCCAUCUCCCAGCCGUGCCUGCCCGCAGCCGAC
+...((((((....(((((((((((..((((((((...(((....))).)).))))))..))).))))))))))))))...
+>pma-mir-4549 MI0017159 Petromyzon marinus miR-4549 stem-loop
+CGGGCGGCGCCGGAGACCGCCACGUGUCUGUGCGCAGCGCGACGAGCGCAGAGACGGUGAGCGGCCUGGUUCGCACU
+...((((.(((((.(.(((((((.(((((.(((((..........))))).)))))))).))))))))))))))...
+>pma-mir-4550 MI0017160 Petromyzon marinus miR-4550 stem-loop
+GCCGUUGUUGCUCGACUCGUCGAGCAGGUUUCGGGUGGUUACUUGCCUUCAUUAAUCAUGGAAACCGUCCGAAACUUGCUCGACGUCAAGUAACCACACC
+...((.((((((.(((..((((((((((((((((..((((.....((............)).))))..))))))))))))))))))).)))))).))...
+>pma-mir-4551 MI0017161 Petromyzon marinus miR-4551 stem-loop
+UGGAGACACGUGUAACAUUAGUCAACGUCUCCGUCGAUUGCAGUCUCAUUGAAGACUUUUCGGCCGAAACCUUGACUAACUUUGUACGUGUUUUCACC
+(((((((((((((((..((((((((.((.((.(((((....(((((......)))))..))))).)).)).))))))))..)))))))))))))))..
+>pma-mir-4552 MI0017162 Petromyzon marinus miR-4552 stem-loop
+UCUGUGUAGGCAGGCGUGUGUCGUGUGAGAAUAUGCAUUUGCGAGUAGCUUCCCACUUGAUCACUGCUGCUACGCUU
+...((((((.(((.((.((((((.(((.(((..(((........)))..))).))).))).))))))))))))))..
+>pma-mir-4553 MI0017163 Petromyzon marinus miR-4553 stem-loop
+AAUGGUAGGUGAUUAUUUUGCGUCGGCGUACCUUGUACUGUAGUGGUAGUGCCUUACGCUGGUAGUCUCUUACUCGC
+...((((((.(((((((..((((.((((((((............)))).))))..)))).))))))).))))))...
+>pma-mir-4554 MI0017164 Petromyzon marinus miR-4554 stem-loop
+GACAUUGCAUUGUGGGUCACCGUGUUGCAGUGUGGAAACACUUUACGGUCACCCACACUGCAACAUGGUUACUCGCCAUGCAAUAUU
+...(((((((.((((((.(((((((((((((((((....(((....)))...))))))))))))))))).)))))).)))))))...
+>pma-mir-4555 MI0017165 Petromyzon marinus miR-4555 stem-loop
+AGCAGCAGGAGCCACAUGAUGAGAGAGAUGAGUUGCGGAUCGCUGAGCGAAUGUCGACCCAACAUCUAUCACCCCUUUCUGAUGGCUCCUCAACCUC
+....(.((((((((((.(((((...(((((.((((((..((((...)))).)).))))....))))).)))......)))).)))))))))......
+>pma-mir-4556 MI0017166 Petromyzon marinus miR-4556 stem-loop
+GGUGGGGCUGACUCCGCGACCCCGCGUGACGGUUCUUGUCGUGUUACAGAAGGGAAUGGCACUCGCGAUGUCGGUGUC
+...((.((((((..(((((......(((.(.(((((..((........))..))))).)))))))))..)))))).))
+>pma-mir-4557 MI0017167 Petromyzon marinus miR-4557 stem-loop
+GCGUCGUCUCUCUGUAGAAAUGCUUCCAGUGACUGUGUCUGGAAAAGCCCUCGCAUUGCCACGUUUGCUGGAAGCAAGUCUAUAUGGAGAUGGGAG
+...((((((((.((((((..(((((((((..(.((((.(.((......)).......).)))).)..)))))))))..)))))).))))))))...
+>pma-mir-4558 MI0017168 Petromyzon marinus miR-4558 stem-loop
+GGGAACACAGCACCGCCUGGCGUAUGGCGCUGCUGCAGUGGUGAGGAUGCUGGCGGUGACGCUAUGGCUGCUGCUGUUGUUGUU
+...((((((((((.(((((((((....((((((((((..........))).))))))))))))).))).).))))).))))...
+>pma-mir-4559 MI0017169 Petromyzon marinus miR-4559 stem-loop
+CGUGGCGGGGCUUCUAGGAACGCGUAUUUGUUCACCUUGCGGGUGUUAAACACGUUUGUUUCCUUGGGAGAGCGAUACC
+.((.((....((((((((((.((((.((((..((((.....)))).)))).))))....)))).)))))).)).))...
+>pma-mir-4560 MI0017170 Petromyzon marinus miR-4560 stem-loop
+AGAGCCCCCGCUGUUCUCUCUGUCCACACAAACACCUGCUCGCCAUGAGACUCAGGUGUUUCCCUGGACUGGGGGCAGAGCGAGGGGCGAG
+...(((((((((.(.(((((.(((((...((((((((((((.....)))...)))))))))...))))).))))).).)))).)))))...
+>pma-mir-4561 MI0017171 Petromyzon marinus miR-4561 stem-loop
+ACCCGGCACUCGCGGCAUGAUCGAUUGGACCGGUGUUGCGCCCGUGGUUUUGGUGAUGAUUUUGAUGACGAGGCUGAAG
+...((((.((((((.((.((((.(((..(((((..(..(....)..)..)))))))))))).)).)).))))))))...
+>pma-mir-4562 MI0017172 Petromyzon marinus miR-4562 stem-loop
+UCGAGGAGCCCUACGUCCUGCGAGUGAACGUGGCCCUCACCGCGCUCUACGCCAUCGCGUGCGUCGCGUUCGUCGUCGGCUUCUGCCUCCUGGG
+.(.(((((.(....(.((.((((.((((((((((...(((((.((.....))...)).))).)))))))))))))).)))....).))))).).
+>pma-mir-4563 MI0017173 Petromyzon marinus miR-4563 stem-loop
+GUUUCCCGUUGCUUUGCUGGACAACAAAGCACGGGUUCUCUCUCAGGUAACCGCGUUGAUGUCCUGCAAAGAAAUCGGACGC
+((.(((.(((.((((((.(((((.(((.((...((((..(.....)..)))))).))).))))).)))))).))).))).))
+>pma-mir-4564 MI0017174 Petromyzon marinus miR-4564 stem-loop
+GCCUUUGUUAAGCCUAAUGACAUUUUAAAACAGCAACCUUAGUAUUGUUUGAAAUGUCAUUUGGCUUAAUAAAAAG
+...(((((((((((.((((((((((((((.(((..((....)).))))))))))))))))).)))))))))))...
+>pma-mir-4565 MI0017175 Petromyzon marinus miR-4565 stem-loop
+CGAUGGGUUGACAUGCGAGCCGGACCUUUGCGCCUCCGCUGAUUGAGACGCAUGUGGUCGUUGUUUGCAGGGUCUGCCCGGCA
+.(.(((((.(((.(((((((..((((..((((.(((........))).))))...))))...)))))))..))).))))).).
+>pma-mir-4566 MI0017176 Petromyzon marinus miR-4566 stem-loop
+UGCCGUGCGAUUUGUGCAGUGUGCAACGUUUGCUCGAGCUAAACGCAAGUACUGUGCAUCCCCUGUGCGCUGUCAGUUUGUCCACGGUG
+.((((((.((((((.((((((..((..(..(((.(.((....((....)).))).)))..)..))..)))))))))...))))))))).
+>pma-mir-4567 MI0017177 Petromyzon marinus miR-4567 stem-loop
+GGCGCCCUACGUGACCGUGGUGGUGAGCAGAGGGCCCUCAGGCUGAGCUGUACUAAUGCUGUCAUGAUUGGGGUAUAUGAUGU
+...((((((((((((.((..((((..((((..((((....))))...))))))))..)).))))))..)))))).........
+>pma-mir-4568 MI0017178 Petromyzon marinus miR-4568 stem-loop
+CAUAUUAAGCGUAUCUUCUCUCAAGCUUCUGCCGUGACCAACUGCGGGAAUUUUCAGCAGUAGCACACGGCGGACGCUUCAGAUGAGUUACGCUCAAUGC
+..((((.((((((.(((.(((.((((.(((((((((..(.(((((..((....)).))))).)..))))))))).)))).))).))).)))))).)))).
+>pma-mir-4569 MI0017179 Petromyzon marinus miR-4569 stem-loop
+CUACUUCACCGUCCCGCACUGGCGAGCGAAUUUUGAUCGCAUAUCUCCCCACGAUUCGCACGCCAGGCGGGGGGGGGGGGGG
+...((((.((.((((((.((((((.(((((((.((..............)).))))))).)))))))))))).)).))))..
+>pma-mir-4570 MI0017180 Petromyzon marinus miR-4570 stem-loop
+CCUGAGUGUGUCUAGAACCAUAGUUUAACUGUAAACACUAUCAAUCAAAAUUGUUGAACUAUGUAUCUGGAUGCGUUCUUU
+...(((((((((((((..(((((((((((.......................)))))))))))..)))))))))))))...
+>pma-mir-4571 MI0017181 Petromyzon marinus miR-4571 stem-loop
+GACCUGUGCGUGUAUAUGGAAUAUAUGUACACACAGGAUAUUACAUAAUCUACGUGUGUGUGCAGUAUAUUACAUUUAUGAGCUACAGUAC
+...((((((..(((.(((.((((((((((((((((((((........))))...)))))))))).)))))).))).)))..)).))))...
+>pma-mir-4572 MI0017182 Petromyzon marinus miR-4572 stem-loop
+GAGUGCAGAGCCCAUCGCUGCGUCAAGGCUGCUUACGGGAGACCUCUUGCCGCUUGCGUCUUGGCUCAGCGGUGCGAUUUGCAAAU
+...((((((.(.((((((((.((((((((.((...((((((....))).)))...)))))))))).)))))))).).))))))...
+>pma-mir-4573 MI0017183 Petromyzon marinus miR-4573 stem-loop
+GCCCUGUCUCCCAUACAAACACACACGCUAGUGUUCUGUCGAUCUGUUAUGCUCGCGUGCGUGUUCGUAUGGGAGCCAGAUA
+...(((.(((((((((.(((((.(((((.(((((..............))))).))))).))))).))))))))).)))...
+>pma-mir-4574 MI0017184 Petromyzon marinus miR-4574 stem-loop
+GUUCAGAUGCUGAGAUACACAGUUCGCAGUUCAUAGAAGUCUGCCUGUUGGUACGCUGUUGAACUGAGUAUCUCGACAUCUGCCC
+...((((((.((((((((.(((((((((((...........((((....)))).)))).))))))).)))))))).))))))...
+>pma-mir-4575 MI0017185 Petromyzon marinus miR-4575 stem-loop
+ACCCGCACGAUGCAACCCCAAACAUUUUGGUUGUGGCUAACGACGAACCAUAAUAUUUGGGCGUUCAAGCCUGCGUGCGUGA
+.(.((((((..(((((((((((.(((.(((((((.(....).)).))))).))).)))))).)))...))...)))))).).
+>pma-mir-4576 MI0017186 Petromyzon marinus miR-4576 stem-loop
+ACCUUGUCUUUGUUUAGCGAUGUAUCUGGCUUGUCUCAGAAGACGCUAGGUCCAUUGUUGGACUUGGACAGUGC
+...((((((..(((((((((((.(((((((..((((....))))))))))).)))))))))))..))))))...
+>pma-mir-4577 MI0017187 Petromyzon marinus miR-4577 stem-loop
+CAAAGCUCACCGUUUGCUUGGUGGCCCACAGAUGUUCAUCUCUGGCGUGGAGACCGAAAGCGAACGGCUGCUGCA
+...(((...((((((((((..((((((((((((....)))).....)))).).))).))))))))))..)))...
+>pma-mir-4578 MI0017188 Petromyzon marinus miR-4578 stem-loop
+UGGCGGCGGUGGCGCCUGUUGAGCGACGCUCGCUCGACGGCCGCGUGAGUUGUUUUGUUUUGCGGUUGCCCUCGCACGACGGACGUUUCCGCUGCGCU
+..(((((((..(((.((((((.((((.((((((..((((((.((....)).))..))))..))))..))..)))).)))))).)))..)))))))...
+>pma-mir-4579 MI0017189 Petromyzon marinus miR-4579 stem-loop
+GAACGGUAGCGGCAGACCACCGCCGAGUUCUGUAGGUGGCGAGGUGGCAGGCGAGACUCGUGGUGACUCCGACUGUCGCCA
+...((..(((((.((..((((((.((((..(((..((.((...)).))..)))..)))))))))).))))).))..))...
+>pma-mir-4580 MI0017190 Petromyzon marinus miR-4580 stem-loop
+GCGUGCCCGUGCAUGCCCGUGCGCGCGUCCCCUGGCGUGGUGUUCCCACAUCCGCGCGUCGCCUGGGCAGGUGGCUCGA
+.((.(((...((.((((((.((((((((.....((.((((.....))))..))))))).))).)))))).))))).)).
+>pma-mir-4581 MI0017191 Petromyzon marinus miR-4581 stem-loop
+GUGGCUGCACGGGCCAGGUAAAGCGUGCCGACACGGCUCGGAUACGGCUCGCUCGGAACGGCCCGGCUCGGGUGGCAGU
+...((..(.((((((.(((....(((.((((..((((.((....)))).)).)))).)))))).)))))).)..))...
+>pma-mir-4582 MI0017192 Petromyzon marinus miR-4582 stem-loop
+CAAUCCCCCGUGUCUCUCGUGUCCUCCUGUGUCUACGGGUAUAAGUUGGAAGAGACACAGGGAGACACAGAGACACUGGUAGACAC
+...((..((((((((((.(((((..(((((((((.(((.......)))....)))))))))..))))))))))))).))..))...
+>pma-mir-4583 MI0017193 Petromyzon marinus miR-4583 stem-loop
+UUCUGUGACAUUAGGAACCAUCGACCACUUGAUACAGCGAAACAGUCAGGUGGUGGAGGGUUCUGAUUGACACACAA
+...((((.((...((((((.((.((((((((((...........)))))))))).)).))))))...)).))))...
+>pma-mir-4584 MI0017194 Petromyzon marinus miR-4584 stem-loop
+UCAGCACGGUGUCUGACGAUUUGGCCCACGUGCUGAAUAAGCUCCCCAGCGCGUGGAGCGAAACGUCGGACACCGUGCCGA
+((.(((((((((((((((.(((.((((((((((((...........)))))))))).)).)))))))))))))))))).))
+>pma-mir-4585 MI0017195 Petromyzon marinus miR-4585 stem-loop
+GCGGAGAGCAUUUCGACUUGUCGCCUUCUGGGGUCCCUCCAAUGACCCCAGAAGUGAAAUCAAGUUGGAACAGAUCUUAUU
+...((((...((((((((((((((.((((((((((........))))))))))))))...))))))))))....))))...
+>pma-mir-4586 MI0017196 Petromyzon marinus miR-4586 stem-loop
+CCAGGCCCAUGCCAGCCUCACCGGGCCCUCGCGCUGGCGUUGUCUUGUGCAAGAGUUCGUGUGCGGCUGUCAUGAGUCGCG
+...(((.((((.(((((.((((((((.((.((((.(((...)))..)))).)).))))).))).))))).)))).)))...
+>pma-mir-4587 MI0017197 Petromyzon marinus miR-4587 stem-loop
+UUUCAUCGCCAGCGAGCGCCCGCUUCACACAACACACACACACCCACAUCUAUAAUAUCUCUAUAACCCGCUGUGUUUGUGAUGGGCCAGCGCGUUGUCGUUGCUG
+...((.((.(((((.(((((((..(((((.((((((...................................))))))))))))))))..)).))))).)).))...
+>pma-mir-4588 MI0017198 Petromyzon marinus miR-4588 stem-loop
+UAAGAUGGCGUCGCUGUGAGUUCACCUUAGGCGCCGGAGGUCCCGAGAGAGCGAGGGGAGAUCAUCGACAUCCAUUGCC
+...(((((.((((..((((.(((.((((..((.((((.....))).)...)).))))))).))))))))..)))))...
+>pma-mir-4589 MI0017199 Petromyzon marinus miR-4589 stem-loop
+GUUUGCUGCUGGUAGUGGUGCUGCUGUGAUUGCUGUUACUGCCGUGCAGGGUGUUGUGGGGUAAUGGUGGAGUACAGUGCGGUAGUGUGG
+....(((((((.((.((.((((.(..(.((((((.((((.(((......)))...)))))))))).)..))))))).)))))))))....
+>pma-mir-4590 MI0017200 Petromyzon marinus miR-4590 stem-loop
+GCCGUGGGCCCGUGGGGCGGUUCGCACGCUCCAUCUGGACGGGAGACAACACGGGGGAGUGGGGCCACCUGCGCGUGUCCAUCCC
+...((((((.(((((((.(((((...((((((.((((....(....)....))))))))))))))).))).)))).))))))...
+>pma-mir-4591 MI0017201 Petromyzon marinus miR-4591 stem-loop
+GAGCCAAACCUCAGCGAUCCAGUUGCAUGCAACUGAAUCGCUCAAUUGCAUGCAACUGAAUCGCUCAUAUGUGGACG
+..((((......((((((.(((((((((((((.(((.....))).))))))))))))).))))))......))).).
+>pma-mir-4592 MI0017202 Petromyzon marinus miR-4592 stem-loop
+GCUCCGACUCCGUUCCGAUCGCUCGCUCACUCGGCAUCGGUUGUCGCGCUCCGACGACGUCCAGCGGCGGUGCCGUGAUGGCGAUGUCGUUCGGGAGGCG
+.........((.((((((.(((((((.(((.(((((((((((((((.....))))))).........)))))))).).)))))).).)).))))))))..
+>pma-mir-4593 MI0017203 Petromyzon marinus miR-4593 stem-loop
+UGAUCAAUGGCCAUCAGGAUCGGUGUGGAGAAGGAUGAGCAACCCUCCUCCAUGAUCAUCGUGGUGGCGUUUGAAGA
+...((((..(((((((.(((.(((((((((.(((.........))).)))))).)))))).)))))))..))))...
+>pma-mir-4594 MI0017204 Petromyzon marinus miR-4594 stem-loop
+GGUCAAUGUCGAACGUCGGGCCGACGUUGAGCCAACGGUUUCAACCGCAUUCCAACGUUGGCCCGACUUUGGAUGUUUACC
+(((.((((((.((.(((((((((((((((.(....((((....))))....)))))))))))))))).)).)))))).)))
+>pma-mir-4595 MI0017205 Petromyzon marinus miR-4595 stem-loop
+UCCGCAUGGUGUCCAGUGUUUCUCUCCACGUGCUGGAAAUAAAUCGCUCCCAGCACGUGGUGUGAAAUGCCACACGCCGUGCUGA
+...(((((((((...(((((((.(.(((((((((((.............))))))))))).).)))))))...)))))))))...
+>pma-mir-4596 MI0017206 Petromyzon marinus miR-4596 stem-loop
+UCCCAGGGUCGGAGAGCCCGGCGCUGUCGCACCAGAGCACGGGUGAGACUCCCGGGUUUGGUGACAGCGUCAGAGCUCUGGGCCCUGUGC
+...(((((((.(.(((((.(((((((((..((((((.(.((((.......))))).))))))))))))))).).))))).)))))))...
+>pma-mir-4597 MI0017207 Petromyzon marinus miR-4597 stem-loop
+CAAAUGAGAAACACAGCGAGACGCGUGUGCAACGACGCGAUUACCGAUGCGUGUCUCGCCGUGUUAUUUGCGUCUCGCUGUGUUGUCUGCGUCUC
+...((((((((((((((((((((((.(((..(((..((((.(((......)))..)))))))..))).)))))))))))))))).))).)))...
+>pma-mir-4598 MI0017208 Petromyzon marinus miR-4598 stem-loop
+CUUGAGGUUGACAAAUGAACGGUUUCGAAUCGAUGUAUACGAACAAUAUUUCACGCGCUGUGUGUCGAUUCAAAGCCGUACAUUUGUCAACUUUCAC
+...((((((((((((((.(((((((.(((((((..((((((..............)).))))..))))))).))))))).))))))))))))))...
+>pma-mir-4599a MI0017209 Petromyzon marinus miR-4599a stem-loop
+UAAGCUGAGCCAGCCGCCCGCCACAAUCCCGGUCAAGUCCUAUUGACCGGAGAUUGUCCAGUGGUGGCUAAGAGCAGUGAC
+...((((..(.((((((((...((((((((((((((......)))))))).))))))...).)))))))..)..))))...
+>pma-mir-4599b MI0017210 Petromyzon marinus miR-4599b stem-loop
+CGUGUUGAGGUAGCCGCCCGCCACAGUCACAGUCUCACACCCUUUGACUGGCGAUUGUCCAGUGGUGGCUAAGAUCAAUGUC
+.(..((((..(((((((((...((((((.(((((...........)))))..))))))...).))))))))...))))..).
+>pma-mir-4600 MI0017211 Petromyzon marinus miR-4600 stem-loop
+GGCACAGAGAAACGUCGCCCCCGCUCCCCCGCUCGCGAGGGAGUGGUGCGGGCGACCCUCCUGUAUA
+...((((.((...(((((((((((((((.((....)).))))))))...)))))))..))))))...
+>pma-mir-4601 MI0017212 Petromyzon marinus miR-4601 stem-loop
+ACUUCCGGCAGCGGGUUGACAAAUGGUGCUUUGAUAAUAAUGCUAUGCCCCUUUGUCAAUCCACUGCUGGACGA
+.(.((((((((.(((((((((((.((.((.................)))).))))))))))).)))))))).).
+>pma-mir-4602 MI0017213 Petromyzon marinus miR-4602 stem-loop
+UCAUUUCCACAUUCUGGGAGCUUCUUCAAAAUUCGGUUGUUUUAGGAAUCACCUUUUUUGAAGGAGCCCCCAGCACGUGGAGAAAA
+...(((((((...(((((.((((((((((((...(((.((((...)))).)))..)))))))))))).)))))...)))))))...
+>pma-mir-4603 MI0017214 Petromyzon marinus miR-4603 stem-loop
+UCUUCCGAUUAGCGCGGUUGGACACGCACGGGGAAUGUACAUUGAACUACUUCCUUUGCACCGUACGUAUCCAACCGCGCUAAAUCGGAGGU
+.(((((((((((((((((((((.(((.((((((((.(((........)))))))......)))).))).)))))))))))).))))))))).
+>pma-mir-4604 MI0017215 Petromyzon marinus miR-4604 stem-loop
+CUUGUUCUGGCUGGAGAGGCUGUGAGCAGCAGGCACAGCAAACCAAGUACACGUGCGUCUGCUCGGGCACCUUCCUCGGCCUAACCAU
+...(((..(((((..((((.(((((((((.(.((((................)))).)))))))..))).))))..))))).)))...
+>pma-mir-4605 MI0017216 Petromyzon marinus miR-4605 stem-loop
+GCAGCAGUGGAUAGACACUGGCUGACGACGACGACGCACGUGCUCCUACUCUCGUAAUCAGCCAGCGUGCAUCCACUGCGGG
+...(((((((((..((.((((((((..((((.((.((....))......))))))..)))))))).))..)))))))))...
+>pma-mir-4606 MI0017217 Petromyzon marinus miR-4606 stem-loop
+GCAGCGCAGGCCCGAGGCCUCGCCGGCGUAGGCGGCCUGCCUGGUACCAGUCCCUGCGUGCGGUGAGGUGGCCGGGGCACG
+...((.(.((((....((((((((((((((((.(((.((........)))))))))))).))))))))))))).).))...
+>pma-mir-4607 MI0017218 Petromyzon marinus miR-4607 stem-loop
+GUGGCGUGGGGCCGACUCUGGGCCAUGGGGAAGAGGCCCGGCCCAUCGGGCUCUGCGUUCACGGCCUCGCUUGGCCCCACGUACAG
+(((.(((((((((((..(.(((((.((((..((((.(((((....)))))))))...)))).))))).).))))))))))))))..
+>pma-mir-4608 MI0017219 Petromyzon marinus miR-4608 stem-loop
+UGGCGCAGGGCGUCAGCGUGGCGCGCGCCCGCCUGGCGGAACGCCGAGACGGCCGCGUGCGCACACUGCGCCGCCACCUUGCCC
+((((....((((.(((.((((((((((.(((.((((((...)))).)).))).))))))).))).)))))))))))........
+>pma-mir-4609 MI0017220 Petromyzon marinus miR-4609 stem-loop
+AGAGUGAUGGGAGAGCUCGGAUUUGGUCGCCCGUGCAGGUUCGGUCCGUGCGGGUUUUAAACUCCGAGCCAGAGCAGC
+...((..((.....((((((((((((..(((((..(.((......)))..))))).))))).)))))))))..))...
+>pma-mir-4610 MI0017221 Petromyzon marinus miR-4610 stem-loop
+CCAUCUUCGAUAACGUGCAGCCUCCAGGUGUUUCUCUGGGCGUCAUUGCGAUGGAAACGCCGAGCAGGUUCACUCCACCUUAUCAAGACAC
+...((((.(((((.(((.((((((..(((((((((....(((....)))...)))))))))..).))))).....))).)))))))))...
+>pma-mir-4611 MI0017222 Petromyzon marinus miR-4611 stem-loop
+GAGUGCGGUGUUUUUUUUUCCGGUACUUCCCCCGGGAGUAGCCGAGGGCGCGUGGGGGGAGGGUCCAGAAGGUGGAGCACCGUGAGG
+....(((((((((..(((((.((..(((((((((.(....(((...))).).)))))))))...)).)))))..)))))))))....
+>pma-mir-4612 MI0017223 Petromyzon marinus miR-4612 stem-loop
+GCGUGCCUCCUAUUCCUAGUAUCACUACACAAGCACUGAUGACCGCGAUCGUCAGUUGGUGGCCUGUGCUGCUGGUGGUGGAUUAGGAGGCAA
+...(((((((((.(((.(.((((((..((((.((((((((((......)))))))).....)).))))..).))))).)))).))))))))).
+>pma-mir-4613 MI0017224 Petromyzon marinus miR-4613 stem-loop
+AGAGCGUCGUUAUGGCACACCGGUGGCGUCGCUUCGUUGACUUGCGGUGCCGUCGCAGUGACGUCACCGGAGUGCCUUAACGACGCGGC
+...(((((((((.(((((.((((((((((((((.((.......(((....))))).)))))))))))))).))))).)))))))))...
+>pma-mir-4614 MI0017225 Petromyzon marinus miR-4614 stem-loop
+ACGUGGGGCGACGGGAGAUUUUGGGAGAUGGGAGACGCUGCAUCUCCCAUAUUUCCCAUGUCUCCCACCGCCCCGUUU
+....((((((..(((((((..((((((((((((((.......)))))))..))))))).)))))))..))))))....
+>pma-mir-4615 MI0017226 Petromyzon marinus miR-4615 stem-loop
+GACUACAGAGACUCCUCUACUUACGAACGAGUUCGGUUCCAGAUGUCUGUUCGUAAGUCGAUUGUUCGUAAGUAAAGGAGUCCCUGUACAU
+...(((((.(((((((.(((((((((((((..(((..(...((.......))...)..)))))))))))))))).))))))).)))))...
+>pma-mir-4616 MI0017227 Petromyzon marinus miR-4616 stem-loop
+CCUUGUUCCAAUUGGGCUGUGAAAGGCUACACAGGGGACCUUUGUCUUUGUGGUGUUUCAUGGCCAGGAGUUG
+.....((((.....((((((((((.((((((...(((((....))))))))))).)))))))))).))))...
+>pma-mir-4617 MI0017228 Petromyzon marinus miR-4617 stem-loop
+GCUACACGAGCGAGCUUCAUCGGGUGGGACAACCCACGGCGAAAUGUUUUUUGUCCUCGCUGUGGCUGUCACACCUGAUGGAGAUCGCUCGUGUGAUG
+..(((((((((((.((((((((((((.((((..(((((((((..............))))))))).)))).)))))))))))).)))))))))))...
+>pma-mir-4618 MI0017229 Petromyzon marinus miR-4618 stem-loop
+GAGGCUUAUUUUGAAGCCCUAUAUUUAUGUAUUCACAAGAUAAUGGAACUAUGUGCAUAGAUGUUAGGGUUAAGUACA
+...(((((.......(((((((((((((((((((.((......)))).....))))))))))).)))))))))))...
+>pma-mir-4619 MI0017230 Petromyzon marinus miR-4619 stem-loop
+AUGCGCUGUGCUACGUGACACCCCCUCGCCGAUUGGCUACGUGACAAACCCCCUCGCCGAUUGGCCACUUGUCGGGUGGUGCUGGUGGUGGCAGCGGU
+...(((((((((((..(.(((((((..((((((((((..................))))))))))........))).)))))..))))).))))))..
+>pma-mir-4620 MI0017231 Petromyzon marinus miR-4620 stem-loop
+GAGACACGCGGAGUAGGGGCAGCGGUGGCACCGACGGAGACGCCUGCGUCCUCCCCGCCGUGCCGCCCUGCUGUGCGUGUGAU
+...(((((((.((((((((((.((((((....((((.((....)).))))....)))))))))..))))))).)))))))...
+>pma-mir-4621 MI0017232 Petromyzon marinus miR-4621 stem-loop
+UGUCGGUCCACGUGCCUGGCUUGGUACAGUGUGAAAUAAACAACCACUGUACCAAGCGAGUCAGACACGUGGACUGACGC
+.(((((((((((((.((((((((((((((((.............)))))))))))))....))).)))))))))))))..
+>pma-mir-4622 MI0017233 Petromyzon marinus miR-4622 stem-loop
+CCGAUCAUUUUUUAGGGGUGGGCUCCGUGUCUGAGAGUUCUAAAUUGCUCUCGGACACGGAGGCUCCCGAAAUGAUGAUGCA
+...((((((.(((..(((.((.((((((((((((((((........)))))))))))))))).))))).))).))))))...
+>pma-mir-4623 MI0017234 Petromyzon marinus miR-4623 stem-loop
+GCGGCGACGUUUUGGGCAAUGGCUCCUUCACAGAAGGCCUCUCGAUGUGCUGUGAAGAAGGGCCAUUGCCUGAAACGUUGCGUA
+...(((((((((..(((((((((((((((((((...((........)).))))))))..)))))))))))..)))))))))...
+>pma-mir-4624 MI0017235 Petromyzon marinus miR-4624 stem-loop
+CAUAACCAAACGCACCGCGGUCGGGUCGGGCUGAGUGGUGGUGGUGGUGCCGGCGGCUCGCUAACCCGUCCCGACCGAGGGGUGUUUGGUUCAU
+...((((((((((.((.((((((((.((((...((((((.((((.....)).)).)).))))..)))).)))))))).)).))))))))))...
+>pma-mir-4625 MI0017236 Petromyzon marinus miR-4625 stem-loop
+UGAGAACAAUAACUGCUGUUAAUGUAGGUGCAUAACAAGCACGGCUUCCCUGUAUUAGUGCAACGUCAUUGCAGCUGUUGUGUUUGUGU
+...(((((.((((.(((((.((((....(((((.....(((.((....)))))....)))))....))))))))).)))))))))....
+>pma-mir-4626 MI0017237 Petromyzon marinus miR-4626 stem-loop
+ACAUUACCACGCACACAGUCAACCACGUCUAAACUGGUGUCAGUGCAGCUUCAGUGGGUGAUGGUUGCUGUAGCUGGCUCU
+......(((.((..((((.(((((((..((..(((((.((.......)).)))))))..).)))))))))).)))))....
+>pma-mir-4627 MI0017238 Petromyzon marinus miR-4627 stem-loop
+UGCGUGCUUGUCACGUGACCAACACAUUGCAACGUGCGGUGCGGUGCAAUGAGUUGGCCGUCUAGACAAGGCUGA
+...((.(((((((((.(.(((((.(((((((.(((.....))).))))))).)))))))))...))))))))...
+>pma-mir-4628 MI0017239 Petromyzon marinus miR-4628 stem-loop
+GGCAGUACAGGGUGUUUCAAAAAGAUGGGCCCGAUUUUAAAUCGCUAUAUCUCUGCAAUUGGGUCCAUCGUCUUGAAAUACCUUGUAUUUCC
+((.(((((((((((((((((...(((((((((((((.......((.........)))))))))))))))...))))))))))))))))).))
+>pma-mir-4629 MI0017240 Petromyzon marinus miR-4629 stem-loop
+GCCUGGACGUUGACUGGACGUUCAUCGGUGCUUGGACGCUGGCUGGACGUUGAUCGCUGCUUGGACGUUGGCUGA
+(((..((((((((.(.((((((((((((((......)))))).)))))))).)))........)))))))))...
+>pma-mir-4630 MI0017241 Petromyzon marinus miR-4630 stem-loop
+AAACCUCACACCCAUCAUCAUUAACACCGCCUAUCGCCACACAGUGUACAUUUUUGCGAUAAGACGGUGUUAAUGGUGAUAGGCGUGAGGUGU
+..(((((((.((.(((((((((((((((((.(((((((((...))).........)))))).).)))))))))))))))).)).)))))))..
+>pma-mir-4631 MI0017242 Petromyzon marinus miR-4631 stem-loop
+GAUGCAUGUUGCGGGCCAAUGUUUACCUGUGUAUAUUCAAAAUUGCCAGGCCGCGUUUGGCCAGCGAUUUGCUGU
+...(((.(((((.(((((((((...((((.(((..........)))))))..))).)))))).))))).)))...

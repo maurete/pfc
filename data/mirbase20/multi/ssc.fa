@@ -1,0 +1,840 @@
+>ssc-mir-105-1 MI0002410 Sus scrofa miR-105-1 stem-loop
+UGUGCAUCGUAGUCAAAUGCUCAGACUCCUGUGGUGGCUGCUCAUGCACCACGGAUGUUUGAGCAUGUGCUACGGUGUCUA
+...(((((((((.((.((((((((((..((((((((.(.......)))))))))..)))))))))).)))))))))))...
+>ssc-mir-105-2 MI0002411 Sus scrofa miR-105-2 stem-loop
+UGUGCAUCGUGGUCAAAUGCUCAGACUCCUUGGUGGCUGCUUAUGCACCACGGAUGUUUGAGCAUGUGCUAUGGUGUCUA
+...(((((((((.((.(((((((((((((...((((.(((....)))))))))).)))))))))).)))))))))))...
+>ssc-mir-106a MI0002412 Sus scrofa miR-106a stem-loop
+CCUUGGCCGUGUAAAAGUGCUUACAGUGCAGGUAGCUUUUUGAGAUCUACUGCAAUGCAAGCACUUCUUACAUUACCAUGG
+((.(((..((((((((((((((.((.(((((.(((.((.....)).)))))))).)).)))))))).))))))..))).))
+>ssc-mir-122 MI0002413 Sus scrofa miR-122 stem-loop
+CCUUAGCAGAGCUGUGGAGUGUGACAAUGGUGUUUGUGUCCAAACUAUCAAACGCCAUUAUCACACUAAAUAGCUACUGUUAGGC
+.((((((((((((((..(((((((.(((((((((((.((....))...))))))))))).)))))))..)))))).)))))))).
+>ssc-mir-125b-2 MI0002414 Sus scrofa miR-125b-2 stem-loop
+ACCAGACUUUUCCUAGUCCCUGAGACCCUAACUUGUGAGGUAUUUUAGUAACAUCACAAGUCAGGCUCUUGGGACCUAGGCGGAGGGGA
+.((...(((..(((((..((..(((.(((.((((((((..(((....)))...)))))))).))).)))..))..)))))..))).)).
+>ssc-mir-135-1 MI0002415 Sus scrofa miR-135-1 stem-loop
+AGGCCUCGCUGUUCUCUAUGGCUUUUUAUUCCUAUGUGAUUCUACUGCUCAUUCAUAUAGGGAUUGGAGCCGUGGCGCACGGCGGGGACA
+.(.(((((((((.(.((((((((((..((((((((((((.............)))))))))))).)))))))))).).))))))))).).
+>ssc-mir-135-2 MI0002416 Sus scrofa miR-135-2 stem-loop
+AGAUAAAUUCACUCUAGUGCUUUAUGGCUUUUUAUUCCUAUGUGAUAGUAAUAAAGUCUCAUGUAGGGAUGGAAGCCAUGAAAUACAUUGUGAAAAAUCA
+.(((...(((((....(((.((((((((((((.((((((((((((.(.(.....).).)))))))))))))))))))))))).)))...)))))..))).
+>ssc-mir-145 MI0002417 Sus scrofa miR-145 stem-loop
+CACCUUGUCCUCACGGUCCAGUUUUCCCAGGAAUCCCUUAGAUGCUGAGAUGGGGAUUCCUGGAAAUACUGUUCUUGAGGUCAUGG
+..((.((.(((((.((..((((.((.((((((((((((.............)))))))))))).)).))))..))))))).)).))
+>ssc-mir-148a MI0002418 Sus scrofa miR-148a stem-loop
+GAGGCAAAGUUCUGAGACACUCCGACUCUGAAUAUGAUAGAAGUCAGUGCACUACAGAACUUUGUCUC
+((((((((((((((((.((((..(((((((.......))).))))))))..)).))))))))))))))
+>ssc-mir-15b MI0002419 Sus scrofa miR-15b stem-loop
+UUGAGGCCUUAAAGUACUGUAGCAGCACAUCAUGGUUUACAUACUACAAUCAAGAUGCGAAUCAUUAUUUGCUGCUCUAGAAAUUUAAGGAAAUUCAU
+.((((.(((((((...(((.(((((((.((.((((((..(((.((.......)))))..)))))).)).))))))).)))...)))))))...)))).
+>ssc-mir-181b-2 MI0002420 Sus scrofa miR-181b-2 stem-loop
+AUGGCUGCACUCAACAUUCAUUGCUGUCGGUGGGUUUGAGUCUGAAUCAACUCACUGAUCAAUGAAUGCAAACUGCGGACCAAACA
+.((((((((.....(((((((((..(((((((((((.((.......)))))))))))))))))))))).....))))).)))....
+>ssc-mir-184 MI0002421 Sus scrofa miR-184 stem-loop
+CCAGUCACAUCCCCUUAUCACUUUUCCAGCCAGCUUUGUGACUCUAAAUGUUGGACGGAGAACUGAUAAGGGUAGGUGAUUGA
+.(((((((...(((((((((.((((((..(((((((((......)))).)))))..)))))).)))))))))...))))))).
+>ssc-mir-19a MI0002422 Sus scrofa miR-19a stem-loop
+GCAGUCCUCUGUUAGUUUUGCAUAGUUGCACUACAAGAAGAAUGUAGUUGUGCAAAUCUAUGCAAAACUGAUGGUGGCCUGC
+((((.((.(((((((((((((((((((((((((((.......))))...))))))..))))))))))))))))).)).))))
+>ssc-mir-20a MI0002423 Sus scrofa miR-20a stem-loop
+GUAGCACUAAAGUGCUUAUAGUGCAGGUAGUGUUUAGUUAUCUACUGCAUUAUGAGCACUUAAAGUACUGC
+((((.(((.(((((((((((((((((.(((((......)).))))))))))))))))))))..))).))))
+>ssc-mir-216-1 MI0002424 Sus scrofa miR-216-1 stem-loop
+GAUGGCUGUGAGUUGGCUUAAUCUCAGCUGGCAACUGUGAGAUGUUCAUACAAUCCCCCACAGUGGUCUCUGGGAUUAUGCUAAACAGAGCAAUUUCCUUGCCCU
+....(((.((..(((((.(((((((((..(((.((((((.(((((....)).)))...)))))).))).))))))))).))))).)).)))..............
+>ssc-mir-217-1 MI0002425 Sus scrofa miR-217-1 stem-loop
+AUAAUUAUUACAGAGUUUUUGAUGUCGCAGAUACUGCAUCAGGAACUGAUUGGAUAAGAAUUGGUCACCAUCAGUUCUUAAUGCAUUGCCUUCAGCAUCUAAACAAG
+..............((((..(((((.(.((.((.(((((.((((((((((.((((........))).).)))))))))).))))).)).)).).))))).))))...
+>ssc-mir-224 MI0002426 Sus scrofa miR-224 stem-loop
+GGGCUUUCAAGUCACUAGUGGUUCCGUUUAGUAGAAGGUUUUGCAUUGUUUCAAAAUGGUGCCCUAGUGACUACAAAGCCC
+(((((((..(((((((((.(((.((((((.(.(((..((.....))..)))).)))))).))))))))))))..)))))))
+>ssc-mir-23a MI0002427 Sus scrofa miR-23a stem-loop
+CGGCUGGGGUUCCUGGGGAUGGGAUUUGCUGCCUGUCACAAAUCACAUUGCCAGGGAUUUCCAAUCGACC
+((..((((((((((((.((((.((((((.((.....)))))))).)))).))))))).)))))..))...
+>ssc-mir-24-1 MI0002428 Sus scrofa miR-24-1 stem-loop
+CUCUGCCUCCCGUGCCUACUGAGCUGAAACACAGUUGAUUUGUGCAGACUGGCUCAGUUCAGCAGGAACAGG
+........((.((.(((.(((((((((....(((((..........)))))..))))))))).))).)).))
+>ssc-mir-26a MI0002429 Sus scrofa miR-26a stem-loop
+GGCUGUGGCUGGAUUCAAGUAAUCCAGGAUAGGCUGUUUCCAUCUGUGAGGCCUAUUCUUGAUUACUUGUUUCUGGAGGCAGCU
+((((((..(..((..(((((((((.((((((((((..............)))))))))).)))))))))..))..)..))))))
+>ssc-mir-28 MI0002430 Sus scrofa miR-28 stem-loop
+GGUCCUUGCCCUCAAGGAGCUCACAGUCUAUUGAGUUGCCUUUCUGUCUUCCCCACUAGAUUGUGAGCUCCUGGAGGGCAGGCACU
+(((.(((((((((.((((((((((((((((.((....................)).)))))))))))))))).))))))))).)))
+>ssc-mir-29b-1 MI0002431 Sus scrofa miR-29b-1 stem-loop
+CUUCAGGAAGCUGGUUUCAUAUGGUGGUUUAGAUUUAAAAAGUGAUUGUCUAGCACCAUUUGAAAUCAGUGUUCUUGGGGG
+(((((((((((((((((((.((((((..((((((.............)))))))))))).)))))))))).))))))))).
+>ssc-mir-301 MI0002432 Sus scrofa miR-301 stem-loop
+GCUAACAAAUGCUCUGACUUUAUUGCACUACUGUACUUUACAGCUACCAGUCCAAUAGUAUUGUCAAAGCAUCUGAGAGCAG
+(((..((.(((((.((((.((((((.(((.(((((...))))).....))).))))))....)))).))))).))..)))..
+>ssc-mir-323 MI0002433 Sus scrofa miR-323 stem-loop
+UUGGUACUUGGAGAGAGGUGGUCCGUGGCGCGUUCGCUUUAUUUAUGGCGCACAUUACACGGUCGACCUCUUUGCGGUAUCUAAUC
+..((((((.(.((((((((.(.(((((....((.((((........)))).))....))))).).)))))))).))))))).....
+>ssc-mir-326 MI0002434 Sus scrofa miR-326 stem-loop
+UCUGUCUGUUGGGCUGGAGGCAGGGCCUUUGUGCAGGCGGGUUGUGCUCAGAUCGCCUCUGGGCCCUUCCUCCAGCCCAGAGGCGGAUUCA
+(((((((.((((((((((((.(((((((....(.(((((..(((....)))..)))))).))))))).)))))))))))))))))))....
+>ssc-mir-7-2 MI0002435 Sus scrofa miR-7-2 stem-loop
+UGGAUGUUGGUCUAGUUCUGUGUGGAAGACUAGUGAUUUUGUUGUUUUUAGAUAACUAAAUCGACAACAAAUCACAGUCUGCCAUAUGGCACAGGCCAUGCCUCUACAG
+((((.((((((((.((.((((((((.(((((.(((((((.(((((((((((....)))))..)))))))))))))))))).)))))))).)))))))).)).))))...
+>ssc-mir-95 MI0002436 Sus scrofa miR-95 stem-loop
+AACACAGUGGGCGCUCAAUAAAUGUUUGUUGAAUUGAGAUGCGUUAAAUUCAACGGGUAUUUAUUGAGCACCCACUCUGUG
+.(((.((((((.((((((((((((..(((((((((...........)))))))))..)))))))))))).)))))).))).
+>ssc-mir-140 MI0002437 Sus scrofa miR-140 stem-loop
+CCUGCCAGUGGUUUUACCCUAUGGUAGGUUACGUCAUGCUGUUCUACCACAGGGUAGAACCACGGACAGG
+((((((.(((((((((((((.(((((((..(((......)))))))))).))))))))))))))).))))
+>ssc-mir-181c MI0002438 Sus scrofa miR-181c stem-loop
+CAAGGGUUUGGGGGAACAUUCAACCUGUCGGUGAGUUUGGGCAGCUCAGGCAAACCAUCGACCGUUGAGUGGACCCCGAGGCCUGGA
+...((((((.((((..((((((((..(((((((.(((((...........)))))))))))).))))))))..)))).))))))...
+>ssc-mir-183 MI0002439 Sus scrofa miR-183 stem-loop
+CUGUGUAUGGCACUGGUAGAAUUCACUGUGAACAGUCUCGGUCAGUGAAUUACCGAAGGGCCAUAAACAG
+((((.((((((..(((((..(((((((((((......)))..)))))))))))))....)))))).))))
+>ssc-mir-205 MI0002440 Sus scrofa miR-205 stem-loop
+CUCUUGUCCUUCAUUCCACCGGAGUCUGUCUCAUACCCAACCAGAUUUCAGUGGAGUGAAGCUCAGGAG
+((((((..(((((((((((.((((((((.............)))))))).)))))))))))..))))))
+>ssc-mir-214 MI0002441 Sus scrofa miR-214 stem-loop
+GGCCUGGCUGGACGGAGUUGUCAUGUGUCUGCCUGUCUACACUUGCUGUGCAGAACAUCCGCUCACCUGUACAGCAGGCACAGACAGGCAGUCACAUGACAACCCAGCCU
+.....((((((.....(((((((((((.((((((((((...((((((((((((.............))))))))))))...)))))))))).))))))))))))))))).
+>ssc-mir-27a MI0002442 Sus scrofa miR-27a stem-loop
+UGGCCUGGGGAGCAGGGCUUAGCUGCUUGUGAGCAGGUCCACAGCAAGUCGUGUUCACAGUGGCUAAGUUCCGCCCCCUGGA
+...((.((((.((.(((((((((..((.(((((((.(.(........).).)))))))))..))))))))).)))))).)).
+>ssc-mir-32 MI0002443 Sus scrofa miR-32 stem-loop
+GGAGAUAUUGCACAUUACUAAGUUGCAUGUUGUCACGGCCUCAGUGCAAUUUAGUGUGUGUGAUAUUUUC
+((((((((..(((((.(((((((((((((..((....))..)).))))))))))))))))..))))))))
+>ssc-mir-325 MI0002444 Sus scrofa miR-325 stem-loop
+AGUGCUUGGUUCCUAGUAGGUGUUCAGUAAGUGUUUGUGACAUAAUUCGUUUAUUGAGCACCUCCUAUCAAUCAAGCACUGUGCUAGGUUCUGG
+(((((((((((..(((.((((((((((((((((..(........)..)))))))))))))))).)))..)))))))))))..............
+>ssc-let-7c MI0002445 Sus scrofa let-7c stem-loop
+UGUGUGCAUCCGGGUUGAGGUAGUAGGUUGUAUGGUUUAGAGUUACACCGUGGGAGUUAACUGUACAACCUUCUAGCUUUCCUUGGAGCACACU
+.((((((.((((((..(((.(((.(((((((((((((..((.(..(.....)..).))))))))))))))).))).)))..)))))))))))).
+>ssc-let-7f-1 MI0002446 Sus scrofa let-7f-1 stem-loop
+UGUGGGAUGAGGUAGUAGAUUGUAUAGUUUUAGGGUCAUACCCCAUCUUGGAGAUAACUAUACAGUCUACUGUCUUUCCCACG
+.((((((.(((..((((((((((((((((...(((.....))).(((.....)))))))))))))))))))..))))))))).
+>ssc-let-7i MI0002447 Sus scrofa let-7i stem-loop
+CUGGCUGAGGUAGUAGUUUGUGCUGUUGGUCGGGUUGUGACAUUGCCCGCUGUGGAGAUAACUGCGCAAGCUACUGCCUUGCUAG
+(((((.(((((((((((((((((.(((((.(((((.........)))))))........))).))))))))))))))))))))))
+>ssc-mir-103-1 MI0002448 Sus scrofa miR-103-1 stem-loop
+CUUACUGCCCUCGGCUUCUUUACAGUGCUGCCUUGUUGCAUAUGGAUCAAGCAGCAUUGUACAGGGCUAUGAAGGCACUGAG
+((((.((((.((((((.((.(((((((((((.(((.(.(....).).)))))))))))))).))))))..)).)))).))))
+>ssc-mir-107 MI0002449 Sus scrofa miR-107 stem-loop
+UUCUCUCUGCUUUCAGCUUCUUUACAGUGUUGCCUUGUGGCAUGGAGUUCAAGCAGCAUUGUACAGGGCUAUCAAAGCACAGAGAGC
+((((((.((((((.((((.((.(((((((((((.(((.(((.....))))))))))))))))).))))))...)))))).)))))).
+>ssc-mir-124a-2 MI0002450 Sus scrofa miR-124a-2 stem-loop
+AGGCCUCUCUCUCCGUGUUCACAGCGGACCUUGAUUUAAAUGUCCAUACAAUUAAGGCACGCGGUGAAUGCCAAGAAUGGGGCUG
+.((((((..(((..((((((((.(((..((((((((.............))))))))..))).))))))))..)))..)))))).
+>ssc-mir-128-1 MI0002451 Sus scrofa miR-128-1 stem-loop
+UGAGCUGUUGGAUUCGGGGCCGUAGCACUGUCUGAGAGGUUUACAUUUCUCACAGUGAACCGGUCUCUUUUUCAGCUGCUUC
+.((((.((((((...(((((((...((((((..(((((((....)))))))))))))...)))))))...)))))).)))).
+>ssc-mir-136 MI0002452 Sus scrofa miR-136 stem-loop
+UGAGCCCUCGGAGGACUCCAUUUGUUUUGAUGAUGGAUUCUUACGCUCCAUCAUCGUCUCAAAUGAGUCUUCAGAGGGUUCU
+.((((((((.((((((((.(((((...((((((((((.........))))))))))...))))))))))))).)))))))).
+>ssc-mir-139 MI0002453 Sus scrofa miR-139 stem-loop
+GUGUAUUCUACAGUGCACGUGUCUCCAGUGUGGCUCGGAGGCUGGAGACGCGGCCCUGUUGGAGUAAC
+...((((((((((.((.((((((((((((.(.......).)))))))))))))).))).)))))))..
+>ssc-mir-153 MI0002454 Sus scrofa miR-153 stem-loop
+AGCGGUGGCCAGUGUCAUUUUUGUGAUGUUGCAGCUAGUAAUAUGAGCCCAGUUGCAUAGUCACAAAAGUGAUCAUUGGAAACUGUG
+.(((((..(((((((((((((((((((..(((((((.((.......))..)))))))..))))))))))))).))))))..))))).
+>ssc-mir-18a MI0002455 Sus scrofa miR-18a stem-loop
+GUGCUUUUUGUUCUAAGGUGCAUCUAGUGCAGAUAGUGAAGUAGAUUAGCAUCUACUGCCCUAAGUGCUCCUUCUGGCAUAAGAAGUUAUGU
+..(((((((((.((((((.(((..(((.((((.(((((..(.....)..)).))))))).)))..))).)))..))).))))))))).....
+>ssc-mir-186 MI0002456 Sus scrofa miR-186 stem-loop
+UGCUUAUAACUUUCCAAAGAAUUCUCCUUUUGGGCUUUAUGAUUUUAUUUUAAGCCCAAAGGUGAAUUUUUUGGGAAGUUUG
+.......(((((((((((((((((.(((((.((((((...((......)).))))))))))).)))))))))))))))))..
+>ssc-mir-196a-2 MI0002457 Sus scrofa miR-196a-2 stem-loop
+UUGCUCAGCUGAUCUGUGGCUUAGGUAGUUUCAUGUUGUUGGGAUUGAGUUUUGAACUCGGCAACAAGAAACUGCCUGAGUUACAUCAGUCGGUUAUCGUCGAGGGC
+..((((.(((((..((((((((((((((((((.((((((((((.(..(...)..).)))))))))).)))))))))))))))))))))))(((......))).))))
+>ssc-mir-204 MI0002458 Sus scrofa miR-204 stem-loop
+GGCUACAGUCCUUCUCAUGUGACUCGUGGACUUCCCUUUGUCAUCCUAUGCCUGAGAAUAUAUGAAGGAGGCUGGGAAGGCAAAGGGACGUUCAAUUGUCAUCACUGGC
+.....((((.........(((((...(((((.((((((((((.(((((.((((...............))))))))).)))))))))).)))))...))))).))))..
+>ssc-mir-21 MI0002459 Sus scrofa miR-21 stem-loop
+UGUACCACCUUGUCGGGUAGCUUAUCAGACUGAUGUUGACUGUUGAAUCUCAUGGCAACAGCAGUCGAUGGGCUGUCUGACAUUUUGGUAUC
+.((((((...((((((..((((((((.(((((.(((((.((((.(.....)))))))))).)))))))))))))..))))))...)))))).
+>ssc-mir-29c MI0002460 Sus scrofa miR-29c stem-loop
+AUCUCUUACACAGGCUGACCGAUUUCUCCUGGUGUUCAGAGUCUGUUUUUGUCUAGCACCAUUUGAAAUCGGUUAUGAUGUAGGGGGA
+.(((((((((((...(((((((((((...((((((((((((.....)))))...)))))))...))))))))))))).))))))))).
+>ssc-mir-30c-2 MI0002461 Sus scrofa miR-30c-2 stem-loop
+GACAGAUACUGUAAACAUCCUACACUCUCAGCUGUGGAAAGUAAGAAAGCUGGGAGAAGGCUGUUUACUCUCUCUGCCUU
+..((((....(((((((.(((...(((((((((..............))))))))).))).)))))))....))))....
+>ssc-mir-9-1 MI0002462 Sus scrofa miR-9-1 stem-loop
+CGGGGUUGGUUGUUAUCUUUGGUUAUCUAGCUGUAUGAGUGGUGUGGAGUCUUCAUAAAGCUAGAUAACCGAAAGUAAAAAUAACCCCA
+.(((((((....(((..(((((((((((((((.((((((.((.......)))))))).)))))))))))))))..)))...))))))).
+>ssc-mir-9-2 MI0002463 Sus scrofa miR-9-2 stem-loop
+GGAAGCGAGUUGUUAUCUUUGGUUAUCUAGCUGUAUGAGUGUAUUGGUCUUCAUAAAGCUAGAUAACCGAAAGUAAAAACUCCUUCA
+.((((.(((((.(((..(((((((((((((((.((((((..(....)..)))))).)))))))))))))))..))).))))))))).
+>ssc-mir-99b MI0007077 Sus scrofa miR-99b stem-loop
+GGCACCCACCCGUAGAACCGACCUUGCGGGGCCUUCGCCGCACACAAGCUCGUGUCUGUGGGUCCGUGUC
+(((((..(((((((((..(((.((((.(((((....))).).).)))).)))..)))))))))..)))))
+>ssc-mir-15a MI0008211 Sus scrofa miR-15a stem-loop
+UUGGAGUAAAGUAGCAGCACAUAAUGGUUUGUGGAUUUUGAAAAGGUGCAGGCCAUAUUGUGCUGCCUCAAAAAUACAA
+..........(..((((((((..((((((((((..((.....))..))))))))))..))))))))..)..........
+>ssc-mir-16-2 MI0008212 Sus scrofa miR-16-2 stem-loop
+CAGUGCCUUAGCAGCACGUAAAUAUUGGCGUUAAGAUUCUAAAAUUAUCUCCAGUAUUAACUGUGCUGCUGAAGUAAGG
+...(((.((((((((((((.((((((((.(.(((..........))).).)))))))).)).)))))))))).)))...
+>ssc-mir-16-1 MI0008213 Sus scrofa miR-16-1 stem-loop
+UCCGCUCUAGCAGCACGUAAAUAUUGGCGUAGUAAAAUAAAUAUUAAACACCAAUAUUAUUGUGCUGCUUUAGCGUG
+..((((..(((((((((..((((((((.((((((.......))))..)).))))))))..)))))))))..))))..
+>ssc-mir-17 MI0008214 Sus scrofa miR-17 stem-loop
+GAAUAAUGUCAAAGUGCUUACAGUGCAGGUAGUGAUAAUGUGCAUCUACUGCAGUGAAGGCACUUGUAGCAUUAUGG
+..(((((((..((((((((.((.(((((.(((((........)).)))))))).)).))))))))...)))))))..
+>ssc-mir-30b MI0008215 Sus scrofa miR-30b stem-loop
+UUUCAGUUCGUGUAAACAUCCUACACUCAGCUGUAAUACAUGGAUUGGCUGGGAGGUGGAUGUUUACUUCAGCUGA
+..((((((...((((((((((.((.((((((((............))))))))..))))))))))))...))))))
+>ssc-mir-34a MI0008216 Sus scrofa miR-34a stem-loop
+UUUCUUUGGCAGUGUCUUAGCUGGUUGUUGUGAGUAAUAGCAAAGGAAGCAAUCAGCAGCAUCCUGCCCUAGAACA
+.((((..(((((..(((..((((((((((.((........)).....)))))))))))).)..)))))..))))..
+>ssc-mir-130a MI0008217 Sus scrofa miR-130a stem-loop
+CGGGCCGGAGCUCUUUUCACAUUGUGCUACUGUCUGCACCUAUCACUAGCAGUGCAAUGUUAAAAGGGCAUUGGCCACG
+((((((((.((((((((.((((((..((.(((..............))).))..)))))).)))))))).)))))).))
+>ssc-mir-185 MI0008218 Sus scrofa miR-185 stem-loop
+GGUGAGGGAUUGGAGAGAAAGGCAGUUCCUGAUGGUCCCCUCCCCAGGGGCUGGCUUUCCUCUGGUCCUUCCCUCC
+((.(((((((..(((.(((((.(((((((((..((......)).))))))))).))))))))..)))))))))...
+>ssc-mir-199b MI0008219 Sus scrofa miR-199b stem-loop
+CCGUCUACCCAGUGUUUAGACUAUCUGUUCAGGACUCCCAAAUUGUACAGUAGUCUGCACAUUGGUUAGGCUGG
+(((((((.(((((((.(((((((.((((.((((....))....)).))))))))))).))))))).))))).))
+>ssc-mir-210 MI0008220 Sus scrofa miR-210 stem-loop
+GCGCAGGGCAGCCACUGCCCACCGCACACUGCGCUGCUCCGGACCCACUGUGCGUGUGACAGCGGCUGAUCUGUCC
+..((((..(((((.(((..(((((((((.((.((((...))).).)).)))))).))).))).)))))..))))..
+>ssc-mir-221 MI0008221 Sus scrofa miR-221 stem-loop
+UGAACCUGGCAUACAAUGUAGAUUUCUGUGUUUGUUGGGCAACAGCUACAUUGUCUGCUGGGUUUCAGGC
+.(((((..(((.(((((((((....(((((((.....))).))))))))))))).)))..))))).....
+>ssc-mir-101-1 MI0010678 Sus scrofa miR-101-1 stem-loop
+GACUGAACUGUCCUUUUUCGGUUAUCAUGGUACCGAUGCUGUAUAUCUGAAAGGUACAGUACUGUGAUAACUGAAGAAUGGUGGUGCCAUC
+...((.((..((.((((((((((((((((((((.(.((((............))))).)))))))))))))))))))).))..))..))..
+>ssc-mir-101-2 MI0010679 Sus scrofa miR-101-2 stem-loop
+GGCUGCCCUGGCUCAGUUAUCACAGUGCUGAUGCUGUCCAUUCUAAAGGUACAGUACUGUGAUAACUGAAGGAUGGCAGCC
+(((((((.....((((((((((((((((((.((((............)))))))))))))))))))))).....)))))))
+>ssc-mir-124a-1 MI0010680 Sus scrofa miR-124a-1 stem-loop
+UCAAGACCAGACUCUGCCCUCCGUGUUCACAGCGGACCUUGAUUUAAUGUCAUACAAUUAAGGCACGCGGUGAAUGCCAAGAGCGGAGCCUACGGCUGCACUUGA
+(((((..(((.((((((.((..((((((((.(((..((((((((...........))))))))..))).))))))))..)).)))))).......)))..)))))
+>ssc-mir-133a-1 MI0010681 Sus scrofa miR-133a-1 stem-loop
+CGGGACCCAAAUGCUUUGCUAAAGCUGGUAAAAUGGAACCAAAUCAACUGUUGAAUGGAUUUGGUCCCCUUCAACCAGCUGUAGCUGCGCAUUGACAGCGCCG
+((((.....(((((...((((.(((((((..((.((.((((((((............)))))))).)).))..))))))).))))...))))).....).)))
+>ssc-mir-1 MI0010682 Sus scrofa miR-1 stem-loop
+CCGGUUGACGUACCUGCUUGGGGGACAUACUUCUUUAUGUGCCCAUAUGGACCUGCUAAGCUAUGGAAUGUAAAGAAGUAUGUAUUUCAGGCUGGGAACUCUCACCGG
+(((((.((.((.((((((((..(.((((((((((((((((..((((((((.....)))...))))).)))))))))))))))).)..))))).))).))))..)))))
+>ssc-mir-450a MI0010683 Sus scrofa miR-450a stem-loop
+GUCUGUCAAAGAAAGAUGCUAAACUGGUUUUGCGAUGUGUUCCUAAUAUGCAGUAUAAAUAUAUUGGGAGCAUUUUGCAUGCAUGGUUUUGUAUCACUAUACAGAU
+((((((...((...(((((.((((((((..(((((.((((((((((((((.........)))))))))))))).))))).)).)))))).))))).))..))))))
+>ssc-mir-503 MI0010684 Sus scrofa miR-503 stem-loop
+GCCCCGCACUCAGCCGUGCCCUAGCAGCGGGAACAGUACUGCAGUGGGCGAUCGGUACUCUGGGGUAUUGUUUCUGCUGCCCGGGCAAGGCUGGGACUCCCGCCGGGGC
+(((((((.(((((((.(((((..(((((((((((((((((.(((.(..(.....)..).))).)))))))))))))))))..))))).)))))))......).))))))
+>ssc-mir-146b MI0010685 Sus scrofa miR-146b stem-loop
+GAACUUUGGCCACCUGGCUCUGAGAACUGAAUUCCAUAGGCUGUGAGCUCUAGCAAAUGCCCUAGGAACUCAGUUCUGGUGCCCGGCUGUGCUAUAGUC
+..(((.((((((((.(((.((.((((((((.((((.((((..((..((....))..))..)))))))).)))))))))).))).)).)).)))).))).
+>ssc-mir-181a-1 MI0010686 Sus scrofa miR-181a-1 stem-loop
+GAGUUUAGAGGUUGCUUCAGUGAACAUUCAACGCUGUCGGUGAGUUUGGAAUUCAAAUCAAAACCAUCGACCGUUGAUUGUACCCUAUGGCCAACCAUCAGCUC
+(((((..(((((((((..((.(.(((.((((((..(((((((.((((.((.......)).))))))))))))))))).))).).))..)).))))).)))))))
+>ssc-mir-215 MI0010687 Sus scrofa miR-215 stem-loop
+AGAGAUGGUGUACAGGAAAAUGACCUAUGAAUUGACAGACAAUGUGGCUAAAUCUGUCUGUCAUUUCUGUAGGCCAAUAUUCUGUAUAUCUCUGCU
+..(((.(((((((((((.(.((.((((((((.(((((((((((........)).))))))))).))).))))).)).).))))))))))))))...
+>ssc-mir-30a MI0010688 Sus scrofa miR-30a stem-loop
+UCCCUGCGACAGUGAGCGGCUGUAAACAUCCUCGACUGGAAGCUGUGAGGCUGAAGACGGGCUUUCAGUCGGAUGUUUGCAGCCGCCGACUGCCUCCCGCAUCAGGA
+(((.((((.((((..((((((((((((((((..(((((((((((((..........)).)))))))))))))))))))))))))))..)))).....))))...)))
+>ssc-mir-206 MI0013084 Sus scrofa miR-206 stem-loop
+UUCCCGAGGCCACAUGCUUCUUUAUAUCCCCAUACGGAUUACUUGACUAUGGAAUGUAAGGAAGUGUGUGAUCUCGUUAA
+....((((..(((((((((((((((((..(((((.(..........)))))).)))))))))))))))))..))))....
+>ssc-let-7a-1 MI0013085 Sus scrofa let-7a-1 stem-loop
+CCCAGGUUGAGGUAGUAGGUUGUAUAGUUUAGAAUUGUAUCAAGGGAGAUAACUGUACAGCCUCCUAGCUUUCCUUGGGU
+((((((..(((.(((.((((((((((((.........((((......)))))))))))))))).))).)))..)))))).
+>ssc-let-7e MI0013086 Sus scrofa let-7e stem-loop
+GCCCCGGGCUGAGGUAGGAGGUUGUAUAGUUGAGGAGGACACCCACGGAGAUCACUAUACGGCCUCCUAGCUUUCCCCAG
+.....(((..(((.((((((((((((((((.((.(.((....)).).....)))))))))))))))))).)))..)))..
+>ssc-let-7g MI0013087 Sus scrofa let-7g stem-loop
+GGCUGAGGUAGUAGUUUGUACAGUUUGAGGGUCUAUGAUACCACCCGGUACAGGAGAUAACUGUACAGGCCACUGCCUUG
+....((((((((.((((((((((((.....((((.((.((((....))))))..)))))))))))))))).)))))))).
+>ssc-mir-378-1 MI0013088 Sus scrofa miR-378-1 stem-loop
+CCACCCAGGGCUCCUGACUCCAGGUCCUGUGUGUUGCCUGGAAAUAGCACUGGACUUGGAGUCAGAAGGCCUGCGUGGAG
+((((.((((.((.((((((((((((((...((((((........)))))).)))))))))))))).)).)))).))))..
+>ssc-mir-133b MI0013089 Sus scrofa miR-133b stem-loop
+CCUGCUCUGGCUGGUCAAACGGAACCAAGUCCGUCUUCCUGAGAGGUUUGGUCCCCUUCAACCAGCUAUAGCAGGGCUGG
+((((((.((((((((..((.((.((((((.((.((((...)))))))))))).)).))..)))))))).)))))).....
+>ssc-mir-29a MI0013090 Sus scrofa miR-29a stem-loop
+CCCCUUAGAGGAUGACUGAUUUCUUUUGGUGUUCAGAGUCAAUAUAAUUUUCUAGCACCAUCUGAAAUCGGUUAUAAUGAUUGGGG
+((((.......((((((((((((...(((((((.((((...........)))))))))))...)))))))))))).......))))
+>ssc-mir-30d MI0013091 Sus scrofa miR-30d stem-loop
+CUGUUGUUGUAAACAUCCCCGACUGGAAGCUGUAAGACAUAGCUAAGCUUUCAGUCAGAUGUUUGCUGCCACCGACUCU
+..((.((.(((((((((...(((((((((((...((......)).))))))))))).))))))))).)).)).......
+>ssc-mir-30e MI0013092 Sus scrofa miR-30e stem-loop
+UUUGCCACUGUAAACAUCCUUGACUGGAAGCUGUGAGGCGUUCCCAGGAGCUUUCAGUCGGAUGUUUACAGCGGCAGGCU
+.(((((.((((((((((((..(((((((((((.(..((....))..).))))))))))))))))))))))).)))))...
+>ssc-mir-199a-2 MI0013093 Sus scrofa miR-199a-2 stem-loop
+CCCCGCCAACCCAGUGUUCAGACUACCUGUUCAGGGGGCUCUGAAUGUGUACAGUAGUCUGCACAUUGGUUAGGCUGGGC
+(((.(((...(((((((.((((((((.((((((((....)))))......))))))))))).)))))))...))).))).
+>ssc-mir-128-2 MI0013094 Sus scrofa miR-128-2 stem-loop
+GCAGUGGGAAGGGGGGCCGAGGCACUGUCCGAGAGUGAGUAGCAGGUCUCACAGUGAACCGGUCUCUUUCCCUACUGUGU
+((((((((.((((((((((...((((((..((((.(........).))))))))))...)))))))))).))))))))..
+>ssc-mir-191 MI0013095 Sus scrofa miR-191 stem-loop
+ACAGCGGGCAACGGAAUCCCAAAAGCAGCUGUUGUCUCCAGAGCAUUCCAGCUGCACUUGGAUUUCGUUCCCUGCUCUCU
+..((((((.((((((((((.((..(((((((..((((....)).))..)))))))..)))))))))))).))))))....
+>ssc-mir-499 MI0013096 Sus scrofa miR-499 stem-loop
+UGGGCGGGCGGCCGUUAAGACUUGCAGUGAUGUUUAACUCCUCUCCACGUGAACAUCACAGCAAGUCUGUGCUGCUUCCC
+.(((.(((((((.....((((((((.((((((((((.............)))))))))).))))))))..))))))))))
+>ssc-mir-320 MI0013097 Sus scrofa miR-320 stem-loop
+GCUCCCCUCCGCCUUCUCUUCCCGGUUCUUCCCGGAGUCGGGAAAAGCUGGGUUGAGAGGGCGAAAAAGGAAGAGGGGAC
+..((((((((((((((((..(((((((.((((((....)))))).)))))))..))))))))).........))))))).
+>ssc-mir-143 MI0013098 Sus scrofa miR-143 stem-loop
+GUCCCCCAGCCGGAGGUGCAGUGCUGCAUCUCUGGUCAGCUGGGAGUCUGAGAUGAAGCACUGUAGCUCGGGAAGGGAGA
+.((.(((..((.(((.(((((((((.((((((.((((......)).)).)))))).))))))))).))).))..))).))
+>ssc-mir-423 MI0013099 Sus scrofa miR-423 stem-loop
+AAGUUAGGCUGAGGGGCAGAGAGCGAGACUUUUCUAUUUUCCAAAAGCUCGGUCUGAGGCCCCUCAGUCUUGCUUCCUAC
+((((.((((((((((((..(((.((((.(((((.........))))))))).)))...)))))))))))).)))).....
+>ssc-mir-151 MI0013100 Sus scrofa miR-151 stem-loop
+UUUUCCUGCCCUCGAGGAGCUCACAGUCUAGUACGUCUCAUCCCCUACUAGACUGAAGCUCCUUGAGGACAGGGAUCGUC
+..((((((.((((((((((((..((((((((((.(........).)))))))))).)))))))))))).)))))).....
+>ssc-mir-10a MI0013101 Sus scrofa miR-10a stem-loop
+UCUGUAUAUACCCUGUAGAUCCGAAUUUGUGUAAGGAAUUUUGUGGUCACAAAUUCGUAUCUAGGGGAAUAUGUAGUUGA
+.((((((((.((((.(((((.((((((((((................)))))))))).))))))))).))))))))....
+>ssc-mir-10b MI0013102 Sus scrofa miR-10b stem-loop
+GUCUAUAUAUACCCUGUAGAACCGAAUUUGUGUGGUAUCCACAUAGUCACAGAUUCGAUUCUAGGGGAAUAUAUGGUCGA
+(.((((((((.((((.(((((.((((((((((..((......))...)))))))))).))))))))).)))))))).)..
+>ssc-mir-486-1 MI0013103 Sus scrofa miR-486-1 stem-loop
+GCUGGGGCUUCAGGGCCAGCUCGGACCUCUGACCUCCCUGACGGGUCCUGUACUGAGCUGCCCCGAGGCCCUCACUGUGC
+...((((((((.((((.(((((((((....(((((.......)))))..)).))))))))))).))))))))........
+>ssc-mir-152 MI0013104 Sus scrofa miR-152 stem-loop
+CGGCCCAGGUUCUGUGAUACACUCCGACUCGGGCUCUGGAGCAGUCAGUGCAUGACAGAACUUGGGCCCGGACGGACCUU
+.((((((((((((((.((.((((..((((...(((....))))))))))).)).))))))))))))))............
+>ssc-mir-103-2 MI0013105 Sus scrofa miR-103-2 stem-loop
+UGUGCUUUCAGCUUCUUUACAGUGCUGCCUUGUAGCAUUCAGGUCAAGCAGCAUUGUACAGGGCUAUGAAAGAACUAAGA
+.((.(((((((((.((.(((((((((((((((.......))))....))))))))))).)))))..)))))).)).....
+>ssc-mir-181a-2 MI0013106 Sus scrofa miR-181a-2 stem-loop
+ACUCCAAGGAACAUUCAACGCUGUCGGUGAGUUUGGGAUUUGAAAAAACCACCGACCGUUGACUGUACCUUGGGGUUCUU
+(((((((((.(((.((((((..(((((((.((((...........))))))))))))))))).))).)))))))))....
+>ssc-mir-181b-1 MI0013107 Sus scrofa miR-181b-1 stem-loop
+GGUCACAAUCAACAUUCAUUGCUGUCGGUGGGUUGAACUGUGUAGACAAGCUCACUGAACAAUGAAUGCAACUGUGGCCC
+(((((((.....(((((((((...((((((((((...((....))...)))))))))).)))))))))....))))))).
+>ssc-mir-181d MI0013108 Sus scrofa miR-181d stem-loop
+UCACAAUCAACAUUCAUUGUUGUCGGUGGGUUGUGAGACGGAGGCCAGACCCACCGAGGGAUGAAUGUCACUGUGGCUGG
+(((((....(((((((((.(..((((((((((.((.(.(....))))))))))))))).)))))))))...)))))....
+>ssc-mir-27b MI0013109 Sus scrofa miR-27b stem-loop
+ACGAGGUGCAGAGCUUAGCUGAUUGGUGAACAGUGACUGGUUUCCGCUUUGUUCACAGUGGCUAAGUUCUGCACCUGAAG
+...((((((((((((((((((....((((((((....(((...)))..))))))))..))))))))))))))))))....
+>ssc-mir-340-1 MI0013110 Sus scrofa miR-340-1 stem-loop
+UACCUGGUGUGAUUAUAAAGCAAUGAGACUGAUUGUCAUAUGUCGUUUGUGGGAUCCGUCUCAGUUACUUUAUAGCCAUA
+.......((((..(((((((...((((((.((((.(((((.......))))))))).))))))....)))))))..))))
+>ssc-mir-24-2 MI0013111 Sus scrofa miR-24-2 stem-loop
+GACCCGCCCUCCGGUGCCUACUGAGCUGAUAUCAGUUCUCAUUUUACACACUGGCUCAGUUCAGCAGGAACAGGAGUCGA
+....((..((((.((.(((.(((((((((..(((((.............))))).))))))))).))).)).)))).)).
+>ssc-mir-23b MI0013112 Sus scrofa miR-23b stem-loop
+CUCUGGCUGCUUGGGUUCCUGGCAUGCUGAUUUGUGACUUAAGAUUAAAAUCACAUUGCCAGGGAUUACCACGCAGCCAC
+...(((((((.(((((((((((((((.((((((..............)))))))).))))))))))..))).))))))).
+>ssc-mir-193a MI0013113 Sus scrofa miR-193a stem-loop
+GCGGGAGCUGAGGGCUGGGUCUUUGCGGGCGAGAUGAGGGUGUUGGUUCAACUGGCCUACAAAGUCCCAGUCCUCGGCCC
+...((.(((((((((((((.(((((..(((.((.((((........)))).)).)))..))))).)))))))))))))))
+>ssc-mir-99a MI0013114 Sus scrofa miR-99a stem-loop
+CCAUUGGCAUAAACCCGUAGAUCCGAUCUUGUGGUGAAGUGGACCGCACAAGCUCGCUUCUAUGGGUCUGUGUCAGUGUG
+.((((((((((.(((((((((..(((.((((((.((........)))))))).)))..))))))))).))))))))))..
+>ssc-mir-125a MI0013115 Sus scrofa miR-125a stem-loop
+GGCCUCUGAGUCCCUGAGACCCUUUAACCUGUGAGGACAUCCAGGGUCACAGGUGAGGUUCUUGGGAGCCUGGCGUCCGG
+.(((...(.(..((..(((.((((..((((((((((....))....)))))))))))).)))..))..)).)))......
+>ssc-mir-345-1 MI0013117 Sus scrofa miR-345-1 stem-loop
+AACCCAGGUCUGCUGACUCCUAGUCCAGUGCUUGUGAUGGCUGGUGGGCCCUGAACUAGGGGUCUGGAGGCCUGGGUUUG
+(((((((((((.(.((((((((((.(((.(((..(.(....).)..))).))).)))))))))).).)))))))))))..
+>ssc-mir-148b MI0013118 Sus scrofa miR-148b stem-loop
+AUUUGAGGUGAAGUUCUGUUAUACACUCAGGCUGUGGCUCUCUGAAAGUCAGUGCAUCACAGAACUUUGUCUCGAAAGCU
+.(((((((..(((((((((.((.((((..((((....(.....)..)))))))).)).)))))))))..)))))))....
+>ssc-mir-885 MI0013119 Sus scrofa miR-885 stem-loop
+CACUCGGCCCGCGCUCUCUCCAUUACACUACCCUGCCUCUUCUCCACGAGAGGCAGCGGGGUGUAGUGGAUAGAGCACGG
+........(((.(((((.(((((((((((.(((((((((((......))))))))).))))))))))))).))))).)))
+>ssc-mir-365-2 MI0013120 Sus scrofa miR-365-2 stem-loop
+AAAAAUGAGGGACUUUCAGGGGCAGCUGUGUUUUCUGACUCAGUCAUAAUGCCCCUAAAAAUCCUUAUUGUUCUUGCAGU
+...((((((((..(((.(((((((((((.(((....))).)))).....))))))))))..))))))))...........
+>ssc-mir-365-1 MI0013121 Sus scrofa miR-365-1 stem-loop
+CGCAGGGAAAAUGAGGGACUUUUGGGGGCAGAUGUGUUUCCAUUCCACUAUCAUAAUGCCCCUAAAAAUCCUUAUUGCUC
+.((((........(((((.(((((((((((((((((.........))).)))....))))))))))).))))).))))..
+>ssc-mir-98 MI0013122 Sus scrofa miR-98 stem-loop
+GGGUGAGGUAGUAAGUUGUAUUGUUGUGGGGUAGGGAUUUUAGGCCCCAAUUAGAAGAUAACUAUACAACUUACUACUUU
+....(((((((((((((((((.((((((((((...........)))))).........)))).)))))))))))))))))
+>ssc-mir-664 MI0013123 Sus scrofa miR-664 stem-loop
+GAACAUUGAAACAGGCUAGGAGAAGUGAUUGGAUAGAAAAUGGUAUUCUAUUCAUUUAUCUCCCAGCCUACAAAAAGAAA
+............(((((.(((((..(((.(((((((((.......))))))))).)))))))).)))))...........
+>ssc-mir-92a-2 MI0013124 Sus scrofa miR-92a-2 stem-loop
+CUUUCAUCCGUGGGUGGGGAUUUGUUGCAUUACUUGUGGUGUGUAUAAAGUAUUGCACUUGUCCCGGCCUGUGGAAGAAA
+..(((.((((..(((.(((((..((.(((.(((((............))))).)))))..))))).)))..)))).))).
+>ssc-mir-92a-1 MI0013125 Sus scrofa miR-92a-1 stem-loop
+CUUUCUACACAGGUUGGGAUCGGUUGCAAUGCUGUGUUUCUGUAUGGUAUUGCACUUGUCCCGGCCUGUUGAGUUUGGUG
+..(((...((((((((((((.(((.(((((((((((......)))))))))))))).)))))))))))).))).......
+>ssc-mir-92b MI0013126 Sus scrofa miR-92b stem-loop
+GCGGGCGGGAGGGACGGGACGCGGUGCAGUGUUGUUCUUUCCCCUGCCAAUAUUGCACUCGUCCCGGCCUCCGGCCCCCC
+..((((.(((((..(((((((.((((((((((((.............))))))))))))))))))).))))).))))...
+>ssc-mir-192 MI0013127 Sus scrofa miR-192 stem-loop
+GCACAGGGCUCUGACCUAUGAAUUGACAGCCAGUGCUCUCAUCUCCCCUCUGGCUGCCAAUUCCAUAGGUCACAGGUAUG
+...((.(.((.((((((((((((((.(((((((................))))))).))))).))))))))).)).).))
+>ssc-mir-100 MI0013128 Sus scrofa miR-100 stem-loop
+AGGCCUGUUGCCACAAACCCGUAGAUCCGAACUUGUGCUGAUAGUGCACACAAGCUUGUGUCUAUAGGUAUGUGUCUGUG
+...........((((.(((..((((..(((.((((((.((......)))))))).)))..))))..))).))))......
+>ssc-mir-208b MI0013129 Sus scrofa miR-208b stem-loop
+CUCUCAGGGAAGCUUUUUGCUCGCGUUAUGUUUCUCAUCCGAAUAUAAGACGAACAAAAGGUUUGUCUGAGGGCAGAGUG
+((((((((.((((((((((.(((..((((((((.......))))))))..))).)))))))))).)))))))).......
+>ssc-mir-374a MI0013130 Sus scrofa miR-374a stem-loop
+CAUCGGCCAUUAUAAUACAACCUGAUAAGUGUUACAGCACUUAUCAGGUUGUAUUGUAAUUGUCUGUGUAUAUAUAUGCC
+(((.(((.((((((((((((((((((((((((....)))))))))))))))))))))))).))).)))............
+>ssc-mir-374b MI0013131 Sus scrofa miR-374b stem-loop
+UCGGAUGGAUAUAAUACAACCUGCUAAGUGUCCUAGCACUUAUCAGGUUGUAUUAUCAUUGUCCGUGUCUAUGGCUCUCG
+.((((..(..(((((((((((((.(((((((....))))))).)))))))))))))..)..))))...............
+>ssc-mir-34c-1 MI0013132 Sus scrofa miR-34c-1 stem-loop
+AGUCUAGUUACUAGGCAGUGUAGUUAGCUGAUUGCUGAUAAAACCAAUCACUAACCACACGGCCAGGUAAAAAGAUUUGG
+(((((..(((((.(((.((((.(((((.((((((.(......).))))))))))).)))).))).)))))..)))))...
+>ssc-mir-425 MI0013133 Sus scrofa miR-425 stem-loop
+AAGUGCUUUGGAAUGACACGAUCACUCCCGUUGAGUGGGCACCCAAGUAGCCAUCGGGAAUGUCGUGUCCGCCCAGUGCU
+.((..((..((...(((((((.((.((((((((..(((....)))..))))....)))).)))))))))..)).))..))
+>ssc-mir-142 MI0013134 Sus scrofa miR-142 stem-loop
+GUGCAGUCACCCAUAAAGUAGAAAGCACUACUAACAGCACUGGAGGGUGUAGUGUUUCCUACUUUAUGGAUGAGUGUACU
+(((((.(((.(((((((((((.(((((((((...(..(....)..)..))))))))).))))))))))).))).))))).
+>ssc-mir-424 MI0013135 Sus scrofa miR-424 stem-loop
+UCCGAGGGGAUGCAGCAGCAAUUCAUGUUUUGAAGGGCUUUAAAUGGUUCAAAACGUGAGGCGCUGCUAUACCCCCUCGC
+..(((((((.((.((((((..((((((((((((...(((......)))))))))))))))..)))))).)).))))))).
+>ssc-mir-130b MI0013136 Sus scrofa miR-130b stem-loop
+GCCUGCCUGACACUCUUUCCCUGUUGCACUACUGUGGGCCACUGGGAAGCAGUGCAAUGAUGAAAGGGCAUCAGUCAGGC
+(((((.((((..(((((((..(((((((((.((.....((....)).)).)))))))))..)))))))..)))).)))))
+>ssc-mir-196b-1 MI0013137 Sus scrofa miR-196b-1 stem-loop
+CUGGUCGGUGAUUUAGGUAGUUUCCUGUUGUUGGGAUCCACCUUUCUCUCGACAGCACGACACUGCCUUCAUUACUUCAG
+((((..((((((..(((((((.((.(((((((((((..........))))))))))).)).)))))))..))))))))))
+>ssc-mir-542 MI0013138 Sus scrofa miR-542 stem-loop
+CCUCAGACGUCUCGGGGAUCAUCAUGUCACGAGAGACCACUGUGCACUUGUGACAGAUUGAUAACUGAAAGGUCUGGGAG
+.(((((((.(.((((..((((...(((((((((.(((....)).).)))))))))...))))..)))).).)))))))..
+>ssc-mir-497 MI0013139 Sus scrofa miR-497 stem-loop
+CCCGCCCCAGCAGCACACUGUGGUUUGUACGGCACUGUGGCCACGUCCAAACCACACUGUGGUGUUAGAGCGAGGGUGGG
+((((((((((((.((((.(((((((((.(((((......)))..)).))))))))).)))).)))).....).)))))))
+>ssc-mir-450b MI0013140 Sus scrofa miR-450b stem-loop
+AAAAUUAUUUUUGCAAUAUGUUCCUGAAUAUGUAAUAUAAGUAUAUUGGGAACAUUUUGCAUCCAUAGUUUUGUAUCGAU
+((((((((...(((((.(((((((..(((((.........)))).)..))))))).)))))...))))))))........
+>ssc-mir-195 MI0013141 Sus scrofa miR-195 stem-loop
+CAGCCCCCCUGGCUCUAGCAGCACAGAAAUAUUGGCACCGGGCGGAGAGUCUGCCAGUAUUGGCUGUGCUGCCCCAGGCA
+.......(((((.....(((((((((.((((((((((...(((.....)))))))))))))..))))))))).)))))..
+>ssc-mir-331 MI0013142 Sus scrofa miR-331 stem-loop
+UUGUUUGGGUUUGUUCUAGGUAUGGUCCCAGGGAUCCCAGAUCAAACCAGGCCCCUGGGCCUAUCCUAGAACCAACCUAA
+....(((((((.((((((((.((((.(((((((..(.............)..))))))).)))))))))))).)))))))
+>ssc-mir-504 MI0013143 Sus scrofa miR-504 stem-loop
+GCUGUUGGGAGACCCUGGUCUGCACUCUAUCUGUAUGCUUACUGAAGGGAGCGCAGGGCAGGGUUUCCCACACAGAGGGC
+.((((((((((((((((.(((((.((((.((.(((....))).))..)))).))))).)))))))))))).)))).....
+>ssc-mir-127 MI0013144 Sus scrofa miR-127 stem-loop
+AUCGCUGUCUCCAGCCUGCUGAAGCUCAGAGGGCUCUGAUUCAGAAAGAUCAUCGGAUCCGUCUGAGCUUGGCUGGUCGG
+....(((...((((((.....(((((((((.((.((((((((.....))..)))))).)).))))))))))))))).)))
+>ssc-mir-361 MI0013145 Sus scrofa miR-361 stem-loop
+GGAGCUUAUCAGAAUCUCCAGGGGUACUUAUAAUUUGAAAAAGUCCCCCAGGUGUGAUUCUGAUUUGCUUCCUCCUCCUC
+(((((..(((((((((.((.((((.((((...........)))).)))).))...)))))))))..))))).........
+>ssc-mir-1277 MI0013146 Sus scrofa miR-1277 stem-loop
+UAGCCUCCCAAAUAUAUAUAUAUAUGUACGUAUGUGUAUAUGAAUGUAUACGUAGAUAUAUAUGUAUUUUUGGUGGGUUU
+.((((..(((((.((((((((((((.((((((((..(......)..)))))))).)))))))))))).)))))..)))).
+>ssc-mir-1307 MI0013147 Sus scrofa miR-1307 stem-loop
+CUACCAAUCUCGACCGGACCUCGACCGGCUCGUCUAUGUUGCCAAUCGACUCGGCGUGGCGUCGGUCGUGGUAGAUAGGC
+((((((....(((((((.((.((.(((..(((..............)))..))))).))..)))))))))))))......
+>ssc-mir-1306 MI0013148 Sus scrofa miR-1306 stem-loop
+GUCUCCACCACCUCCCCUGCAAACGUCCAGUGAUGCAGAGGUAAUGGACGUUGGCUCUGGUGGUGAUGGACAGGCCGAAC
+((((.(((((((......((.((((((((....(((....))).)))))))).))...)))))))..)))).........
+>ssc-mir-339-1 MI0013149 Sus scrofa miR-339-1 stem-loop
+GCAGCCGCCGUCCCUGUCCUCCAGGAGCUCACUUACCUUGGGCCGUGAGCUCCUCGAGGCCAGAGCCCGUGUCUGCCUCU
+((((.(((.(.(.(((.((((.((((((((((...(....)...)))))))))).)))).))).).).))).))))....
+>ssc-mir-532 MI0013150 Sus scrofa miR-532 stem-loop
+UUGCUUUCUCUCUUACAUGCCUUGAGUGUAGGACCGUUGGCAUCUGAAUACCCUCCCACACCCAAGGCUUGCAGGAGGGC
+.......(((((((.((.((((((.((((.(((..((...(....)...))..))).)))).)))))).)).))))))).
+>ssc-mir-222 MI0013151 Sus scrofa miR-222 stem-loop
+UGCCCUCAAUGGCUCAGUAGCCAGUGUAGAUCCUGUCAUUUGUAAUCAGUAGCUACAUCUGGCUACUGGGUCUCUGAUGG
+..((.(((..(((((((((((((((((((...(((...........)))...))))).))))))))))))))..))).))
+>ssc-mir-676-1 MI0013152 Sus scrofa miR-676-1 stem-loop
+AACGCGUGACUCUUCAAUCUCAGGACUCGCAUAAUUAGCAGAAUGCCGUCCUAAGGUUGUUGAGUUCUGCGUUUCUGGGC
+((((((.(((((..((((((.(((((..((((..........)))).))))).))))))..))))).)))))).......
+>ssc-mir-342 MI0013153 Sus scrofa miR-342 stem-loop
+AAGGUGAGGGUGCUAUCUGUGACUGAGGGACAUGGCGCAUAGAACUGUCUCACACAGAAAUCGCACCCGUCACCUUGGCC
+(((((((((((((..((((((.....((((((...(.....)...)))))).))))))....)))))).)))))))....
+>ssc-mir-708 MI0013154 Sus scrofa miR-708 stem-loop
+CCCUCAAGGAGCUUACAAUCUAGCUGGGGGUGAAUGACUUGCACAUGAACGCAACUAGACUGUGAGCUUCUAGAGGGCAG
+(((((.(((((((((((.(((((.((.(.(((.........))).....).)).))))).))))))))))).)))))...
+>ssc-mir-432 MI0013155 Sus scrofa miR-432 stem-loop
+UCCAGGUCUUGGAGUAGGUCAUUGGGUGGAUCCUUUAUUUCCCUAUGUGGGCCACUGGAUGGCUCCUCCAUGGCUUGGAG
+((((((((.(((((..(((((((.(((((.(((..(((......))).)))))))).))))))).))))).)))))))).
+>ssc-mir-935 MI0013156 Sus scrofa miR-935 stem-loop
+GGCGCAGGCGGCAGUGGCGGGAGCGGCCCCUCGGCCAUCCUCCGUCUGCCCAGUUACCGCUUCCGCUACCGCCGCCGCUC
+...((.((((((.(((((((((((((...((.(((............))).))...))))))))))))).))))))))..
+>ssc-mir-202 MI0013157 Sus scrofa miR-202 stem-loop
+CGCCGUUCCGCCUUCCUAUGCAUAUACUUCUUUGAGGGUCUGGCCUGAAGAGGUGUAGGCAUGGGAAACCGGGGCGACGA
+((.(((((((..(((((((((.(((((((((((.(((......)))))))))))))).)))))))))..))))))).)).
+>ssc-mir-328 MI0013158 Sus scrofa miR-328 stem-loop
+GGAGCGGGGGGGCAGGAGGGGCUCAGGGAGAAAGUGUGUGCCGCCCCUGGCCCUCUCUGCCCUUCCGUCCCCCGUUCCUG
+(((((((((((((((..(((((.(((((.(...((....))..)))))))))))..))))).......))))))))))..
+>ssc-mir-19b-2 MI0013159 Sus scrofa miR-19b-2 stem-loop
+UACAGUUAGUUUUGCAGGUUUGCAUUUCAGCGUAUGUAUGUGUAUAUGGCUGUGCAAAUCCAUGCAAAACUGAUUGUGAU
+((((((((((((((((((((((((...((((.((((((....)))))))))))))))).)).))))))))))))))))..
+>ssc-mir-19b-1 MI0013160 Sus scrofa miR-19b-1 stem-loop
+CUGUUCUAUGGUUAGUUUUGCAGGUUUGCAUCCAGCUGUGUGAUAUUCUGCUGUGCAAAUCCAUGCAAAACUGACUGUGG
+.....(((((((((((((((((((((((((..((((.............)))))))))).)).)))))))))))))))))
+>ssc-mir-574 MI0013161 Sus scrofa miR-574 stem-loop
+UGGGUGCGGGCGUGUGAGUGUGUGUGUGUGAGUGUGUGUCGCUCCGGGUCCACGCUCAUGCACACACCCACACGCCCGCA
+....((((((((((((.(.(((((((((((((((((..((......))..))))))))))))))))))))))))))))))
+>ssc-mir-1839 MI0013162 Sus scrofa miR-1839 stem-loop
+CCUAAAUGAAAAGGUAGAUAGAACAGGUCUUGUUUGCAAGAUGAAUUCAAGACCUACUUUUCUACCAACAGCAAUUACAC
+............((((((.(((..((((((((....(.....)....))))))))..)))))))))..............
+>ssc-mir-628 MI0013163 Sus scrofa miR-628 stem-loop
+GUGUCACUUCCUCAUGCUGACAUAUUUACUAGAGGGUAAAGUUAACAACCUUCUAGUAAGAGUGGCAGUCGAAGGGAAGG
+......((((((..(((((.(((.(((((((((((((..........))))))))))))).))).))).))..)))))).
+>ssc-mir-1285 MI0013164 Sus scrofa miR-1285 stem-loop
+GCUGAUCAGUAGUGGGAUCGCGCCUGUGAAUAGCCACUGUACUCCAGCCUGGGCAACAUAGCGAGACCCCGUCUCUUUUG
+.......((.((((((.((.(((.((((....(((.(((.....)))....)))..))))))).)).)))).))))....
+>ssc-mir-335 MI0013165 Sus scrofa miR-335 stem-loop
+CUUUUGGGCGGGGGUCAAGAGCAAUAACGAAAAAUGUUUGUCAUAAACCGUUUUUCAUUAUUGCUCCUGACCUCCUCUCA
+....((((.((((((((.(((((((((.((((((((.((......)).)))))))).))))))))).)))))))).))))
+>ssc-mir-500 MI0013166 Sus scrofa miR-500 stem-loop
+CCCCUCUCUAAUCCUUGCUACCUGGGUGAGAGUGCUGUGUGAAUGCAAUGCACCUGGGCAAGGAUUCUGAGAGUGAGAGC
+...(((((.(((((((((...(..((((....(((.........)))...))))..))))))))))..))))).......
+>ssc-mir-324 MI0013167 Sus scrofa miR-324 stem-loop
+CUAUGCCUCCCCGCAUCCCCUAGGGCAUUGGUGUGAAGCUGGAGACCCACUGCCCCAGGUGCUGCUGGGGGUUGUAGUCU
+((((..(((((.(((.(.(((.(((((.(((.((..........))))).))))).))).).))).)))))..))))...
+>ssc-mir-769 MI0013168 Sus scrofa miR-769 stem-loop
+UGCGCUCUGACCUGAGACCUCUGGGUUCUGAGCUGUGAUGUUGCUUCCAAGCUGGGAUCUCUGGGGUCUUGGUUCAGGGU
+...(((((((.(..(((((((.(((.(((.((((..((.......))..)))).))).))).)))))))..).)))))))
+>ssc-mir-129a MI0013169 Sus scrofa miR-129a stem-loop
+CUUCGUGAAUCUUUUUGCGGUCUGGGCUUGCUGUACAUAACUCAAUAGCCGGAAGCCCUUACCCCAAAAAGCAUUCGCGG
+...((((((((((((((.(((..(((((((((((..........)))))...))))))..))).))))))).))))))).
+>ssc-mir-455 MI0013170 Sus scrofa miR-455 stem-loop
+UGGCGUGAGGGUAUGUGCCUUUGGACUACAUCGUGGAAGCCAGCACCAUGCAGUCCAUGGGCAUAUACACUUGCCUCAAG
+(((.(..((.((((((((((.((((((.(((.(((........))).))).)))))).)))))))))).))..).)))..
+>ssc-mir-505 MI0013171 Sus scrofa miR-505 stem-loop
+GCACUCAGUGGGGGAGCCAGGAAGUAUUGAUGUUUCUGCCAGGUUAGCGUCAACACUUGCUGGUUUCCUCUCUGGAGCAU
+((.(.(((.(((((((((((.((((.((((((((.((....))..)))))))).)))).))))))))))).)))).))..
+>ssc-mir-125b-1 MI0013172 Sus scrofa miR-125b-1 stem-loop
+CCUCUCAGUCCCUGAGACCCUAACUUGUGAUGUUUACCGUUUAAAUCCACGGGUUAGGCUCUUGGGAGCUGCGAGCCGUG
+.(((.(((..((..(((.(((((((((((..(((((.....))))).))))))))))).)))..))..))).))).....
+>ssc-mir-744 MI0014769 Sus scrofa miR-744 stem-loop
+GCAGGGUGCGGGGCUAGGGCUAACAGCAGUCUUACUGAAGGUUUCCUGGAAACCACGCACAUGCUGUUGCCACUAACCUC
+(((..(((((((.((((((..(((..(((.....)))...)))))))))...)).))))).)))................
+>ssc-mir-22 MI0014770 Sus scrofa miR-22 stem-loop
+GAGCCGCAGUAGUUCUUCAGUGGCAAGCUUUAUGUCCUGACCCAGCUAAAGCUGCCAGUUGAAGAACUGUUGCCCUCUGC
+(((..((((((((((((((((((((.((((((.((.........))))))))))))).))))))))))))))).)))...
+>ssc-mir-363-1 MI0014771 Sus scrofa miR-363-1 stem-loop
+GCUGUUGUCGGGUGGAUCACGAUGCAAUUUUGAUUAGUAUCAUAGGAGAAAAAUUGCACGGUAUCCAUCUGUAAACCGCA
+((.(((..(((((((((..((.(((((((((..(((......)))....)))))))))))..)))))))))..))).)).
+>ssc-mir-299 MI0014772 Sus scrofa miR-299 stem-loop
+CGGUACUUGAAGAAAUGGUUUACCGUCCCACAUACAUUUUGCAUAUGUAUGUGGGACGGUAAACCGCUUCUUGGUAUCC
+.((((((..(((((.((((((((((((((((((((((.......)))))))))))))))))))))).))))))))))).
+>ssc-mir-338 MI0014773 Sus scrofa miR-338 stem-loop
+CCGUCCUCCCCAACAAUAUCCUGGUGCUGAGUGAUGACACACGCAACUCCAGCAUCAGUGAUUUUGUUGAAGAGGGCAG
+..((((((..((((((.(((((((((((((((..((.....))..))).))))))))).))).))))))..))))))..
+>ssc-mir-369 MI0014774 Sus scrofa miR-369 stem-loop
+UUGAAGGGAGAUCGACCGUGUUAUAUUCGCUUUAUGGUACUUGAAGGGAGAUCGACCGUGUUAUAUUCGCUUGGCUGACUUCGAAUAAUACAUGGUUGAUCUUUUCUCAGUAUCUGACUUCGAAUAAUACAUGGUUGAUCUUUUCUCAG
+.(((..(((((((((((((((..((((((......((((((.((..(((((((((((((((..((((((...(.....)..))))))..)))))))))))))))..))))))))......))))))..)))))))))))))))..))).
+>ssc-mir-376a MI0014775 Sus scrofa miR-376a stem-loop
+GGUAUUUAAAAGGUAGAUUCUCCUUCUAUGAGUACAUUAUUUAUUAUUAAUCAUAGAGGAAAAUCCACGUUUUCAGUAUC
+((((((.((((.((.((((.((((.((((((...................)))))))))).)))).)).)))).))))))
+>ssc-mir-450c MI0014776 Sus scrofa miR-450c stem-loop
+GGCACUAAACUAUUUUUGCGAUGUGUUCCUAAUACGUAAUCUAAGUGUAUUGGGAACAUUUUGCAUUCGUAGUUUUGUGUC
+(((((.(((((((...(((((.((((((((((((((.........)))))))))))))).)))))...))))))).)))))
+>ssc-mir-758 MI0014777 Sus scrofa miR-758 stem-loop
+GGUACAUGAGGUGGUUGACCAGAGAGCACACGCUUUAUUGUGCCGUUUGUGACCUGGUCCACUAACCCUCAGUAUC
+(((((.(((((((((.((((((...(((.((((........).))).)))...)))))).))))..))))))))))
+>ssc-mir-194b MI0015905 Sus scrofa miR-194b stem-loop
+CGCCAUCAGCUGUAACAGCGACUCCAUGUGGACUGUGCCCCAAUUUCCAGUGGAGAUGCUGUUACCUUUGACGGCGAC
+((((.((((..(((((((((.((((((.((((..((......)).)))))))))).)))))))))..)))).))))..
+>ssc-mir-296 MI0015906 Sus scrofa miR-296 stem-loop
+GACCCUUCCGGAGGGCCCCCCCCAAUCCUGUUGUGCUGGAUUCAGAGGGUUGGGCGGAGGCUUUCCUGAAGGCUCUG
+((.(((((.((((((((.(((((((((((.(((.........)))))))))))).)).)))))))).))))).))..
+>ssc-mir-155 MI0015907 Sus scrofa miR-155 stem-loop
+CUAUAUGCUGUUAAUGCUAAUUGUGAUAGGGGUUUUUACCUCCGUCUGACUCCUACAUGUUAGCAUUAACAGGGUAUGAUG
+.(((((.((((((((((((((.(((.((((((((...((....))..))))))))))))))))))))))))).)))))...
+>ssc-mir-411 MI0015908 Sus scrofa miR-411 stem-loop
+CUUGGAGAGAUAGUAGACCGUAUAGCGUACGCUUUAUCUGUGACGUAUGUAACACGGUCCACUAACCCUCAGUAUC
+....(((.(.((((.((((((.(.((((((((.........).))))))).).)))))).)))).).)))......
+>ssc-mir-133a-2 MI0015909 Sus scrofa miR-133a-2 stem-loop
+UAGAGCUGGUAAAAUGGAACCAAAUCGCCUCUUCAAUGGAUUUGGUCCCCUUCAACCAGCUGUAGCUAUGCAU
+((.(((((((..((.((.((((((((............)))))))).)).))..))))))).)).........
+>ssc-mir-4331 MI0015910 Sus scrofa miR-4331 stem-loop
+CCAUGAGCUAUGGCGUAGAUCACAGACACAGCUCAGAUCUGGCAUUGCUGUGGCUGUGGUGUAGGCCAGCAGCUUUGCUC
+....(((((.((((.((.(((((((.((((((..............)))))).))))))).)).))))..))))).....
+>ssc-mir-382 MI0015911 Sus scrofa miR-382 stem-loop
+ACUUGAAGAGAAGUUGUUCGUGGUGGAUUCGCUUUACUUAUGACGAAUCAUUCACGGACAACACUUUUUUCAGUACC
+..(((((((((.(((((((((((..(((((((.........).))))))..)))))))))))..)))))))))....
+>ssc-mir-381 MI0015912 Sus scrofa miR-381 stem-loop
+UGGUACUUAAAGCGAGGUUGCCCUUUGUAUAUUCGGGUUUUGAGGUGGAAUAUACAAGGACAAGCUCUCUGUGAGUAUCAAA
+(((((((((.((.(((.(((.((((.((((((((.(.(.....).).)))))))))))).))).))).)).)))))))))..
+>ssc-mir-362 MI0015913 Sus scrofa miR-362 stem-loop
+CCCCCUCUCAAAUCCUUGGAACCUAGGUGUGAGUGCUGCUCUAGUGCAACACACCUAUUCAAGGAUUCAAAGAGGCUGA
+...(((((..((((((((((...((((((((.(..(((...)))..)..))))))))))))))))))...)))))....
+>ssc-mir-490-1 MI0015914 Sus scrofa miR-490-1 stem-loop
+UUGUUCGACACCAUGGAUCCCCAGGUGGGUCACGUUUCAAGAUACACCAACCUGGAGGACUCCAUGCUGUUGAGCUGUU
+..((((((((.(((((((((((((((.(((...(((....)))..))).)))))).))).)))))).))))))))....
+>ssc-mir-376c MI0015915 Sus scrofa miR-376c stem-loop
+UAUUUAAAAGGUGGAUAUUCCUUCUAUGUUUAUGUUAUUUGUGGUUAAACAUAGAGGAAAUUCCACGUUUUCAGUAUC
+((((.((((.(((((..(((((.(((((((((.............))))))))))))))..))))).)))).))))..
+>ssc-mir-376b MI0015916 Sus scrofa miR-376b stem-loop
+UAUUUAAAAGGUGGCUAUUCCUUCUAUGUUUAUGUUAUUUGUGGUUAAACAUAGAGGAAAUUCCACGUUUUCAGUAUC
+((((.((((.((((...(((((.(((((((((.............))))))))))))))...)))).)))).))))..
+>ssc-mir-4332 MI0015917 Sus scrofa miR-4332 stem-loop
+CGGCGGGGGGUGUCGCGGGGGUGGGCGGGCUGGGGCCGGGGGUGGGGCCGGCGGGGGCACGACCCCCGGUCGGCGUCCACGGCCGCCGCCGGGCGCCUUUCCACCGC
+(((.((((((((((.(((.(((((.((((.((.((((((((((.(.(((......))).).))))))))))..)).)).)).))))).))))))))).)))).))).
+>ssc-mir-652 MI0015919 Sus scrofa miR-652 stem-loop
+UAUGCACUGCACAACCCUAGGAGAGGGUGCCAUUCACAUAGACUAUAAUUGAAUGGCGCCACUAGGGUUGUGCAGUGCACAAC
+..((((((((((((((((((.....(((((((((((..((.....))..))))))))))).))))))))))))))))))....
+>ssc-mir-1224 MI0015920 Sus scrofa miR-1224 stem-loop
+CCUACCCUUGGUGAGGACUCGGGAGGUGGAGGGUGGCGCUGCCAGGGCCAGGGCACUGUCUCAGCUCGCUUCUCCCCCCACCUCCUCUCUCCUCAGGUGCGGUUGCAG
+((((((.....((((((...(((((((((.(((.(((((((.(((.((....)).)))...))))..)))...))).)))))))))...)))))))))).))......
+>ssc-mir-4334 MI0015921 Sus scrofa miR-4334 stem-loop
+CUGUGCUGAGCCCUGGAGUGACGGGGGUGAAAGGGCAGAGUCCCUGUCCUCCAGGAGCUCCCCAUGUGG
+..(((..(((((((((((.((((((((((......))...))))))))))))))).))))..)))....
+>ssc-mir-1271 MI0015922 Sus scrofa miR-1271 stem-loop
+UAGAUCAGUGCUUGGCACCUAGUAAGCACUCAGUAUAUACUUGUUGAGUGCCUGCUAUGUGCCAGGCAUUGUGCUGAG
+(((..(((((((((((((.(((((.((((((((((......)))))))))).))))).)))))))))))))..)))..
+>ssc-mir-4335 MI0015923 Sus scrofa miR-4335 stem-loop
+CCUCUUCCAGCCCCACGUUGGGCGCCACUCUGCUGUGCCCAGCGCUGCAGGGCAAUAGGGAAGC
+...(((((.((((((((((((((((.........)))))))))).))..)))).....))))).
+>ssc-mir-218-1 MI0015924 Sus scrofa miR-218-1 stem-loop
+AGAUUUUCUGUUGUGCUUGAUCUAACCAUGUGGUUGCCAGGUAUGAGUAAAACAUGGUUCUGUCAAGCACCAUGGAACGUCACG
+.(((.((((((.(((((((((..((((((((..((((((....)).)))).))))))))..))))))))).)))))).)))...
+>ssc-mir-421 MI0015925 Sus scrofa miR-421 stem-loop
+ACAUUGUAGGCCUCAUUAAAUGUUUGUUGAAUGAAAAAAUGAAUCAUCAACAGACAUUAAUUGGGCGCCUGCUCUGUG
+(((..((((((((((...((((((((((((.(((.........)))))))))))))))...)))).))))))..))).
+>ssc-mir-146a MI0015926 Sus scrofa miR-146a stem-loop
+UACUCAGCUUUGAGAACUGAAUUCCAUGGGUUGUGUCAUUGUCAGACCUGUGAAGUUUAGUUCUUCAGCUGGGAUAUC
+..(((((((..((((((((((((.((((((((.((.......)))))))))).)))))))))))).))))))).....
+>ssc-mir-383 MI0015927 Sus scrofa miR-383 stem-loop
+CCUGCUCCUCAGAUCAGAAGGUGAUUGUGGCUUUGGGUAGAUAUUAAUCAGCCACAGCACUGCCUGGUCAGAAAGAGCAAGU
+..(((((.((.((((((..((((.((((((((...(((........)))))))))))))))..)))))).))..)))))...
+>ssc-mir-487b MI0015928 Sus scrofa miR-487b stem-loop
+UACUUGGAGAGUGGUUAUCCCUGUCCUGUUCGUUUUACUCAUGUCGAAUCGUACAGGGUCAUCCACUUUUUCAGUAUC
+((((..((((((((....((((((.(.(((((............))))).).))))))....))))))))..))))..
+>ssc-mir-484 MI0015929 Sus scrofa miR-484 stem-loop
+GCAGCCAUCGUCAGGCUCAGUCCCCUCCCGAUAAACCCCUAAAUAGGGACCUUCCCAGGGGGCGACCCAGGCUUUUUUGGCAA
+...((((..(((.((.((.(((((((...((.....((((....))))....))..))))))))).)).))).....))))..
+>ssc-mir-1296 MI0015931 Sus scrofa miR-1296 stem-loop
+CCUAACUGGGUUAGGGCCCUGGCUCCAUCUCCUUUAGGAAAACCUUCUGUGGGGAGUGGGGUUUUGACCCUAACCCAGCUGGGCU
+((((.(((((((((((.(..((((((((..(((.(((((.....))))).)))..))))))))..).))))))))))).))))..
+>ssc-mir-4337 MI0015932 Sus scrofa miR-4337 stem-loop
+GGCACUAGACAGGGUAUAUAAGCCUUCACUGGUUAAAUCAACAUACAGUGAAGGCUUAUAUAUCUUGUCUAGUGCCCA
+(((((((((((((((((((((((((((((((..............)))))))))))))))))))))))))))))))..
+>ssc-mir-4338 MI0015933 Sus scrofa miR-4338 stem-loop
+AUCUCUCGAGAUGUUCAGUCUCAGUGGGAACCGUGUGUAAGUCUUGUUCCCAUUGAGACUGAGCAUCUCAAGGGAUCA
+((((((.((((((((((((((((((((((((...(.......)..)))))))))))))))))))))))).))))))..
+>ssc-mir-494 MI0015934 Sus scrofa miR-494 stem-loop
+CUCGAAGGAGAGGUUGUCGUGUUGUCUUCUCUUUACUUAUGAUGAAACAUACACGGGAAACCUCUUUUGGAGUAU
+(((..((((((((((.(((((((((.(((((.........)).)))))).))))))..)))))))))).)))...
+>ssc-mir-4339 MI0015935 Sus scrofa miR-4339 stem-loop
+CUGUGCUCCGGCUCUGAGCUGCCCCUCCUCGUCCGUCCCCUCCAGCUGGAGAGGAGCCGCGACAGAGCCGGAGCAGUGGC
+...(((((((((((((...(((..((((((.(((((........)).)))))))))..))).))))))))))))).....
+>ssc-mir-30c-1 MI0016618 Sus scrofa miR-30c-1 stem-loop
+CGUAGUGCGUGUAAACAUCCUACACUCUCAGCUGUGAGCUCGAGGUGGCUGGGAGAGGGUUGUUUACUCCUUCUGCCAUG
+.((((...(.(((((((.(((...((((((((..(.........)..)))))))).))).))))))).)...))))....
+>ssc-mir-126 MI0016619 Sus scrofa miR-126 stem-loop
+CGACGGGACAUUAUUACUUUUGGUACGCGCUGUGACACUUCAAACUCGUACCGUGAGUAAUAAUGCGCUGUCG
+(((((((.(((((((((((.(((((((.(...(((....)))..).))))))).)))))))))))).))))))
+>ssc-mir-149 MI0016620 Sus scrofa miR-149 stem-loop
+GCCCAGGCUCUGGCUCCGUGUCUUCACUCCCGUGUGUGUCCGAGGAGGGAGGGAGGGACGGGGGCUGUGCUGGGGC
+((((.(((.(.(.((((((.(((((.(((((...((....))....)))))))))).)))))).).).))).))))
+>ssc-mir-199a-1 MI0016621 Sus scrofa miR-199a-1 stem-loop
+UCCGUCGCCCCAGUGUUCAGACUACCUGUUCAGGACAAUGCCGUUGUACAGUAGUCUGCACAUUGGUUAGACUGGG
+.(((((...(((((((.((((((((.(((...((......)).....))))))))))).)))))))...))).)).
+>ssc-mir-378-2 MI0016622 Sus scrofa miR-378-2 stem-loop
+GUGGGCCUCCUGAAGGCAGGCAGAACCAUUGGGUGAAAAGAGCACUGGACUUGGAGUCAGAAGGCCCG
+..((((((.((((...((((........((.((((.......)))).))))))...)))).)))))).
+>ssc-mir-451 MI0016623 Sus scrofa miR-451 stem-loop
+GGGGGUGGCGAGCAAACCGUUACCAUUACUGAGUUUAGUAAUGGUAACGGUUCUCUUGCUGCACC
+.((.(..(((((..(((((((((((((((((....)))))))))))))))))..)))))..).))
+>ssc-let-7a-2 MI0017984 Sus scrofa let-7a-2 stem-loop
+CACUGUGGGAUGAGGUAGUAGGUUGUAUAGUUUUAGGGUCACACCCACCACUGGGAGAUAACUAUACAAUCUACUGUCUUUCCUAACGUGAU
+(((..(((((.(((..((((((((((((((((...(((.....))).((....))....))))))))))))))))..))))))))..)))..
+>ssc-mir-18b MI0017985 Sus scrofa miR-18b stem-loop
+UCUCUUGUGUUAAGGUGCAUCUAGUGCAGUUAGUGAAGCAGCUUAGAAUCUACUGCCCUAAAUGCCCCUUCUGGCACAGGCUG
+...((((((((((((.((((.(((.(((((..((.(((...)))...))..))))).))).)))).)))..)))))))))...
+>ssc-mir-129b MI0017986 Sus scrofa miR-129b stem-loop
+CCCUUUGGAUCUUUUUGCGGUCUGGGCUUGCUGUUCCUCUCUACAGUAGUCAGGAAGCCCUUACCCCAAAAAGUAUCUGCGGGA
+.(((.((((((((((((.(((..((((((.(((..(..((....))..).))).))))))..))).))))))).))))).))).
+>ssc-mir-187 MI0017987 Sus scrofa miR-187 stem-loop
+UGAGACCUCGGGCUACAACACGGGACUCGGGCGCUGCUCUGACCCCUCGUGUCUUGUGUUGCAGCCGGAGGGACGCAG
+((...((((.((((.(((((((((((.((((.((......).).)).)).))))))))))).)))).))))....)).
+>ssc-mir-190b MI0017988 Sus scrofa miR-190b stem-loop
+UGCUUCUGUGUGAUAUGUUUGAUAUUGGGUUGUUUAAUUAGGAACCAACUAAAUGUCAAACAUAUUCUUACAGCAGUAGGCAA
+((((((((((((((((((((((((((.((((((((......))).))))).)))))))))))))))...))).))).))))).
+>ssc-mir-218b MI0017989 Sus scrofa miR-218b stem-loop
+GGGCUUUCCUUUGUGCUUGAUCUAACCAUGUGGUGGAACGAUGGAAACGGAACAUGGUUCUGUCAAGCACCGCGGAAAGCUCCG
+(((((((((...(((((((((..((((((((..........((....))..))))))))..)))))))))...))))))).)).
+>ssc-mir-219 MI0017990 Sus scrofa miR-219 stem-loop
+CCGCGGCUCUUGAUUGUCCAAACGCAAUUCUCGAGUCUAUAGCUCUGGCCGAGAGUUGAGUCUGGACGUCCCGAGCCGUCGCC
+.((((((((..(((.(((((.((.(((((((((.(((.........)))))))))))).)).))))))))..)))))).))..
+>ssc-mir-429 MI0017991 Sus scrofa miR-429 stem-loop
+GCCGCCGAUGGGUGUCUUACCAGGCACGGUUAGAUCUGGUUCUUCUGUCUAAUACUGUCUGGUAAUGCCGUCCAUUCCCGG
+.(((..(((((..(.(((((((((((..(((((((..((....)).)))))))..)))))))))).).)..)))))..)))
+>ssc-mir-486-2 MI0017992 Sus scrofa miR-486-2 stem-loop
+CCCUGACGGGUCCUGUACUGAGCUGCCCCGAGGCCCUCACUGUGCCCAGCUCGGGCCAGCUCAGUACCCGGCGCGUCGGGGU
+((((((((.(((..(((((((((((.((((((((.(.....).)))....))))).)))))))))))..))).)))))))).
+>ssc-mir-491 MI0017993 Sus scrofa miR-491 stem-loop
+UUAGCUGGGUAGUGGGGAACCCUUCCAUGAGGAGUAGAACACUCCUUAUGCAAGAUUCCCUUCUACCUGACUGGGU
+((((..((((((.((((((..(((.((((((((((.....)))))))))).))).)))))).))))))..))))..
+>ssc-mir-545 MI0017994 Sus scrofa miR-545 stem-loop
+UUAGUAGGCCUCAGUAAAUGUUUAUUGGAUGAAUAAAUGAAUGACUCAUCAACAAACAUUUAUUGUGUGCCUGCUAACG
+((((((((((.((((((((((((....(((((.............)))))...)))))))))))).).)))))))))..
+>ssc-mir-615 MI0017995 Sus scrofa miR-615 stem-loop
+GGGAGGGGCGGGAGGGGGCUCCCCGGUGCUCGGAUCUCGAGGGUGCUUAUUGUUCGGUCCGAGCCUGGGUCUCCCUCUCCCCCCCACC
+.((.((((.(((((((((...(((((.((((((((..((((.(.......).)))))))))))))))))...))))))))))))).))
+>ssc-mir-1343 MI0017996 Sus scrofa miR-1343 stem-loop
+GCUUCGGUGCUGGGGAGCGGCCCCCGGGCGGGCCUCUGCUCUGGCCCCUCCUGGGGCCCGCACUCUCGCUCCGGGUCCG
+..(((((.((.((((.((((.(((((((.(((((........)))))..))))))).)))).)))).)).)))))....
+>ssc-mir-2320 MI0017997 Sus scrofa miR-2320 stem-loop
+GCUGUCCCCAUGGCACAGGGUCCAGCUGUCGGCUGUAAUACCCGAUGGGUCGAUGAUGGUCCCUGUGUUUGGGGCGAGCAC
+(((..(((((.(((((((((.(((..((((((((.............)))))))).))).))))))))))))))..)))..
+>ssc-let-7d MI0022120 Sus scrofa let-7d stem-loop
+GUUCCUAGGAAGAGGUAGUAGGUUGCAUAGUUUUAGGGCAGAGAUUUUGCCCACAAGGAGGUAACUAUACGACCUGCUGCCUUUCUUAGGGCCUUA
+(..(((((((.((((((((((((((.((((((...(((((((...))))))).(.....)..)))))).)))))))))))))))))))))..)...
+>ssc-let-7f-2 MI0022121 Sus scrofa let-7f-2 stem-loop
+UCUAUCAGAGUGAGGUAGUAGAUUGUAUAGUUGUGGGGUAGUGAUUUUACCCUGUUCAGGAGAUAACUAUACAAUCUAUUGCCUUCCCUGAGGAGUA
+(((.((((.(..(((((((((((((((((((((((((((((.....))))))).........))))))))))))))))))))))..))))))))...
+>ssc-mir-7-1 MI0022122 Sus scrofa miR-7-1 stem-loop
+CAGCCCCAUCUGGAAGACUAGUGAUUUUGUUGUUGUCUCACUGCGCUCAACAACAAGUCCCAGUCUGCCGCAUGGUGCCGGCCA
+..(((((((.(((.(((((.(.(((((.(((((((............))))))))))))).))))).))).))))....)))..
+>ssc-mir-9-3 MI0022123 Sus scrofa miR-9-3 stem-loop
+CCCGUUUCUCUCUUUGGUUAUCUAGCUGUAUGAGUGCCACAGAGCCGUCAUAAAGCUAGAUAACCGAAAGUAGAAAUGACU
+..(((((((((.(((((((((((((((.(((((..((......))..))))).))))))))))))))))).)))))))...
+>ssc-mir-20b-1 MI0022124 Sus scrofa miR-20b-1 stem-loop
+CCGGCAGUACCAAAGUGCUCACAGUGCAGGUAGGUUUUGCAUUACUCUACUGUAGUGUGGGCACUUCCAGUACUCUUGGA
+((((.(((((..(((((((((((.(((((.(((((........)).)))))))).)))))))))))...))))).)))).
+>ssc-mir-20b-2 MI0022125 Sus scrofa miR-20b-2 stem-loop
+CCGGCAGUACCAAAGUGCUCACAGUGCAGGUAGGUUUUGCAUUACUCUACUGUAGUGUGGGCACUUCCAGUACUCUUGGA
+((((.(((((..(((((((((((.(((((.(((((........)).)))))))).)))))))))))...))))).)))).
+>ssc-mir-29b-2 MI0022126 Sus scrofa miR-29b-2 stem-loop
+CUUCUGGAAGCUGGUUUCACAUGGUGGCUUAGAUUUUUCCAUCUUUGUAUCUAGCACCAUUUGAAAUCAGUGUUUUAGGAGUAA
+(((((((((((((((((((.((((((.((.((((..............)))))))))))).)))))))))).)))))))))...
+>ssc-mir-31 MI0022127 Sus scrofa miR-31 stem-loop
+ACUGGAGAGGAGGCAAGAUGCUGGCAUAGCUGUUAAACUGAGAACCUGCUAUGCCAACAUAUUGCCAUCUUUCUUGUC
+((.((((((..(((((.(((.(((((((((.(((........)))..))))))))).))).)))))..)))))).)).
+>ssc-mir-34c-2 MI0022128 Sus scrofa miR-34c-2 stem-loop
+UCUAGUUACUAGGCAGUGUAGUUAGCUGAUUGCUGAUAAAACCAAUCACUAACCACACGGCCAGGUAAAAAGAU
+(((..(((((.(((.((((.(((((.((((((.(......).))))))))))).)))).))).)))))..))).
+>ssc-mir-132 MI0022129 Sus scrofa miR-132 stem-loop
+CUCCAGGGCAACCGUGGCUUUCGAUUGUUACUGUGGGAACCGGAGGUAACAGUCUACAGCCAUGGUCGCCCCGCAGCA
+.....((((.(((((((((...((((((((((.(((...)))..))))))))))...))))))))).)))).......
+>ssc-mir-137 MI0022130 Sus scrofa miR-137 stem-loop
+ACUCUCUUCGGUGACGGGUAUUCUUGGGUGGAUAAUACGGAUUACGUUGUUAUUGCUUAAGAAUACGCGUAGUCGAGGAGAG
+.((((((((((..(((.(((((((((((..(.(((((((.....)).))))))..))))))))))).)))..))))))))))
+>ssc-mir-138 MI0022131 Sus scrofa miR-138 stem-loop
+GCGGUGGGGCAGCUGGUGUUGUGAAUCAGGCCGUUGCCAAUCAGAGAACGGCUACUUCACAACACCAGGGUCACACCCCACCACA
+(.(((((((...(((((((((((((...(((((((..(.....)..)))))))..))))))))))))).......))))))).).
+>ssc-mir-144 MI0022132 Sus scrofa miR-144 stem-loop
+GCCCUGGCUGGGAUAUCAUCAUAUACUGUAAGUUUGCGAUGAGACACUACAGUAUAGAUGAUGUACUAGUCCGGGU
+((((.((((((.((((((((.(((((((((.((((......))))..))))))))))))))))).)))))).))))
+>ssc-mir-150-1 MI0022133 Sus scrofa miR-150-1 stem-loop
+CUCGGCCCUAUCUCCCAACCCUUGUACCAGUGCGUGCCUCAGUCCCUGGUACAGGAAUGGGGGGCAGGGACCUGGGG
+(((((((((..((((((..(((.(((((((.((........))..))))))))))..))))))..)))).)).))).
+>ssc-mir-150-2 MI0022134 Sus scrofa miR-150-2 stem-loop
+CUCGGCCCUAUCUCCCAACCCUUGUACCAGUGCGUGCCUCAGUCCCUGGUACAGGAAUGGGGGGCAGGGACCUGGGG
+(((((((((..((((((..(((.(((((((.((........))..))))))))))..))))))..)))).)).))).
+>ssc-mir-182 MI0022135 Sus scrofa miR-182 stem-loop
+UCGCACCGUUUUUGGCAAUGGUAGAACUCACACUGGUGAGAUAAUGGGAUCCGGUGGUUCUAGACUUGCCAACUAUGGUGCGAG
+(((((((((..(((((((.(.((((((...((((((..............))))))))))))..))))))))..))))))))).
+>ssc-mir-190a MI0022136 Sus scrofa miR-190a stem-loop
+GGCCUCUGUGUGAUAUGUUUGAUAUAUUAGGUUGUUAUUUAAUCCAACUAUAUAUCAAACAUAUUCCUACAGUGUCUUGCCC
+((((.(((((..(((((((((((((((..(((((..........))))))))))))))))))))..).)))).)....))).
+>ssc-mir-194a MI0022137 Sus scrofa miR-194a stem-loop
+UGCCACCCCCUGUAACAGCAACUCCAUGUGGAAGUGCCCACUAGUUCCAGUGGGGCUGCUGUUAUCUGGGGUGGGG
+..(((((((..(((((((((.((((((.(((((.((.....)).))))))))))).)))))))))..)))))))..
+>ssc-mir-196a-1 MI0022138 Sus scrofa miR-196a-1 stem-loop
+CUGAGUGAAUUAGGUAGUUUCAUGUUGUUGGGCCUGGAUUUCUGAACACAACGACAUUAAACCACCCGACUCACGGCAGU
+(((.((((.(..(((.((((.((((((((((..(.((....)))..).))))))))).)))).)))..).))))..))).
+>ssc-mir-196b-2 MI0022139 Sus scrofa miR-196b-2 stem-loop
+GUCGGUGAUUUAGGUAGUUUCCUGUUGUUGGGAUCCACCUUUCUCUCGACAGCACGACACUGCCUUCAUUACUUCAGU
+...((((((..(((((((.((.(((((((((((..........))))))))))).)).)))))))..)))))).....
+>ssc-mir-212 MI0022140 Sus scrofa miR-212 stem-loop
+GCGCGCCGGCACCUUGGCUCUAGACUGCUUACUGCCCGGGCCGCCCUCAGUAACAGUCUCCAGUCACGGCCACCGACGCCUG
+..(((.(((..((.(((((..((((((.((((((...(((...))).))))))))))))..))))).))...))).)))...
+>ssc-mir-216-2 MI0022141 Sus scrofa miR-216-2 stem-loop
+UGAGUUGGCUUAAUCUCAGCUGGCAACUGUGAGAUGUUCAUACAAUCCCCCACAGUGGUCUCUGGGAUUAUGCUAAACAGAG
+....(((((.(((((((((..(((.((((((.(((((....)).)))...)))))).))).))))))))).)))))......
+>ssc-mir-217-2 MI0022142 Sus scrofa miR-217-2 stem-loop
+AUGUCGCAGAUACUGCAUCAGGAACUGAUUGGAUAAGAAUUGGUCACCAUCAGUUCUUAAUGCAUUGCCUUCAGCAUC
+((((.(.((.((.(((((.((((((((((.((((........))).).)))))))))).))))).)).)).).)))).
+>ssc-mir-218-2 MI0022143 Sus scrofa miR-218-2 stem-loop
+AGAUUUUCUGUUGUGCUUGAUCUAACCAUGUGGUUGCCAGGUAUGAGUAAAACAUGGUUCUGUCAAGCACCAUGGAACGUCA
+.(((.((((((.(((((((((..((((((((..((((((....)).)))).))))))))..))))))))).)))))).))).
+>ssc-mir-339-2 MI0022144 Sus scrofa miR-339-2 stem-loop
+UAAGACAAGGUCCCUGUCCUCCAGGAGCUCAUGGUCCAAUAGAAGCAUAUAUACAAAUGGCUCUGAGGGGAGAUCCCGCUGUGGCU
+....(((.((...((.(((((..(((((.(((......(((......)))......))))))))))))).))...))..)))....
+>ssc-mir-340-2 MI0022145 Sus scrofa miR-340-2 stem-loop
+CCUGGUGUGAUUAUAAAGCAAUGAGACUGAUUGUCAUAUGUCGUUUGUGGGAUCCGUCUCAGUUACUUUAUAGCCAUACCUGGU
+((.((((((..(((((((...((((((.((((.(((((.......))))))))).))))))....)))))))..)))))).)).
+>ssc-mir-345-2 MI0022146 Sus scrofa miR-345-2 stem-loop
+ACCCAGGUCUGCUGACUCCUAGUCCAGUGCUUGUGAUGGCUGGUGGGCCCUGAACUAGGGGUCUGGAGGCCUGGGUUU
+((((((((((.(.((((((((((.(((.(((..(.(....).)..))).))).)))))))))).).))))))))))..
+>ssc-mir-363-2 MI0022147 Sus scrofa miR-363-2 stem-loop
+UUGCUGUUGUCGGGUGGAUCACGAUGCAAUUUUGAUUAGUAUCAUAGGAGAAAAAUUGCACGGUAUCCAUCUGUAAACCGCAGGA
+((((.(((..(((((((((..((.(((((((((..(((......)))....)))))))))))..)))))))))..))).))))..
+>ssc-mir-370 MI0022148 Sus scrofa miR-370 stem-loop
+AAGACAGAGAAGCCAGGUCACGUCUCUGCAGUUACACAGCUCACGAGUGCCUGCUGGGGUGGAACCUGGUCUGUCUGUCU
+.(((((((.(..((((((..(..(((.((((.(((.(.......).))).)))).)))..)..))))))..).)))))))
+>ssc-mir-452 MI0022149 Sus scrofa miR-452 stem-loop
+AAGCACUUACAACUGUUUGCAGAGGAAACUGAGACUUUGUAACUACAUCUCAGUCUCAACUGCAAAGAAGUAAGUGCUUA
+((((((((((...(.(((((((..((.(((((((...(((....)))))))))).))..))))))).).)))))))))).
+>ssc-mir-489 MI0022150 Sus scrofa miR-489 stem-loop
+UGGCAGCUUGGUGGUCGUAUGUGUGGCGCCAUCUACUUGAGCGGUUAGGAGUGACAUCACAUAUACGGCGGCUAAACUGCU
+.(((((.(((((.((((((((((((..(.((.((.(((((....))))))))).)..)))))))))))).))))).)))))
+>ssc-mir-490-2 MI0022151 Sus scrofa miR-490-2 stem-loop
+CAUUGUUCGACACCAUGGAUCCCCAGGUGGGUCACGUUUCAAGAUACACCAACCUGGAGGACUCCAUGCUGUUGAGCUGUU
+....((((((((.(((((((((((((((.(((...(((....)))..))).)))))).))).)))))).))))))))....
+>ssc-mir-493 MI0022152 Sus scrofa miR-493 stem-loop
+CCCCAGGGCCUUGUACAUGGUAGGCUUUCAUUCAUUCGUUUGCACAUGCGGUGAAGGUCUACUGUGUGCCAGGCCCUGUGCCA
+...((((((((.(((((((((((((((((((((((..(....)..))).)))))))))))))))))))).)))))))).....
+>ssc-mir-551a MI0022153 Sus scrofa miR-551a stem-loop
+UGGUGACCCUGGAAAUCCAGAGCGGGUGAGGCCUGUCUGACUGUUUCUAGGCGACCCACUCUUGGUUUCCAUGGUUGCCC
+.((..(((.((((((((.((((.((((...(((((............))))).)))).)))).)))))))).)))..)).
+>ssc-mir-582 MI0022154 Sus scrofa miR-582 stem-loop
+CUCUUUGGUUACAGUUGUUCAACCAGUUACUAAUCUAACUAACUGUAACCGGUUGAACAACUGAACCCAAAGGGUGC
+((((((((...(((((((((((((.(((((..............))))).)))))))))))))...))))))))...
+>ssc-mir-671 MI0022155 Sus scrofa miR-671 stem-loop
+CAGGAAGAGGAGGAAGCCCUGGAGGGGCUGGAGGUGAUGGAUGUUUUCCUCCGGUUCUCAGGGCUCCACCUUUUCCGGGC
+..((((((((.(((.((((((..(((((((((((.(((....)))..)))))))))))))))))))).))))))))....
+>ssc-mir-676-2 MI0022156 Sus scrofa miR-676-2 stem-loop
+AACGCGUGACUCUUCAAUCUCAGGACUCGCAUAAUUAGCAGAAUGCCGUCCUAAGGUUGUUGAGUUCUGCGUUUCU
+((((((.(((((..((((((.(((((..((((..........)))).))))).))))))..))))).))))))...
+>ssc-mir-874 MI0022157 Sus scrofa miR-874 stem-loop
+UGGUGUUAGCCCUGCGGCCCCACGCACCAGGGUAAGAGAGACUCUCGCUUCCUGCCCUGGCCCGAGGGACCGACUGGCUGGGCC
+.(((.((((((...(((.(((.((..((((((((.(((.(.....)..))).))))))))..)).))).)))...)))))))))
+>ssc-mir-1249-1 MI0022158 Sus scrofa miR-1249-1 stem-loop
+UGUUUGCAUGGGGAGGAGGGAGGAGAUGGGCCAAGUUCCCUCUGCCUGGAACGCCCUUCCCCCCCUUCUUCACCUAGCGAAC
+.((((((.((((((((((((.((.((.((((...(((((........))))))))).)).)).)))))))).))))))))))
+>ssc-mir-1249-2 MI0022159 Sus scrofa miR-1249-2 stem-loop
+UGUUUGCAUGGGGAGGAGGGAGGAGAUGGGCCAAGUUCCCUCUGCCUGGAACGCCCUUCCCCCCCUUCUUCACCUAGCGAAC
+.((((((.((((((((((((.((.((.((((...(((((........))))))))).)).)).)))))))).))))))))))
+>ssc-mir-1468 MI0022160 Sus scrofa miR-1468 stem-loop
+UGGGUGGUUUCUCCGUUUGCCUGUUUUGCUGACGUUCAUUUGACUCAUUCUCAGCAAAAUAAGCAAAUGGAAAAUUCAUCCAU
+((((((..((.(((((((((.(((((((((((..................))))))))))).))))))))).))..)))))).
+>ssc-mir-3613 MI0022161 Sus scrofa miR-3613 stem-loop
+GGGUUUGGAUUGUUGUACUUUUUUUUUUGUUCGUUGCAUUUUUAGGAACAAAAAAAAAAGCCCAACCCUUCACACCG
+.(((.((((..((((..(((((((((((((((.(.........).)))))))))))))))..))))..)))).))).
+>ssc-mir-2366-1 MI0022162 Sus scrofa miR-2366-1 stem-loop
+GCCCUGGCCCCAGGGUCCUCUUGUCUGAGCCCCAGAAAGAGGAGAGAGCGCUGGGUCACAGAAGAGGGUCUGGGGGACAGGUU
+..((((.((((.((..(((((..((((.(.(((((...(.........).))))).).)))))))))..)).)))).))))..
+>ssc-mir-2366-2 MI0022163 Sus scrofa miR-2366-2 stem-loop
+GCCCUGGCCCCAGGGUCCUCUUGUCUGAGCCCCAGAAAGAGGAGAGAGCGCUGGGUCACAGAAGAGGGUCUGGGGGACAGGUU
+..((((.((((.((..(((((..((((.(.(((((...(.........).))))).).)))))))))..)).)))).))))..
+>ssc-mir-2411 MI0022164 Sus scrofa miR-2411 stem-loop
+AGAGGCAAUGUGGAGUGACUGUCAGAUGCAGCCAUCAGAAUAGGUGAUUUGGCUGAACUGUCAUACUCCCACAUCCUCCACCA
+.((((..((((((((((..((.(((...(((((((((.......)))..))))))..))).)))))).)))))))))).....
+>ssc-mir-2483 MI0022167 Sus scrofa miR-2483 stem-loop
+UGAAAAGUUCCGUCAACCAUCCAGCUGUUUGGGGUGAUGCAAACAAACAUCUGGUUGGUUGAGAGAAUUUUUUACU
+((((((((((..(((((((.((((.((((((..(.....)...)))))).)))).)))))))..))))))))))..
+>ssc-mir-7134 MI0023567 Sus scrofa miR-7134 stem-loop
+AUGUCCGCGGGUUCCCUAUCCCGGGUUGGUUGAGUUCGCGGAUGCGGAACCUGCGGAUACGG
+.((((((((((((((.(((((((..((.....))..)).))))).))))))))))))))...
+>ssc-mir-7135 MI0023568 Sus scrofa miR-7135 stem-loop
+UCUCUGAGACACUGACUGUGGGGGUAUGUGUGUGUCCAUCUGUCUGUGUCUCUGAGCAG
+.(((.(((((((.(((.(((((..((....))..)))))..))).))))))).)))...
+>ssc-mir-7136 MI0023569 Sus scrofa miR-7136 stem-loop
+UCUGGUCCAGACACUGUGGAGCUGAAGAGACCAACACUUCUCAGUGUUUGAACCAGAAGC
+((((((.(((((((((.((((.((..(....)..)))))).))))))))).))))))...
+>ssc-mir-7137 MI0023570 Sus scrofa miR-7137 stem-loop
+CGGGGGAACUCCCAGACCAGCUUCCACUCCCUUCAAGAAGCUGGUCUGGGAGUUCCCGGG
+...(((((((((((((((((((((............)))))))))))))))))))))...
+>ssc-mir-7138 MI0023571 Sus scrofa miR-7138 stem-loop
+UCCCAGCAAGUGUCCAUCCAUCUCUGUGUCCAUAAGAGAGGACUGGCCUUGCAGGGUGC
+.(((.(((((.(.((((((.(((((.........)))))))).))))))))).)))...
+>ssc-mir-7139 MI0023572 Sus scrofa miR-7139 stem-loop
+CCAUUCCUUCGUCUGUGCACUAGAAAAAUAACAGUACCUAGGGCACAGGAUGGGAUGAGG
+.((((((....(((((((.((((..............)))).)))))))..))))))...
+>ssc-mir-7140 MI0023573 Sus scrofa miR-7140 stem-loop
+CAACUCAAGGGGGCAUCAUUCACUUCAUAGUCUCUGUGAAUGAUGCCCCUUAGAGUUGAGC
+((((((.((((((((((((((((............)))))))))))))))).))))))...
+>ssc-mir-7141 MI0023574 Sus scrofa miR-7141 stem-loop
+GACGGUUUGGACGUUAAGAACAAUUCAUAUAUUUUAUUAUAUGAAUCCUUCUUAACGUCCAAACCGUUCC
+((((((((((((((((((((..(((((((((......)))))))))..))))))))))))))))))))..
+>ssc-mir-7142 MI0023575 Sus scrofa miR-7142 stem-loop
+ACUCUCCGAGGGGCCUUCAAGGGCAAGUUCUUGUCACCUUUGUUGGCUCCUCUGAAGUGA
+(((.((.((((((((..(((((((((....)))...))))))..)))))))).)))))..
+>ssc-mir-7143 MI0023576 Sus scrofa miR-7143 stem-loop
+AAGCUCAGCUCUGAAGUGCAGAGGCUGUUUGCACUUCCUCUGCACUUGAAGCUGAGACUGA
+.(((((((((.(.(((((((((((..((....))..))))))))))).)))))))).))..
+>ssc-mir-7144 MI0023577 Sus scrofa miR-7144 stem-loop
+ACUUUCCCGGGAUUUGGAGCGCUUCCGCACGCGCUCCUUGUCCCGAGACCGCGA
+....((.((((((..(((((((........)))))))..)))))).))......
