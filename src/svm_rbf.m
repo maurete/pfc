@@ -1,13 +1,18 @@
 function svm_rbf ( dataset, featset, random_seeds )
-    
+
     if nargin < 3, random_seeds = [303456; 456789; 5829]; end
-    
+
     % aux functions
     pick      = @(x,n) x(randsample(size(x,1),min(size(x,1),n)),:);
     shuffle   = @(x)   x(randsample(size(x,1),size(x,1)),:);
     stpick    = @(i,x,n) x(strandsample(random_seeds(i),size(x,1),min(size(x,1),n)),:);
     stshuffle = @(i,x)   x(strandsample(random_seeds(i),size(x,1),size(x,1)),:);
     function o=zerofill(i);o=0;if i;o=i;end;end;
+    function o=neighbor2(p1,p2,d,w);o=[];
+        P1 = exp([log(p1)-w/2^(d-1):1/2^(d-1):log(p1)+w/2^(d-1)]);
+        P2 = exp([log(p2)-w/2^(d-1):1/2^(d-1):log(p2)+w/2^(d-1)]);
+        for i=P1;o=[o [ ones(size(P1))*i; P2 ] ];end
+    end
 
     % featureset indexes
     fidx = { 1:66; 1:32; 33:36; 37:59; 60:66; 1:36; [1:36 60:66]; ...
@@ -19,14 +24,14 @@ function svm_rbf ( dataset, featset, random_seeds )
              'extra+sequence', 'triplet+structure', 'triplet+sequence', ...
              'not-extra' };
     features = fidx{featset};
-    
+
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     fprintf('#\n> begin svm-rbf\n#\n' );
 
     % keep record of this experiment for review
     S = struct();
-    S.random_seeds = random_seeds; 
+    S.random_seeds = random_seeds;
     S.featureset = featset;
     S.partitions = 5;
     S.gridsearch = 4;
@@ -35,7 +40,7 @@ function svm_rbf ( dataset, featset, random_seeds )
     S.begintime = clock;
     S.time = 0;
     S.numcv = 0;
-    
+
     S.data = struct();
     for i=1:length(S.random_seeds)
         [ S.data(i).train S.data(i).test] = load_data( dataset, S.random_seeds(i));
@@ -45,20 +50,20 @@ function svm_rbf ( dataset, featset, random_seeds )
         [S.data(i).cv_train_pseudo S.data(i).cv_test_pseudo] = ...
             stpart(S.random_seeds(i), S.data(i).train.pseudo, S.partitions);
     end
-    
+
     % file where to save tabulated train/test data
     tabfile = 'resultsv2.tsv'
     if ~exist( tabfile )
         fid = fopen( tabfile, 'a' );
         fprintf( fid, [ '#dsetup\tclass\tdataset\tfeatset\t' ...
-                        'classifier\tparam1\tparam2\tP\n' ] ); 
+                        'classifier\tparam1\tparam2\tP\n' ] );
         fclose(fid);
     end
     function writetab(fid,cls,dset,param1,param2,result)
         fprintf(fid, '%s\t%d\t%s\t%d\t%s\t%9.8g\t%9.8g\t%9.8g\n', ...
                 dataset, cls, dset, featset, 'svm-rbf', param1, param2, result );
     end
-    
+
     fprintf('> dataset\t%s\n', dataset );
     fprintf('> featureset\t%s\n', fname{featset} );
     fprintf([ '# begin cross-validation training\n> partitions\t%d\n#\n', ...
@@ -73,7 +78,7 @@ function svm_rbf ( dataset, featset, random_seeds )
             size(S.data(1).train.pseudo,   1), ...
             size(S.data(1).cv_train_pseudo,1), ...
             size(S.data(1).cv_test_pseudo, 1));
-    
+
     % create matlab pool
     num_workers = 12;
     if matlabpool('size') == 0
@@ -90,32 +95,30 @@ function svm_rbf ( dataset, featset, random_seeds )
     fprintf('# using %d matlabpool workers\n', matlabpool('size'));
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % Grid-search 
+    % Grid-search
 
     GS = struct();
     % initial sigma-boxconstraint values for grid search
     GS(1).sigma = S.initial_sigma;
     GS(1).boxconstraint = S.initial_boxconstraint;
- 
+    % avoid nested loops by linearizing Z-C matrix
+    GS(1).l_sigma = reshape( diag(GS(1).sigma) * ...
+                             ones(length(GS(1).sigma),...
+                                  length(GS(1).boxconstraint)), 1, []);
+    GS(1).l_boxc  = reshape( ones(length(GS(1).sigma), ...
+                                  length(GS(1).boxconstraint)) * ...
+                             diag(GS(1).boxconstraint), 1, []);
+
     % refine sigma-bc
     for r=1:S.gridsearch
         fprintf('#\n> gridsearch\t%d\n> parameters\t%d\n', ...
-                r, length(GS(r).sigma)*length(GS(r).boxconstraint))
+                r, length(GS(r).l_sigma))
         if r>1
-            esttime = round(S.time/S.numcv * ...
-                            length(GS(r).sigma)*length(GS(r).boxconstraint));
+            esttime = round(S.time/S.numcv * length(GS(r).l_sigma));
             estendt = datevec(datenum(0,0,0,0,0,esttime)+now);
             fprintf('# estimated\t%dm %d\tendtime\t%02d:%02d\n', ...
                     floor(esttime/60), mod(esttime,60), fix(estendt(4:5)))
         end
-      
-        % avoid nested loops by linearizing Z-C matrix
-        GS(r).l_sigma = reshape( diag(GS(r).sigma) * ...
-                                 ones(length(GS(r).sigma),...
-                                      length(GS(r).boxconstraint)), 1, []);
-        GS(r).l_boxc  = reshape( ones(length(GS(r).sigma), ...
-                                      length(GS(r).boxconstraint)) * ...
-                                 diag(GS(r).boxconstraint), 1, []);
 
         N = length(GS(r).l_sigma);
         RS = length(S.random_seeds);
@@ -124,10 +127,10 @@ function svm_rbf ( dataset, featset, random_seeds )
         % results for current r
         res = zeros(N,RS,T);
         % ignore flag, avoid trying nonconvergent values
-        ignore = zeros(size(GS(r).l_sigma));
+        ignore = zeros(1,N);
         % details for random partition
         GS(r).rand = struct();
-  
+
         for rs = 1:RS
             train_real        = S.data(rs).train.real;
             train_pseudo      = S.data(rs).train.pseudo;
@@ -135,19 +138,19 @@ function svm_rbf ( dataset, featset, random_seeds )
             part_train_pseudo = S.data(rs).cv_train_pseudo;
             part_test_real    = S.data(rs).cv_test_real;
             part_test_pseudo  = S.data(rs).cv_test_pseudo;
-          
+
             % details for each iteration
             GS(r).rand(rs).iter = struct();
-    
+
             for t=1:T
                 % shuffle data and separate labels
                 train = shuffle( [  train_real(    part_train_real(:,mod(t,T)+1),:); ...
                                     train_pseudo(part_train_pseudo(:,mod(t,T)+1),:)] );
                 GS(r).rand(rs).iter(t).train_ids  = train(:,68:70);
                 train_lbls                        = train(:,67);
-                GS(r).rand(rs).iter(t).train_lbls = train_lbls;          
+                GS(r).rand(rs).iter(t).train_lbls = train_lbls;
                 train                             = train(:,1:66);
-                
+
                 test_real   =   train_real(  part_test_real(:,mod(t,T)+1),1:66);
                 test_pseudo = train_pseudo(part_test_pseudo(:,mod(t,T)+1),1:66);
 
@@ -161,6 +164,7 @@ function svm_rbf ( dataset, featset, random_seeds )
                     if ignore(n) continue; end
                     Gm = 0;
                     try
+
                         model = svmtrain(train(:,features),train_lbls, ...
                                          'Kernel_Function','rbf', ...
                                          'rbf_sigma',GS(r).l_sigma(n), ...
@@ -168,7 +172,7 @@ function svm_rbf ( dataset, featset, random_seeds )
 
                         res_r = round(svmclassify(model, test_real(:,features)));
                         res_p = round(svmclassify(model, test_pseudo(:,features)));
-                      
+
                         Se = mean( res_r == 1 );
                         Sp = mean( res_p == -1 );
                         Gm = geomean( [Se Sp] );
@@ -178,18 +182,20 @@ function svm_rbf ( dataset, featset, random_seeds )
                             ignore(n) = 1;
                             continue
                         end
-                                                                  
+
                     catch e
                         % ignore this paramset if it does not converge
                         if strfind(e.identifier,'NoConvergence')
                             ignore(n) = 1;
+                            Gm = 0;
                         elseif strfind(e.identifier,'InvalidInput')
                             ignore(n) = 1;
+                            Gm = 0;
                         else
                             fprintf('! %s / %s', e.identifier, e.message)
                         end
                     end % try
-              
+
                     % save Gm to results array
                     res(n,rs,t) = Gm;
                 end % parfor n
@@ -198,10 +204,19 @@ function svm_rbf ( dataset, featset, random_seeds )
 
         % save avg performance
         GS(r).gm = mean(mean(res,3),2);
-      
+
         % highlight best-performing paramsets
-        GS(r).best = [ abs(GS(r).gm-max(GS(r).gm)) < 4^(-r-2) ]';
-      
+        % select values on the 95th percentile and above
+        [ zzz indx ] = sort(GS(r).gm);
+        best0 = zeros(size(GS(r).gm'));
+        best0(indx(floor(N*0.8):end)) = 1;
+        % keep only absolute best values
+        best1 = [ abs(GS(r).gm-max(GS(r).gm)) < 4^(-r-2) ]';
+
+        GS(r).best = best0 .* best1 .* (1-ignore);
+
+        fprintf('# selected %d out of %d params as best.\n', sum(GS(r).best), N)
+
         if max(GS(r).gm) == 0
             fprintf('! no convergence, sorry\n')
             fid = fopen( tabfile, 'a' );
@@ -212,27 +227,25 @@ function svm_rbf ( dataset, featset, random_seeds )
             fclose(fid)
             return
         end
-              
+
         % refine grid around central value n
         neighbor = @(n,d,w) exp([log(n)-w/2^(d-1):1/2^(d-1):log(n)+w/2^(d-1)]);
-            
+
         % new parameters for next iteration
-        ns = [];
-        nc = [];
+        np = [];
         fprintf('#\n# idx\tlog(sigma)\tlog(C)\t\tgeomean\n');
         fprintf(   '# ---\t----------\t------\t\t-------\n');
-      
+
         % do not consider more than 50% of tests as "best"
-        brkcount = length(GS(r).best)/2;
+        % brkcount = length(GS(r).best)/2;
         for d=find(GS(r).best)
             fprintf('< %d\t%8.6f\t%8.6f\t%8.6f\n', d, ...
                     log(GS(r).l_sigma(d)), log(GS(r).l_boxc(d)), GS(r).gm(d) );
             % append new values to ns,nc
-            ns = [ ns; neighbor(GS(r).l_sigma(d),r,4)'];
-            nc = [ nc, neighbor(GS(r).l_boxc(d), r,4) ];
+            np = [ np, neighbor2(GS(r).l_sigma(d),GS(r).l_boxc(d),r,2)];
             % decrease break counter
-            brkcount = brkcount-1;
-            if brkcount < 0, break; end
+            %brkcount = brkcount-1;
+            %if brkcount < 0, break; end
         end % for d
 
         GS(r).bestZ = ( GS(r).l_sigma(find(GS(r).best)) );
@@ -241,18 +254,21 @@ function svm_rbf ( dataset, featset, random_seeds )
         % values for next grid refine
         if r < S.gridsearch
             GS(r+1).precision     = 1/2^(r-1); % as in neighbor function
-            GS(r+1).sigma         = logunique( ns, 1e-5 );
-            GS(r+1).boxconstraint = logunique( nc, 1e-5 );
+            new = logunique( np, 1e-5 );
+            GS(r+1).l_sigma       = new(1,:);
+            GS(r+1).l_boxc        = new(2,:);
+            GS(r+1).sigma         = logunique(new(1,:),1e-5)';
+            GS(r+1).boxconstraint = logunique(new(2,:),1e-5);
         end
-      
-        S.numcv = S.numcv + length(GS(r).l_sigma);
+
+        S.numcv = S.numcv + length(GS(r).l_sigma) - sum(ignore);
         S.time  = round(etime(clock,S.begintime));
         fprintf( '#\n> time\t%02d:%02d\n', floor(S.time/60), mod(S.time,60))
-      
-    end % for r    
-              
+
+    end % for r
+
     S.GS = GS;
- 
+
     % perform classification on test datasets
     bidx = find(S.GS(S.gridsearch).best,1,'first');
 
@@ -260,7 +276,7 @@ function svm_rbf ( dataset, featset, random_seeds )
     fid = fopen( tabfile, 'a' );
     writetab(fid, 0, 'train', log(S.GS(S.gridsearch).l_sigma(bidx)), ...
              log(S.GS(S.gridsearch).l_boxc(bidx)), ...
-             S.GS(S.gridsearch).gm(bidx))    
+             S.GS(S.gridsearch).gm(bidx))
     if max(S.GS(S.gridsearch).gm) < 0.75
         fprintf('! train CV rate too low, not testing\n')
         for i=1:length(S.data(1).test)
@@ -269,43 +285,38 @@ function svm_rbf ( dataset, featset, random_seeds )
         fclose(fid);
         return
     end
-              
+
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     fprintf('#\n# begin testing: Z=%g, C=%g\n', ...
             log(S.GS(S.gridsearch).bestZ(1)), ...
             log(S.GS(S.gridsearch).bestC(1)));
-    S.test = zeros(length(S.data(rs).test), length(S.random_seeds), S.partitions);
+    S.test = zeros(length(S.data(rs).test), length(S.random_seeds));
 
     for rs=1:length(S.random_seeds)
+
         train_real        = S.data(rs).train.real;
         train_pseudo      = S.data(rs).train.pseudo;
-        part_train_real   = S.data(rs).cv_train_real;
-        part_train_pseudo = S.data(rs).cv_train_pseudo;
-        
+
         R = S.gridsearch;
-        T = S.partitions;
-        for t=1:T
-            % entreno
-            train = shuffle([train_real(    part_train_real(:,mod(t,T)+1),:); ...
-                             train_pseudo(part_train_pseudo(:,mod(t,T)+1),:)] );
-            train_lbls = train(:,67);
-            train      = train(:,1:66);
-            model = svmtrain(train(:,features),train_lbls, ...
-                             'Kernel_Function','rbf', ...
-                             'rbf_sigma',S.GS(R).bestZ(1), ...
-                             'boxconstraint',S.GS(R).bestC(1));
-        
-            for i=1:length(S.data(rs).test)
-                cls_results = round(svmclassify(model, S.data(rs).test(i).data(:,features)));
-                S.test(i,rs,t) = mean( cls_results == S.data(rs).test(i).class);
-            end
-        end % for t        
+
+        train = stshuffle(rs,[train_real;train_pseudo]);
+
+        train_lbls = train(:,67);
+        % train      = train(:,1:66);
+
+        model = svmtrain(train(:,features),train_lbls, ...
+                         'Kernel_Function','rbf', ...
+                         'rbf_sigma',S.GS(R).bestZ(1), ...
+                         'boxconstraint',S.GS(R).bestC(1));
+
+        for i=1:length(S.data(rs).test)
+            cls_results = round(svmclassify(model, S.data(rs).test(i).data(:,features)));
+            S.test(i,rs) = mean( cls_results == S.data(rs).test(i).class);
+        end
+
     end % for rs
-    
-    % average for all partitions
-    S.test = mean(S.test,3);
-    
+
     % print and write test results
     fprintf('# \t\tdataset\t\t\tclass\tsize\tperformance\n');
     fprintf('# \t\t-------\t\t\t-----\t----\t-----------\n');
@@ -314,11 +325,11 @@ function svm_rbf ( dataset, featset, random_seeds )
         fprintf('+ %32s\t%d\t%d\t%8.6f\n',...
                 S.data(1).test(i).name, S.data(1).test(i).class, ...
                 size(S.data(1).test(i).data,1), mean(S.test(i,:)));
-        
+
         writetab(fid, S.data(1).test(i).class, S.data(1).test(i).name, ...
                  log(S.GS(S.gridsearch).bestZ(1)), ...
                  log(S.GS(S.gridsearch).bestC(1)), mean(S.test(i,:)))
     end
     fclose(fid);
-    
+
 end
