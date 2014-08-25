@@ -1,7 +1,10 @@
-function mlp ( dataset, featset, balance, randseed )
+function mlp ( dataset, featset, balance, randseed, tabfile, data )
 
-    if nargin < 3, balance = 0; end
+    cached_data = true;
+    if nargin < 6, cached_data = false; end
+    if nargin < 5, tabfile = 'resultsv3.tsv'; end
     if nargin < 4, randseed = [1135 223626 353 5341]; end
+    if nargin < 3, balance = 0; end
     com = common;
     features = com.fidx{featset};
 
@@ -18,7 +21,7 @@ function mlp ( dataset, featset, balance, randseed )
     trainfunc = 'trainscg';
 
     % file where to save tabulated train/test data
-    tabfile = 'resultsv3.tsv';
+    % tabfile = 'resultsv3.tsv';
 
     % classifier name used for output
     selfname = 'mlp';
@@ -30,17 +33,19 @@ function mlp ( dataset, featset, balance, randseed )
 
     %%% Load data %%%
 
-    data = struct();
-    for i=1:Nrs
-        [ data(i).train data(i).test] = load_data( dataset, randseed(i), false);
-        if balance, data(i).train.pseudo = ...
-                com.stpick(randseed(i), data(i).train.pseudo, size(data(i).train.real,1));
+    if ~ cached_data
+        data = struct();
+        for i=1:Nrs
+            [ data(i).train data(i).test] = load_data( dataset, randseed(i), false);
+            if balance, data(i).train.pseudo = ...
+                    com.stpick(randseed(i), data(i).train.pseudo, size(data(i).train.real,1));
+            end
+            % generate CV partitions
+            [data(i).tr_real data(i).cv_real] = ...
+                stpart(randseed(i), data(i).train.real, Np);
+            [data(i).tr_pseudo data(i).cv_pseudo] = ...
+                stpart(randseed(i), data(i).train.pseudo, Np);
         end
-        % generate CV partitions
-        [data(i).tr_real data(i).cv_real] = ...
-            stpart(randseed(i), data(i).train.real, Np);
-        [data(i).tr_pseudo data(i).cv_pseudo] = ...
-            stpart(randseed(i), data(i).train.pseudo, Np);
     end
 
     %%% timing and output %%%
