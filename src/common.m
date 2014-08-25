@@ -194,4 +194,8 @@ function c = common
                 floor(esttime/60), mod(esttime,60), fix(estendt(4:5)))
     end
 
+    c.time_string = @time_string;
+    function out = time_string(time)
+        out = datestr(time.begintime,'yyyy-mm-dd_HH.MM.SS');
+    end
 end

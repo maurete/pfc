@@ -1,5 +1,8 @@
-function gridsearch ( dataset, featset, kernel, randseed )
+function gridsearch ( dataset, featset, kernel, randseed, tabfile, data )
 
+    cached_data = true;
+    if nargin < 6, cached_data = false; end
+    if nargin < 5, tabfile = 'resultsv3.tsv'; end
     if nargin < 4, randseed = [1135 223626 353 5341]; end
     com = common;
     features = com.fidx{featset};
@@ -28,7 +31,7 @@ function gridsearch ( dataset, featset, kernel, randseed )
     box0 = [-4:2:14];
 
     % file where to save tabulated train/test data
-    tabfile = 'resultsv3.tsv';
+    % tabfile = 'resultsv3.tsv';
 
     fprintf('#\n> begin\t\tsvm-%s\n#\n',kernel);
 
@@ -43,14 +46,16 @@ function gridsearch ( dataset, featset, kernel, randseed )
 
     %%% Load data %%%
 
-    data = struct();
-    for i=1:Nrs
-        [ data(i).train data(i).test] = load_data( dataset, randseed(i));
-        % generate CV partitions
-        [data(i).tr_real data(i).cv_real] = ...
-            stpart(randseed(i), data(i).train.real, Np);
-        [data(i).tr_pseudo data(i).cv_pseudo] = ...
-            stpart(randseed(i), data(i).train.pseudo, Np);
+    if ~ cached_data
+        data = struct();
+        for i=1:Nrs
+            [ data(i).train data(i).test] = load_data( dataset, randseed(i));
+            % generate CV partitions
+            [data(i).tr_real data(i).cv_real] = ...
+                stpart(randseed(i), data(i).train.real, Np);
+            [data(i).tr_pseudo data(i).cv_pseudo] = ...
+                stpart(randseed(i), data(i).train.pseudo, Np);
+        end
     end
 
     %%% timing and output %%%
@@ -154,8 +159,10 @@ function gridsearch ( dataset, featset, kernel, randseed )
         end % for s
 
         [ii jj] = ind2sub(size(g_res),find(g_res==max(max(g_res))));
-        fprintf('\n> gm, c, sigma\t%8.6f\t%4.2f\t%4.2f\n',...
-                g_res(ii,jj,1), grid(ii,jj,2),grid(ii,jj,3))
+        for i=1:length(ii)
+            fprintf('\n> gm, c, sigma\t%8.6f\t%4.2f\t%4.2f\n',...
+                    g_res(ii(i),jj(i),1), grid(ii(i),jj(i),2),grid(ii(i),jj(i),3))
+        end
         time = com.time_tick(time, numel(find(tested&~masked)));
 
         % save average partition-randseed into the grid
@@ -173,6 +180,7 @@ function gridsearch ( dataset, featset, kernel, randseed )
         aux = grid(:,:,1);
         [zz idx]  = sort(aux(1:numel(aux)));
         masked = zeros(size(aux));
+        % mask values below <thr>% of best results
         masked(idx(1:round(thr*numel(aux)))) = 1;
 
         % also mask non-absolute best results
