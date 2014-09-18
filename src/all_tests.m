@@ -3,7 +3,7 @@ function all_tests
     ds = { 'ng-multi', 'batuwita-multi', 'xue', 'ng', 'batuwita'};
     rn = [1135 223626 353 5341 657];
 
-    Np = 5;
+    Np = 20;
 
     com = common;
     time = com.time_init();
@@ -19,23 +19,23 @@ function all_tests
         for i=1:length(rn)
             [ svm_data(i).train svm_data(i).test] = load_data( ds{j}, rn(i));
             [svm_data(i).tr_real svm_data(i).cv_real] = ...
-                stpart(rn(i), svm_data(i).train.real, Np);
+                stpart(rn(i), svm_data(i).train.real, Np, 0.2);
             [svm_data(i).tr_pseudo svm_data(i).cv_pseudo] = ...
-                stpart(rn(i), svm_data(i).train.pseudo, Np);
+                stpart(rn(i), svm_data(i).train.pseudo, Np, 0.2);
 
             [ mlp_data(i).train mlp_data(i).test] = load_data( ds{j}, rn(i), false);
             [mlp_data(i).tr_real mlp_data(i).cv_real] = ...
-                stpart(rn(i), mlp_data(i).train.real, Np);
+                stpart(rn(i), mlp_data(i).train.real, Np, 0.2);
             [mlp_data(i).tr_pseudo mlp_data(i).cv_pseudo] = ...
-                stpart(rn(i), mlp_data(i).train.pseudo, Np);
+                stpart(rn(i), mlp_data(i).train.pseudo, Np, 0.2);
 
             [ bal_data(i).train bal_data(i).test] = load_data( ds{j}, rn(i), false);
             bal_data(i).train.pseudo = ...
                 com.stpick(rn(i), bal_data(i).train.pseudo, size(bal_data(i).train.real,1));
             [bal_data(i).tr_real bal_data(i).cv_real] = ...
-                stpart(rn(i), bal_data(i).train.real, Np);
+                stpart(rn(i), bal_data(i).train.real, Np, 0.2);
             [bal_data(i).tr_pseudo bal_data(i).cv_pseudo] = ...
-                stpart(rn(i), bal_data(i).train.pseudo, Np);
+                stpart(rn(i), bal_data(i).train.pseudo, Np, 0.2);
         end
         time = com.time_tick(time,0);
         for i=1:15
@@ -56,23 +56,23 @@ function all_tests
         for i=1:length(rn)
             [ svm_data(i).train svm_data(i).test] = load_data( ds{j}, rn(i));
             [svm_data(i).tr_real svm_data(i).cv_real] = ...
-                stpart(rn(i), svm_data(i).train.real, Np);
+                stpart(rn(i), svm_data(i).train.real, Np, 0.2);
             [svm_data(i).tr_pseudo svm_data(i).cv_pseudo] = ...
-                stpart(rn(i), svm_data(i).train.pseudo, Np);
+                stpart(rn(i), svm_data(i).train.pseudo, Np, 0.2);
 
             [ mlp_data(i).train mlp_data(i).test] = load_data( ds{j}, rn(i), false);
             [mlp_data(i).tr_real mlp_data(i).cv_real] = ...
-                stpart(rn(i), mlp_data(i).train.real, Np);
+                stpart(rn(i), mlp_data(i).train.real, Np, 0.2);
             [mlp_data(i).tr_pseudo mlp_data(i).cv_pseudo] = ...
-                stpart(rn(i), mlp_data(i).train.pseudo, Np);
+                stpart(rn(i), mlp_data(i).train.pseudo, Np, 0.2);
 
             [ bal_data(i).train bal_data(i).test] = load_data( ds{j}, rn(i), false);
             bal_data(i).train.pseudo = ...
                 com.stpick(rn(i), bal_data(i).train.pseudo, size(bal_data(i).train.real,1));
             [bal_data(i).tr_real bal_data(i).cv_real] = ...
-                stpart(rn(i), bal_data(i).train.real, Np);
+                stpart(rn(i), bal_data(i).train.real, Np, 0.2);
             [bal_data(i).tr_pseudo bal_data(i).cv_pseudo] = ...
-                stpart(rn(i), bal_data(i).train.pseudo, Np);
+                stpart(rn(i), bal_data(i).train.pseudo, Np, 0.2);
         end
         time = com.time_tick(time,0);
         for i=[4 5 8]
