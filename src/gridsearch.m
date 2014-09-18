@@ -17,7 +17,7 @@ function gridsearch ( dataset, featset, kernel, randseed, tabfile, data )
     Nrs = length(randseed);
 
     % number of partitions
-    Np = 5;
+    Np = 20;
 
     % number of grid refinements
     Ngr = 4;
@@ -52,9 +52,9 @@ function gridsearch ( dataset, featset, kernel, randseed, tabfile, data )
             [ data(i).train data(i).test] = load_data( dataset, randseed(i));
             % generate CV partitions
             [data(i).tr_real data(i).cv_real] = ...
-                stpart(randseed(i), data(i).train.real, Np);
+                stpart(randseed(i), data(i).train.real, Np, 0.2);
             [data(i).tr_pseudo data(i).cv_pseudo] = ...
-                stpart(randseed(i), data(i).train.pseudo, Np);
+                stpart(randseed(i), data(i).train.pseudo, Np, 0.2);
         end
     end
 
