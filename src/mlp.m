@@ -12,7 +12,7 @@ function mlp ( dataset, featset, balance, randseed, tabfile, data )
     Nrs = length(randseed);
 
     % number of partitions
-    Np = 5;
+    Np = 20;
 
     % hidden layer sizes to try
     hidden = [5:25];
@@ -42,9 +42,9 @@ function mlp ( dataset, featset, balance, randseed, tabfile, data )
             end
             % generate CV partitions
             [data(i).tr_real data(i).cv_real] = ...
-                stpart(randseed(i), data(i).train.real, Np);
+                stpart(randseed(i), data(i).train.real, Np, 0.2);
             [data(i).tr_pseudo data(i).cv_pseudo] = ...
-                stpart(randseed(i), data(i).train.pseudo, Np);
+                stpart(randseed(i), data(i).train.pseudo, Np, 0.2);
         end
     end
 
@@ -64,7 +64,7 @@ function mlp ( dataset, featset, balance, randseed, tabfile, data )
 
     % crossval results
     cv_res = zeros(1,Nh);
-
+    
     for s = 1:Nrs % random seeds
         for p=1:Np % partitions
 
