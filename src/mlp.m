@@ -1,94 +1,123 @@
-function mlp ( dataset, featset, balance, randseed, tabfile, data )
+function mlp ( dataset, featset, balance, randseed, npart, crit_mad, tabfile, data )
 
-    cached_data = true;
-    if nargin < 6, cached_data = false; end
-    if nargin < 5, tabfile = 'resultsv3.tsv'; end
-    if nargin < 4, randseed = [1135 223626 353 5341]; end
+    if nargin < 8, data = false; end
+    if nargin < 7, tabfile = 'resultsv3.tsv'; end
+    if nargin < 6, crit_mad = false; end
+    if nargin < 5, npart = 40; end
+    if nargin < 4, randseed = 1135; end
     if nargin < 3, balance = 0; end
+
     com = common;
     features = com.fidx{featset};
-
-    % number of random seeds
-    Nrs = length(randseed);
-
-    % number of partitions
-    Np = 20;
-
-    % hidden layer sizes to try
-    hidden = [5:25];
-
-    % MLP train function
-    trainfunc = 'trainscg';
-
-    % file where to save tabulated train/test data
-    % tabfile = 'resultsv3.tsv';
 
     % classifier name used for output
     selfname = 'mlp';
     if balance, selfname = 'mlp-bal';end
 
+    % use bootstrap if number of partitions specified is < 1
+    bootstrap = false;
+    if npart < 1
+        bootstrap = true;
+        % max bootstrap iterations
+        Np = 200;
+    else
+        % number of partitions
+        Np = npart;
+    end
+
+    % number of repeats for mlp
+    Nr = 5;
+
+    % MLP train function
+    trainfunc = 'trainscg';
+
+    % hidden layer sizes to try
+    hidden = [5:25];
+    Nh = length(hidden);
+    
     fprintf('#\n> begin\t%s\n#\n', selfname);
 
     time = com.time_init();
 
     %%% Load data %%%
 
-    if ~ cached_data
+    if ~ data
         data = struct();
-        for i=1:Nrs
-            [ data(i).train data(i).test] = load_data( dataset, randseed(i), false);
-            if balance, data(i).train.pseudo = ...
-                    com.stpick(randseed(i), data(i).train.pseudo, size(data(i).train.real,1));
-            end
-            % generate CV partitions
-            [data(i).tr_real data(i).cv_real] = ...
-                stpart(randseed(i), data(i).train.real, Np, 0.2);
-            [data(i).tr_pseudo data(i).cv_pseudo] = ...
-                stpart(randseed(i), data(i).train.pseudo, Np, 0.2);
+        % if bootstrap is true, load_data loads non-partitioned data in extra b_ fields
+        [data.train data.test] = load_data(dataset, randseed, true, bootstrap);
+        
+        if ~bootstrap
+            % if not bootstrap (=> cv) generate CV partitions
+            [data.train.tr_real data.train.cv_real] = ...
+                stpart(randseed, data.train.real, Np, 0.2);
+            [data.train.tr_pseudo data.train.cv_pseudo] = ...
+                stpart(randseed, data.train.pseudo, Np, 0.2);
         end
+    
+        % if pseudo balancing requested, discard some elements from the negative set
+        if balance, data.train.pseudo = ...
+                com.stpick(randseed+435, data.train.pseudo, size(data.train.real,1));
+            data.train.b_pseudo_size = data.train.b_real_size;
+        end
+
     end
 
     %%% timing and output %%%
 
     time = com.time_tick(time,0);
     com.write_init(tabfile);
-    com.print_train_info(dataset, featset, data);
+    com.print_train_info(dataset, featset, data.train);
 
     %%% create matlab pool %%%
 
     com.init_matlabpool();
 
     %%% MLP training %%%
-
-    Nh = length(hidden);
-
-    % crossval results
-    cv_res = zeros(1,Nh);
     
-    for s = 1:Nrs % random seeds
-        for p=1:Np % partitions
+    % aggregate Gm,mad for each hidden size
+    r_gm = [];
+    r_mad = [];
+    r_aux = [];
 
-            % shuffle data and separate labels
-            traindata = com.shuffle([data(s).train.real(  data(s).tr_real(  :,p),:); ...
-                                     data(s).train.pseudo(data(s).tr_pseudo(:,p),:)] );
-            trainlabels = [traindata(:,67), -traindata(:,67)];
+    for p=1:Np % partitions
+        
+        if bootstrap
+            % generate new bootstrap partitions
+            [tr_real ts_real] = bstpart(randseed+p, size(data.train.b_real,1), ...
+                                        data.train.b_real_size, 0.2); 
+            [tr_pseu ts_pseu] = bstpart(randseed+p, size(data.train.b_pseudo,1), ...
+                                        data.train.b_pseudo_size, 0.2);
+                
+            traindata = com.shuffle([data.train.b_real(tr_real,:); ...
+                                data.train.b_pseudo(tr_pseu,:)] );
+            test_real   = data.train.b_real(  ts_real,:);
+            test_pseudo = data.train.b_pseudo(ts_pseu,:);
+        else
+            % select Pth crossval partition
+            traindata = com.shuffle([data.train.real(  data.train.tr_real( :,p),:); ...
+                                data.train.pseudo(data.train.tr_pseudo(:,p),:)] );
+            test_real   = data.train.real(  data.train.cv_real(  :,p),:);
+            test_pseudo = data.train.pseudo(data.train.cv_pseudo(:,p),:);
+        end
 
-            test_real   = data(s).train.real(  data(s).cv_real(  :,p),:);
-            test_pseudo = data(s).train.pseudo(data(s).cv_pseudo(:,p),:);
-
-            % parfor results
-            pf_res = zeros(1,Nh);
+        % separate labels from training data
+        trainlabels = [traindata(:,67), -traindata(:,67)];
+        
+        % parfor results
+        pf_res = zeros(Nh,Nr);
+        
+        for r=1:Nr
             parfor h=1:Nh
                 Gm = 0;
                 try
                     net = patternnet( hidden(h) );
                     net.trainFcn = trainfunc;
                     net.trainParam.showWindow = 0;
-                    net.trainParam.time = 10;
-                    net.trainParam.epochs = 2000000000000;
+                    %net.trainParam.time = 10;
+                    %net.trainParam.epochs = 2000000000000;
                     net = init(net);
+                    net = configure(net, traindata(:,features)', trainlabels');
                     net = train(net, traindata(:,features)', trainlabels');
-
                     res_r = sign(net(test_real(:,features)'))';
                     res_p = sign(net(test_pseudo(:,features)'))';
 
@@ -97,36 +126,69 @@ function mlp ( dataset, featset, balance, randseed, tabfile, data )
                     Gm = geomean( [Se Sp] );
 
                     % save Gm to results array
-                    pf_res(h) = Gm;
+                    pf_res(h,r) = Gm;
 
                 catch e
                     fprintf('! fatal: %s / %s', e.identifier, e.message)
                 end % try
             end % parfor h
+        end % for r
 
-            cv_res = cv_res + pf_res/(Np*Nrs);
+        % show some progress indicator
+        fprintf('.')
 
-            fprintf('.')
+        % gm, mad averaged for Nr repeats
+        avg_gm = mean(pf_res,2);
+        avg_mad = mad(pf_res,0,2);
+        
+        % append gm, mad to global results
+        r_gm = [r_gm, avg_gm];
+        r_mad = [r_mad, avg_mad];
+        
+        % compute aux = mean gm - mean abs deviation for results
+        if crit_mad, if p>1, r_aux = [r_aux, mean(r_gm,2)-mad(r_gm,0,2)]; end                
+        else,        if p>1, r_aux = [r_aux, mean(r_gm,2)]; end, end                
 
-        end % for p
-    end % for s
+        % test for convergence on bootstrap
+        if bootstrap && p>10
+            % assuming mad -> constant on p -> Inf,
+            % pf_aux shoud converge to constant values
+            area = sum(abs(r_aux(:,p-1)-r_aux(:,p-2)));
+            if area < 0.001*size(r_aux,1)
+                % break if each paramset on avg varies less than 0.1%
+                break;
+            else
+                fprintf(' %4.4f ', area/size(r_aux,1))
+            end
+        end
 
-    % select best-performing paramsets
-    better = [ abs(cv_res-max(cv_res)) < 4^(-1-2) ];
-    best = [ abs(cv_res-max(cv_res)) < 0.00001 ];
+    end % for p
 
-    fprintf('\n# idx\t#hidden\t\tgm\n');
-    fprintf(  '# ---\t-------\t\t-------\n');
-    for d=find(better)
-        fprintf('< %d\t%d\t\t%8.6f\n', d, hidden(d), cv_res(d) );
-    end % for d
+    % plot pf_aux convergence
+    plot(hidden,r_aux)
 
-    time = com.time_tick(time,Nh);
+    % keep only averaged r_gm, r_mad, and last column of r_aux
+    r_gm = mean(r_gm,2);
+    r_mad = mean(r_mad,2);
+    r_aux = r_aux(:,end);
 
-    bidx = find(best,1,'first');
+    % select best values
+    if crit_mad, ii = find(r_aux==max(r_aux));
+    else         ii = find(r_gm==max(r_gm));
+    end
+    
+    % print best values
+    for i=1:length(ii)
+        fprintf('\n> hidden, gm, mad\t%d\t%4.2f\t%4.2f\n',...
+                hidden(ii(i)), r_gm(ii(i)),r_mad(ii(i)))
+    end
 
-    com.write_train_info(tabfile, dataset, featset, selfname, ...
-                         hidden(bidx), 0, cv_res(bidx));
+    time = com.time_tick(time,0);
+
+    bidx = ii(1);
+        
+    % com.write_train_info(tabfile, dataset, featset, selfname, ...
+    %                  hidden(bidx), 0, cv_res(bidx));
 
     %%% test best-performing parameters %%%
 
@@ -134,9 +196,10 @@ function mlp ( dataset, featset, balance, randseed, tabfile, data )
 
     res = com.run_tests(data,featset,randseed,selfname,hidden(bidx),0);
 
-    com.write_test_info(tabfile, dataset, featset, selfname, ...
-                         hidden(bidx), 0, res);
-
+    % com.write_test_info(tabfile, dataset, featset, selfname, ...
+    %                     hidden(bidx), 0, res);
+        
     com.print_test_info(res);
     com.time_tick(time,0);
+    
 end
