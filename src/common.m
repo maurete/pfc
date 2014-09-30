@@ -52,24 +52,35 @@ function c = common
         fclose(fid);
     end
 
-
     % print training information to screen
     c.print_train_info = @print_train_info;
     function print_train_info(dset, fset, data)
         fprintf('> dataset\t%s\n', dset );
         fprintf('> featureset\t%s\n', fname{fset} );
-        fprintf(['> partitions\t%d\n#\n', ...
+        if isfield(data,'bootstrap')
+            fprintf(['> partitions\tbootstrap\n#\n', ...
+                     '# dataset\tsize\t#train\t#test\n', ...
+                     '# -------\t----\t------\t-----\n', ...
+                     '> real\t\t%d\t%d\t%d\n', ...
+                     '> pseudo\t%d\t%d\t%d\n#\n' ], ...
+                    size(data.b_real,1),data.b_real_size, ...
+                    size(data.b_real,1)-data.b_real_size, ...
+                    size(data.b_pseudo,1),data.b_pseudo_size, ...
+                    size(data.b_pseudo,1)-data.b_pseudo_size);
+        else
+            fprintf(['> partitions\t%d\n#\n', ...
                  '# dataset\tsize\t#train\t#test\n', ...
                  '# -------\t----\t------\t-----\n', ...
                  '> real\t\t%d\t%d\t%d\n', ...
                  '> pseudo\t%d\t%d\t%d\n#\n' ], ...
                 size(data(1).cv_real,  2), ...
-                size(data(1).train.real,     1), ...
+                size(data(1).real,     1), ...
                 size(data(1).tr_real,  1), ...
                 size(data(1).cv_real,   1), ...
-                size(data(1).train.pseudo,   1), ...
+                size(data(1).pseudo,   1), ...
                 size(data(1).tr_pseudo,1), ...
                 size(data(1).cv_pseudo, 1));
+        end
     end
 
     % print testing information to screen
@@ -81,6 +92,15 @@ function c = common
             fprintf('+ %24s\t%d\t%d\t%8.6f\n',...
                     test_info(i).name, test_info(i).class, ...
                     test_info(i).size, test_info(i).rate);
+        end
+    end
+
+    % extract testing rates from test struct
+    c.get_test_rates = @get_test_rates;
+    function out = get_test_rates(test_info)
+        out = [];
+        for i=1:length(test_info)
+            out = [out, test_info(i).rate];
         end
     end
 
@@ -108,10 +128,10 @@ function c = common
     c.run_tests = @run_tests;
     function out = run_tests(data, fset, randseed, classifier, param1, param2)
 
-        Nrs   = length(randseed);
         Ntest = length(data(1).test);
         t_res = zeros(Ntest,1);
         features = fidx{fset};
+        Nrep = 5;
 
         mlp = length(strfind(classifier,'mlp')) > 0;
         lin = length(strfind(classifier,'lin')) > 0;
@@ -121,23 +141,29 @@ function c = common
                '! Fatal error: invalid classifier specified for testing.');
 
         out = struct();
-        for s=1:Nrs
-            % load train data
-            traindata = c.shuffle([data(s).train.real; ...
-                                data(s).train.pseudo] );
-            trainlabels = traindata(:,67);
 
-            try
-                if mlp
+        traindata = c.shuffle([data(1).train.real; ...
+                            data(1).train.pseudo] );
+        trainlabels = traindata(:,67);
+
+        try
+            if mlp
+                for i=1:Nrep
                     trainlabels = [traindata(:,67) -traindata(:,67)];
                     model = patternnet( param1 );
                     model.trainFcn = 'trainscg';
                     model.trainParam.showWindow = 0;
-                    model.trainParam.time = 10;
-                    model.trainParam.epochs = 2000000000000;
                     model = init(model);
+                    model = configure(model, traindata(:,features)', trainlabels');
                     model = train(model, traindata(:,features)', trainlabels');
-                elseif rbf
+                    for i=1:Ntest
+                        res = sign(model(data(1).test(i).data(:,features)'))';
+                        cls_results = res(:,1).*(res(:,1)~=res(:,2));
+                        t_res(i) = t_res(i)+(mean( cls_results == data(1).test(i).class))/Nrep;
+                    end % for i
+                end
+            else
+                if rbf
                     model = svmtrain(traindata(:,features),trainlabels, ...
                                      'Kernel_Function','rbf', ...
                                      'rbf_sigma',pow2(param2), ...
@@ -149,18 +175,13 @@ function c = common
                 end
 
                 for i=1:Ntest
-                    if mlp
-                        res = sign(model(data(s).test(i).data(:,features)'))';
-                        cls_results = res(:,1).*(res(:,1)~=res(:,2));
-                    else
-                        cls_results = round(svmclassify(model, data(s).test(i).data(:,features)));
-                    end
-                    t_res(i) = t_res(i)+(mean( cls_results == data(s).test(i).class))/Nrs;
-                end % for i
+                    cls_results = round(svmclassify(model, data(1).test(i).data(:,features)));
+                    t_res(i) = t_res(i)+(mean( cls_results == data(1).test(i).class));
+                end
+            end
 
-            catch e
-            end % try
-        end % for s
+        catch e
+        end % try
 
         for i=1:Ntest
             out(i).name = data(1).test(i).name;
