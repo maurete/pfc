@@ -1,7 +1,7 @@
 function [out] = loadset( name, species, id )
 
 %% Loadset - Loads named dataset by species
-    
+
 % input:
 %     name: dataset name (see valid_names below)
 %      spc: species to load. possible values:
@@ -32,14 +32,16 @@ function [out] = loadset( name, species, id )
                      'functional-ncrna'; 'functional-ncrna/multi';       ...
                             'mirbase12'; 'mirbase12/multi';              ...
                   'mirbase12-micropred'; 'mirbase12-micropred/multi';    ...
-                          'other-ncrna';  'other-ncrna/multi';           ...
-                            'mirbase20'; 'mirbase20-nr';                 ... 
-                      'mirbase20/multi'; 'mirbase20-nr/multi'       };
-    
+                          'other-ncrna'; 'other-ncrna/multi';            ...
+                            'mirbase20'; 'mirbase20-nr';                 ...
+                      'mirbase20/multi'; 'mirbase20-nr/multi';           ...
+                 'mirbase50/3svm-train'; 'mirbase50/3svm-test';          ...
+                    'coding/3svm-train'; 'coding/3svm-test'                };
+
     % validate dataset name
     val = strcmp(valid_names, name);
     assert(sum([val]) == 1, 'ERROR: invalid database name')
-        
+
     % get available species in dataset
     bpath = ['../data/' name '/'];
     d = dir( [bpath '*.c'] );
@@ -49,7 +51,7 @@ function [out] = loadset( name, species, id )
 
     % find which species will be returned
     sel_sp = zeros(size(all_sp));
-        
+
     % generate 'selected species' vector
     if isstr(species)
         if strcmpi(species,'all')
@@ -64,13 +66,13 @@ function [out] = loadset( name, species, id )
             sel_sp = sel_sp + strcmpi(all_sp,species(k));
         end
     end
-    
+
     % output array
     out = [];
-    
+
     % loop for all available species in dataset
     for j=1:length(all_sp)
-        
+
         % if current species was selected
         if sel_sp(j)
             feat3 = dlmread( [bpath all_sp{j} '.3'], '\t' );
@@ -78,14 +80,14 @@ function [out] = loadset( name, species, id )
             feats = dlmread( [bpath all_sp{j} '.s'], '\t' );
             featf = dlmread( [bpath all_sp{j} '.f'], '\t' );
             class = dlmread( [bpath all_sp{j} '.c'], '\t' );
-        
+
             out = [ out;                        ... % current content
                     feat3, featx, feats, featf, ... % feature vector
                     class,                      ... % class
                     [1:length(class)]',         ... % entry number
                     j*ones(size(class)),        ... % species number
                     id*ones(size(class))         ]; % identifier
-        
-        end        
+
+        end
     end
 end
