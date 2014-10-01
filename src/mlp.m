@@ -34,7 +34,7 @@ function mlp ( dataset, featset, balance, randseed, npart, crit_mad, tabfile, da
     % hidden layer sizes to try
     hidden = [5:25];
     Nh = length(hidden);
-    
+
     fprintf('#\n> begin\t%s\n#\n', selfname);
 
     time = com.time_init();
@@ -45,7 +45,7 @@ function mlp ( dataset, featset, balance, randseed, npart, crit_mad, tabfile, da
         data = struct();
         % if bootstrap is true, load_data loads non-partitioned data in extra b_ fields
         [data.train data.test] = load_data(dataset, randseed, true, bootstrap);
-        
+
         if ~bootstrap
             % if not bootstrap (=> cv) generate CV partitions
             [data.train.tr_real data.train.cv_real] = ...
@@ -53,7 +53,7 @@ function mlp ( dataset, featset, balance, randseed, npart, crit_mad, tabfile, da
             [data.train.tr_pseudo data.train.cv_pseudo] = ...
                 stpart(randseed, data.train.pseudo, Np, 0.2);
         end
-    
+
         % if pseudo balancing requested, discard some elements from the negative set
         if balance, data.train.pseudo = ...
                 com.stpick(randseed+435, data.train.pseudo, size(data.train.real,1));
@@ -73,21 +73,21 @@ function mlp ( dataset, featset, balance, randseed, npart, crit_mad, tabfile, da
     com.init_matlabpool();
 
     %%% MLP training %%%
-    
+
     % aggregate Gm,mad for each hidden size
     r_gm = [];
     r_mad = [];
     r_aux = [];
 
     for p=1:Np % partitions
-        
+
         if bootstrap
             % generate new bootstrap partitions
             [tr_real ts_real] = bstpart(randseed+p, size(data.train.b_real,1), ...
-                                        data.train.b_real_size, 0.2); 
+                                        data.train.b_real_size, 0.2);
             [tr_pseu ts_pseu] = bstpart(randseed+p, size(data.train.b_pseudo,1), ...
                                         data.train.b_pseudo_size, 0.2);
-                
+
             traindata = com.shuffle([data.train.b_real(tr_real,:); ...
                                 data.train.b_pseudo(tr_pseu,:)] );
             test_real   = data.train.b_real(  ts_real,:);
@@ -102,10 +102,10 @@ function mlp ( dataset, featset, balance, randseed, npart, crit_mad, tabfile, da
 
         % separate labels from training data
         trainlabels = [traindata(:,67), -traindata(:,67)];
-        
+
         % parfor results
         pf_res = zeros(Nh,Nr);
-        
+
         for r=1:Nr
             parfor h=1:Nh
                 Gm = 0;
@@ -140,15 +140,16 @@ function mlp ( dataset, featset, balance, randseed, npart, crit_mad, tabfile, da
         % gm, mad averaged for Nr repeats
         avg_gm = mean(pf_res,2);
         avg_mad = mad(pf_res,0,2);
-        
+
         % append gm, mad to global results
         r_gm = [r_gm, avg_gm];
         r_mad = [r_mad, avg_mad];
-        
-        % compute aux = mean gm - mean abs deviation for results
-        if crit_mad, if p>1, r_aux = [r_aux, mean(r_gm,2)-mad(r_gm,0,2)]; end                
-        else,        if p>1, r_aux = [r_aux, mean(r_gm,2)]; end, end                
 
+        % compute aux = mean gm - mean abs deviation for results
+        if p>1
+            if crit_mad, r_aux = [r_aux, mean(r_gm,2)-mad(r_gm,0,2)];
+            else,        r_aux = [r_aux, mean(r_gm,2)]; end
+        end
         % test for convergence on bootstrap
         if bootstrap && p>10
             % assuming mad -> constant on p -> Inf,
@@ -176,7 +177,7 @@ function mlp ( dataset, featset, balance, randseed, npart, crit_mad, tabfile, da
     if crit_mad, ii = find(r_aux==max(r_aux));
     else         ii = find(r_gm==max(r_gm));
     end
-    
+
     % print best values
     for i=1:length(ii)
         fprintf('\n> hidden, gm, mad\t%d\t%4.2f\t%4.2f\n',...
@@ -186,7 +187,7 @@ function mlp ( dataset, featset, balance, randseed, npart, crit_mad, tabfile, da
     time = com.time_tick(time,0);
 
     bidx = ii(1);
-        
+
     % com.write_train_info(tabfile, dataset, featset, selfname, ...
     %                  hidden(bidx), 0, cv_res(bidx));
 
@@ -198,8 +199,8 @@ function mlp ( dataset, featset, balance, randseed, npart, crit_mad, tabfile, da
 
     % com.write_test_info(tabfile, dataset, featset, selfname, ...
     %                     hidden(bidx), 0, res);
-        
+
     com.print_test_info(res);
     com.time_tick(time,0);
-    
+
 end
