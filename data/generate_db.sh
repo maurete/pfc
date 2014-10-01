@@ -43,6 +43,22 @@ SPECIES=""
 MULTILOOP=""
 gen_dataset
 
+echo "Dataset mirbase50-train: train hsa from mirBase v5.0 as in Triplet-SVM"
+NAME="mirbase50/3svm-train"
+SRC="src/triplet/5_training_dataset/train_hsa_163.txt"
+CLS="1"
+SPECIES=""
+MULTILOOP=""
+gen_dataset
+
+echo "Dataset mirbase50-test: test hsa from mirBase v5.0 as in Triplet-SVM"
+NAME="mirbase50/3svm-test"
+SRC="src/triplet/7_test_dataset/test_hsa_30.txt"
+CLS="1"
+SPECIES=""
+MULTILOOP=""
+gen_dataset
+
 echo "Dataset cross-species: from mirBase v5.0 as in Triplet-SVM for CROSS-SPECIES"
 NAME="cross-species"
 SRC="src/triplet/7_test_dataset/*.secondstructure"
@@ -62,6 +78,22 @@ gen_dataset
 echo "Dataset coding: CODING pseudo-miRNAs set as in Triplet-SVM"
 NAME="coding"
 SRC="src/triplet/4_pseudo_miRNAs/8494_hairpins_over_fe_15_bp_18_from_cds.txt"
+CLS="-1"
+SPECIES="-s hsa"
+MULTILOOP=""
+gen_dataset
+
+echo "Dataset coding: train pseudo-miRNAs set as in Triplet-SVM"
+NAME="coding/3svm-train"
+SRC="src/triplet/5_training_dataset/train_cds_168.txt"
+CLS="-1"
+SPECIES="-s hsa"
+MULTILOOP=""
+gen_dataset
+
+echo "Dataset coding: test pseudo-miRNAs set as in Triplet-SVM"
+NAME="coding/3svm-test"
+SRC="src/triplet/7_test_dataset/test_cds_1000.txt"
 CLS="-1"
 SPECIES="-s hsa"
 MULTILOOP=""
@@ -188,8 +220,10 @@ MULTILOOP="-m"
 gen_nr_dataset
 
 echo "Cleaning aux files.."
-rm -f work/*.*
-find work -name "multi.*" -exec rm "{}" ";"
+find work -type f -name "*.clean" -exec rm "{}" ";"
+find work -type f -name "*.clstr" -exec rm "{}" ";"
+find work -type f -name "*.nr" -exec rm "{}" ";"
+find work -type f -name "*.rnafold" -exec rm "{}" ";"
 
 echo "Moving directories to data/"
 rm -rf mirbase50 coding updated conserved-hairpin cross-species
