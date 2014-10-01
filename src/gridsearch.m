@@ -181,7 +181,10 @@ function gridsearch ( dataset, featset, kernel, randseed, npart, crit_mad, tabfi
             fprintf('.')
 
             % compute aux = mean gm - mean abs deviation for results
-            if p>1, pf_aux = [pf_aux, mean(pf_res,2)-mad(pf_res,0,2)]; end
+            if p>1
+                if crit_mad, pf_aux = [pf_aux, mean(pf_res,2)-mad(pf_res,0,2)];
+                else,        pf_aux = [pf_aux, mean(pf_res,2)]; end
+            end
 
             % test for convergence on bootstrap
             if bootstrap && p>10
