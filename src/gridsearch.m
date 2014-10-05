@@ -28,7 +28,7 @@ function gridsearch ( dataset, featset, kernel, randseed, npart, crit_mad, tabfi
     end
 
     % number of grid refinements
-    Ngr = 1;
+    Ngr = 2;
 
     % initial grid parameters
     sig0 = 0;
@@ -60,9 +60,9 @@ function gridsearch ( dataset, featset, kernel, randseed, npart, crit_mad, tabfi
         if ~bootstrap
             % if not bootstrap (=> cv) generate CV partitions
             [data.train.tr_real data.train.cv_real] = ...
-                stpart(randseed, data.train.real, Np, 0.2);
+                stpart(randseed, data.train.real, Np, 0.1);
             [data.train.tr_pseudo data.train.cv_pseudo] = ...
-                stpart(randseed, data.train.pseudo, Np, 0.2);
+                stpart(randseed, data.train.pseudo, Np, 0.1);
         end
     end
 
@@ -104,9 +104,9 @@ function gridsearch ( dataset, featset, kernel, randseed, npart, crit_mad, tabfi
             if bootstrap
                 % generate new bootstrap partitions
                 [tr_real ts_real] = bstpart(randseed+p, size(data.train.b_real,1), ...
-                                            data.train.b_real_size, 0.2);
+                                            data.train.b_real_size, 0.1);
                 [tr_pseu ts_pseu] = bstpart(randseed+p, size(data.train.b_pseudo,1), ...
-                                            data.train.b_pseudo_size, 0.2);
+                                            data.train.b_pseudo_size, 0.1);
 
                 train = com.shuffle([data.train.b_real(tr_real,:); ...
                                     data.train.b_pseudo(tr_pseu,:)] );
@@ -220,71 +220,33 @@ function gridsearch ( dataset, featset, kernel, randseed, npart, crit_mad, tabfi
 
         time = com.time_tick(time, numel(find(grid_tst&~grid_msk)));
 
-
-        %%%%%%%%%%%%%%%% ZOOM GRID REFINE
-
-        if false && g < Ngr
-            % concatenate all grids into one
-            grid = cat(3, grid_gm, grid_aux, grid_box, grid_sig, grid_tst, grid_msk);
-
-            % find 'zoom region' with best rates
-            if crit_mad, [ii jj] = gridzoom(grid(:,:,2));
-            else [ii jj] = gridzoom(grid(:,:,1));
-            end
-
-            % select sub-grid
-            grid = grid(ii,jj,:);
-            % interpolate grid
-            [grid tst] = gridinterp(grid);
-
-            % restore test and mask grids
-            grid_tst = [grid(:,:,5) & 1-tst]*1;
-            grid_msk = floor(grid(:,:,6));
-
-            % rebuild grids for next refinement iteration
-            grid_gm = grid(:,:,1);
-            grid_aux = grid(:,:,2);
-
-            % parameter grids
-            grid_box = grid(:,:,3);
-            grid_sig = grid(:,:,4);
-
-            %continue;
-
-        end % if g < Ngr
-
-        %%%%%%%%%%%%%% THRESHOLD GRID REFINE
-
-        % if not on last iteration
+        tune = gridtune;
+        
         if g < Ngr
-
-            %%% threshold value
-            thr = 0.9;
-
-            % concatenate all grids into one
-            grid = cat(3, grid_gm, grid_aux, grid_box, grid_sig, grid_tst, grid_msk);
-
-            % interpolate grid
-            [grid tst] = gridinterp(grid);
-
-            % restore test and mask grids
-            grid_tst = [grid(:,:,5) & 1-tst]*1;
-            grid_msk = floor(grid(:,:,6));
-
-            % rebuild grids for next refinement iteration
-            grid_gm = grid(:,:,1);
-            grid_aux = grid(:,:,2);
-
-            % parameter grids
-            grid_box = grid(:,:,3);
-            grid_sig = grid(:,:,4);
-
-            % mask values below threshold
-            if crit_mad, [zz idx]  = sort(grid_aux(1:numel(grid_aux)));
-            else [zz idx]  = sort(grid_gm(1:numel(grid_gm)));
+            
+            if g > 1, break, end
+            
+            if crit_mad, values = cat(3, grid_aux, grid_gm);
+            else values = cat(3, grid_gm, grid_aux);
             end
-            grid_msk(idx(1:max(round(thr*numel(grid_msk)),numel(grid_msk)-200))) = 1;
-
+            params = cat(3,grid_box, grid_sig);
+            
+            tunefunc = @tune.bestneighbor;
+            
+            % zoom
+            [values params grid_tst grid_msk] = ...
+                tunefunc(values,params,grid_tst,grid_msk);
+        
+            if crit_mad
+                grid_aux = values(:,:,1);
+                grid_gm = values(:,:,2);
+            else
+                grid_aux = values(:,:,2);
+                grid_gm = values(:,:,1);
+            end
+            grid_box = params(:,:,1);
+            grid_sig = params(:,:,2);
+        
         end % if g < Ngr
 
     end % for g
