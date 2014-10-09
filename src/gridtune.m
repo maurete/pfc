@@ -73,22 +73,19 @@ out.bestneighbor = @bestneighbor;
     values = zeros(nh, nw, size(values,3));
     values(rh+1,rw+1,:) = cvalues;
     
-    params = ones(nh, nw, np);
+    params = zeros(nh, nw, np);
     for i=1:np
         p = cparams(i);
         dx = cur_dx(i);
         dy = cur_dy(i);        
-        if dx ~= 0
-            params(:,:,i) = params(:,:,i)*diag(linspace(p-dx,p+dx,nw));
-        end
+        params(:,:,i) = ones(nh,nw)*diag(linspace(p-dx,p+dx,nw));
         if dy ~= 0    
-            params(:,:,i) = diag(linspace(p-dy,p+dy,nh))*params(:,:,i);
+            params(:,:,i) = diag(linspace(p-dy,p+dy,nh))*ones(nh,nw);
         end
     end
     
     mask = zeros(nh, nw, size(mask,3));
     test = zeros(nh, nw, size(test,3));
-
     
     end
 

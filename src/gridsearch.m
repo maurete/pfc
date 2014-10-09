@@ -178,7 +178,7 @@ function gridsearch ( dataset, featset, kernel, randseed, npart, crit_mad, tabfi
             grid_msk(pf_idx) = pf_msk;
 
             % show some progress indicator
-            fprintf('.')
+            if mod(p,10) == 0, fprintf('|'), else fprintf('.'), end
 
             % compute aux = mean gm - mean abs deviation for results
             if p>1
