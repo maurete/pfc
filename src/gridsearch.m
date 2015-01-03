@@ -1,10 +1,11 @@
-function gridsearch ( dataset, featset, kernel, randseed, npart, crit_mad, tabfile, data )
+function gridsearch ( dataset, featset, kernel, npart, tabfile, data, randseed, ratio, crit_mad )
 
-    if nargin < 8, data = false; end
-    if nargin < 7, tabfile = 'resultsv3.tsv'; end
-    if nargin < 6, crit_mad = false; end
-    if nargin < 5, npart = 40; end
-    if nargin < 4, randseed = 1135; end
+    if nargin < 9, crit_mad = false; end
+    if nargin < 8, ratio = 0.1; end
+    if nargin < 7, randseed = 1135; end
+    if nargin < 6, data = false; end
+    if nargin < 5, tabfile = 'resultsv3.tsv'; end
+    if nargin < 4, npart = 40; end
 
     com = common;
     features = com.fidx{featset};
@@ -32,12 +33,34 @@ function gridsearch ( dataset, featset, kernel, randseed, npart, crit_mad, tabfi
 
     % initial grid parameters
     sig0 = 0;
-    if rbf; sig0 = [-15:2:3]; end
+    if rbf; sig0 = [7:-1:-2]; end %hsu : 7:-1:-2
     box0 = [-5:2:15];
 
     fprintf('#\n> begin\t\tsvm-%s\n#\n',kernel);
 
     time = com.time_init();
+
+    %%% Load data %%%
+
+    if ~isstruct(data)
+        data = struct();
+        % if bootstrap is true, load_data loads non-partitioned data in extra b_ fields
+        [data.train data.test] = load_data(dataset, randseed, false, bootstrap);
+    end
+    if ~bootstrap
+        % if not bootstrap (=> cv) generate CV partitions
+        [data.train.tr_real data.train.cv_real] = ...
+            stpart(randseed, data.train.real, Np, ratio);
+        [data.train.tr_pseudo data.train.cv_pseudo] = ...
+            stpart(randseed, data.train.pseudo, Np, ratio);
+    end
+
+    % if rbf
+    %     sig0 = optsigma( [data.train.real(:,features);     ...
+    %                       data.train.pseudo(:,features) ], ...
+    %                      [data.train.real(:,67);           ...
+    %                       data.train.pseudo(:,67)] );
+    % end
 
     % initial grids
     grid_gm = zeros(length(box0),length(sig0));
@@ -50,21 +73,6 @@ function gridsearch ( dataset, featset, kernel, randseed, npart, crit_mad, tabfi
     grid_tst = zeros(size(grid_gm));
     grid_msk = zeros(size(grid_gm));
 
-    %%% Load data %%%
-
-    if ~ data
-        data = struct();
-        % if bootstrap is true, load_data loads non-partitioned data in extra b_ fields
-        [data.train data.test] = load_data(dataset, randseed, false, bootstrap);
-
-        if ~bootstrap
-            % if not bootstrap (=> cv) generate CV partitions
-            [data.train.tr_real data.train.cv_real] = ...
-                stpart(randseed, data.train.real, Np, 0.1);
-            [data.train.tr_pseudo data.train.cv_pseudo] = ...
-                stpart(randseed, data.train.pseudo, Np, 0.1);
-        end
-    end
 
     %%% timing and output %%%
 
@@ -104,9 +112,9 @@ function gridsearch ( dataset, featset, kernel, randseed, npart, crit_mad, tabfi
             if bootstrap
                 % generate new bootstrap partitions
                 [tr_real ts_real] = bstpart(randseed+p, size(data.train.b_real,1), ...
-                                            data.train.b_real_size, 0.1);
+                                            data.train.b_real_size, ratio);
                 [tr_pseu ts_pseu] = bstpart(randseed+p, size(data.train.b_pseudo,1), ...
-                                            data.train.b_pseudo_size, 0.1);
+                                            data.train.b_pseudo_size, ratio);
 
                 train = com.shuffle([data.train.b_real(tr_real,:); ...
                                     data.train.b_pseudo(tr_pseu,:)] );
@@ -221,22 +229,22 @@ function gridsearch ( dataset, featset, kernel, randseed, npart, crit_mad, tabfi
         time = com.time_tick(time, numel(find(grid_tst&~grid_msk)));
 
         tune = gridtune;
-        
+
         if g < Ngr
-            
+
             if g > 1, break, end
-            
+
             if crit_mad, values = cat(3, grid_aux, grid_gm);
             else values = cat(3, grid_gm, grid_aux);
             end
             params = cat(3,grid_box, grid_sig);
-            
+
             tunefunc = @tune.bestneighbor;
-            
+
             % zoom
             [values params grid_tst grid_msk] = ...
                 tunefunc(values,params,grid_tst,grid_msk);
-        
+
             if crit_mad
                 grid_aux = values(:,:,1);
                 grid_gm = values(:,:,2);
@@ -246,7 +254,7 @@ function gridsearch ( dataset, featset, kernel, randseed, npart, crit_mad, tabfi
             end
             grid_box = params(:,:,1);
             grid_sig = params(:,:,2);
-        
+
         end % if g < Ngr
 
     end % for g
