@@ -1,0 +1,106 @@
+\documentclass[12pt,bibliography=oldstyle,DIV=12,parskip=half-,titlepage]{scrartcl}
+\include{conf/preconfig}
+\include{conf/packages}
+\include{conf/config}
+\include{conf/comandos}
+\include{conf/fuentes}
+%
+\addbibresource{res/bibliografia.bib}
+%
+\selectlanguage{spanish}
+\hyphenation{micro-RNA}
+\hyphenation{micro-RNAs}
+\hyphenation{mi-RNA}
+\hyphenation{mi-RNAs}
+%
+%
+%
+%
+\addtokomafont{descriptionlabel}{\small}
+\setkomafont{subject}{\LARGE\usekomafont{disposition}}
+\setkomafont{title}{\normalfont\slshape}
+\setkomafont{subtitle}{\LARGE\usekomafont{disposition}}
+%
+\begin{document}
+\selectlanguage{spanish}
+%
+% pagina de titulo
+%
+\titlehead{\center\large
+    Universidad Nacional del Litoral\\
+    Facultad de Ingeniería y Ciencias Hídricas
+}
+%
+%
+\title{\LARGE ``Desarrollo de un clasificador de secuencias de pre-microRNAs
+  mediante técnicas de Inteligencia Computacional''}
+\subject{Proyecto Final de Carrera\\Ingeniería en
+  Informática}
+\subtitle{~\\[.2ex]Recuento de avances y problemas detectados\\[.2ex]~}
+\author{{Alumno: Mauro Javier Torrez}\and{Director: Dr. Diego H. Milone}}
+%
+\date{~\\[2em]\today}
+%
+\renewcommand*{\titlepagestyle}{empty}
+%\thispagestyle{empty}
+\maketitle
+\setcounter{page}{1}
+%
+%
+%
+%
+\section{Entregable 2: Desarrollo del clasificador dfinitivo}
+%
+\subsection{21 de diciembre de 2015}
+%
+En esta instancia se han desarrollado métodos en Matlab para la carga
+de datos de entrenamiento y prueba, y métodos de clasificación
+mediante SVM-RBF, SVM-lineal y MLP.
+%
+\paragraph{Problema}
+Partición de los datos en entrenamiento y prueba: el método utilizado
+hasta el momento genera las particiones a partir de un número
+aleatorio, lo que resulta en diferentes distribuciones de clases que
+resultan en diferentes parámetros del clasificador y una precisión
+(P\%) variable.
+
+\paragraph{Solución}
+En el caso XUE, se decidió utilizar la partición original del autor.
+En los casos NG y BTW, se deberá investigar un método de partición que
+permita obtener una distribución de datos inter-clase e intra-clases
+constante. Un punto de partida puede ser \cite{yan} para el caso SVM,
+y \cite{weiss1} en general.
+
+\paragraph{Workaround}
+
+\paragraph{Problema}
+Optimización de parámetros de los clasificadores: al generar las
+sub-particiones del conjunto de train para optimización de parametros
+se utiliza un número aleatorio, lo que deriva en sub-particiones de
+optimización/validación con diferentes distribuciones intra-clase y
+consecuente divergencia en los mejores parámetros.
+
+
+\paragraph{Solución}
+Este problema es similar al anterior. Una solución funcional y
+sencilla, aunque computacionalmente costosa, es usar
+\eng{leave-one-out} (dando por hecho que la partición train/test es
+estática. Otras soluciones investigadas y probadas, aunque sin mucho
+éxito, fueron usar repetición en la partición de validación y
+bootstrap.
+
+Según se explica en \cite{weiss}, se deberá en primer lugar utilizar
+medidas de evaluación más sofisticadas que la precisión (P\%), como
+pueden ser ROC/AUC \cite{bradley}\cite{provost}, precisión y
+recuento \cite{carvalho}\cite{japkowicz} y las \eng{F-measures}
+\cite{vanrijsbergen}.  En segundo lugar, se deberán considerar métodos
+de muestreo que consideren la clase minritaria
+\cite{japkowicz1}\cite{weiss2} y \cite{yan} en el caso SVM.
+
+\paragraph{Workaround}
+
+
+\renewcommand{\bibfont}{\normalfont\footnotesize}
+\printbibliography
+\end{document}
+

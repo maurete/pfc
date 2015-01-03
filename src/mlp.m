@@ -1,10 +1,10 @@
-function mlp ( dataset, featset, balance, randseed, npart, crit_mad, tabfile, data )
+function mlp ( dataset, featset, balance, npart, tabfile, data, randseed, crit_mad )
 
-    if nargin < 8, data = false; end
-    if nargin < 7, tabfile = 'resultsv3.tsv'; end
-    if nargin < 6, crit_mad = false; end
-    if nargin < 5, npart = 40; end
-    if nargin < 4, randseed = 1135; end
+    if nargin < 8, crit_mad = false; end
+    if nargin < 7, randseed = 1135; end
+    if nargin < 6, data = false; end
+    if nargin < 5, tabfile = 'resultsv3.tsv'; end
+    if nargin < 4, npart = 40; end
     if nargin < 3, balance = 0; end
 
     com = common;
@@ -41,26 +41,28 @@ function mlp ( dataset, featset, balance, randseed, npart, crit_mad, tabfile, da
 
     %%% Load data %%%
 
-    if ~ data
+    if ~isstruct(data)
         data = struct();
         % if bootstrap is true, load_data loads non-partitioned data in extra b_ fields
         [data.train data.test] = load_data(dataset, randseed, true, bootstrap);
-
-        if ~bootstrap
-            % if not bootstrap (=> cv) generate CV partitions
-            [data.train.tr_real data.train.cv_real] = ...
-                stpart(randseed, data.train.real, Np, 0.2);
-            [data.train.tr_pseudo data.train.cv_pseudo] = ...
-                stpart(randseed, data.train.pseudo, Np, 0.2);
-        end
-
-        % if pseudo balancing requested, discard some elements from the negative set
-        if balance, data.train.pseudo = ...
-                com.stpick(randseed+435, data.train.pseudo, size(data.train.real,1));
-            data.train.b_pseudo_size = data.train.b_real_size;
-        end
-
     end
+
+    % if pseudo balancing requested, discard some elements from the negative set
+    if balance
+        if bootstrap, data.train.b_pseudo_size = data.train.b_real_size;
+        else data.train.pseudo = ...
+                com.stpick(randseed+435, data.train.pseudo, size(data.train.real,1));
+        end
+    end
+
+    if ~bootstrap
+        % if not bootstrap (=> cv) generate CV partitions
+        [data.train.tr_real data.train.cv_real] = ...
+            stpart(randseed, data.train.real, Np, 0.1);
+        [data.train.tr_pseudo data.train.cv_pseudo] = ...
+            stpart(randseed, data.train.pseudo, Np, 0.1);
+    end
+
 
     %%% timing and output %%%
 
@@ -84,9 +86,9 @@ function mlp ( dataset, featset, balance, randseed, npart, crit_mad, tabfile, da
         if bootstrap
             % generate new bootstrap partitions
             [tr_real ts_real] = bstpart(randseed+p, size(data.train.b_real,1), ...
-                                        data.train.b_real_size, 0.2);
+                                        data.train.b_real_size, 0.1);
             [tr_pseu ts_pseu] = bstpart(randseed+p, size(data.train.b_pseudo,1), ...
-                                        data.train.b_pseudo_size, 0.2);
+                                        data.train.b_pseudo_size, 0.1);
 
             traindata = com.shuffle([data.train.b_real(tr_real,:); ...
                                 data.train.b_pseudo(tr_pseu,:)] );
@@ -135,7 +137,7 @@ function mlp ( dataset, featset, balance, randseed, npart, crit_mad, tabfile, da
         end % for r
 
         % show some progress indicator
-        fprintf('.')
+        if mod(p,10) == 0, fprintf('|'), else fprintf('.'), end
 
         % gm, mad averaged for Nr repeats
         avg_gm = mean(pf_res,2);
@@ -188,8 +190,8 @@ function mlp ( dataset, featset, balance, randseed, npart, crit_mad, tabfile, da
 
     bidx = ii(1);
 
-    % com.write_train_info(tabfile, dataset, featset, selfname, ...
-    %                  hidden(bidx), 0, cv_res(bidx));
+    com.write_train_info(tabfile, dataset, featset, selfname, ...
+                     hidden(bidx), 0, r_gm(bidx));
 
     %%% test best-performing parameters %%%
 
@@ -197,8 +199,8 @@ function mlp ( dataset, featset, balance, randseed, npart, crit_mad, tabfile, da
 
     res = com.run_tests(data,featset,randseed,selfname,hidden(bidx),0);
 
-    % com.write_test_info(tabfile, dataset, featset, selfname, ...
-    %                     hidden(bidx), 0, res);
+    com.write_test_info(tabfile, dataset, featset, selfname, ...
+                        hidden(bidx), 0, res);
 
     com.print_test_info(res);
     com.time_tick(time,0);
