@@ -1,6 +1,6 @@
 # nombre de los archivos fuente
 fuentes = propuesta.tex anteproyecto.tex entregable1.tex entregable2.tex \
-cronograma.tex
+cronograma.tex log.tex
 #
 texes = $(wildcard '*.tex')
 #
