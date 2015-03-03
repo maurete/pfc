@@ -28,6 +28,7 @@ function [major minor] = stpart(seed, numel, n_part, ratio)
 % @output: two matrices where each column is a partition
 %          for major (train) and minor (test) respectively
 
+    com = common;
 
     % set ratio to at least 1/npart (all elements should be tested)
     if nargin < 4, ratio = 1/n_part; end
@@ -43,7 +44,7 @@ function [major minor] = stpart(seed, numel, n_part, ratio)
     step = numel/n_part;
 
     % randomly sample/shuffle source data row
-    idx = strandsample(seed,numel,numel);
+    idx = com.strandsample(seed,numel,numel);
 
     % fill output matrices with zero
     major = zeros(numel-nmin,n_part);
