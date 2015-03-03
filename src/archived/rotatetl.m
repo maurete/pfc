@@ -1,14 +1,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % rotatetl.m
 %
-% Function to rotate the Tick Labels and alternate their position on an Xaxis (top or bottom)   
+% Function to rotate the Tick Labels and alternate their position on an Xaxis (top or bottom)
 % Input: axes handle, rotation in degree, position of the X axis (top or
 %       bottom)
 % Output: two textboxes containing the new Tick Labels
-% 
+%
 % Warning: 1) rotation between 0 and 180 degrees advised
 %          2) if long strings, change values u and l
-%          
+%
 % Acknowledge: Inspired by Andrew Bliss
 %
 % Fanny Besem
@@ -61,7 +61,7 @@ c2=(c(1,tb)-(c(1,2)-c(1,1))*l).*ones(1,length(b1)); % lower ticks
 
 tl1=text(b1,c1,a1,'HorizontalAlignment','center','rotation',rot,'VerticalAlignment','cap');
 tl2=text(b2,c2,a2,'HorizontalAlignment','center','rotation',rot,'VerticalAlignment','cap');
-    
+
 end
 
 

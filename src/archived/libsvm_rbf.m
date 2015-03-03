@@ -1,22 +1,22 @@
 function svm_own_libsvm ( num_iterations )
-        
+
     if nargin < 1
         num_iterations = 10
     end
     pick = @(x,n) x(randsample(size(x,1),min(size(x,1),n)),:);
     shuffle = @(x) x(randsample(size(x,1),size(x,1)),:);
-    
+
     addpath('/home/mauro/code/libsvm-3.12/matlab/');
     which('svmtrain')
 
-    
+
     % load train datasets
     real = loadset('mirbase20-nr','all', 0);
     pseudo1 = loadset('coding','all', 1);
     pseudo2 = loadset('other-ncrna','all', 2);
     pseudo3 = loadset('functional-ncrna','all', 3);
     pseudo = [ pseudo1; pseudo2; pseudo3 ];
-        
+
     num_workers = 12;
     if matlabpool('size') == 0
         while( num_workers > 1 )
@@ -76,7 +76,7 @@ function svm_own_libsvm ( num_iterations )
 
           test_real   = scale_data(  real(  ts_real(:,ir),1:66),f,s);
           test_pseudo = scale_data(pseudo(ts_pseudo(:,ip),1:66),f,s);
-          
+
           if t==1
               beg = clock;
               model = svmtrain(double(train_lbls), double(train_data), ...
@@ -86,12 +86,12 @@ function svm_own_libsvm ( num_iterations )
               fprintf( 'time needed for each training: %02d:%02d.\n', floor(elap/60), ...
                        mod(elap,60))
           end
-              
+
           parfor n=1:length(l_sigma)
               fprintf('%d/%d ', n, length(l_sigma))
               if ignore(n) continue; end
               try
-                  
+
                   model = svmtrain(double(train_lbls), double(train_data), ...
                                    sprintf('-g %8.6f -c %8.6f', ...
                                    l_sigma(n), l_boxc(n)));
@@ -101,34 +101,34 @@ function svm_own_libsvm ( num_iterations )
 
                   res_r = round(res_r);
                   res_p = round(res_p);
-                
+
                   se(t,n) = mean( res_r == 1 );
                   sp(t,n) = mean( res_p == -1 );
-                
+
                   if geomean( [se(t,n) sp(t,n)] ) < 0.3
                       ignore(n) = 1;
                   end
-              
+
               catch e
                   e
-              end  
+              end
           end
       end
 
       gm = reshape(geomean([mean(se,1);mean(sp,1)],1),length(sigma),[]);
       se = reshape(mean(se,1),length(sigma),[]);
       sp = reshape(mean(sp,1),length(sigma),[]);
-      
+
       best = max(max(gm));
       [bz, bc] = find(best-gm==0,1,'first');
-      
+
       fprintf('Step %d best: SE %8.6f SP %8.6f GM %8.6f for Z,C %8.6f %8.6f\n', ...
               r, se(bz,bc), sp(bz,bc), gm(bz,bc), sigma(bz), ...
               boxconstraint(bc));
-      
+
       sigma = exp([log(sigma(bz))-4/r:1/r:log(sigma(bz))+4/r])';
       boxconstraint = exp([log(boxconstraint(bc))-4/r:1/r:log(boxconstraint(bc))+4/r]);
-    
+
     end
     matlabpool close
 end

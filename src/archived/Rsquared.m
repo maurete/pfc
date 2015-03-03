@@ -1,6 +1,6 @@
 function [obj, beta, idx, iterations, fevalcount] = Rsquared( K, limit )
-% K is the computed kernel for all training vectors 
-    
+% K is the computed kernel for all training vectors
+
     % set to Inf to avoid kernel subsampling
     if nargin < 2, limit = 500; end
 
@@ -28,17 +28,17 @@ function [obj, beta, idx, iterations, fevalcount] = Rsquared( K, limit )
     catch
         options = optimset('Algorithm','interior-point','MaxFunEvals',100000,'Display','off');
     end
-    
+
     % Do the barrel roll!
     [beta, RR, exitflag, output] = ...
         fmincon( func, beta0, ... %function handle
                  -eye(len), zeros(len,1), ... % beta >=0
                  ones(1,len), -1, ... % sum(beta) = 1
                  [], [], [], options );
-    
+
     iterations = output.iterations;
     fevalcount = output.funcCount;
-    
+
     obj = -RR;
-    beta = -beta; 
+    beta = -beta;
 end

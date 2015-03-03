@@ -15,7 +15,7 @@ function [train test] = load_datasets( dsets )
 %   .train_ratio: how many elements will be included in the train
 %                 set: 0=none, 1=all
 %    .test_ratio: same as train_ratio above.
-%   
+%
 % return values:
 % two matrices, train and test, with the following columns
 %  * 1:66: feature vector for entry: 3,3x,s,f
@@ -29,16 +29,16 @@ function [train test] = load_datasets( dsets )
     valid_names = {     'coding'; 'functional-ncrna'; 'mirbase12'; ...
                    'other-ncrna'; 'updated';  'conserved-hairpin'; ...
                      'mirbase20'; 'mirbase50'; 'mirbase82-nr'};
-    
+
     train = [];
     test  = [];
 
     for i=1:length(dsets)
-        
+
         % validate dataset name
         val = strfind(valid_names, dsets(i).name);
         assert(sum([val{:,:}]) == 1, 'ERROR: invalid database name')
-        
+
         % get dataset species
         bpath = ['../data/' dsets(i).name '/'];
         d = dir( [bpath '*.c'] ); sp = { d.name }';
@@ -48,7 +48,7 @@ function [train test] = load_datasets( dsets )
         % find which species will be used for train/test
         trn_sp = zeros(size(species));
         tst_sp = zeros(size(species));
-        
+
         if isstr(dsets(i).train_species)
             if strcmpi(dsets(i).train_species,'all')
                 trn_sp = ones(size(trn_sp));
@@ -62,7 +62,7 @@ function [train test] = load_datasets( dsets )
                 trn_sp = trn_sp + strcmpi(species,dsets(i).train_species(k));
             end
         end
-        
+
         if isstr(dsets(i).test_species)
             if strcmpi(dsets(i).test_species,'all')
                 tst_sp = ones(size(tst_sp));
@@ -76,22 +76,22 @@ function [train test] = load_datasets( dsets )
                 tst_sp = tst_sp + strcmpi(species,dsets(i).test_species(k));
             end
         end
-        
+
         cur_train = [];
         cur_test  = [];
-        
+
         for j=1:length(species)
-        
+
             feat3 = dlmread( [bpath species{j} '.3'], '\t' );
             featx = dlmread( [bpath species{j} '.3x'], '\t' );
             feats = dlmread( [bpath species{j} '.s'], '\t' );
             featf = dlmread( [bpath species{j} '.f'], '\t' );
             class = dlmread( [bpath species{j} '.c'], '\t' );
-            
+
             num_train = round(length(class)*trn_sp(j)*dsets(i).train_ratio);
             num_test  = round(length(class)*trn_sp(j)*dsets(i).test_ratio);
             num_all   = num_train+num_test;
-            
+
             shuf = randsample(length(class),num_all);
 
             cur_train = [ cur_train; ...
@@ -115,12 +115,12 @@ function [train test] = load_datasets( dsets )
                          ones(size([num_train+1:num_all]')).*j ... % species number
                          ones(size([num_train+1:num_all]')).*i ... % dataset number
                        ];
-            
+
         end
-        
+
         train = [ train; cur_train ];
         test  = [ test; cur_test ];
-        
+
     end
 
 end

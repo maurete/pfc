@@ -11,7 +11,7 @@ function [major minor] = partset (dataset, n_maj, limit)
     if nargin > 2
         len = limit;
     end
-    
+
     % randomly sampled indexes
     idx = randsample(size(dataset,1),len);
     size(idx);
