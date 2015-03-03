@@ -1,8 +1,8 @@
 function [Z C perf] = svm_workflow ( )
-    
+
     pick = @(x,n) x(randsample(size(x,1),min(size(x,1),n)),:);
     shuffle = @(x) x(randsample(size(x,1),size(x,1)),:);
-        
+
     %% Xue's Triplet-SVM dataset
 
     POSITIVE_DATASETS = { 'mirbase50' };
@@ -11,7 +11,7 @@ function [Z C perf] = svm_workflow ( )
     NEGATIVE_SPECIES  = { '*' };
     TEST_DATASETS     = { 'updated' };
     TEST_SPECIES      = { '*' };
-    
+
     pseudo = [];
     real   = [];
     test   = [];
@@ -40,7 +40,7 @@ function [Z C perf] = svm_workflow ( )
              size(pseudo,1), size(pseudo,2)-1 );
     fprintf( 'Test dataset = %d entries, %d features\n', ...
              size(test,1), size(test,2)-1 );
-    
+
     % take 85% of smaller dataset, and (at most) double the other for training;
     % leave the rest for testing
     if size(real,1) < size(pseudo,1)
@@ -50,7 +50,7 @@ function [Z C perf] = svm_workflow ( )
         n_pseudo = round( size(pseudo,1)*0.85 );
         n_real = min( 2*n_pseudo, size(real,1) );
     end
-    
+
     % generate the training set
     real = shuffle(real);
     pseudo = shuffle(pseudo);
@@ -58,8 +58,8 @@ function [Z C perf] = svm_workflow ( )
     train = shuffle( [real(1:n_real,:); pseudo(1:n_pseudo,:)] );
 
     [train fac off] = scale_data(train);
-    
-    train_lbl = train(:,end); 
+
+    train_lbl = train(:,end);
     train     = train(:,1:end-1);
 
     fprintf( 'Training with %d entries, %d positive samples and %d negative samples.\n', ...
@@ -67,7 +67,7 @@ function [Z C perf] = svm_workflow ( )
 
     % sigma parameter for the RBF kernel
     Z = [1e1 1e2 1e3 1e4 1e5 1e6 1e7 1e8];
-    
+
     % boxconstraint parameter for the RBF kernel
     C = [1e-5 1e-4 1e-3 1e-2 1e-1 1 1e1 1e2 1e3 1e4 1e5 1e6 1e7 1e8 1e9 1e10];
 
@@ -75,7 +75,7 @@ function [Z C perf] = svm_workflow ( )
     real   = scale_data(real,   fac, off);
     pseudo = scale_data(pseudo, fac, off);
     test   = scale_data(test,   fac, off);
-    
+
     test_real   =   real(  n_real+1:end,1:end-1);
     test_pseudo = pseudo(n_pseudo+1:end,1:end-1);
 
@@ -90,28 +90,28 @@ function [Z C perf] = svm_workflow ( )
 
     % here we save SE and SP for each Z-C combination
     perf = zeros( length(Z), length(C), 3 );
-    
+
     matlabpool(2);
     for s=1:length(Z)
         for b=1:length(C)
-            
+
             se = zeros(1,10);
             sp = zeros(1,10);
             te = zeros(1,10);
 
-            try                                
+            try
             parfor t=1:10
                 model = svmtrain(train,train_lbl,'Kernel_Function','rbf', ...
                                  'rbf_sigma',Z(s),'boxconstraint',C(b));
-                
+
                 se(t) = mean(abs(svmclassify(model, test_real)-test_real_lbl)< 0.5);
                 sp(t) = mean(abs(svmclassify(model, test_pseudo)-test_pseudo_lbl)<0.5);
                 te(t) = mean(abs(svmclassify(model, test)-test_lbl)<0.5);
-                       
+
             end
                 fprintf( 'sigma=%8.6g, boxcn=%8.6g, se=%-8.6f, sp=%-8.6f, up=%-8.6f\n', ...
                  Z(s), C(b), mean(se), mean(sp), mean(te) )
-                
+
             catch e
                 se = 0;
                 sp = 0;
