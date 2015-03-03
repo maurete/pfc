@@ -1,92 +1,143 @@
 function out = gridtune
 %GRIDTUNE
 %
+    %fu = filtutil;
+    gu = gridutil;
 
-out.zoom = @zoom;
-    function [values, params, test, mask] = zoom (values, params, test, mask)
+    out.zoom = @zoom;
+    function grid = zoom (grid, X, idx, interp, ignore, dmap, fmap)
+    % zoom - 'Zoom' into grid's best performing region. Output grid
+    % is interpolated within this region with resolution 1/X.
+    %
+    % @param   grid: grid to operate on
+    % @param      X: zoom factor, by default 2
+    % @param    idx: Z-index of the data matrix where to search
+    % @param interp: Z-index(es) of the data matrix to be interpolated
+    % @param ignore: Z-index(es) where to mark elements as 'ignored'
+    %                outside region of interest
+        if nargin < 7, fmap = @(x) x; end
+        if nargin < 6, dmap = @(x) x; end
+        if nargin < 5, interp = 1; end
+        if nargin < 4, idx    = 1; end
+        if nargin < 3, X      = 2; end
 
-    % find 'zoom region' with best rates
-    [ii jj] = gridzoom(values(:,:,1));
+        % height and width of 'zoom window'
+        wh = ceil(size(grid.data,1)/X);
+        ww = ceil(size(grid.data,2)/X);
 
-    % interpolate sub-grids
-    values = gridinterp(values(ii,jj,:));
-    params = gridinterp(params(ii,jj,:));
+        % convolve with constant-1 window and find best region
+        res = conv2(grid.data(:,:,idx), ones([wh ww]), 'valid');
+        [ii jj] = find(res==max(max(res)),1,'first');
 
-    % restore test and mask grids
-    [test aux] = gridinterp(test(ii,jj,:));
-    test = [test & 1-aux]*1;
-    mask = floor(gridinterp(mask(ii,jj,:)));
-
-    end
-
-out.threshold = @threshold;
-    function [values, params, test, mask] = threshold (values, params, test, mask, thr, limit)
-
-    if nargin < 6, limit = 200; end
-    if nargin < 5, thr = 0.9; end
-
-    % interpolate grid
-    values = gridinterp(values);
-    params = gridinterp(params);
-
-    % restore test and mask grids
-    [test aux] = gridinterp(test);
-    test = [test & 1-aux]*1;
-    mask = floor(gridinterp(mask));
-
-    % mask values below threshold
-    [zz idx]  = sort(values(1:numel(values(:,:,1))));
-    % TODO the following leaves at most 200 elements unmasked.
-    % should be more general.
-    mask(idx(1:max(round(thr*numel(mask)),numel(mask)-limit))) = 1;
-
-    end
-
-out.bestneighbor = @bestneighbor;
-    function [values, params, test, mask] = bestneighbor (values, params, test, mask, precision)
-
-    if nargin < 5, precision = 0.25; end
-
-    np = size(params,3);
-
-    % get dx, dy for each parameter
-    cur_dx = zeros(1,np);
-    cur_dy = zeros(1,np);
-    if size(params,1) > 1
-        cur_dy = reshape(params(2,1,:)-params(1,1,:),1,[],1);
-    end
-    if size(params,2) > 1
-        cur_dx = reshape(params(1,2,:)-params(1,1,:),1,[],1);
-    end
-
-    rw = ceil(max([cur_dx.*sign(cur_dx)]/2)/precision);
-    rh = ceil(max([cur_dy.*sign(cur_dy)]/2)/precision);
-    nw = 2*rw+1;
-    nh = 2*rh+1;
-
-    % find best central value
-    [ii jj] = find(values(:,:,1)==max(max(values(:,:,1))),1,'first');
-
-    cvalues = values(ii,jj,:);
-    cparams = params(ii,jj,:);
-
-    values = zeros(nh, nw, size(values,3));
-    values(rh+1,rw+1,:) = cvalues;
-
-    params = zeros(nh, nw, np);
-    for i=1:np
-        p = cparams(i);
-        dx = cur_dx(i);
-        dy = cur_dy(i);
-        params(:,:,i) = ones(nh,nw)*diag(linspace(p-dx/2,p+dx/2,nw));
-        if dy ~= 0
-            params(:,:,i) = diag(linspace(p-dy/2,p+dy/2,nh))*ones(nh,nw);
+        % interpolate parameters inside best region
+        new1 = gu.mapinterp( 1:wh, grid.param1([1:wh]+ii-1), 1:1/X:wh, fmap, dmap);
+        new2 = [];
+        if ww>1, new2 = gu.mapinterp( 1:ww, grid.param2([1:ww]+jj-1), 1:1/X:ww, fmap, dmap);
         end
+
+        % insert new parameters into grid
+        grid = gu.insert(grid,new1,new2,interp,ignore,fmap);
     end
 
-    mask = zeros(nh, nw, size(mask,3));
-    test = zeros(nh, nw, size(test,3));
+    out.threshold = @threshold;
+    function grid = threshold (grid, thr, limit, idx, interp, ignore, dmap, fmap)
+    % threshold - Interpolate results grid and then values which fall
+    % below threshold as 'ignored'. Cap maximum number of elements to
+    % <limit>.
+    %
+    % @param   grid: grid to operate on
+    % @param    thr: threshold value, by default 0.9 (90%)
+    % @param  limit: maximum number of un-ignored elements
+    % @param    idx: Z-index of the data matrix where to search
+    % @param interp: Z-index(es) of the data matrix to be interpolated
+    % @param ignore: Z-index(es) where to mark elements as 'ignored'
+    %                outside region of interest
+        if nargin < 8, fmap = @(x) x; end
+        if nargin < 7, dmap = @(x) x; end
+        if nargin < 6, ignore = 3; end
+        if nargin < 5, interp = 1; end
+        if nargin < 4, idx    = 1; end
+        if nargin < 3, limit  = 200; end
+        if nargin < 2, thr    = 0.9; end
 
+        % interpolate grid
+        grid = gu.insert(grid, ...
+                         gu.mapinterp(grid.param1, fmap, dmap), ...
+                         gu.mapinterp(grid.param2, fmap, dmap), ...
+                         [interp idx], ignore, fmap);
+
+        % mask (ignore) values below threshold
+        mask = zeros( length(grid.param1), length(grid.param2));
+        mask( find( grid.data(:,:,idx) < thr) ) == 1;
+
+        % keep only <limit> best elements
+        if sum(sum(1-mask)) > limit
+            [zz idx]  = sort( reshape(grid.data(:,:,idx),1,[]) );
+            %mask(idx(1:max(round(thr*numel(mask)),numel(mask)-limit))) = 1;
+            mask(idx(1:(numel(mask)-limit))) = 1;
+        end
+
+        % apply mask to grid's 'ignore' index
+        grid.data(:,:,ignore) = grid.data(:,:,ignore) | mask;
+    end
+
+    out.nbest = @nbest;
+    function grid = nbest (grid, N, r, idx, interp, ignore, dmap, fmap)
+    % nbest - Find N best results and then interpolate around those
+    % elements with resolution r
+    %
+    % @param   grid: grid to operate on
+    % @param      N: (N>=1) number of elements or (N<1) proportion
+    %                over total number of elements to detail
+    % @param      r: resolution of interpolation around best elements
+    % @param    idx: Z-index of the data matrix where to search
+    % @param interp: Z-index(es) of the data matrix to be interpolated
+    % @param ignore: Z-index(es) where to mark elements as 'ignored'
+    %                outside region of interest
+        if nargin < 8, fmap = @(x) x; end
+        if nargin < 7, dmap = @(x) x; end
+        if nargin < 6, ignore = 1; end
+        if nargin < 5, interp = 1; end
+        if nargin < 4, idx    = 1; end
+        if nargin < 3, r      = 2; end
+        if nargin < 2, N      = 0.1; end
+
+        if N < 1, N = round( N * numel(grid.data(:,:,1)) ), end
+
+        order = 'descend';
+        if idx < 0, order = 'ascend'; idx = -idx; end
+
+        [zz indx] = sort( reshape(grid.data(:,:,idx),1,[]), order );
+
+        ii = [];
+        jj = [];
+        for i=unique(zz(1:N))
+            [ix jx] = ind2sub(size(grid.data(:,:,idx)), find([grid.data(:,:,idx)==i]));
+            ii = [ii;ix];
+            jj = [jj;jx];
+        end
+
+        p1 = zeros(length(ii),length(-1:1/r:1));
+        p2 = zeros(length(ii),length(-1:1/r:1));
+
+        for n=1:length(ii)
+            fprintf( '> best paramset (map) \t%f\t%f\tres\t%f\n', fmap(grid.param1(ii(n))), ...
+                     fmap(grid.param2(jj(n))), grid.data(ii(n), jj(n),idx))
+            p1(n,:) = gu.mapinterp(grid.param1, [-1:1/r:1]+ii(n), fmap, dmap);
+            p2(n,:) = gu.mapinterp(grid.param2, [-1:1/r:1]+jj(n), fmap, dmap);
+        end
+
+        % TODO should not need to do this
+        p1(p1<0) = min(min(abs(p1)));
+        p2(p2<0) = min(min(abs(p2)));
+
+        for n=1:length(ii)
+            if length(grid.param2) > 1
+                grid = gu.insert(grid, p1(n,:), p2(n,:), interp, ignore, fmap);
+            else
+                grid = gu.insert(grid, p1(n,:), [], interp, ignore, fmap);
+            end
+        end
     end
 
 end
