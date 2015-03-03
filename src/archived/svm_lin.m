@@ -274,7 +274,7 @@ function svm_lin ( dataset, featset, random_seeds )
         R = S.gridsearch;
 
         train = stshuffle(rs,[train_real;train_pseudo]);
-        
+
         train_lbls = train(:,67);
 
         model = svmtrain(train(:,features),train_lbls, ...

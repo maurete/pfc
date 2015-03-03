@@ -3,19 +3,19 @@ function [feat lbl] = load_dataset( name, species )
 % loads dataset with name name
 % if species is given as a cell array of strings,
 % loads only specified species, otherwise loads all species
-    
+
     % valid dataset names
     valid_names = {'coding'; 'functional-ncrna'; 'mirbase12'; ...
                    'other-ncrna'; 'updated'; 'conserved-hairpin'; ...
                    'mirbase20'; 'mirbase50'; 'mirbase82-nr'};
-    
+
     % validate dataset name
     val = strfind(valid_names, name);
     assert(sum([val{:,:}]) == 1, 'ERROR: invalid database name')
-    
+
     % dataset base path
     basepath = ['../data/' name '/'];
-    
+
     file3 = [];
     filex = [];
     files = [];
@@ -29,7 +29,7 @@ function [feat lbl] = load_dataset( name, species )
     elseif isstr(species)
         species = { species };
     end
-        
+
     % load features by species
     for j=1:length(species)
         file3 = [file3; dir([basepath species{j} '.3'])];
@@ -38,7 +38,7 @@ function [feat lbl] = load_dataset( name, species )
         filef = [filef; dir([basepath species{j} '.f'])];
         filec = [filec; dir([basepath species{j} '.c'])];
     end
-    
+
     % fun reads file into an array
     fun = @(file) dlmread([basepath file],'\t');
 
@@ -48,7 +48,7 @@ function [feat lbl] = load_dataset( name, species )
     feats = cellfun( fun, {files.name},'UniformOutput',false);
     featf = cellfun( fun, {filef.name},'UniformOutput',false);
     featc = cellfun( fun, {filec.name},'UniformOutput',false);
-    
+
     % concatenate all features into one
     feat = cell2mat([feat3' featx' feats' featf']);
     lbl = cell2mat(featc');

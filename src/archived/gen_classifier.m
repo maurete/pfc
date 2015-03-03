@@ -11,7 +11,7 @@ function gen_classifier( type, params, data, features, out, seed)
     if nargin < 6
         seed = 438957;
     end
-    
+
     stpick    = @(x,n) x(strandsample(seed,size(x,1),min(size(x,1),n)),:);
     stshuffle = @(x)   x(strandsample(seed,size(x,1),size(x,1)),:);
 
@@ -23,12 +23,12 @@ function gen_classifier( type, params, data, features, out, seed)
     train = [];
     test = [];
     model = [];
-    
+
     if strncmpi(type, 'svm', 3)
 
         [train test] = load_data( data, seed );
         train_data = stshuffle( [ train.real; train.pseudo ] );
-        
+
         %train
         fprintf('#\n# training...\n');
         if strcmpi(type,'svm_rbf') | strcmpi(type,'svm-rbf')
@@ -41,7 +41,7 @@ function gen_classifier( type, params, data, features, out, seed)
                              'Kernel_Function','linear', ...
                              'boxconstraint',params);
         end
-        
+
         % test
         fprintf('#\n# test results:\n');
         fprintf('# \t\tdataset\t\t\tclass\tsize\tperformance\n');
@@ -52,7 +52,7 @@ function gen_classifier( type, params, data, features, out, seed)
             fprintf('+ %32s\t%d\t%d\t%8.6f\n',...
                     test(i).name, test(i).class, size(test(i).data,1), perf);
         end
-    
+
     elseif strcmpi(type,'mlp')
 
         [train test] = load_data( data, seed, true);
@@ -61,12 +61,12 @@ function gen_classifier( type, params, data, features, out, seed)
         %train
         fprintf('#\n# training...\n');
         model = patternnet( params );
-                    
+
         model.trainFcn = 'trainscg';
         model.trainParam.showWindow = 0;
         model.trainParam.time = 10;
         model.trainParam.epochs = 2000000000000;
-                
+
         model = init(model);
         model = train(model, train_data(:,fset)', train_data(:,67)');
 
@@ -81,14 +81,14 @@ function gen_classifier( type, params, data, features, out, seed)
             fprintf('+ %32s\t%d\t%d\t%8.6f\n',...
                     test(i).name, test(i).class, size(test(i).data,1), perf);
         end
-        
+
     else
         fprintf('Unknown classifier type. should be one of svm_(linear|rbf) or mlp.')
         return
     end
-    
+
     % save output file
     save(out, model, params, features, seed, '-ascii')
-        
-        
+
+
 endfunction

@@ -14,7 +14,7 @@ function libsvm_try(dataset)
                      ones(size(test(i).data(:,1)))*test(i).class, ...
                      sparse(test(i).data(:,1:66)) );
     end
-    
+
     system( [ 'svm-scale -s tmp_' dataset '_scale tmp_' dataset '_train.svm > tmp_' dataset '_train.scaled' ] )
     for i=1:length(test)
         system( ['svm-scale -r tmp_' dataset '_scale tmp_' test(i).name '_test.svm > tmp_' test(i).name '_test.scaled'] );
@@ -26,9 +26,9 @@ function libsvm_try(dataset)
         setenv('LD_LIBRARY_PATH', libpath)
         !echo $LD_LIBRARY_PATH
     end
-    
+
     system( [ 'svm-easy tmp_' dataset '_train.scaled' ] )
-    
+
     for i=1:length(test)
         fprintf(['svm-predict tmp_' test(i).name '_test.scaled ...\n']);
         system( ['svm-predict tmp_' test(i).name '_test.scaled tmp_' dataset '_train.scaled.model tmp_ignore'] );
