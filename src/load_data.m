@@ -4,13 +4,13 @@ function [ tr ts ] = load_data ( id, seed, symmetric, bootstrap )
     if nargin < 3, symmetric = false; end
     if nargin < 2, seed = 0; end
 
+    com = common;
+
     scalefun = @scale_data;
     if symmetric, scalefun = @scale_sym; end
 
-    pick      = @(x,n) x(randsample(size(x,1),min(size(x,1),n)),:);
-    shuffle   = @(x)   x(randsample(size(x,1),size(x,1)),:);
-    stpick    = @(x,n) x(strandsample(seed,size(x,1),min(size(x,1),n)),:);
-    stshuffle = @(x)   x(strandsample(seed,size(x,1),size(x,1)),:);
+    stpick    = @(x,n) com.stpick(seed,x,n);
+    stshuffle = @(x)   com.stshuffle(seed,x);
 
     tr = struct();
     ts = struct();
