@@ -32,10 +32,7 @@ function [err, deriv] = error_empirical_csvm( fsvmtrain, fsvmcls, fsvmderiv, the
         warning('SVM output deriv w.r.t. C is zero for all inputs.')
     end
 
-    % train sigmoid on validation data
-    sigmoid_params = model_sigmoid_train(z, target);
-
-    [Ei dEi_dz] = error_empirical(sigmoid_params, z, target);
+    [Ei dEi_dz] = error_empirical(z, target);
     
     err = sum(Ei);
     deriv = dEi_dz' * dz_dtheta;

@@ -1,5 +1,6 @@
-function [output, deriv] = model_csvm(svmstruct, input, decision_values, unconstrained)
-    if nargin < 4, unconstrained = false; end
+function [output, deriv] = model_csvm(svmstruct, input, decision_values, c_log, kparam_log)
+    if nargin < 5,      kparam_log = false; end
+    if nargin < 4,           c_log = false; end
     if nargin < 3, decision_values = false; end
 
     [output outputr] = mysvm_classify(svmstruct, input);
@@ -20,15 +21,13 @@ function [output, deriv] = model_csvm(svmstruct, input, decision_values, unconst
     alphab = [ svmstruct.alpha_ ; svmstruct.bias_ ];
     alphab_deriv = zeros(length(alphab), nparam);
 
-    % VERIFY these indices are correctly generated
-    % Free Support Vector indices ( where abs(alpha) < C)
+    % Free Support Vector + bias indices ( where abs(alpha) < C)
     fidx = [ find(~svmstruct.bsv_); length(alphab) ];
-    %fidx = [ find([ abs(svmstruct.alpha_) < svmstruct.C_ ]); length(alphab) ];
-    % Bounded Support Vector indices ( where abs(alpha) < C)
-    bidx = [ find(svmstruct.bsv_) ];
-    %bidx = find([ abs(svmstruct.alpha_) >= svmstruct.C_ ]);
 
-    flen = length(fidx)-1; % free index count (without b)
+    % Bounded Support Vector indices ( where abs(alpha) = C)
+    bidx = [ find(svmstruct.bsv_) ];
+
+    flen = length(fidx)-1; % free sv count (without bias)
     blen = length(bidx);
 
     H = zeros(flen+1);
@@ -36,40 +35,43 @@ function [output, deriv] = model_csvm(svmstruct, input, decision_values, unconst
     R = zeros(flen+1,blen);
     dH = zeros(flen+1, flen+1, nparam-1); % deriv only wrt kernel params
     dR = zeros(flen+1,   blen, nparam-1); % deriv only wrt kernel params
+
+    % if there are free svs
     if flen > 0
-    if nparam > 1
-        % kernel has at least one parameter
-        [H(1:flen,1:flen), dH(1:flen,1:flen,:)] = ...
-            svmstruct.kfunc_( svmstruct.sv_(fidx(1:flen),:), ...
-                              svmstruct.sv_(fidx(1:flen),:), ...
-                              svmstruct.kparam_ );
-        if blen > 0
-            [R(1:flen,:), dR(1:flen,:,:)] = ...
+        if nparam > 1
+            % kernel has at least one parameter
+            [H(1:flen,1:flen), dH(1:flen,1:flen,:)] = ...
                 svmstruct.kfunc_( svmstruct.sv_(fidx(1:flen),:), ...
-                                  svmstruct.sv_(bidx,:), ...
+                                  svmstruct.sv_(fidx(1:flen),:), ...
                                   svmstruct.kparam_ );
-        end
-    else
-        % kernel has no parameters: dH, dR will be empty
-        H(1:flen,1:flen) = ...
-            svmstruct.kfunc_( svmstruct.sv_(fidx(1:flen),:), ...
-                              svmstruct.sv_(fidx(1:flen),:), ...
-                              svmstruct.kparam_ );
-        if blen > 0
-            R(1:flen,:) = ...
+
+            if blen > 0
+                % there are bounded svs
+                [R(1:flen,:), dR(1:flen,:,:)] = ...
+                    svmstruct.kfunc_( svmstruct.sv_(fidx(1:flen),:), ...
+                                      svmstruct.sv_(bidx,:), ...
+                                      svmstruct.kparam_ );
+            end
+        else
+            % kernel has no parameters: dH, dR will be empty
+            H(1:flen,1:flen) = ...
                 svmstruct.kfunc_( svmstruct.sv_(fidx(1:flen),:), ...
-                                  svmstruct.sv_(bidx,:), ...
+                                  svmstruct.sv_(fidx(1:flen),:), ...
                                   svmstruct.kparam_ );
+            if blen > 0
+                R(1:flen,:) = ...
+                    svmstruct.kfunc_( svmstruct.sv_(fidx(1:flen),:), ...
+                                      svmstruct.sv_(bidx,:), ...
+                                      svmstruct.kparam_ );
+            end
         end
-    end
     end
 
     H(flen+1,1:flen) = 1;
     H(1:flen,flen+1) = 1;
-    if blen > 0
-        R(flen+1,:)  = 1;
-    end
+    if blen > 0, R(flen+1,:) = 1; end
 
+    % invert Hessian
     H_inv = pinv(H,1e-10);
 
     % compute deriv of (alpha,b) wrt C
@@ -77,17 +79,17 @@ function [output, deriv] = model_csvm(svmstruct, input, decision_values, unconst
         alphab_deriv(fidx,1) = - H_inv * (R * svmstruct.svclass_(bidx));
         alphab_deriv(bidx(alphab(bidx)>0),1)  = svmstruct.cplus_/svmstruct.cminus_;
         alphab_deriv(bidx(alphab(bidx)<=0),1) = - svmstruct.cminus_/svmstruct.cplus_;
-        % If exponential: VERIFY if this should be done or not
-        if unconstrained,
-            alphab_deriv(:,1) = alphab_deriv(:,1) .* svmstruct.C_; end
+
+        % if searching for optimal C in logspace, multiply by C
+        if c_log, alphab_deriv(:,1) = alphab_deriv(:,1) .* svmstruct.C_; end
     end
 
     % compute deriv of (alpha, b) wrt kernel params
     for k=1:nparam-1
-        %aux = dH(:,:,k) * alphab(fidx);
-        %aux = aux + dR(:,:,k)*alphab(bidx);
         alphab_deriv(fidx,k+1) = -( H_inv * (dH(:,:,k)*alphab(fidx)+dR(:,:,k)*alphab(bidx)) );
-        %if unconstrained, alphab_deriv(fidx,k+1) = alphab_deriv(fidx,k+1) .* svmstruct.kparam_(k); end
+
+        % if searching for optimal kernel params in logspace
+        if kparam_log, alphab_deriv(fidx,k+1) = alphab_deriv(fidx,k+1) .* svmstruct.kparam_(k); end
     end
 
     % find derivatives of inputs wrt params (C, kernelparams)

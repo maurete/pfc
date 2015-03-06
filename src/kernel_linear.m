@@ -1,3 +1,4 @@
-function K = kernel_linear(u,v,varargin)
+function [K der] = kernel_linear(u,v,varargin)
     K = (u*v');
+    der = [];
 end
