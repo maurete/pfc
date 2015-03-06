@@ -1,20 +1,15 @@
-function [err, deriv] = error_empirical(modelarg, input, target)
+function [err, deriv] = error_empirical(input, target)
 
-    % if isa(modelderiv,'function_handle')
-    %     output = model(input, modelarg);      % Ninputs x 1
-    %     mderiv = modelderiv(input, modelarg); % Ninputs x Nargs
-    % else
-    %     [output mderiv] = model(input, modelarg);
-    % end
+    % train sigmoid on validation data
+    sigmoid_params = model_sigmoid_train(input, target);
 
-    output = model_sigmoid(input, modelarg);
-    
+    % get posterior (?) probabilities
+    output = model_sigmoid(input, sigmoid_params);
+
     % empirical error E_i
     err = output;
     err(target>0) = 1-output(target>0);
-    
+
     % dE_i/dinput_i = A * y_i * p_i * (i - p_i)
-    deriv = zeros(size(err));
-    deriv = modelarg(1) .* target .* output .* (1 - output);
-    
+    deriv = sigmoid_params(1) .* target .* output .* (1 - output);
 end

@@ -220,4 +220,10 @@ function c = common
     function out = time_string(time)
         out = datestr(time.begintime,'yyyy-mm-dd_HH.MM.SS');
     end
+
+    % void function: simply does nothing
+    c.void = @void;
+    function void(varargin)
+    end
+
 end

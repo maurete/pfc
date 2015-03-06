@@ -1,9 +1,9 @@
 function grid = gridsearch ( dataset, featset, kernel, lib, npart, ratio, randseed, tabfile, data )
 
-    if nargin < 9, ratio = 0.1; end
-    if nargin < 8, randseed = 1135; end
-    if nargin < 7, data = false; end
-    if nargin < 6, tabfile = 'resultsv3.tsv'; end
+    if nargin < 6, ratio = 0.1; end
+    if nargin < 7, randseed = 1135; end
+    if nargin < 9, data = false; end
+    if nargin < 8, tabfile = 'resultsv3.tsv'; end
     if nargin < 5, npart = 40; end
 
     com = common;
@@ -172,11 +172,13 @@ function grid = gridsearch ( dataset, featset, kernel, lib, npart, ratio, randse
                     tst_aux(k) = tst_aux(k) + 1;
 
                     if p < 2
-                        if strcmp(kernel,'rbf')
-                            part_rmb(k,p) = RM_eval(dataset, featset, kernel, lib, ...
-                                                    lgrid(n,LBOX), lgrid(n,LGAM), 1, false, ...
-                                                    randseed, data);
-                        end
+                        if strcmp(kernel,'rbf'), try
+                            rmbtrain = com.shuffle([data.train.real;data.train.pseudo]);
+                            trainfunc = @(input,target,theta) mysvm_train(lib, kernel, input, target, ...
+                                                                          theta(1), theta(2:end), false, 1e-6 );
+                            part_rmb(k,p) = error_rmb_csvm( trainfunc, [lgrid(n,LBOX),lgrid(n,LGAM)], ...
+                                                            1, false, rmbtrain(:,features), rmbtrain(:,67));
+                        end, end
                     end
 
 
