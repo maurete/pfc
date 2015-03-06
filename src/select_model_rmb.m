@@ -1,14 +1,13 @@
 function [svm_params, paramh, errh] = select_model_rmb ( dataset, featset, kernel, lib, ...
-                                                      theta0, max_iter, randseed, data )
-
+                                                      theta0, max_iter, randseed, data, ...
+                                                      gtol, Delta, exponential )
+    
+    if nargin < 11|| isempty(exponential), exponential = true; end
+    if nargin < 10|| isempty(Delta),    Delta    = 1; end
+    if nargin < 9 || isempty(gtol),     gtol     = 2e-6; end
     if nargin < 8 || isempty(data),     data     = false; end
     if nargin < 7 || isempty(randseed), randseed = 1135; end
     if nargin < 6 || isempty(max_iter), max_iter = 400; end
-
-    % MISC SETTINGS
-    gtol = 1e-6 * 2;
-    Delta = 1;
-    exponential = true;
 
     com = common;
 
@@ -54,7 +53,7 @@ function [svm_params, paramh, errh] = select_model_rmb ( dataset, featset, kerne
     rmb_func = @(theta) error_rmb_csvm(trainfunc, tf(theta), Delta, ...
                                        exponential, trainset, trainlbl);
 
-    [svm_params,~,paramh,errh] = opt_bfgs_simple( rmb_func, false, theta, 1e-6, 100 )
+    [svm_params,~,paramh,errh] = opt_bfgs_simple( rmb_func, false, theta, gtol, 100 )
 
     %%% test best-performing parameters %%%
 
