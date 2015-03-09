@@ -51,49 +51,55 @@ function [ tr ts ] = load_data ( id, seed, symmetric, bootstrap )
             tr.b_pseudo_size = 168;
         end
 
-        % test datasets (not used for CV)
+        % test datasets (not used for CV, only for testing)
         ts(1).name   = 'mirbase50-h';
         ts(1).class  = 1;
         data         = real1_ts;
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(1).data   = data;
+        ts(1).trained = true; % trained on partition of this dataset
 
         ts(2).name   = 'mirbase50-nh';
         ts(2).class  = 1;
         data         = real2;
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(2).data   = data;
+        ts(2).trained = false;
 
         ts(3).name   = 'updated-h';
         ts(3).class  = 1;
         data         = real3;
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(3).data   = data;
+        ts(3).trained = false;
 
         ts(4).name   = 'coding-h';
         ts(4).class  = -1;
         data         = pseudo1_ts;
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(4).data   = data;
+        ts(4).trained = true; % trained on partition of this dataset
 
         ts(5).name   = 'conserved-hairpin-h';
         ts(5).class  = -1;
         data         = pseudo2;
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(5).data   = data;
+        ts(5).trained = false;
 
         ts(6).name   = 'mirbase20-h';
         ts(6).class  = 1;
         data         = loadset('mirbase20','human',6);
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(6).data   = data;
+        ts(6).trained = false;
 
         ts(7).name   = 'mirbase20-nh';
         ts(7).class  = 1;
         data         = loadset('mirbase20','non-human',7);
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(7).data   = data;
-
+        ts(7).trained = false;
 
     elseif strcmpi(id,'ng')
 
@@ -136,36 +142,42 @@ function [ tr ts ] = load_data ( id, seed, symmetric, bootstrap )
         data         = real0( 191:end,:);
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(1).data   = data;
+        ts(1).trained = true; % trained on partition of this dataset
 
         ts(2).name   = 'mirbase82-nh';
         ts(2).class  = 1;
         data         = real2;
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(2).data   = data;
+        ts(2).trained = false;
 
         ts(3).name   = 'coding-h';
         ts(3).class  = -1;
         data         = stpick(pseudo0(381:end,:),236+3354); % original = 246 + 3836
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(3).data   = data;
+        ts(3).trained = true; % trained on partition of this dataset
 
         ts(4).name   = 'functional-ncrna';
         ts(4).class  = -1;
         data         = pseudo2;
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(4).data   = data;
+        ts(4).trained = false;
 
         ts(5).name   = 'mirbase20-h';
         ts(5).class  = 1;
         data         = loadset('mirbase20','human',6);
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(5).data   = data;
+        ts(5).trained = false;
 
         ts(6).name   = 'mirbase20-nh';
         ts(6).class  = 1;
         data         = loadset('mirbase20','non-human',7);
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(6).data   = data;
+        ts(6).trained = false;
 
     elseif strcmpi(id,'ng-multi')
 
@@ -203,36 +215,42 @@ function [ tr ts ] = load_data ( id, seed, symmetric, bootstrap )
         data         = real0( 201:end,:);
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(1).data   = data;
+        ts(1).trained = true; % trained on partition of this dataset
 
         ts(2).name   = 'mirbase82-nh';
         ts(2).class  = 1;
         data         = loadset('mirbase82-mipred/multi', 'non-human', 1);
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(2).data   = data;
+        ts(2).trained = false;
 
         ts(3).name   = 'coding-h';
         ts(3).class  = -1;
         data         = stpick(pseudo0(401:end,:),246+3836); % original = 246 + 3836
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(3).data   = data;
+        ts(3).trained = true;
 
         ts(4).name   = 'functional-ncrna';
         ts(4).class  = -1;
         data         = loadset('functional-ncrna/multi', 'all', 3);
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(4).data   = data;
+        ts(4).trained = false;
 
         ts(5).name   = 'mirbase20-h';
         ts(5).class  = 1;
         data         = loadset('mirbase20/multi','human',6);
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(5).data   = data;
+        ts(5).trained = false;
 
         ts(6).name   = 'mirbase20-nh';
         ts(6).class  = 1;
         data         = loadset('mirbase20/multi','non-human',7);
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(6).data   = data;
+        ts(6).trained = false;
 
     elseif strcmpi(id,'batuwita')
 
@@ -275,36 +293,42 @@ function [ tr ts ] = load_data ( id, seed, symmetric, bootstrap )
         data         = real0( 562:end,:); % 99 hsa
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(1).data   = data;
+        ts(1).trained = true; % trained on partition of this dataset
 
         ts(2).name   = 'coding-h';
         ts(2).class  = -1;
         data         = pseudo1(1023:end,:);
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(2).data   = data;
+        ts(2).trained = true; % trained on partition of this dataset
 
         ts(3).name   = 'other-ncrna';
         ts(3).class  = -1;
         data         = pseudo2(101:end,:);
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(3).data   = data;
+        ts(3).trained = true; % trained on partition of this dataset
 
         ts(4).name   = 'mirbase12-nh';
         ts(4).class  = 1;
         data         = loadset('mirbase12','non-human',7);
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(4).data   = data;
+        ts(4).trained = false;
 
         ts(5).name   = 'mirbase20-h';
         ts(5).class  = 1;
         data         = loadset('mirbase20','human',6);
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(5).data   = data;
+        ts(5).trained = false;
 
         ts(6).name   = 'mirbase20-nh';
         ts(6).class  = 1;
         data         = loadset('mirbase20','non-human',7);
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(6).data   = data;
+        ts(6).trained = false;
 
     elseif strcmpi(id,'batuwita-multi')
 
@@ -347,36 +371,42 @@ function [ tr ts ] = load_data ( id, seed, symmetric, bootstrap )
         data         = real0( 588:end,:);
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(1).data   = data;
+        ts(1).trained = true; % trained on partition of this dataset
 
         ts(2).name   = 'coding-h';
         ts(2).class  = -1;
         data         = pseudo1(1071:end,:);
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(2).data   = data;
+        ts(2).trained = true; % trained on partition of this dataset
 
         ts(3).name   = 'other-ncrna';
         ts(3).class  = -1;
         data         = pseudo2(105:end,:);
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(3).data   = data;
+        ts(3).trained = true; % trained on partition of this dataset
 
         ts(4).name   = 'mirbase12-nh';
         ts(4).class  = 1;
         data         = loadset('mirbase12/multi','non-human',7);
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(4).data   = data;
+        ts(4).trained = false;
 
         ts(5).name   = 'mirbase20-h';
         ts(5).class  = 1;
         data         = loadset('mirbase20/multi','human',6);
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(5).data   = data;
+        ts(5).trained = false;
 
         ts(6).name   = 'mirbase20-nh';
         ts(6).class  = 1;
         data         = loadset('mirbase20/multi','non-human',7);
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(6).data   = data;
+        ts(6).trained = false;
 
     end
 
