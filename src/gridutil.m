@@ -1,26 +1,32 @@
 function out = gridutil
 
     out.new = @new;
-    function grid = new(param1, param2, n)
-        if nargin < 3, n=3; end
+    function grid = new(param1, param2, n, names, varargin)
         grid = struct();
+        if nargin < 3 || isempty(n), n=3; end
+        if nargin > 3 && iscell(names),
+            grid.names = names;
+            n = length(names);
+        end
         grid.param1 = reshape(param1,[],1);
         grid.param2 = reshape(param2,1,[]);
         grid.data = zeros( length(param1), length(param2), n);
     end
 
     out.pack = @pack;
-    function m = pack(grid)
+    function [m,names] = pack(grid)
         m = zeros(prod( [size(grid.data,1), size(grid.data,2)]), size(grid.data,3)+2 );
         m(:,1) = reshape( diag(grid.param1)*ones(size(grid.data(:,:,1))), [], 1);
         m(:,2) = reshape( ones(size(grid.data(:,:,1)))*diag(grid.param2), [], 1);
         for i=1:size(grid.data,3)
             m(:,i+2) = reshape(grid.data(:,:,i), [], 1);
         end
+        names = {};
+        if isfield(grid,'names'), names = grid.names; end
     end
 
     out.unpack = @unpack;
-    function grid = unpack(m)
+    function grid = unpack(m,names,varargin)
         grid = struct();
         grid.param1 = unique(m(:,1),'stable');
         grid.param2 = unique(m(:,2),'stable')';
@@ -28,6 +34,7 @@ function out = gridutil
         for i=3:size(m,2)
             grid.data(:,:,i-2) = reshape(m(:,i), length(grid.param1), length(grid.param2));
         end
+        if nargin > 1 && iscell(names), grid.names = names; end
     end
 
     function [sign literal] = vfindorder(v)
@@ -380,7 +387,11 @@ function out = gridutil
             for g = 1:gc
                 for i=1:length(idx)
                     h = [h plot(log2(grid{g}.param1), map(grid{g}.data(:,:,idx(i))))];
-                    l{g+i-1} = ['grid ' num2str(g) ' idx ' num2str(idx(i)) ];
+                    if isfield(grid{g},'names')
+                        l{g+i-1} = ['grid ' num2str(g) ' ' grid{g}.names{idx(i)} ];
+                    else
+                        l{g+i-1} = ['grid ' num2str(g) ' idx ' num2str(idx(i)) ];
+                    end
                 end
             end
             legend(h,l)
@@ -395,7 +406,11 @@ function out = gridutil
             for g = 1:gc
                 for i=1:length(idx)
                     h = [h mesh(log2(grid{g}.param2),log2(grid{g}.param1), map(grid{g}.data(:,:,idx(i))))];
-                    l{g+i-1} = ['grid ' num2str(g) ' idx ' num2str(idx(i)) ];
+                    if isfield(grid{g},'names')
+                        l{g+i-1} = ['grid ' num2str(g) ' ' grid{g}.names{idx(i)} ];
+                    else
+                        l{g+i-1} = ['grid ' num2str(g) ' idx ' num2str(idx(i)) ];
+                    end
                 end
             end
             legend(h,l)

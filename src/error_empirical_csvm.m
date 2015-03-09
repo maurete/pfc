@@ -17,8 +17,6 @@ function [err, deriv] = error_empirical_csvm( fsvmtrain, fsvmcls, fsvmderiv, the
         svmmodel = fsvmtrain( trainset, trainlbl, theta);
 
         validx = part.validation(:,p);
-        % horrible fix for elements that escaped partitioning
-        if p==npart, validx = unique( [validx; find(z==0)], 'stable' ); end
 
         validationset = input( validx, :);
         if isa(fsvmderiv, 'function_handle')
