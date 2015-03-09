@@ -1,4 +1,4 @@
-function [major minor] = stpart(seed, numel, n_part, ratio)
+function [major minor] = stpart(seed, numel, n_part, ratio, logical)
 
 %% stpart - partition dataset
 %
@@ -28,6 +28,8 @@ function [major minor] = stpart(seed, numel, n_part, ratio)
 % @output: two matrices where each column is a partition
 %          for major (train) and minor (test) respectively
 
+    if nargin < 5, logical = true; end
+
     com = common;
 
     % if numel is the actual data, let it count the rows instead
@@ -54,15 +56,30 @@ function [major minor] = stpart(seed, numel, n_part, ratio)
     step = numel/n_part;
 
     % fill output matrices with zero
-    major = zeros(nmaj,n_part);
-    minor = zeros(numel-nmaj,n_part);
+    if logical
+        major = false(numel,n_part);
+        minor = false(numel,n_part);
+    else
+        major = zeros(nmaj,n_part);
+        minor = zeros(numel-nmaj,n_part);
+    end
 
     % for every partition
     for i=0:n_part-1
         % shift the whole shuffled data by (step) element
-        idx2 = circshift(idx,floor(i*step));
+        idx2 = circshift(idx,round(i*step));
         % save indexes into major (train) and minor(test) vector
-        major(:,i+1) = idx2(1:nmaj);
-        minor(:,i+1) = idx2(nmaj+1:end);
+        if logical
+            major(idx2(1:nmaj),i+1) = 1;
+            minor(idx2(nmaj+1:end),i+1) = 1;
+        else
+            major(:,i+1) = idx2(1:nmaj);
+            minor(:,i+1) = idx2(nmaj+1:end);
+        end
     end
+    % if logical && abs(ratio-1/n_part)<1e-5
+    %     ri = find(~any(minor,2))
+    %     ci = find(~any(major(ri,:),1))
+    %     minor(ri,ci) = 1;
+    % end
 end

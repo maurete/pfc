@@ -1,7 +1,6 @@
 function out = gridtune
 %GRIDTUNE
 %
-    %fu = filtutil;
     gu = gridutil;
 
     out.zoom = @zoom;
@@ -21,13 +20,16 @@ function out = gridtune
         if nargin < 4, idx    = 1; end
         if nargin < 3, X      = 2; end
 
+        sgn = sign(idx);
+        idx = abs(idx);
+
         % height and width of 'zoom window'
         wh = ceil(size(grid.data,1)/X);
         ww = ceil(size(grid.data,2)/X);
 
         % convolve with constant-1 window and find best region
         res = conv2(grid.data(:,:,idx), ones([wh ww]), 'valid');
-        [ii jj] = find(res==max(max(res)),1,'first');
+        [ii jj] = find(sgn*res==max(sgn*res(:)),1,'first');
 
         % interpolate parameters inside best region
         new1 = gu.mapinterp( 1:wh, grid.param1([1:wh]+ii-1), 1:1/X:wh, fmap, dmap);
@@ -58,7 +60,11 @@ function out = gridtune
         if nargin < 5, interp = 1; end
         if nargin < 4, idx    = 1; end
         if nargin < 3, limit  = 200; end
-        if nargin < 2, thr    = 0.9; end
+
+        sgn = sign(idx);
+        idx = abs(idx);
+
+        if nargin < 2, thr = sgn * 0.9 * max(sgn*grid.data(:,:,idx)); end
 
         % interpolate grid
         grid = gu.insert(grid, ...
@@ -68,11 +74,11 @@ function out = gridtune
 
         % mask (ignore) values below threshold
         mask = zeros( length(grid.param1), length(grid.param2));
-        mask( find( grid.data(:,:,idx) < thr) ) == 1;
+        mask( find( sgn*grid.data(:,:,idx) < sgn*thr) ) == 1;
 
         % keep only <limit> best elements
         if sum(sum(1-mask)) > limit
-            [zz idx]  = sort( reshape(grid.data(:,:,idx),1,[]) );
+            [~,idx]  = sort( sgn*reshape(grid.data(:,:,idx),1,[]) );
             %mask(idx(1:max(round(thr*numel(mask)),numel(mask)-limit))) = 1;
             mask(idx(1:(numel(mask)-limit))) = 1;
         end
@@ -104,10 +110,10 @@ function out = gridtune
 
         if N < 1, N = round( N * numel(grid.data(:,:,1)) ), end
 
-        order = 'descend';
-        if idx < 0, order = 'ascend'; idx = -idx; end
+        sgn = sign(idx);
+        idx = abs(idx);
 
-        [zz indx] = sort( reshape(grid.data(:,:,idx),1,[]), order );
+        [~,indx] = sort( sgn*reshape(grid.data(:,:,idx),1,[]) );
 
         ii = [];
         jj = [];
