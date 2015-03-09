@@ -1,10 +1,8 @@
-function [svm_params paramh errh] = select_model_empirical(dataset, featset, kernel, lib, ...
-                                                      theta0, npart, ratio, randseed, data)
+function [svm_params paramh errh] = select_model_empirical( problem, kernel, lib, ...
+                                                      theta0, npart, ratio)
 
-    if nargin < 9 || isempty(data),         data = false; end
-    if nargin < 8 || isempty(randseed), randseed = 1135; end
-    if nargin < 7 || isempty(ratio),       ratio = 0; end
-    if nargin < 6 || isempty(npart),       npart = 5; end
+    if nargin < 6 || isempty(ratio),       ratio = 0; end
+    if nargin < 5 || isempty(npart),       npart = 5; end
 
     % MISC SETTINGS
     gtol = 1e-6 * 2;
@@ -25,27 +23,15 @@ function [svm_params paramh errh] = select_model_empirical(dataset, featset, ker
     else error('! fatal error: unknown kernel function specified.');
     end
 
-    features = com.featindex{featset};
-
-    %%% Load data %%%
-
-    if ~isstruct(data)
-        data = struct();
-        [data.train data.test] = load_data(dataset, randseed, false);
-    end
-    % generate CV partitions
-    traindata = com.stshuffle(randseed,[data.train.real; data.train.pseudo]);
-    [part.train part.validation] = stpart(randseed, traindata, npart, ratio);
-
-    target = traindata(:,67);
-    input = traindata(:,features);
+    target = problem.trainlabels;
+    input = problem.trainset;
 
     % initial parameter vector
     if nargin > 4 && ~isempty(theta0), theta = theta0;
-    elseif strfind(kernel,'rbf') theta = [0 0];
+    elseif strfind(kernel,'rbf') theta = [1 1];
     else theta = 0;
     end
-    
+
     if exponential, tf = @exp; else tf = @(t) t; end
 
     trainfunc = @(input,target,theta) ...
@@ -54,21 +40,21 @@ function [svm_params paramh errh] = select_model_empirical(dataset, featset, ker
         testfunc_deriv = @(model, inputs) model_csvm_deriv(model, inputs, true, exponential);
 
     if strcmp(method,'bfgs')
-        err_func = @(theta) error_empirical_csvm(trainfunc, testfunc, [], tf(theta), part, ...
+        err_func = @(theta) error_empirical_csvm(trainfunc, testfunc, [], tf(theta), problem.partitions, ...
                                              input, target);
         [svm_params,~,paramh,errh] = opt_bfgs_simple( err_func, false, theta, 1e-6, 100 )
-    
+
     else
-    
+
         svm_params = theta;
         err = inf;
         errh = [ err ];
         paramh = [svm_params];
-    
+
         err_func = @(model,deriv,args,input,target) error_empirical_csvm(trainfunc, model, ...
-                                                          deriv, tf(args), part, ...
+                                                          deriv, tf(args), problem.partitions, ...
                                                           input, target);
-        
+
         rprop = opt_rpropplus(svm_params);
         for i=1:100
             [svm_params, err] = rprop.optimize( testfunc, testfunc_deriv, svm_params, ...
@@ -85,7 +71,7 @@ function [svm_params paramh errh] = select_model_empirical(dataset, featset, ker
             end
             if rprop.maxdelta() < stop_delta, break, end
         end
-        
+
         % unconstrained = false;
         % if strcmp(kernel, 'rbf_unc'), unconstrained = true, end
         % if strcmp(kernel, 'linear_unc'), kernel = 'linear'; unconstrained = true, end
@@ -97,11 +83,13 @@ function [svm_params paramh errh] = select_model_empirical(dataset, featset, ker
         % errfunc = @(model,deriv,args,input,target)...
         %           error_empirical_csvm(trainfunc,model,deriv,args,part,input,target);
     end
-    
+
 
     %%% test best-performing parameters %%%
 
-    res = com.run_tests(data,featset,randseed,kernel,lib,tf(svm_params(1)),tf(svm_params(2:end)) );
+    %res = com.test_csvm(problem,kernel,lib,grid.param1(ii(ri)),grid.param2(jj(ri)));
+
+    res = com.test_csvm(problem,kernel,lib,tf(svm_params(1)),tf(svm_params(2:end)) );
     com.print_test_info(res);
-    
+
 end
