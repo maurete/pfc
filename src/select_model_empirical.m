@@ -6,9 +6,9 @@ function [svm_params paramh errh] = select_model_empirical( problem, kernel, lib
 
     % MISC SETTINGS
     gtol = 1e-6 * 2;
-    exponential = false;
+    exponential = true;
     stop_delta = 0.001;
-    method = 'rprop';
+    method = 'bfgs';
 
     com = common;
 
@@ -36,12 +36,11 @@ function [svm_params paramh errh] = select_model_empirical( problem, kernel, lib
 
     trainfunc = @(input,target,theta) ...
         model_csvm_train(lib, kernel, input, target, theta(1), theta(2:end), false, 1e-6);
-        testfunc = @(model, inputs) model_csvm(model, inputs, true, exponential);
-        testfunc_deriv = @(model, inputs) model_csvm_deriv(model, inputs, true, exponential);
+        testfunc = @(model, inputs) model_csvm(model, inputs, false, exponential);
+        testfunc_deriv = @(model, inputs) model_csvm_deriv(model, inputs, false, exponential);
 
     if strcmp(method,'bfgs')
-        err_func = @(theta) error_empirical_csvm(trainfunc, testfunc, [], tf(theta), problem.partitions, ...
-                                             input, target);
+        err_func = @(theta) error_empirical_cv(trainfunc, testfunc, testfunc_deriv, tf(theta), problem);
         [svm_params,~,paramh,errh] = opt_bfgs_simple( err_func, false, theta, 1e-6, 100 )
 
     else
@@ -51,9 +50,8 @@ function [svm_params paramh errh] = select_model_empirical( problem, kernel, lib
         errh = [ err ];
         paramh = [svm_params];
 
-        err_func = @(model,deriv,args,input,target) error_empirical_csvm(trainfunc, model, ...
-                                                          deriv, tf(args), problem.partitions, ...
-                                                          input, target);
+        err_func = @(model,deriv,args,input,target) error_empirical_cv(trainfunc, model, ...
+                                                          deriv, tf(args), problem);
 
         rprop = opt_rpropplus(svm_params);
         for i=1:100

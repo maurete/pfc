@@ -22,7 +22,7 @@ function [svm_params, paramh, errh] = select_model_rmb ( ...
     rmb_func = @(theta) error_rmb_csvm( ...
         trainfunc, exp(theta), Delta, true, problem.trainset, problem.trainlabels );
 
-    [svm_params,~,paramh,errh] = opt_bfgs_simple( rmb_func, false, theta, gtol, max_iter )
+    [svm_params,~,paramh,errh] = opt_bfgs_simple( rmb_func, false, theta, gtol, max_iter );
 
     %%% test best-performing parameters %%%
 
