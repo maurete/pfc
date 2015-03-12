@@ -117,7 +117,7 @@ function out = gridtune
 
         ii = [];
         jj = [];
-        for i=unique(zz(1:N))
+        for i=unique(indx(1:N))
             [ix jx] = ind2sub(size(grid.data(:,:,idx)), find([grid.data(:,:,idx)==i]));
             ii = [ii;ix];
             jj = [jj;jx];

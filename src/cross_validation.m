@@ -1,7 +1,7 @@
-function [se,sp,mcc,err,ret] = cross_validation ( problem, trainfunc, args, clsfunc, errfunc)
-
-    if nargin < 5 || isempty(errfunc), errfunc = {}; end
-    if nargin > 4 && ~isa(errfunc, 'cell'), errfunc = {errfunc}; end
+function [output,target,deriv,index,stat] = cross_validation( problem, ftrain, args, fcls, fclsderiv)
+    do_deriv = false;
+    if nargin < 5, fclsderiv = false; end
+    if nargin > 4 && isa(fclsderiv,'function_handle'), do_deriv = true; end
 
     % validate partition size
     if size(problem.partitions.train,1) < 1
@@ -11,22 +11,18 @@ function [se,sp,mcc,err,ret] = cross_validation ( problem, trainfunc, args, clsf
         error('Validation partitions cannot be empty.')
     end
 
-    randseed = problem.randseed;
-    part = problem.partitions;
+    part  = problem.partitions;
     npart = problem.npartitions;
 
     com = common;
     com.init_matlabpool();
 
-    se  = 0;
-    sp  = 0;
-    mcc = 0;
-    err = inf(length(errfunc),1);
-
     ret = 0; % 0=OK, <>0=ERROR
 
-    output = nan(size(problem.partitions.validation))';
     ntrain = size(problem.trainset,1);
+    nargs  = length(args);
+    output = nan(size(problem.partitions.validation))';
+    deriv  = nan(npart,ntrain*nargs);
 
     parfor p = 1:npart %partitions
 
@@ -36,10 +32,17 @@ function [se,sp,mcc,err,ret] = cross_validation ( problem, trainfunc, args, clsf
         vallabels   = problem.trainlabels(part.validation(:,p));
 
         try
-            model = trainfunc(trainset, trainlabels, args);
+            model = ftrain(trainset, trainlabels, args);
             tmp = zeros(ntrain,1);
-            tmp(part.validation(:,p)) = clsfunc(model, valset);
+            tmp(part.validation(:,p)) = fcls(model, valset);
             output(p,:) = tmp';
+
+            if do_deriv
+                tmp = nan(ntrain,nargs);
+                tmp(part.validation(:,p),:) = fclsderiv(model, valset);
+                %tmp(part.validation(:,p),:) = ones([length(find(part.validation(:,p))),nargs])*diag(args);
+                deriv(p,:) = reshape(tmp,1,[]);
+            end
 
         catch e
             if any(strfind(e.identifier,'NoConvergence')) || ...
@@ -51,27 +54,39 @@ function [se,sp,mcc,err,ret] = cross_validation ( problem, trainfunc, args, clsf
         end
     end
 
-    if ret > 0, return, end
+    stat = struct();
+    stat.status = ret;
 
     output = output';
     target = repmat(problem.trainlabels,1,npart);
-
     output = output(part.validation);
     target = target(part.validation);
+    dtmp = zeros(length(output),nargs);
+    deriv  = deriv';
+    for i=1:nargs
+        dtmp(:,i) = deriv([ repmat(part.validation&0,i-1,1); ...
+                            part.validation; ...
+                            repmat(part.validation&0,nargs-i,1)]);
+    end
+    deriv = dtmp;
+    index  = mod(find(part.validation)-1,ntrain)+1;
 
-    tp = sum(output(target>0)>0);
-    fp = sum(output(target<0)>0);
-    tn = sum(output(target<0)<0);
-    fn = sum(output(target>0)<0);
+    np = sum(target > 0); % number of positive examples
+    nn = sum(target < 0); % number of negative examples
 
-    se  = tp/(tp+fn);
-    sp  = tn/(fp+tn);
+    tp = sum(output(target>0)>0); % true positives
+    fp = sum(output(target<0)>0); % false positives
+    tn = sum(output(target<0)<0); % true negatives
+    fn = sum(output(target>0)<0); % false negatives
+
     mcc = (tp*tn-fp*fn)/sqrt((tp+fp)*(tp+fn)*(tn+fp)*(tn+fn));
 
-    for i=1:length(errfunc)
-        try, err(i) = errfunc{i}(output, target);
-        catch e, warning('%s: %s', e.identifier, e.message); ret = 2;
-        end
-    end
+    stat.er = (np-tp+fp)/(np+nn); % error rate
+    stat.pr = tp/(tp+fp); % precision
+    stat.se = tp/(tp+fn); % sensitivity (recall)
+    stat.sp = tn/(fp+tn); % specificity
+    stat.gm = geomean([stat.se stat.sp]); % geometric mean of SE,SP
+    stat.fm = 2*tp/(np+tp+fp); % F-measure
+    stat.mc = mcc; % Matthews Correlation Coefficient
 
 end
