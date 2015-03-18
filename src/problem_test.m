@@ -58,11 +58,11 @@ function out = problem_test(problem, varargin)
                 [cls_results] = testfunc(model, problem(1).test(i).data(:,features));
                 res_test(i,r)   = mean(sign(cls_results) == problem(1).test(i).class);
                 if problem(1).test(i).class == 1
-                    if problem(1).test(i).trained, sen_source(end+1) = res_test(i);
-                    else sen_other(end+1) = res_test(i); end
+                    if problem(1).test(i).trained, sen_source(end+1) = res_test(i,r);
+                    else sen_other(end+1) = res_test(i,r); end
                 elseif problem(1).test(i).class == -1
-                    if problem(1).test(i).trained, spe_source(end+1) = res_test(i);
-                    else spe_other(end+1) = res_test(i); end
+                    if problem(1).test(i).trained, spe_source(end+1) = res_test(i,r);
+                    else spe_other(end+1) = res_test(i,r); end
                 end
             end
         end

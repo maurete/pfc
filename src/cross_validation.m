@@ -1,5 +1,11 @@
-function [output,target,deriv,index,stat] = cross_validation( problem, ftrain, args, fcls, fclsderiv)
+function [output,target,deriv,index,stat] = cross_validation( problem, ftrain, args, fcls, fclsderiv, xtrain)
+% CROSS_VALIDATION perform cross validation on PROBLEM by training with
+% FTRAIN(args) and calidating with FCLS.
+% The XTRAIN argument tells wether validation data should be passed
+% to FTRAIN alongside training data.
+%
     do_deriv = false;
+    if nargin < 6,    xtrain = false; end
     if nargin < 5, fclsderiv = false; end
     if nargin > 4 && isa(fclsderiv,'function_handle'), do_deriv = true; end
 
@@ -14,8 +20,7 @@ function [output,target,deriv,index,stat] = cross_validation( problem, ftrain, a
     part  = problem.partitions;
     npart = problem.npartitions;
 
-    com = common;
-    com.init_matlabpool();
+    init_matlabpool();
 
     ret = 0; % 0=OK, <>0=ERROR
 
@@ -32,7 +37,9 @@ function [output,target,deriv,index,stat] = cross_validation( problem, ftrain, a
         vallabels   = problem.trainlabels(part.validation(:,p));
 
         try
-            model = ftrain(trainset, trainlabels, args);
+            if xtrain, model = ftrain(trainset, trainlabels, valset, vallabels, args);
+            else,      model = ftrain(trainset, trainlabels, args);
+            end
             tmp = zeros(ntrain,1);
             tmp(part.validation(:,p)) = fcls(model, valset);
             output(p,:) = tmp';
@@ -40,7 +47,6 @@ function [output,target,deriv,index,stat] = cross_validation( problem, ftrain, a
             if do_deriv
                 tmp = nan(ntrain,nargs);
                 tmp(part.validation(:,p),:) = fclsderiv(model, valset);
-                %tmp(part.validation(:,p),:) = ones([length(find(part.validation(:,p))),nargs])*diag(args);
                 deriv(p,:) = reshape(tmp,1,[]);
             end
 
@@ -62,6 +68,8 @@ function [output,target,deriv,index,stat] = cross_validation( problem, ftrain, a
     output = output(part.validation);
     target = target(part.validation);
     dtmp = zeros(length(output),nargs);
+
+    % rebuild derivative from linearized form
     deriv  = deriv';
     for i=1:nargs
         dtmp(:,i) = deriv([ repmat(part.validation&0,i-1,1); ...
@@ -71,6 +79,7 @@ function [output,target,deriv,index,stat] = cross_validation( problem, ftrain, a
     deriv = dtmp;
     index  = mod(find(part.validation)-1,ntrain)+1;
 
+    % calculate simple classification stats
     np = sum(target > 0); % number of positive examples
     nn = sum(target < 0); % number of negative examples
 
@@ -81,7 +90,7 @@ function [output,target,deriv,index,stat] = cross_validation( problem, ftrain, a
 
     mcc = (tp*tn-fp*fn)/sqrt((tp+fp)*(tp+fn)*(tn+fp)*(tn+fn));
 
-    stat.er = (np-tp+fp)/(np+nn); % error rate
+    stat.er = (fp+fn)/(np+nn); % error rate
     stat.pr = tp/(tp+fp); % precision
     stat.se = tp/(tp+fn); % sensitivity (recall)
     stat.sp = tn/(fp+tn); % specificity

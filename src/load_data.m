@@ -4,13 +4,8 @@ function [ tr ts ] = load_data ( id, seed, symmetric, bootstrap )
     if nargin < 3, symmetric = false; end
     if nargin < 2, seed = 0; end
 
-    com = common;
-
     scalefun = @scale_data;
     if symmetric, scalefun = @scale_sym; end
-
-    stpick    = @(x,n) com.stpick(seed,x,n);
-    stshuffle = @(x)   com.stshuffle(seed,x);
 
     tr = struct();
     ts = struct();
@@ -26,8 +21,8 @@ function [ tr ts ] = load_data ( id, seed, symmetric, bootstrap )
         pseudo1_ts = loadset('coding/3svm-test',       'all', 3); % 1000 hsa
         pseudo2    = loadset('conserved-hairpin',      'all', 4); % 2444  hsa
 
-        real   = stshuffle(real1_tr);  % 163 real for training
-        pseudo = stshuffle(pseudo1_tr); % 168 pseudo
+        real   = stshuffle(seed,real1_tr);  % 163 real for training
+        pseudo = stshuffle(seed,pseudo1_tr); % 168 pseudo
 
         % scale the data to the range [-1:1]
         [real(:,1:66) f s] = scalefun(real(:,1:66));
@@ -40,8 +35,8 @@ function [ tr ts ] = load_data ( id, seed, symmetric, bootstrap )
         tr.scale_s = s;
 
         if bootstrap
-            real   = stshuffle([real1_tr; real1_ts]);
-            pseudo = stshuffle([pseudo1_tr; pseudo1_ts]);
+            real   = stshuffle(seed,[real1_tr; real1_ts]);
+            pseudo = stshuffle(seed,[pseudo1_tr; pseudo1_ts]);
             [real(:,1:66)]   = scalefun(real(:,1:66),f,s);
             [pseudo(:,1:66)] = scalefun(pseudo(:,1:66),f,s);
             tr.bootstrap = true;
@@ -108,8 +103,8 @@ function [ tr ts ] = load_data ( id, seed, symmetric, bootstrap )
         pseudo1 = loadset('coding', 'all', 2);             % 8494 hsa
         pseudo2 = loadset('functional-ncrna', 'all', 3);   % 2657/12387  all
 
-        real0   = stshuffle(real1);
-        pseudo0 = stshuffle(pseudo1);
+        real0   = stshuffle(seed,real1);
+        pseudo0 = stshuffle(seed,pseudo1);
 
         real   = real0(1:190,:);   % 200 real for training
         pseudo = pseudo0(1:380,:); % 400 pseudo
@@ -153,7 +148,7 @@ function [ tr ts ] = load_data ( id, seed, symmetric, bootstrap )
 
         ts(3).name   = 'coding-h';
         ts(3).class  = -1;
-        data         = stpick(pseudo0(381:end,:),236+3354); % original = 246 + 3836
+        data         = stpick(seed,pseudo0(381:end,:),236+3354); % original = 246 + 3836
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(3).data   = data;
         ts(3).trained = true; % trained on partition of this dataset
@@ -181,8 +176,8 @@ function [ tr ts ] = load_data ( id, seed, symmetric, bootstrap )
 
     elseif strcmpi(id,'ng-multi')
 
-        real0   = stshuffle(loadset('mirbase82-mipred/multi', 'human', 0));     % 323  hsa
-        pseudo0 = stshuffle(loadset('coding', 'all', 2));                   % 8494 hsa
+        real0   = stshuffle(seed,loadset('mirbase82-mipred/multi', 'human', 0));     % 323  hsa
+        pseudo0 = stshuffle(seed,loadset('coding', 'all', 2));                   % 8494 hsa
 
         real   = real0(1:200,:);   % 200 real for training
         pseudo = pseudo0(1:400,:); % 400 pseudo
@@ -226,7 +221,7 @@ function [ tr ts ] = load_data ( id, seed, symmetric, bootstrap )
 
         ts(3).name   = 'coding-h';
         ts(3).class  = -1;
-        data         = stpick(pseudo0(401:end,:),246+3836); % original = 246 + 3836
+        data         = stpick(seed,pseudo0(401:end,:),246+3836); % original = 246 + 3836
         data(:,1:66) = scalefun(data(:,1:66),f,s);
         ts(3).data   = data;
         ts(3).trained = true;
@@ -254,16 +249,16 @@ function [ tr ts ] = load_data ( id, seed, symmetric, bootstrap )
 
     elseif strcmpi(id,'batuwita')
 
-        real0   = stshuffle(loadset('mirbase12-micropred', 'human', 0)); % 660/691  hsa
-        pseudo1 = stshuffle(loadset('coding', 'all', 2));                % 8494 hsa
-        pseudo2 = stshuffle(loadset('other-ncrna', 'all', 3));           % 129/754  hsa
+        real0   = stshuffle(seed,loadset('mirbase12-micropred', 'human', 0)); % 660/691  hsa
+        pseudo1 = stshuffle(seed,loadset('coding', 'all', 2));                % 8494 hsa
+        pseudo2 = stshuffle(seed,loadset('other-ncrna', 'all', 3));           % 129/754  hsa
 
         % NOTE: as there is not a train/test ratio specified on paper,
         % we set to consider 85% of real1 for training
         % and pseudo1 proportionally as well
 
         real   = real0(1:561,:);    % 561 real for training
-        pseudo = stshuffle([pseudo1(1:1022,:);pseudo2(1:100,:)]); % 1122 pseudo
+        pseudo = stshuffle(seed,[pseudo1(1:1022,:);pseudo2(1:100,:)]); % 1122 pseudo
 
         % scale the data to the range [-1:1]
         [real(:,1:66) f s] = scalefun(real(:,1:66));
@@ -277,7 +272,7 @@ function [ tr ts ] = load_data ( id, seed, symmetric, bootstrap )
 
         if bootstrap
             real   = real0;
-            pseudo = stshuffle([pseudo1;pseudo2]);
+            pseudo = stshuffle(seed,[pseudo1;pseudo2]);
             [real(:,1:66)]   = scalefun(real(:,1:66),f,s);
             [pseudo(:,1:66)] = scalefun(pseudo(:,1:66),f,s);
             tr.bootstrap = true;
@@ -332,16 +327,16 @@ function [ tr ts ] = load_data ( id, seed, symmetric, bootstrap )
 
     elseif strcmpi(id,'batuwita-multi')
 
-        real0   = stshuffle(loadset('mirbase12-micropred/multi', 'human', 0)); % 691  hsa
-        pseudo1 = stshuffle(loadset('coding', 'all', 2));            % 8494 hsa
-        pseudo2 = stshuffle(loadset('other-ncrna/multi', 'all', 3)); % 754  hsa
+        real0   = stshuffle(seed,loadset('mirbase12-micropred/multi', 'human', 0)); % 691  hsa
+        pseudo1 = stshuffle(seed,loadset('coding', 'all', 2));            % 8494 hsa
+        pseudo2 = stshuffle(seed,loadset('other-ncrna/multi', 'all', 3)); % 754  hsa
 
         % NOTE: as there is not a train/test ratio specified on paper,
         % we set to consider 85% of real1 for training
         % and pseudo1 proportionally as well
 
         real   = real0(1:587,:);    % 587 real for training
-        pseudo = stshuffle([pseudo1(1:1070,:);pseudo2(1:104,:)]); % 1174 pseudo
+        pseudo = stshuffle(seed,[pseudo1(1:1070,:);pseudo2(1:104,:)]); % 1174 pseudo
 
         % scale the data to the range [-1:1]
         [real(:,1:66) f s] = scalefun(real(:,1:66));
@@ -355,7 +350,7 @@ function [ tr ts ] = load_data ( id, seed, symmetric, bootstrap )
 
         if bootstrap
             real   = real0;
-            pseudo = stshuffle([pseudo1;pseudo2]);
+            pseudo = stshuffle(seed,[pseudo1;pseudo2]);
             [real(:,1:66)]   = scalefun(real(:,1:66),f,s);
             [pseudo(:,1:66)] = scalefun(pseudo(:,1:66),f,s);
             tr.bootstrap = true;
