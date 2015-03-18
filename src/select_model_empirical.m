@@ -1,8 +1,4 @@
-function [svm_params paramh errh] = select_model_empirical( problem, kernel, lib, ...
-                                                      theta0, npart, ratio)
-
-    if nargin < 6 || isempty(ratio),       ratio = 0; end
-    if nargin < 5 || isempty(npart),       npart = 5; end
+function [svm_params paramh errh] = select_model_empirical( problem, kernel, lib, theta0)
 
     % MISC SETTINGS
     gtol = 1e-6 * 2;
@@ -10,18 +6,7 @@ function [svm_params paramh errh] = select_model_empirical( problem, kernel, lib
     stop_delta = 0.001;
     method = 'bfgs';
 
-    com = common;
-
-    % find out if rbf kernel is selected
-    % find out if which kernel is selected
-    if     strncmpi(kernel,'rbf_uni',7);    kernel = 'rbf_uni';
-    elseif strncmpi(kernel,'rbf_unc',7);    kernel = 'rbf_unc';
-    elseif strncmpi(kernel,'linear_uni',10); kernel = 'linear_uni';
-    elseif strncmpi(kernel,'linear_unc',10); kernel = 'linear_unc';
-    elseif strncmpi(kernel,'lin',3);        kernel = 'linear';
-    elseif strncmpi(kernel,'rbf',4);        kernel = 'rbf';
-    else error('! fatal error: unknown kernel function specified.');
-    end
+    kernel = get_kernel(kernel);
 
     target = problem.trainlabels;
     input = problem.trainset;
@@ -70,24 +55,9 @@ function [svm_params paramh errh] = select_model_empirical( problem, kernel, lib
             if rprop.maxdelta() < stop_delta, break, end
         end
 
-        % unconstrained = false;
-        % if strcmp(kernel, 'rbf_unc'), unconstrained = true, end
-        % if strcmp(kernel, 'linear_unc'), kernel = 'linear'; unconstrained = true, end
-
-        % trainfunc = @(trainset, trainlbl, args) ...
-        %     model_csvm_train(lib, kernel, trainset, trainlbl, args(1), args(2:end), false, 1e-6, false, unconstrained);
-        % testfunc = @(model, inputs) model_csvm(model, inputs, true, unconstrained);
-        % testfunc_deriv = @(model, inputs) model_csvm_deriv(model, inputs, true, unconstrained);
-        % errfunc = @(model,deriv,args,input,target)...
-        %           error_empirical_csvm(trainfunc,model,deriv,args,part,input,target);
     end
 
-
-    %%% test best-performing parameters %%%
-
-    %res = com.test_csvm(problem,kernel,lib,grid.param1(ii(ri)),grid.param2(jj(ri)));
-
-    res = com.test_csvm(problem,kernel,lib,tf(svm_params(1)),tf(svm_params(2:end)) );
-    com.print_test_info(res);
+    res = problem_test(problem,lib,kernel,tf(svm_params(1)),tf(svm_params(2:end)));
+    print_test_info(res);
 
 end
