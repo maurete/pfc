@@ -77,19 +77,13 @@ function [output, deriv] = model_csvm(svmstruct, input, decision_values, c_log, 
     % compute deriv of (alpha,b) wrt C
     if blen > 0
         alphab_deriv(fidx,1) = - H_inv * (R * svmstruct.svclass_(bidx));
-        alphab_deriv(bidx(alphab(bidx)>0),1)  = svmstruct.cplus_/svmstruct.cminus_;
-        alphab_deriv(bidx(alphab(bidx)<=0),1) = - svmstruct.cminus_/svmstruct.cplus_;
-
-        % if searching for optimal C in logspace, multiply by C
-        if c_log, alphab_deriv(:,1) = alphab_deriv(:,1) .* svmstruct.C_; end
+        alphab_deriv(bidx(alphab(bidx)>0),1)  = 1;
+        alphab_deriv(bidx(alphab(bidx)<=0),1) = - 1;
     end
 
     % compute deriv of (alpha, b) wrt kernel params
     for k=1:nparam-1
         alphab_deriv(fidx,k+1) = -( H_inv * (dH(:,:,k)*alphab(fidx)+dR(:,:,k)*alphab(bidx)) );
-
-        % if searching for optimal kernel params in logspace
-        if kparam_log, alphab_deriv(fidx,k+1) = alphab_deriv(fidx,k+1) .* svmstruct.kparam_(k); end
     end
 
     % find derivatives of inputs wrt params (C, kernelparams)
@@ -111,15 +105,14 @@ function [output, deriv] = model_csvm(svmstruct, input, decision_values, c_log, 
                               svmstruct.kparam_ );
     end
 
-    % svmstruct.kfunc_
-    % issparse(Kaux)
-    % issparse(dKaux)
-    % issparse(deriv)
-    % issparse(alphab)
-
     deriv = Kaux * alphab_deriv;
     for k=1:nparam-1
         deriv(:,k+1) = deriv(:,k+1) + dKaux(:,:,k) * alphab(1:nsv);
     end
+
+    % if searching for optimal C in logspace, multiply by C
+    if c_log, deriv(:,1) = deriv(:,1) .* svmstruct.C_; end
+    % if searching for optimal kernel params in logspace
+    if kparam_log, deriv(:,2:nparam) = deriv(:,2:nparam) * diag(svmstruct.kparam_); end
 
 end

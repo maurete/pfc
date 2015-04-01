@@ -33,7 +33,7 @@ function [err, deriv] = error_llcv_svm( ftrain, fcls, fclsderiv, theta, problem)
         %compute derivative of the sigmoid
         dp_dz = -sigmoid_params(1) * p(i) * (1-p(i));
         % total derivative = partial derivative
-        deriv = deriv + dL_dp * dp_dz * dz_dtheta(i,:);
+        deriv = deriv + dL_dp * dp_dz * dz(i,:);
     end
 
 end

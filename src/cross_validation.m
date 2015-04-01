@@ -1,6 +1,6 @@
 function [output,target,deriv,index,stat] = cross_validation( problem, ftrain, args, fcls, fclsderiv, xtrain)
 % CROSS_VALIDATION perform cross validation on PROBLEM by training with
-% FTRAIN(args) and calidating with FCLS.
+% FTRAIN(args) and validating with FCLS.
 % The XTRAIN argument tells wether validation data should be passed
 % to FTRAIN alongside training data.
 %
@@ -29,35 +29,72 @@ function [output,target,deriv,index,stat] = cross_validation( problem, ftrain, a
     output = nan(size(problem.partitions.validation))';
     deriv  = nan(npart,ntrain*nargs);
 
-    parfor p = 1:npart %partitions
+    try
 
-        trainset    = problem.trainset(part.train(:,p),:);
-        valset      = problem.trainset(part.validation(:,p),:);
-        trainlabels = problem.trainlabels(part.train(:,p));
-        vallabels   = problem.trainlabels(part.validation(:,p));
+        parfor p = 1:npart %partitions
 
-        try
-            if xtrain, model = ftrain(trainset, trainlabels, valset, vallabels, args);
-            else,      model = ftrain(trainset, trainlabels, args);
-            end
-            tmp = zeros(ntrain,1);
-            tmp(part.validation(:,p)) = fcls(model, valset);
-            output(p,:) = tmp';
+            trainset    = problem.trainset(part.train(:,p),:);
+            valset      = problem.trainset(part.validation(:,p),:);
+            trainlabels = problem.trainlabels(part.train(:,p));
+            vallabels   = problem.trainlabels(part.validation(:,p));
 
-            if do_deriv
-                tmp = nan(ntrain,nargs);
-                tmp(part.validation(:,p),:) = fclsderiv(model, valset);
-                deriv(p,:) = reshape(tmp,1,[]);
-            end
+            try
+                if xtrain, model = ftrain(trainset, trainlabels, valset, vallabels, args);
+                else,      model = ftrain(trainset, trainlabels, args);
+                end
+                tmp = zeros(ntrain,1);
+                tmp(part.validation(:,p)) = fcls(model, valset);
+                output(p,:) = tmp';
 
-        catch e
-            if any(strfind(e.identifier,'NoConvergence')) || ...
-                    any(strfind(e.identifier,'InvalidInput'))
-                ret = 1;
-            else
-                rethrow(e);
+                if do_deriv
+                    tmp = nan(ntrain,nargs);
+                    tmp(part.validation(:,p),:) = fclsderiv(model, valset);
+                    deriv(p,:) = reshape(tmp,1,[]);
+                end
+
+            catch e
+                if any(strfind(e.identifier,'NoConvergence')) || ...
+                        any(strfind(e.identifier,'InvalidInput'))
+                    ret = 1;
+                else
+                    rethrow(e);
+                end
             end
         end
+
+    catch e
+
+        for p = 1:npart %partitions
+
+            trainset    = problem.trainset(part.train(:,p),:);
+            valset      = problem.trainset(part.validation(:,p),:);
+            trainlabels = problem.trainlabels(part.train(:,p));
+            vallabels   = problem.trainlabels(part.validation(:,p));
+
+            try
+                if xtrain, model = ftrain(trainset, trainlabels, valset, vallabels, args);
+                else,      model = ftrain(trainset, trainlabels, args);
+                end
+                tmp = zeros(ntrain,1);
+                tmp(part.validation(:,p)) = fcls(model, valset);
+                output(p,:) = tmp';
+
+                if do_deriv
+                    tmp = nan(ntrain,nargs);
+                    tmp(part.validation(:,p),:) = fclsderiv(model, valset);
+                    deriv(p,:) = reshape(tmp,1,[]);
+                end
+
+            catch e
+                if any(strfind(e.identifier,'NoConvergence')) || ...
+                        any(strfind(e.identifier,'InvalidInput'))
+                    ret = 1;
+                else
+                    rethrow(e);
+                end
+            end
+        end
+
     end
 
     stat = struct();

@@ -30,13 +30,11 @@ function [major minor] = stpart(seed, numel, n_part, ratio, logical)
 
     if nargin < 5, logical = true; end
 
-    com = common;
-
     % if numel is the actual data, let it count the rows instead
     if size(numel,1) > 1, numel = size(numel,1); end
 
     % randomly sample/shuffle source data row
-    idx = com.strandsample(seed,numel,numel);
+    idx = strandsample(seed,numel,numel);
 
     % validate n_part argument, else set default
     if nargin > 2 && ~isempty(n_part)
