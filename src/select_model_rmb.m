@@ -1,8 +1,7 @@
 function [svm_params, paramh, errh] = select_model_rmb ( ...
     problem, kernel, lib, theta0, randseed, gtol, max_iter, Delta )
 
-    com = common;
-    kernel = com.get_kernel(kernel);
+    kernel = get_kernel(kernel);
     svm_tol = 1e-6;
 
     if nargin < 8 || isempty(Delta),    Delta    = 1; end
@@ -12,7 +11,7 @@ function [svm_params, paramh, errh] = select_model_rmb ( ...
 
     % initial parameter vector
     if nargin > 3 && ~isempty(theta0), theta = theta0;
-    elseif com.get_kernel(kernel,'rbf',false), theta = [0 0];
+    elseif get_kernel(kernel,'rbf',false), theta = [0 0];
     else theta = 0;
     end
 
@@ -26,7 +25,7 @@ function [svm_params, paramh, errh] = select_model_rmb ( ...
 
     %%% test best-performing parameters %%%
 
-    res = com.test_csvm(problem,kernel,lib,exp(svm_params(1)),exp(svm_params(2:end)),svm_tol);
-    com.print_test_info(res);
+    res = problem_test(problem,lib,kernel,exp(svm_params(1)),exp(svm_params(2:end)),svm_tol);
+    print_test_info(res);
 
 end
