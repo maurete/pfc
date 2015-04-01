@@ -1,4 +1,4 @@
-function grid = grid_threshold (grid, thr, limit, idx, interp, ignore, dmap, fmap)
+function grid = grid_threshold (grid, thr, limit, idx, zinterp, zignore)
 % threshold - Interpolate results grid and then values which fall
 % below threshold as 'ignored'. Cap maximum number of elements to
 % <limit>.
@@ -10,12 +10,10 @@ function grid = grid_threshold (grid, thr, limit, idx, interp, ignore, dmap, fma
 % @param interp: Z-index(es) of the data matrix to be interpolated
 % @param ignore: Z-index(es) where to mark elements as 'ignored'
 %                outside region of interest
-    if nargin < 8, fmap = @(x) x; end
-    if nargin < 7, dmap = @(x) x; end
-    if nargin < 6, ignore = 3; end
-    if nargin < 5, interp = 1; end
-    if nargin < 4, idx    = 1; end
-    if nargin < 3, limit  = 200; end
+    if nargin < 6, zignore = 3; end
+    if nargin < 5, zinterp = 1; end
+    if nargin < 4, idx     = 1; end
+    if nargin < 3, limit   = 200; end
 
     sgn = sign(idx);
     idx = abs(idx);
@@ -24,9 +22,9 @@ function grid = grid_threshold (grid, thr, limit, idx, interp, ignore, dmap, fma
 
     % interpolate grid
     grid = grid_insert(grid, ...
-                     grid_mapinterp(grid.param1, fmap, dmap), ...
-                     grid_mapinterp(grid.param2, fmap, dmap), ...
-                     [interp idx], ignore, fmap);
+                       interp(grid.param1), ...
+                       interp(grid.param2), ...
+                       [zinterp idx], zignore);
 
     % mask (ignore) values below threshold
     mask = zeros( length(grid.param1), length(grid.param2));
@@ -40,5 +38,5 @@ function grid = grid_threshold (grid, thr, limit, idx, interp, ignore, dmap, fma
     end
 
     % apply mask to grid's 'ignore' index
-    grid.data(:,:,ignore) = grid.data(:,:,ignore) | mask;
+    grid.data(:,:,zignore) = grid.data(:,:,zignore) | mask;
 end

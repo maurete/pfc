@@ -7,7 +7,7 @@ function [input,labels] = balance_dataset(input,labels,randseed)
     nneg = sum(labels<0);
 
     % if data is approximately balanced, do nothing
-    if npos < 0.55*N && npos > 0.45*N, return; end
+    if abs(npos/N-0.5) < 0.1, return; end
 
     posidx = stpick(randseed,find(labels>0),nneg);
     negidx = stpick(randseed,find(labels<0),npos);
