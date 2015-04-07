@@ -23,6 +23,8 @@ function [svm_params,grid,res] = select_model_gridsearch ( problem, kernel, lib,
 
         % create grid
         grid = grid_new(box0, gam0);
+    else
+        grid = grid0;
     end
 
     % grid layer names
@@ -166,7 +168,7 @@ function [svm_params,grid,res] = select_model_gridsearch ( problem, kernel, lib,
     %% Results
 
     % find final best result after grid refinement
-    [ii jj] = find(csgn*grid.data(:,:,crit) == maxx(csgn*grid.data(:,:,crit)));
+    [ii jj] = find(csgn*grid.data(:,:,crit) == max(max(csgn*grid.data(:,:,crit))));
 
     % if many elements choose the one closest to (0,0)
     radius = (grid.param1(ii).^2 + grid.param2(jj)'.^2 ) .^ 0.5;
