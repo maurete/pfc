@@ -1,4 +1,4 @@
-function [output,target,deriv,index,stat] = cross_validation( problem, ftrain, args, fcls, fclsderiv, xtrain)
+function [output,target,deriv,index,stat,models] = cross_validation( problem, ftrain, args, fcls, fclsderiv, xtrain)
 % CROSS_VALIDATION perform cross validation on PROBLEM by training with
 % FTRAIN(args) and validating with FCLS.
 % The XTRAIN argument tells wether validation data should be passed
@@ -29,6 +29,8 @@ function [output,target,deriv,index,stat] = cross_validation( problem, ftrain, a
     output = nan(size(problem.partitions.validation))';
     deriv  = nan(npart,ntrain*nargs);
 
+    models = cell(npart,1);
+
     try
 
         parfor p = 1:npart %partitions
@@ -45,6 +47,7 @@ function [output,target,deriv,index,stat] = cross_validation( problem, ftrain, a
                 tmp = zeros(ntrain,1);
                 tmp(part.validation(:,p)) = fcls(model, valset);
                 output(p,:) = tmp';
+                models{p} = model;
 
                 if do_deriv
                     tmp = nan(ntrain,nargs);
@@ -78,6 +81,7 @@ function [output,target,deriv,index,stat] = cross_validation( problem, ftrain, a
                 tmp = zeros(ntrain,1);
                 tmp(part.validation(:,p)) = fcls(model, valset);
                 output(p,:) = tmp';
+                models{p} = model;
 
                 if do_deriv
                     tmp = nan(ntrain,nargs);

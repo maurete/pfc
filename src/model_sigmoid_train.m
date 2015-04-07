@@ -1,5 +1,9 @@
-function sigmoid_params = model_sigmoid_train(output, target, max_iter, tol)
-    if nargin < 4,      tol = 1e-10; end
+function sigmoid_params = model_sigmoid_train(output, target, max_iter, tol, fail)
+% MODEL_SIGMOID_TRAIN find sigmoid (A,B) parameters for given
+% (real-valued) outputs and labels(target)
+
+    if nargin < 5,     fail = false; end % raise error if no convergence
+    if nargin < 4,      tol = 1e-10; end %
     if nargin < 3, max_iter = 200;   end
     sigmoid_params = [0 (sum(target<0)+1)/(sum(target>0)+1)];
     rprop = opt_irpropplus(sigmoid_params);
@@ -11,5 +15,6 @@ function sigmoid_params = model_sigmoid_train(output, target, max_iter, tol)
         if length(errhist) > 5 && norm(errhist(end-5:end)-err,inf) < tol, return, end
         errhist  = [errhist err];
     end
+    if fail, error('Maximum number of iterations reached without convergence.'), end
     warning('Maximum number of iterations reached without convergence.')
 end

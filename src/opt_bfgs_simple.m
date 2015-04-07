@@ -1,5 +1,6 @@
-function [xk, fk, xhist, fhist] = opt_bfgs_simple ( fun, dfun, x0, tol, max_it )
+function [xk, fk, xhist, fhist] = opt_bfgs_simple ( fun, dfun, x0, tol, max_it, disp )
 
+    if nargin < 6, disp = true; end
     if nargin < 5, max_it =  100; end
     if nargin < 4, tol    = 1e-6; end
 
@@ -28,7 +29,7 @@ function [xk, fk, xhist, fhist] = opt_bfgs_simple ( fun, dfun, x0, tol, max_it )
     sk =  2*gtol;
     pk = -dfk*Hk';
 
-    if length(xk) > 1
+    if disp && length(xk) > 1
         fprintf('min_bfgs %d xk [%f;%f] dfk [%f;%f] fk %f\n', 0, xk(1), xk(2), ...
                 dfk(1), dfk(2), fk)
     end
@@ -36,12 +37,12 @@ function [xk, fk, xhist, fhist] = opt_bfgs_simple ( fun, dfun, x0, tol, max_it )
     for n = 1:max_it
         if norm(dfk,1) < gtol
             % gradient sufficiently small
-            fprintf('norm gfk < gtol')
+            if disp, fprintf('norm gfk < gtol'), end
             break
         end
         if (dfk*dfk')/(df0*df0') < tol
             % gradient sufficiently small compared to original
-            fprintf('rel gfk/gfk0 < gtol')
+            if disp, fprintf('rel gfk/gfk0 < gtol'), end
             break
         end
 
@@ -67,9 +68,15 @@ function [xk, fk, xhist, fhist] = opt_bfgs_simple ( fun, dfun, x0, tol, max_it )
         yk = dfkp1 - dfk;
 
         if fk-fkp1 < tol && n>10
-            warning('function decrease less than tolerance (1e-6)')
+            warning('function decrease less than tolerance')
             break
         end
+
+        if abs(fk-fkp1) < tol * abs(fk) && n>10
+            warning('function decrease less than RELATIVE tolerance')
+            break
+        end
+
 
         if yk*sk' == 0
             error('numerical error detected!')
@@ -90,7 +97,7 @@ function [xk, fk, xhist, fhist] = opt_bfgs_simple ( fun, dfun, x0, tol, max_it )
         xhist = [xhist; xk];
         fhist = [fhist; fk];
 
-        if length(xk) > 1
+        if disp && length(xk) > 1
             fprintf('min_bfgs %d xk [%f;%f] dfk [%f;%f] fk %f\n', n, xk(1), xk(2), ...
                     dfk(1), dfk(2), fk)
         end
