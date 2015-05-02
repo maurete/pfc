@@ -1,7 +1,5 @@
 *~
 \#*\#
-doc/*.log
-*.aux
-doc/*.pdf
 *.pyc
 .unison.*
+*.bak
