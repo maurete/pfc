@@ -1,44 +1,58 @@
-function lambda = opt_line_search(f, xk, pk, gfk, fk, sigma, lambda0, max_it, l_bound, u_bound)
-
-% Simple line search algorithm.
-% Given function f, point xk, direction pk and gradient gfk,
+function lambda = opt_line_search(f, x0, p, g, f0, sigma, lambda0, max_it, l_bound, u_bound)
+% Bactracking bounded line search algorithm.
+% Given function f, point x0, search direction p and gradient g,
 % returns lambda such that
-%   f(xk+lambda*pk) <= f(xk) + sigma * lambda * gfk * pk'
+%   f(x0) - f(x0+lambda*p) >= sigma * lambda * p * g'
 % with 0 < sigma < 1.
-% Aditionally, lambda is restricted such that xk+lambda*pk
+% Aditionally, lambda is restricted such that x+lambda*p
 % lies between l_bound and u_bound.
 
-    if nargin < 10, u_bound =  10*ones(size(xk)); end
-    if nargin <  9, l_bound = -10*ones(size(xk)); end
+    if nargin < 10, u_bound =  10*ones(size(x0)); end
+    if nargin <  9, l_bound = -10*ones(size(x0)); end
     if nargin <  8, max_it  =    20; end
     if nargin <  7, lambda0 =     1; end
     if nargin <  6, sigma   =  1e-4; end
-    if nargin <  5, fk      = f(xk); end
+
+    % backtracking parameter
+    tau = 0.5;
 
     ff = f;
-    if iscolumn(xk),
-        warning('xk is column vector!')
-        xk = xk'; pk = pk'; gfk = gfk'; ff = @(p) f(p');
+    lambda = lambda0;
+    if numel(x0) > 1 && iscolumn(x0),
+        warning('x0 is column vector')
+        x0 = x0'; p = p'; g = g'; ff = @(p) f(p');
     end
+    if nargin < 5, f0 = ff(x0); end
 
-    %xk, pk, xk > 10 & pk > 0, xk < -10 & pk < 0
+    if any(size(x0) ~= size(p)) || any(size(p) ~= size(g))
+        x0,p,g
+        error('inconsistent size for point, direction and/or gradient')
+    end
+    assert(p*g'< 0, 'decrease not possible in direction p')
 
     % if xk is already out of bounds with further out, return -1
-    if any(xk > 10 & pk > 0) || any(xk < -10 & pk < 0), lambda = -1; return, end
-
-    % if pk is too big begin with lambda = 2/norm(pk)
-    if lambda0 * norm(pk) > 2, lambda0 = 2/norm(pk); end
-
-    % make sure end xk will lie between bounds (not really sure how it works)
-    for i = 1:length(xk)
-        if xk(i)+lambda0*pk(i) > u_bound(i), lambda0 = (u_bound(i)-xk(i))/pk(i); end
-        if xk(i)+lambda0*pk(i) < l_bound(i), lambda0 = (l_bound(i)-xk(i))/pk(i); end
+    if any(x0 > u_bound & p > 0) || any(x0 < l_bound & p < 0)
+        warning('point x0 is out of bounds')
+        lambda = -1;
+        return
     end
-    lambda = lambda0;
 
-    % test for sufficient decrease while halving lambda
-    for t = 1:max_it
-        if ff(xk+lambda*pk) <= fk + sigma*lambda*(gfk*pk'), return, end
-        lambda = lambda/2;
+    % make sure end x0 will lie between bounds
+    while any(x0+lambda*p > u_bound) || any(x0+lambda*p < l_bound)
+        lambda = lambda*tau;
     end
+
+    % test for sufficient decrease while decreasing lambda
+    t = -sigma*g*p';
+    for i = 1:max_it
+        try, fi = ff(x0+lambda*p);
+        catch, fi = Inf;
+        end
+
+        if f0-fi >= lambda*t, return % success
+        end
+
+        lambda = lambda*tau;
+    end
+
 end

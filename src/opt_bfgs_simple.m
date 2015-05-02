@@ -21,7 +21,8 @@ function [xk, fk, xhist, fhist] = opt_bfgs_simple ( fun, dfun, x0, tol, max_it, 
     xhist = x0;
     fhist = f0;
 
-    Hk = eye(length(x0));
+    N = numel(x0);
+    Hk = eye(N);
     xk = x0;
     fk = f0;
     dfk = df0;
@@ -32,6 +33,9 @@ function [xk, fk, xhist, fhist] = opt_bfgs_simple ( fun, dfun, x0, tol, max_it, 
     if disp && length(xk) > 1
         fprintf('min_bfgs %d xk [%f;%f] dfk [%f;%f] fk %f\n', 0, xk(1), xk(2), ...
                 dfk(1), dfk(2), fk)
+    else
+        fprintf('min_bfgs %d xk [%f] dfk [%f] fk %f\n', 0, xk(1), ...
+                dfk(1), fk)
     end
 
     for n = 1:max_it
@@ -51,8 +55,6 @@ function [xk, fk, xhist, fhist] = opt_bfgs_simple ( fun, dfun, x0, tol, max_it, 
             pk = -pk;
         end
 
-        %lastf = rmfunc(thk);
-
         lambdak = opt_line_search(fun, xk, pk, dfk, fk);
         if lambdak < 0
             warning('parameter out of bounds!')
@@ -67,7 +69,7 @@ function [xk, fk, xhist, fhist] = opt_bfgs_simple ( fun, dfun, x0, tol, max_it, 
 
         yk = dfkp1 - dfk;
 
-        if fk-fkp1 < tol && n>10
+        if fk-fkp1 < tol && n>5
             warning('function decrease less than tolerance')
             break
         end
@@ -86,7 +88,7 @@ function [xk, fk, xhist, fhist] = opt_bfgs_simple ( fun, dfun, x0, tol, max_it, 
         rhok = 1/(yk*sk');
         if rhok > 0
             % Hk will still be PSD because rho>0
-            Hk = (eye(2)-[sk'*yk]*rhok)*(Hk*(eye(2)-[yk'*sk]*rhok))+sk'*sk*rhok;
+            Hk = (eye(N)-[sk'*yk]*rhok)*(Hk*(eye(N)-[yk'*sk]*rhok))+sk'*sk*rhok;
         end
 
         xk  = xkp1;
@@ -97,9 +99,14 @@ function [xk, fk, xhist, fhist] = opt_bfgs_simple ( fun, dfun, x0, tol, max_it, 
         xhist = [xhist; xk];
         fhist = [fhist; fk];
 
-        if disp && length(xk) > 1
-            fprintf('min_bfgs %d xk [%f;%f] dfk [%f;%f] fk %f\n', n, xk(1), xk(2), ...
-                    dfk(1), dfk(2), fk)
+        if disp
+            if length(xk) > 1
+                fprintf('min_bfgs %d xk [%f;%f] dfk [%f;%f] fk %f\n', n, xk(1), xk(2), ...
+                        dfk(1), dfk(2), fk)
+            else
+                fprintf('min_bfgs %d xk [%f] dfk [%f] fk %f\n', n, xk(1), ...
+                        dfk(1), fk)
+            end
         end
     end
 end
