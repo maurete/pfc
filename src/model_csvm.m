@@ -27,6 +27,11 @@ function [output, deriv] = model_csvm(svmstruct, input, decision_values, c_log, 
     % Bounded Support Vector indices ( where abs(alpha) = C)
     bidx = [ find(svmstruct.bsv_) ];
 
+    % deriv for bounded SV is [label 0 0 0 ...]
+    alphab_deriv(bidx) = svmstruct.svclass_(bidx);
+
+    %% Find (\alpha,b) derivative for free SVs
+
     flen = length(fidx)-1; % free sv count (without bias)
     blen = length(bidx);
 
@@ -77,9 +82,9 @@ function [output, deriv] = model_csvm(svmstruct, input, decision_values, c_log, 
     % compute deriv of (alpha,b) wrt C
     if blen > 0
         alphab_deriv(fidx,1) = - H_inv * (R * svmstruct.svclass_(bidx));
-        alphab_deriv(bidx(alphab(bidx)>0),1)  = 1;
-        alphab_deriv(bidx(alphab(bidx)<=0),1) = - 1;
     end
+    %alphab_deriv(bidx(alphab(bidx)>0),1)  = 1;
+    %alphab_deriv(bidx(alphab(bidx)<=0),1) = - 1;
 
     % compute deriv of (alpha, b) wrt kernel params
     for k=1:nparam-1

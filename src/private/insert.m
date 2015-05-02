@@ -1,38 +1,40 @@
-function [v ins req] = insert(vec, values)
+function [v,ins,req] = insert(vec, values, tol)
 % insert elements into vector preserving order
 % and keeping only unique values
 
-    TOL = 1e-6;
+    % default tolerance
+    if nargin < 3, tol = 1e-6; end
 
+    % find sort order for <vec>
     s = 'ascend';
     if findorder(vec) < 0, s = 'descend';
     end
 
-    if isrow(vec),
-        values = reshape(values,1,[]);
-        v = sort(unique([vec values]),s);
-        %v = sort(builtin('_mergesimpts',[vec values],TOL),s);
-    else
-        values = reshape(values,[],1);
-        v = sort(unique([vec;values]),s);
-        %v = sort(builtin('_mergesimpts',[vec;values],TOL),s);
+    % highlight <value> elements to be inserted
+    values = values(:);
+    do_ins = true(numel(values),1);
+    for i=1:numel(values)
+        if min(abs(vec-values(i)))<tol, do_ins(i) = false;
+        end
     end
 
-    % ins flags new elements inserted into v
-    ins = true(size(v));
-    for i=1:length(vec)
-        ins(find(v==vec(i))) = false;
-        %ins(find([abs(v-vec(i))<TOL])) = false;
-    end
+    % insert elements into output vector and sort them
+    [v idx] = sort([vec(:);values(do_ins)],s);
 
-    % req flags <values> positions in v
+    % flag newly inserted elements
+    ins = false(size(v));
+    ins(idx(numel(vec)+1:numel(v))) = true;
+
+    % flags <values> positions in v
     req = false(size(v));
-    for i=1:length(values)
-        req(find(v==values(i))) = true;
-        %req(find([abs(v-values(i))<TOL])) = true;
+    for i=1:numel(values)
+        req(find([abs(v-values(i))<tol])) = true;
     end
 
-    % if isrow(v), [v;ins;req],
-    % else [v,ins,req]
-    % end
+    if isrow(vec)
+        v = v';
+        ins = ins';
+        req = req';
+    end
+
 end

@@ -4,8 +4,8 @@ function [svm_params,paramh,errh,res] = select_model_empirical( problem, kernel,
 
     % MISC SETTINGS
     svm_tol = 1e-6;
-    gtol = 2*svm_tol;
-    stop_delta = 0.01;
+    gtol = svm_tol/10^(log10(svm_tol)/3);
+    stop_delta = svm_tol/10^(log10(svm_tol)/2);
     method = 'bfgs';
 
     kernel = get_kernel(kernel);
@@ -17,7 +17,7 @@ function [svm_params,paramh,errh,res] = select_model_empirical( problem, kernel,
     time = time_tick(time, 1);
 
     % initial parameter vector
-    if nargin > 4 && ~isempty(theta0), theta = theta0;
+    if nargin > 3 && ~isempty(theta0), theta = theta0;
     elseif strfind(kernel,'rbf') theta = [0 0];
     else theta = 0;
     end
