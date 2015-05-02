@@ -13,7 +13,7 @@ function net = mlp_xtrain(input, target, ival, tval, hidden, method, transfer_fc
 % hidden         Row vector with size parameter for every hidden
 %                layer. Defaults to 1 hidden layer with 10 neurons.
 %
-% method         Back-propagation method. Defaults to 'trainscg'.
+% method         Back-propagation method. Defaults to 'trainrp'.
 %
 % transfer_fcn   Transfer function for all layers. Default 'tansig'.
 %
@@ -44,26 +44,30 @@ function net = mlp_xtrain(input, target, ival, tval, hidden, method, transfer_fc
         net = createFann([size(input,2), hidden, size(target,2)],1);
 
         if isempty(ival)
-            % no validation data, beware of overtraining!
-            net = trainFann(net,input,target,0,MAX_IT);
-        else
-            % train epoch-by-epoch watching for cv performance
-            weights = [];
-            err_tr = [];
-            err_cv = [];
-            cv_min = nan;
-            for it = 1:MAX_IT
-                net = trainFann(net,input,target,0,1);
-                weights(:,it) = net.weights;
-                err_tr(it) = mean(abs([testFann(net,input)-target]));
-                err_cv(it) = mean(abs([testFann(net,ival)-tval]));
+            % no validation data, create it
+            [tri tsi] = stpart(randi(1e5),size(input,1),1,0.2,0);
+            ival = input(tsi,:);
+            tval = target(tsi,:);
+            input = input(tri,:);
+            target = target(tri,:);
+        end
 
-                if err_cv(it) < min(err_cv(1:it-1))
-                    cv_min = it;
-                elseif it-cv_min >= 5
-                    net.weights = weights(:,cv_min);
-                    break
-                end
+        % train epoch-by-epoch watching for cv performance
+        weights = [];
+        err_tr = [];
+        err_cv = [];
+        cv_min = nan;
+        for it = 1:MAX_IT
+            net = trainFann(net,input,target,0,1);
+            weights(:,it) = net.weights;
+            err_tr(it) = mean(abs([ testFann(net,input)*[1;-1]-target*[1;-1] ]));
+            err_cv(it) = mean(abs([ testFann(net,ival)*[1;-1]-tval*[1;-1] ]));
+
+            if err_cv(it) < min(err_cv(1:it-1))
+                cv_min = it;
+            elseif it-cv_min >= 5
+                net.weights = weights(:,cv_min);
+                break
             end
         end
 
