@@ -131,7 +131,7 @@ function prob = problem_gen(data_spec, varargin)
         n_test = 0;
         n_elem = size(data,1);
         if numel(part_spec) > 1
-            n_train = part_spec(1); ntest = part_spec(2);
+            n_train = part_spec(1); n_test = part_spec(2);
         else
             n_train = round(part_spec*n_elem);
             n_test  = round((1-part_spec)*n_elem);
