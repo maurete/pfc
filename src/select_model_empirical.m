@@ -1,4 +1,4 @@
-function [svm_params,paramh,errh,res,ntrain] = select_model_empirical( problem, kernel, lib, theta0, max_it)
+function [svm_params,paramh,errh,res,ntrain] = select_model_empirical( problem, feats, kernel, lib, theta0, max_it)
 
     if nargin < 5 || isempty(max_it), max_it = 100; end
 
@@ -11,13 +11,13 @@ function [svm_params,paramh,errh,res,ntrain] = select_model_empirical( problem, 
     kernel = get_kernel(kernel);
 
     target = problem.trainlabels;
-    input = problem.trainset;
+    input = problem.traindata;
 
     time = time_init();
     time = time_tick(time, 1);
 
     % initial parameter vector
-    if nargin > 3 && ~isempty(theta0), theta = theta0;
+    if nargin > 4 && ~isempty(theta0), theta = theta0;
     elseif strfind(kernel,'rbf') theta = [0 0];
     else theta = 0;
     end
@@ -43,15 +43,15 @@ function [svm_params,paramh,errh,res,ntrain] = select_model_empirical( problem, 
         );
 
     if strcmp(method,'bfgs')
-        err_func = @(theta) error_empirical_cv(trainfunc, testfunc, testfunc_deriv, exp(theta), problem);
+        err_func = @(theta) error_empirical_cv(trainfunc, testfunc, testfunc_deriv, exp(theta), problem, feats);
         [svm_params,~,paramh,errh,ntrain] = opt_bfgs_simple( err_func, false, theta, 100*svm_tol, max_it )
 
     else
-        err_func = @(theta) error_empirical_cv(trainfunc, testfunc, testfunc_deriv, exp(theta), problem);
+        err_func = @(theta) error_empirical_cv(trainfunc, testfunc, testfunc_deriv, exp(theta), problem, feats);
         [svm_params,~,paramh,errh,ntrain] = opt_rprop( err_func, false, theta, stop_delta, max_it )
     end
 
-    res = problem_test(problem,lib,kernel,exp(svm_params(1)),exp(svm_params(2:end)));
+    res = problem_test(problem,feats,lib,kernel,exp(svm_params(1)),exp(svm_params(2:end)));
     print_test_info(res);
     time = time_tick(time, 1);
 
