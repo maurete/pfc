@@ -1,4 +1,4 @@
-function [out] = loadset( name, species, id )
+function [out,all_sp] = loadset( name, species, id )
 
 %% Loadset - Loads named dataset by species
 

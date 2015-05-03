@@ -1,4 +1,4 @@
-function lambda = opt_line_search(f, x0, p, g, f0, sigma, lambda0, max_it, l_bound, u_bound)
+function [lambda,neval] = opt_line_search(f, x0, p, g, f0, sigma, lambda0, max_it, l_bound, u_bound)
 % Bactracking bounded line search algorithm.
 % Given function f, point x0, search direction p and gradient g,
 % returns lambda such that
@@ -16,13 +16,16 @@ function lambda = opt_line_search(f, x0, p, g, f0, sigma, lambda0, max_it, l_bou
     % backtracking parameter
     tau = 0.5;
 
+    % number of function evaluations
+    neval = 0;
+
     ff = f;
     lambda = lambda0;
     if numel(x0) > 1 && iscolumn(x0),
         warning('x0 is column vector')
         x0 = x0'; p = p'; g = g'; ff = @(p) f(p');
     end
-    if nargin < 5, f0 = ff(x0); end
+    if nargin < 5, f0 = ff(x0); neval = neval+1; end
 
     if any(size(x0) ~= size(p)) || any(size(p) ~= size(g))
         x0,p,g
@@ -45,7 +48,9 @@ function lambda = opt_line_search(f, x0, p, g, f0, sigma, lambda0, max_it, l_bou
     % test for sufficient decrease while decreasing lambda
     t = -sigma*g*p';
     for i = 1:max_it
-        try, fi = ff(x0+lambda*p);
+        try
+            fi = ff(x0+lambda*p);
+            neval = neval + 1;
         catch, fi = Inf;
         end
 

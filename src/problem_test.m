@@ -5,11 +5,13 @@ function out = problem_test(problem, varargin)
     p = struct();
     p.mlp = false;
     p.svm = false;
+    p.fann = false;
 
     pmlp = {'lib', 'hiddensizes', 'method', 'repeat'};
     psvm = {'lib', 'kernel', 'C', 'kparam', 'tol'};
 
     if strcmpi(varargin{1},'mlp'), p.mlp = true;
+    elseif strcmpi(varargin{1},'fann'), p.fann = true; p.mlp = true;
     else p.svm = true;
     end
 
@@ -42,7 +44,7 @@ function out = problem_test(problem, varargin)
     features = problem.featindex;
 
     if p.mlp
-        trainfunc = @(in,tg) mlp_train(in,tg,p.hiddensizes,p.method);
+        trainfunc = @(in,tg) mlp_xtrain(in,tg,[],[],p.hiddensizes,p.method,[],p.fann);
         testfunc  = @mlp_classify;
     elseif p.svm
         trainfunc = @(in,tg) mysvm_train( ...
@@ -51,23 +53,23 @@ function out = problem_test(problem, varargin)
         testfunc  = @mysvm_classify;
     end
 
-    try
+    % try
         for r = 1:nrep
             model = trainfunc(problem.trainset, problem.trainlabels);
             for i=1:ntests
                 [cls_results] = testfunc(model, problem(1).test(i).data(:,features));
-                res_test(i,r)   = mean(sign(cls_results) == problem(1).test(i).class);
+                res_test(i,r) = mean(sign(cls_results) == problem(1).test(i).class);
                 if problem(1).test(i).class == 1
-                    if problem(1).test(i).trained, sen_source(end+1) = res_test(i,r);
+                    if problem(1).test(i).type==1, sen_source(end+1) = res_test(i,r);
                     else sen_other(end+1) = res_test(i,r); end
                 elseif problem(1).test(i).class == -1
-                    if problem(1).test(i).trained, spe_source(end+1) = res_test(i,r);
+                    if problem(1).test(i).type==1, spe_source(end+1) = res_test(i,r);
                     else spe_other(end+1) = res_test(i,r); end
                 end
             end
         end
-    catch e, warning('%s: %s', e.identifier, e.message)
-    end % try
+    % catch e, warning('%s: %s', e.identifier, e.message)
+    % end % try
 
     out = struct();
     out.sen_source = mean(sen_source);
