@@ -1,7 +1,6 @@
-function out = problem_test(problem, varargin)
+function out = problem_test(problem, feats, varargin)
 
     % perform tests on problem test datasets
-
     p = struct();
     p.mlp = false;
     p.svm = false;
@@ -15,9 +14,9 @@ function out = problem_test(problem, varargin)
     else p.svm = true;
     end
 
-    for pi = 2:nargin
-        if p.mlp, p.(pmlp{pi-1}) = varargin{pi-1};
-        elseif p.svm, p.(psvm{pi-1}) = varargin{pi-1};
+    for pi = 1:nargin-2
+        if p.mlp, p.(pmlp{pi}) = varargin{pi};
+        elseif p.svm, p.(psvm{pi}) = varargin{pi};
         end
     end
 
@@ -32,54 +31,36 @@ function out = problem_test(problem, varargin)
         if ~isfield(p,'C'), error('C-parameter not specified'); end
     end
 
-    nrep   = p.repeat;
-    ntests = length(problem(1).test);
-
-    sen_source = [];
-    spe_source = [];
-    sen_other  = [];
-    spe_other  = [];
-
-    res_test = zeros(ntests,nrep);
-    features = problem.featindex;
-
     if p.mlp
         trainfunc = @(in,tg) mlp_xtrain(in,tg,[],[],p.hiddensizes,p.method,[],p.fann);
         testfunc  = @mlp_classify;
     elseif p.svm
         trainfunc = @(in,tg) mysvm_train( ...
-            p.lib, p.kernel, problem.trainset, problem.trainlabels, ...
+            p.lib, p.kernel, in, tg, ...
             p.C, p.kparam, false, p.tol );
         testfunc  = @mysvm_classify;
     end
 
-    % try
+    nrep   = p.repeat;
+    res_se = nan(1,nrep);
+    res_sp = nan(1,nrep);
+    pred   = nan(numel(problem.testlabels),nrep);
+
+    features = featset_index(feats);
+    try
         for r = 1:nrep
-            model = trainfunc(problem.trainset, problem.trainlabels);
-            for i=1:ntests
-                [cls_results] = testfunc(model, problem(1).test(i).data(:,features));
-                res_test(i,r) = mean(sign(cls_results) == problem(1).test(i).class);
-                if problem(1).test(i).class == 1
-                    if problem(1).test(i).type==1, sen_source(end+1) = res_test(i,r);
-                    else sen_other(end+1) = res_test(i,r); end
-                elseif problem(1).test(i).class == -1
-                    if problem(1).test(i).type==1, spe_source(end+1) = res_test(i,r);
-                    else spe_other(end+1) = res_test(i,r); end
-                end
-            end
+            model = trainfunc(problem.traindata(:,features), problem.trainlabels);
+            pred(:,r) = testfunc(model, problem.testdata(:,features));
+            res_se(r) = mean(sign(pred(problem.testlabels>0),r) ==  1);
+            res_sp(r) = mean(sign(pred(problem.testlabels<0),r) == -1);
         end
-    % catch e, warning('%s: %s', e.identifier, e.message)
-    % end % try
+    catch e, warning('%s: %s', e.identifier, e.message)
+    end % try
 
     out = struct();
-    out.sen_source = mean(sen_source);
-    out.spe_source = mean(spe_source);
-    out.sen_other  = mean(sen_other);
-    out.spe_other  = mean(spe_other);
-    for i=1:ntests
-        out(i).name  = problem(1).test(i).name;
-        out(i).class = problem(1).test(i).class;
-        out(i).size  = size(problem(1).test(i).data,1);
-        out(i).rate  = mean(res_test(i,:));
-    end
+    out.se = mean(res_se);
+    out.sp = mean(res_sp);
+    out.gm = mean( geomean([res_se;res_sp]) );
+    out.predict = mode(pred,2);
+
 end

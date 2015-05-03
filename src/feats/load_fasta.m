@@ -9,8 +9,9 @@ function [fastainfo ign] = load_fasta(filename)
     fastainfo = struct();
     ign = [];
     fid = fopen(filename);
+    if fid < 0, error('unable to read file: %s', filename); end
 
-    k  = 0; lc = 0;
+    k = 0; lc = 0;
     while ~feof(fid)
         lc = lc+1;
         l = fgetl(fid);
@@ -45,6 +46,28 @@ function [fastainfo ign] = load_fasta(filename)
     end
     fastainfo(k).endline = lc;
     fclose(fid);
+
+    % obtain secondary structure if unavailable
+    warnonce = true;
+    for k = 1:length(fastainfo)
+        if length(fastainfo(k).structure) < 1
+            if warnonce
+                warning(['Input file %s is missing secondary structure information. ' ...
+                         'Prediction of secondary structure with Matlab may take ' ...
+                         'considerable amount of time.'], filename)
+                warnonce = false;
+            end
+            try
+                [bracket,energy] = rnafold(fastainfo(k).sequence);
+                fastainfo(k).structure = bracket;
+                fastainfo(k).free_energy = energy;
+            catch e
+                warning(['Secondary structure could not be computed. ' ...
+                         'Bioinformatics toolbox might be unavailable on your system.'])
+                break
+            end
+        end
+    end
 
     % find multiloop entries
     for k = 1:length(fastainfo)

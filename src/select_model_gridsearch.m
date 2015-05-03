@@ -1,17 +1,17 @@
-function [svm_params,grid,res,ntrain] = select_model_gridsearch ( problem, kernel, lib, iter, ...
+function [svm_params,grid,res,ntrain] = select_model_gridsearch ( problem, feats, kernel, lib, iter, ...
                                                       criterion, strategy, svm_tol, grid0, fast )
 
     %% Initialization
 
-    if nargin < 9 || isempty(fast), fast = false; end
+    if nargin < 10 || isempty(fast), fast = false; end
     % default initial values
-    if nargin < 7 || isempty(svm_tol), svm_tol = 1e-6; end
-    if nargin < 6 || isempty(strategy), strategy = 'threshold'; end
-    if nargin < 5 || isempty(criterion), criterion = 'gm'; end
-    if nargin < 4 || isempty(iter), iter = 3; end
+    if nargin < 8 || isempty(svm_tol), svm_tol = 1e-6; end
+    if nargin < 7 || isempty(strategy), strategy = 'threshold'; end
+    if nargin < 6 || isempty(criterion), criterion = 'gm'; end
+    if nargin < 5 || isempty(iter), iter = 3; end
 
     % setup grid range
-    if nargin < 8 || isempty(grid0)
+    if nargin < 9 || isempty(grid0)
         % initial grid parameters (from Hsu et al.)
         box0 = log(pow2([-5:2:15]));
         gam0 = 0;
@@ -51,6 +51,9 @@ function [svm_params,grid,res,ntrain] = select_model_gridsearch ( problem, kerne
         false, ... % log-space parameter for derivatives (unused)
         input, target);
 
+    % features indexes
+    features = featset_index(feats);
+
     % criterion for max(min)imisation
     crit = gi.(lower(criterion)); csgn = 1;
     if any(strcmp(criterion, {'emp', 'rmb', 'er'})), csgn = -1; end
@@ -86,12 +89,12 @@ function [svm_params,grid,res,ntrain] = select_model_gridsearch ( problem, kerne
 
             % do cross validation
             [out,trg,~,~,stat] = cross_validation( ...
-                problem, trainfunc, theta, testfunc );
+                problem, feats, trainfunc, theta, testfunc );
 
             % obtain empirical and rmb-errors
             if ~fast
                 emp = eempfunc(out,trg);
-                rmb = ermbfunc(problem.trainset, problem.trainlabels, theta);
+                rmb = ermbfunc(problem.traindata(:,features), problem.trainlabels, theta);
             end
             if stat.status == 0
                 % if there's no error, save back results
@@ -186,7 +189,7 @@ function [svm_params,grid,res,ntrain] = select_model_gridsearch ( problem, kerne
     end
 
     % get test results for this problem
-    res = problem_test(problem,lib,kernel,exp(svm_params(1)),exp(svm_params(2:end)));
+    res = problem_test(problem,feats,lib,kernel,exp(svm_params(1)),exp(svm_params(2:end)));
     print_test_info(res);
     time_tick(time,0);
 
