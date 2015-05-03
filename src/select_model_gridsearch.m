@@ -1,4 +1,4 @@
-function [svm_params,grid,res] = select_model_gridsearch ( problem, kernel, lib, iter, ...
+function [svm_params,grid,res,ntrain] = select_model_gridsearch ( problem, kernel, lib, iter, ...
                                                       criterion, strategy, svm_tol, grid0, fast )
 
     %% Initialization
@@ -8,12 +8,12 @@ function [svm_params,grid,res] = select_model_gridsearch ( problem, kernel, lib,
     if nargin < 7 || isempty(svm_tol), svm_tol = 1e-6; end
     if nargin < 6 || isempty(strategy), strategy = 'threshold'; end
     if nargin < 5 || isempty(criterion), criterion = 'gm'; end
-    if nargin < 4 || isempty(iter), iter = 2; end
+    if nargin < 4 || isempty(iter), iter = 3; end
 
     % setup grid range
     if nargin < 8 || isempty(grid0)
         % initial grid parameters (from Hsu et al.)
-        box0 = log(pow2([-15:2:15]));
+        box0 = log(pow2([-5:2:15]));
         gam0 = 0;
 
         % if RBF kernel, set initial gamma range
@@ -168,24 +168,28 @@ function [svm_params,grid,res] = select_model_gridsearch ( problem, kernel, lib,
     %% Results
 
     % find final best result after grid refinement
-    [ii jj] = find(csgn*grid.data(:,:,crit) == max(max(csgn*grid.data(:,:,crit))));
+    [bi] = find(csgn.*lg.data(:,crit)==max(csgn.*lg.data(:,crit)));
 
     % if many elements choose the one closest to (0,0)
-    radius = (grid.param1(ii).^2 + grid.param2(jj)'.^2 ) .^ 0.5;
+    radius = sum([lg.params(bi,:).^2],2) .^ 0.5;
     ri = find(radius == min(radius),1,'first');
 
-    fprintf('#\n+ test\n+ logc\t%4.2f\n+ loggamma\t%4.2f\n',...
-            grid.param1(ii(ri)), grid.param2(jj(ri)))
+    % return best parameters
+    svm_params = lg.params(bi(ri),1);
+    if get_kernel(kernel,'rbf', false)
+        svm_params = [svm_params lg.params(bi(ri),2)];
+    end
+
+    fprintf('#\n+ test\n+ logc\t%4.2f\n',svm_params(1))
+    if numel(svm_params) > 1
+        fprintf('+ loggamma\t%4.2f\n', svm_params(2))
+    end
 
     % get test results for this problem
-    res = problem_test( problem, lib, kernel, ...
-                        exp(grid.param1(ii(ri))), ...
-                        exp(grid.param2(jj(ri))));
-
+    res = problem_test(problem,lib,kernel,exp(svm_params(1)),exp(svm_params(2:end)));
     print_test_info(res);
     time_tick(time,0);
 
-    % return best parameters
-    svm_params = [grid.param1(ii(ri)),grid.param2(jj(ri))];
+    ntrain = numel(find(grid.data(:,:,gi.test)));
 
 end

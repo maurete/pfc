@@ -1,4 +1,4 @@
-function [xk, fk, xhist, fhist] = opt_bfgs_simple ( fun, dfun, x0, tol, max_it, disp )
+function [xk, fk, xhist, fhist, neval] = opt_bfgs_simple ( fun, dfun, x0, tol, max_it, disp )
 
     if nargin < 6, disp = true; end
     if nargin < 5, max_it =  100; end
@@ -16,6 +16,8 @@ function [xk, fk, xhist, fhist] = opt_bfgs_simple ( fun, dfun, x0, tol, max_it, 
     if dfun_in_fun, [f0 df0] = fun(x0);
     else f0 = fun(x0); df0 = dfun(x0);
     end
+    % number of function evaluations
+    neval = 1;
 
     % param history to watch for convergence
     xhist = x0;
@@ -31,22 +33,22 @@ function [xk, fk, xhist, fhist] = opt_bfgs_simple ( fun, dfun, x0, tol, max_it, 
     pk = -dfk*Hk';
 
     if disp && length(xk) > 1
-        fprintf('min_bfgs %d xk [%f;%f] dfk [%f;%f] fk %f\n', 0, xk(1), xk(2), ...
+        fprintf('# min_bfgs %d xk [%f;%f] dfk [%f;%f] fk %f\n', 0, xk(1), xk(2), ...
                 dfk(1), dfk(2), fk)
     else
-        fprintf('min_bfgs %d xk [%f] dfk [%f] fk %f\n', 0, xk(1), ...
+        fprintf('# min_bfgs %d xk [%f] dfk [%f] fk %f\n', 0, xk(1), ...
                 dfk(1), fk)
     end
 
     for n = 1:max_it
         if norm(dfk,1) < gtol
             % gradient sufficiently small
-            if disp, fprintf('norm gfk < gtol'), end
+            if disp, fprintf('# stop condition: gfk < gtol\n'), end
             break
         end
         if (dfk*dfk')/(df0*df0') < tol
             % gradient sufficiently small compared to original
-            if disp, fprintf('rel gfk/gfk0 < gtol'), end
+            if disp, fprintf('# stop condition: gfk/gfk0 < gtol\n'), end
             break
         end
 
@@ -55,9 +57,9 @@ function [xk, fk, xhist, fhist] = opt_bfgs_simple ( fun, dfun, x0, tol, max_it, 
             pk = -pk;
         end
 
-        lambdak = opt_line_search(fun, xk, pk, dfk, fk);
+        [lambdak,ne] = opt_line_search(fun, xk, pk, dfk, fk);
         if lambdak < 0
-            warning('parameter out of bounds!')
+            fprintf('# stop condition: parameter out of bounds!\n')
             break
         end
 
@@ -66,19 +68,20 @@ function [xk, fk, xhist, fhist] = opt_bfgs_simple ( fun, dfun, x0, tol, max_it, 
         if dfun_in_fun, [fkp1 dfkp1] = fun(xkp1);
         else fkp1 = fun(xkp1); dfkp1 = dfun(xkp1);
         end
+        neval = neval+ne+1;
 
         yk = dfkp1 - dfk;
 
-        if fk-fkp1 < tol && n>5
-            warning('function decrease less than tolerance')
-            break
+        if n> 5
+            if fk-fkp1 < tol
+                fprintf('# stop condition: function decrease less than tolerance\n')
+                break
+            end
+            if abs(fk-fkp1) < tol * abs(fk)
+                fprintf('# stop condition: function decrease less than RELATIVE tolerance\n')
+                break
+            end
         end
-
-        if abs(fk-fkp1) < tol * abs(fk) && n>10
-            warning('function decrease less than RELATIVE tolerance')
-            break
-        end
-
 
         if yk*sk' == 0
             error('numerical error detected!')
@@ -101,10 +104,10 @@ function [xk, fk, xhist, fhist] = opt_bfgs_simple ( fun, dfun, x0, tol, max_it, 
 
         if disp
             if length(xk) > 1
-                fprintf('min_bfgs %d xk [%f;%f] dfk [%f;%f] fk %f\n', n, xk(1), xk(2), ...
+                fprintf('# min_bfgs %d xk [%f;%f] dfk [%f;%f] fk %f\n', n, xk(1), xk(2), ...
                         dfk(1), dfk(2), fk)
             else
-                fprintf('min_bfgs %d xk [%f] dfk [%f] fk %f\n', n, xk(1), ...
+                fprintf('# min_bfgs %d xk [%f] dfk [%f] fk %f\n', n, xk(1), ...
                         dfk(1), fk)
             end
         end

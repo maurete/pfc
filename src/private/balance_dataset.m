@@ -9,10 +9,11 @@ function [input,labels] = balance_dataset(input,labels,randseed)
     % if data is approximately balanced, do nothing
     if abs(npos/N-0.5) < 0.1, return; end
 
-    posidx = stpick(randseed,find(labels>0),nneg);
-    negidx = stpick(randseed,find(labels<0),npos);
+    % oversample positive or negative datasets
+    posxtra = stpick(randseed,find(labels>0),nneg-npos);
+    negxtra = stpick(randseed,find(labels<0),npos-nneg);
 
-    allidx = stshuffle(randseed,[posidx;negidx]);
+    allidx = stshuffle(randseed,[find(labels);posxtra;negxtra]);
 
     input = input(allidx,:);
     labels = labels(allidx);

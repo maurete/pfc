@@ -1,8 +1,9 @@
-function [best,hid,res,names,tst] = select_model_mlp( problem, criterion, method, repeat, disp)
+function [best,hid,res,names,tst] = select_model_mlp( problem, criterion, method, repeat, disp, fann)
 
+    if nargin < 6 || isempty(fann), fann = false; end
     if nargin < 5 || isempty(disp), disp = true; end
     if nargin < 4 || isempty(repeat), repeat = 5; end
-    if nargin < 3 || isempty(method), method = 'trainscg'; end
+    if nargin < 3 || isempty(method), method = 'trainrp'; end
     if nargin < 2 || isempty(criterion), criterion = 'gm'; end
 
     % error names
@@ -31,7 +32,7 @@ function [best,hid,res,names,tst] = select_model_mlp( problem, criterion, method
     end
 
     % training, testing and error functions
-    trainfunc = @(in,tg,vi,vt,th) mlp_xtrain(in,tg,vi,vt,th,method,[],false);
+    trainfunc = @(in,tg,vi,vt,th) mlp_xtrain(in,tg,vi,vt,th,method,[],fann);
     testfunc  = @mlp_classify;
     eerrfunc  = @(out,trg) log(sum(error_empirical(out,trg)));
     enllfunc  = @(out,trg) log(error_nll(...
@@ -54,7 +55,6 @@ function [best,hid,res,names,tst] = select_model_mlp( problem, criterion, method
             stat(r)=s;
         end
 
-        %rmb = ermbfunc(problem.trainset, problem.trainlabels, theta);
         emp = nan;%eerrfunc(mean(out,2),tar);
         nll = nan;%enllfunc(mean(out,2),tar);
 
@@ -87,7 +87,11 @@ function [best,hid,res,names,tst] = select_model_mlp( problem, criterion, method
         hold off
     end
 
-    tst = problem_test(problem,'mlp',best,method,repeat);
+    if fann
+        tst = problem_test(problem,'fann',best,method,repeat);
+    else
+        tst = problem_test(problem,'mlp',best,method,repeat);
+    end
 
     if disp
         print_test_info(tst);

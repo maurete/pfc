@@ -9,10 +9,11 @@ function [err, deriv, cvstat] = error_empirical_cv( ftrain, fcls, fclsderiv, the
     [z,target,dz,~,cvstat] = cross_validation(problem, ftrain, theta, fcls, fclsderiv);
 
     if length(unique(z)) < 4,
-        warning('Binary outputs, this may fail.')
+        warning('Binary SVM outputs: expect results to be invalid.')
     end
     if nargout > 1 && all(dz(:,1)==0)
         warning('SVM output deriv w.r.t. C is zero for all inputs.')
+        dz(:,1) = 1;
     end
 
     % compute empirical error

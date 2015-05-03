@@ -18,6 +18,11 @@ function out = interpolate(xc, yc, values, xi, yi)
 
     out = zeros(length(xi),length(yi),size(values,3));
 
+    if all(size(xi) == size(xc)) && all(xi == xc) && all(size(yi) == size(yc)) && all(yi == yc)
+        out = values;
+        return
+    end
+
     % check for singleton dimensions of original grid
     if length(xc) < 2
         % should interpolate in y-dimension only
