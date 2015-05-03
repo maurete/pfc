@@ -1,4 +1,4 @@
-function [svm_params,paramh,errh,res] = select_model_empirical( problem, kernel, lib, theta0, max_it)
+function [svm_params,paramh,errh,res,ntrain] = select_model_empirical( problem, kernel, lib, theta0, max_it)
 
     if nargin < 5 || isempty(max_it), max_it = 100; end
 
@@ -44,11 +44,11 @@ function [svm_params,paramh,errh,res] = select_model_empirical( problem, kernel,
 
     if strcmp(method,'bfgs')
         err_func = @(theta) error_empirical_cv(trainfunc, testfunc, testfunc_deriv, exp(theta), problem);
-        [svm_params,~,paramh,errh] = opt_bfgs_simple( err_func, false, theta, 100*svm_tol, max_it )
+        [svm_params,~,paramh,errh,ntrain] = opt_bfgs_simple( err_func, false, theta, 100*svm_tol, max_it )
 
     else
         err_func = @(theta) error_empirical_cv(trainfunc, testfunc, testfunc_deriv, exp(theta), problem);
-        [svm_params,~,paramh,errh] = opt_rprop( err_func, false, theta, stop_delta, max_it )
+        [svm_params,~,paramh,errh,ntrain] = opt_rprop( err_func, false, theta, stop_delta, max_it )
     end
 
     res = problem_test(problem,lib,kernel,exp(svm_params(1)),exp(svm_params(2:end)));

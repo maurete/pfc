@@ -1,5 +1,8 @@
 function s = strandsample(seed, population, nsamples)
 
+    s = [];
+    if nsamples < 1, return, end
+
     % fix random number generation
     if isempty(ver('octave')), a = rng(seed); % matlab
     else a = rand('state'); rand('seed',seed); % octave

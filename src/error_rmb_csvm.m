@@ -1,7 +1,14 @@
 function [err, deriv] = error_rmb_csvm( fsvmtrain, theta, Delta, logspace, input, target)
 
     % select and train whole training data
-    model = fsvmtrain(input, target, theta);
+    try
+        model = fsvmtrain(input, target, theta);
+    catch e,
+        warning('rmb: %s: %s', e.identifier, e.message)
+        err = nan;
+        deriv = nan;
+        return
+    end
     K = @(x,y) model.kfunc_(x,y,theta(2:end)); % omit C from kernel params
 
     C = theta(1);

@@ -1,4 +1,4 @@
-function [svm_params, paramh, errh,res] = select_model_rmb ( ...
+function [svm_params, paramh, errh, res, ntrain] = select_model_rmb ( ...
     problem, kernel, lib, theta0, gtol, max_iter, Delta )
 
     kernel = get_kernel(kernel);
@@ -23,7 +23,7 @@ function [svm_params, paramh, errh,res] = select_model_rmb ( ...
     rmb_func = @(theta) error_rmb_csvm( ...
         trainfunc, exp(theta), Delta, true, problem.trainset, problem.trainlabels );
 
-    [svm_params,~,paramh,errh] = opt_bfgs_simple( rmb_func, false, theta, gtol, max_iter );
+    [svm_params,~,paramh,errh,ntrain] = opt_bfgs_simple( rmb_func, false, theta, gtol, max_iter );
 
     %%% test best-performing parameters %%%
 
