@@ -51,8 +51,8 @@ function out = problem_test(problem, feats, varargin)
         for r = 1:nrep
             model = trainfunc(problem.traindata(:,features), problem.trainlabels);
             pred(:,r) = testfunc(model, problem.testdata(:,features));
-            res_se(r) = mean(sign(pred(problem.testlabels>0),r) ==  1);
-            res_sp(r) = mean(sign(pred(problem.testlabels<0),r) == -1);
+            res_se(r) = mean(sign(pred(problem.testlabels>0,r)) ==  1);
+            res_sp(r) = mean(sign(pred(problem.testlabels<0,r)) == -1);
         end
     catch e, warning('%s: %s', e.identifier, e.message)
     end % try
