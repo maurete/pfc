@@ -1,10 +1,10 @@
-function [best,hid,res,names,tst] = select_model_mlp( problem, criterion, method, repeat, disp, fann)
+function [best,hid,res,names,tst] = select_model_mlp( problem, feats, criterion, method, repeat, disp, fann)
 
-    if nargin < 6 || isempty(fann), fann = false; end
-    if nargin < 5 || isempty(disp), disp = true; end
-    if nargin < 4 || isempty(repeat), repeat = 5; end
-    if nargin < 3 || isempty(method), method = 'trainrp'; end
-    if nargin < 2 || isempty(criterion), criterion = 'gm'; end
+    if nargin < 7 || isempty(fann), fann = false; end
+    if nargin < 6 || isempty(disp), disp = true; end
+    if nargin < 5 || isempty(repeat), repeat = 5; end
+    if nargin < 4 || isempty(method), method = 'trainrp'; end
+    if nargin < 3 || isempty(criterion), criterion = 'gm'; end
 
     % error names
     names = { 'se'      , ... % sensitivity
@@ -15,8 +15,10 @@ function [best,hid,res,names,tst] = select_model_mlp( problem, criterion, method
               'mcc'       ... % Matthews Correlation Coefficient
             };
 
+    features = featset_index(feats);
+
     % number of neurons in hidden layer
-    nh = 0:max([10, round(numel(problem.featindex)*0.7)]);
+    nh = 0:max([10, round(numel(features)*0.7)]);
 
     % results matrix
     res = nan(length(nh),length(names));
@@ -51,7 +53,7 @@ function [best,hid,res,names,tst] = select_model_mlp( problem, criterion, method
         out = nan(sum(problem.partitions.validation(:)), repeat);
         for r = 1:repeat
             [out(:,r),tar,~,~,s] = cross_validation( ...
-                problem, trainfunc, theta, testfunc,[],true);
+                problem, feats, trainfunc, theta, testfunc,[],true);
             stat(r)=s;
         end
 
@@ -88,9 +90,9 @@ function [best,hid,res,names,tst] = select_model_mlp( problem, criterion, method
     end
 
     if fann
-        tst = problem_test(problem,'fann',best,method,repeat);
+        tst = problem_test(problem,feats,'fann',best,method,repeat);
     else
-        tst = problem_test(problem,'mlp',best,method,repeat);
+        tst = problem_test(problem,feats,'mlp',best,method,repeat);
     end
 
     if disp

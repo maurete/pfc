@@ -5,7 +5,7 @@ function results = test_mlp_cvparts(lib, seed)
 
     ds = { 'xue', 'ng-multi', 'batuwita-multi' };
     ft = { [1:6 8], [4 5 8], [4 5 8] };
-    cv = [  10 ];
+    cv = [ 10 ];
 
     fann = false;
     if strcmpi(lib,'fann'), fann = true; end
@@ -20,15 +20,15 @@ function results = test_mlp_cvparts(lib, seed)
             fprintf('\n\n# dataset %s featset %d\n\n', ds{d},ft{d}(f))
 
             for p = 1:numel(cv)
-                problem = problem_load( ds{d}, ft{d}(f), ...
-                                        cv(p), max([0.1,1/cv(p)]), ...
-                                        seed, [], true, false);
+                problem = problem_gen( ds{d}, 'CVPartitions', cv(p), ...
+                                       'CVRatio', max([0.1,1/cv(p)]), ...
+                                       'Balanced', seed);
 
                 fprintf('\n# %d partitions\n', cv(p))
                 i = i+1;
                 time = time_init();
 
-                [params,rh,rr,rn,res] = select_model_mlp(problem,[],[],[],false,fann);
+                [params,rh,rr,rn,res] = select_model_mlp(problem,ft{d}(f),[],[],[],false,fann);
 
                 time = time_tick(time,1);
                 gtime = time_tick(gtime,1);
@@ -40,12 +40,12 @@ function results = test_mlp_cvparts(lib, seed)
                     sprintf('mlpcv%d',cv(p)), ... % method name
                     time.time, ... % time finding model parameters
                     0, ... % number of trainings
-                    res(1).sen_source, ... % SE for same-source-as-train datasets
-                    res(1).spe_source, ... % SP
-                    geomean([res(1).sen_source, res(1).spe_source]), ... % geomean
-                    res(1).sen_other, ... % SE for other-source datasets
-                    res(1).spe_other, ... % SP
-                    geomean([res(1).sen_other, res(1).spe_other]), ... % geomean
+                    res(1).se, ... % SE for same-source-as-train datasets
+                    res(1).sp, ... % SP
+                    res(1).gm, ... % geomean
+                    0, ... % SE for other-source datasets
+                    0, ... % SP
+                    0, ... % geomean
                     params, ... % best parameters found
                     res, ... % test results
                     {rh,rr,rn} ... % nothing

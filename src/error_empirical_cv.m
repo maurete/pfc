@@ -1,12 +1,7 @@
-function [err, deriv, cvstat] = error_empirical_cv( ftrain, fcls, fclsderiv, theta, problem)
-
-    % number of partitions
-    npart = problem.npartitions;
-    % number of classifier args
-    nargs = length(theta);
+function [err, deriv, cvstat] = error_empirical_cv( ftrain, fcls, fclsderiv, theta, problem, feats)
 
     % perform cross validation
-    [z,target,dz,~,cvstat] = cross_validation(problem, ftrain, theta, fcls, fclsderiv);
+    [z,target,dz,~,cvstat] = cross_validation(problem, feats, ftrain, theta, fcls, fclsderiv);
 
     if length(unique(z)) < 4,
         warning('Binary SVM outputs: expect results to be invalid.')

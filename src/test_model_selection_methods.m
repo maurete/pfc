@@ -2,7 +2,7 @@ function results = test_model_selection_methods( lib, kernel, npart, ratio, seed
 
     gtime = time_init();
 
-    ds = { 'xue', 'ng-multi', 'batuwita-multi' };
+    ds = { 'xue', 'ng', 'batuwita' };
     ft = { [1:6 8], [4 5 8], [4 5 8] };
 
     init_matlabpool;
@@ -16,16 +16,16 @@ function results = test_model_selection_methods( lib, kernel, npart, ratio, seed
 
     i = 0;
     for d = 1:length(ds)
+        problem = problem_gen(ds{d},'CVPartitions',npart,'CVRatio',ratio,seed);
         for f = 1:length(ft{d})
             fprintf('\n\n# dataset %s featset %d\n\n', ds{d},ft{d}(f))
-            problem = problem_load(ds{d},ft{d}(f),npart,ratio,seed,[],[],false);
 
             % Trivial model selection
             fprintf('\n# trivial\n')
             i = i+1;
             time = time_init();
 
-            [params,res] = select_model_trivial(problem,kernel,lib);
+            [params,res] = select_model_trivial(problem,ft{d}(f),kernel,lib);
 
             time = time_tick(time,1);
             gtime = time_tick(gtime,1);
@@ -37,12 +37,12 @@ function results = test_model_selection_methods( lib, kernel, npart, ratio, seed
                 'trivial', ... % method name
                 time.time, ... % time finding model parameters
                 0, ... % number of trainings
-                res(1).sen_source, ... % SE for same-source-as-train datasets
-                res(1).spe_source, ... % SP
-                geomean([res(1).sen_source, res(1).spe_source]), ... % geomean
-                res(1).sen_other, ... % SE for other-source datasets
-                res(1).spe_other, ... % SP
-                geomean([res(1).sen_other, res(1).spe_other]), ... % geomean
+                res(1).se, ... % SE for same-source-as-train datasets
+                res(1).sp, ... % SP
+                res(1).gm, ... % geomean
+                0, ... % SE for other-source datasets
+                0, ... % SP
+                0, ... % geomean
                 params, ... % best parameters found
                 res, ... % test results
                 [] ... % nothing
@@ -55,7 +55,7 @@ function results = test_model_selection_methods( lib, kernel, npart, ratio, seed
             time = time_init();
 
             [params,grid,res,ntr] = select_model_gridsearch( ...
-                problem,kernel,lib, ...
+                problem,ft{d}(f),kernel,lib, ...
                 2, ... % number of iterations
                 'gm', ... % criterion
                 'threshold', ... % strategy
@@ -73,12 +73,12 @@ function results = test_model_selection_methods( lib, kernel, npart, ratio, seed
                 'gridsearch', ... % method name
                 time.time, ... % time finding model parameters
                 ntr, ... % number of trainings
-                res(1).sen_source, ... % SE for same-source-as-train datasets
-                res(1).spe_source, ... % SP
-                geomean([res(1).sen_source, res(1).spe_source]), ... % geomean
-                res(1).sen_other, ... % SE for other-source datasets
-                res(1).spe_other, ... % SP
-                geomean([res(1).sen_other, res(1).spe_other]), ... % geomean
+                res(1).se, ... % SE for same-source-as-train datasets
+                res(1).sp, ... % SP
+                res(1).gm, ... % geomean
+                0, ... % SE for other-source datasets
+                0, ... % SP
+                0, ... % geomean
                 params, ... % best parameters found
                 res, ... % test results
                 grid ... % grid
@@ -90,7 +90,7 @@ function results = test_model_selection_methods( lib, kernel, npart, ratio, seed
             i = i+1;
             time = time_init();
 
-            [params,ph,eh,res,ntr] = select_model_empirical(problem,kernel,lib);
+            [params,ph,eh,res,ntr] = select_model_empirical(problem,ft{d}(f),kernel,lib);
 
             time = time_tick(time,1);
             gtime = time_tick(gtime,1);
@@ -102,12 +102,12 @@ function results = test_model_selection_methods( lib, kernel, npart, ratio, seed
                 'empirical', ... % method name
                 time.time, ... % time finding model parameters
                 ntr, ... % number of trainings
-                res(1).sen_source, ... % SE for same-source-as-train datasets
-                res(1).spe_source, ... % SP
-                geomean([res(1).sen_source, res(1).spe_source]), ... % geomean
-                res(1).sen_other, ... % SE for other-source datasets
-                res(1).spe_other, ... % SP
-                geomean([res(1).sen_other, res(1).spe_other]), ... % geomean
+                res(1).se, ... % SE for same-source-as-train datasets
+                res(1).sp, ... % SP
+                res(1).gm, ... % geomean
+                0, ... % SE for other-source datasets
+                0, ... % SP
+                0, ... % geomean
                 params, ... % best parameters found
                 res, ... % test results
                 {ph,eh} ... % param history, error history
@@ -120,7 +120,7 @@ function results = test_model_selection_methods( lib, kernel, npart, ratio, seed
                 i = i+1;
                 time = time_init();
 
-                [params,ph,eh,res,ntr] = select_model_rmb(problem,kernel,lib);
+                [params,ph,eh,res,ntr] = select_model_rmb(problem,ft{d}(f),kernel,lib);
 
                 time = time_tick(time,1);
                 gtime = time_tick(gtime,1);
@@ -132,12 +132,12 @@ function results = test_model_selection_methods( lib, kernel, npart, ratio, seed
                     'rmb', ... % method name
                     time.time, ... % time finding model parameters
                     ntr, ... % number of trainings
-                    res(1).sen_source, ... % SE for same-source-as-train datasets
-                    res(1).spe_source, ... % SP
-                    geomean([res(1).sen_source, res(1).spe_source]), ... % geomean
-                    res(1).sen_other, ... % SE for other-source datasets
-                    res(1).spe_other, ... % SP
-                    geomean([res(1).sen_other, res(1).spe_other]), ... % geomean
+                    res(1).se, ... % SE for same-source-as-train datasets
+                    res(1).sp, ... % SP
+                    res(1).gm, ... % geomean
+                    0, ... % SE for other-source datasets
+                    0, ... % SP
+                    0, ... % geomean
                     params, ... % best parameters found
                     res, ... % test results
                     {ph,eh} ... % param history, error history

@@ -1,13 +1,13 @@
-function [output,target,deriv,index,stat,models] = cross_validation( problem, ftrain, args, fcls, fclsderiv, xtrain)
+function [output,target,deriv,index,stat,models] = cross_validation( problem, feats, ftrain, args, fcls, fclsderiv, xtrain)
 % CROSS_VALIDATION perform cross validation on PROBLEM by training with
 % FTRAIN(args) and validating with FCLS.
 % The XTRAIN argument tells wether validation data should be passed
 % to FTRAIN alongside training data.
 %
     do_deriv = false;
-    if nargin < 6,    xtrain = false; end
-    if nargin < 5, fclsderiv = false; end
-    if nargin > 4 && isa(fclsderiv,'function_handle'), do_deriv = true; end
+    if nargin < 7,    xtrain = false; end
+    if nargin < 6, fclsderiv = false; end
+    if nargin > 5 && isa(fclsderiv,'function_handle'), do_deriv = true; end
 
     % validate partition size
     if size(problem.partitions.train,1) < 1
@@ -18,13 +18,15 @@ function [output,target,deriv,index,stat,models] = cross_validation( problem, ft
     end
 
     part  = problem.partitions;
-    npart = problem.npartitions;
+    npart = size(problem.partitions.validation,2);
+
+    features = featset_index(feats);
 
     init_matlabpool();
 
     ret = 0; % 0=OK, <>0=ERROR
 
-    ntrain = size(problem.trainset,1);
+    ntrain = size(problem.traindata,1);
     nargs  = length(args);
     output = nan(size(problem.partitions.validation))';
     deriv  = nan(npart,ntrain*nargs);
@@ -35,8 +37,8 @@ function [output,target,deriv,index,stat,models] = cross_validation( problem, ft
 
         parfor p = 1:npart %partitions
 
-            trainset    = problem.trainset(part.train(:,p),:);
-            valset      = problem.trainset(part.validation(:,p),:);
+            trainset    = problem.traindata(part.train(:,p),features);
+            valset      = problem.traindata(part.validation(:,p),features);
             trainlabels = problem.trainlabels(part.train(:,p));
             vallabels   = problem.trainlabels(part.validation(:,p));
 
@@ -69,8 +71,8 @@ function [output,target,deriv,index,stat,models] = cross_validation( problem, ft
 
         for p = 1:npart %partitions
 
-            trainset    = problem.trainset(part.train(:,p),:);
-            valset      = problem.trainset(part.validation(:,p),:);
+            trainset    = problem.traindata(part.train(:,p),features);
+            valset      = problem.traindata(part.validation(:,p),features);
             trainlabels = problem.trainlabels(part.train(:,p));
             vallabels   = problem.trainlabels(part.validation(:,p));
 
