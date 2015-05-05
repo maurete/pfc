@@ -48,9 +48,10 @@ function out = problem_test(problem, feats, varargin)
 
     features = featset_index(feats);
     try
+        %model = struct();
         for r = 1:nrep
-            model = trainfunc(problem.traindata(:,features), problem.trainlabels);
-            pred(:,r) = testfunc(model, problem.testdata(:,features));
+            model(r)  = trainfunc(problem.traindata(:,features), problem.trainlabels);
+            pred(:,r) = testfunc(model(r), problem.testdata(:,features));
             res_se(r) = mean(sign(pred(problem.testlabels>0,r)) ==  1);
             res_sp(r) = mean(sign(pred(problem.testlabels<0,r)) == -1);
         end
@@ -61,6 +62,7 @@ function out = problem_test(problem, feats, varargin)
     out.se = mean(res_se);
     out.sp = mean(res_sp);
     out.gm = mean( geomean([res_se;res_sp]) );
+    out.model = model;
     out.predict = mode(pred,2);
 
 end

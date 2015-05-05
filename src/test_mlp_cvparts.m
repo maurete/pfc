@@ -3,7 +3,7 @@ function results = test_mlp_cvparts(lib, seed)
     gtime = time_init();
     init_matlabpool;
 
-    ds = { 'xue', 'ng-multi', 'batuwita-multi' };
+    ds = { 'xue', 'ng', 'batuwita' };
     ft = { [1:6 8], [4 5 8], [4 5 8] };
     cv = [ 10 ];
 
