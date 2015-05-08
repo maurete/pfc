@@ -1,4 +1,4 @@
-function [best,hid,res,names,tst] = select_model_mlp( problem, feats, criterion, method, repeat, disp, fann)
+function [best,hid,res,names,tst,out] = select_model_mlp( problem, feats, criterion, method, repeat, disp, fann)
 
     if nargin < 7 || isempty(fann), fann = false; end
     if nargin < 6 || isempty(disp), disp = true; end
@@ -101,5 +101,17 @@ function [best,hid,res,names,tst] = select_model_mlp( problem, feats, criterion,
     time_tick(time,0);
 
     hid = nh;
+
+    % Generate trained output model
+    out = struct();
+    out.features = features;
+    out.trainfunc = @(in,tg) mlp_xtrain(in,tg,[],[],best,method,[],fann);
+    out.classfunc = @mlp_classify;
+    out.trainedmodel = {};
+    for i=1:repeat
+        out.trainedmodel{i} = mlp_xtrain(problem.traindata(:,features), ...
+                                         problem.trainlabels,[],[],best,...
+                                         method,[],fann);
+    end
 
 end

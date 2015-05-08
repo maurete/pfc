@@ -56,7 +56,7 @@ function results = test_model_selection_methods( lib, kernel, npart, ratio, seed
 
             [params,grid,res,ntr] = select_model_gridsearch( ...
                 problem,ft{d}(f),kernel,lib, ...
-                2, ... % number of iterations
+                3, ... % number of iterations
                 'gm', ... % criterion
                 'threshold', ... % strategy
                 [],[], ... % ignore

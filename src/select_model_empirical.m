@@ -1,4 +1,4 @@
-function [svm_params,paramh,errh,res,ntrain] = select_model_empirical( problem, feats, kernel, lib, theta0, max_it)
+function [svm_params,paramh,errh,res,ntrain,out] = select_model_empirical( problem, feats, kernel, lib, theta0, max_it)
 
     if nargin < 5 || isempty(max_it), max_it = 100; end
 
@@ -50,6 +50,17 @@ function [svm_params,paramh,errh,res,ntrain] = select_model_empirical( problem, 
         err_func = @(theta) error_empirical_cv(trainfunc, testfunc, testfunc_deriv, exp(theta), problem, feats);
         [svm_params,~,paramh,errh,ntrain] = opt_rprop( err_func, false, theta, stop_delta, max_it )
     end
+
+    % Generate output model
+    out = struct();
+    features = featset_index(feats);
+    out.features = features;
+    out.trainfunc = @(in,tg) mysvm_train( lib, kernel, in, tg, ...
+            exp(svm_params(1)), exp(svm_params(2:end)), svm_tol );
+    out.classfunc = @mysvm_classify;
+    out.trainedmodel = mysvm_train( lib, kernel, problem.traindata(:,features), ...
+                                    problem.trainlabels, exp(svm_params(1)), ...
+                                    exp(svm_params(2:end)), svm_tol );
 
     res = problem_test(problem,feats,lib,kernel,exp(svm_params(1)),exp(svm_params(2:end)));
     print_test_info(res);

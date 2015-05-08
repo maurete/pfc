@@ -9,6 +9,9 @@ function prob = problem_gen(data_spec, varargin)
     symmetric = false;
     randseed = 1135;
     verbose = true;
+    scaleinfo = false;
+    f = nan;
+    s = nan;
 
     % check if options are passed as a cell array
     opts = varargin;
@@ -30,13 +33,23 @@ function prob = problem_gen(data_spec, varargin)
                cv_ratio = opts{i};
            elseif strcmpi(opts{i},'Balanced')
                balanced = true;
+           elseif strcmpi(opts{i},'MLP')
+               balanced = true;
            elseif strcmpi(opts{i},'Symmetric')
                symmetric = true;
            elseif strcmpi(opts{i},'NoVerbose')
                verbose = false;
+           elseif strcmpi(opts{i},'Scaling')
+               scaleinfo = true;
+               f = opts{i}{1};
+               s = opts{i}{2};
            end
        elseif isnumeric(opts{i})
            randseed = opts{i};
+       elseif isstruct(opts{i})
+           scaleinfo = true;
+           f = opts{i}.scaling{1};
+           s = opts{i}.scaling{2};
        end
        i = i+1;
     end
@@ -71,7 +84,6 @@ function prob = problem_gen(data_spec, varargin)
     testset  = [];
     sources  = {};
 
-    s = nan; f = nan;
     scalefun = @scale_data;
     if symmetric, scalefun = @scale_sym; end
 
@@ -85,11 +97,13 @@ function prob = problem_gen(data_spec, varargin)
 
         if numel(sp1{1}) > 1
             sp2 = textscan(sp1{1}{2},'%s','delimiter',',');
-            species = sp2{1};
+            species = sp2{1}{1};
+            % iscell(species)
         end
         try
             % try to read known data
             [data,meta] = loadset(name, species, id);
+            data(:,67) = data_spec{i+1};
 
             % save dataset name:species name
             idx = unique(data(:,69));
@@ -97,6 +111,10 @@ function prob = problem_gen(data_spec, varargin)
             sources{id} = cellfun(@(s)[name,':',s],meta,'UniformOutput',false);
 
         catch e
+            if ~any(strfind(e.message,'invalid database name'))
+                rethrow(e)
+            end
+
             % treat name as a filename
             addpath('./feats');
 
@@ -146,6 +164,11 @@ function prob = problem_gen(data_spec, varargin)
         id = id+1;
     end
 
+    if size(trainset,1) == 0 && ~scaleinfo
+        warning(['No scaling information supplied for a test-only problem. ' ...
+                 'Unless your data is normalized, test results will be invalid.'])
+    end
+
     trainset = stshuffle(randseed,trainset);
     if balanced
         [trainset,~] = balance_dataset(trainset, trainset(:,67));
@@ -162,6 +185,7 @@ function prob = problem_gen(data_spec, varargin)
     prob.partitions = part;
 
     prob.randseed = randseed;
+    prob.scaling = {f, s};
 
     prob.testdata   = testset(:,1:66);
     prob.testlabels = testset(:,67);
@@ -180,13 +204,14 @@ function prob = problem_gen(data_spec, varargin)
         valid_real = round(sum(prob.trainlabels(vidx)>0)/npart);
         valid_pseu = round(sum(prob.trainlabels(vidx)<0)/npart);
 
-        fprintf(['> cv partitions\t%d\n#\n', ...
-                 '# dataset\tsize\t#train\t#test\n', ...
-                 '# -------\t----\t------\t-----\n', ...
-                 '> real\t\t%d\t%d\t%d\n', ...
-                 '> pseudo\t%d\t%d\t%d\n#\n' ], ...
-                npart, nreal, train_real, valid_real, ...
-                npseu, train_pseu, valid_pseu);
+        fprintf(['> training set:         \t%d real\t%d pseudo\n',...
+                 '> %d cross validation partitions\n'...
+                 '> train partitions:     \t%d real\t%d pseudo\n'...
+                 '> validation partitions:\t%d real\t%d pseudo\n'...
+                 '>\n> test set:             \t%d real\t%d pseudo\n'], ...
+                nreal, npseu, npart, train_real, train_pseu, ...
+                valid_real, valid_pseu, ...
+                sum(prob.testlabels>0), sum(prob.testlabels<0));
     end
 
 end
