@@ -77,8 +77,8 @@ function net = mlp_xtrain(input, target, ival, tval, hidden, method, transfer_fc
         % Setup pattern recognition network.
         net = patternnet(hidden, method);
         net.trainParam.showWindow = 0;
-        net.trainParam.time = 10;
-        net.trainParam.epochs = MAX_IT;
+        %net.trainParam.time = 10;
+        %net.trainParam.epochs = MAX_IT;
 
         % Configure data partitionign
         if ~isempty(ival)
