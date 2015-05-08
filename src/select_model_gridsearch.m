@@ -1,4 +1,4 @@
-function [svm_params,grid,res,ntrain] = select_model_gridsearch ( problem, feats, kernel, lib, iter, ...
+function [svm_params,grid,res,ntrain,out] = select_model_gridsearch ( problem, feats, kernel, lib, iter, ...
                                                       criterion, strategy, svm_tol, grid0, fast )
 
     %% Initialization
@@ -187,6 +187,16 @@ function [svm_params,grid,res,ntrain] = select_model_gridsearch ( problem, feats
     if numel(svm_params) > 1
         fprintf('+ loggamma\t%4.2f\n', svm_params(2))
     end
+
+    % Generate output model
+    out = struct();
+    out.features = features;
+    out.trainfunc = @(in,tg) mysvm_train( lib, kernel, in, tg, ...
+            exp(svm_params(1)), exp(svm_params(2:end)), svm_tol );
+    out.classfunc = @mysvm_classify;
+    out.trainedmodel = mysvm_train( lib, kernel, problem.traindata(:,features), ...
+                                    problem.trainlabels, exp(svm_params(1)), ...
+                                    exp(svm_params(2:end)), svm_tol );
 
     % get test results for this problem
     res = problem_test(problem,feats,lib,kernel,exp(svm_params(1)),exp(svm_params(2:end)));

@@ -1,4 +1,4 @@
-function [svm_params, paramh, errh, res, ntrain] = select_model_rmb ( ...
+function [svm_params, paramh, errh, res, ntrain, out] = select_model_rmb ( ...
     problem, feats, kernel, lib, theta0, gtol, max_iter, Delta )
 
     features = featset_index(feats);
@@ -25,6 +25,18 @@ function [svm_params, paramh, errh, res, ntrain] = select_model_rmb ( ...
         trainfunc, exp(theta), Delta, true, problem.traindata(:,features), problem.trainlabels );
 
     [svm_params,~,paramh,errh,ntrain] = opt_bfgs_simple( rmb_func, false, theta, gtol, max_iter );
+
+
+    % Generate output model
+    out = struct();
+    out.features = features;
+    out.trainfunc = @(in,tg) mysvm_train( lib, kernel, in, tg, ...
+            exp(svm_params(1)), exp(svm_params(2:end)), svm_tol );
+    out.classfunc = @mysvm_classify;
+    out.trainedmodel = mysvm_train( lib, kernel, problem.traindata(:,features), ...
+                                    problem.trainlabels, exp(svm_params(1)), ...
+                                    exp(svm_params(2:end)), svm_tol );
+
 
     %%% test best-performing parameters %%%
 
