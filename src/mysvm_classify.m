@@ -1,38 +1,65 @@
-function [labels dec_values] = mysvm_classify( model, samples )
+function [labels,dec_values] = mysvm_classify(model,samples)
+%MYSVM_CLASSIFY Classify samples using support vector machine model.
+%
+%   LABELS = MYSVM_CLASSIFY(MODEL,SAMPLES) classifies each row in
+%     SAMPLES using the SVM model MODEL created using MYSVM_TRAIN and
+%     returns the predicted class LABELS. SAMPLES must have the same
+%     number of columns as the data used to train the classifier in
+%     MYSVM_TRAIN. LABELS has the same number of rows as SAMPLES.
+%
+%   [~,DECISION_VALUES] = MYSVM_CLASSIFY(MODEL,SAMPLES) returns the
+%     output of the SVM classifier in MODEL for each row in SAMPLES.
+%     DECISION_VALUES are real-valued, thus they cannot be used
+%     directly as a grouping variable, however, they're useful for
+%     assessing the SVM decision function, such as fitting a posterior
+%     probability model.
+%
+%   See also MYSVM_TRAIN
 
-    LIBSVM_DIR = './libsvm-3.20/matlab/';
+    config; % Load global settings
 
-    assert(size(samples,2) == size(model.sv_, 2),...
-           'attempting to classify vectors with unknown length, SV length %d, requested %d', ...
-           size(model.sv_, 2), size(samples, 2))
+    % Validate input samples length
+    assert(size(samples,2) == size(model.sv_,2), ...
+           'Unmatched length: SVs have length %d, input samples %d.', ...
+           size(model.sv_,2), size(samples,2));
 
     if strncmpi(model.lib_, 'matlab', 6)
+        % If matlab classifier selected, remove libsvm from path
         if isempty(strfind(which('svmtrain'),'bioinfo')), rmpath(LIBSVM_DIR); end
         assert(any(strfind(which('svmtrain'),'bioinfo')), ...
                'mysvm_classify: failed to load Matlab bioinfo svmtrain.')
 
-        % classify with matlab
-        labels = svmclassify( model, samples);
+        % Classify with matlab
+        labels = svmclassify(model,samples);
 
     elseif strncmpi(model.lib_, 'libsvm', 6)
+        % If libsvm selected, assert it is loaded in path
         if isempty(strfind(which('svmtrain'),'libsvm')), addpath(LIBSVM_DIR); end
         assert(any(strfind(which('svmtrain'),'libsvm')), ...
                'mysvm_train: failed to load libSVM svmpredict.')
 
-        % remove _-ended structure fields
+        % Remove _-ended structure fields for passing to svmpredict
         f_ = fieldnames(model); lean = model;
         for i=1:length(f_), if f_{i}(end) == '_', lean=rmfield(lean,f_{i}); end, end
 
-        % classify with libsvm
-        [labels ign dv_libsvm] = svmpredict(zeros(size(samples,1),1), samples, lean, '-q');
+        % Classify with libsvm
+        [labels,~,dv] = svmpredict(zeros(size(samples,1),1), samples, lean, '-q');
+
     else
-        error('Unknown svm library found in model')
+        % If svm library present in model is unknown, raise an error.
+        error('Unknown SVM library found in model.')
+
     end
 
+    % Don't compute decision values when not requested.
     if nargout < 2, return, end
 
+    % Compute decision values by directly applying the kernel function to samples
     dec_values = model.kfunc_(samples,model.sv_,model.kparam_) * model.alpha_ - model.bias_;
+
+    % Compare dec_values with libsvm's decision values side by side
     % if strncmpi(model.lib_, 'libsvm', 6)
-    %     [dv_libsvm dec_values]
+    %     [dv,dec_values]
     % end
+
 end
