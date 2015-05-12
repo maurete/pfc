@@ -1,4 +1,4 @@
-function [svm_params,res,out] = select_model_trivial(problem, feats, kernel, lib, svm_tol)
+function [svm_params,out] = select_model_trivial(problem, feats, kernel, lib, svm_tol)
 
     if nargin < 5 || isempty(svm_tol), svm_tol = 1e-6; end
 
@@ -20,8 +20,5 @@ function [svm_params,res,out] = select_model_trivial(problem, feats, kernel, lib
     out.trainedmodel = mysvm_train( lib, kernel, problem.traindata(:,features), ...
                                     problem.trainlabels, exp(svm_params(1)), ...
                                     exp(svm_params(2:end)), svm_tol );
-
-    res = problem_test(problem,feats,lib,kernel,exp(svm_params(1)),exp(svm_params(2:end)));
-    print_test_info(res);
 
 end

@@ -1,4 +1,4 @@
-function [svm_params,grid,res,ntrain,out] = select_model_gridsearch ( problem, feats, kernel, lib, iter, ...
+function [svm_params,out,grid,ntrain] = select_model_gridsearch ( problem, feats, kernel, lib, iter, ...
                                                       criterion, strategy, svm_tol, grid0, fast )
 
     %% Initialization
@@ -198,9 +198,6 @@ function [svm_params,grid,res,ntrain,out] = select_model_gridsearch ( problem, f
                                     problem.trainlabels, exp(svm_params(1)), ...
                                     exp(svm_params(2:end)), svm_tol );
 
-    % get test results for this problem
-    res = problem_test(problem,feats,lib,kernel,exp(svm_params(1)),exp(svm_params(2:end)));
-    print_test_info(res);
     time_tick(time,0);
 
     ntrain = numel(find(grid.data(:,:,gi.test)));

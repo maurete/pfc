@@ -1,14 +1,14 @@
-function [model,results] = select_model(problem, feats, classifier, method, varargin)
+function model = select_model(problem, feats, classifier, method, varargin)
 
     if nargin < 1 || ~isstruct(problem), error('No problem given.'), end
     if nargin < 2 || isempty(feats), feats = 8; end
     if nargin < 3 || isempty(classifier), classifier = 'rbf'; end
     if nargin < 4 || isempty(method), method = 'rmb'; end
 
+    config;
+
     classifier = lower(classifier);
     method = lower(method);
-
-    LIBSVM_DIR = './libsvm-3.20/matlab/';
 
     % default options
     verbose = true;
@@ -76,29 +76,27 @@ function [model,results] = select_model(problem, feats, classifier, method, vara
             if isempty(strfind(lower(which('svmtrain')),'libsvm'))
                 warning('Unable to load libSVM: RMB method unavailable, using empirical error instead.')
                 method = 'empirical';
+                if nargin < 2, classifier = 'linear'; end % RBF was not explicitly set
             end
         end
     end
 
-
     % do model selection
     if strcmpi(classifier,'mlp')
-        [params,~,~,~,res,model] = select_model_mlp(problem,feats,mlp_crit,mlp_bckp,mlp_nrep,false);
+        [params,model] = select_model_mlp(problem,feats,mlp_crit,mlp_bckp,mlp_nrep,false);
     else
         if strcmpi(method,'rmb')
             assert(any(strfind(classifier,'rbf')),'RMB can only be used with an RBF kernel.')
-            [params,~,~,res,~,model] = select_model_rmb(problem,feats,'rbf',svmlib);
+            [params,model] = select_model_rmb(problem,feats,'rbf',svmlib);
         elseif strcmpi(method,'empirical')
-            [params,~,~,res,~,model] = select_model_empirical(problem,feats,classifier,svmlib);
+            [params,model] = select_model_empirical(problem,feats,classifier,svmlib);
         elseif strcmpi(method,'trivial')
-            [params,res,model] = select_model_trivial(problem,feats,classifier,svmlib);
+            [params,model] = select_model_trivial(problem,feats,classifier,svmlib);
         elseif strcmpi(method,'gridsearch')
-            [params,~,res,~,model] = select_model_gridsearch(problem,feats,classifier,svmlib,...
-                                                             gs_iter, gs_crit, gs_stgy, ...
-                                                             [],[], true);
+            [params,model] = select_model_gridsearch(problem,feats,classifier,svmlib,...
+                                                     gs_iter, gs_crit, gs_stgy, ...
+                                                     [],[], true);
         end
     end
-
-    results = res;
 
 end
