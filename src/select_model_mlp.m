@@ -1,4 +1,4 @@
-function [best,hid,res,names,tst,out] = select_model_mlp( problem, feats, criterion, method, repeat, disp, fann)
+function [best,out,hid,res,names] = select_model_mlp( problem, feats, criterion, method, repeat, disp, fann)
 
     if nargin < 7 || isempty(fann), fann = false; end
     if nargin < 6 || isempty(disp), disp = true; end
@@ -89,15 +89,6 @@ function [best,hid,res,names,tst,out] = select_model_mlp( problem, feats, criter
         hold off
     end
 
-    if fann
-        tst = problem_test(problem,feats,'fann',best,method,repeat);
-    else
-        tst = problem_test(problem,feats,'mlp',best,method,repeat);
-    end
-
-    if disp
-        print_test_info(tst);
-    end
     time_tick(time,0);
 
     hid = nh;

@@ -1,4 +1,4 @@
-function [svm_params,paramh,errh,res,ntrain,out] = select_model_empirical( problem, feats, kernel, lib, theta0, max_it)
+function [svm_params,out,paramh,errh,ntrain] = select_model_empirical( problem, feats, kernel, lib, theta0, max_it)
 
     if nargin < 5 || isempty(max_it), max_it = 100; end
 
@@ -62,8 +62,6 @@ function [svm_params,paramh,errh,res,ntrain,out] = select_model_empirical( probl
                                     problem.trainlabels, exp(svm_params(1)), ...
                                     exp(svm_params(2:end)), svm_tol );
 
-    res = problem_test(problem,feats,lib,kernel,exp(svm_params(1)),exp(svm_params(2:end)));
-    print_test_info(res);
     time = time_tick(time, 1);
 
 end
