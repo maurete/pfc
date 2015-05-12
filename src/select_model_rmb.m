@@ -1,4 +1,4 @@
-function [svm_params, paramh, errh, res, ntrain, out] = select_model_rmb ( ...
+function [svm_params, out, paramh, errh, ntrain] = select_model_rmb ( ...
     problem, feats, kernel, lib, theta0, gtol, max_iter, Delta )
 
     features = featset_index(feats);
@@ -37,11 +37,6 @@ function [svm_params, paramh, errh, res, ntrain, out] = select_model_rmb ( ...
                                     problem.trainlabels, exp(svm_params(1)), ...
                                     exp(svm_params(2:end)), svm_tol );
 
-
-    %%% test best-performing parameters %%%
-
-    res = problem_test(problem,feats,lib,kernel,exp(svm_params(1)),exp(svm_params(2:end)),svm_tol);
-    print_test_info(res);
     time = time_tick(time, 1);
 
 end
