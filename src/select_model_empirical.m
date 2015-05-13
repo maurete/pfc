@@ -56,11 +56,11 @@ function [svm_params,out,paramh,errh,ntrain] = select_model_empirical( problem, 
     out = struct();
     out.features = features;
     out.trainfunc = @(in,tg) mysvm_train( lib, kernel, in, tg, ...
-            exp(svm_params(1)), exp(svm_params(2:end)), svm_tol );
+            exp(svm_params(1)), exp(svm_params(2:end)), false, svm_tol );
     out.classfunc = @mysvm_classify;
     out.trainedmodel = mysvm_train( lib, kernel, problem.traindata(:,features), ...
                                     problem.trainlabels, exp(svm_params(1)), ...
-                                    exp(svm_params(2:end)), svm_tol );
+                                    exp(svm_params(2:end)), false, svm_tol );
 
     time = time_tick(time, 1);
 
