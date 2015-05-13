@@ -8,6 +8,7 @@ function [svm_params,out,paramh,errh,ntrain] = select_model_empirical( problem, 
     stop_delta = svm_tol/10^(log10(svm_tol)/2);
     method = 'bfgs';
 
+    features = featset_index(feats);
     kernel = get_kernel(kernel);
 
     target = problem.trainlabels;
@@ -43,17 +44,16 @@ function [svm_params,out,paramh,errh,ntrain] = select_model_empirical( problem, 
         );
 
     if strcmp(method,'bfgs')
-        err_func = @(theta) error_empirical_cv(trainfunc, testfunc, testfunc_deriv, exp(theta), problem, feats);
+        err_func = @(theta) error_empirical_cv(trainfunc, testfunc, testfunc_deriv, exp(theta), problem, features);
         [svm_params,~,paramh,errh,ntrain] = opt_bfgs_simple( err_func, false, theta, 100*svm_tol, max_it )
 
     else
-        err_func = @(theta) error_empirical_cv(trainfunc, testfunc, testfunc_deriv, exp(theta), problem, feats);
+        err_func = @(theta) error_empirical_cv(trainfunc, testfunc, testfunc_deriv, exp(theta), problem, features);
         [svm_params,~,paramh,errh,ntrain] = opt_rprop( err_func, false, theta, stop_delta, max_it )
     end
 
     % Generate output model
     out = struct();
-    features = featset_index(feats);
     out.features = features;
     out.trainfunc = @(in,tg) mysvm_train( lib, kernel, in, tg, ...
             exp(svm_params(1)), exp(svm_params(2:end)), svm_tol );

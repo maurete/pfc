@@ -53,7 +53,7 @@ function [best,out,hid,res,names] = select_model_mlp( problem, feats, criterion,
         out = nan(sum(problem.partitions.validation(:)), repeat);
         for r = 1:repeat
             [out(:,r),tar,~,~,s] = cross_validation( ...
-                problem, feats, trainfunc, theta, testfunc,[],true);
+                problem, features, trainfunc, theta, testfunc,[],true);
             stat(r)=s;
         end
 
