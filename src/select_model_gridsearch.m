@@ -89,7 +89,7 @@ function [svm_params,out,grid,ntrain] = select_model_gridsearch ( problem, feats
 
             % do cross validation
             [out,trg,~,~,stat] = cross_validation( ...
-                problem, feats, trainfunc, theta, testfunc );
+                problem, features, trainfunc, theta, testfunc );
 
             % obtain empirical and rmb-errors
             if ~fast
