@@ -41,7 +41,7 @@ function [lambda,neval] = opt_line_search(f, x0, p, g, f0, sigma, lambda0, max_i
     end
 
     % make sure end x0 will lie between bounds
-    while any(x0+lambda*p > u_bound) || any(x0+lambda*p < l_bound)
+    while any(x0+lambda*p > u_bound) || any(x0+lambda*p < l_bound) || norm(lambda*p) > 4
         lambda = lambda*tau;
     end
 
