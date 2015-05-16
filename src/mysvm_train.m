@@ -186,8 +186,8 @@ function model = mysvm_train(lib,kfun,samples,labels,boxconstraint,...
     sviplus  = labels(model.svi_) > 0;
     sviminus = labels(model.svi_) < 0;
     bsv = false(size(model.svi_));
-    bsv(sviplus)  = abs(model.alpha_(sviplus)-Cplus)<tolkkt;
-    bsv(sviminus) = abs(model.alpha_(sviminus)+Cminus)<tolkkt;
+    bsv(sviplus)  = abs(model.alpha_(sviplus)-Cplus)<10*tolkkt;
+    bsv(sviminus) = abs(model.alpha_(sviminus)+Cminus)<10*tolkkt;
 
     % Extra model information
     model.bsv_     = bsv;
