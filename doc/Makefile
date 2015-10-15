@@ -1,6 +1,6 @@
 # nombre de los archivos fuente
 fuentes = propuesta.tex anteproyecto.tex entregable1.tex entregable2.tex \
-cronograma.tex log.tex
+cronograma.tex log.tex informe.tex
 #
 texes = $(wildcard '*.tex')
 #
@@ -17,16 +17,27 @@ $(fuentes:%.tex=%-blx.bib)
 #TEXINPUTS := .:$(TOP)/skrapport:
 
 cc = pdflatex -interaction nonstopmode
+crtf = latex2rtf
 bib = biber
 
 all:	$(fuentes:%.tex=%.pdf) $(dep)
 	rm -f $(fuentes_aux)
 	rm -f $(biber_aux)
 
+rtf:	$(fuentes:%.tex=%.rtf) $(dep)
+	rm -f $(fuentes_aux)
+	rm -f $(biber_aux)
+
 %.pdf:	%.tex $(dep)
+	$(cc) $<
 	$(cc) $<
 	$(bib) $(<:%.tex=%)
 	$(cc) $<
+
+%.rtf:	%.tex $(dep)
+	$(cc) $<
+	$(bib) $(<:%.tex=%)
+	$(crtf) $<
 
 clean:
 	rm -f $(fuentes:%.tex=%.pdf)

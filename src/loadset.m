@@ -1,9 +1,9 @@
-function [out,all_sp] = loadset(name,species,id)
+function [out,all_sp] = loadset(name,species,id,prefix)
 %LOADSET Load existing dataset with pre-computed features
 %
 %   OUT = LOADSET(NAME,SPECIES,ID) loads dataset NAME to be found
-%     in ../data/ directory, for selectad SPECIES.
-%     NAME is the dataset directory name, relative to ../data/.
+%     in <prefix> directory, for selectad SPECIES.
+%     NAME is the dataset directory name, relative to <prefix>.
 %     SPECIES can be either 'all', 'human', 'non-human', or a cell
 %     array of strings for each individual species.
 %     OUT is a numeric matrix in which rows are entries, columns
@@ -19,16 +19,19 @@ function [out,all_sp] = loadset(name,species,id)
 %
 %   See also PROBLEM_GEN
 
-    if nargin < 3 || isempty(id),      id=0;          end
-    if nargin < 2 || isempty(species), species='all'; end
+    config; % Load global settings
+
+    if nargin < 4 || isempty(prefix),  prefix=SAMPLE_DATA_DIR; end
+    if nargin < 3 || isempty(id),      id=0;                   end
+    if nargin < 2 || isempty(species), species='all';          end
 
     % Validate dataset name
-    if ~isdir(['../data/',name])
+    if ~isdir([prefix,'/',name])
         error('loadset: invalid database name.')
     end
 
     % List all species in dataset
-    bpath = ['../data/' name '/'];
+    bpath = [prefix,'/',name,'/'];
     % List every .c file
     d = dir( [bpath '*.c'] );
     sp = { d.name }';

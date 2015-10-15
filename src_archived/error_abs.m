@@ -1,4 +1,5 @@
-function [err, deriv] = error_abs(model, modelderiv, modelarg, input, target)
+function [err, deriv] = error_abs( model, modelderiv, modelarg, input, target )
+%% Absolute error function
 
     if isa(modelderiv,'function_handle')
         output = model(input, modelarg);      % Ninputs x 1
@@ -11,12 +12,7 @@ function [err, deriv] = error_abs(model, modelderiv, modelarg, input, target)
     deriv = zeros(size(modelarg));
 
     for i=1:length(input)
-        if target(i) > 0
-            err   = err + 1-output(i);
-            deriv = deriv - mderiv(i,:);
-        else
-            err = err+output(i);
-            deriv = deriv + mderiv(i,:);
-        end
+        err = err + abs(target(i)-output(i));
+        deriv = deriv - (mderiv(i,:).*sign(target(i)-output(i)));
     end
 end
