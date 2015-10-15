@@ -2,6 +2,9 @@ function sigmoid_params = model_sigmoid_train(output, target, max_iter, tol, fai
 % MODEL_SIGMOID_TRAIN find sigmoid (A,B) parameters for given
 % (real-valued) outputs and labels(target)
 
+% This method copied from Glasmachers & Igel's Maximum Likelihood... supplementary data,
+% ( file modelselection.cpp function LogLikelihoodCV::error )
+
     if nargin < 5,     fail = false; end % raise error if no convergence
     if nargin < 4,      tol = 1e-10; end %
     if nargin < 3, max_iter = 200;   end

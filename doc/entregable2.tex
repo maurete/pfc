@@ -37,7 +37,7 @@
 \subject{Proyecto Final de Carrera\\Ingeniería en
   Informática}
 \subtitle{~\\[.2ex]Informe entregable 2\\[.2ex]~}
-\author{{Alumno: Mauro Javier Torrez}\and{Director: Dr. Diego H. Milone}}
+\author{{Alumno: Mauro J. Torrez}\and{Director: Dr. Diego H. Milone}}
 %
 \date{~\\[2em]\today}
 %
@@ -49,386 +49,816 @@
 %
 %
 %
-\section{Introducción}
-En el presente informe entregable se presenta una revisión de las
-actividades llevadas a cabo por el alumno tal como se ha estipulado en
-la Propuesta de Proyecto Final de Carrera.  Se refiere al lector al
-repositorio disponible en \url{https://github.com/maurete/pfc/}, donde
-se puede consultar el código fuente y demás archivos generados durante
-el desarrollo.
+\section*{Introducción}
+En el presente informe de avance se detalla el proceso de obtención de
+un sistema de reconocimiento completo, desde la selección de los
+clasificadores y su parametrización hasta la generación de la interfaz
+de usuario de línea de comandos.
 
-En un primer lugar se procedió a codificar métodos de entrenamiento y
-optimización de parámetros para los clasificadores MLP y SVM.
-
-Se generaron conjuntos de datos de entrenamiento y prueba replicando
-trabajos anteriores \cite{xue} \cite{ng} \cite{batuwita}.  Se
-realizaron pruebas de clasificación con estas configuraciones de datos
-comparando los resultados obtenidos contra aquellos de los trabajos
-originales.
-
-\resalt{completar}
+En la primera sección se presenta una introducción teórica de los
+clasificadores, sus correspondientes parámetros de entrenamiento y los
+métodos de selección de estos parámetros. En las secciones 2 y 3 se
+describe la implementación y las pruebas realizadas para evaluación de
+los métodos codificados. En la cuarta sección se especifica la
+implementación del método definitivo y se presentan los resultados de
+las pruebas finales de validación del método.
+%
 %
 \section{Clasificadores}
-Se codificaron métodos en lenguaje Matlab incorporando los
-clasificadores MLP y SVM provistos por dicho software. A continuación
-se detallan los tres clasificadores utilizados.
 %
-\subsection{Clasificador MLP}
-Se utilizó el clasificador MLP disponible en el \emph{Neural Network
-  Toolbox} del software Matlab. Se especificó en todos los casos una
-topología \emph{capa de entrada} $\rightarrow$ \emph{capa oculta}
-$\rightarrow$ \emph{capa de salida} \resalt{porqué?}.
+El objetivo de un clasificador es asignar una clase a un patrón de
+entrada. En el presente caso, se trata de determinar si un patrón dado
+se corresponde o no con el de un pre-microRNA.
 
-Considerando el rendimiento del método durante la fase inicial de
-pruebas se especificó un número máximo de épocas arbitrariamente
-grande de $2\cdot10^{12}$, así como un tiempo máximo de entrenamiento
-para cada prueba de 10 segundos. Se utilizó como función de
-entrenamiento el método de gradiente conjugado escalado
-\cite{moeller}.
+En el ámbito de la Inteligencia Computacional, un clasificador
+consiste en un \emph{modelo}, que se obtiene a partir de un proceso de
+entrenamiento en que se presentan al clasificador patrones de entrada
+con su correspondiente clase. En términos generales, la generación del
+modelo requiere de la especificación de \emph{parámetros} propios del
+algoritmo de entrenamiento, además de los patrones del conjunto de
+entrenamiento y sus etiquetas. De este modo se obtiene un método de
+clasificación que posee \emph{capacidad de generalización} a partir de
+la representación interna del modelo obtenida durante el
+entrenamiento, y puede clasificar incluso patrones que no le han sido
+presentados en dicho proceso.
 
-Se estableció como parámetro a optimizar en este clasificador el
-número de neuronas en la capa oculta.
+Los patrones de entrada al clasificador son vectores numéricos de
+longitud fija que se obtienen mediante el proceso de extracción de
+características de los datos de entrada originales. Este proceso ha
+sido especificado en el Informe de Avance anteriormente presentado.
 %
-\subsection{Clasificador SVM-RBF}
-Se utilizó la implementación del clasificador SVM disponible en el
-\emph{Bioinformatics Toolbox} del software Matlab, parametrizado para
-utilizar un kernel RBF (\emph{Radial Basis Function}, Función de Base
-Radial) \cite{svm}.
-
-Se establecieron como parámetros a optimizar en este clasificador los
-valores $C$ --parámetro de penalización de errores de clasificación--
-y $\sigma$ --radio de la función de base radial utilizada como kernel.
 %
-\subsection{Clasificador SVM-LINEAR}
-Al igual que para SVM-RBF, se utilizó la implementación disponible en
-el \emph{Bioinformatics Toolbox} del software Matlab, en este caso
-parametrizado para utilizar un kernel lineal \cite{svm}.
-
-El kernel lineal consiste simplemente en una operación de producto
-escalar, la cual no requiere ningun parámetro adicional. El único
-parámetro a optimizar en este clasificador es entonces el parámetro de
-penalización $C$.
+\subsection{Perceptrón multicapa}
 %
-\section{Entrenamiento y optimización de parámetros}
-El entrenamiento de los clasificadores se realizó utilizando tres
-configuraciones de los conjuntos de datos, denominados XUE, NG y BTW, que replican aquellos
-utilizados en \cite{xue}, \cite{ng} y \cite{batuwita} respectivamente.
+El perceptrón multicapa (MLP, \eng{Multilayer Perceptron})
+\cite{mlp1,mlp2} es una red neuronal con propagación hacia adelante
+(\eng{feedforward}), donde las neuronas se disponen en capas. La
+primer capa, llamada de entrada, consiste en un conjunto de nodos
+``sensores'' cuyas salidas corresponden al valor de cada componente
+del vector de entrada. En las capas subsiguientes, llamadas
+{ocultas}, se disponen de una serie de \emph{neuronas} (nodos
+computadores).  La salida de cada neurona se determina al aplicar una
+función de activación, de tipo sigmoidea, a la suma ponderada de las
+salidas en la capa anterior.  Para el caso de un clasificador binario
+tal como el considerado en el presente trabajo, la capa \emph{de
+  salida} consiste en una única neurona, y el signo de su valor de
+salida determina a qué clase corresponde el vector de entrada.
 
-Considerando los conjuntos de características obtenidos en la etapa
-anterior, se consideraron todas las configuraciones posibles de estos
-conjuntos para cada clasificador.
-
-%% En lo que sigue de esta sección se describen el método general de
-%% entrenamiento y optimización de parámetros de los clasificadores, los
-%% conjuntos de datos y de características, y las particularidades
-%% consideradas en el entrenamiento de los clasificadores.
+Dado el conjunto de entrenamiento $(\B{x}_i, y_i), i=1\ldots l$, con
+una topología de la red fijada, el proceso de entrenamiento de un
+clasificador MLP sigue, a grandes rasgos, los siguientes pasos:
+\begin{enumerate}
+\item Inicializar los pesos iniciales (ponderación) de cada neurona de
+  forma aleatoria
+\item Entrenar una \emph{época}:
+  \begin{enumerate}
+  \item Seleccionar el primer patrón y propagar hacia adelante: calcular
+    la salida de cada neurona sucesivamente en cada capa hasta obtener
+    la salida en la última capa.
+  \item Ajustar los pesos de las neuronas mediante \emph{propagación hacia
+    atrás}, basada en el gradiente de una función de error entre la salida
+    obtenida y el valor esperado (la clase del patrón).
+  \item Repetir a) y b) para todos los patrones de entrenamiento.
+  \end{enumerate}
+  \item Repetir 2 hasta satisfacer un criterio de corte.
+\end{enumerate}
+De este modo, se obtiene el modelo consistente en la red especificada
+junto con los pesos obtenidos luego de haber entrenado con todo el
+conjunto de entrenamiento. Los parámetros necesarios para la
+generación de este modelo son entonces: el número de capas ocultas y
+el número de neuronas en cada capa (la topología de la red), los
+parámetros de la función de propagación hacia atrás tales como
+la velocidad de aprendizaje, y el criterio de corte para
+el entrenamiento, entre otros.
 %
-\subsection{Método general de entrenamiento}
-Una llamada al método de entrenamiento recibe los siguientes
-parámetros: clasificador a utilizar, conjunto de datos a utilizar,
-configuración de características a considerar y una semilla para
-inicialización de las funciones aleatorias utilizadas en el
-entrenamiento.
-
-El método general consiste en entrenar el clasificador con el conjunto
-de entrenamiento y características dados, optimizar los parámetros
-propios del clasificador y finalmente clasificar los datos de prueba
-especificados en el conjunto de datos utilizado.
-
-En todos los casos el entrenamiento se realiza mediante validación
-cruzada de 5 particiones (\eng{5-fold cross-validation})
-\cite{crossval}. Esta técnica consiste en generar 5 particiones de los
-datos de entrenamiento, entrenar con cuatro de ellas y validar con la
-restante, repitiendo el proceso 5 veces validando contra cada una de
-las 5 particiones, y finalmente calcular el promedio de los 5
-resultados de clasificación obtenidos.
 %
-\subsection{Optimización de parámetros}
-El método de optimización de parámetros es dependiente del
-clasificador utilizado. Para la evaluación del desempeño de los
-clasificadores, se definen las medidas de \emph{sensibilidad},
-\emph{especificidad} y \emph{precisión}
+\subsection{Máquina de vectores de soporte}
+%
+La máquina de vectores de soporte (SVM, \eng{Support Vector Machine})
+\cite{svm} es un clasificador binario que considera los patrones de
+entrada como puntos en un espacio vectorial. Dada una función de transformación
+$\BPhi(\cdot)\in{}\RR^N$, un clasificador SVM determina la clase $c$ de
+un vector de entrada $\zz\in\RR^M$ mediante
 \begin{align}
-  \T{SE} &= \frac{\T{\small número de entradas clasificadas
-      correctamente como positivas}} {\T{\small número de entradas
-      positivas en el conjunto de entrenamiento}}\\
-  \T{SP} &= \frac{\T{\small número de entradas
-      clasificadas correctamente como negativas}}{\T{\small número de
-      entradas negativas en el conjunto de entrenamiento}}\\
-  \T{P} &= \sqrt{\T{SE}\cdot\T{SP}}\,\,\T{.}
+  c &= \T{sgn}{\left(\ww\cdot\BPhi(\zz)+b\right)},
 \end{align}
+donde sgn es la función signo, y $\ww,b$ se obtienen de resolver el
+problema de optimización
+\begin{align}
+  \min_{\ww,b} &\quad
+  \frac{1}{2}(\ww\cdot\ww)+C\sum_{i=1}^{l}\xi_i\\
+  \T{sujeto a} &\quad
+  y_i(\ww\cdot\BPhi(\xx_i)+b)\geq 1-\xi_i,\\
+  &\quad\xi_i\geq 0,
+\end{align}
+donde $(\xx_i,y_i), i=1,\ldots,l$ es el conjunto de pares
+vector-clase de entrenamiento, $\xi_i$ es el error cometido al
+clasificar el $i$-ésimo patrón, y $C\geq0$ es una constante que
+determina la tolerancia a dichos errores de clasificación.
 
-Para el clasificador MLP, el parámetro a optimizar es el número de
-neuronas en la capa oculta. En este caso, se entrenó una vez para
-cada valor del parámetro en el rango $[5,25]$, seleccionando como
-óptimo aquel valor que maximiza el valor de P en promedio para las
-5 particiones.
-
-Para los clasificadores SVM-LINEAR y SVM-RBF, el método de
-optimización de parámetros se codificó siguiendo un procedimiento
-denominado \emph{búsqueda en la grilla} (\eng{grid-search})
-\cite{hsu}: a partir de los rangos iniciales
-$\log(C)=[-4,-2,\ldots,14]$ y $\log(\sigma)=[-15,-13,\ldots,15]$
-(SVM-RBF), se entrenó el clasificador refinando los valores de $C$ y
-$\sigma$ en las cercanías de aquellos para los cuales se obtuvieron
-valores máximos de P. El refinamiento se efectuó en 4 iteraciones:
-partiendo de una grilla logarítmicamente espaciada en $10^2$ se llegó
-a una grilla refinada en $10^{0.25}$ con una progresión de
-$10^{(2-r)}$, siendo $r$ el número de iteración.
+En la práctica, el problema se resuelve mediante una formulación
+dual \cite{bottou}, determinando
+coeficientes $b$ y $\alpha_i\geq0$ tales que $\ww=\sum_{i=1}^l
+y_i\alpha_i\BPhi(\xx_i)$, y la función de clasificación queda
+definida como
+\begin{align}
+  c &= \T{sgn}\left(\sum_{i=1}^l
+  y_i\alpha_i\left(\BPhi(\xx_i)\cdot\BPhi(\zz)\right)+b\right) =
+  \T{sgn}\left(\sum_{i=1}^l y_i\alpha_iK(\xx_i,\zz)+b\right).
+\end{align}
+Aquellos vectores de entrenamiento $\xx_i$ para los que $\alpha_i >
+0$ se denominan \emph{vectores de soporte}, de ahí el nombre del
+clasificador.  La función
+$K(\xx,\zz)=\BPhi(\xx)\cdot\BPhi(\zz)$, denominada
+\eng{kernel}, determina la similaridad entre los vectores $\xx$ y
+$\zz$ en el espacio transformado mediante un resultado escalar. En
+este trabajo se consideran las siguientes funciones:
+\begin{description}
+  [style=sameline,leftmargin=4em,itemsep=6pt,align=right]
+  \item[Lineal:] $K(\xx,\zz)=\xx\cdot\zz$, el caso
+    más sencillo donde $K$ es simplemente el producto escalar entre
+    sus argumentos.
+\item[RBF:] $K(\xx,\zz)=e^{(-\gamma||\xx-\zz||^2)}$,
+  denominada función de base radial (RBF, \eng{Radial Basis
+    Function}), requiere de la especificación del valor $\gamma>0$.
+\end{description}
+Se tiene entonces que los parámetros necesarios para la generación del
+modelo SVM son el tipo de kernel a utilizar y sus parámetros, y el
+valor $C$ que penaliza los errores de clasificación.
 %
-\subsection{Conjuntos de datos}
-Las tres configuraciones de los conjuntos de datos se presentan en
-forma resumida en la tabla \ref{datasetup}, a continuación una
-descripción de cada una de ellas. Las denominaciones indicadas en
-negrita hacen referencia a aquellos conjuntos de datos recopilados en
-la base de datos definitiva en la etapa anterior del desarrollo.
 %
-\begin{table}[h]
-\small
-  \caption{\small Configuraciones de los conjuntos de datos utilizados para las pruebas}
-  \center%\sffamily
-  \begin{tabular}{llrlrrrr}\toprule
-Config. &
-Fuente             & Clase & Especies  & Total  & Entrenamiento & Prueba  \\\midrule
-\mrow{7}{*}{XUE}
-& mirbase50        & +1    & humano    & 193    & 163   &  30   \\
-& coding           & -1    & humano    & 8494   & 168   & 1000  \\
-& conserved-hairpin& -1*   & humano    & 2444   & 0     & 2444  \\
-& updated          & +1    & humano    & 39     & 0     &  39   \\
-& mirbase50        & +1    & no-humano & 1017   & 0     & 1017  \\
-& mirbase20        & +1    & humano    & 1265   & 0     & 1265  \\
-& mirbase20        & +1    & no-humano & 11805  & 0     & 11805 \\\midrule
-\mrow{7}{*}{NG}
-& mirbase82        & +1    & humano    & 308    & 200   & 108   \\
-& coding           & -1    & humano    & 8494   & 400   & 8094  \\
-& mirbase82        & +1    & no-humano & 1677   & 0     & 1677  \\
-& functional-ncrna & -1    & varias    & 2650   & 0     & 2650  \\
-& mirbase20        & +1    & humano    & 1265   & 0     & 1265  \\
-& mirbase20        & +1    & no-humano & 11805  & 0     & 11805 \\\midrule
-\mrow{5}{*}{BTW}
-& mirbase12        & +1    & humano    & 660    & 561   & 99    \\
-& coding           & -1    & humano    & 8494   & 1012  & 7482  \\
-& other-ncrna      & -1    & humano    & 129    & 110   & 19    \\
-& mirbase20        & +1    & humano    & 1265   & 0     & 1265  \\
-& mirbase20        & +1    & no-humano & 11805  & 0     & 11805 \\
-\bottomrule
-  \end{tabular}
-  \label{datasetup}
-\end{table}
+\subsection{Evaluación de un clasificador}
 %
-\subsubsection{Configuración de datos XUE}
-En esta configuración se replican los conjuntos de entrenamiento y
-prueba utilizados en \cite{xue}: entrenamiento con 163 entradas de
-humanos de \sbs{mirbase50} y 168 de \sbs{coding}, y prueba contra
-\sbs{mirbase50} (30 entradas de humanos, 1017 otras especies),
-\sbs{coding} (1000 entradas de humanos), \sbs{conserved-hairpin} (2444
-entradas de humanos) y \sbs{updated} (39 entradas humanos).
-
-Se prueba además el clasificador contra la base de datos positiva
-\sbs{mirbase20} discriminando entre entradas pertenecientes a humanos
-y a otras especies.
+La evaluación de un clasificador binario se efectúa
+mediante una serie de medidas que se calculan a partir del resultado
+de clasificar, una vez entrenado el clasificador, un \emph{conjunto de
+  prueba} conocido e independiente del conjunto utilizado para el
+entrenamiento.
+El resultado de aplicar el clasificador al conjunto de prueba
+con $N$ elementos se caracteriza según las
+siguientes medidas:
 %
-\subsubsection{Configuración de datos NG}
-En esta configuración se replican los conjuntos de datos utilizados en
-\cite{ng}.  Para entrenamiento se utilizan 200 entradas del conjunto
-positivo \sbs{mirbase82} y 400 del conjunto negativo \sbs{coding}.
-
-Se prueba el clasificador con las 108 entradas de humanos restantes de
-\sbs{mirbase82}, 8094 de \sbs{coding}, 1677 entradas de
-\sbs{mirbase82} pertenecientes a otras especies, 2650 entradas
-negativas del conjunto \sbs{functional-ncrna}, además de las 13070
-entradas del conjunto positivo \sbs{mirbase20} discriminando entre
-humano y otras especies.
-%
-\subsubsection{Configuración de datos BTW}
-Esta configuración se generó utilizando los conjuntos de datos en
-\cite{batuwita}. Dado que en este trabajo no se especifica el número
-de entradas utilizadas para entrenamiento y prueba, se especificó una
-proporción de 85\% de las entradas positivas disponibles para
-entrenamiento, el 15\% restante para prueba, y en el caso de las
-entradas negativas se tomó 2 veces la cantidad de entradas positivas
-para entrenamiento, y el resto de entradas disponibles para prueba.
-
-Para entrenamiento se especifican 561 entradas positivas de humanos de
-\sbs{mirbase12}, junto a 1012 entradas negativas de \sbs{coding} y
-otras 110 entradas negativas de \sbs{other-ncrna}.
-
-Se prueba el clasificador con las 99 entradas positivas restantes de
-\sbs{mirbase12}, 7482 entradas negativas de \sbs{coding} y 19 de
-\sbs{other-ncrna}, además de las 11805 entradas positivas de
-\sbs{mirbase20} discriminadas entre humano y no-humano.
-
-\subsection{Conjuntos de características}
-Considerando los conjuntos de características definidos en la etapa
-anterior, se generaron 15 configuraciones diferentes que abarcan todas
-las combinaciones posibles. La composición de cada configuración se
-muestra en la Tabla \ref{featsets}, marcando con un asterisco (*) el
-conjunto incluido en la respectiva configuración.
-%
-\begin{table}[H]
-  \caption{Configuraciones de las características.}
-  \center%\sffamily
-  \begin{tabular}{lccccccccccccccc}\toprule
-Características / Configuración & 1& 2& 3& 4& 5& 6& 7& 8& 9&10&11&12&13&14&15\\
-\midrule
-Tripletes                       & *& *&  &  &  & *& *&  & *&  &  &  & *& *& *\\
-Tripletes ``extra''             & *&  & *&  &  & *& *&  & *& *& *& *&  &  &  \\
-Medidas de la secuencia         & *&  &  & *&  &  &  & *& *& *&  & *&  & *& *\\
-Medidas estructura secundaria   & *&  &  &  & *&  & *& *&  & *& *&  & *&  & *\\
-\bottomrule
-  \end{tabular}
-  \label{featsets}
-\end{table}
-%
-\subsection{Particularidades consideradas durante la fase de entrenamiento}
-\subsubsection{Desbalance de clases en el clasificador MLP}
-Mientras que para los métodos de clasificación mediante SVM se
-recomienda que la proporción de clases positivas a negativas durante
-el entrenamiento sea de 1 a 2 \cite{ng}, se observó que en el
-entrenamiento de un clasificador MLP esta proporción produce un
-sobreentrenamiento hacia las clases negativas.
-
-Debido a esto se procedió a generar un método adicional para el
-clasificador MLP, denominado MLP-BAL, que simplemente ignora durante
-el entrenamiento el exceso de entradas negativas por sobre el número
-de entradas positivas.
-%
-\subsubsection{Conjuntos de datos para entradas con lazos múltiples}
-En la generación de los conjuntos de datos en la etapa anterior se
-decidió ignorar las entradas de las bases de datos originales que
-contienen lazos múltiples en su estructura secundaria, ya que para
-este tipo de entradas las características de tripletes y de
-tripletes-extra no están definidas. Sin embargo, en los conjuntos de
-datos utilizados para la generación de \sbs{mirbase82},
-\sbs{mirbase12}, \sbs{functional-ncrna} y \sbs{other-ncrna}, así como
-\sbs{mirbase20}, se presenta una proporción significativa de entradas
-con lazos múltiples. Se generaron entonces conjuntos y configuraciones
-de datos adicionales (denotados con sufijo -multi), los cuales
-contienen todas las entradas originales, incorporando únicamente las
-características de la secuencia y de la estructura secundaria. En la
-tabla \ref{multidsets} se observa la composición de estas
-configuraciones adicionales.
-
-\begin{table}[h]
-\small
-  \caption{\small Configuraciones de los conjuntos de datos utilizados para las pruebas}
-  \center%\sffamily
-  \begin{tabular}{llrlrrrr}\toprule
-Config. &
-Fuente             & Clase & Especies  & Total  & Entrenamiento & Prueba  \\\midrule
-\mrow{7}{*}{NG}
-& mirbase82        & +1    & humano    & 323    & 200   & 108   \\
-& coding           & -1    & humano    & 8494   & 400   & 8094  \\
-& mirbase82        & +1    & no-humano & 1918   & 0     & 1918  \\
-& functional-ncrna & -1    & varias    & 12387  & 0     & 12387 \\
-& mirbase20        & +1    & humano    & 1311   & 0     & 1311  \\
-& mirbase20        & +1    & no-humano & 14132  & 0     & 14132 \\\midrule
-\mrow{5}{*}{BTW}
-& mirbase12        & +1    & humano    & 691    & 561   & 99    \\
-& coding           & -1    & humano    & 8494   & 1012  & 7482  \\
-& other-ncrna      & -1    & humano    & 754    & 118   & 19    \\
-& mirbase20        & +1    & humano    & 1311   & 0     & 1311  \\
-& mirbase20        & +1    & no-humano & 14132  & 0     & 14132 \\
-\bottomrule
-  \end{tabular}
-  \label{multidsets}
-\end{table}
-
-Se efectuaron entrenamientos y pruebas adicionales para las
-configuraciones de datos ``NG-multi'' y ``BTW-multi'' y las
-configuraciones de características posibles 4, 5 y 8.
-%
-\section{Pruebas y validación de los resultados}
-\subsection{Configuraciones de datos}
-\subsubsection{XUE}
-Baseline train 93.3-88.1-90.69
-Baseline test 89 conserved, 92.3 updated
-\begin{itemize}
-\item Train: P>98\% para SVM-RBF caracts 5,8,10 (2,s2,xs2)
-\item MLP,MLP-BAL P 97porciento
-\item Test: SE 98 (updated), SP 97.9(coding),  95.1 conserved-hairpin
+\begin{itemize}[style=nextline,leftmargin=2em]
+  \item\emph{Verdaderos positivos (VP)}: número de elementos de clase
+    positiva correctamente clasificados como positivos.
+  \item\emph{Verdaderos negativos (VN)}: número de elementos de clase
+    negativa correctamente clasificados como negativos.
+  \item\emph{Falsos positivos (FP)}: número de elementos de clase
+    negativa erróneamente clasificados como positivos.
+  \item\emph{Falsos negativos (FN)}: número de elementos de clase
+    positiva erróneamente clasificados como negativos.
 \end{itemize}
-\subsection{Configuraciones de características}
-\subsection{Clasificadores}
-\subsection{Conclusiones}
-\section{Clasificador definitivo}
-
-\section{Interfaz de línea de comandos del método}
-
-
-%% \begin{algorithm}[H]
-%% %% \SetKwInput{Datos}{Datos}
-%% %% \SetKwInput{Resultado}{Resultado}
-%% %% \SetKwInput{Entrada}{Entrada}
-%% %% \SetKwInput{Salida}{Salida}
-%% %% \SetKw{KwA}{a}
-%% %% \SetKw{KwDevolver}{devolver}
-%% %% \SetKw{Devolver}{devolver}
-%% %% \SetKwBlock{Inicio}{inicio}{fin}
-%% %% \SetKwIF{SSi}{EnOtroCasoSi}{EnOtroCaso}{si}{entonces}{sin\'o, si}{sin\'o}{fin si}
-%% %% \SetKwSwitch{Seleccionar}{Caso}{Otro}{seleccionar}{hacer}{caso}{sin\'o}{fin caso}{fin seleccionar}
-%% %% \SetKwFor{Para}{para}{hacer}{fin para}
-%% %% \SetKwFor{ParaPara}{par}{hacer en paralelo}{fin para}
-%% %% \SetKwFor{EnParalelo}{para}{hacer en paralelo}{fin para}
-%% %% \SetKwFor{Mientras}{mientras}{hacer}{fin mientras}
-%% %% \SetKwFor{ParaCada}{para cada}{hacer}{fin para cada}
-%% %% \SetKwFor{ParaTodo}{para todo}{hacer}{fin para todo}
-%% %% \SetKwRepeat{Repetir}{repetir}{hasta que}
-%% \SetAlgoLined
-%% \Entrada{clasificador RBF, datos, $\sigma_0$, $C_0$, $R$}
-%% \Resultado{$\sigma_{ni},C_{nj} | G_m(\T{Se}(\sigma_{ki},C_{kj}),\T{Sp}(\sigma_{ki},C_{kj})) = \max(G_m) \forall k,i,j$}
-%% $C\leftarrow C_0$\;
-%% $sigma\leftarrow\sigma_0$\;
-%% \Para{$r\in [1,R]$}{ 
-%% \ParaCada{$C_l, \sigma_m$}{
-%% Se$_k$, Sp$_k$ $\leftarrow$ entrenar($C_l$, $\sigma_m$, datos, \ldots) \; 
-%% $G_m(k)\leftarrow\sqrt{\T{Se}_k\cdot\T{Sp}_k}$
-%% }
-%% $G_m*\leftarrow\{G_m(k):(G_m(k)-\max(Gm(k)))<\T{tolerancia}\}$
-%% }
-%% \caption{How to write algorithms}
-%% \end{algorithm}
-
 %
-
-
-
-\section{Pruebas de clasificación}
-
-Las pruebas de clasificación se realizaron con los tres
-clasificadores, para todas las combinaciones de configuraciones de los
-conjuntos de datos y de los conjuntos de características.
-
-Como medida para el rendimiento de los diferentes clasificadores se
-utilizó la media geométrica entre la sensibilidad (tasa de
-clasificación del conjunto de datos positivo) y la especificidad (tasa
-de clasificación del conjunto de datos negativo) obtenida en cada
+Estas cuatro medidas conforman la llamada \emph{matriz de confusión}
+característica del clasificador, y dependen en todos los casos del
+número de elementos positivos y negativos presentes en el conjunto de
 prueba.
 
-Para cada cada prueba, el conjunto de datos de entrenamiento se
-particionó en 5, 80\% entrenamiento y 20\% prueba (validación
-cruzada), tal que cada conjunto de prueba no contenga entradas en
-común con los otros 4. Se repitió el entrenamiento/validación cruzada
-para las 5 particiones, y el resultado de la prueba se consideró como
-la media aritmética de los 5 resultados obtenidos.
+A partir de los valores de la matriz de confusión se definen las
+medidas de \emph{sensibilidad ($SE$)} y \emph{especificidad ($SP$)},
+que son independientes del número de elementos presentes en el
+conjunto de prueba (aunque no de la proporción entre elementos
+positivos y negativos):
+\begin{align*}
+SE & = \frac{VP}{VP+FN}, & SP & = \frac{VN}{VN+FP}.
+\end{align*}
+En forma intuitiva, la sensibilidad indica la \emph{tasa de acierto}
+al clasificar elementos de clase positiva, y la especificidad
+representa la tasa de acierto al clasificar patrones de clase
+negativa.
 
-En pos de hacer que las pruebas fueran reproducibles, se utilizaron funciones pseudoaleatorias
-que reciben como parámetro una \emph{semilla} para la generación de particiones
-y el muestreo de las bases de datos. \resalt{explicar mejor.}
+Para los casos donde se necesita obtener una medida única que
+caracterice el desempeño del clasificador, se define la \emph{media
+  geométrica} $G_m$ de la sensibilidad y la especificidad
+\begin{align*}
+G_m & = \sqrt{SE\cdot SP}.
+\end{align*}
+%
+%
+\subsection{Selección de parámetros}
+%
+%% En todos los casos, la implementación de los métodos de clasificación
+%% se realizó en lenguaje \eng{Matlab}. El código fuente se encuentra
+%% disponible en \url{https://github.com/maurete/pfc}.
+%
+La selección de parámetros consiste en encontrar aquellos parámetros
+que optimizan el desempeño del clasificador para los datos sobre los
+que se desea trabajar. Las estrategias de selección de parámetros
+consideradas para los diferentes clasificadores se describen
+brevemente a continuación.
+%
+%
+\subsubsection{Clasificador MLP}
+%
+Para la selección de parámetros del clasificador MLP se considera una
+estrategia de prueba y error. Mediante una prueba inicial se determina
+una función de propagación hacia atrás que obtenga la mejor velocidad
+de convergencia. Para cada problema en particular, se prueban
+diferentes topologías de la red (número de capas ocultas y cantidad de
+neuronas en cada capa) y se selecciona aquella que obtenga el mayor
+valor de $G_m$ sobre las particiones de validación generadas mediante
+validación cruzada.  Se considera fuera del alcance del presente Proyecto
+el desarrollo de métodos más avanzados para la selección de
+parámetros del clasificador MLP.
+%
+%
+\subsubsection{Clasificador SVM}
+%
+La selección de parámetros del clasificador SVM depende del kernel
+utilizado. En todos los casos de debe encontrar el valor óptimo del
+parámetro $C$, además de los parámetros propios del kernel, si los
+hubiera. A continuación se describen métodos para la selección de un
+vector genérico de parámetros $\B{\theta}$, que realizan una búsqueda
+en el espacio logarítmico ($\log\B{\theta}$). En el caso del kernel
+lineal se tiene simplemente $\B{\theta}=C$, y para el kernel RBF
+$\B{\theta}=(C,\gamma)$.
+%
+%
+\paragraph{Selección trivial}
+La selección trivial consiste simplemente en seleccionar el valor
+$C=1$ y, cuando se utiliza el kernel RBF, $\gamma=\frac{1}{2F}$,
+siendo $F$ el número de características de los vectores a clasificar
+\cite{glasmachersigel}. Al ser una elección trivial de parámetros, no
+se requiere realizar ningún entrenamiento para calcular $\B{\theta}$.
+%
+%
+\paragraph{Búsqueda en la grilla}
+Este método consiste en muestrear (discretizar) el espacio de los
+parámetros $\log\B{\theta}$ en puntos uniformemente espaciados
+(\emph{grilla}), y entrenar y evaluar el desempeño del clasificador
+sobre un conjunto de validación para cada punto de muestreo
+$\B{\theta}_k$.  Sucesivamente se refina la grilla evaluando en puntos
+intermedios cercanos a aquellos puntos donde se obtuvieron los mejores
+resultados \cite{hsu}.
+La búsqueda en la grilla tiene la ventaja de ser conceptualmente
+simple, sin embargo, se torna inviable cuando el vector de parámetros
+$\B{\theta}$ contiene más de 2 elementos. Dado que se trata de un
+método de búsqueda exhaustiva, resulta generalmente lento.
+%
+%
+\paragraph{Error empírico}
+Dado un vector de parámetros iniciales $\B{\theta}_0$, el método
+entrena el clasificador con estos parámetros y calcula un \emph{error
+  empírico} de clasificación $E_0$ \cite{ayat} para un conjunto de validación.
+Si
+se considera que el error empírico es una función ($E=E(\B{\theta})$) continua y
+derivable de $\B{\theta}$, se puede entonces calcular un gradiente
+$\nabla E(\B{\theta})$ \cite{keerthi} %% \cite[][Sec. 9.3.1]{glasmachers}
+que permite orientar la búsqueda de parámetros sucesivos
+$\Btheta_1,\Btheta_2,\ldots$ en la dirección del descenso más pronunciado,
+convergiendo así al valor óptimo $\B{\theta}_M$ que minimiza el error
+de clasificación \cite{adankon,glasmachersigel}.
+El método puede ser utilizado con vectores de parámetros
+$\B{\theta}$ de cualquier longitud, siempre que la función kernel sea
+derivable respecto de sus parámetros.
+%
+%
+\paragraph{Radius Margin Bound (RMB)}
+Este método, aplicable sólo al caso del kernel RBF, realiza una
+búsqueda en el espacio de los parámetros $\log\B{\theta}$, orientando
+la búsqueda en la dirección del mayor descenso mediante un gradiente
+de una función $F(\B{\theta})$, cuya derivación es teórica \cite{chung}.
+La función $F$ es continua y derivable en el espacio $\log\B\theta$
+y posee generalmente un único mínimo global. Parael cálculo de $F$
+no se requiere clasificar un conjunto de validación, por lo que
+el método RMB converge rápidamente a una solución.
+%
+%
+\section{Implementación}
+%
+La implementación se realizó en todos los casos en lenguaje
+\eng{Matlab}, y el código fuente se encuentra disponible en
+\url{https://github.com/maurete/pfc}. Se implementaron métodos de
+entrenamiento, clasificación y selección de parámetros, así como
+métodos auxiliares para carga de datos, validación cruzada, cálculo de
+gradiente y optimización.
 
+Los métodos de selección de parámetros codificados
+reciben como argumento una estructura en memoria que describe el
+problema a tratar, y retornan en un vector numérico los parámetros
+óptimos encontrados para el clasificador especificado.
+%
+%
+\subsection{MLP}
+%
+Para el clasificador MLP se utilizó las implementación del paquete
+\eng{Neural Network Toolbox} de Matlab. Se codificó además el soporte
+para la biblioteca de código libre
+\eng{FANN}\footnote{\url{http://leenissen.dk/fann/wp/}}, aunque
+durante pruebas iniciales se decidió descartar su utilización por
+problemas de desempeño.  El criterio de corte de entrenamiento del
+clasificador se estableció como la época en la que se obtiene la menor
+tasa de error sobre el conjunto de validación.  Se fijó el número de
+capas ocultas a 1, y como método de propagación hacia atrás se utilizó
+Rprop \cite{rprop}, que en pruebas preliminares resultó ser
+el más rápido de los métodos disponibles.
 
-\section{Resultados de las pruebas de clasificación}
-\resalt{Muy preliminar. Algunas conclusiones.}
-\begin{itemize}
-\item Dataset ALL: tasa muy baja para CODING. Se deberá reemplazar por otro dataset que entrene también con CODING.
-\item Featureset 2 (triplet): no funciona bien para mirbase20.
-\item Dataset XUE: rendimiento SVM-LINEAR igual o mejor que SVM-RBF.
-\item Featureset 5 (estructura secundaria): muy buen desempeño con un vector de sólo 7 características.
-\item Featureset 4 (secuencia): mejor desempeño que FS-5 únicamente en dataset ALL (que no funciona para CODING).
-\item Dataset HSA: prácticamente clasifican mejor aquellos featuresets que excluyen los triplets.
-\end{itemize}
+Se codificó un método de selección de parámetros que determina el
+número de neuronas en la capa oculta mediante búsqueda exhaustiva,
+probando entre 0 neuronas (caso especial de un perceptrón simple) y
+la longitud del vector de entrada.
+%
+%
+\subsection{SVM}
+%
+En el caso SVM se utilizaron las implementaciones disponibles tanto en
+el \eng{Bioinformatics Toolbox} del software Matlab como en la
+biblioteca \eng{libSVM} \cite{chang}, con funciones de kernel lineal y
+RBF.  Se implementaron para la selección de parámetros los métodos de
+búsqueda en la grilla, de error empírico, RMB y trivial.
 
+Para el método de búsqueda en la grilla se estableció un muestreo
+inicial de los parámetros $C=2^{-5},2^{-3},\ldots,2^{15}$ y, cuando se
+utiliza kernel RBF, $\gamma={2^{-15},2^{-13},\ldots,2^3}$ \cite{hsu}.
+Se estableció como criterio de evaluación del clasificador la medida
+$G_m$, siguiendo el ejemplo de la bibliografía \cite{xue,batuwita}.
+Se codificaron tres estrategias de refinamiento de la grilla,
+denominadas \eng{threshold}, \eng{zoom} y \eng{nbest}, y mediante
+pruebas se determinó la utilización por defecto la estrategia
+\eng{threshold}, refinando la grilla en tres iteraciones sucesivas.
+
+Para los métodos de error empírico y RMB se implementaron métodos de
+cálculo de gradiente a partir de las salidas del clasificador, junto
+con los métodos de optimización requeridos BFGS \cite{nocedal} y
+\eng{line search} \cite{linesearch}.
+La implementación realizada del método RMB requiere que la biblioteca
+\eng{libSVM} se encuentre disponible, ya que utiliza sus funciones para
+un cálculo intermedio, independientemente del hecho que se utilice o no
+la biblioteca para el clasificador SVM.
+%
+%
+\section{Pruebas}
+%
+Para evaluar el desempeño de los diversos métodos codificados se
+definieron tres \emph{problemas} de clasificación basados en la
+bibliografía. Estos problemas incorporan las bases de datos y
+conjuntos de características generados en la etapa anterior del
+Proyecto.  Se evaluaron los métodos de selección de parámetros para
+cada uno de los tres problemas definidos, clasificando los respectivos
+conjuntos de prueba. Se evaluaron las diferentes combinaciones de
+conjuntos de características disponibles en cada problema, utilizando
+como medida de desempeño el valor $G_m$ obtenido al clasificar el
+conjunto de prueba.  Para los casos en que se efectuó entrenamiento
+mediante validación cruzada, ésta se realizó con 10 particiones sobre
+el conjunto de entrenamiento.
+%
+%
+\subsection{Problemas de clasificación}
+%
+Los tres problemas definidos para las pruebas fueron los siguientes:
+\begin{description}
+  [style=sameline,leftmargin=7.5em,itemsep=6pt,align=right]
+\item[xue]
+  especifica los mismos conjuntos de entrenamiento y prueba
+  que se utilizan en el trabajo de Xue et al. \cite{xue}.
+\item[ng]
+  especifica los mismos conjuntos de datos que los presentados en Ng y Mishra
+  \cite{ng}, sin embargo, la separación entre entrenamiento y
+  prueba se efectuó generando una partición al azar, respetando en
+  todos los casos el número de elementos utilizados en el trabajo
+  original.
+\item[batuwita]
+  se basa en el trabajo realizado por Batuwita y Palade
+  \cite{batuwita}. Dado que en el trabajo original no se especifica el
+  número de ejemplos para los conjuntos de entrenamiento y prueba,
+  éstos se generaron seleccionando al azar 85\% de las entradas para
+  entrenamiento y el 15\% restante para prueba, respetando una
+  proporción 2 a 1 entre ejemplos negativos y positivos siguiendo
+  el ejemplo de \cite{ng}.
+\end{description}
+En todos los casos, los conjuntos de entrenamiento y prueba contienen
+únicamente pre-miRNAs de la especie humana.
+Cada uno de los tres problemas se probó para los diferentes conjuntos
+de características, tal como se generaron en la etapa anterior del
+Proyecto:
+\begin{description}
+  [style=sameline,leftmargin=7.5em,itemsep=6pt,align=right]
+\item[Triplete (T)] 32 características de tripletes, relacionan los
+  nucleótidos de la secuencia con la estructura secundaria local de su
+  entorno.
+\item[Triplete-extra (X)] 4 características auxiliares derivadas del
+  cálculo de las de triplete.
+\item[Secuencia (S)] 23 características con propiedades de la
+  secuencia.
+\item[Estructura (E)] 7 características calculadas a partir de la
+  estructura secundaria.
+\end{description}
+Se definieron además los siguientes conjuntos de características combinados:
+\begin{description}
+  [style=sameline,leftmargin=7.5em,itemsep=6pt,align=right]
+\item[T-X] características de tripletes y de tripletes-extra.
+\item[S-E] características de secuencia y de estructura secundaria.
+\item[T-X-S-E] todas las características.
+\end{description}
+%
+Se codificó un método para la generación de los conjuntos de
+entrenamiento y prueba para los diferentes problemas y conjuntos de
+características.  El método recibe como argumento el nombre del
+problema y de los conjuntos de características a cargar y devuelve una
+estructura en memoria que es utilizada como entrada para los métodos
+de selección de parámetros del clasificador.
+%
+\paragraph{Discusión}
+El cálculo de las características de triplete y de triplete-extra
+requiere que las entradas correspondientes contengan un único bucle
+central en su estructura secundaria. Dado que un número significativo
+de entradas utilizadas en los problemas {ng} y {batuwita} no
+cumple este requerimiento, se tiene que para ambos problemas las
+características de triplete y triplete-extra no son calculables.
+Se tomó la decisión de excluir estas características para
+evitar reducir la cantidad de elementos en los conjuntos de datos, lo
+que invalidaría la comparación de los resultados con los trabajos
+originales. Esta decisión implicó volver a generar las bases de datos,
+que pasaron a contener más elementos de lo que se especificó en la
+etapa anterior del Proyecto.
+
+La composición de los tres problemas y las características disponibles en
+cada uno de ellos se muestra en la Tabla \ref{problemas}.
+%
+\begin{table}[t]
+  \small
+  \center\sffamily
+  \begin{tabular}{llllccr}\toprule
+    \mrow{2}{*}{Problema}
+    & \mrow{2}{12ex}{Características disponibles}
+    & \mcol{5}{c}{Conjuntos de datos}
+    \\\cmidrule(lr){3-7}
+    && Tipo & Nombre & Clase & Especie & Cant. elem.
+    \\\midrule
+    \mrow{4}{*}{xue}
+    & \mrow{4}{*}{S,E,T,X}
+    & \mrow{2}{*}{Entrenam.}
+    & mirbase50           & +1    & humano    & 163 \\
+    &&& coding          & -1    & humano    & 168 \\
+    \cmidrule(lr){3-7} && \mrow{2}{*}{Prueba} &
+    mirbase50       & +1    & humano    & 30 \\
+    &&& coding          & -1    & humano    & 1000 \\
+    %% &&& conserved-hairpin& -1*   & humano    & 2444  \\
+    %% &&& updated          & +1    & humano      &  39   \\
+    %% &&& cross-species        & +1    & no-humano    & 581  \\
+    %% &&& mirbase20        & +1    & humano     & 1265  \\
+    %% &&& mirbase20        & +1    & no-humano   & 11805
+    \midrule
+    \mrow{4}{*}{ng} &
+    \mrow{4}{*}{S,E} &
+    \mrow{2}{*}{Entrenam.} &
+    mirbase82        & +1    & humano      & 200    \\
+    &&& coding           & -1    & humano   & 400   \\
+    \cmidrule(lr){3-7} && \mrow{2}{*}{Prueba} &
+    mirbase82        & +1    & humano        & 108   \\
+    &&& coding           & -1    & humano     & 8094  \\
+    %% &&& mirbase82        & +1    & no-humano  & 1918  \\
+    %% &&& functional-ncrna & -1    & varias       & 12387 \\
+    %% &&& mirbase20        & +1    & humano        & 1311  \\
+    %% &&& mirbase20        & +1    & no-humano    & 14132 \\\midrule
+    \midrule
+    \mrow{6}{*}{batuwita}&
+    \mrow{6}{*}{S,E}&
+    \mrow{3}{*}{Entrenam.} &
+    mirbase12        & +1    & humano    & 561    \\
+    &&& coding           & -1    & humano   & 1012  \\
+    &&& other-ncrna      & -1    & humano    & 118     \\
+    \cmidrule(lr){3-7} && \mrow{3}{*}{Prueba} &
+    mirbase12        & +1    & humano    & 99    \\
+    &&& coding           & -1    & humano   & 7482  \\
+    &&& other-ncrna      & -1    & humano    & 19    \\
+    %% &&& mirbase20        & +1    & humano     & 1311  \\
+    %% &&& mirbase20        & +1    & no-humano   & 14132 \\
+\bottomrule
+  \end{tabular}
+  \caption{\small Composición de los tres problemas definidos para las pruebas.}
+  \label{problemas}
+\end{table}
+%
+%
+\subsection{Resultados}
+%
+En la Tabla \ref{resultados} se muestran los valores $G_m (\%)$ de
+aplicar los métodos de selección de parámetros para cada problema y
+cada conjunto de características. Para los problemas ng y batuwita,
+estos valores se obtuvieron promediando los resultados obtenidos para
+5 particiones de entrenamiento y prueba diferentes generadas al azar.
+En general, los valores de $G_m$ obtenidos igualan o superan aquellos
+de los trabajos originales.
+
+Al analizar los resultados, se encontró que la elección del conjunto
+de características resultó determinante para
+el desempeño del clasificador: en general, se obtuvieron los mejores
+resultados para el conjunto de características S-E,
+mientras que el conjunto E obtuvo muy buenos resultados considerando
+que está compuesto únicamente por 7 características.
+Por el contrario, la utilización del conjunto de características S
+resultó en los valores más bajos de $G_m$, además de un incremento
+considerable en el tiempo de entrenamiento para todos los métodos,
+incluso provocando la divergencia del método RMB en el problema
+batuwita.
+La recomendación al considerar los conjuntos de características es
+utilizar el conjunto S-E, que obtiene los mejores valores de $G_m$ y
+como segunda opción el conjunto E, que resulta en tiempos reducidos de
+entrenamiento.  La utilización de estos conjuntos de características
+resulta además en clasificadores más generales, sin restricciones en
+el número de bucles en la estructura secundaria, restricciones que sí
+se presentan al considerar las características T y X.  Se recomienda
+asimismo descartar de plano el conjunto de características S.
+
+\begin{table}
+  \small\center\sffamily
+  \newcommand{\s}{\textbf}
+  \renewcommand{\t}{\textit}
+  \begin{tabular}{ccccccccccr}\toprule
+    \mrow{2}{*}{Problema} & \mrow{2}{*}{Caracts.} &
+    \mrow{2}{*}{MLP} & \mcol{3}{c}{SVM, kernel lineal} & \mcol{4}{c}{SVM, kernel RBF} &
+    \mrow{2}{*}{\desc{Original}}\\\cmidrule(lr){4-6}\cmidrule(lr){7-10}
+    %
+    & & & trivial & grilla & emp. & trivial & grilla & emp. & RMB \\\midrule
+    %
+    \mrow{7}{*}{xue}
+    & T-X-S-E      & \t{96,3} & \t{96,2} & \t{96,7} & \t{95,7} & \t{94,2} & \t{97,9} & \t{95,9} & \t{96,0} & \\
+    & T            & {87,5} & {89,7} & {89,5} & {87,8} & {84,4} & {89,4} & {88,2} & {95,7} & \\
+    & X            & {88,5} & {90,1} & {88,9} & {89,7} & {88,8} & {89,2} & {89,9} & {90,0} & \\
+    & T-X          & {90,6} & \t{91,9} & \t{91,2} & {90,7} & {89,2} & \t{92,1} & {90,6} & \t{96,2} & \\
+    & S            & {71,3} & {71,4} & {72,7} & {72,1} & {66,3} & {84,8} & {84,4} & {74,6} & \\
+    & E            & \t{95,7} & \t{96,1} & \t{96,1} & \t{96,3} & \t{95,9} & \t{96,5} & \t{96,7} & \t{96,7} & \\
+    & S-E          & \t{96,6} & \t{96,2} & \t{96,3} & \t{96,3} & \t{97,0} & \t{96,7} & \t{95,2} & \s{98,2} &
+    %% & T-X-S-E      & 97,0 & 96,2 & 96,0 & 95,9 & 94,2 & 96,5 & 94,1 & 96,0 & \\
+    %% & T            & 88,5 & 89,7 & 89,3 & 88,6 & 84,4 & 88,3 & 86,7 & 95,7 & \\
+    %% & X            & 89,0 & 90,1 & 87,6 & 89,3 & 88,8 & 88,2 & 90,0 & 90,0 & \\
+    %% & S            & 67,1 & 71,4 & 73,9 & 73,2 & 66,3 & 82,8 & 85,7 & 74,6 & \\
+    %% & E            & 94,8 & 96,1 & 96,1 & 96,1 & 95,9 & 96,7 & 96,7 & 96,7 & \\
+    %% & T-X          & 92,0 & 91,9 & 91,4 & 91,0 & 89,2 & 92,3 & 92,0 & 96,2 & \\
+    %% & S-E          & 96,3 & 96,2 & 96,2 & 96,2 & 97,0 & 96,6 & 88,9 & 98,2 &
+    \mrow{-7}{*}{\desc{90,7}}\\\midrule  
+    \mrow{3}{*}{ng}
+    & S            & {76,4} & {79,3} & {78,5} & {78,5} & {68,0} & {79,8} & {77,8} & {78,7} & \\
+    & E            & \t{94,8} & \t{94,5} & \t{94,9} & \t{95,0} & \t{94,2} & \t{94,2} & \t{95,1} & \t{95,0} & \\
+    & S-E          & \t{95,5} & \t{95,7} & \t{95,6} & \t{95,8} & \t{94,5} & \t{95,7} & \t{96,3} & \t{94,6} &
+    %% & S            & 76,6 & 80,3 & 79,4 & 79,4 & 49,5 & 83,3 & 83,6 & 75,4 & \\
+    %% & E            & 94,9 & 94,9 & 95,2 & 95,3 & 95,3 & 93,5 & 95,5 & 95,5 & \\
+    %% & S-E          & 95,5 & 96,3 & 96,5 & 96,3 & 94,5 & 96,4 & 96,6 & 95,6 &
+    \mrow{-3}{*}{\desc{91,0}}\\\midrule
+    \mrow{3}{*}{batuwita}
+    & S            & {70,2} & {68,7} & {68,6} & {67,9} & {68,0} & {73,6} & {74,5} & {36,9} & \\
+    & E            & {90,2} & {90,5} & {90,6} & {90,6} & {88,9} & {90,0} & {90,8} & {90,1} & \\
+    & S-E          & {90,4} & \t{91,4} & {90,7} & \t{91,1} & {88,2} & {90,6} & \t{91,0} & \t{91,2} &
+    %% & S            & 72,3 & 69,3 & 69,8 & 69,6 & 69,2 & 76,8 & 76,4 & 0,0 & \\
+    %% & E            & 91,9 & 92,0 & 91,6 & 93,0 & 91,5 & 91,9 & 92,5 & 91,9 & \\
+    %% & S-E          & 92,1 & 93,8 & 92,4 & 94,2 & 91,1 & 91,8 & 90,1 & 92,3 & 
+    \mrow{-3}{*}{\desc{90,8}}\\\bottomrule
+  \end{tabular}
+  \caption{\small Resultados $G_m(\%)$ para los diferentes problemas,
+    características y métodos de selección de parámetros. A la derecha, se
+    muestra el valor de $G_m(\%)$ obtenido por los respectivos autores en los
+    que se basó cada problema. Se destacan en negrita los mejores resultados,
+    y en itálica los resultados que mejoran los respectivos resultados
+    originales.}
+  \label{resultados}
+\end{table}
+%
+Considerando los diferentes clasificadores, se obtuvieron resultados
+comparables tanto para MLP como para SVM con kernel RBF y lineal.  Se
+destacaron en particular los resultados obtenidos al utilizar los
+métodos de selección de parámetros de error empírico y RMB: el método
+de error empírico obtuvo los mejores resultados para los problemas ng
+(kernel RBF) y batuwita (kernel lineal), y para el problema
+xue los mejores resultados se obtuvieron con el método RMB (kernel
+RBF).
+
+Respecto a los tiempos de ejecución, los métodos de selección de
+parámetros trivial (que no requiere entrenamiento) y RMB (que no
+utiliza validación cruzada) resultaron ser los más rápidos por amplio
+margen, mientras que los métodos de búsqueda en la grilla y MLP fueron
+los más lentos.  Respecto del método de error empírico se puede decir
+que resultó ser cuanto menos el doble de rápido que los de búsqueda en
+la grilla y MLP. A modo ilustrativo, al clasificar el problema ng con
+características S-E los métodos RMB y trivial insumieron menos de 2
+segundos, el método de error empírico entre 14 y 28 segundos, y para
+los métodos de búsqueda en la grilla y el
+clasificador MLP se requirieron entre 50 y 120 segundos.
+%% %
+%% %
+%% \subsubsection{Clasificador MLP}
+%% %
+%% El clasificador MLP presenta un desempeño comparable al de los
+%% clasificadores SVM. En general, se obtuvo mayor tasa de clasificación
+%% cuanto mayor fue el número de características consideradas.  Para
+%% todos los problemas el clasificador MLP obtuvo valores de $G_m$ que
+%% estuvieron por encima de aquellos presentados en los trabajos
+%% originales.  En muchos casos, se encontró que el número óptimo de
+%% neuronas en la capa oculta fue de 0, lo que implica que el
+%% clasificador consistió simplemente en un perceptrón lineal.
+%% %
+%% %
+%% \subsubsection{Clasificadores SVM}
+%% %
+%% A diferencia del clasificador MLP, para los diferentes clasificadores SVM
+%% se obtuvieron los mejores resultados para el conjunto de características S-E.
+%% En todos los casos, los valores de $G_m$ obtenidos mediante algún clasificador SVM
+%% resultaron superiores a aquellos obtenidos con el clasificador MLP.
+
+%% El método de error empírico obtuvo los mejores resultados para los problemas
+%% ng (kernel RBF) y batuwita (kernel lineal). En cambio, para el problema xue
+%% los mejores resultados se obtuvieron con el método RMB (kernel RBF).
+%% Asimismo, los métodos de selección de parámetros trivial y de búsqueda en
+%% la grilla obtuvieron resultados satisfactorios.
+
+%% En lo que hace a los tiempos de ejecución, el método más lento resultó ser
+%% el de búsqueda en la grilla, seguido por el de error empírico. El metodo
+%% más rapido fue el de selección trivial, que no requiere enntrenamiento, seguido
+%% del método RMB, que en todos los casos resultó en una rápida convergencia.
+
+%% Con el método RMB se observó un caso de no convergencia para el problema batuwita, conjunto
+%% de características S, en donde todas las entradas del conjunto de pruebas
+%% fueron clasificadas como negativas. Ésto indica probablemente que
+%% el conjunto de características S no genera un problema bien condicionado
+%% al ser utilizado por sí solo.
+%
+%
+\section{Método definitivo}
+%
+Para el método definitivo se codificó una interfaz de usuario de línea
+de comandos que funciona dentro de un entorno Matlab, compuesta por
+tres funciones que permiten al usuario cargar los datos del disco,
+generar el modelo del clasificador y clasificar nuevos datos.
+El flujo de trabajo para utilización del método se compone de los siguientes pasos:
+\begin{enumerate}
+\item \emph{Generación de un problema de entrenamiento.}
+  Se realiza mediante la función \emph{problem\_gen}, que recibe como
+  argumento la composición de los conjuntos de entrenamiento a utilizar.
+  La generación del problema también admite la especificación de un
+  conjunto de prueba.
+\item \emph{Generación de los problemas de prueba adicionales.}
+  Este paso se realiza para cada conjunto de prueba adicional que
+  se desee probar. Se debe especificar como argumento el problema generado
+  en el paso anterior, que se utiliza para normalizar los datos
+  de manera uniforme.
+\item \emph{Obtención del modelo del clasificador.}
+  Para la obtención del modelo del clasificador se codificó una función
+  \emph{select\_model}, que recibe el problema de entrenamiento y retorna
+  un modelo con el clasificador entrenado.
+\item \emph{Clasificación de los conjuntos de prueba.}
+  Se codificó la función \emph{problem\_classify} que permite
+  clasificar los problemas de prueba. Recibe como argumento el modelo
+  entrenado y el problema que se desea probar, y retorna una
+  estructura en memoria con las predicciones para todos los elementos
+  incluidos en el conjunto de prueba.
+\end{enumerate}
+La documentación completa de estas funciones está prevista para la
+siguiente etapa del Proyecto. Se prevé también la generación de una
+función que permita generar un reporte detallado para cada entrada
+presente en los problemas de prueba.
+
+A partir de los resultados de las pruebas en la sección anterior se
+especificó como parámetros por defecto para la generación del modelo
+la utilización del conjunto de características S-E, y el método de
+selección de parámetros RMB para un clasificador SVM con kernel RBF.
+Dado que el método RMB requiere la presencia de la biblioteca
+\eng{libSVM}, cuando ésta no se encuentra disponible el método utiliza
+automáticamente un clasificador SVM con kernel lineal y selección de
+parámetros mediante el método de error empírico.
+
+En la etapa previa del Proyecto se codificaron funciones en lenguaje
+Python para la lectura de archivos en formato FASTA, la extracción de
+características y la generación de una estructura de directorios con
+las distintas bases de datos y características.  Dichas funciones se
+reimplementaron en lenguaje Matlab en pos de permitir su utilización
+``en línea'', esto es, generar los conjuntos de entrenamiento/prueba
+directamente a partir de archivos en formato FASTA. De este modo se
+permite la utilización del método al usuario final sin necesidad de
+modificar el código fuente para incorporar nuevas bases de datos.
+%
+%
+\subsection{Validación}
+%
+A fin de obtener una idea del grado de desempeño del método frente a
+nuevos problemas, se generaron casos de prueba suplemetarios que
+emulan aquellos presentados en la bibliografía.
+Las pruebas suplementarias realizadas en el trabajo de Batuwita y Palade
+\cite{batuwita} no se pudieron replicar debido a que en el mismo
+no se proveen los conjuntos de datos suplementarios.
+Se probó además el
+rendimiento del método al clasificar la versión 20 de la base de datos
+miRBase \cite{mirbase3}, versión más reciente que aquella utilizada en
+los trabajos que se tomaron como referencia.
+
+Se probó el método con dos configuraciones:
+\begin{enumerate}
+\item Utilizando parámetros por defecto: conjunto de características S-E,
+  clasificador SVM con kernel RBF y selección de parámetros RMB.
+\item Clasificador SVM con kernel lineal y selección de parámetros
+  mediante el método del error empírico, para el conjunto de
+  características S-E.
+\end{enumerate}
+%% En todos los casos, se probó el método utilizando parámetros por
+%% defecto, con kernel RBF y método RMB, así como el método del error
+%% empírico para el kernel lineal.
+%
+%
+\subsection{Conjuntos de validación basados en Xue et al.}
+%
+En el trabajo de Xue et al. \cite{xue} se efectúa una validación del
+método presentado probando los siguientes casos de prueba
+suplementarios:
+\begin{description}
+  [style=sameline,leftmargin=9em,itemsep=6pt,align=right]
+\item[updated] Contiene 39 pre-miRNAs de la especie humana que, al
+  momento de publicación del artículo, eran candidatos a ser incluidos
+  en la base de datos miRBase \cite{mirbase3}.
+\item[conserved-hairpin] Contiene 2444 secuencias con forma de
+  \emph{horquilla} característica de los pre-miRNAs extraídas del
+  cromosoma humano 19. Esta base de datos contiene en su gran mayoría
+  pseudo-pre-miRNAs, sin embargo, se conoce que existen en la misma
+  algunas entradas de pre-miRNAs reales.
+\item[cross-species] Contiene 581 entradas de pre-miRNAs reales
+  pertenecientes a diversas especies no humanas, tales como animales,
+  plantas y virus.
+\end{description}
+En la Tabla \ref{xue} se presentan los resultados de clasificación obtenidos
+con el método propio entrenado con el problema xue,
+así como los resultados presentados en el trabajo original.
+%
+\begin{table}[h]
+  \small\center\sffamily
+  \newcommand{\s}{\textbf}
+  \begin{tabular}{lrrrr}\toprule
+    Conj. datos & N. Elem. & Método RMB & Err. Emp. & Xue et al. \\\midrule
+    updated           & 39 &   \s{94,9\%} & \s{94,9\%} & 92,3\% \\ 
+    cross-species     & 581 &  79,2\% & \s{96,0\%} & 90,9\% \\
+    conserved-hairpin & 2444 & \s{95,7\%} & 91,7\% & 89,0\% \\\bottomrule
+  \end{tabular}
+  \caption{\small Tasa de clasificación obtenida para los problemas de validación
+    basados en Xue et al. \cite{xue}}
+  \label{xue}
+\end{table}
+%
+%
+\subsection{Conjuntos de validación basados en Ng y Mishra}
+%
+En el trabajo de Ng y Mishra \cite{ng} se
+definen dos conjuntos de prueba suplementarios, denominados IE-NH e IE-NC:
+\begin{description}
+  [style=sameline,leftmargin=9em,itemsep=6pt,align=right]
+\item[IE-NH] Comparable al conjunto conserved-hairpin de \cite{xue}, incluye
+  1918 pre-miRNAs de especies no-humanas publicadas en la versión 8.2 de
+  miRBase.
+\item[IE-NC] Contiene 12.387 entradas de ncRNAs funcionales (clase negativa)
+  obtenidos de la base de datos Rfam \cite{rfam}, versión 7.0.
+\end{description}
+En la Tabla \ref{ng} se presenta una comparación de los resultados
+obtenidos con el método propio entrenado con el problema ng junto
+a aquellos obtenidos en el trabajo original.
+\begin{table}[h]
+  \small\center\sffamily
+  \newcommand{\s}{\textbf}
+  \begin{tabular}{lrrrr}\toprule
+    Conj. datos & N. Elem. & Método RMB & Err. Emp. & Ng y Mishra \\\midrule
+    IE-NH       &    1.918 & 89,5\%     & \s{93,6\%}    & 92,1\% \\
+    IE-NC       &   12.387 & \s{78,5\%}     & 55,3\%    & 68,7\% \\\bottomrule
+  \end{tabular}
+  \caption{\small Resultados para los problemas de validación
+    basados en Ng y Mishra \cite{ng}}
+  \label{ng}
+\end{table}
+%
+%
+\subsection{Base de datos miRBase, versión 20}
+%
+Por último, se probó el método definitivo contra la base de datos
+miRBase versión 20 \cite{mirbase3}, para los casos de entrenamiento
+con los problemas xue, ng y batuwita, discriminando entre las entradas
+pertenecientes a humanos (1872 elementos) y no-humanos (2254
+elementos.  En la tabla \ref{mirbase20} se detallan los resultados
+obtenidos.
+
+\begin{table}[h]
+  \small\center\sffamily
+  \newcommand{\s}{\textbf}
+  \begin{tabular}{lrcrr}\toprule
+    Especie & N.Elem. & Problema de entrenamiento & Método RMB & Err. Emp. \\\midrule
+    \mrow{3}{*}{humano} & \mrow{3}{*}{1.872} &
+       xue      & 64,2\% & 75,3\% \\
+    && ng       & 64,7\% & 73,5\% \\
+    && batuwita & 83,1\% & \s{83,3\%} \\\midrule
+    \mrow{3}{*}{no-humano} & \mrow{3}{*}{22.554} &
+       xue      & 66,9\% & 86,6\% \\
+    && ng       & 78,0\% & 87,4\% \\
+    && batuwita & \s{89,2\%} & 87,6\% \\\bottomrule
+  \end{tabular}
+  \caption{\small Tasa de clasificación obtenida para el problema de validación
+    con la base de datos miRBase, versión 20.}
+  \label{mirbase20}
+\end{table}
+%
+\subsection{Conclusión}
+%
+Como se puede observar en las pruebas de validación,
+así como también en las pruebas detalladas en la Sección 3,
+el método propio obtuvo resultados comparables
+a aquellos presentes en la bibliografía.
+En particular, se pudo determinar la importancia de una correcta
+selección de características y de los parámetros del clasificador.
+%
+%
+%
 \renewcommand{\bibfont}{\normalfont\footnotesize}
 \printbibliography
 \end{document}
-

@@ -25,22 +25,39 @@
 \section*{Anexo: Modificación del cronograma del proyecto}
 Conforme a lo convenido con la cátedra, se adjunta al presente
 informe de avance una modificación del cronograma original del
-proyecto que el alumno se propone cumplimentar.  Se consideran las
-tareas restantes 5 a 10 tal como se han definido en el Anteproyecto,
-con una carga horaria de 356 horas distribuidas en 20 semanas, a
-partir del día lunes 28 de julio de 2014.
-
-El siguiente diagrama abarca desde el día 30 de junio de 2014 al día
-12 de diciembre del mismo año.
+proyecto que el alumno se propone cumplimentar.
+El presente diagrama contempla las tareas restantes
+8, 9, y 10, tal como se han definido en el Anteproyecto:
+\begin{enumerate}
+  \setcounter{enumi}{7}
+\item Interfaz de usuario web, documentación y puesta en servicio (132h)
+  \begin{enumerate}
+  \item Especificación de los lenguajes/tecnologías a utilizar en la
+    interfaz web (16h).
+  \item Codificación de la interfaz web (48h).
+  \item Documentación de las interfaces de usuario de línea de
+    comandos y web (24h).
+  \item Configuración y puesta en servicio en un servidor de demostración
+    (44h).
+  \end{enumerate}
+\item Redacción del informe entregable 3 (16h)
+\item Redacción del informe final (110h).
+\end{enumerate}
+Raspecto de la Tarea 10, se redujo la carga horaria a 110h, reflejando
+el hecho que ya cuenta con un grado de avance de aproximadamente 30\%.
+La carga horaria total es de 258 horas distribuidas en 20 semanas, a
+partir del día martes 29 de septiembre de 2015.
+El siguiente diagrama abarca desde el día 28 de septiembre 2015 al día
+31 de diciembre del mismo año.
 \begin{center}
-\definecolor{barblue}{RGB}{153,204,254}
+\definecolor{barblue}{RGB}{103,154,204}
 \definecolor{groupblue}{RGB}{51,102,254}
 \definecolor{linkred}{RGB}{165,0,33}
 \sffamily
 \begin{ganttchart}[
-y unit chart=6mm,
-x unit=1.1mm,
-y unit title=7mm,
+y unit chart=8mm,
+x unit=1.5mm,
+y unit title=10mm,
 hgrid style/.append style={draw=black!5, line width=.75pt},
 vgrid={*4{draw=black!15, line width=.75pt},%
   *1{draw=black!40, line width=.75pt}},
@@ -70,7 +87,7 @@ milestone top shift=.35,
 milestone left shift=-0.5,
 milestone right shift=1.5,
 milestone label node/.append style={below=8pt,left=0pt},
-today=11,
+today=7,
 today label=HOY,
 today rule/.style={
 draw=black!64,
@@ -78,34 +95,24 @@ draw=black!64,
 line width=1.5pt
 },
 today label font=\slshape\mdseries\small\color{black!70}
-]{-8}{111}
-\gantttitle{Jul}{24}\gantttitle{Ago}{21}\gantttitle{Sep}{22}
-\gantttitle{Oct}{23}\gantttitle{Nov}{20}\gantttitle{Dic}{10}\\
+]{1}{70}
+\gantttitle{}{3}\gantttitle{Oct}{22}\gantttitle{Nov}{21}\gantttitle{Dic}{23}\\
 \gantttitle[title label node/.append style={below left=-1.15ex and -1.1ex},
   title label font=\bfseries\scriptsize]{Semana:\quad\,1}{5}%
-\gantttitlelist[title label font=\bfseries\scriptsize]{2,...,24}{5} \\
+\gantttitlelist[title label font=\bfseries\scriptsize]{2,...,14}{5}%
+\\
 % 20 horas semanales: 1 dia = 4h
-% comienzo cronograma: 14 julio
-\ganttgroup{Tarea 5}{-8}{13} \\%19 dias
-\ganttbar[progress=100]{5.a}{-8}{2}  \\%8h
-\ganttbar[progress=82]{5.b}{3}{13} \\%44h
-\ganttgroup{Tarea 6}{14}{33} \\%20 dias
-\ganttbar[progress=0]{6.a}{14}{17} \\%16h
-\ganttbar[progress=0]{6.b}{18}{21} \\%32h
-\ganttbar[progress=0]{6.c}{22}{27} \\%24h
-\ganttbar[progress=0]{6.d}{28}{33} \\%24h
-% entregable 2
-\ganttgroup{Tarea 7}{34}{37} \\%4 dias
-\ganttmilestone{Control 2}{37}\\
-\ganttgroup{Tarea 8}{38}{70} \\%33 dias
-\ganttbar[progress=0]{8.a}{38}{41} \\%16h
-\ganttbar[progress=0]{8.b}{42}{53} \\%48h
-\ganttbar[progress=0]{8.c}{54}{59}\\%24h
-\ganttbar[progress=0]{8.d}{60}{70} \\%44h
+% comienzo cronograma: 1 junio
+\ganttmilestone{Control 2}{7}\\
+\ganttgroup[progress=0]{Tarea 8}{2}{34} \\%33 dias
+\ganttbar[progress=0]{8.a}{2}{5} \\%16h
+\ganttbar[progress=0]{8.b}{6}{17} \\%48h
+\ganttbar[progress=0]{8.c}{18}{23}\\%24h
+\ganttbar[progress=0]{8.d}{24}{34} \\%44h
 % entregable 3
-\ganttgroup{Tarea 9}{71}{74} \\%4 dias
-\ganttmilestone{Control 3}{74}\\
-\ganttgroup{Tarea 10}{75}{109} %39 dias
+\ganttgroup[progress=0]{Tarea 9}{35}{38} \\%4 dias
+\ganttmilestone{Control 3}{38}\\
+\ganttgroup[progress=0]{Tarea 10}{39}{66} %39 dias NO: menos días
 \end{ganttchart}
 \end{center}
 %
@@ -113,9 +120,8 @@ today label font=\slshape\mdseries\small\color{black!70}
 Se establecen entonces las siguientes fechas para las entregas restantes:
 
 \begin{description}
-\item[Punto de control 2]: 2 de septiembre de 2014
-\item[Punto de control 3]: 22 de octubre de 2014
-\item[Informe final]: 10 de diciembre de 2014
+\item[Punto de control 3]: 19 de noviembre de 2015
+\item[Informe final]: 29 de diciembre de 2015
 \end{description}
 %
 %\printglossaries
