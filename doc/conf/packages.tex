@@ -20,7 +20,7 @@
 %
 % babel me da separación de sílabas para palabras en el idioma que le paso como
 %       argumento opcional.
-\usepackage[spanish,english]{babel}
+\usepackage[spanish,es-tabla,english]{babel}
 %
 % inputenc define la codificación de caracteres del código fuente, acá utf8.
 \usepackage[utf8]{inputenc}
@@ -82,12 +82,12 @@
 % === Más packages
 % ===
 %
-%%\usepackage{mdwlist}		%Para listas mas compactas
+%% \usepackage{mdwlist}		%Para listas mas compactas
 %% \usepackage{textcomp}		%Para algunos símbolos
 %% \usepackage{colortbl}		%Para celdas de colores en tablas
 %% \usepackage{fancyhdr}		%Para encabezados/pie
-%% \usepackage{bbold}		%Fuente bb para modo math: \mathbb{R} = reales
-%% \usepackage{dsfont}		%Fuente ds para modo math: \mathds{R} = reales
+\usepackage{bbold}		%Fuente bb para modo math: \mathbb{R} = reales
+\usepackage{dsfont}		%Fuente ds para modo math: \mathds{R} = reales
 \usepackage{multirow}		%Para "combinar" celdas en tablas
 \usepackage{float}		%Para mejorar cuadros, figuras, etc
 %% \usepackage{fancybox}		%Para recuardos de texto con bordes "fancy"
@@ -125,3 +125,13 @@
 %\usepackage{glossaries}
 
 \usepackage[spanish]{algorithm2e}
+
+% para highlight (comando \hl{})
+\usepackage{soulutf8}
+
+% para teoremans etc
+\usepackage{amsthm}
+
+% para tunear citations
+%\usepackage[square,comma,numbers,sort&compress]{natbib}
+

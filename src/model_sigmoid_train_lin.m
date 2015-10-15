@@ -1,4 +1,14 @@
 function [AB] = model_sigmoid_train_lin( outputs, labels )
+%MODEL_SIGMOID_TRAIN_LIN Train sigmoid parameters for fitting posterior
+%                        probabilities on SVM real-valued outputs. Based on
+%                        Lin et al.'s "A note on Platt's probabilistic outputs
+%                        for support vector machines", Machine Learning, 2007
+%
+%   AB = MODEL_SIGMOIDTRAIN_LIN(OUTPUTS,LABELS) trains sigmoid parameters A, B
+%     (returned as a single vector AB=[A,B] for fitting the posterior
+%     probability p(y=1|f) where each f in OUTPUTS is the unthresholded output
+%     of the SVM function: f = w*x+b.
+%
 
     len = length(labels);
 
