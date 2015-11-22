@@ -65,7 +65,7 @@ function [major minor] = stpart(seed, numel, n_part, ratio, logical)
     % for every partition
     for i=0:n_part-1
         % shift the whole shuffled data by (step) element
-        idx2 = circshift(idx,round(i*step));
+        idx2 = circshift(idx,[0,round(i*step)]);
         % save indexes into major (train) and minor(test) vector
         if logical
             major(idx2(1:nmaj),i+1) = 1;
