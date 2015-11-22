@@ -4,5 +4,7 @@
 *.xls
 *.xlsx
 *.bak
-libsvm.zip
+*.zip
 libsvm-*/
+jsonlab-*/
+
