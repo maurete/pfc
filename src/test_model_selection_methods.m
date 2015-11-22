@@ -25,7 +25,8 @@ function results = test_model_selection_methods( lib, kernel, npart, ratio, seed
             i = i+1;
             time = time_init();
 
-            [params,res] = select_model_trivial(problem,ft{d}(f),kernel,lib);
+            [params,model] = select_model_trivial(problem,ft{d}(f),kernel,lib);
+            res = problem_classify(problem,model);
 
             time = time_tick(time,1);
             gtime = time_tick(gtime,1);
@@ -54,7 +55,7 @@ function results = test_model_selection_methods( lib, kernel, npart, ratio, seed
             i = i+1;
             time = time_init();
 
-            [params,grid,res,ntr] = select_model_gridsearch( ...
+            [params,model,grid,ntr] = select_model_gridsearch( ...
                 problem,ft{d}(f),kernel,lib, ...
                 3, ... % number of iterations
                 'gm', ... % criterion
@@ -62,6 +63,7 @@ function results = test_model_selection_methods( lib, kernel, npart, ratio, seed
                 [],[], ... % ignore
                 true ... % fast: dont calculate rmb, empirical error
                 );
+            res = problem_classify(problem,model);
 
             time = time_tick(time,1);
             gtime = time_tick(gtime,1);
@@ -90,7 +92,8 @@ function results = test_model_selection_methods( lib, kernel, npart, ratio, seed
             i = i+1;
             time = time_init();
 
-            [params,ph,eh,res,ntr] = select_model_empirical(problem,ft{d}(f),kernel,lib);
+            [params,model,ph,eh,ntr] = select_model_empirical(problem,ft{d}(f),kernel,lib);
+            res = problem_classify(problem,model);
 
             time = time_tick(time,1);
             gtime = time_tick(gtime,1);
@@ -120,7 +123,8 @@ function results = test_model_selection_methods( lib, kernel, npart, ratio, seed
                 i = i+1;
                 time = time_init();
 
-                [params,ph,eh,res,ntr] = select_model_rmb(problem,ft{d}(f),kernel,lib);
+                [params,model,ph,eh,ntr] = select_model_rmb(problem,ft{d}(f),kernel,lib);
+                res = problem_classify(problem,model);
 
                 time = time_tick(time,1);
                 gtime = time_tick(gtime,1);
