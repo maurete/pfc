@@ -13,7 +13,7 @@ select_model_empirical.m select_model_gridsearch.m \
 select_model_mlp.m select_model_rmb.m select_model_trivial.m \
 stpart.m
 
-dep_sub = jsonlab/*.* feats/*.m libsvm-3.20/matlab/* \
+dep_sub = jsonlab*/*.* feats/*.m libsvm*/matlab/* \
 private/strandsample.m private/stpick.m private/stshuffle.m \
 private/balance_dataset.m private/readstr.m private/savestr.m \
 private/get_kernel.m private/featset_index.m \
