@@ -9,7 +9,10 @@ function [err, deriv] = error_rmb_csvm( fsvmtrain, theta, Delta, logspace, input
         deriv = nan;
         return
     end
-    K = @(x,y) model.kfunc_(x,y,theta(2:end)); % omit C from kernel params
+
+    kfunc = model.kfunc_;
+    if isstr(model.kfunc_), kfunc = str2func(model.kfunc_); end
+    K = @(x,y) kfunc(x,y,theta(2:end)); % omit C from kernel params
 
     C = theta(1);
 

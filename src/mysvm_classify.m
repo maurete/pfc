@@ -55,7 +55,9 @@ function [labels,dec_values] = mysvm_classify(model,samples)
     if nargout < 2, return, end
 
     % Compute decision values by directly applying the kernel function to samples
-    dec_values = model.kfunc_(samples,model.sv_,model.kparam_) * model.alpha_ - model.bias_;
+    kfunc = model.kfunc_;
+    if isstr(model.kfunc_), kfunc = str2func(model.kfunc_); end
+    dec_values = kfunc(samples,model.sv_,model.kparam_) * model.alpha_ - model.bias_;
 
     % Compare dec_values with libsvm's decision values side by side
     % if strncmpi(model.lib_, 'libsvm', 6)

@@ -10,13 +10,16 @@ function out = problem_classify(problem, model)
     res_sp = nan(1,nrep);
     pred   = nan(numel(problem.testlabels),nrep);
 
+    clsfunc = model.classfunc;
+    if isstr(model.classfunc), clsfunc = str2func(model.classfunc); end
+
     if isstruct(model.trainedmodel) %svm
-        pred(:) = model.classfunc(model.trainedmodel, problem.testdata(:,model.features));
+        pred(:) = clsfunc(model.trainedmodel, problem.testdata(:,model.features));
         res_se  = mean(sign(pred(problem.testlabels>0)) ==  1);
         res_sp  = mean(sign(pred(problem.testlabels<0)) == -1);
     elseif iscell(model.trainedmodel) %mlp
         for r = 1:nrep
-            pred(:,r) = model.classfunc(model.trainedmodel{r}, problem.testdata(:,model.features));
+            pred(:,r) = clsfunc(model.trainedmodel{r}, problem.testdata(:,model.features));
             res_se(r) = mean(sign(pred(problem.testlabels>0,r)) ==  1);
             res_sp(r) = mean(sign(pred(problem.testlabels<0,r)) == -1);
         end
