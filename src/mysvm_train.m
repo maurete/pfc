@@ -196,7 +196,7 @@ function model = mysvm_train(lib,kfun,samples,labels,boxconstraint,...
     model.cminus_  = Cminus;
     model.svclass_ = labels(model.svi_);
     model.kernel_  = kfun;
-    model.kfunc_   = kernel_function;
+    model.kfunc_   = func2str(kernel_function);
     model.C_       = boxconstraint;
     model.kparam_  = kfun_param;
 

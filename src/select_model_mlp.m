@@ -96,8 +96,14 @@ function [best,out,hid,res,names] = select_model_mlp( problem, feats, criterion,
     % Generate trained output model
     out = struct();
     out.features = features;
-    out.trainfunc = @(in,tg) mlp_xtrain(in,tg,[],[],best,method,[],fann);
-    out.classfunc = @mlp_classify;
+    %out.trainfunc = @(in,tg) mlp_xtrain(in,tg,[],[],best,method,[],fann);
+    %out.classfunc = @mlp_classify;
+    out.trainfunc = func2str(@(in,tg) mlp_xtrain(in,tg,[],[],best,method,[],fann));
+    out.trainfuncargs = struct();
+    out.trainfuncargs.best = best;
+    out.trainfuncargs.method = method;
+    out.trainfuncargs.fann = fann;
+    out.classfunc = 'mlp_classify';
     out.trainedmodel = {};
     for i=1:repeat
         out.trainedmodel{i} = mlp_xtrain(problem.traindata(:,features), ...
