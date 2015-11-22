@@ -48,8 +48,8 @@ function prob = problem_gen(data_spec, varargin)
            randseed = opts{i};
        elseif isstruct(opts{i})
            scaleinfo = true;
-           f = opts{i}.scaling{1};
-           s = opts{i}.scaling{2};
+           f = opts{i}.scaling(1,:);
+           s = opts{i}.scaling(2,:);
        end
        i = i+1;
     end
@@ -185,7 +185,7 @@ function prob = problem_gen(data_spec, varargin)
     prob.partitions = part;
 
     prob.randseed = randseed;
-    prob.scaling = {f, s};
+    prob.scaling = [f;s];
 
     prob.testdata   = testset(:,1:66);
     prob.testlabels = testset(:,67);
@@ -199,19 +199,22 @@ function prob = problem_gen(data_spec, varargin)
 
         [tidx,~] = find(prob.partitions.train);
         [vidx,~] = find(prob.partitions.validation);
+        train_all  = round(numel(prob.trainlabels(tidx))/npart);
         train_real = round(sum(prob.trainlabels(tidx)>0)/npart);
         train_pseu = round(sum(prob.trainlabels(tidx)<0)/npart);
+        valid_all  = round(numel(prob.trainlabels(vidx))/npart);
         valid_real = round(sum(prob.trainlabels(vidx)>0)/npart);
         valid_pseu = round(sum(prob.trainlabels(vidx)<0)/npart);
 
-        fprintf(['> training set:         \t%d real\t%d pseudo\n',...
+        fprintf(['> training set:         \t%d total\t%d real\t%d pseudo\n',...
                  '> %d cross validation partitions\n'...
-                 '> train partitions:     \t%d real\t%d pseudo\n'...
-                 '> validation partitions:\t%d real\t%d pseudo\n'...
-                 '>\n> test set:             \t%d real\t%d pseudo\n'], ...
-                nreal, npseu, npart, train_real, train_pseu, ...
-                valid_real, valid_pseu, ...
-                sum(prob.testlabels>0), sum(prob.testlabels<0));
+                 '> train partitions:     \t%d total\t%d real\t%d pseudo\n'...
+                 '> validation partitions:\t%d total\t%d real\t%d pseudo\n'...
+                 '>\n> test set:             \t%d total\t%d real\t%d pseudo\n'], ...
+                numel(prob.trainlabels), nreal, npseu, npart, ...
+                train_all, train_real, train_pseu, ...
+                valid_all, valid_real, valid_pseu, ...
+                numel(prob.testlabels), sum(prob.testlabels>0), sum(prob.testlabels<0));
     end
 
 end
