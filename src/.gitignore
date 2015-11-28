@@ -7,4 +7,5 @@
 *.zip
 libsvm-*/
 jsonlab-*/
-
+mfann*/
+run/

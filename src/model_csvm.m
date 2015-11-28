@@ -1,11 +1,44 @@
-function [output, deriv] = model_csvm(svmstruct, input, decision_values, c_log, kparam_log)
+function [output, deriv] = model_csvm(svmstruct, input, decision_values, ...
+                                      c_log, kparam_log)
+%MODEL_CSVM Perform SVM classification and find derivatives of the output
+%
+%  OUTPUT = MODEL_CSVM(MODEL,INPUT) classifies every row of INPUT using the SVM
+%  model MODEL created using MYSVM_TRAIN and returns predictions in OUTPUT.
+%
+%  OUTPUT = MODEL_CSVM(MODEL,INPUT,true) returns SVM decision values instead of
+%  binary class predictions in OUTPUT.
+%
+%  [OUTPUT,DERIV] = MODEL_CSVM(MODEL,INPUT,DECISION_VALUES,C_LOG,KPARAM_LOG)
+%  Also computes the derivative of the outputs w.r.t. the SVM 'C' parameter and
+%  any additional kernel parameter. MODEL is the trained SVM model as returned
+%  by MYSVM_TRAIN, INPUT contains the samples to be classified in rows,
+%  DECISION_VALUES indicates (when true) that outputs should be the SVM
+%  decision values or binary class predictions (when false),
+%  C_LOG indicates wether to compute derivatives w.r.t. C in logarithmic space,
+%  KPARAM_LOG tells wether to compute derivatives w.r.t. the kernel parameters
+%  in logarithmic space.
+%  DERIV is a matrix where the first row contains the derivatives of the output
+%  w.r.t. C, and subsequent columns contain derivatives of the output w.r.t.
+%  each kernel parameter.
+%
+%  The algorithm for computing the derivative w.r.t. C is taken from
+%  Glasmachers, "Gradient Based Optimization of Support Vector Machines" (2008)
+%  and Keerthi et al., "An Efficient Method for Gradient-Based Adaptation of
+%  Hyperparameters in SVM Models" (2007). The implementation is largely
+%  inspired by that of the Shark toolkit introduced in Igel et al., "Shark"
+%  (YYYY) [http://shark-project.sourceforge.net].
+%
+%  See also MYSVM_TRAIN, MYSVM_CLASSIFY.
+
     if nargin < 5,      kparam_log = false; end
     if nargin < 4,           c_log = false; end
     if nargin < 3, decision_values = false; end
 
-    [output outputr] = mysvm_classify(svmstruct, input);
+    % Perform SVM classification
+    [output,outputr] = mysvm_classify(svmstruct, input);
     if decision_values, output = outputr; end
 
+    % Assert that real-valued decision values make sense
     assert(all( sign(output) == sign(outputr) ), ...
            'sign(decision function) != svm output!')
 
@@ -87,12 +120,14 @@ function [output, deriv] = model_csvm(svmstruct, input, decision_values, c_log, 
     if blen > 0
         alphab_deriv(fidx,1) = - H_inv * (R * svmstruct.svclass_(bidx));
     end
+
     %alphab_deriv(bidx(alphab(bidx)>0),1)  = 1;
     %alphab_deriv(bidx(alphab(bidx)<=0),1) = - 1;
 
     % compute deriv of (alpha, b) wrt kernel params
     for k=1:nparam-1
-        alphab_deriv(fidx,k+1) = -( H_inv * (dH(:,:,k)*alphab(fidx)+dR(:,:,k)*alphab(bidx)) );
+        alphab_deriv(fidx,k+1) = -( H_inv * (dH(:,:,k)*alphab(fidx)+ ...
+                                             dR(:,:,k)*alphab(bidx)) );
     end
 
     % find derivatives of inputs wrt params (C, kernelparams)
@@ -121,7 +156,10 @@ function [output, deriv] = model_csvm(svmstruct, input, decision_values, c_log, 
 
     % if searching for optimal C in logspace, multiply by C
     if c_log, deriv(:,1) = deriv(:,1) .* svmstruct.C_; end
+
     % if searching for optimal kernel params in logspace
-    if kparam_log, deriv(:,2:nparam) = deriv(:,2:nparam) * diag(svmstruct.kparam_); end
+    if kparam_log
+        deriv(:,2:nparam) = deriv(:,2:nparam) * diag(svmstruct.kparam_);
+    end
 
 end

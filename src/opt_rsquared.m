@@ -1,29 +1,41 @@
-function [obj beta idx model] = opt_rsquared( K, tolkkt, cache_size, libsvm_path )
-% R^2 optimization function
-% finds beta that satisfies max( 1- beta'* K *beta )
-% subject to beta >= 0 and sum(beta) = 1
+function [obj,beta,idx,model] = opt_rsquared(K,tolkkt,cache_size)
+%OPT_RSQUARED R^2 optimization function
 %
-% THIS FUNCTION REQUIRES LIBSVM
+%  [OBJ,BETA,IDX,MODEL] = OPT_RSQUARED(K,TOLKKT,CACHE_SIZE,LIBSVM_PATH)
+%  Trains a one-class SVM model on the kernel matrix K and returns a
+%  coefficient vector BETA that maximizes the problem
+%      f = 1 - beta'* K *beta
+%      subject to beta >= 0 and sum(beta) = 1.
+%  OBJ contains the value of f, and IDX the indices of support vectors for
+%  which beta_i != 0. MODEL is the trained SVM model.
+%  Optional input arguments are TOLKKT, the SVM precision and CACHE_SIZE the
+%  cache size for the SVM training algorithm.
 %
-% @TODO implement with all-matlab code without requiring libSVM
+%  This function is auxilliary to the RMB model selection method.
 %
-% K is the computed kernel for all training vectors
+%  Please note that this function requires the libSVM training function.
 %
+%  See also ERROR_RMB_CSVM, SELECT_MODEL_RMB.
 
-    if nargin < 4, libsvm_path = './libsvm-3.20/matlab/';
     if nargin < 3, cache_size = 200; end
     if nargin < 2, tolkkt = 1e-6; end
 
+    config; % load libSVM path
+
+    % check wether to remove libsvm path from environment after execution
     rm_libsvm_path = false;
     if isempty(strfind(which('svmtrain'),'libsvm'))
         rm_libsvm_path = true;
-        addpath(libsvm_path);
+        addpath(LIBSVM_DIR);
     end
+
+    % make sure we will be using libsvm's svmtrain and not Matlab's own
     assert(any(strfind(which('svmtrain'),'libsvm')), ...
-           'Rsquared2: failed to load libSVM library.')
+           'opt_squared: failed to load libSVM library.')
 
     len = size(K,1);
-    % setup one-class LibSVM problem
+
+    % setup and train one-class LibSVM problem
     K1 = [ [1:len]' K ];
     model = svmtrain( ones(len,1), K1, [ '-t 4 -s 2' ...
                         ' -n ' num2str(1/len) ...
@@ -34,7 +46,8 @@ function [obj beta idx model] = opt_rsquared( K, tolkkt, cache_size, libsvm_path
     idx = model.sv_indices;
     beta = model.sv_coef;
     obj = 1 - model.sv_coef' * K(idx,idx) * model.sv_coef;
-    % chung libsvm hack = obj = 1-2*obj
+    % Chung's libsvm hack: obj = 1-2*obj
 
     if rm_libsvm_path, rmpath(libsvm_path); end
+
 end
