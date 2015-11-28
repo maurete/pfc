@@ -1,11 +1,48 @@
 function model = select_model(problem, feats, classifier, method, varargin)
+%SELECT_MODEL Perform model selection.
+%
+%  MODEL = SELECT_MODEL(PROBLEM, FEATS, CLASSIFIER, METHOD) performs model
+%  selection for PROBLEM. PROBLEM is a problem struct as returned by
+%  PROBLEM_GEN, and must contain a valid trainig dataset. FEATS is the feature
+%  set index as returned by the FEATSET_INDEX private function, most commonly
+%  the values 8 for sequence and secondary structure features, or 5 for the
+%  secondary structure features only. CLASSIFIER is a string with possible
+%  values 'mlp' for multilayer perceptron, 'svm-linear' for SVM with linear
+%  kernel, and 'svm-rbf' for SVM with RBF kernel. METHOD is the SVM model
+%  selection method to be used: 'trivial' for the trivial method, 'gridsearch'
+%  for grid search, 'empirical' for the empirical error criterion, or 'rmb' for
+%  the radius margin-like bound, available for 'svm-rbf' classifier only. The
+%  value of 'method' is ignored for the MLP classifier.
+%  MODEL is the trained model with the optimal parameters found.
+%
+%  MODEL = SELECT_MODEL(..., OPTIONS) sets additional options as a comma-
+%  separated list of options:
+%    * 'Verbose', <LOGICAL> : sets verbose flag on or off (default=true),
+%    * 'SVMLib', <STRING> : either 'libsvm' or 'matlab' for selecting the
+%        SVM toolbox to be used (default='libsvm'),
+%    * 'GridSearchCriterion', <STRING> : sets the performance criteria to be
+%        optimized by the grid search method (default='gm'),
+%    * 'GridSearchStrategy', <STRING> : sets the grid refinement strategy to be
+%        used by the grid search method (default='threshold'),
+%    * 'GridSearchIterations', <REAL> : sets the # of grid refinement
+%        iterations to be performed by the grid search method (default=3),
+%    * 'MLPCriterion', <STRING> : sets the performance criteria to be
+%        optimized by the mlp model selection method,
+%    * 'MLPBackPropagation', <STRING> : sets the back propagation method to be
+%        used by the mlp model selection method,
+%    * 'MLPNRepeats', <REAL> : sets the number of networks to be trained by the
+%        mlp model selection method.
+%
+%  See also PROBLEM_GEN, SELECT_MODEL_MLP, SELECT_MODEL_TRIVIAL,
+%           SELECT_MODEL_GRIDSEARCH, SELECT_MODEL_EMPIRICAL, SELECT_MODEL_RMB.
+%
 
     if nargin < 1 || ~isstruct(problem), error('No problem given.'), end
     if nargin < 2 || isempty(feats), feats = 8; end
     if nargin < 3 || isempty(classifier), classifier = 'rbf'; end
     if nargin < 4 || isempty(method), method = 'rmb'; end
 
-    config;
+    config; % load global config
 
     classifier = lower(classifier);
     method = lower(method);
@@ -28,7 +65,7 @@ function model = select_model(problem, feats, classifier, method, varargin)
         nopts = numel(opts);
     end
 
-    % parse options
+    % parse extra options
     i=1;
     while i <= nopts
        if ischar(opts{i})
@@ -61,41 +98,52 @@ function model = select_model(problem, feats, classifier, method, varargin)
        i = i+1;
     end
 
+    % load libsvm path if requested, else fallback to matlab
     if strcmpi(svmlib,'libsvm') && ~strcmpi(classifier,'mlp')
         if isempty(strfind(lower(which('svmtrain')),'libsvm'))
             addpath(LIBSVM_DIR);
             if isempty(strfind(lower(which('svmtrain')),'libsvm'))
-                warning('Unable to load libSVM: will use matlabs bioinfo svm instead.')
+                warning('Unable to load libSVM: will use Matlab''s ', ...
+                        'Bioinformatics Toolbox SVM functions instead.')
                 svmlib = 'matlab';
             end
         end
     end
+
+    % check wether RMB method can be used (libsvm is available)
     if strcmpi(method,'rmb')
         if isempty(strfind(lower(which('svmtrain')),'libsvm'))
             addpath(LIBSVM_DIR);
             if isempty(strfind(lower(which('svmtrain')),'libsvm'))
-                warning('Unable to load libSVM: RMB method unavailable, using empirical error instead.')
+                warning('Unable to load libSVM: RMB method unavailable, ', ...
+                        'using empirical error creiterion method instead.')
                 method = 'empirical';
-                if nargin < 2, classifier = 'linear'; end % RBF was not explicitly set
+                % if RBF was not explicitly set, fall back to linear kernel
+                if nargin < 2, classifier = 'linear'; end
             end
         end
     end
 
-    % do model selection
+    % invoke respective model selection methods
     if strcmpi(classifier,'mlp')
-        [params,model] = select_model_mlp(problem,feats,mlp_crit,mlp_bckp,mlp_nrep,false);
+        [params,model] = select_model_mlp(...
+            problem,feats,mlp_crit,mlp_bckp,mlp_nrep,false);
     else
         if strcmpi(method,'rmb')
-            assert(any(strfind(classifier,'rbf')),'RMB can only be used with an RBF kernel.')
+            % validate RBF kernel is being used
+            assert(any(strfind(classifier,'rbf')), ...
+                   'RMB can only be used with an RBF kernel.')
             [params,model] = select_model_rmb(problem,feats,'rbf',svmlib);
         elseif strcmpi(method,'empirical')
-            [params,model] = select_model_empirical(problem,feats,classifier,svmlib);
+            [params,model] = select_model_empirical(...
+                problem,feats,classifier,svmlib);
         elseif strcmpi(method,'trivial')
-            [params,model] = select_model_trivial(problem,feats,classifier,svmlib);
+            [params,model] = select_model_trivial(...
+                problem,feats,classifier,svmlib);
         elseif strcmpi(method,'gridsearch')
-            [params,model] = select_model_gridsearch(problem,feats,classifier,svmlib,...
-                                                     gs_iter, gs_crit, gs_stgy, ...
-                                                     [],[], true);
+            [params,model] = select_model_gridsearch(...
+                problem, feats, classifier, svmlib, ...
+                gs_iter, gs_crit, gs_stgy, [], [], true);
         end
     end
 
