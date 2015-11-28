@@ -1,33 +1,36 @@
-function out = mlp_classify(net, input, delta)
-%MLP_CLASSIFY Classify inputs with trained MLP network.
-% OUT = MLP_CLASSIFY(NET,INPUT)
-% Classifies input data applying given MLP network.
+function out = mlp_classify(net, input, threshold)
+%MLP_CLASSIFY Perform classification with trained MLP model.
 %
-% PARAMETER      DESCRIPTION
+%  OUT = MLP_CLASSIFY(NET,INPUT) Classifies INPUT with given MLP network.
+%  NET is a trained MLP network as returned by MLP_XTRAIN,
+%  INPUT is a matrix where every row is considered a sample, and
+%  THRESHOLD sets a minimum threshold magnitude for considering output class.
 %
-% net            Trained MLP network as returned by MLP_TRAIN
-%
-% input          Matrix with rows corresponding to testing samples.
-%
-% delta          Minimum magnitude for considering output class.
-%
+%  See also MLP_XTRAIN.
 
-    if nargin < 3 || isempty(delta), delta = 0.1; end
+    if nargin < 3 || isempty(threshold), threshold = 0.1; end
 
+    config; % Load global settings
+
+    % Perform classification
     if isstruct(net)
-        FANN_DIR = './mfann/';
+        % libFANN case: assert libFANN functions are available
         if isempty(which('testFann')), addpath(FANN_DIR); end
-        assert(~isempty(which('testFann')), ...
-               'mlp_xtrain: failed to load FANN testFann.')
+        assert(~isempty(which('testFann')), 'Failed to load libFANN.')
+        % Compute outputs
         out = testFann(net,input);
     else
-        % Calculate outputs for given samples.
+        % Compute outputs
         out = net(input')';
     end
-    % Generate [-1, +1] label vector
+
+    % Generate output label vector
     if size(out,2) == 2
-        out = sign(round(out*[1;-1]/delta));
+        % Two output neurons
+        out = sign(round(out*[1;-1]/threshold));
     else
+        % Single output neuron whose sign indicates class
         out = sign(out);
     end
+
 end
