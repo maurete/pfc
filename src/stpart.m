@@ -1,32 +1,26 @@
-function [major minor] = stpart(seed, numel, n_part, ratio, logical)
-
-%% stpart - partition dataset
+function [major,minor] = stpart(seed, numel, n_part, ratio, logical)
+%STPART generate cross-valiadtion partitions for dataset.
 %
-% Generate partition indexes for cross-validation.
-% If ratio is not specified and there are more elements than
-% partitions, every sample is used exactly once for testing.
-% If a ratio is specified and is greater than 1/n_part
-% the samples used for testing will be repeated.
-% For leave-one-out validation the number of partitions
-% should be equal to the number of samples and ratio should
-% be set to 1/n_part or be left empty.
-% Every sample is used for training and testing the same
-% number of times when numel is a multiple of n_part and ratio
-% is a multiple of 1/n_part.
+%  [MAJOR,MINOR] = STPART(RANDSEED,NUMEL,N_PART,RATIO,LOGICAL) generates
+%  partition indexes for cross-validation. Each partition is represented as an
+%  index column in MAJOR (train) and MINOR (validation) output arguments.
+%  RANDSEED is the random seed for generating the partitions,
+%  NUMEL can be either the whole training dataset or a scalar integer with the
+%  number of elements in the training set,
+%  N_PART the number of partitions to be generated (default=5),
+%  RATIO is a number between 0 and 1 indicating the proportion of (# elements
+%  in validation partition)/(# elements in train partition). If RATIO is 0,
+%  no elements will be used for validation; likewise, if RATIO is 1 no elements
+%  will be used for training. If RATIO is omitted or empty and NUMEL>NPART,
+%  every sample is used exactly once for testing. If given RATIO is > 1/N_PART
+%  the samples used for validation will be repeated. Thus, for generating a
+%  leave-one-out partitioning, N_PART should be equal to NUMEL and RATIO should
+%  be set to 1/N_PART or left empty. Every time that NUMEL is a multiple of
+%  N_PART and ratio is a multiple of 1/N_PART, each sample will be used for
+%  training and and validation the same number of times.
+%  LOGICAL tells wether the generated indices should be returned as a logical
+%  matrix (when true) or as integer indices (when false).
 %
-% @param n_part:number of partitions to generate
-%
-% @param numel: number of elements to partition
-%
-% @param seed:  random seed for shuffling data
-%
-% @param ratio: proportion of test (validation) elements respectiv
-%               to the total number of elements, e.g. if numel=400
-%               and ratio=0.1 every test partition will have 40
-%               elements. Default (and minimum) value = 1/n_part.
-%
-% @output: two matrices where each column is a partition
-%          for major (train) and minor (test) respectively
 
     if nargin < 5, logical = true; end
 
@@ -75,9 +69,11 @@ function [major minor] = stpart(seed, numel, n_part, ratio, logical)
             minor(:,i+1) = idx2(nmaj+1:end);
         end
     end
+
     % if logical && abs(ratio-1/n_part)<1e-5
     %     ri = find(~any(minor,2))
     %     ci = find(~any(major(ri,:),1))
     %     minor(ri,ci) = 1;
     % end
+
 end

@@ -1,10 +1,50 @@
 function out = webif (classifier, featureset, method, positives, negatives, pre_trained_model, test_set, test_set_class )
+%WEBIF Method for the web interface to be used with Webdemo-Builder
+%
+%  OUT = WEBIF (CLASSIFIER, FEATURESET, METHOD, POSITIVES, NEGATIVES, ...
+%      PRE_TRAINED_MODEL, TEST_SET, TEST_SET_CLASS) is the main function to be
+%  used with the Webdemo builder.
+%  Input arguments:
+%    CLASSIFIER the classifier to be used: any of 'svm-linear','svm-rbf','mlp'
+%    FEATURESET the feature set to be considered, possible values are
+%      'sequence', 'sequence and structure', 'structure'
+%    METHOD the model selection method to be used: [] (empty) for MLP, 'rmb',
+%      'empirical', 'trivial' or 'gridsearch'
+%    POSITIVES name of a FASTA file containing the 'positives' dataset for
+%      training
+%    NEGATIVES name of a FASTA file containing the 'positives' dataset for
+%      training
+%    PRE_TRAINED_MODEL name of an HTML file as outputted by this function for
+%      extracting a pre-trained model for further testing new datasets
+%    TEST_SET name of a FASTA file containing the (all-same-class) testing
+%      dataset
+%    TEST_SET_CLASS class of the testing dataset, either '1', '-1', or 'nan'
+%  Output arguments:
+%    OUT either the name of a '.log' file with program run information,
+%      returned when an unexpected error is found, or the name of an '.html'
+%      file with a pretty-formatted report with training information, test
+%      results, program output, and a built-in serialized trained model that
+%      can be used for further executions of the function for classifying new
+%      test datasets.
+%
+%  To build the demo package, follow the steps
+%    1. in a Matlab environment, run 'setup' for downloading and installing
+%       required dependencies
+%    2. in a shell environment, run 'make' for building the zip file
+%    3. upload the webif.zip file to your favorite Webdemo-Builder instance,
+%    4. follow Webdemo-Builder assistant for setting up the web interface
+%
+%  More information on Webdemo-Builder can be found at
+%    https://bitbucket.org/sinc-lab/webdemobuilder
+%
+
+    config; % load global config
 
     % load jsonlab for data import/export
-    addpath('./jsonlab');
+    addpath(JSONLAB_DIR);
 
     % try creating a working directory
-    work_dir = './run';
+    work_dir = WEB_WORK_DIR;
     if ~isdir(work_dir)
         if ~mkdir(work_dir)
             % fall back to current directory
@@ -400,4 +440,5 @@ function out = webif (classifier, featureset, method, positives, negatives, pre_
         info('ERROR!!! %s: %s', e.identifier, e.message);
         fclose(lh);
     end
+
 end
