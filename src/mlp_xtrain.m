@@ -1,29 +1,32 @@
-function net = mlp_xtrain(input, target, ival, tval, hidden, method, transfer_fcn, fann)
-%MLP_TRAIN Train multi layer perceptron
-% NET = MLP_TRAIN(INPUT,TARGET,HIDDEN,METHOD,TRANSFER_FUN)
-% Trains an MLP and returns de trained network model.
+function net = mlp_xtrain(input, target, ival, tval, hidden, method, ...
+                          transfer_fun, fann)
+%MLP_XTRAIN Train multi layer perceptron
 %
-% PARAMETER      DESCRIPTION
+%  NET = MLP_XTRAIN(INPUT,TARGET,HIDDEN,METHOD,TRANSFER_FUN) Trains an MLP
+%  network and returns de trained network model. The optimal network is
+%  considered to be the one with lowest error over the validation samples.
+%  Validation samples can be either supplied in the input arguments IVAL/TVAL
+%  or else they are automatically taken as 20% of the training dataset.
+%  INPUT is the data matrix with rows corresponding to training samples,
+%  TARGET is a column vector with respective class (-1 or 1) for each sample,
+%  IVAL is an input matrix with rows corresponding to validation samples,
+%  TVAL is a column vector with target classes for each validation sample,
+%  HIDDEN is a row vector with size parameter for each hidden layer,
+%  METHOD specifies the back-propagation method (defaults to 'trainrp'),
+%  TRANSFER_FUN sets the transfer function for all layers (default 'tansig'),
+%  FANN is a binary flag specifying wether to use libFANN instead of
+%  Matlab's own Neural Network Toolbox.
 %
-% input          Matrix with rows corresponding to training samples.
-%
-% target         Column vector with respective class (-1 or 1) for
-%                each training sample.
-%
-% hidden         Row vector with size parameter for every hidden
-%                layer. Defaults to 1 hidden layer with 10 neurons.
-%
-% method         Back-propagation method. Defaults to 'trainrp'.
-%
-% transfer_fcn   Transfer function for all layers. Default 'tansig'.
-%
+
     if nargin < 8, fann = false; end
-    if nargin < 7, transfer_fcn = []; end
+    if nargin < 7, transfer_fun = []; end
     if nargin < 6 || isempty(method), method = 'trainrp'; end
     if nargin < 5, hidden = 10; end
     if ~isempty(hidden) && hidden(1) < 1, hidden = []; end
     if nargin < 4, tval = []; end
     if nargin < 3, ival = []; end
+
+    config; % Load global settings
 
     MAX_IT = 1e12;
 
@@ -35,8 +38,6 @@ function net = mlp_xtrain(input, target, ival, tval, hidden, method, transfer_fc
 
     if fann
         % FANN selected
-
-        FANN_DIR = './mfann/';
         if isempty(which('trainFann')), addpath(FANN_DIR); end
         assert(~isempty(which('trainFann')), ...
                'mlp_xtrain: failed to load FANN fannTrain.')
@@ -44,7 +45,7 @@ function net = mlp_xtrain(input, target, ival, tval, hidden, method, transfer_fc
         net = createFann([size(input,2), hidden, size(target,2)],1);
 
         if isempty(ival)
-            % no validation data, create it
+            % No validation data provided, create it
             [tri tsi] = stpart(randi(1e5),size(input,1),1,0.2,0);
             ival = input(tsi,:);
             tval = target(tsi,:);
@@ -52,7 +53,7 @@ function net = mlp_xtrain(input, target, ival, tval, hidden, method, transfer_fc
             target = target(tri,:);
         end
 
-        % train epoch-by-epoch watching for cv performance
+        % Train epoch-by-epoch watching for cv performance
         weights = [];
         err_tr = [];
         err_cv = [];
@@ -80,7 +81,7 @@ function net = mlp_xtrain(input, target, ival, tval, hidden, method, transfer_fc
         %net.trainParam.time = 10;
         %net.trainParam.epochs = MAX_IT;
 
-        % Configure data partitionign
+        % Configure data partitioning
         if ~isempty(ival)
             net.divideFcn = 'divideind';
             net.divideParam.trainInd = [1:size(input,1)];
@@ -94,8 +95,8 @@ function net = mlp_xtrain(input, target, ival, tval, hidden, method, transfer_fc
         end
 
         % Set transfer function if requested.
-        if ~isempty(transfer_fcn), for i=1:length(net.layers)
-                net.layers{i}.transferFcn = transfer_fcn;
+        if ~isempty(transfer_fun), for i=1:length(net.layers)
+                net.layers{i}.transferFcn = transfer_fun;
         end, end
 
         % Configure, initialize and train network.
@@ -103,4 +104,5 @@ function net = mlp_xtrain(input, target, ival, tval, hidden, method, transfer_fc
         net = init(net);
         net = train(net, [input;ival]', [target;tval]');
     end
+
 end

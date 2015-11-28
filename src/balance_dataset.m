@@ -1,4 +1,10 @@
 function [input,labels] = balance_dataset(input,labels,randseed)
+%BALANCE_DATASET balance dataset by oversampling the minority class
+%
+%  [OUT,OUTLABELS] = BALANCE_DATASET(DATA,LABELS,RANDSEED) oversamples the
+%  minority class in DATA picking elements by RANDSEED. If data is aleady
+%  class-balanced then this function returns the same inputs provided.
+%
 
     if nargin < 3 || isempty(randseed), randseed = 1135; end
 
