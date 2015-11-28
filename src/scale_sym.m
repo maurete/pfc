@@ -1,11 +1,16 @@
 function [scaled, factor, offset] = scale_sym ( data, factor, offset )
-%% Dataset scaling function
+%SCALE_SYM normalize feature vectors for dataset (symmetric)
 %
-% [scaled, factor, offset] = scale_data( data )
-% (for training) normalizes each column of data to the range [-1,1].
+%  [SCALED, FACTOR, OFFSET] = SCALE_SYM(DATA) normalizes each column of DATA
+%  to the range [-1,1]. SCALED contains the normalized dataset, FACTOR the
+%  factor to which each column has been multiplied, and OFFSET the offset
+%  applied to every column after scaling.
 %
-% [scaled] = scale_data( data, factor, offset )
-% (for testing) scales each column of data according factor and offset.
+%  [SCALED] = SCALE_SYM(DATA, FACTOR, OFFSET) normalizes DATA by multiplying
+%  every column by the respective FACTOR element and then adding every value
+%  in OFFSET to the respective column.
+%
+%  See also SCALE_DATA.
 %
 
     % number of columns

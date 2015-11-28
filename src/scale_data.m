@@ -1,11 +1,16 @@
 function [scaled, factor, offset] = scale_data ( data, factor, offset )
-%% Dataset scaling function
+%SCALE_DATA normalize feature vectors for dataset
 %
-% [scaled, factor, offset] = scale_data( data )
-% (for training) normalizes each column of data to the range [0,1].
+%  [SCALED, FACTOR, OFFSET] = SCALE_DATA(DATA) normalizes each column of DATA
+%  to the range [0,1]. SCALED contains the normalized dataset, FACTOR the
+%  factor to which each column has been multiplied, and OFFSET the offset
+%  applied to every column after scaling.
 %
-% [scaled] = scale_data( data, factor, offset )
-% (for testing) scales each column of data according factor and offset.
+%  [SCALED] = SCALE_DATA(DATA, FACTOR, OFFSET) normalizes DATA by multiplying
+%  every column by the respective FACTOR element and then adding every value
+%  in OFFSET to the respective column.
+%
+%  See also SCALE_SYM.
 %
 
     % number of columns
