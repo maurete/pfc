@@ -236,6 +236,8 @@ function prob = problem_gen(data_spec, varargin)
     % build output structure
     prob = struct();
 
+    prob.sources = sources;
+
     prob.traindata   = trainset(:,1:66);
     prob.trainlabels = trainset(:,67);
     prob.trainids    = trainset(:,68:70);
