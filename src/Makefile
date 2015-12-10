@@ -34,6 +34,16 @@ private/findorder.m private/grid_insert.m private/insert.m \
 private/grid_new.m private/grid_linearize.m private/grid_repack.m \
 private/grid_zoom.m private/grid_threshold.m private/grid_nbest.m
 
+# General documentation options
+docopts = --toc -N -s -S  \
+--filter pandoc-citeproc -V biblio-title=Referencias -V lang=spanish
+
+# PDF generation options
+pdfopts = 
+
+# HTML-specific options
+htmlopts = -c buttondown.css --self-contained
+
 # Commands
 compress = zip -r
 copy = cp --parents
@@ -41,6 +51,7 @@ move = mv
 delete = rm -rf
 makedir = mkdir -p
 changedir = cd
+pandoc = pandoc
 
 # Build targets
 all:	webif
@@ -54,6 +65,20 @@ webif:	$(dep_main) $(dep_sec) $(dep_sub)
 	$(changedir) $(tempdir); $(compress) $(filename) .
 	$(move) $(tempdir)/$(filename) .
 	$(delete) $(tempdir)
+
+doc:	pdf html
+
+pdf:	USER_GUIDE_es.md
+	$(pandoc) $(docopts) $(pdfopts) USER_GUIDE_es.md \
+	-o USER_GUIDE_es.pdf
+
+html:	USER_GUIDE_es.md
+	$(pandoc) $(docopts) $(htmlopts) USER_GUIDE_es.md \
+	-o USER_GUIDE_es.html
+
+md:	USER_GUIDE_es.md
+	$(pandoc) $(docopts) $(pdfopts) USER_GUIDE_es.md \
+	-o USER_GUIDE_es-s.md
 
 clean:
 	$(delete) $(tempdir) $(filename)

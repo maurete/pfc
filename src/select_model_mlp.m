@@ -38,8 +38,7 @@ function [best,out,hid,res,names] = select_model_mlp(...
               'sp'      , ... % specificity
               'gm'      , ... % gm
               'emp'     , ... % empirical error (Adankon et al.)
-              'nll'     , ... % negative log likelihood (Glasmachers & Igel;
-                              % Keerthi et al.)
+              'nll'     , ... % negative log likelihood (Glasmachers & Igel; Keerthi et al.)
               'mcc'       ... % Matthews Correlation Coefficient
             };
 
