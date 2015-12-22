@@ -36,7 +36,7 @@ private/grid_zoom.m private/grid_threshold.m private/grid_nbest.m
 
 # General documentation options
 docopts = --toc -N -s -S  \
---filter pandoc-citeproc -V biblio-title=Referencias -V lang=spanish
+--filter pandoc-citeproc -V lang=spanish
 
 # PDF generation options
 pdfopts = 

@@ -6,9 +6,9 @@ author:
 lang: spanish
 date: 10 de diciembre 2015
 documentclass: scrartcl
-biblio-files: '../doc/res/bibliografia'
-biblio-title: Referencias
-bibliography: '../doc/res/bibliografia.bib'
+#biblio-files: '../doc/res/bibliografia'
+#biblio-title: Referencias
+#bibliography: '../doc/res/bibliografia.bib'
 classoption:
 - 'parskip=half-'
 - DIV=12
@@ -18,6 +18,151 @@ header-includes: |
     \usepackage{libertine}
     \usepackage[scale=0.96]{tgheros}
     \usepackage[scaled=0.9]{zi4}
+references:
+- author:
+  - family: Hsu
+    given: Chih-Wei
+  - family: Chang
+    given: Chih-Chung
+  - family: Lin
+    given: Chih-Jen
+  id: hsu
+  issued:
+    date-parts:
+    - - 2003
+  abstract: Support vector machine (SVM) is a popular technique for classification.
+    However, beginners who are not familiar with SVM often get unsatisfactory results
+    since they miss some easy but significant steps. In this guide, we propose a simple
+    procedure, which usually gives reasonable results.
+  title: A Practical Guide to Support Vector Classification
+  type: report
+  publisher: Department of Computer Science, National Taiwan University
+  keyword: guide libsvm svm tutorial
+- volume: '1'
+  page: '151'
+  ISBN: '978-0-9719777-1-6'
+  container-title: Hands-On Pattern Recognition Challenges in Machine Learning
+  author:
+  - family: Adankon
+    given: Mathias M
+  - family: Cheriet
+    given: Mohamed
+  id: adankon
+  issued:
+    date-parts:
+    - - 2009
+  title: Unified framework for SVM model selection
+  type: article-journal
+  publisher: Microtome Publishing
+  editor:
+  - family: Guyon
+    given: Isabelle
+  - family: Cawley
+    given: Gavin
+  - family: Dror
+    given: Gideon
+  - family: Saffari
+    given: Amir
+- page: '673-680'
+  container-title: Advances in Neural Information Processing Systems 19
+  author:
+  - family: Keerthi
+    given: S. S.
+  - family: Sindhwani
+    given: Vikas
+  - family: Chapelle
+    given: Olivier
+  id: keerthi
+  issued:
+    date-parts:
+    - - 2007
+  title: An Efficient Method for Gradient-Based Adaptation of Hyperparameters in SVM
+    Models
+  type: chapter
+  publisher: MIT Press
+  editor:
+  - family: Schölkopf
+    given: B.
+  - family: Platt
+    given: J.C.
+  - family: Hoffman
+    given: T.
+- volume: '15'
+  page: '2643-2681'
+  container-title: Neural Computation
+  author:
+  - family: Chung
+    given: Kai-Min
+  - family: Kao
+    given: Wei-Chun
+  - family: Sun
+    given: Chia-Liang
+  - family: Wang
+    given: Li-Lun
+  - family: Lin
+    given: Chih-Jen
+  id: chung
+  issued:
+    date-parts:
+    - - 2003
+  title: Radius margin bounds for support vector machines with the RBF kernel
+  type: article-journal
+  publisher: MIT Press
+  issue: '11'
+- author:
+  - family: Glasmachers
+    given: Tobias
+  id: glasmachers
+  issued:
+    date-parts:
+    - - 2008
+  title: Gradient Based Optimization of Support Vector Machines
+  type: thesis
+  genre: PhD thesis
+  publisher: Fakultät für Mathematik, Ruhr-Universität Bochum, Germany
+- volume: '9'
+  page: '993-996'
+  container-title: The Journal of Machine Learning Research
+  author:
+  - family: Igel
+    given: Christian
+  - family: Heidrich-Meisner
+    given: Verena
+  - family: Glasmachers
+    given: Tobias
+  id: shark
+  issued:
+    date-parts:
+    - - 2008
+  title: Shark
+  type: article-journal
+  publisher: JMLR. org
+- ISSN: '1471-2105'
+  DOI: 10.1186/1471-2105-6-310
+  volume: '6'
+  page: '310'
+  container-title: BMC Bioinformatics
+  author:
+  - family: Xue
+    given: Chenghai
+  - family: Li
+    given: Fei
+  - family: He
+    given: Tao
+  - family: Liu
+    given: Guo-Ping
+  - family: Li
+    given: Yanda
+  - family: Zhang
+    given: Xuegong
+  id: xue
+  issued:
+    date-parts:
+    - - 2005
+  title: Classification of real and pseudo microRNA precursors using local structure-sequence
+    features and support vector machine
+  type: article-journal
+  issue: '1'
 ...
 
 <div id="content">
@@ -223,9 +368,9 @@ provista por el [Vienna RNA Package].
 [Parallel Computing Toolbox]:http://www.mathworks.com/products/parallel-computing/
 [Vienna RNA Package]:http://www.tbi.univie.ac.at/RNA/
 
-[`problem_gen`]:#problem_gen
-[`select_model`]:#select_model
-[`problem_classify`]:#problem_classify
+[`problem_gen`]:#problemgen
+[`select_model`]:#selectmodel
+[`problem_classify`]:#problemclassify
 
 
 
@@ -300,7 +445,7 @@ la instalación invocando la función
 	setup
 
 
-Generación de la interfaz web
+Generación de la interfaz web {#webifsetup}
 -----------------------------
 
 La generación de la interfaz web para [Web-demo builder] es opcional y
@@ -453,7 +598,7 @@ comandos de Matlab se ordena según las funcionalidades principales:
    función [`problem_classify`].
 
 
-La función `problem_gen` {#problem_gen}
+La función `problem_gen` {#problemgen}
 ------------------------
 
 ### Sinopsis
@@ -645,7 +790,7 @@ Crea una estructura PROBLEMA con las siguientes características:
   negativa extraídos del archivo `coding.fa`.
 
 
-La función `select_model` {#select_model}
+La función `select_model` {#selectmodel}
 -------------------------
 
 ### Sinopsis
@@ -841,7 +986,7 @@ mediante el método RMB, entrenando con los datos de entrenamiento
 presentes en PROBLEMA, y considerando las características de secuencia
 y de estructura secundaria.
 
-La función `problem_classify` {#problem_classify}
+La función `problem_classify` {#problemclassify}
 -----------------------------
 
 ### Sinopsis 
@@ -882,35 +1027,32 @@ igualmente inválidos.
 
 
 
-Interfaz web {#webif}
-============
+Utilización de la interfaz web {#webif}
+==============================
 
-Además de la interfaz de línea de comandos, el software brinda la
-posibilidad de generar una interfaz web básica mediante la herramienta
-[Web-demo builder].
-
-Se ha cargado una instancia de demostración en el servidor provisto
-por los autores de Web-demo builder, disponible en [este enlace].
-
-[este enlace]:
-http://ec2-52-5-194-68.compute-1.amazonaws.com/scripts/57769864/webif/
-
-
-Una captura de la interfaz web se muestra en la [Figura 1](#fig:screen3).
-
-<div id="fig:screen3">
-![Interfaz web del software generada con Web-demo builder\label{fig:screen3}](screen3.png)
-
-</div>
+El software brinda la posibilidad de utilización a través de una
+interfaz web básica, generada con ayuda de la herramienta
+[Web-demo builder]. Las instrucciones para la generación de esta
+interfaz están disponibles en la sección [Instalación](#webifsetup).
 
 La interfaz web permite tanto la generación del modelo (entrenamiento)
 como la clasificación o predicción de un conjunto de datos de prueba.
 Además permite efectuar ambas operaciones de entrenamiento y prueba de
 una sola vez. En todos los casos, el procedimiento consiste en
-completar los campos necesarios, presionar el botón "Enviar" (submit),
+completar los campos necesarios, presionar el botón "Enviar" (Submit),
 y una vez finalizado el proceso acceder al enlace que se muestra en el
 campo "Salida" para verificar los resultados.
 
+Una captura de la interfaz web se muestra en la [Figura 3](#fig:screen3).
+Se ha cargado una instancia de demostración en el servidor provisto
+por los autores de Web-demo builder, disponible en
+[este enlace](http://ec2-52-5-194-68.compute-1.amazonaws.com/scripts/57769864/webif/).
+
+<div id="fig:screen3">
+![Interfaz web del software generada con Web-demo builder
+\label{fig:screen3}](screen3.png)
+
+</div>
 
 Generación del modelo (entrenamiento) {#webtrain}
 -------------------------------------

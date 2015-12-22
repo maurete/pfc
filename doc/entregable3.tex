@@ -1,0 +1,96 @@
+\documentclass[12pt,bibliography=oldstyle,DIV=12,parskip=half-,titlepage]{scrartcl}
+\include{conf/preconfig}
+\include{conf/packages}
+\include{conf/config}
+\include{conf/comandos}
+\include{conf/fuentes}
+%
+\addbibresource{res/bibliografia.bib}
+%
+\selectlanguage{spanish}
+\hyphenation{micro-RNA}
+\hyphenation{micro-RNAs}
+\hyphenation{mi-RNA}
+\hyphenation{mi-RNAs}
+%
+%
+%
+%
+\addtokomafont{descriptionlabel}{\small}
+\setkomafont{subject}{\LARGE\usekomafont{disposition}}
+\setkomafont{title}{\normalfont\slshape}
+\setkomafont{subtitle}{\LARGE\usekomafont{disposition}}
+%
+\begin{document}
+\selectlanguage{spanish}
+%
+% pagina de titulo
+%
+\titlehead{\center\large
+    Universidad Nacional del Litoral\\
+    Facultad de Ingeniería y Ciencias Hídricas
+}
+%
+%
+\title{\LARGE ``Desarrollo de un clasificador de secuencias de pre-microRNA
+  mediante técnicas de Inteligencia Computacional''}
+\subject{Proyecto Final de Carrera\\Ingeniería en
+  Informática}
+\subtitle{~\\[.2ex]Informe entregable 3\\[.2ex]~}
+\author{{Alumno: Mauro J. Torrez}\and{Director: Dr. Diego H. Milone}}
+%
+\date{~\\[2em]\today}
+%
+\renewcommand*{\titlepagestyle}{empty}
+%\thispagestyle{empty}
+\maketitle
+\setcounter{page}{1}
+%
+%
+%\section{}
+En el presente Informe se presenta una revisión de las tareas
+efectuadas por el alumno según lo estipulado en la Propuesta de
+Proyecto Final de Carrera.
+%
+%
+\section{Interfaz de usuario web}
+%
+Para la creación de la interfaz de usuario web se optó por utilizar la
+herramienta \eng{Web-demo builder}\footnote{Página web:
+  \url{https://bitbucket.org/sinc-lab/webdemobuilder/}}, desarrollado
+en el laboratorio \eng{sinc(i)} de la Facultad de Ingeniería y
+Ciencias Hídricas.
+
+Se codificó un método específico para la utilización del software a
+través de una interfaz web, y un archivo en formato {\mono Makefile}
+que permite la generación del archivo empaquetado en formato zip para
+utilizar con el software Web-demo builder.
+
+Finalmente, se procedió a la puesta en servicio de una interfaz web de
+demostración en el servidor de pruebas provisto por los creadores de
+Web-demo builder, la cual está disponible en la siguiente URL:
+
+\url{http://ec2-52-5-194-68.compute-1.amazonaws.com/scripts/57769864/webif/}
+%
+%
+\section{Documentación de usuario}
+%
+Se generó documentación para el usuario en el mismo código fuente para
+referencia en línea, así como mediante la creación de una guía de
+usuario que se adjunta al presente Informe.
+
+La documentación del código fuente se realizó siguiendo el estándar de
+documentación de Matlab, resultando en la adición de aproximadamente
+700 líneas de ayuda que el usuario puede consultar en la línea de
+comandos de Matlab mediante la función {\mono help}.
+
+Además, se redactó una guía del usuario con instrucciones de
+instalación, requerimientos del sistema, utilización de la interfaz de
+línea de comandos, y generación y utilización de la interfaz web.  Se
+adjunta a este documento una copia de dicha guía del usuario.
+%
+%
+%
+\renewcommand{\bibfont}{\normalfont\footnotesize}
+\printbibliography
+\end{document}
