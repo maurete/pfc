@@ -1,68 +1,258 @@
-% pre-miRNA Sequence Classifier User's Guide
-% Mauro Torrez
-% December 2, 2015
+---
+title: 'User's Guide'
+subtitle: 'pre-miRNA sequence classifier'
+author:
+- Mauro Torrez
+lang: english
+date: December 13, 2015
+documentclass: scrartcl
+biblio-files: '../doc/res/bibliografia'
+biblio-title: References
+bibliography: '../doc/res/bibliografia.bib'
+classoption:
+- 'parskip=half-'
+- DIV=12
+- bibliography=oldstyle
+- 12pt
+header-includes: |
+    \usepackage{libertine}
+    \usepackage[scale=0.96]{tgheros}
+    \usepackage[scaled=0.9]{zi4}
+references:
+- author:
+  - family: Hsu
+    given: Chih-Wei
+  - family: Chang
+    given: Chih-Chung
+  - family: Lin
+    given: Chih-Jen
+  id: hsu
+  issued:
+    date-parts:
+    - - 2003
+  abstract: Support vector machine (SVM) is a popular technique for classification.
+    However, beginners who are not familiar with SVM often get unsatisfactory results
+    since they miss some easy but significant steps. In this guide, we propose a simple
+    procedure, which usually gives reasonable results.
+  title: A Practical Guide to Support Vector Classification
+  type: report
+  publisher: Department of Computer Science, National Taiwan University
+  keyword: guide libsvm svm tutorial
+- volume: '1'
+  page: '151'
+  ISBN: '978-0-9719777-1-6'
+  container-title: Hands-On Pattern Recognition Challenges in Machine Learning
+  author:
+  - family: Adankon
+    given: Mathias M
+  - family: Cheriet
+    given: Mohamed
+  id: adankon
+  issued:
+    date-parts:
+    - - 2009
+  title: Unified framework for SVM model selection
+  type: article-journal
+  publisher: Microtome Publishing
+  editor:
+  - family: Guyon
+    given: Isabelle
+  - family: Cawley
+    given: Gavin
+  - family: Dror
+    given: Gideon
+  - family: Saffari
+    given: Amir
+- page: '673-680'
+  container-title: Advances in Neural Information Processing Systems 19
+  author:
+  - family: Keerthi
+    given: S. S.
+  - family: Sindhwani
+    given: Vikas
+  - family: Chapelle
+    given: Olivier
+  id: keerthi
+  issued:
+    date-parts:
+    - - 2007
+  title: An Efficient Method for Gradient-Based Adaptation of Hyperparameters in SVM
+    Models
+  type: chapter
+  publisher: MIT Press
+  editor:
+  - family: Schölkopf
+    given: B.
+  - family: Platt
+    given: J.C.
+  - family: Hoffman
+    given: T.
+- volume: '15'
+  page: '2643-2681'
+  container-title: Neural Computation
+  author:
+  - family: Chung
+    given: Kai-Min
+  - family: Kao
+    given: Wei-Chun
+  - family: Sun
+    given: Chia-Liang
+  - family: Wang
+    given: Li-Lun
+  - family: Lin
+    given: Chih-Jen
+  id: chung
+  issued:
+    date-parts:
+    - - 2003
+  title: Radius margin bounds for support vector machines with the RBF kernel
+  type: article-journal
+  publisher: MIT Press
+  issue: '11'
+- author:
+  - family: Glasmachers
+    given: Tobias
+  id: glasmachers
+  issued:
+    date-parts:
+    - - 2008
+  title: Gradient Based Optimization of Support Vector Machines
+  type: thesis
+  genre: PhD thesis
+  publisher: Fakultät für Mathematik, Ruhr-Universität Bochum, Germany
+- volume: '9'
+  page: '993-996'
+  container-title: The Journal of Machine Learning Research
+  author:
+  - family: Igel
+    given: Christian
+  - family: Heidrich-Meisner
+    given: Verena
+  - family: Glasmachers
+    given: Tobias
+  id: shark
+  issued:
+    date-parts:
+    - - 2008
+  title: Shark
+  type: article-journal
+  publisher: JMLR. org
+- ISSN: '1471-2105'
+  DOI: 10.1186/1471-2105-6-310
+  volume: '6'
+  page: '310'
+  container-title: BMC Bioinformatics
+  author:
+  - family: Xue
+    given: Chenghai
+  - family: Li
+    given: Fei
+  - family: He
+    given: Tao
+  - family: Liu
+    given: Guo-Ping
+  - family: Li
+    given: Yanda
+  - family: Zhang
+    given: Xuegong
+  id: xue
+  issued:
+    date-parts:
+    - - 2005
+  title: Classification of real and pseudo microRNA precursors using local structure-sequence
+    features and support vector machine
+  type: article-journal
+  issue: '1'
+...
 
 <div id="content">
 
-Overview {#overview}
---------
 
-This software is a set of Matlab functions with the end goal of
+
+
+Overview {#intro}
+============
+
+This software is a set of [Matlab] functions with the end goal of
 classifying pre-miRNA sequences via machine learning algorithms.
+
 
 The software provides functionality for
 
-* FASTA file loading
-* Feature extraction (with fixed set of features)
-* Generating the classification problem structure
-* Automatic model selection for SVM and MLP classifiers
-* Classification of pre-miRNAs
+* Generation of a structure describing the classification problem at
+  hand, including
 
-Basic concepts {#intro}
---------------
+	* FASTA file loading
 
-The main workflow for using the software is a three-step
-process
+	* Feature extraction (with fixed feature set)
 
-1. Loading data and describing of the classificaion problem,
-2. Choosing which classifier to use and performing model selection, and
-3. Classifying pre-miRNA entries of a test dataset.
+	* Definition of training, and testing sets, including cross-validation
+	  partitions
 
-In the following we explain these concepts, which should give the user
-an understanding of the organization of the software.
+* Automatic classifier model selection, including
 
-### 1. Problem generation
+	* Capability for working with SVM and MLP classifiers
 
-Problem generation refers to generating a description of the
-classification problem at hand that can be understood by the program.
-The classification problem description includes
+	* Automatic hyperparameter optimization
 
-* The processed (feature vector-coded) data read from input files
+	* Training
+
+* Classification of pre-miRNAs in the testing set
+
+
+
+
+Basic Concepts {#basic}
+==============
+
+The three main functionalities of the software are: *problem
+definition*, *automatic model selection* and *pre-miRNA
+classification*. In the following, we describe this functionalities in
+an overview of the program workflow.
+
+
+
+## 1. Problem definition
+
+
+Problem generation refers to generating a structure describing the
+classification problem at hand. Such structure can then be used
+by the software for automatic model selection and/or classification
+of test datasets.
+
+
+The [`problem_gen`] function is used for the problem definition,
+and its output is a structure with the following information:
+
+* Training and testing data as feature vectors
+
 * Class label information for entries
-* A description of the training dataset, if present
-* A description of the testing dataset, if present
+
+* A specification of the training dataset, if present
+
+* A specification of the testing dataset, if present
+
 * Cross-validation partitioning information
-* Scaling (normalization) information
 
-The [`problem_gen`] function is used for the problem generation.
+* Scaling and offset (normalization) information for every
+  element of the feature vector
 
-#### Input format
-
-The software reads FASTA files as data sources, and is able to handle
-embedded secondary structure information in dot-bracket notation like
-that produced by [RNAfold].
-
-#### Feature extraction
+### Feature extraction
 
 Feature extraction is the process of converting the entries in input
-text files to numerical vectors suitable for processing by the
-learning machine. This process is done automatically after parsing
-each FASTA input file. For every entry present in a FASTA file, the
-software builds a [66-element fixed feature vector](#thefeatvector).
+text (FASTA) files into numerical vectors suitable for processing by
+the learning machine. This process is done automatically when calling
+the [`problem_gen`] function. A detailed description of the *feature
+vector* can be found in the [Appendix](#thefeatvector).
 
-### 2. Automatic model selection
 
-Model selection involves choosing a classifier and tuning its
+
+## Classifier model selection
+
+
+For a given classifier type, model selection refers to obtaining the
+hyperparameters which maximize some classificationperformance measure
+the involves choosing a classifier and tuning its
 parameters with the purpose of maximizing classification performance
 for the problem at hand.
 
