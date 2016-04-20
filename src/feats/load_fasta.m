@@ -1,6 +1,6 @@
 function [fastainfo ign] = load_fasta(filename)
 
-    header_fmt = '^\s*>[(]?([a-zA-Z0-9]{2,3}[\w<.:/_+-]+)([|,\s].+)?\s*$';
+    header_fmt = '^\s*>[(]?([\w-]+)(?:[|,\s].+)?\s*$'
     sequence_fmt = '^\s*([GCAUTgcaut]+)\s*$';
     structure_fmt = '^\s*([.()]+)(\s+\((\s*-?[0-9.]+)\s*\))?\s*$';
     multiloop_fmt = '[.(]+\)[.()]*\([.)]+';
