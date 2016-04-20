@@ -18,12 +18,8 @@ function out = problem_classify(problem, model)
     nrep = 1;
     if iscell(model.trainedmodel), nrep = numel(model.trainedmodel); end
 
-    % sensitivity and specificity
-    res_se = nan(1,nrep);
-    res_sp = nan(1,nrep);
-
     % predictions
-    pred   = nan(numel(problem.testlabels),nrep);
+    pred = nan(numel(problem.testlabels),nrep);
 
     % classification function
     clsfunc = model.classfunc;
@@ -35,25 +31,25 @@ function out = problem_classify(problem, model)
         % SVM case
         pred(:) = clsfunc(model.trainedmodel, ...
                           problem.testdata(:,model.features));
-        res_se  = mean(sign(pred(problem.testlabels>0)) ==  1);
-        res_sp  = mean(sign(pred(problem.testlabels<0)) == -1);
 
     elseif iscell(model.trainedmodel)
 
-        % MLP case
+        % MLP case: repeat <nrep> times
         for r = 1:nrep
             pred(:,r) = clsfunc(model.trainedmodel{r}, ...
                                 problem.testdata(:,model.features));
-            res_se(r) = mean(sign(pred(problem.testlabels>0,r)) ==  1);
-            res_sp(r) = mean(sign(pred(problem.testlabels<0,r)) == -1);
         end
+
+        % set most voted class prediction
+        pred = mode(pred,2);
+
     end
 
-    % output struct
+    % output structure
     out = struct();
-    out.se = mean(res_se);
-    out.sp = mean(res_sp);
-    out.gm = mean( geomean([res_se;res_sp]) );
-    out.predict = mode(pred,2);
+    out.predict = pred;
+    out.se = mean(sign(pred(problem.testlabels>0)) ==  1);
+    out.sp = mean(sign(pred(problem.testlabels<0)) == -1);
+    out.gm = geomean([out.se; out.sp]);
 
 end
