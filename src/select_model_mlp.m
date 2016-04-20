@@ -1,5 +1,5 @@
 function [best,out,hid,res,names] = select_model_mlp(...
-    problem, feats, criterion, method, repeat, disp, fann)
+    problem, feats, criterion, method, repeat, disp, fann, trivial)
 %SELECT_MODEL_MLP Simple MLP model selection by exhaustive search.
 %
 %  [BEST,MODEL,HID,RES,NAMES] = SELECT_MODEL_MLP(PROBLEM, FEATS, CRITERION, ...
@@ -27,11 +27,12 @@ function [best,out,hid,res,names] = select_model_mlp(...
 %  See also PROBLEM_GEN, SELECT_MODEL, MLP_XTRAIN.
 %
 
-    if nargin < 7 || isempty(fann), fann = false; end
-    if nargin < 6 || isempty(disp), disp = true; end
-    if nargin < 5 || isempty(repeat), repeat = 5; end
-    if nargin < 4 || isempty(method), method = 'trainrp'; end
-    if nargin < 3 || isempty(criterion), criterion = 'gm'; end
+    if nargin < 8 || isempty(trivial),     trivial = false;     end
+    if nargin < 7 || isempty(fann),           fann = false;     end
+    if nargin < 6 || isempty(disp),           disp = true;      end
+    if nargin < 5 || isempty(repeat),       repeat = 5;         end
+    if nargin < 4 || isempty(method),       method = 'trainrp'; end
+    if nargin < 3 || isempty(criterion), criterion = 'gm';      end
 
     % error names
     names = { 'se'      , ... % sensitivity
@@ -46,6 +47,9 @@ function [best,out,hid,res,names] = select_model_mlp(...
 
     % number of neurons in hidden layer
     nh = 0:max([10, round(numel(features)*0.7)]);
+    %nh = [0:9, 10:2:20, 25:5:40, 50:10:100, 150:20:250];
+
+    if trivial, nh = 0; end
 
     % results matrix
     res = nan(length(nh),length(names));
@@ -74,7 +78,7 @@ function [best,out,hid,res,names] = select_model_mlp(...
     % main loop
     for k = 1:length(nh)
 
-        theta = [nh(k),nh(k)];
+        theta = [nh(k)];
 
         % classification outputs
         out = nan(sum(problem.partitions.validation(:)), repeat);

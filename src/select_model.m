@@ -127,7 +127,11 @@ function model = select_model(problem, feats, classifier, method, varargin)
     % invoke respective model selection methods
     if strcmpi(classifier,'mlp')
         [params,model] = select_model_mlp(...
-            problem,feats,mlp_crit,mlp_bckp,mlp_nrep,false);
+            problem,feats,mlp_crit,mlp_bckp,mlp_nrep, ...
+            false, ... % disp
+            false, ... % fann
+            strcmpi(method,'trivial') ... % trivial
+            );
     else
         if strcmpi(method,'rmb')
             % validate RBF kernel is being used
