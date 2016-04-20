@@ -37,16 +37,26 @@ function [obj,beta,idx,model] = opt_rsquared(K,tolkkt,cache_size)
 
     % setup and train one-class LibSVM problem
     K1 = [ [1:len]' K ];
+
     model = svmtrain( ones(len,1), K1, [ '-t 4 -s 2' ...
                         ' -n ' num2str(1/len) ...
                         ' -e ' num2str(tolkkt) ...
                         ' -m ' num2str(cache_size) ...
                         ' -q ' ] );
 
+    % following prints R^2 with libsvm-svdd
+    % model = svmtrain( ones(len,1), K1, [ '-t 4 -s 6' ...
+    %                     ' -n ' num2str(1/len) ...
+    %                     ' -e ' num2str(tolkkt) ...
+    %                     ' -m ' num2str(cache_size) ...
+    %                     '  ' ] );
+
     idx = model.sv_indices;
     beta = model.sv_coef;
     obj = 1 - model.sv_coef' * K(idx,idx) * model.sv_coef;
     % Chung's libsvm hack: obj = 1-2*obj
+
+    % fprintf('>>>>>>>> R^2 = %f <<<<<<<<\n', obj)
 
     if rm_libsvm_path, rmpath(libsvm_path); end
 
