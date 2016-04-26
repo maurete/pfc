@@ -1,4 +1,4 @@
-function [best,out,hid,res,names] = select_model_mlp(...
+function [best,out,hid,res,names,nt] = select_model_mlp(...
     problem, feats, criterion, method, repeat, disp, fann, trivial)
 %SELECT_MODEL_MLP Simple MLP model selection by exhaustive search.
 %
@@ -23,6 +23,7 @@ function [best,out,hid,res,names] = select_model_mlp(...
 %    HID the number of hidden layers tried
 %    RES performance measures for every element of HID
 %    NAMES name for each measure in RES
+%    NT number of trainings
 %
 %  See also PROBLEM_GEN, SELECT_MODEL, MLP_XTRAIN.
 %
@@ -148,4 +149,5 @@ function [best,out,hid,res,names] = select_model_mlp(...
                                          method,[],fann);
     end
 
+    nt = numel(nh)*repeat;
 end
