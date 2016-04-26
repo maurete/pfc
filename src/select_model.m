@@ -1,4 +1,4 @@
-function model = select_model(problem, feats, classifier, method, varargin)
+function [model,nt] = select_model(problem, feats, classifier, method, varargin)
 %SELECT_MODEL Perform model selection.
 %
 %  MODEL = SELECT_MODEL(PROBLEM, FEATS, CLASSIFIER, METHOD) performs model
@@ -14,6 +14,8 @@ function model = select_model(problem, feats, classifier, method, varargin)
 %  the radius margin-like bound, available for 'svm-rbf' classifier only. The
 %  value of 'method' is ignored for the MLP classifier.
 %  MODEL is the trained model with the optimal parameters found.
+%
+%  NT is the number of trainings performed during model optimization.
 %
 %  MODEL = SELECT_MODEL(..., OPTIONS) sets additional options as a comma-
 %  separated list of options:
@@ -124,9 +126,12 @@ function model = select_model(problem, feats, classifier, method, varargin)
         end
     end
 
+    % number of trainings
+    nt = nan;
+
     % invoke respective model selection methods
     if strcmpi(classifier,'mlp')
-        [params,model] = select_model_mlp(...
+        [params,model,nt] = select_model_mlp(...
             problem,feats,mlp_crit,mlp_bckp,mlp_nrep, ...
             false, ... % disp
             false, ... % fann
@@ -137,15 +142,16 @@ function model = select_model(problem, feats, classifier, method, varargin)
             % validate RBF kernel is being used
             assert(any(strfind(classifier,'rbf')), ...
                    'RMB can only be used with an RBF kernel.')
-            [params,model] = select_model_rmb(problem,feats,'rbf',svmlib);
+            [params,model,~,~,nt] = select_model_rmb(problem,feats,'rbf',svmlib);
         elseif strcmpi(method,'empirical')
-            [params,model] = select_model_empirical(...
+            [params,model,~,~,nt] = select_model_empirical(...
                 problem,feats,classifier,svmlib);
         elseif strcmpi(method,'trivial')
             [params,model] = select_model_trivial(...
                 problem,feats,classifier,svmlib);
+            nt = 0;
         elseif strcmpi(method,'gridsearch')
-            [params,model] = select_model_gridsearch(...
+            [params,model,~,nt] = select_model_gridsearch(...
                 problem, feats, classifier, svmlib, ...
                 gs_iter, gs_crit, gs_stgy, [], [], true);
         end
