@@ -563,7 +563,6 @@ asimismo descartar de plano el conjunto de características S.
 
 \begin{table}
   \small\center\sffamily
-  \newcommand{\s}{\textbf}
   \renewcommand{\t}{\textit}
   \begin{tabular}{ccccccccccr}\toprule
     \mrow{2}{*}{Problema} & \mrow{2}{*}{Caracts.} &
@@ -579,7 +578,7 @@ asimismo descartar de plano el conjunto de características S.
     & T-X          & {90,6} & \t{91,9} & \t{91,2} & {90,7} & {89,2} & \t{92,1} & {90,6} & \t{96,2} & \\
     & S            & {71,3} & {71,4} & {72,7} & {72,1} & {66,3} & {84,8} & {84,4} & {74,6} & \\
     & E            & \t{95,7} & \t{96,1} & \t{96,1} & \t{96,3} & \t{95,9} & \t{96,5} & \t{96,7} & \t{96,7} & \\
-    & S-E          & \t{96,6} & \t{96,2} & \t{96,3} & \t{96,3} & \t{97,0} & \t{96,7} & \t{95,2} & \s{98,2} &
+    & S-E          & \t{96,6} & \t{96,2} & \t{96,3} & \t{96,3} & \t{97,0} & \t{96,7} & \t{95,2} & \textbf{98,2} &
     %% & T-X-S-E      & 97,0 & 96,2 & 96,0 & 95,9 & 94,2 & 96,5 & 94,1 & 96,0 & \\
     %% & T            & 88,5 & 89,7 & 89,3 & 88,6 & 84,4 & 88,3 & 86,7 & 95,7 & \\
     %% & X            & 89,0 & 90,1 & 87,6 & 89,3 & 88,8 & 88,2 & 90,0 & 90,0 & \\
@@ -778,12 +777,11 @@ así como los resultados presentados en el trabajo original.
 %
 \begin{table}[h]
   \small\center\sffamily
-  \newcommand{\s}{\textbf}
   \begin{tabular}{lrrrr}\toprule
     Conj. datos & N. Elem. & Método RMB & Err. Emp. & Xue et al. \\\midrule
-    updated           & 39 &   \s{94,9\%} & \s{94,9\%} & 92,3\% \\ 
-    cross-species     & 581 &  79,2\% & \s{96,0\%} & 90,9\% \\
-    conserved-hairpin & 2444 & \s{95,7\%} & 91,7\% & 89,0\% \\\bottomrule
+    updated           & 39 &   \textbf{94,9\%} & \textbf{94,9\%} & 92,3\% \\ 
+    cross-species     & 581 &  79,2\% & \textbf{96,0\%} & 90,9\% \\
+    conserved-hairpin & 2444 & \textbf{95,7\%} & 91,7\% & 89,0\% \\\bottomrule
   \end{tabular}
   \caption{\small Tasa de clasificación obtenida para los problemas de validación
     basados en Xue et al. \cite{xue}}
@@ -808,11 +806,10 @@ obtenidos con el método propio entrenado con el problema ng junto
 a aquellos obtenidos en el trabajo original.
 \begin{table}[h]
   \small\center\sffamily
-  \newcommand{\s}{\textbf}
   \begin{tabular}{lrrrr}\toprule
     Conj. datos & N. Elem. & Método RMB & Err. Emp. & Ng y Mishra \\\midrule
-    IE-NH       &    1.918 & 89,5\%     & \s{93,6\%}    & 92,1\% \\
-    IE-NC       &   12.387 & \s{78,5\%}     & 55,3\%    & 68,7\% \\\bottomrule
+    IE-NH       &    1.918 & 89,5\%     & \textbf{93,6\%}    & 92,1\% \\
+    IE-NC       &   12.387 & \textbf{78,5\%}     & 55,3\%    & 68,7\% \\\bottomrule
   \end{tabular}
   \caption{\small Resultados para los problemas de validación
     basados en Ng y Mishra \cite{ng}}
@@ -831,17 +828,16 @@ obtenidos.
 
 \begin{table}[h]
   \small\center\sffamily
-  \newcommand{\s}{\textbf}
   \begin{tabular}{lrcrr}\toprule
     Especie & N.Elem. & Problema de entrenamiento & Método RMB & Err. Emp. \\\midrule
     \mrow{3}{*}{humano} & \mrow{3}{*}{1.872} &
        xue      & 64,2\% & 75,3\% \\
     && ng       & 64,7\% & 73,5\% \\
-    && batuwita & 83,1\% & \s{83,3\%} \\\midrule
+    && batuwita & 83,1\% & \textbf{83,3\%} \\\midrule
     \mrow{3}{*}{no-humano} & \mrow{3}{*}{22.554} &
        xue      & 66,9\% & 86,6\% \\
     && ng       & 78,0\% & 87,4\% \\
-    && batuwita & \s{89,2\%} & 87,6\% \\\bottomrule
+    && batuwita & \textbf{89,2\%} & 87,6\% \\\bottomrule
   \end{tabular}
   \caption{\small Tasa de clasificación obtenida para el problema de validación
     con la base de datos miRBase, versión 20.}

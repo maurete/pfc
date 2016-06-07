@@ -63,6 +63,10 @@
 %          hace que LaTeX ignore directamente todo lo que está adentro
 %\usepackage{verbatim}
 %
+% fancyvrb es verbatim con coloreado, implementa entorno Verbatim
+\usepackage{fancyvrb}
+\fvset{fontsize=\footnotesize,commandchars=\\\{\}}
+%
 % moreverb implementa el entorno verbatimtab indentando los tabs que encuentre,
 %          y también el entorno listing, que pone números de línea al verbatim.
 %          Para cambiar el ancho de la tabulacion, uso
@@ -110,6 +114,9 @@
 \usepackage{tikz}
 \usepackage{pgfkeys}
 \usepackage{pgfgantt}
+\usetikzlibrary{babel}
+\usetikzlibrary{arrows}
+\usetikzlibrary{shapes.multipart}
 
 % typearea: uso con koma-script para ajustar márgenes de página.
 % vars globales a setear en la clase koma-script: DIV=12, BCOR=margen de ``binding'' para double side
@@ -121,6 +128,14 @@
 
 % para tabulars mas lindos/legibles
 \usepackage{booktabs}
+% tablas que se extienden por varias págs.
+\usepackage{longtable}
+
+% para tabulars mas lindos/legibles
+\usepackage{tabu}
+
+% para alinear numeros en el punto decimal (dentro de un tabular)
+\usepackage[detect-all,alsoload=abbr]{siunitx}
 
 %\usepackage{glossaries}
 
@@ -135,3 +150,7 @@
 % para tunear citations
 %\usepackage[square,comma,numbers,sort&compress]{natbib}
 
+\usepackage{hyperref}
+% lo siguiente hace que los enlaces generados por hyperref apunten a
+% /la figura/, en lugar de /la caption/ de la figura
+\usepackage[hypcap]{caption}
