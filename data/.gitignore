@@ -1,3 +1,5 @@
-work/
-*.err
-*.out
+/*
+!*.py
+!*.sh
+!ext_utils/
+!src/
