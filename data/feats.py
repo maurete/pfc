@@ -13,7 +13,7 @@ import random
 #   * (1) id: 3 letras + n { alfanum | _ | - }
 #   * se ignoran otros caracteres hasta el fin de linea
 #   >hsa-mir-123 Homo sapiens... etc
-desc_fmt = r"^\s*>[(]?([a-zA-Z0-9]{2,3}[\w<.:/_+-]+)([|,\s].+)?\s*$"
+desc_fmt = r"^\s*>[(]?([\w./-]+)(?:[|,\s].+)?\s*$"
 
 # extra features en la descripcion, Xue
 seq_length_fmt   = r'^>.*\sSEQ_LENGTH\s+(\d+)\s.*$'
@@ -45,36 +45,38 @@ mult_fmt = r"[.(]+\)[.()]*\([.)]+"
 # >>> f = gzip.open( "src/mirbase/20/organisms.txt.gz", 'r')
 # >>> valid_ids = {e.split()[0] for e in f.read().splitlines()}
 # >>> valid_ids
-valid_ids = set(['sci', 'pti', 'ptc', 'pta', 'aly', 'osa', 'lla',
-                 'mne', 'nlo', 'tca', 'cln', 'xtr', 'han', 'hru',
-                 'gma', 'zma', 'cla', 'bfl', 'nvi', 'bna', 'rgl',
-                 'rno', 'kshv', 'dan', 'cel', 'ame', 'ssp', 'amg',
-                 'ssl', 'nve', 'ttu', 'lca', 'lco', 'pgi', 'dya',
-                 'ssc', 'dme', 'dpu', 'hci', 'dps', 'dpr', 'crt',
-                 'lja', 'cme', 'tre', 'xla', 'hsv1', 'mcmv', 'dpe',
-                 'hsv2', 'esi', 'cre', 'pbi', 'crm', 'tgu', 'ola',
-                 'pvu', 'mdo', 'mdm', 'ipu', 'cfa', 'odi', 'ebv',
-                 'hiv1', 'bta', 'pma', 'rrv', 'rmi', 'emu', 'lus',
-                 'asu', 'sha', 'peu', 'mghv', 'blv', 'bdi', 'smr',
-                 'ptr', 'smo', 'ddi', 'dsi', 'aja', 'sme', 'dse',
-                 'hco', 'sma', 'hsa', 'eca', 'mmu', 'tur', 'meu',
-                 'mml', 'gga', 'hma', 'nta', 'ggo', 'cgr', 'aca',
-                 'ctr', 'lmi', 'vun', 'ath', 'cte', 'bol', 'isc',
-                 'bgy', 'pde', 'sja', 'dre', 'hbr', 'ppc', 'ppa',
-                 'har', 'mes', 'ppe', 'sof', 'hhv6b', 'ngi', 'pol',
-                 'api', 'ppt', 'ppy', 'ahy', 'hvu', 'hvt', 'bra',
-                 'sbi', 'bpcv2', 'bbe', 'hex', 'rco', 'gpy', 'fru',
-                 'mse', 'cqu', 'aqu', 'lgi', 'hcmv', 'bmo', 'aqc',
-                 'mcv', 'tcc', 'sko', 'sv40', 'aae', 'iltv', 'sly',
-                 'mtr', 'htu', 'der', 'ata', 'cin', 'dev', 'dmo',
-                 'aau', 'stu', 'prv', 'egr', 'egu', 'tni', 'sla',
-                 'prd', 'cbn', 'spu', 'cbr', 'tae', 'bma', 'hvsa',
-                 'hme', 'ssy', 'hhi', 'jcv', 'csi', 'mdv1', 'oan',
-                 'mdv2', 'csa', 'far', 'pab', 'oar', 'gra', 'hpa',
-                 'dwi', 'hpe', 'bpcv1', 'gar', 'dgr', 'bkv', 'rlcv',
-                 'vvi', 'bhv1', 'hbv', 'dvi', 'mja', 'ghr', 'ama',
-                 'cpa', 'age', 'aga', 'ccr', 'ccl', 'xbo', 'bcy',
-                 'ghb', 'cca', 'gso'])
+valid_ids = set(['sci', 'pti', 'ptc', 'pxy', 'pta', 'tch', 'aly',
+                 'osa', 'lla', 'mne', 'nlo', 'tca', 'cln', 'xtr',
+                 'han', 'hru', 'gma', 'zma', 'cla', 'bfl', 'nvi',
+                 'bna', 'rgl', 'psj', 'rno', 'kshv', 'dan', 'cel',
+                 'ame', 'ssp', 'amg', 'ssl', 'nve', 'ttu', 'lca',
+                 'lco', 'pgi', 'ssa', 'dya', 'ssc', 'dme', 'dpu',
+                 'hci', 'dps', 'dpr', 'crt', 'lja', 'cme', 'tre',
+                 'xla', 'hsv1', 'mcmv', 'dpe', 'hsv2', 'esi', 'cre',
+                 'pbi', 'crm', 'tgu', 'ola', 'pvu', 'mdo', 'mdm',
+                 'ipu', 'cfa', 'odi', 'ebv', 'hiv1', 'bta', 'pma',
+                 'rrv', 'rmi', 'pmi', 'emu', 'lus', 'asu', 'sha',
+                 'peu', 'mghv', 'blv', 'bdi', 'smr', 'ptr', 'smo',
+                 'ddi', 'dsi', 'aja', 'sme', 'dse', 'hco', 'sma',
+                 'hsa', 'eca', 'mmu', 'tur', 'meu', 'mml', 'gga',
+                 'hma', 'nta', 'ggo', 'cgr', 'aca', 'ctr', 'lmi',
+                 'vun', 'ath', 'cte', 'bol', 'isc', 'bgy', 'pde',
+                 'sja', 'dre', 'hbr', 'ppc', 'ppa', 'har', 'mes',
+                 'ppe', 'sof', 'hhv6b', 'ngi', 'pol', 'api', 'ppt',
+                 'ppy', 'ahy', 'hvu', 'hvt', 'bra', 'sbi', 'bpcv2',
+                 'chi', 'bbe', 'hex', 'rco', 'gpy', 'fru', 'mse',
+                 'cqu', 'bfv', 'aqu', 'lgi', 'hcmv', 'bmo', 'oha',
+                 'aqc', 'mcv', 'tcc', 'sko', 'sv40', 'aae', 'iltv',
+                 'sly', 'mtr', 'htu', 'der', 'ata', 'cin', 'dev',
+                 'dmo', 'aau', 'stu', 'prv', 'lva', 'str', 'egr',
+                 'egu', 'tni', 'sla', 'prd', 'pra', 'pin', 'cbn',
+                 'spu', 'bhv5', 'cbr', 'tae', 'bma', 'hvsa', 'hme',
+                 'ssy', 'hhi', 'jcv', 'csi', 'mdv1', 'oan', 'mdv2',
+                 'csa', 'efu', 'far', 'pab', 'oar', 'gra', 'atr',
+                 'hpa', 'dwi', 'hpe', 'bpcv1', 'ocu', 'gar', 'dgr',
+                 'bkv', 'rlcv', 'vvi', 'bhv1', 'hbv', 'dvi', 'mja',
+                 'ghr', 'ama', 'cpa', 'age', 'aga', 'ccr', 'gsa',
+                 'ccl', 'xbo', 'bcy', 'ghb', 'cca', 'gso'])
 
 
 

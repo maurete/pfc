@@ -18,16 +18,24 @@ EXTRAOPTS=""
 MULTILOOP=""
 
 gen_dataset () {
-    zcat -f $SRC | ./tests.py rnafold_clean $EXTRAOPTS > work/$NAME.clean
-    $RNAFOLD < work/$NAME.clean > work/$NAME.rnafold
-    mkdir -p work/$NAME
-    ./feats.py by_species work/$NAME.rnafold $MULTILOOP -o work/$NAME -c $CLS $SPECIES
+    touch work/${NAME}.clean
+    zcat -f ${SRC} | ./tests.py rnafold_clean ${EXTRAOPTS} > work/${NAME}.clean
+    ${RNAFOLD} < work/${NAME}.clean > work/${NAME}.rnafold
+    mkdir -p work/${NAME}
+    ./feats.py by_species work/${NAME}.rnafold ${MULTILOOP} -o work/${NAME} -c ${CLS} ${SPECIES}
 }
 
 gen_nr_dataset () {
     zcat -f $SRC | ./tests.py rnafold_clean $EXTRAOPTS > work/$NAME.clean
     $CDHIT -i work/$NAME.clean -o work/$NAME.nr
     $RNAFOLD < work/$NAME.nr > work/$NAME.rnafold
+    mkdir -p work/$NAME
+    ./feats.py by_species work/$NAME.rnafold $MULTILOOP -o work/$NAME -c $CLS $SPECIES
+}
+
+gen_diff_dataset () {
+    zcat -f $SRC | ./delta_mirbase.py -d $SRCDIFF | ./tests.py rnafold_clean $EXTRAOPTS > work/$NAME.clean
+    $RNAFOLD < work/$NAME.clean > work/$NAME.rnafold
     mkdir -p work/$NAME
     ./feats.py by_species work/$NAME.rnafold $MULTILOOP -o work/$NAME -c $CLS $SPECIES
 }
@@ -107,47 +115,23 @@ SPECIES="-s hsa"
 MULTILOOP=""
 gen_dataset
 
-echo "Dataset mirbase82-mipred: non-redundant miRNAs as in miPred"
-NAME="mirbase82-mipred"
-SRC="src/mipred/miRNAs8.2h/rnafold/*"
-CLS="1"
-SPECIES=""
-MULTILOOP=""
-gen_dataset
-
-echo "Dataset mirbase82-mipred-multi: non-redundant miRNAs as in miPred"
+echo "Dataset mirbase82-mipred"
 NAME="mirbase82-mipred/multi"
-SRC="src/mipred/miRNAs8.2h/rnafold/*"
+SRC='src/mipred/miRNAs8.2h/rnafold/*'
 CLS="1"
 SPECIES=""
 MULTILOOP="-m"
 gen_dataset
 
-echo "Dataset functional-ncrna: functional ncRNAs from Rfam 7.0 as in miPred"
-NAME="functional-ncrna"
-SRC="src/mipred/Rfam7.0/rnafold/*"
-CLS="-1"
-SPECIES="-s ncrna"
-MULTILOOP=""
-gen_dataset
-
-echo "Dataset functional-ncrna-multi: functional ncRNAs from Rfam 7.0 as in miPred"
+echo "Dataset functional-ncrna: functional ncRNAs from Rfam 7.0"
 NAME="functional-ncrna/multi"
-SRC="src/mipred/Rfam7.0/rnafold/*"
+SRC='src/mipred/Rfam7.0/rnafold/*'
 CLS="-1"
 SPECIES="-s ncrna"
 MULTILOOP="-m"
 gen_dataset
 
-echo "Dataset mirbase12-micropred: miRNAs from miRBase 12.0 as in microPred"
-NAME="mirbase12-micropred"
-SRC="src/micropred/691-pre-miRNAs.fasta"
-CLS="1"
-SPECIES=""
-MULTILOOP=""
-gen_dataset
-
-echo "Dataset mirbase12-micropred-multi: miRNAs from miRBase 12.0 as in microPred"
+echo "Dataset mirbase12-micropred: miRNAs from miRBase 12.0"
 NAME="mirbase12-micropred/multi"
 SRC="src/micropred/691-pre-miRNAs.fasta"
 CLS="1"
@@ -156,14 +140,6 @@ MULTILOOP="-m"
 gen_dataset
 
 echo "Dataset mirbase12: miRNAs from miRBase 12.0 for testing microPred"
-NAME="mirbase12"
-SRC="src/mirbase/12.0/hairpin.fa.gz"
-CLS="1"
-SPECIES=""
-MULTILOOP=""
-gen_dataset
-
-echo "Dataset mirbase12-multi: miRNAs from miRBase 12.0 for testing microPred"
 NAME="mirbase12/multi"
 SRC="src/mirbase/12.0/hairpin.fa.gz"
 CLS="1"
@@ -172,52 +148,37 @@ MULTILOOP="-m"
 gen_dataset
 
 echo "Dataset other-ncrna: other ncRNAs compiled by microPred authors"
-NAME="other-ncrna"
-SRC="src/micropred/754-other-ncRNAs-fix.fasta"
-CLS="-1"
-SPECIES="-s ncrna"
-MULTILOOP=""
-gen_dataset
-
-echo "Dataset other-ncrna: other ncRNAs compiled by microPred authors"
 NAME="other-ncrna/multi"
-SRC="src/micropred/754-other-ncRNAs-fix.fasta"
+SRC='src/micropred/754-other-ncRNAs-fix.fasta'
 CLS="-1"
 SPECIES="-s ncrna"
 MULTILOOP="-m"
-gen_dataset
-
-echo "Dataset mirbase20: miRNAs from miRBase 20"
-NAME="mirbase20"
-SRC="src/mirbase/20/hairpin.fa.gz"
-CLS="1"
-SPECIES=""
-MULTILOOP=""
 gen_dataset
 
 echo "Dataset mirbase20: miRNAs from miRBase 20"
 NAME="mirbase20/multi"
-SRC="src/mirbase/20/hairpin.fa.gz"
+SRC='src/mirbase/20/hairpin.fa.gz'
 CLS="1"
 SPECIES=""
 MULTILOOP="-m"
 gen_dataset
 
-echo "Dataset mirbase20-nr: miRNAs from miRBase 20+CD-HIT"
-NAME="mirbase20-nr"
-SRC="src/mirbase/20/hairpin.fa.gz"
-CLS="1"
-SPECIES=""
-MULTILOOP=""
-gen_nr_dataset
-
-echo "Dataset mirbase20-nr-multi: miRNAs from miRBase 20+CD-HIT"
-NAME="mirbase20-nr/multi"
-SRC="src/mirbase/20/hairpin.fa.gz"
+echo "Dataset mirbase21: miRNAs from miRBase 21"
+NAME="mirbase21/multi"
+SRC="src/mirbase/21/hairpin.fa.gz"
 CLS="1"
 SPECIES=""
 MULTILOOP="-m"
-gen_nr_dataset
+gen_dataset
+
+echo "Dataset mirbase21/diff: miRNAs from miRBase 21"
+NAME="mirbase21/diff"
+SRC="src/mirbase/21/hairpin.fa.gz"
+SRCDIFF="src/mirbase/21/miRNA.diff.gz"
+CLS="1"
+SPECIES=""
+MULTILOOP="-m"
+gen_diff_dataset
 
 echo "Cleaning aux files.."
 find work -type f -name "*.clean" -exec rm "{}" ";"
@@ -229,7 +190,8 @@ echo "Moving directories to data/"
 rm -rf mirbase50 coding updated conserved-hairpin cross-species
 rm -rf mirbase82-mipred functional-ncrna
 rm -rf mirbase12 mirbase12-micropred other-ncrna
-rm -rf mirbase20 mirbase20-nr 
+rm -rf mirbase20 mirbase20-nr
+rm -rf mirbase13 mirbase21 
 
 mv -f work/* .
 
