@@ -131,7 +131,7 @@ function [model,nt] = select_model(problem, feats, classifier, method, varargin)
 
     % invoke respective model selection methods
     if strcmpi(classifier,'mlp')
-        [params,model,nt] = select_model_mlp(...
+        [params,model,~,~,~,nt] = select_model_mlp(...
             problem,feats,mlp_crit,mlp_bckp,mlp_nrep, ...
             false, ... % disp
             false, ... % fann
@@ -156,5 +156,4 @@ function [model,nt] = select_model(problem, feats, classifier, method, varargin)
                 gs_iter, gs_crit, gs_stgy, [], [], true);
         end
     end
-
 end

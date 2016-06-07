@@ -34,7 +34,7 @@ function [svm_params,out,paramh,errh,ntrain] = select_model_empirical( ...
 %  See also PROBLEM_GEN, SELECT_MODEL, MODEL_CSVM, ERROR_EMPIRICAL_CV.
 %
 
-    if nargin < 5 || isempty(max_it), max_it = 100; end
+    if nargin < 6 || isempty(max_it), max_it = 100; end
 
     % MISC SETTINGS
     svm_tol = 1e-6;
