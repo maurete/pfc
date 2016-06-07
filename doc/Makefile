@@ -2,44 +2,54 @@
 fuentes = propuesta.tex anteproyecto.tex entregable1.tex entregable2.tex \
 entregable3.tex cronograma.tex log.tex informe.tex
 #
-texes = $(wildcard '*.tex')
-#
+# dependencias
 dep = conf/comandos.tex conf/config.tex conf/fuentes.tex \
 conf/packages.tex conf/preconfig.tex
 #
 fuentes_aux = $(fuentes:%.tex=%.aux) $(fuentes:%.tex=%.log) \
-$(fuentes:%.tex=%.out) $(dep:%.tex=%.aux)
+$(fuentes:%.tex=%.out) $(fuentes:%.tex=%.toc) $(dep:%.tex=%.aux)
 biber_aux = $(fuentes:%.tex=%.bbl) $(fuentes:%.tex=%.bcf) \
 $(fuentes:%.tex=%.blg) $(fuentes:%.tex=%.run.xml) \
 $(fuentes:%.tex=%-blx.bib)
 
-#TOP := $(shell pwd)
-#TEXINPUTS := .:$(TOP)/skrapport:
-
-cc = pdflatex -interaction nonstopmode
+# usar rubber para compilar pdf
+cc   = rubber --pdf
+#
+cpdf = pdflatex -interaction nonstopmode
 crtf = latex2rtf
-bib = biber
+cbib = biber
+crm  = rm -f
 
+# construir pdfs y borrar archivos basura
 all:	$(fuentes:%.tex=%.pdf) $(dep)
-	rm -f $(fuentes_aux)
-	rm -f $(biber_aux)
+	@ $(crm) $(fuentes_aux)
+	@ $(crm) $(biber_aux)
 
-rtf:	$(fuentes:%.tex=%.rtf) $(dep)
-	rm -f $(fuentes_aux)
-	rm -f $(biber_aux)
-
+# generar pdf con rubber
 %.pdf:	%.tex $(dep)
-	$(cc) $<
-	$(cc) $<
-	$(bib) $(<:%.tex=%)
-	$(cc) $<
+# Si la compilacion del archivo falla, borrar el .bcf de biber
+	$(cc) $< || ( $(crm) $(<:%.tex=%.bcf); exit 1 )
 
+# generar pdf usando pdflatex plano
+%.pdf-old:	%.tex $(dep)
+	$(cpdf) $<
+	@ $(cpdf) $<
+	$(cbib) $(<:%.tex=%)
+	@ $(cpdf) $<
+
+# generar rtfs
+rtf:	$(fuentes:%.tex=%.rtf) $(dep)
+	@ $(crm) $(fuentes_aux)
+	@ $(crm) $(biber_aux)
+
+# generar rtf
 %.rtf:	%.tex $(dep)
-	$(cc) $<
-	$(bib) $(<:%.tex=%)
-	$(crtf) $<
+	$(cpdf) $<
+	$(cbib) $(<:%.tex=%)
+	@ $(crtf) $<
 
+# borrar todos los compilados y auxiliares
 clean:
-	rm -f $(fuentes:%.tex=%.pdf)
-	rm -f $(fuentes_aux)
-	rm -f $(biber_aux)
+	@ $(crm) $(fuentes:%.tex=%.pdf)
+	@ $(crm) $(fuentes_aux)
+	@ $(crm) $(biber_aux)
