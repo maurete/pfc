@@ -31,7 +31,7 @@ function [best,out,hid,res,names,nt] = select_model_mlp(...
     if nargin < 8 || isempty(trivial),     trivial = false;     end
     if nargin < 7 || isempty(fann),           fann = false;     end
     if nargin < 6 || isempty(disp),           disp = true;      end
-    if nargin < 5 || isempty(repeat),       repeat = 5;         end
+    if nargin < 5 || isempty(repeat),       repeat = 1;         end
     if nargin < 4 || isempty(method),       method = 'trainrp'; end
     if nargin < 3 || isempty(criterion), criterion = 'gm';      end
 
@@ -44,20 +44,19 @@ function [best,out,hid,res,names,nt] = select_model_mlp(...
               'mcc'       ... % Matthews Correlation Coefficient
             };
 
-    features = featset_index(feats);
-
-    % number of neurons in hidden layer
-    nh = 0:max([10, round(numel(features)*0.7)]);
-    %nh = [0:9, 10:2:20, 25:5:40, 50:10:100, 150:20:250];
-
-    if trivial, nh = 0; end
-
-    % results matrix
-    res = nan(length(nh),length(names));
-
     % name indexes
     ni = struct();
     for i=1:length(names), ni.(names{i}) = i; end
+
+    features = featset_index(feats);
+
+    % number of neurons in hidden layer
+    % nh = 0:max([10, round(numel(features)*0.7)]);
+    nh = [ 0:2, round(logspace(log10(3), log10(200), 17)) ];
+    % nh = [0:9, 10:2:20, 25:5:40, 50:10:100, 150:20:250];
+
+    time = time_init();
+    time = time_tick(time, 1);
 
     % sign of the objective function
     crit_sgn = 1;
@@ -66,51 +65,60 @@ function [best,out,hid,res,names,nt] = select_model_mlp(...
         crit_sgn = -1;
     end
 
-    % training, testing and error functions
-    trainfunc = @(in,tg,vi,vt,th) mlp_xtrain(in,tg,vi,vt,th,method,[],fann);
-    testfunc  = @mlp_classify;
-    eerrfunc  = @(out,trg) log(sum(error_empirical(out,trg)));
-    enllfunc  = @(out,trg) log(error_nll(...
-        @model_sigmoid, [], model_sigmoid_train(out,trg),out,trg));
+    if trivial
+        nh = 0;
+        best = 0;
+        disp = 0;
+    end
 
-    time = time_init();
-    time = time_tick(time, 1);
+    % results matrix
+    res = nan(length(nh),length(names));
 
-    % main loop
-    for k = 1:length(nh)
+    if ~trivial
+        % training, testing and error functions
+        trainfunc = @(in,tg,vi,vt,th) mlp_xtrain(in,tg,vi,vt,th,method,[],fann);
+        testfunc  = @mlp_classify;
+        eerrfunc  = @(out,trg) log(sum(error_empirical(out,trg)));
+        enllfunc  = @(out,trg) log(error_nll(...
+            @model_sigmoid, [], model_sigmoid_train(out,trg),out,trg));
 
-        theta = [nh(k)];
+        % main loop
+        for k = 1:length(nh)
 
-        % classification outputs
-        out = nan(sum(problem.partitions.validation(:)), repeat);
+            theta = [nh(k)];
 
-        % repeat cross-validation training r times
-        for r = 1:repeat
-            [out(:,r),tar,~,~,s] = cross_validation( ...
-                problem, features, trainfunc, theta, testfunc,[],true);
-            stat(r)=s;
-        end
+            % classification outputs
+            out = nan(sum(problem.partitions.validation(:)), repeat);
 
-        % avoid computing following values for speed
-        emp = nan;%eerrfunc(mean(out,2),tar);
-        nll = nan;%enllfunc(mean(out,2),tar);
+            % repeat cross-validation training r times
+            for r = 1:repeat
+                [out(:,r),tar,~,~,s] = cross_validation( ...
+                    problem, features, trainfunc, theta, testfunc,[],true);
+                stat(r)=s;
+            end
 
-        % statistical performance measures
-        res(k,ni.se) = mean([stat.se]);
-        res(k,ni.sp) = mean([stat.sp]);
-        res(k,ni.gm) = mean([stat.gm]);
-        res(k,ni.mcc) = mean([stat.mc]);
-        res(k,ni.emp) = emp;
-        res(k,ni.nll) = nll;
+            % avoid computing following values for speed
+            emp = nan;%eerrfunc(mean(out,2),tar);
+            nll = nan;%enllfunc(mean(out,2),tar);
 
-        if mod(k,10) == 0, fprintf('|'), else fprintf('.'), end
+            % statistical performance measures
+            res(k,ni.se) = mean([stat.se]);
+            res(k,ni.sp) = mean([stat.sp]);
+            res(k,ni.gm) = mean([stat.gm]);
+            res(k,ni.mcc) = mean([stat.mc]);
+            res(k,ni.emp) = emp;
+            res(k,ni.nll) = nll;
 
-    end % for k
+            if mod(k,10) == 0, fprintf('|'), else fprintf('.'), end
 
-    % find number of hidden layers with best erformance
-    [ii] = find(abs(crit_sgn.*res(:,crit_idx) ...
-                    -max(crit_sgn.*res(:,crit_idx)))<1e-5,1,'first');
-    best = nh(ii)
+        end % for k
+
+        % find number of hidden layers with best erformance
+        [ii] = find(abs(crit_sgn.*res(:,crit_idx) ...
+                        -max(crit_sgn.*res(:,crit_idx)))<1e-5,1,'first');
+        best = nh(ii)
+
+    end
 
     time = time_tick(time, 1);
 
@@ -149,5 +157,6 @@ function [best,out,hid,res,names,nt] = select_model_mlp(...
                                          method,[],fann);
     end
 
-    nt = numel(nh)*repeat;
+    nt = (~trivial)*numel(nh)*repeat;
+
 end
