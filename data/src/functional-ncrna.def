@@ -1,0 +1,7 @@
+#!/bin/bash
+NAME="functional-ncrna"
+SRC='src/mipred/Rfam7.0/rnafold/*'
+SRCDIFF=""
+CLS="-1"
+SPECIES="-s ncrna"
+MULTILOOP="-m"

@@ -1,0 +1,7 @@
+#!/bin/bash
+NAME="coding/3svm-train"
+SRC="src/triplet/5_training_dataset/train_cds_168.txt"
+SRCDIFF=""
+CLS="-1"
+SPECIES="-s hsa"
+MULTILOOP=""

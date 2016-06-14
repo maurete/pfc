@@ -1,0 +1,7 @@
+#!/bin/bash
+NAME="other-ncrna"
+SRC='src/micropred/754-other-ncRNAs-fix.fasta'
+SRCDIFF=""
+CLS="-1"
+SPECIES="-s ncrna"
+MULTILOOP="-m"

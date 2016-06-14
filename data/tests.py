@@ -5,11 +5,16 @@ import argparse
 import re
 import sys
 import math
-import feats
-from feats import load_fasta, mult_fmt, seqn_fmt
+import gzip
+from feats import load_fasta, mult_fmt, seqn_fmt, triplet_feats_extra
 
 # error máximo tolerado al comparar floats
 ERROR_THR = 1E-14
+
+# formato delta_mirbase
+mirbase_fmt = r'^>([\w-]+)\s+(MI\d+)\s+.*$'
+
+
 
 
 def triplet_compare_fasta( set1files, set2files ):
@@ -66,7 +71,7 @@ def triplet_compare_fasta( set1files, set2files ):
         if abs(set1[j][8]-set2[k][8]) > ERROR_THR:
             print("{}: LEN_BP_RATIO differ! ({:.15g},{:.15g})".format(
                 set1[j][0],set1[j][8],set2[k][8]))
-        
+
         j = j+1
         k = k+1
 
@@ -90,12 +95,12 @@ def triplet_validate_extra ( infile ):
 
     # leo el contenido de los archivos
     set1 = load_fasta(infile)
-    
+
     j = -1
     while j < len(set1)-1:
         j = j+1
 
-        xf = feats.triplet_feats_extra(set1[j][2],set1[j][3])
+        xf = triplet_feats_extra(set1[j][2],set1[j][3])
 
         if re.match( mult_fmt, set1[j][3]):
             print("{}: multi-loop but still present in database!!!".format(
@@ -120,7 +125,7 @@ def triplet_validate_extra ( infile ):
         if abs(set1[j][8]-xf["len_bp_ratio"]) > ERROR_THR:
             print("{}: LEN_BP_RATIO differ! ({:.15g},{:.15g})".format(
                 set1[j][0],set1[j][9],xf["len_bp_ratio"]))
-        
+
 
     print("validated {} elements.".format(j+1))
 
@@ -137,7 +142,7 @@ def triplet_compare_svm ( file1, file2 ):
     """
 
     libsvm_ent = r"(\d+):([\d.]+)"
-    
+
     str1 = ""
     str2 = ""
 
@@ -166,7 +171,7 @@ def triplet_compare_svm ( file1, file2 ):
         if len(j.split()) != len(k.split()):
             print("Vector size invalid at line {}! Aborting.".format(i))
             return
-        
+
         for l,m in zip(j.split(),k.split()):
             n = re.split(libsvm_ent,l)
             o = re.split(libsvm_ent,m)
@@ -177,7 +182,7 @@ def triplet_compare_svm ( file1, file2 ):
             if (float(n[2])-float(o[2])) > ERROR_THR:
                 print("line {}: differing value for elem {}: {} vs {}".format(
                     i,n[1],n[2],o[2]))
-            
+
         i = i+1
 
     print("{} svm-format lines compared.".format(i))
@@ -206,7 +211,7 @@ def mipred_load ( contents ):
             if fields[0] == "ID":
                 '''ignore header line'''
                 continue
-         
+
             for i in range(1,24):
                 '''read feats: Len, nt(4), G+C, A+U, dint(16),
                 in that order'''
@@ -219,14 +224,14 @@ def mipred_load ( contents ):
             if fields[0] == "Len":
                 '''ignore header line'''
                 continue
-            
+
             for i in range(0,24):
                 '''read feats: Len, nt(4), G+C, A+U, dint(16), pb
                 in that order'''
                 v.append(int(fields[i]))
 
             v.append(float(fields[24])) # mfe
-        
+
         out.append(v)
 
     return out
@@ -237,7 +242,7 @@ def mipred_load ( contents ):
 def mipred_compare ( file1, file2 ):
     """
     Compara 2 archivos de features de miPred.
-    Ignora los campos ID, %xx, Nxx, Q y D 
+    Ignora los campos ID, %xx, Nxx, Q y D
     Imprime mensajes en pantalla para las discrepancias encontradas.
     @param file1: el primer archivo a leer.
     @param file2: el segundo archivo a leer.
@@ -264,7 +269,7 @@ def mipred_compare ( file1, file2 ):
 
     feats1 = mipred_load(str1)
     feats2 = mipred_load(str2)
-    
+
     # assert the number of vectors in each file is the same
     if len(feats1) != len(feats2):
         print("Files differ in number of elements! Refusing to compare.")
@@ -283,7 +288,7 @@ def mipred_compare ( file1, file2 ):
                     r,fieldnames[c],feats1[r][c],feats2[r][c]))
                 print(feats1[r])
                 print(feats2[r])
-        
+
         # compare the last value (mfe)
         if (feats1[r][24]-feats2[r][24]) > ERROR_THR:
             print("entry {} feat mfe: differing value: {} vs {}".format(
@@ -319,7 +324,7 @@ def upred_load ( contents ):
             if fields[0] == "ID":
                 '''ignore header line'''
                 continue
-         
+
             for i in [18,31,21,42,43,44]:
                 '''read feats: mfei1, mfei4, dp, au/l, gc/l, gu/l,
                 in that order'''
@@ -340,12 +345,12 @@ def upred_load ( contents ):
             v.append(mfe) # mfe
             v.append(pgc) # %G+C
             v.append(int(lng)) # length
-            
+
         else:
             if fields[0] == "MFEI1":
                 '''ignore header line'''
                 continue
-            
+
             for i in range(6):
                 '''read feats: mfei1, mfei4, dp, au/l, gc/l, gu/l,
                 in that order'''
@@ -357,7 +362,7 @@ def upred_load ( contents ):
                 v.append(float(fields[7])) # mfe
                 v.append(float(fields[8])) # %G+C
                 v.append(  int(fields[9])) # length
-        
+
         out.append(v)
 
     return out
@@ -368,7 +373,7 @@ def upred_load ( contents ):
 def upred_compare ( file1, file2 ):
     """
     Compara 2 archivos de features de miPred.
-    Ignora los campos ID, %xx, Nxx, Q y D 
+    Ignora los campos ID, %xx, Nxx, Q y D
     Imprime mensajes en pantalla para las discrepancias encontradas.
     @param file1: el primer archivo a leer.
     @param file2: el segundo archivo a leer.
@@ -395,7 +400,7 @@ def upred_compare ( file1, file2 ):
 
     feats1 = upred_load(str1)
     feats2 = upred_load(str2)
-    
+
     # assert the number of vectors in each file is the same
     if len(feats1) != len(feats2):
         print("Files differ in number of elements! Refusing to compare.")
@@ -423,7 +428,7 @@ def upred_compare ( file1, file2 ):
                   1E-2, # mfe
                   1E-2, # %g+c
                   None] # length (int)
-                  
+
 
     # for each line ...
     for r in range(len(feats1)):
@@ -444,7 +449,7 @@ def upred_compare ( file1, file2 ):
                     if verbosity > 1:
                         print("entry {} feat {}: differing value: {} vs {}".format(
                             r,fieldnames[c],feats1[r][c],feats2[r][c]))
-            
+
             for c in [7,8]:
                 # print message if discrepancies are found
                 if abs(feats1[r][c]-feats2[r][c]) > feat_error[c]:
@@ -467,7 +472,19 @@ def upred_compare ( file1, file2 ):
 
 
 
-def rnafold_clean ( infile, outfile, minlen=0, maxlen=sys.maxint ):
+def _opengzip(filename):
+    try:
+        with gzip.open(filename, 'r') as f:
+            return f.read()
+    except IOError:
+        try:
+            with open(filename, 'r') as f:
+                return f.read()
+        except IOError:
+            raise IOError('FATAL: Could not read file.')
+
+
+def rnafold_clean (infile, outfile, diff=None):
     """
     Lee el archivo de entrada y guarda un archivo FASTA eliminando
     la información de estructura secundaria calculada por RNAfold.
@@ -477,20 +494,32 @@ def rnafold_clean ( infile, outfile, minlen=0, maxlen=sys.maxint ):
     @rtype: None
     """
 
+    mirbase_ids = []
+    if diff:
+        diffcontent = _opengzip(diff)
+        for l in diffcontent.splitlines():
+            if 'NEW' in l or 'SEQUENCE' in l:
+                mirbase_ids.append(l.split()[0])
+
     # leo el archivo
     f = load_fasta(infile)
 
+    # filtro segun el diff
+    if len(mirbase_ids):
+        g = []
+        for l in f:
+            if re.match(mirbase_fmt,l[1]) and re.match(mirbase_fmt,l[1]).group(2) in mirbase_ids:
+                g.append(l)
+        f = g
+
     # para cada entrada
     for l in f:
-        if minlen <= len(l[2]) <= maxlen:
-            # si la secuencia es valida
-            if re.match(feats.seqn_fmt,l[2]):
-                # guardo la entrada en el archivo
-                outfile.write( l[1] + '\n' + l[2] + '\n' )
-            else:
-                sys.stderr.write("discarding entry {}: invalid sequence\n".format(l[0]))
+        # si la secuencia es valida
+        if re.match(seqn_fmt,l[2]):
+            # guardo la entrada en el archivo
+            outfile.write( l[1] + '\n' + l[2] + '\n' )
         else:
-            sys.stderr.write("discarding entry {}: invalid length\n".format(l[0]))
+            sys.stderr.write("discarding entry {}: invalid sequence\n".format(l[0]))
 
 
 
@@ -529,7 +558,7 @@ def rnafold_compare( set1files, set2files ):
     mfeinvalid = []
 
     vb = verbosity
-    
+
     while j < len(set1) and k < len(set2):
 
         if set1[j][0] != set2[k][0]:
@@ -557,7 +586,7 @@ def rnafold_compare( set1files, set2files ):
 
         # has rnafold info?
         if set1[j][3] and set2[k][3]:
-            
+
             # secondary structure length
             if len(set1[j][3]) != len(set2[k][3]):
                 if verbosity > 1:
@@ -644,6 +673,7 @@ def rnafold_compare( set1files, set2files ):
 
 
 
+
 # wrappers para las funciones
 def wrap_triplet_compare_fasta (obj):
     triplet_compare_fasta(obj.set1, obj.set2)
@@ -664,7 +694,7 @@ def wrap_rnafold_compare (obj):
     rnafold_compare(obj.set1, obj.set2)
 
 def wrap_rnafold_clean (obj):
-    rnafold_clean(obj.file, obj.outfile, obj.minlength, obj.maxlength)
+    rnafold_clean(obj.file, obj.outfile, obj.difffile)
 
 
 parser = argparse.ArgumentParser( description='Feature extraction tests.',
@@ -691,7 +721,6 @@ rnafclean = subp.add_parser('rnafold_clean',
 tripval   = subp.add_parser('triplet_validate',
                             description="validate 3SVM extra feats, FASTA")
 
-
 tripcmpfa.set_defaults(func=wrap_triplet_compare_fasta)
 tripcmpsv.set_defaults(func=wrap_triplet_compare_svm)
 miprcmp.set_defaults  (func=wrap_mipred_compare)
@@ -711,6 +740,11 @@ rnafclean.add_argument ( '--outfile', '-o',
                          nargs='?',
                          default=sys.stdout,
                          help="output file to write to" )
+rnafclean.add_argument ( '--difffile', '-d',
+                         type=str,
+                         nargs='?',
+                         default=None,
+                         help='miRBase diff file' )
 rnafclean.add_argument ( '--minlength', '-m',
                          type=int,
                          nargs='?',
@@ -782,7 +816,6 @@ rnafcmp.add_argument   ( '--set2', '-2',
                          nargs='+',
                          required=True,
                          help='file(s) to be read into the second set' )
-
 
 
 if __name__ == "__main__":

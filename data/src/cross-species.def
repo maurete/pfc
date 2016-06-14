@@ -1,0 +1,7 @@
+#!/bin/bash
+NAME="cross-species"
+SRC="src/triplet/7_test_dataset/*.secondstructure"
+SRCDIFF=""
+CLS="1"
+SPECIES=""
+MULTILOOP=""

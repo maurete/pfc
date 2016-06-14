@@ -1,0 +1,6 @@
+#!/bin/bash
+NAME="mirbase50"
+SRC="src/triplet/1_download_pre-miRNAs_from_miRNA_registry/hairpin.fa"
+CLS="1"
+SPECIES=""
+MULTILOOP=""

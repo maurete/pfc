@@ -1,0 +1,7 @@
+#!/bin/bash
+NAME="mirbase21-diff"
+SRC="src/mirbase/21/hairpin.fa.gz"
+SRCDIFF="-d src/mirbase/21/miRNA.diff.gz"
+CLS="1"
+SPECIES=""
+MULTILOOP="-m"

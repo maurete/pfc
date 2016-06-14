@@ -1,0 +1,6 @@
+#!/bin/bash
+NAME="coding"
+SRC="src/triplet/4_pseudo_miRNAs/8494_hairpins_over_fe_15_bp_18_from_cds.txt"
+CLS="-1"
+SPECIES="-s hsa"
+MULTILOOP=""

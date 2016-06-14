@@ -1,0 +1,7 @@
+#!/bin/bash
+NAME="mirbase12-micropred"
+SRC="src/micropred/691-pre-miRNAs.fasta"
+SRCDIFF=""
+CLS="1"
+SPECIES=""
+MULTILOOP="-m"
