@@ -27,13 +27,15 @@ gen_dataset () {
     # if ${CDHIT}; then
     # 	${C_CDHIT} -i "work/${NAME}.clean" -o "work/${NAME}.nr"
     # 	${C_MV} "work/${NAME}.nr" "work/${NAME}.clean"
+    # 	${C_RM} "work/${NAME}.nr.clstr"
     # fi
     ${C_FOLD} < "work/${NAME}.clean" > "work/${NAME}.rnafold"
     ${C_FEATS} ${MULTILOOP} -c "${CLS}" ${SPECIES} \
 	       -o "work/${NAME}" "work/${NAME}.rnafold"
     ${C_RM} "work/${NAME}.clean" "work/${NAME}.rnafold"
-    ${C_MKDIR} $(dirname "${NAME}")
-    ${C_MV} "work/${NAME}" "${NAME}"
+    ${C_MKDIR} "${NAME}"
+    ${C_MV} work/${NAME}/*.[3cfs]* "${NAME}/"
+    ${C_RM} "work/${NAME}"
 }
 
 for DEFFILE in $(ls ${DEF_DIR}/*.def)
