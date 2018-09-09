@@ -75,5 +75,6 @@ function [svm_params, out, paramh, errh, ntrain] = select_model_rmb ( ...
                                     exp(svm_params(2:end)), false, svm_tol );
 
     time = time_tick(time, 1);
+    ntrain = ntrain + 1;
 
 end

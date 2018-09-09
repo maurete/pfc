@@ -157,6 +157,6 @@ function [best,out,hid,res,names,nt] = select_model_mlp(...
                                          method,[],fann);
     end
 
-    nt = (~trivial)*numel(nh)*repeat;
+    nt = ((~trivial)*numel(nh)*size(problem.partitions.validation,2)+1)*repeat;
 
 end

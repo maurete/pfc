@@ -4,3 +4,4 @@ JSONLAB_DIR = './jsonlab-master/';
 FANN_DIR = './mfann/';
 SAMPLE_DATA_DIR = '../data';
 WEB_WORK_DIR = './run';
+RNAFOLD_EXT_CMD = 'RNAfold -noPS';

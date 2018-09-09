@@ -1,4 +1,4 @@
-function [model,nt] = select_model(problem, feats, classifier, method, varargin)
+function [model,nt,params] = select_model(problem, feats, classifier, method, varargin)
 %SELECT_MODEL Perform model selection.
 %
 %  MODEL = SELECT_MODEL(PROBLEM, FEATS, CLASSIFIER, METHOD) performs model
@@ -149,7 +149,7 @@ function [model,nt] = select_model(problem, feats, classifier, method, varargin)
         elseif strcmpi(method,'trivial')
             [params,model] = select_model_trivial(...
                 problem,feats,classifier,svmlib);
-            nt = 0;
+            nt = 1;
         elseif strcmpi(method,'gridsearch')
             [params,model,~,nt] = select_model_gridsearch(...
                 problem, feats, classifier, svmlib, ...

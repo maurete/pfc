@@ -252,6 +252,6 @@ function [svm_params,out,grid,ntrain] = select_model_gridsearch (...
 
     time_tick(time,0);
 
-    ntrain = numel(find(grid.data(:,:,gi.test)));
+    ntrain = numel(find(grid.data(:,:,gi.test)))*size(problem.partitions.validation,2)+1;
 
 end

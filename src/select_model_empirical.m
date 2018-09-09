@@ -104,5 +104,6 @@ function [svm_params,out,paramh,errh,ntrain] = select_model_empirical( ...
                                     exp(svm_params(2:end)), false, svm_tol );
 
     time = time_tick(time, 1);
+    ntrain = ntrain*size(problem.partitions.validation,2) + 1;
 
 end
