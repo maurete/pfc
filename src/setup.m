@@ -2,8 +2,8 @@ function setup
 %SETUP Installation script for required libraries
 %
 
-    libsvm_url  = ['http://www.csie.ntu.edu.tw/~cjlin/cgi-bin/libsvm.cgi?', ...
-                  '+http://www.csie.ntu.edu.tw/~cjlin/libsvm+zip'];
+% libsvm_url  = 'https://github.com/cjlin1/libsvm/archive/v318.zip';
+    libsvm_url  = 'https://github.com/cjlin1/libsvm/archive/v323.zip';
     jsonlab_url = 'https://github.com/fangq/jsonlab/archive/master.zip';
     libfann_url = 'https://github.com/libfann/fann/archive/2.2.0.zip';
     mfann_url   = 'https://github.com/dgorissen/mfann/archive/master.zip';
@@ -14,12 +14,12 @@ function setup
         found_mex = false(1,4);
         % Find libSVM installation directory
         % Search for directories with name beginning in 'libsvm'
-        aux = ls('.'); aux = textscan(aux,'%s','delimiter','\t'); aux = aux{1};
+        aux = textscan(ls('.','-1'),'%s'); aux = aux{1};
         idx = strncmpi(aux,'libsvm',6);
         for j=1:numel(idx)
             % Guess svmdir looking for 'svm.cpp' file
             if idx(j) && isdir(aux{j}) && exist([aux{j},'/svm.cpp'])
-                libsvm_dir = aux{j};
+                libsvm_dir = aux{j}
                 break
             end
         end
@@ -66,7 +66,7 @@ function setup
         found_m = false(1,numel(mfiles));
         % Find jsonlab installation directory
         % Search for directories with name beginning in 'jsonlab'
-        aux = ls('.'); aux = textscan(aux,'%s','delimiter','\t'); aux = aux{1};
+        aux = textscan(ls('.','-1'),'%s'); aux = aux{1};
         idx = strncmpi(aux,'jsonlab',7);
         for j=1:numel(idx)
             if idx(j) && isdir(aux{j}), jsonlab_dir = aux{j}; break, end
@@ -86,7 +86,7 @@ function setup
         found_mex = false(1,numel(mexfiles));
         % Find FANN Matlab bindings installation directory
         % Search for directories with name beginning in 'mfann'
-        aux = ls('.'); aux = textscan(aux,'%s','delimiter','\t'); aux = aux{1};
+        aux = textscan(ls('.','-1'),'%s'); aux = aux{1};
         idx = strncmpi(aux,'mfann',5);
         for j=1:numel(idx)
             if idx(j) && isdir(aux{j}), fann_dir = aux{j}; break, end

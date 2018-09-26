@@ -199,7 +199,7 @@ function prob = problem_gen(data_spec, varargin)
     sources  = {};
 
     % set scaling function
-    scalefun = @scale_data;
+    scalefun = @scale_norm;
     if symmetric, scalefun = @scale_sym; end
 
     % load data by scanning data_spec

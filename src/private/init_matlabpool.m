@@ -15,7 +15,7 @@ function init_matlabpool(Nworkers)
             end
         else
             % in newer versions just try to create the pool with default params
-            parpool
+            parpool;
         end
     catch e
     end

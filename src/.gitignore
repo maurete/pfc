@@ -1,11 +1,6 @@
-*.fig
-*.mat
-*.tsv
-*.xls
-*.xlsx
-*.bak
-*.zip
+config.m
 libsvm-*/
 jsonlab-*/
 mfann*/
 run/
+untracked/

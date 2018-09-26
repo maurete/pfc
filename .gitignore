@@ -4,3 +4,10 @@
 .unison.*
 *.bak
 .\#*
+*.fig
+*.mat
+*.tsv
+*.xls
+*.xlsx
+*.bak
+*.zip

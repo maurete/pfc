@@ -18,7 +18,7 @@ error_empirical.m error_nll.m error_rmb_csvm.m \
 kernel_linear.m kernel_rbf.m \
 model_csvm_deriv.m model_csvm.m model_sigmoid.m \
 model_sigmoid_train.m opt_bfgs.m opt_irpropplus.m opt_line_search.m \
-problem_classify.m scale_data.m scale_sym.m \
+problem_classify.m scale_data.m scale_norm.m scale_sym.m \
 select_model_empirical.m select_model_gridsearch.m \
 select_model_mlp.m select_model_rmb.m select_model_trivial.m \
 stpart.m
