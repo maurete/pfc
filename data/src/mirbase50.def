@@ -3,4 +3,8 @@ NAME="mirbase50"
 SRC="src/triplet/1_download_pre-miRNAs_from_miRNA_registry/hairpin.fa"
 CLS="1"
 SPECIES=""
-MULTILOOP=""
+MULTILOOP="-m"
+## species found in this dataset (for testing)
+TEST_SPECIES=" ath cbr cel dme dps dre ebv gga hsa mmu osa rno"
+## entry count for each species (for testing)
+TEST_ENTRIES="111 79 116 78 73 30 5 121 207 214 125 186"

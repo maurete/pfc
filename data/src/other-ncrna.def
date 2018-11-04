@@ -5,3 +5,7 @@ SRCDIFF=""
 CLS="-1"
 SPECIES="-s ncrna"
 MULTILOOP="-m"
+## species found in this dataset (for testing)
+TEST_SPECIES=" ncrna"
+## entry count for each species (for testing)
+TEST_ENTRIES="754"

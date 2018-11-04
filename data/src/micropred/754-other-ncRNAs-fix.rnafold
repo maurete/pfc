@@ -1,0 +1,2262 @@
+>miscellaneous_RNA_1
+GGCUGGCUUUAGCUCAGCGGUUACUUCGACAGUUCUUUAAUUGAAACAAGCAACCUGUCUGGGUUGUUCGAGACCCGCGGGCGCUCUCCAGUCCUUUU
+((((((.....((((.((((....((((((((((....)))))......(((((((....))))))))))))..)))))))).....))))))..... (-33.10)
+>miscellaneous_RNA_2
+GGCUGGCUUUAGCUCAGCGGUUACUUCGAGUACAUUGUAACCACCUCUCUGGGUGGUUCGAGACCCGCGGGUGCUUUCCAGCUCUUUU
+((((((.....((((.((((.(((.....)))..(((.((((((((....)))))))))))...)))))))).....))))))..... (-32.60)
+>miscellaneous_RNA_3
+GGCUGGCUUUAGCUCAGCGGUUACUUCGCGUGUCAUCAAACCACCUCUCUGGGUUGUUCGAGACCCGCGGGCGCUCUCCAGCCCUCUU
+((((((.....((((.((((...........(((.((.(((.((((....)))).))).))))))))))))).....))))))..... (-31.50)
+>5S_rRNA_1
+GUCUACGGCCAUACCACCCUGAACGCGCCCGAUCUCGUCUGAUCUCGGAAGCUAAGCAGGGUCGGGCCUGGUUAGUACUUGGAUGGGAGACCGCCUGGGAAUACCGGGUGCUGUAGGCUUU
+(((((((((....((((((((...((..((((..((....))..))))..))....)))))).))(((((((...(.((..(.(((....))).)..)))..))))))))))))))))... (-53.90)
+>5S_rRNA_2
+GUCUACGGCCAUACCACCCUGAACGCGCCCGAUCUCGUCUGAUCUCGGAAGCUAAGCAGGGUCGGGCCUGGUUAGUACUUGGACGGGAGACCGCCUGGGAAUACCGGGUGCUGUAGGCUUU
+(((((((((....((((((((...((..((((..((....))..))))..))....)))))).))(((((((.....((.((.(((....))))).))....))))))))))))))))... (-55.80)
+>5S_rRNA_3
+GUCUACGGCCAUACCACCCUGAACGCGCCCGAUCUCGUCUGAUCUCGGAAGCUAAGCAGUGUCGGGCCUGGUUAGCACUUGCAUGGGAGACCGCCUGGGAAUACCGGGUGCUGUAGGGUU
+...............((((((...(((((((.((......))((((((..(((((.(((.(.....)))).)))))........((....))..))))))....)))))))..)))))). (-43.80)
+>5S_rRNA_4
+GUCUACGGCCAUACCACCCUGAAUGAGCCUGAUCUCGUCUGAUCUUGGAAGCUAAGCAGGGUCGGGCCUGGUUAGUACUUGGAUGGGAGACCACCUGGGAAUACCGGGUGCUGUAGGCUUU
+(((((((((....((((((((...(..((.((((......))))..))...)....)))))).))(((((((...(.((..(.(((....))).)..)))..))))))))))))))))... (-53.30)
+>5S_rRNA_5
+GUCUACGGCCAUACCACCCUGAACGCCCCCGAUCUCGUCUGAUCUCGGAAGCUAAGCAGGGUCGGGCCUGGUUAGUACUUGGAUGGGAGACCGCCUGGGAAUACCGGGUGCUGUAGGCUU
+(((((((((....((((((((...((..((((..((....))..))))..))....)))))).))(((((((...(.((..(.(((....))).)..)))..)))))))))))))))).. (-53.60)
+>YRNA_1
+GGCUGGUCCGAAGGUAGUGAGUUAUCUCAAUUGAUUGUUCACAGUCAGUUACAGAUCGAACUCCUUGUUCUACUCUUUCCCCCCUUCUCACUACUGCACUUGACUAGUCUUU
+((((((((....(((((((((..((((.(((((((((....)))))))))..)))).((((.....))))................)))))))))......))))))))... (-37.30)
+>YRNA_2
+GGCUGGUUCGAGUGCAGUGGUGUUUACAACUAAUUGAUCACAACCAGUUACAGAUUUAUUUGUUCCUUCUCCACUCCCACUUUUUCACUUGACUAGCCCU
+(((((((.((((((.(((((......(((....))).........((..(((((....)))))..)).........)))))....))))))))))))).. (-26.60)
+>YRNA_3
+GCUGAUCCGAGUGCAGUGGUGUUUACAACUACUUGAUCACAACCAGUUACAGAUUUCUUUGUUCCUUCUCCACUCCCACUGCUUCACUUAACUGGCC
+(((..(..(((((.((..(((....(((....))).........((..(((((....)))))..))..........)))..)).))))).)..))). (-17.90)
+>YRNA_4
+GCUGGUCUGAGUGCAGUGGUGUUUACAACUAAUUGAUCACAACCAGUUACAGAUUUCUUUGUUCCUUCUCCACUCCCACUGCUUCACUUGACUAACCUUU
+..(((((.(((((.((..(((....(((....))).........((..(((((....)))))..))..........)))..)).))))))))))...... (-21.40)
+>YRNA_5
+GCUGGUCUGAGUGCAGUGGUGUUUACACCUAAUUGAUCACAACCAGUUACAGAUUUCUUUGUUCCUUCUCCACUCCCACAGCUUCACUUGACUAGCCUU
+(((((((.(((((.(((((((....))))...............((..(((((....)))))..))..............))).))))))))))))... (-26.00)
+>YRNA_6
+GGCUGGUCCGAGUGCAGUGGUGUUUACAACUAAUUGAUCACAACCAGUUACAGAUUUCUUUGUUCCUUCUCCACUCCCACUGCUUCACUUGACUAGCCUUU
+((((((((.(((((.((..(((....(((....))).........((..(((((....)))))..))..........)))..)).)))))))))))))... (-31.00)
+>YRNA_7
+GGCUGGUCUGAGUACAGUGGUGUUUACAACUAAUUGAUCACAACCAGUUACAGAUUUCCUUGUUCCUUCUCCACUCCCACUGUUUCACUUGACUAGCCUUU
+((((((((.(((((((((((......(((....))).........((..((((......))))..)).........)))))))...))))))))))))... (-28.10)
+>YRNA_8
+GGCUGAUCCGAGUGCAAUGGUGUUUACUACUAAUUGAUUACAACCAGUUACAGAUUUCUUUGUUUCUUCUCCACUCCCACUGCUUCACUUGACUAGCCUU
+(((((...((((((.(..((((...........(((....)))..((..(((((....)))))..))..........))))..).))))))..))))).. (-19.00)
+>YRNA_9
+GGCUGGUCCAAGUGCAGUGGUGUUUACAACUAACUGAUCACAACCAGUUACAGAUUUCUUUGUUCCUUCUCCACUCCCACUGCUUCGCUUGACUAGCCUU
+((((((((.(((((((((((...........(((((........)))))(((((....))))).............)))))))...)))))))))))).. (-32.70)
+>YRNA_10
+GGCUGGUCCUAGUGCAGUGGUGUUUACAACUAAUUCAUCACAACCAGUUAGAGAUUUCUUUCUUCCUUCUCCACUCCCACUGCUUCACUUGACUAGCCUU
+((((((((..((((.((..(((.....((((..............)))).((((.............))))......)))..)).)))).)))))))).. (-29.16)
+>YRNA_11
+GGCUGGUCUGAGUGCAGUGGUGUUUACAACUAAUUGAUCACAACCGGUUACAGAUUUCUUUGUUCCUUCUCCACUCCCACUGCUUCAAUUGAUCAGCCUU
+((((((((((((.(((((((......(((....))).........((..(((((....))))).))..........)))))))))))...)))))))).. (-31.40)
+>YRNA_12
+GGCUGGUCCAAGUGCAGUGGUGUUUACAACUAAUUGUUCACAACCAGUUACAUAUUUCUUUGUUCCUUCUCCACUCCCACUGCUUCACUUGACUAUCCU
+((.(((((.((((((((((((((..((((....))))..)))...((..(((........)))..)).........)))))))...))))))))).)). (-26.00)
+>YRNA_13
+GGCCGGCUCGAGUGCAGUGGUGUUUACAACUAAUUGAUCACAACCAGUUACAGAUUUCUUUGUUCCUUCUCCACUCCCACUGCUUCACUUGACUAGUCUUU
+(((..(.(((((((.((..(((....(((....))).........((..(((((....)))))..))..........)))..)).))))))))..)))... (-24.60)
+>YRNA_14
+GGCUGGUCUGAGGCAGUGAUGUUUACAACUAAUUGAUCACAACCAGUUACAGAUUCCUUUGUUCCUUCUCCACUCCCACUGCUUCACUUGACUAGCCUUU
+((((((((((((((((((.(((...(((....)))...)))...((..(((((....)))))..))..........))))))))))...))))))))... (-32.20)
+>YRNA_15
+GGCUGGUCUGAGUGCAGUGGUGUUUACAACUAAUUGAUCACAACCAGUUACAGAUUUCAUUGUUCCUUCCCCACUCCUACUGCUUCACUUGACUUGCCUU
+(((.((((.(((((.((..(((........((((((........))))))..(....)...................)))..)).))))))))).))).. (-23.70)
+>YRNA_16
+GCUGGUCCGAGUGCAGUGGUGUUUGUAACUAAUUGAUCACAACCAGUUACAGAUUUCUUUGUUCCUUCUCCACUCCCACUGCUUCACUUGACUAGCCUU
+(((((((.(((((((((((.((((((((((..(((....)))..)))))))))).....................)))))))...)))))))))))... (-32.45)
+>YRNA_17
+GGCUGGUCUGAGUGCAGUGGUGUUUACAACUAAUUGAUCACAAGCAGUUACAGGUCUCUUUGUUCCUUCUCCACUCCCACUGCUUCACUUGACUAGCCU
+((((((((.(((((.((..(((.....((((..(((....)))..))))..(((.(.....)..)))..........)))..)).))))))))))))). (-32.20)
+>YRNA_18
+GGCUGGUCUGAGUGCAGUGGUGUUUACAACUAAUUGAUCACAACUAGUUACAGAUUUCUUUGUUCCUUCUCAACUCCCACUGCUUCACUUGACUAGCCUUU
+((((((((((((.(((((((.(((...(((((.(((....))).)))))(((((....)))))........)))..)))))))))))...))))))))... (-32.90)
+>YRNA_19
+GGCUGGUCUGAGUGCAGUGGUGUUUACAACUAAUUGAUCACAACCAGCUACAGAUUUCUUUGUUCCUUCUUCACUCCCACUGCUUCACUUGAUAAGCCUUU
+((((.(((.(((((.((..(((....(((....))).........((..(((((....)))))..))..........)))..)).)))))))).))))... (-24.40)
+>YRNA_20
+GGCUGGUCUGAGUGCAGUGGUAUUUACAACUAAUUGAUCACAAUCAGUUAUAGAUUUCUUUGUUCCUUCUCCACUCCCACUGCUUCACUUGACUAGCCUUU
+((((((((((((.(((((((.(((((.((((.((((....)))).)))).))))).....................)))))))))))...))))))))... (-31.95)
+>YRNA_21
+GGCUGCUUCGAGUGCAGUGGUGUUUACAACUAAUUGAUCACAACCAGUUACAGAUUUCUUUGUUCCUUCUCCACUCCCACUGCUUCACUUGACUAGCCUU
+(((((..(((((((.((..(((....(((....))).........((..(((((....)))))..))..........)))..)).))))))).))))).. (-26.80)
+>YRNA_22
+GGCUGGUCCGAAUACAGUAGUGUUUACAACUAAUUGAUCACAACCAGUUACAGAUUUCUUGGUCCCUUCUCCACUCCCACUGCUUCACUUGACUAGCCUU
+((((((((.......(((((((........((((((........)))))).........(((........)))....)))))))......)))))))).. (-25.82)
+>YRNA_23
+GCUGGUCCAAGUGCAGUGGUGUUUGCAACUAAUUGAUCACAACCAGUUACAGAUUUCUUUGUUCCUUCUCUACUCCCACUGCUCCACUUGACUAGCCUU
+(((((((.(((((((((((.(((((.((((..(((....)))..)))).)))))......((.........))..)))))))...)))))))))))... (-28.20)
+>YRNA_24
+GGCUGGUCUGAGUGCAGUGGUGUUUACAACUCAUUGAUCACAACCAGUUACAGAUUUCUUUGUUCCUUCUCCACUCCCACUGCUUCAUUUGACUAGUCUU
+((((((((((((.(((((((......(((....))).........((..(((((....)))))..)).........)))))))))))...)))))))).. (-28.20)
+>YRNA_25
+GGCUGGUCCGAUGGUAGUGGGUUAUCAGAACUCAUUAACAUUAGUGUCACUGAAGUUGAUAUACAACCCCCAACUGCUAAAUUUGACUGGCUU
+(((..(((.((((((((((((...((((....(((((....)))))...)))).((((.....)))).))).))))))..))).)))..))). (-29.00)
+>YRNA_26
+GGCUGGUCCGAUGGUAGUGGGUUAUCAGAACUUAUUAACAUUUGUGUCACUAAAAUUGGUAUACAACCUCCCACUGCUAUAUUUGACUGGCU
+(((..(((..(((((((((((....................((((((.((((....))))))))))...)))))))))))....)))..))) (-30.60)
+>YRNA_27
+GGCUGGUCCGAUGGUAGUGGGUUAUCAGAACUUAUUAACAUUAGUGUCACUAAAGUUGGUAUACAACCCCCCACUGCUAAAUUUGACUGGCUU
+(((..(((.((((((((((((...........(((((((.((((.....)))).)))))))........)))))))))..))).)))..))). (-32.11)
+>YRNA_28
+GGCUGGUCCGAUGGUAGUGAUUUAUCAGAACUUAUUAACAUUAGUGUCACUAAAGUUGGUAUACAACCCCCCACUGCUAAAUUUGACUGGCUU
+(((..(((.((((((((((.............(((((((.((((.....)))).)))))))..........)))))))..))).)))..))). (-25.30)
+>YRNA_29
+GGCUGGUCCGAUGGUAGUGGGUCAUCAGAACUUAUUAACAUUAGUGUCACUAAAGUUGGUAUACAACCCCCCAUUGCUAAAUUUCACUGGAUU
+..(..((....((((((((((...........(((((((.((((.....)))).)))))))........))))))))))......))..)... (-22.21)
+>YRNA_30
+GGCUGCUCUGAUGGUAGUAGGUUAUCAGAACUUACUAACAUUAGUGUCACUAAAGUUGGUAUACAACCCCCCACUGCUAAAUUUGACUGGCUU
+(((....((((((.(((((((((.....))))))))).)))))).)))......((((.....))))........((((........)))).. (-23.60)
+>YRNA_31
+GGCUGGUCCUAUGGUAGUGGGUUAUCAGAACUUAUUAACUUUAGUGUCACUAAAGUUGGUAUACAACCCCCCAUUGCUAAAUUUGACUGGCUU
+(((..(((...((((((((((...........((((((((((((.....))))))))))))........)))))))))).....)))..))). (-33.41)
+>YRNA_32
+AGUUGGUCCGAGUGUUGUGGGUUAUUGUUAAGUUGAUUUAACAUUGUCUCCCCCCACAACCGCGCUUGACUAGCUUGCUGUUUU
+((((((((.((((((((((((.((.(((((((....))))))).))......))))))...))))))))))))))......... (-26.50)
+>snoRNA_1
+UGGACCAAUGAUGAGACAGUGUUUAUGAACAAAAGAUCAUGAUUAAUCCAGUUCUGCACAAAACACUGAGGUCCAUU
+((((((.((.((((.....((((....)))).....)))).)).....((((............)))).)))))).. (-16.80)
+>snoRNA_2
+AAAGUGAGUGAUGAAUAGUUCUGUGGCAUAUGAAUCAUUAAUUUUGAUUAAACCCUAAACUCUGAAGUCC
+(((((.((((((..(((((......)).)))..)))))).)))))......................... ( -7.60)
+>snoRNA_3
+AUAGCCAAUCAUUAGUAUUCUGAGCUGUAGGAAUCAAAGAUUUUGAUUAGAUUCUGUAACUCAGAGGUUUA
+.................(((((((.....((((((.((........)).))))))....)))))))..... (-14.00)
+>snoRNA_4
+UAGACCAAUGAUGAGUAUUCUGGGGUGUCUGAAUCAAUGAUUUUGAUUAAACCCUGUAACUCUGAGGUCCA
+..((((......((((...(.(((((.....((((((.....))))))..))))))..))))...)))).. (-18.60)
+>snoRNA_5
+UGGACCAAUGAUGAGUACCAUGGGGUAUCUGAAACAGGAUUUUUGAUUAAACCCAUAUGCAAUUCUGAGGUCCA
+.(((((...((...(((..(((((..(((.((((.....)))).)))....))))).)))...))...))))). (-20.20)
+>snoRNA_6
+UGGAUCAAUGAUGAGUAUUGGUGGAGGUGUCUGAAUCAACACUUUUGAUUAAGCCCUCUGUGUAACUCUGAGAUCUG
+.(((((......((((....(..((((.(.((.((((((.....)))))).)))))))..)...))))...))))). (-20.20)
+>snoRNA_7
+UGGACCAGUGAUGAAUAUCAUGGGGUUUCUGAAACAACAUUUUUGAUUAAACCCAUCUGCAACUCUGAGGUCCA
+.(((((.(((((....))))).(((((((.((((.....)))).))...)))))..............))))). (-18.10)
+>snoRNA_8
+UGGAUCAAUGAUGAGUAUGCGUGGGGCAUCUGAAUCAAAUAUUCUGAUUAUACCCUGUCUGUAUCUCUGAGGUCCA
+.(((((......(((.(((((..(((.(((.((((.....)))).)))....)))..)..)))))))...))))). (-19.10)
+>snoRNA_9
+UGGACCAAUGAUGAGAUUGGAGGGUGUCUGAAUCAAAAAUUUUGAUUAAAGCCAUCUGUAACUCUGAGGUCCA
+.(((((......(((..((((.(((.....((((((.....))))))...))).))))...)))...))))). (-20.40)
+>snoRNA_10
+UGGAUCAAUGAUGAGUACCCUGGGGUGUCUGAAUCUUGGAUUUUGAUUAAACCCUAUAACUCUGAGGUCCA
+.(((((......((((....(((((((((.(((((...))))).)))...))))))..))))...))))). (-19.80)
+>snoRNA_11
+UGGACCUAUGAUGAUGACUGGUGGCGUAUGAGUCAUUGACGGUGAAUACAGGUCUGGAAGUCUGAGGUCCA
+.((((((..(((...((((.(((...(((..(((...))).)))..))).)))).....)))..)))))). (-21.70)
+>snoRNA_12
+AAGAUCAAUGAUGACUACUGUUAGUGUAUGAGUUACACAUGAUGAAUACAUGUCUGAAACUCUGAGGUCCA
+..((((.....((((....))))......(((((.((((((.......)))))..).)))))...)))).. (-12.20)
+>snoRNA_13
+UGGACCAGUGAUGGUGACUGGUGGUGUGUGAGUCAUGCACAGUGAAUAUCAUGUGUCUGGAACUCUGAGGUCCA
+.(((((.((((((.(.((((...(((((.....))))).)))).).))))))......((....))..))))). (-23.60)
+>snoRNA_14
+UGGACCAAUGAUGACAAAUACCGGCGUAUGAGUCUUGGAUGAUGAAUAAUACGUGUCUGGAACUCUGAGGUCCA
+.(((((...........((((....))))((((.(..(((.(((.......))))))..).))))...))))). (-18.60)
+>snoRNA_15
+UGGACCAGUGAUGACCACUGGUGGCAUAUGAGUCAUACACAUGAACACCAUGUUUCUAGAACUCUGAGGUCCA
+.(((((....(((.(((....))))))..((((..((.(((((.....)))))...))..))))...))))). (-22.30)
+>snoRNA_16
+UGGACCAAUGAUGACAACUGCCGGCGUAUGAGUGUUGGGUGAUGAAUAAUACGUGUCUAGAACUCUGAGGUCCA
+.(((((......((((....((((((......))))))(((........))).)))).((....))..))))). (-16.00)
+>snoRNA_17
+UGGAUCGAUGAUGACCACUGGUGGCGUAUGAGUCAUACAUGAUGAAUAUGUGUCUGGAACUCUGAGGUCCU
+.(((((...((......(..(..((((((..((((....))))..))))))..)..)...))...))))). (-17.70)
+>snoRNA_18
+UGGACCAAUUAUGACUACUGGUGUGAGUCACGCAUAAUGAACACCACGUGUCUGGAACUCUGAGGUCCA
+.(((((......(((.((((((((..((........))..)))))).))))).((....))..))))). (-20.80)
+>snoRNA_19
+UGGACCAAUGAUGACAAAUGGUGGCAUUGGAGUUAUGGACGAUGAAUGAUAUGUGUCUGAAACUCUGAGGUCCA
+.(((((...((((.((.....)).))))((((((.(((((((((.....))).)))))).))))))..))))). (-20.60)
+>snoRNA_20
+UAGAUCAGUGAUGACUACUGUUGGUGUAUGAGUCAUAUACGAUGAAUACAUGUCUGAAAUUCUGAGGUCCA
+((((.(((((.....)))))...((((((..(((......)))..)))))).........))))....... (-12.30)
+>snoRNA_21
+UGGAUCAAUGAUAAAACUUGCUGGCAUAUGAAUCUUGGAUAAUGGAUGAUACGUGUGUGGAACUCUGAGGUCCA
+.(((((.................(((((((.((((........))))....)))))))((....))..))))). (-14.00)
+>snoRNA_22
+GGGACCAAUGAUAAUGACUGUUGGGGUAUGAGUCAGUGAGGUUGAAUAACAGUUUGUAUCUGGAAAUCUGAGGUCCA
+.(((((...((((..((((((((.........((((.....)))).))))))))..)))).((....))..))))). (-19.50)
+>snoRNA_23
+UGGAUCGAUGAUGACUACUGGUGGCGUAUGAGUCAUCUACAGUGAAUACGUCUCUGGAACUCUGAGGUCUG
+.(((((...((......(..(.(((((((...((((.....))))))))))).)..)...))...))))). (-17.20)
+>snoRNA_24
+UGGAUCAAUGAUGACCACUGGUGGCGUAUGAGUCAUAUGUGAUGAAUACGUGUCUGGAACUCUGAGGUCCA
+.(((((...((......(..(..((((((..((((....))))..))))))..)..)...))...))))). (-19.20)
+>snoRNA_25
+UGGAUCGAUGAUGACUACCGGUGGCGUAUGAGUCAUAUGUGAUGAAUACGUGUUUGGAACUCUGAGGUCCA
+.(((((...((......((((..((((((..((((....))))..))))))..))))...))...))))). (-20.80)
+>snoRNA_26
+UGGAUCGAUGAUGACUACUGGUGGCGUAUGAGUCAUAGACAAUGAAUACGUGUCUGGAACUCUGAGGUCCA
+.(((((....(((.(((....))))))..((((..((((((.((....))))))))..))))...))))). (-20.70)
+>snoRNA_27
+UGGAUCGAUGGUGACUGUUGAUGGCAUAUGACUCACAUAUGAUGAGUACGUAUCUGGAACUCUGAGGUCUG
+.(((((...(....).(((..(((.(((((((((((....).))))).)))))))).))).....))))). (-15.70)
+>snoRNA_28
+UGGAUCGAUGAUGACUACUGGUGGCGUAUGAGUCUUUUGCGAUGAAUACGUGUCUAGAACUCUGAGGUCCG
+.(((((...((......((((..((((((..(((......)))..))))))..))))...))...))))). (-20.20)
+>snoRNA_29
+UGGAUCGAUGAUGAGCACUGGUGGAGUAUGAGUCACAUACGAUGAAUACGUGUCUGGAACUCUGAGGUCCA
+.(((((......(((..(..(....((((..(((......)))..))))....)..)..)))...))))). (-19.00)
+>snoRNA_30
+UGGUUCAGUGUUGACUACUGGUGUCGUGUGAGUCAUACAAUGAAUACAUGUCUGGAACUCUGAGGCCCA
+.(((((((.(((.....(..(...((((((..((((...)))).)))))).)..)))).)))).))).. (-16.20)
+>snoRNA_31
+UGGAUCGAUGAUGACUGCUGGUGGCGUAUGAGUCAUAUGCGAUGAAUACGUGUCUAGAACUCUGAGGUCCA
+.(((((...((......((((..((((((..(((......)))..))))))..))))...))...))))). (-21.40)
+>snoRNA_32
+UGGAUCGAUGAUGACUACUGGUAGCAUGAGUCAUAUACAGUGAAUACAUGUCUGGAACUCUGAGGUCUG
+.(((((...((......(..(..(((((..((((.....))))...))))))..)...))...))))). (-13.00)
+>snoRNA_33
+UGGACCAAUGAUGACCACUGGUGGCGUUUGAGUCAUGGACGAUGAAUACUACGUGUCUGAAACUCUGAGGUCCA
+.(((((...((((.(((....))))))).((((..(((((.(((.......))))))))..))))...))))). (-23.30)
+>snoRNA_34
+UGGAUCAAUCAUGACUACUGGUAUUGGAUGGGUCUUCGUCAGUGAAUGCCUAUCUGGAACUCUGAGGUCCA
+.(((((..(((.((......((.(..(((((((.((((....)))).)))))))..).)))))))))))). (-21.50)
+>snoRNA_35
+UGAGCAAGCGAUGACAGCCGGUGGUGUGUGAGUCAUGGAGGAUGAAUACUAAGUGCCUGGAACUCUGAGGUUCA
+.((((.((.(.(..(((.((.((((((....(((......)))..))))))..)).)))..)).))...)))). (-15.60)
+>snoRNA_36
+UGAGCCAGUGAUGAAAACUGGUGGCAUAGAAGUCAAGGAUGCUGAAUAAUGUGUGUCUAGAACUCUGAGGUUCA
+...((((((.......))))))((((((.(..(((.......)))....).))))))..(((((....))))). (-17.50)
+>snoRNA_37
+UGGAUUGAUGAUGACCACUGGUGGCCUAUGAGUCAUACAAUGAAUACGUGUCUAGAACUCUGAGGUCCA
+.(((((..(((((((((..((...))..)).))))).)).............(((....))).))))). (-12.30)
+>snoRNA_38
+UGGAUCAAUGAUGUCCACUGGUGGCGUAUAAAUCAUAUUUGGUGAAUAUAUGUCUGGAACUCUGAGGUCCA
+.(((((...((..((((.....((((((((.((((....))))...))))))))))))..))...))))). (-20.50)
+>snoRNA_39
+UGAACUAGUGGUGAUGGCUUGUGGCAUAUUUAGUCACAGAUGAUGAAUAAAUACAUGCCUGAGACUCUGAGGUUAG
+..((((((.(.....(((.((((...((((((.(((....)))))))))..)))).))).....).))..)))).. (-13.90)
+>snoRNA_40
+UGAUGAUAUGAUGGCCACUGGUGGCUUAUGAGUCUUAUACAGUGAAUACAUGUUUGAAACUCUGAGGUCUG
+....(((.....(((((....)))))...((((.(((.(((((....)).))).))).))))....))).. (-14.00)
+>snoRNA_41
+UGGAUCGAUGAUGACUGCUGGUGGCGUAUGAGUCUUACAUGAUGAAUACGUGUCUGGAACUCUGAGGUCCA
+.(((((...((......(..(..((((((..(((......)))..))))))..)..)...))...))))). (-20.90)
+>snoRNA_42
+UGCCUCAUUCUAGAGAAUGGGCACUGUUGAUCAUGGUGUCCAAAAAUAGUUAAUGUGGCUAAAUUGAGACAGGUUAUGCUUCCAUCACAGUAUGCAUAUUGCAGUGGUGACAAUGAGACCUGUAACAUUU
+.(((.(((((((.....((((((((((.....))))))))))....)))..)))).))).....((..(((((((.......((((((.(((.......))).)))))).......)))))))..))... (-38.44)
+>snoRNA_43
+GGUCUCUCAGCUCCGCUUAACCACACGGGUCCAGUGUGUGCUUGGCGUGUUUUCAGGGAGGCAGAGAAAGGCUCUCCUAAUGCACGACAGACCCGCCCAGAAUGGCCUCUCUGUUCCUAGGAGUGCGACAAUU
+.((((((((((..((((...((((((.......))))).)...)))).)))....)))))))........((.((((((......((((((...(((......)))...))))))..)))))).))....... (-41.80)
+>snoRNA_44
+GCGCUCACUAAGGCUCGGUCCUCUCCACGUGGUCCUGACCUGUCCUCUGUGAGCAAGAGAAACAGGACUGGUUUGGGGGUGUCCUGUCUCAGUGGACACAGGACACCACGGUUUUCAGUACAACA
+..((((((..(((...((((....((....))....))))...)))..))))))..........(.(((((.(((..((((((((((.((....)).)))))))))).)))...))))).).... (-48.60)
+>snoRNA_45
+UGGACAUUUAUUUUUAUUCAGUUUCUUCUCAAGGUGAAGAUAACUCUUUGUAAAUGUCCUACAGAAAUAUAGUAGCUUUCUGUUCUUCCUUUGCAAGUAAAAAGGGUGGGUCGUUCCACUACUGACAUUU
+.((((((((((........(((((((((.......))))).))))....)))))))))).(((((((.........)))))))....(((((........)))))(((((....)))))........... (-30.60)
+>snoRNA_46
+AGCCUUUGUGUUGCCCAUUCACUUUGGAAACUAGUGAAUGUGGUGUCAAAAAAGGCGUAAAUUAAACGCUUUGCAGCCUUUUCCUGCCCUUAAAUUUGAUACCUUUGGUGUAGGAGCUGCAUAAGUAACAGUU
+.((((((.((.((((((((((((..(....).)))))))).)))).))..))))))...........((((((((((....((((((((.................)).)))))))))))).))))....... (-47.13)
+>snoRNA_47
+UGCAUUCUUAAACCCUCUUGGUGGCUUCCCUGUAAAUGCUUCCAAGAUAUGAGCGAAUGCUAUAGAAAUUGCAGGAAAGUCCAAAGGGCUGCGCGUCUCCUGUGGCUCAGUCUUAUUUCAUACCUGCAACAUCU
+.((((((........((((((.(((............))).)))))).......))))))...(((..(((((((.........(((((((.((..(....)..)).)))))))........)))))))..))) (-38.39)
+>snoRNA_48
+CUGCAUUCUUAAACCCUCUUGGUAGCUUCGUUCUAAGUGCUUCCAAGAUAUGAGUGAAUGCUAUAGAAAUUGCAGGGGAGUCCAAAGGGCUGCGCUUCUCCCGUGGCUCAGUCUUAUUUCAUACCUGCGACAUCU
+..((((((........((((((.(((............))).)))))).......))))))...(((..(((((((.(((.....(((((((.(((........))).)))))))..)))...)))))))..))) (-43.16)
+>snoRNA_49
+GCAUGGCCGAAUACUGUGUUUUUAUCAGUAGUUUACACAGCCAGACACCAUGCAAAAGCAGUCUUCCCUUUAGAAUGACUGAUGGUAUGCUAAGGUUUUUCAUAGCAUAUCAUUAUUAAAGGUGAAUACAAAU
+((((((.......((((((..(((....)))...)))))).......)))))).......((.((((((((((......(((((((((((((.((....)).)))))))))))))))))))).))).)).... (-40.64)
+>snoRNA_50
+UUGGCCCUUAUCGAAGCUGCAGCUGCUUCCGCAUAGCUGCUGUGGUCAAAAAGGAGCCCAGAGUGACAGUUUUCCUUGACGGUCGCCGUUCUGUUUGUUGUAACUGAUCUGCAACAUUUUGGGAAAAUACAGUU
+..(((((((......((..((((.(((.......))).))))..))....)))).)))..........((((((((.(((((...))))).....(((((((.......)))))))....))))))))...... (-39.40)
+>snoRNA_51
+ACUGCCCCUAGAGGCGUUGCAGCUGUGGCUGCCGUGUCACAUCUGUGUCAUUAGGUGGCAGAGAUUAGAGAGGCUAUGUCUACGCUCAGCGUUCUGCCCCGUGAACGUUUGAAUGUUUGAUAGUCUCACACUC
+.((((((((((.(((...((((.((((((......)))))).))))))).))))).)))))........((((((((....(((.(((((((((........))))).)))).)))...))))))))...... (-52.60)
+>snoRNA_52
+GUUGAGGUCUAUCCCGAUGGGGCUUUUCCUGUAGCCUGCACAUCGUUGGAAACGCCUCAUAGAGUAACUCUGUGGUUUUACUUUACUCACAGGACUAUUGUUAGAUCUGUGGGAAGGAAUUACAAGACAGUU
+..((((((.(.(((((((((((((........)))))...)))))..))).).))))))........((.(((((((...((((.((((((((.(((....))).)))))))))))))))))))))...... (-41.40)
+>snoRNA_53
+GUGCACAUUUCAUUGACCUGCUUUCUUUUAUGUGAGUAGUGUUAUUUCUUAUGUGCUAUACAAAUAAUUGAAGGCUAAUUAGCAGUAUAACUAUAAAUAGUAAUGCUGCCAGUCUCCUUCAGACAAAA
+..((((((.....((((((((((.(......).)))))).))))......))))))...........(((((((...(((.(((((((.((((....)))).))))))).)))..)))))))...... (-38.20)
+>snoRNA_54
+CUUCCCAUUUAUUUGCUGCUUGUAGUCUCACAGUGAUACGAGCAGUUAUACGCAUGGGAUAAAAUAACAUUGGGCCACUGUAAAUUGAGAUGAAGUAACCAUUUUCAUCUCUUCUGCAGGGACUAGACAUUG
+..((((((......((((((((((.((.......)))))))))))).......))))))..........((((.((.(((((....(((((((((.......)))))))))...))))))).))))...... (-43.62)
+>snoRNA_55
+CCCCCUUUUAAAAGCACUCAAUGGGCCUGUGGCUAAUGACCUAUUGAGCCGUCAAGAAAGGGGAGAGUGAAAACAUCGCUUUUGGGUGAAGUGGCAACAUGUGUUGUUUGCUUCAAUCGGUGGUGUGACAAGG
+.((((((((....((.(((((((((.(..........).)))))))))..))...))))))))....((...((((((((...(..(((((..(((((....)))).)..)))))..)))))))))..))... (-45.10)
+>snoRNA_56
+UUGCACAGUGAACACCCAAGUGUGCUUUAUAGUUCCCUUGGCUUUGACCCUGUGCUAGAGCAUUGCCUGCUCUUCUCCUCUGCAUUAAAAGGAAUAUUUAUCCUUUUAAAUGUAUUCAGAAAGCCAGCACAUUA
+..((((((.(..((.(((((.(.(((....))).).)))))...))..)))))))........(((..(((.((((....(((((((((((((.......))))))).))))))...)))))))..)))..... (-35.10)
+>snoRNA_57
+CUCCAUGUAUCUUUGGGACCUGUCAGCCGUGGCAGUCUCCCUUCCUAGCCAUGGAAGAGCAUAUCCUUGUUUAUUGGCAAAGCUGUCACCAUUUAAUUGGUAUCAGAUUCUGACUUGCACAAGUAACAUUC
+.((((((.......((((.((((((....))))))..))))........))))))...(((..((.(((((....)))))..(((..((((......))))..))).....))..)))............. (-33.66)
+>snoRNA_58
+GGGUCAUUUCAAAGAGGGCUUAUGAGGCUGUGAAACCCAGAGCUCUUAACGCUGUGACCAAAGAUGGAAGUUCUCUAUAGGAAGCCAUAGCACUCCUAAUGUUUGGUGCUAUGUUUUCCUGAGGAGAUAUAAAA
+.((((((......((((((((.((.((........))))))))))))......))))))............(((((.(((((((.(((((((((..........))))))))).))))))).)))))....... (-47.40)
+>snoRNA_59
+ACUGGAGGACUAAGAAGGCUGAGUCUGAUGAAGUAAGACUUUGCUGAUACAUUCCUCCUAGAAAAAAGGGUUGGAGAGAGCAGCCUUCACUGAAGAGUAUCACAGGGCUGACUGUACUACCCAACACUC
+.((((((((.......(((.((((((.........)))))).))).......)))))).))......((((.(...(.(((((((((...(((......))).))))))).)).).).))))....... (-41.24)
+>snoRNA_60
+UACCCCCUUUUCACUUUGCCAGUUGGACUUAUGUCUUUAUUGGUCAUUCAAGUGGGGCAAAGGAAAUAUCCUUUUAAAACUCAGGCAAACUGGGUGUUUGUCUGUAUCCUGUCAGAGGAAACAAAU
+..(((((((........((((((.((((....))))..)))))).....))).)))).((((((....)))))).......(((((((((.....)))))))))..((((.....))))....... (-36.72)
+>snoRNA_61
+AAGCAACACUCUGUGGCAGAUGAUCAAAACUGUCUGACACAAUUUGAGCUUGCUAUAGCAAGAAAGUCUAACCUAUUCCGGUGUUCUCUCUCCCAUGAGACAAGCCGUUAUAUAGACUUAAACAGU
+.(((((..(((((((.((((((........)))))).))))....))).))))).........(((((((...(((..((((..((((........))))...))))..))))))))))....... (-33.60)
+>snoRNA_62
+UUUCUCAUUUGACUACCACAUUUUCUCCUAAUAAUAGAUUUUAGUGGCUAUGCUUAUGGGAUAGAUUAAACUUGCCAUGAUCUGAAGAGGGAGGGUUUUUUCAUGUCCUCCUCCUAUAUGAAAUGGCUGAACGGAUAUUA
+..((((((..(..((((((....(((.........))).....)))).))..)..))))))...(((......(((((..((((.((..((((((..........))))))..)).)).)).)))))......))).... (-29.30)
+>snoRNA_63
+UAGGCCCUGAAUCAAGACCAAUGGUUUGCUGUAGCUGUUGGUUUCAAACAGGAGCUAAGAGUGAUGUCUUCCUUGUGGUCUGUUGGCUAUUCAGUAUUCCAGUGCGAAUUGCCAAUUCAGUUGGAAGAAACAUAG
+..(((((((.....((((((((((((......))))))))))))....)))).)))....(((...((((((...(((...((((((.((((.((((....)))))))).)))))))))...))))))..))).. (-45.00)
+>snoRNA_64
+UUGGCCCUGAAUCAAGGCCAGCAGUUUGCUGAAGCUGUUGGUUUCAAGCAGGAGCCUAAAGAAUUGUCUUUCUAUGGUCUGUUGGCCAUUUCAUAACUUUGGAAAUGUAAUGGUCAAUUCAUUAGAAAGAAACAUGA
+..(((((((.....(((((((((((((....)))))))))))))....)))).)))..........(((((((((((...((((((((((.(((..(....)..))).))))))))))))).))))))))....... (-49.10)
+>snoRNA_65
+AUCGAGGCUAGAGUCACGCUUGGGUAUCGGCUAUUGCCUGAGUGUGCUAGAGUCCUCGAAGAGUAACUGCUGACCUUAUUCACUGGCUGUGGGCCUUAUGGCACAGUCAGUCACCAGGUUAGAGACAUGC
+.((((((((..((.((((((..((((........))))..))))))))..)).)))))).......((.(((((((.....(((((((((..(((....))))))))))))....)))))))))...... (-58.60)
+>snoRNA_66
+GCCGAGACUAGAGUCACAUCCUGACACAACUCUUGUCCUGGUGUGCUAGAGUACUCGAAGAGAAUCUACUGGUCUUGAUUCACUGGUGGGGGCAGUCGGUGCCCCCGUUAGUGCCCAGAUCAGAAACAUAC
+..(((((((..((.((((((..((((.......))))..))))))))..))).))))...........(((((((.(...((((..((((((((.....))))))))..)))).).)))))))........ (-52.80)
+>snoRNA_67
+CUGGCACUUUCACAGUUCCUUCCCCAGGCAGUGGGGCCAGGAUUUGGUAGCUGGUGCUGAGAGAAAACCCUUGAUUGUAUUCUUGCCCUGGGAUUAUACCAGUGGCAACUGUCACUCAAUGGGACAGUG
+..((((((....(((.((((.(((((.....)))))..)))).)))......)))))).........(((((((.((.((..(((((((((.......)))).)))))..)))).)))).)))...... (-46.20)
+>snoRNA_68
+CUGCAUCCACUGAUAGACCUUGAACAAUUUACUGUUGUUCUUUUGGUUUGCACUAGGAUGCAAAAGAAAGAAAUCCCUGCGCUUUCUGUCUGUCUUUGUGGCGGCCCAGAUUGAAUUGGGGAAUACAUCU
+.(((((((..((.((((((..(((((((.....)))))))....))))))))...)))))))...........((((((..(..((((.(((((.....)))))..))))..)...))))))........ (-42.20)
+>snoRNA_69
+UGGUCAUUACCAAGGCUUUUAGAAUGCAGUUUCUCAUUUGCUGUGGACAUGACCAUAAAAAAAUUUCCCAGUAGGUUUUCUAUCUGCUACUUUGCUAGCAAUCAGCUUAUUGGGAACAGUU
+(((((((..(((.(((....((((......)))).....))).)))..))))))).........(((((((((((((.......(((((......)))))...)))))))))))))..... (-37.10)
+>snoRNA_70
+AAGCCAGCCAAUGAAUCUGCUUACCUGAUUGUGUUUGUGCAGACAUACUUUAAAAACUGGCAAUAGUAAAGCCAUGUUACGAGCCUUAAGGACAUUGAAGUCGUUAAGGUCCCUGAGAAUGGCUAUAACAAAU
+..(((((....(((((((((..(((.....).))....))))).....))))....)))))........((((((.(((.(..((((((.(((......))).))))))..).)))..))))))......... (-37.40)
+>snoRNA_71
+GUGGCCCUGACUGAAGACCAGCAGUUGUACUGUGGCUGUUGGUUUCAAGCAGAGGCCUAAAGGACUGUCUUCCUGUGGUCUGUUGGCUGUUCUGGGACCUCAGUAGGGAAUGGCUAUUUCAUUUGGAAGAAACAACC
+..(((((((.((..(((((((((((..(...)..)))))))))))..))))).))))....((....((((((.((((.....((((((((((...((....))..))))))))))..))))..)))))).....)) (-52.40)
+>snoRNA_72
+UUCCAAAGUGUUGAGUUCAGUCCAGGGCAGCUUCCCUGUUCUGUUAAUUAAACUUUGGGACAUUAAAAUGGGCUAAGGGAGAUGAUUGGGUAGAAAGUAUUAUUCUAUUCAUUUGCCUCCCAGCCUACAAAA
+(((((((((.((((...(((..(((((......)))))..)))....)))))))))))))........((((((..(((((..((.(((((((((.......))))))))).))..)))))))))))..... (-50.20)
+>snoRNA_73
+UUCCAAAGUGUUAAGUUCAGUUCAGGGUAGCUUCCCUGCUCUGUUAAUUAAACUUUGGAACAUUGAAACUGGCUAGGGAAAAUGAUUGGAUAGAAACUAUUAUUCUAUUCAUUUAUCCCCAGCCUACAAAA
+(((((((((.((((...(((..(((((......)))))..)))....)))))))))))))..........((((.((((...(((.(((((((((.......))))))))).))))))).))))....... (-46.10)
+>snoRNA_74
+UGAGCACUUUCACAGGUCCUCCCUCAGGCUGUGGGGCCAGGAUUUGGUAGCUGGUGCUGAGAGAAAACCUUUGUUGGCAUCCUUGCCCUGGGACUGUGCCAGUGGCAGCUGUCAUUCAAUGGGACAAUU
+(.((((((....((((((((.(((((.....)))))..))))))))......)))))).).......((.(((.(((((...(((((((((.......)))).))))).)))))..))).))....... (-43.90)
+>snoRNA_75
+UCCUCCUACAAAGGCGUGUCUGUGGUUCCCUGUCUUUGGACACGUAAGAAUUGGAGGAAAAUAAAUGUGGAUUUGGGAAACUUUGAGGCCAGCUUGCUUCUUGCAGGCUCAUGAUCAACCAAUCUCACAUAA
+((((((.......(((((((((.((........)).))))))))).......))))))......((((((..((((......((((....(((((((.....))))))).....))))))))..)))))).. (-45.64)
+>snoRNA_76
+CGCCUGCAUUCGUAAGUGAUCACGGGCUGCCCGUGUCCUGGUCAUUGGUAGUGCAGGCAGAGGAAAUGCGGGAAAGGUUGCUGUGUUUGGAGGGUCCACAUCUUCACCCUCCUGUCCCAGGAGCUUUCCUACACUC
+.(((((((((....((((((((.((((.......))))))))))))...))))))))).(((....((..((((((.((.(((.(...(((((((..........)))))))...).))).))))))))..))))) (-57.90)
+>snoRNA_77
+UACCAAAAGUUAGCUUUUUGGGGGGCAGGUUUUUAAGUAACCUUUGCCAACUUGGGCUAUUUGGAAGAGUAAAAGACCACACUCCACAGUGGGCUAUACCACUUAGUAUAGUUCGCUACUAUUUUGUGGCCUACAUG
+..(((((...((((((...((..((((((((.......))))..))))..)).))))))))))).........((.(((((......((((((((((((......)))))))))))).......))))).))..... (-43.12)
+>snoRNA_78
+UGCACUUAUGUAUGUUUUUGUUUAACGUGGACAAAGACUUACAGAUAGGUGCAAAAAAUAAAUCCUCUUUUGCAACCCAGAACUCAUUGUUCAGUAUGAGUUUUGAUACAUAUAAGAAGGGAUAUUA
+((((((((((((.((((((((((.....)))))))))).))))..))))))))........((((.(((((......((((((((((........)))))))))).........))))))))).... (-39.36)
+>snoRNA_79
+UUCCACAGCUACUGGUCUGCAGCUGUUCUUAUGGUAGCAGUUGUGGCAUUCCUCUGUGGGAAAGAAACUGUUAACACAAACACCUCUUUCUUAGCAAAACAGAAAGUGGGUAUAUAUGUGUGACAGACACAA
+((((((((......(((.((((((((((.....).))))))))))))......))))))))......((((((.((((...((((((((((.........)))))).)))).....))))))))))...... (-42.50)
+>snoRNA_80
+UGGUAAUGGAUUUAUGGUGGGUCCUUCUCUGUGGGCCUCUCAUAGUGUACCCAUGCCAUAGCAAAUGGCAGCCUCGAACCAUUGCCCAGUCCCCUUACCUGUGGGCUGUGAGCACUGAAGGGGGUUGCACAGUG
+(((((.(((..(((((..((((((........))))))..))))).....)))))))).......((((((((((....((.((((((((((.(......).)))))).).))).))...)))))))).))... (-49.60)
+>snoRNA_81
+GCUGUCCUGGACCUGUUGGCACCACAGACAGUUGCUCUGCUGUGCCUGUGGCCUCGGGGCAAAGAGAAAGUGGCGAUUUCUACACUCAGUGCUCGGGAACCAGUGGGCACUGAGAAUGGUUUAUGGCCUGACAUUA
+..((((((((..(..(.(((((..(((((....).))))..))))).)..)..))))))))..........(((.((..(((..(((((((((((........)))))))))))..)))...)).)))........ (-51.80)
+>snoRNA_82
+CAGCAUGUUUCCAAGGGCUGUGGCUGGUCAUAGCCAUGGGAUCUCCAACUGCAUGCAAGAGCAACCUGGAAAGACUUUGACAGCGCAGGUCAGUACAAUACCUGCAAGCUGCCACUCAGCUUUCCUAUAAUG
+..((((((.(((...((((((((....))))))))...))).........))))))...........((((((.((.((.((((((((((.........))))))..)))).))...))))))))....... (-45.80)
+>snoRNA_83
+CUGGAGACUAAGAAAAUAGAGUCCUUGAAAUCAAGCUGACUCUGCUUUUAGCCUCCUAAAUGAAAAGGUAGAUAGAACAGGUCUUGUUUGCAAAAUAAAUUCAAGACCUACUUAUCUACCAACAGCA
+..((((.((((((...(((((((((((....))))..))))))).)))))).))))..........(((((((((...((((((((..(.........)..))))))))..)))))))))....... (-44.30)
+>snoRNA_84
+AGCACUAUAUUUAAACCUGUGGAUGGGAAUAUUCCCCAUUCUUGGUUACGCUGUAGUGCAAAAGAAUUCCUGGCUCUCUGUUGCACAGCUGACUUGUGCCAUUCUGCUGUUGCUGUAUAGAGUUAAGGAACAUGG
+.((((((((....((((...(((((((.......)))))))..))))....)))))))).......(((((((((((.((..(((((((.((..........)).)))).)))..)).)))))).)))))..... (-47.10)
+>snoRNA_85
+UGUCCCUGACCUGGGUAGAGUGGCAUCUGGUUGGUGAUGCCCAUCUCAUAUCAGCCAGGGACAAAGCAACUCCUUGUUCAUCCCAGCUUGGCUUUUGAUCCGUGCCCAUGCCUGGUUCAUGCCUUGGACACAUAG
+((((((((..((((...(((.((((((........))))))...)))...)))).))))))))...........((((((.........(((...(((.(((.((....)).))).))).))).))))))..... (-45.90)
+>snoRNA_86
+CUUCCUCAGCCUUACUCCAGGGACUUUUUGUUGCCUGUAAAGUGCUCUGGCAUUGCCUGAGGAUAGAUGAGAAAGCACAUAUCCCUCCCCAGUAAGACGCUGUUUUCUUUUGGGGCCUACAAGUUGAGCUGACAGUA
+..(((((((.(.....(((((((((((...........))))).))))))....).))))))).......(..(((.((.......((((((.((((........)))))))))).........)).)))..).... (-36.19)
+>snoRNA_87
+UGCAGCCGUGUCAAAUUCAGUACCUGUCCUAUGCAUGGUAGGCACUGGCCCAGAAGGCUGCCACAGAAACACUGUGACUCAUGGGCCCUGUUCCUGUGUCCCAGGCUCAGGGAUAAAUUUGGUUACAGACAUCA
+.((((((...((....(((((.((((.((.......)))))).)))))....)).))))))..........((((((((......(((((..((((.....))))..)))))........))))))))...... (-49.14)
+>snoRNA_88
+AAGCACUGCCUUUGAACCUGAUGUGUCUUGUUUGUAGCUUCACGGGCCAAGCAACAGUGCUAGAGCAUAACGACUUGUUAUAACUGGGGCUCUUCAGCUCUCAACUGAACUGCUCUUUUAAAAACAAGGUACAUUU
+.(((((((..((((..(((((.((..(......)..)).))).))..))))...)))))))............((((((......(((((..(((((.......)))))..)))))......))))))........ (-35.60)
+>snoRNA_89
+GGCCUCCUGGUGCUUACCACAGGCUGUGUUCUUACACUGACUGUAUAGAAAGAGGAGGUAGAGUAAACCUACCCCAUAUACACCUCAGCUCAGGCCCUGUGCCUGGUCUGUAUUGUGAAUGGGGGAACAUAG
+.(((((((....((....((((...((((....))))...))))..))....)))))))............((((((.((((...(((..(((((.....)))))..)))...)))).))))))........ (-48.00)
+>snoRNA_90
+UGGUCCAUCCUAAUCCCUGCCGGUCCAUCUGUGGCCUGCCAGGUUUCGCUUGUGGACCAGAGCACCCUAGAAGCCUCACCCGAGGAGUGAGCAGGGCUCCAGUGGGCUCACGUCAUGGGCACUUCUAGACACUC
+((((((((....(..((((.(((.(((....))).))).))))..).....)))))))).......(((((((.....((((.(..((((((...((....))..))))))..).))))..)))))))...... (-49.30)
+>snoRNA_91
+GAGCACUGUUCGUAACCCGUUAGCCUGGCUGUAGCUAAUGGGUUCCAUUCCGGUGCAAUAGCAUUUCCAGCGACACAUGACUGACUGACUGGUGGCUUUCAGUUUCAGGUCUUGGAGACAAAU
+..((((((...(.(((((((((((.........))))))))))).)....)))))).......(((((((.(((...(((..((((((..(....)..))))))))).))))))))))..... (-42.10)
+>snoRNA_92
+GAGCACCUGAAUCUUUCCCAUUCCUUGCUGCCUCGUGCCGGUGUGGGGACAGAUGGUGCUACAGAAUGAGCAGAGGAAAUCCAGACAGGUUGUUUUCCAUUUGUCUUGGGGCCUGUCUCUACAGCUCUGCCACAUUU
+.((((((...(((((((((((.((..((........)).)).))))))).))))))))))...(((((.((((((.......((((((((.....((((.......))))))))))))......))))))..))))) (-50.42)
+>snoRNA_93
+CGGCAGACAGUUAUCCCUUUCUAGUCUGGCUCGUGGGACUCUAGAGGGAGUCAGUCUGCAACAGUAAGUGGUGAGUUCUUCUGUCCAGCGUCAGUAUUUUGAUGGUGGCUUUAGACUUGCCAGAUAACA
+..((((((.(...(((((((..(((((.(....).)))))..)))))))..).)))))).........(((..(((.((...(.(((.((((((....)))))).))))...)))))..)))....... (-50.40)
+>snoRNA_94
+UUGUCCUGGCCUAUUUUUCUGCUCCCCUGUGCUCAGUUCUAACAGGGUAGUCUGGCAGGACACACAGCAAUUCCCUCUCAGUUUAGGAGGGCCGUCCUAAGAAUAGGGCUGGCUCUUAAAGGCACGAGAGGACAAUU
+.(((((((.((.........(((.((((((...........)))))).)))..)))))))))...........((((((.((((..(((((((((((((....)))))).)))))))..))))..))))))...... (-54.10)
+>snoRNA_95
+GGGCAUACUCGUAGACCUUGCCUGACUGUGCUCAUGUCCAGGCAGGGGGGACAGUGUAUGCAAGAAUAAUUUGGAGUUCCUGCCAGCUCUAACCAGCUUCAUCAGUGGCUGGAUAAAUUGCAGGACUCUAAACAUUU
+..((((((.(((...(((((((((((((....)).)).)))))))))...)).).))))))........((((((((.(((((......((.((((((........)))))).))....)))))))))))))..... (-54.10)
+>snoRNA_96
+GGCAGCCAUGUCAAAUUCAGUGCCUGCCCUGUCUAUGGUAGGCACUGGCCCAGAAGACUGCCACAGAAACAGUGACUCACAGGCCCUGUUACUGUGUCCCAGGCUCAGGGAUAAAUUUGGUUACAGACACCA
+(((((.(...((....((((((((((((........))))))))))))....)).).))))).........((((((......(((((...(((.....)))...)))))........))))))........ (-47.54)
+>snoRNA_97
+UGCAGUCAAGUCAAAUUCAGUGCCCGUUUCUGUCAUAGCGGGGGCUGGCCCAGAUGGCUGCCACAGCAAGCUCCACAGCUCAUGGGCCCUGGGUCACCUACCCUGGGACCUGGGGAUAAGUUUGGCUGUGGACAGUG
+.(((((((..((....(((((.((((((........)))))).)))))....)))))))))........(.(((((((((......(((..((((.((......))))))..)))........)))))))))).... (-61.24)
+>snoRNA_98
+UGCACACUAUUAAAGCUCAGGGUGGAGGCCAGUCUUGGCUCAUGAACUUCUGAGUGUCGGAAGUGUGCUAUAUCAAUGGCAGGAUUUUCGCUAACACCAGUAGAGCUUGCCUCUAUGACUGGAGUUUGGUAGUACUCGCUGCCACAUAG
+.(((((((.(..(.(((((((((.(((.((......)))))....)).))))))).)..).)))))))........((((((((...(..(((((.(((((((((.....))))...))))).).))))..)...)).))))))..... (-50.80)
+>snoRNA_99
+CACCUGCAUUCAAAAAUGAUCACGGGCUGCCUGUGCUCUGGUCAUCAAUAACGCAGGGAGAGGAAUUGCUGAAAGCCGUUUCCCGUGUUUGGAGGGUUCACACCUGUCCCUUUCAAAUGCUGGCGCUUUCACACAC
+..(((((........(((((((.((((.......))))))))))).......))))).........((.(((((((.....((.((((((((((((..((....))..)))))))))))).)).)))))))))... (-45.66)
+>snoRNA_100
+AUCCUCCUGAUCCCUUUCCCAUCGGAUCUGAACACUGGUCUUGGUGGUCGUAAAAGGAGGAAAAGUAAUAGUGAAGCUGGCCUAAAUGUUGUAAUCUGGUAUAUGGCAUGUGGGCUAGUUUCAGACAGGU
+.(((((((..........((((((((((........)))).)))))).......)))))))..........(((((((((((((.((((..((........))..)))).)))))))))))))....... (-48.23)
+>snoRNA_101
+GCGCUGUCUUUGAGCCCCCGCCGAGCUUCCUCGUGGCGCCGGGGGUCAAUCUGCAGCGCUAGAGCAUGUGCUUGCGCAUAACUGGGGCCGCCUGGCCUCCCGCGGGCGGCCUUUUUAACCGCGAGCGACAAGA
+(((((((..((((.(((((((((((....)))..))))..)))).))))...))))))).......((((((((((..(((..(((((((((((........))))))))))).)))..))))))).)))... (-68.60)
+>snoRNA_102
+GCAGACUCACUAUGCACCUGACUGUACUUCCAGGCAGGUGCUUUUUCUGUCUGCCAGAGAAACAUUCCAGGGUGCUGUGGCUGCCUCACCUAUCCAGGGCGAUGCAGCUCCCUGGGGACACAGGU
+((((((.......(((((((.(((......))).))))))).......))))))..........((((((((.((((((..(((((..........))))).)))))).))))))))........ (-54.74)
+>snoRNA_103
+GUUGGUUGAAAAUCGCCCCCGGCUUUGGCCGUGGCCGCGGGUGAGAUUCGGCGCCCAGAGCCCCCGGGGGCCUCAGCUCACCGCGCGCUGCCCCAUGUGCGGCGGUGAAACCCAGGCCCCGACAGGC
+....((((((..((((((.(((((........))))).))))))..)))))).......(((....(((((((....(((((((((((........)))).))))))).....)))))))....))) (-63.80)
+>snoRNA_104
+UGAUGACUGUUCUUCCUGUUGCCUUCAGACCUGGCAUUAGGAUUUUAGGUCAUCAUAAAUUAAAAUUUGAUUUUCUUCACUCAGAGAAUAUUAGGAUAAUGGAGUUAUCUGUUCUCUGAAAUUUGCGGAAUCAAACAUGU
+((((((((.....(((((.((((.........)))).))))).....))))))))..........(((((((((......(((((((((....(((((((...)))))))))))))))).......)))))))))..... (-43.82)
+>snoRNA_105
+GCCUCUCUCCCAUGGGCUUUGGGGGGUCCCUGUUCUCCUUAGCCAAGGCUGGAGGCCAAGAGCAGCCCUCGAGGAUCGUCGUCAGGACUGCCACGAGUGGGGCAGCCUUGUUUUCCUGCCUCAGACAUGU
+..........((((((((..((((..(....)..))))..)))).((((.((((..((((.((.(((((((.((...(((.....)))..)).)))...)))).))))))..)))).))))....)))). (-50.80)
+>snoRNA_106
+GCAUGGGUUUGGAUUUAUGAUGGGCCCGUCCCCCUGGACCUCUCAUAGUACCCCAUGCCAGAGCAAACUGUAGCCCUGAACCAUUGCCUGGCCUCUGUUCCCGUAGGCUGCUGGCACUGAAGUGGGUUGCACAAUA
+(((((((...(...((((((.(((.(((......))).))).))))))..))))))))..........((((((((.....((.((((.(((((.((....)).)))))...)))).))....))))))))..... (-47.80)
+>snoRNA_107
+GGCUCGAUUUCCUGGGGGGUGGUCUCAGCCCACUCCACCUCCCCUCAGCCGAGCCUAGAGUAGAGGGGCCAGGCAUCCUCCCCAGGGGAGGGGCGUUGAAGCAAGGAGCCUCUCCUGGGCUGUCCUAGCCUCACAUUU
+((((((.....((((((((.(((...((....))..))).)))))))).)))))).........(((((.(((((.....(((((((((((..(.(((...))).)..))))))))))).)).))).)))))...... (-65.70)
+>snoRNA_108
+GACCUCCUGGGAUCGCAUCUGGAGAGUGCCUAGUAUUCUGCCAGCUUCGGAAAGGGAGGGAAAGCAAGCCUGGCAGAGGCACCCAUUCCAUUCCCAGCUUGCUCCGUAGCUGGCGAUUGGAAGACACUCUGCGACAGUG
+..((((((....(((...(((((((((((...))))))).))))...)))...))))))..........(((((((((.......(((((.((((((((........)))))).)).)))))....))))))..))).. (-53.70)
+>snoRNA_109
+GACCUCCUGGGAUCGCAUCUGGAGACUGCCUAGUAUUCUGCCAGCUUCGGAAAGGGAGGGAAAGCAAGCCUGGCAGAGGCACCCAUUCCAUUCCCAGCUUGCUCCGUAGCUGGUGAUUGGAAGACACUCUGCGACAGUG
+..((((((....(((...(((((((.(((...))).))).))))...)))...))))))..........(((((((((.......(((((.((((((((........)))))).)).)))))....))))))..))).. (-50.00)
+>snoRNA_110
+UGCACUGCAUGGUAUCUGCACUCAGCAGUUUACACCUGCUAGGGUGUUCAAAGGUCAGUGCUAUAGAAAUUCAGUAUCUGGCAUCGUUGGUUUUCUUGGCUUUGUGCUUGUUAAACCUGGUAUUUCUACUGAUACAGUA
+.(((((((.........(((((((((((.......))))).))))))......).)))))).........((((((...((.((((..(((((....(((.....)))....))))))))).))..))))))....... (-36.96)
+>snoRNA_111
+UAGCAAGCCUCCAGCGUGCUUGGGUCUGCGGUGACCCUAUGCAUUCCUUCAGUGCUUGCUAGAACAGUUUUGAAACGGUUUGAGGCCUUGCCCUGCUCCAUCCAGAGCAAGGUUAUAGAAAUUUCAGACAAUG
+((((((((((..((.((((..(((((......)))))...))))..))..)).)))))))).....((((.((((...((((..(((((((.(((.......))).)))))))..))))..)))))))).... (-48.40)
+>snoRNA_112
+AAAGCAGGAUUCAGACUACAAUAUAGCUGCUAAGUGCUGUGUUGUCGUUCCCCCUGCUUAAAAUAAAGUUGUUUCUUAACUAUACCUGUCUGCUAUUCUCCUGUAGCAGCCAGGGACGCUUGGUCUCAUACAUGU
+.(((((((.....(((.((((((((((........)))))))))).)))...))))))).......(((((.....)))))...((((.(((((((......))))))).))))(((.....))).......... (-44.10)
+>snoRNA_113
+AAUGGAAGCUGCUGGAACCAGCCAUGUGGACAAAUGAAAAAAUGCCUUUUGUCUACAGAUUGCAGCGAUCCUACAUAAAUAUAUGGAGGUCUCUGUCUGGCUUAGGACAGCUGGCUAAGUCUGAUCGUUCCCCUCCGUACAGCC
+...(((.(((((.((......)).((((((((((.............))))))))))....)))))..)))..........((((((((...(.(((.(((((((..(....).))))))).))).)....))))))))..... (-45.72)
+>snoRNA_114
+UGGAGGACUGAGAAGGUGAGGCAGUUUUGCCCCGUGCUGCCUUCCACCGGUUAAGACCUCCAAAAUCGAAGGGCUGCCCAGGCAGAGGAUGUCCCCUUGCCACCCUUGGAGGGGCAGCGCUGUGCUGGCCGACAUUUG
+((((((.((.((..(((((((((((..........)))))))..))))..)).)).)))))).......((.(((((((.(((((.((.....)).))))).((...))..))))))).))................. (-54.90)
+>snoRNA_115
+CAGCACUGCCAAGUGACCCAUUGGGCUCCAUCUUGACCAACUGGGCAUCAAGCGGUGCAAAAGCAAAUCCCUCUCAAAGCUGGGAGAGUCACACCGUGGGCUACUCCUGCAUGCAGCUGGGUACAUAU
+..(((((((...(((.((((((((.(........).)))).)))))))...)))))))..........(((.((((..((.(((((((((........)))).))))))).)).))..)))....... (-42.00)
+>snoRNA_116
+GUGCCCUUUUAAGGUUGACCCAGUGCUUUAAGAGGCUAACACAGAAGGGUAAAGUAAGUCUCCAUAAAACCCAGAGAAGAGACUGGAAAGCUCCUCUUUGGAUCCUGUCUGGAGUCACAACU
+.(((((((((...((((.(((..........).)).))))..)))))))))......(.(((((......(((((((.(((.((....))))).)))))))........))))).)...... (-36.54)
+>snoRNA_117
+ACAUGGGUGAGGUACGAGGAAACAGUCUGAUAGUCACUGAAGACUGAUUAGAUCCAACUCUGAUCUCAGCAAAGCC
+.....(.((((((..(((......(((((((((((......)))).)))))))....)))..)))))).)...... (-21.20)
+>snoRNA_118
+UGCCCAGUGAUGACACCAUCCUUGCUCCCCGUGCCCCCCAGGGGCUAUGGGCGACACCAUGGCUGCCCCUGGGCUGGGCCAGUGGGGCCAAUGCCCAGGGGCUGAGGGCA
+.((((..........((((...((.((((((((((((...))))).))))).))))..))))..((((((((((..((((.....))))...))))))))))...)))). (-64.40)
+>snoRNA_119
+GGAUUUGUGAUGAGCUGUGUUUACUGAGCAUGAUGAAGUAAAGCUCAACGUGAUUACUCUGAAGUCC
+(((((..((.((((((....(((((...(.....).))))))))))).))..)..........)))) (-13.00)
+>snoRNA_120
+AAAUGAUGAAAUCACCCAAAAUAGCUGGAAUUACCGGCAGAUUGUGUAGUGGUGAACCUAUGGUUUUCUGAAG
+((((.(((...(((((((.(((.(((((.....)))))..))).))....)))))...))).))))....... (-14.00)
+>snoRNA_121
+UUCCUCUGAUGACUUCCUGUUAGUGCCACGUGUCUGGGCCACUGAGACACCAUGAUGGAACUGAGGAUCUGAGGAA
+.(((((.((.....((((..((((.(((.((((((.((...)).)))))).....))).)))))))))).))))). (-24.40)
+>snoRNA_122
+UGUGAGAGUGAUGAGUUGCACACUGGUGGAGCCAUGGUAUCAGGUGAUACAGGCACCACUCAGUAUCACCCUGGUGACAAAAUCAAGUGCACAGGGGCCAUCUGACUCACA
+.(((((...((((........((((((((.(((...(((((....))))).))).)))).))))....(((((((.((........)))).)))))..))))...))))). (-43.40)
+>snoRNA_123
+CCGGGGCCUCCAUGAUGUCCAGCACUGGGCUCCGACUGCCACUGAGGACACGGUGCCCCCCGGGACCUUUGACACCCGGGGGUCUGAGGGGCCCUGG
+((((((((.((....(((((..((...(((.......)))..)).)))))(((...((((((((..........)))))))).))).)))))))))) (-50.10)
+>snoRNA_124
+UUGGGGACCCCGUGAUGUCCAGCACUGGGCUCUGACUGCCCCUGAGGACACGGUGCACCCCGGGACCUUUGACAUCCGGGGUUCUGAGGGGCCCCAC
+.(((((.((((....(((((..((..((((.......)))).)).)))))(((...((((((((..........)))))))).))).))))))))). (-46.20)
+>snoRNA_125
+CUGGGGCUCCCAUGAUGUCCAGCACUGGGCUCUGAUCACCCCUGAGGACACAGUGCACCCCAGGACCUUUGACACCUGGGGGUCUGAGGGGCCCCAG
+((((((((((((.(((.....(((((((.(((...........)))..).)))))).(((((((..........)))))))))))).)))))))))) (-48.10)
+>snoRNA_126
+CGCGUGAUGACAUUCUCCGGAAUCGCUGUACGGCCUUGAUGAAAGCACAUUUGAACCCUUUUCCAUCUGAUU
+.(((((((..(.......)..))))).))..((....((((......))))....))............... ( -7.80)
+>snoRNA_127
+AAUGUGAAGCAAAUGAUGAUAAACUGGAUCUGACUGACUGUGCUGAGUCUGUUCAAUCCAACCCUGAGCUUCAUGUU
+((((((((((..((....))....(((((..(((.((((......)))).)))..))))).......)))))))))) (-20.20)
+>snoRNA_128
+UUCGUUGUUGUCAAUGAUGUAUUCUUCUUGGAACUGAAUCUAAGUGAUCUGACUCAAUAUUCGUCACUACCACUGAGACAACGAUGAA
+.(((((((((((...(((...((((....))))....)))..((((...((((.........))))....))))..))))))))))). (-23.00)
+>snoRNA_129
+UGUGUGUUGGAGGAUGAAAGUACGGAGUGAUCCAUCGGCUAAGUGUCUUGUCACAAUGCUGACACUCAAACUGCUGACAGCACACG
+.((((((((..((.....(((...(((((.....(((((...(((......)))...))))))))))..))).))..)))))))). (-31.10)
+>snoRNA_130
+AGCUUAUCAGUGAUGUUGUAAAAAUAAAUGUCUGAACAUAUGAAUGCAGUAUUGAUUUCAGCAUUUAACUGAGAUAAGCG
+.(((((((((((((((((...((((.((((.(((..(((....)))))))))).)))))))))))..)))))..))))). (-19.20)
+>snoRNA_131
+GACUGGCAAGGAUGAUACACACUUGCCCUCACUUAGACUAUAGUUCACUGAUGAGAGCAUUGUUCUGAGCCAGUC
+(((((((.((((..(........(((.((((.((((((....))...)))))))).))))..))))..))))))) (-23.50)
+>snoRNA_132
+ACAAUGAUGACUUAAAUUACUUUUUGCCGUUUACCCAGCUGAGGUUGUCUUUGAAGAAAUAAUUUUAAGACUGAGA
+..........(((.....(((((..((.(......).)).))))).(((((.(((.......))).))))).))). ( -7.70)
+>snoRNA_133
+ACUGAGGAAUGAUGACAAGAAAAGGCCGAAUUGCAGUGUCUCCAUCAGCAGUUUGCUCUCCAUGGGCACACGAUGACAAAAUAUCCUGAAGCGAACCACUAGUCUGACCUCAGU
+(((((((......(((........((......)).(((..(((.((((..((.(((((.....))))).)).((......))...)))).).))..)))..)))...))))))) (-26.40)
+>snoRNA_134
+AAGUUUUCUAAGUGUCUAAUGAUGAAUUUCAUAGGGCAGAUUCUGAGGUGAAAAUUUAAUUCAUCACUGAUACUCCUACUGUGGAAUCUGAAGACACUUGAAAACGU
+..((((((.((((((((..(((((((((((((....(((...)))..))))......)))))))))..(((..(((......))))))...)))))))))))))).. (-31.40)
+>snoRNA_135
+UAGAGAAGUCAAUGAUGGUUUUAUUCAUAUCGUCUGAACCUGUCUGAAGCAUCUCAGUGAUGCAAUCUCUGUGUGGUUCUGAGACUUCUCCA
+..((((((((...((((((.........)))))).(((((...(.((.(((((.....)))))....)).)...)))))...)))))))).. (-29.30)
+>snoRNA_136
+AAGAGCCAAUGAUGUUUUUAUUCAAAAUGUCUGAACCUGUCUGAAGCAUCCCAGUGAUGCAACUUCUGUGUGAUACUGAGGCUUUU
+(((((((...((((((((..((((.......)))).......)))))))).(((((.((((.(....))))).))))).))))))) (-20.20)
+>snoRNA_137
+UGGUGCUGUGAUGAUGCCUUAAUAUUGUGGUUUCGACUCACUGAGAGUAAAAUGAGGACCUACAAUUCCUUGGCUGUGUCUGAGCACCC
+.((((((..(((...(((.....((((((((((((((((.....))))....))).)))).))))).....)))...)))..)))))). (-29.10)
+>snoRNA_138
+UGGCCAAGGAUGAGAACUCUAAUCUGAUUUUAUGUGCUUCUGCUGUGAUGGAUUAAAGGAUUUACCUGAGGCCA
+.((((.(((.((((..((.((((((....(((((.((....))))))).)))))).))..)))))))..)))). (-22.20)
+>snoRNA_139
+GCUCAGAAGUGAUGAAUUGAUCAGAUAGACGAGGCCGGGCUUGUCCCCGGCCACUGAUUAUCGAGGCGAUUCUGAUCUGGGC
+(((((((......((((((....(((((.((.(((((((......)))))))..)).)))))....))))))...))))))) (-33.70)
+>snoRNA_140
+GAGUUAUGAUGUGUGUAAAUCCUAUUCCAUUGCUGAAAUGCAGUGUGGAACACAAUGAACUGAACUC
+(((((......(((((...(((.....((((((......)))))).))))))))........))))) (-17.54)
+>snoRNA_141
+ACUGGUCCAGGAUGAAACCUAAUUUGAGUGGACAUCCAUGGAUGAGAAAUGCGGAUAUGGGACUGAGACCAGCUCCUAGG
+.((.((((((((((..(((......).))...))))).))))).))...........((((((((....))).))))).. (-24.80)
+>snoRNA_142
+GCUGUACAUGAUGACAACUGGCUCCCUCUACUGAACUGCCAUGAGGAAACUGCCAUGUCACCCUUCUGAUUACAGC
+((((((...(((((((..((((..((((...((......)).)))).....)))))))))....))....)))))) (-20.30)
+>snoRNA_143
+GGUUCAUGAUGACACAGGACCUUGUCUGAACAUAAUGAUUUCAAAAUUUGAGCUUAAAAAUGACACUCUGAAAUC
+.(((((....((((........))))))))).....(((((((......(((.............)))))))))) (-10.22)
+>snoRNA_144
+GCUUAAUGAUGAGAAUCAUUAUUUCUUGAAUUGGAUGACACUUUCCAUUCCUGCAAAGGGAGCGUGAGGUC
+...(((((((....)))))))..(((......))).(((.(((....(((((....)))))....)))))) (-14.80)
+>snoRNA_145
+GGAUCGAUGAUGAGAAUAAUUGUCUGAGGAUGCUGAGGGACUCAUUCCAGAUGUCAAUCUGAGGUCC
+(((((...((((((......(.(((.((....)).))).))))))).(((((....))))).))))) (-16.70)
+>snoRNA_146
+GUGUUGAUGAUGAGAACCUUAUAUUAUCCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+................(((((....((((((..(((..(((((.........))))).)))..)))))).....)))))... (-17.80)
+>snoRNA_147
+GGGUCGAUGAUGAGAACCUUAUAUUGUCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+(((((....(((((...)))))...((((...(((..(((((.........))))).)))....))))........))))) (-16.60)
+>snoRNA_148
+GGGUCAAUGAUGAGAACCUUAUAUUGUCCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+(((((....(((((...)))))...((((((..(((..(((((.........))))).)))..))))))........))))) (-21.20)
+>snoRNA_149
+GGGUCGAUGAUGAGAACCUUAUAUUGUCCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+(((((....(((((...)))))...((((((..(((..(((((.........))))).)))..))))))........))))) (-21.20)
+>snoRNA_150
+GGGUCGAUGAUGAGAACCUUAUAUUAUCCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+(((((....(((((...)))))...((((((..(((..(((((.........))))).)))..))))))........))))) (-20.90)
+>snoRNA_151
+GGGUCGAUGAUGAGAAACUUAUAUUGUCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+(((((....(((((...)))))...((((...(((..(((((.........))))).)))....))))........))))) (-16.60)
+>snoRNA_152
+GGGUCGAUGAUGAGAACCUUAUAUGUUCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+(((((....(((((...)))))..((((((..(((..(((((.........))))).)))..))))))........))))) (-18.30)
+>snoRNA_153
+GGGUCAAUGAUGAGAACCUUAUAUUAUCCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+(((((....(((((...)))))...((((((..(((..(((((.........))))).)))..))))))........))))) (-20.90)
+>snoRNA_154
+GGGUCGAUGAUGAGAACCUUAUAUUGUCCUGAAGAGAGGUGAUGACUUAAAAAUCAUUCUCAAAAGGAUUAUGCUGAGGCCC
+(((((....(((((...)))))...(((((...(((((.((((.........)))))))))...)))))........))))) (-21.40)
+>snoRNA_155
+GGGUCGAUGAUGAGAAGCUUCUGUUUUCUUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUAUGCUGAGGCCC
+(((((.....((((..((((((.(((....))).)))))).((((........)))).)))).(((.......))).))))) (-18.60)
+>snoRNA_156
+GGGUCGAUGAUGAGAACCUUAUAUUGUCCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUAUGCUGAGGCCC
+(((((....(((((...)))))...((((((..(((..(((((.........))))).)))..))))))........))))) (-21.20)
+>snoRNA_157
+GGGUCGAUGAUGAGAACCUUAUAUUUUCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+(((((....(((((...)))))...(((((..(((..(((((.........))))).)))..))))).........))))) (-17.40)
+>snoRNA_158
+GGGUCAAUGAUGAGAACCUUAUAUUGUCCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGUCCC
+(((.(((((.((((...))))))))).)))...(((..(((((.........))))).)))....(((((......))))). (-18.40)
+>snoRNA_159
+GGGUCAAUGAUGAGAACCCUAUAUUGUGUUGAAGAGAGGUGAUGACUUAAAAUUACCAUGCUCAAUGAUUACGCUGAGGCCC
+(((((.(..(((((....)).)))..)......(((.((((((........))))))...)))..............))))) (-17.70)
+>snoRNA_160
+AGGUCGAUUAUGAGAACCUUAUAUUGUCCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCCCAAUAGGAUUACGCUGAGGCCC
+.((((...((((((...))))))..((((((....(.(((.((((........))))))))..))))))........)))). (-15.90)
+>snoRNA_161
+GGGUCAGUGAUGAGAACCUUAUAUUGUCCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+((((((((((((((...)))))...((((((..(((..(((((.........))))).)))..))))))..)))))..)))) (-22.70)
+>snoRNA_162
+GGGUCAAUGAUGAGAACCUUAUAUUGUCCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUUAGUAGGAUUACGCUGAGGCCU
+(((((....(((((...)))))...((((((..(((..(((((.........))))).)))..))))))........))))) (-18.90)
+>snoRNA_163
+GGGUCAAUGAUGAGAACCUUAUAUUGUUCUGAAGAGAGGUGAUUAUUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+(((((....(((((...)))))...((((((..(((..((((((.......)))))).)))..))))))........))))) (-18.80)
+>snoRNA_164
+GGGUCAGUGAUGAGAACCUUAUAUUGUCCUGAAGAAAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACACUGAGGCCC
+((((((((((((((...)))))...((((((..((...(((((.........)))))..))..))))))..)))))..)))) (-18.90)
+>snoRNA_165
+GGGUCAAUGAUGAGAACCUGAUAUUGCCCUGAAGAGAGAUGAUGACUUAAAAAUCAUGUUCAAUAGGAUUACGCUGAGGCCU
+(((((....((.((...)).)).....((((..(((..(((((.........))))).)))..))))..........))))) (-12.90)
+>snoRNA_166
+GGGUCAAUGAUGAGAACCGUAUAUUGUCCUGAAGAGCGGUGAUGACUUAAAAAUAAUGCUCAAUAGGAUUACGCUGAGGCCC
+(((((....(((.....))).....((((((..(((((...((.........))..)))))..))))))........))))) (-19.10)
+>snoRNA_167
+GGGUCAAUGAUGAGAACCUUAUAAUGUUCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+(((((....(((((...)))))...((((((..(((..(((((.........))))).)))..))))))........))))) (-18.30)
+>snoRNA_168
+GGGUCAAUGAUGAGAACCUUGUAUUAUCUUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACACUGAGGCCC
+(((((.(((((..........(((((((((.....)))))))))........)))))......(((.......))).))))) (-17.37)
+>snoRNA_169
+GGGCUGAUGAUGAGAACCUUAUAUUGUCCUGAAAAAAGGUGAUGACUUAAACAUCAUGCUUAAUAGUAUUAUGCUGAAGCCC
+(((((.((((((......((((.....(((......)))..))))......))))))......((((.....)))).))))) (-16.60)
+>snoRNA_170
+GGGUCAAUGAUGAGAACCUUACAUUGUCCUGAAGAGAGAUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+(((((.(((.((((...))))))).((((((..(((..(((((.........))))).)))..))))))........))))) (-20.30)
+>snoRNA_171
+GGGUCAAUGAUGAGAAUCUUAUAUUGUCCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+(((((...(((....))).......((((((..(((..(((((.........))))).)))..))))))........))))) (-21.30)
+>snoRNA_172
+GGGUCGAUGAUGAGAACUUUAUAUUGUUCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+(((((.....(.(((((........))))).).(((..(((((.........))))).)))................))))) (-19.50)
+>snoRNA_173
+GGGUCGAUGAUGAGAACCUUAUAUUUUCCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+(((((....(((((...)))))....(((((..(((..(((((.........))))).)))..))))).........))))) (-20.30)
+>snoRNA_174
+GGGUCAGUGAUGAGAACCUUCUAUUGUCCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+(((((((((...(((....)))...((((((..(((..(((((.........))))).)))..))))))..)))))..)))) (-23.60)
+>snoRNA_175
+GGGUCGAUGAUGAGAACCUUAUAUUGUUCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+(((((....(((((...)))))...((((((..(((..(((((.........))))).)))..))))))........))))) (-18.30)
+>snoRNA_176
+GGGUCAAUGAUGAGAACCUUAUAUUGUCCUGAAGAGCGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+(((((....(((((...)))))...((((((..(((((.((((.........)))))))))..))))))........))))) (-23.80)
+>snoRNA_177
+GGGUCAAUGAUGAGAUGUUACCUUGAAGAGAAAUGAUGACGUAAAAAUUAAGUUCAGUUGGAUUACGCUGAGGCCC
+(((((..((((...((((((.(............).))))))....))))...(((((........)))))))))) (-14.60)
+>snoRNA_178
+GGAUCGAUGAUGAGAACCUUAUAUUGUCCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+................(((((....((((((..(((..(((((.........))))).)))..)))))).....)))))... (-18.10)
+>snoRNA_179
+GGGUCAAUGAUGAGAACCUUAUAUUGUUCUGAAGAGAGGUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+(((((....(((((...)))))...((((((..(((..(((((.........))))).)))..))))))........))))) (-18.30)
+>snoRNA_180
+GGGUCAAUGAGAACCUUAUAUUGUCCUGAAGAGAGGUGAUAACUUAAAAAUCAUGCUCAAUAAUAGGAUUACGCUGAGGCCC
+(((((.(((((...)))))...((((((....((((((((.........))))).))).....))))))........))))) (-17.60)
+>snoRNA_181
+GGGUCAAUGAUGAGAACCUUACAUUGUUCUGAAGAGAGAUGAUGACUUAAAAAUCAUGCUCAAUAGGAUUACGCUGAGGCCC
+(((((.....(.(((((........))))).)...((((((((.........))))).)))................))))) (-18.40)
+>snoRNA_182
+UUGCAGUGAUGACUUGCGAAUCAAAUCUGUCAAUCCCCUGAGUGCAAUCACUGAUGUCUCCAUGUCUCUGAGCAA
+...(((((((....((((..(((...............))).))))))))))).((.(((.........))))). (-11.36)
+>snoRNA_183
+CAGCCUGAAAUGAUGACUCUUUAAAAAAUUUCAUGUCUCUUCUCUGACAUUUUUCUCUGGACACAGUUUUUGCCUUAUGAAUCUGAUCAGGCUG
+((((((((...(((.........(((((....(((((........)))))......(((....)))))))).........)))...)))))))) (-20.97)
+>snoRNA_184
+UGGAUCGAUGAUGAGUCCCCUAUAAAAACAUUCCUUGGAAAAGCUGAACAAAAUGAGUGAGAACUCAUAACGUCAUUCUCAUCGGAACUGAGGUCCA
+.(((((..(((((((...............(((....)))....(((.....((((((....))))))....)))..))))))).......))))). (-22.90)
+>snoRNA_185
+UAGGUUGAUGAUGACUUACAUAUAUACGUUUUUUUUUUUUUUUUGGAAAGGUGAACAAAAUGAGUGAAAACUCAGUACCAUCAUCCUCAUCUAACUGAGGUCCA
+..((...((((((..............((((.(((((((.....))))))).))))....(((((....)))))....))))))(((((......))))).)). (-23.40)
+>snoRNA_186
+UGGACCAAUGAUGACUUCCAUACAUGCAUUCCUUGGAAAGCUGAACAAAAUGAGUGGGAACUCUGUACUAUCAUCUUAGUUGAACUGAGGUCCA
+.(((((...(((((........((.((.(((....))).))))........((((....)))).......))))).(((.....))).))))). (-23.20)
+>snoRNA_187
+UGGAUCAAUGAUGACUUCCAUACGUGGGUUCCUUGGAAAGUUGAACAAAAUGAGUGAAAACUUUAUACUGUCAUCCUCUUCAAACUGAGGUCCA
+.(((((...((((((.((((....))))........((((((..((.......))...)))))).....))))))....((.....))))))). (-19.20)
+>snoRNA_188
+UGGAUCAAUGAUGACUUCCAUAUAUACAUUCCUUGGAAAGCUGAAUAAAAUGAAUGAAAACUCUAUACCAUCAUCCUCAUUGAACUGAGGUCCC
+.(((...((((((..(((((.............))))).............((.(....).)).....))))))(((((......)))))))). (-14.82)
+>snoRNA_189
+UGGAUCGAUGAUGACUUCCAUAUAUACAUUCCUUGGAAAGCUGAACAAAAUGAGUGAAAACUCUAUACCGUCAUCCUCGUCAAACUGAGGUCCA
+.(((((..((((((.(((((.............)))))...(((.......((((....)))).......)))...))))))......))))). (-21.86)
+>snoRNA_190
+UGGAUCGAUGAUGACUUUCAUACAUGCAUUCCUUGGAAAGCUGAACAAAAUGAGUGAAAACUCUAUACCGUCAUCCUCGUCGAACUGAGGUCCA
+.(((((((.((((((.......((.((.(((....))).))))........((((....))))......)))))).)))..........)))). (-24.30)
+>snoRNA_191
+UGGAUCGAUGAUGACUUCCAUAUAUACAUUCCUUGGAAAGCUGAACAAAAUGAGUGAAAACUCUAUACCGUCAUCCUCGUCGAACUGAGGUCCA
+.(((((((.((((((.((((.............))))..............((((....))))......)))))).)))..........)))). (-21.82)
+>snoRNA_192
+UGGAUCGAUGAUGACUUCCAUAUAUACAUUCCUUGGAAAGCUGAACAAAAUGAGUGAAAACUCUAUACCGUCAUUCUCGUCGAACUGAGGUCCA
+.((((((((((((((.((((.............))))..............((((....))))......))))...))))))).......))). (-21.23)
+>snoRNA_193
+UGGAUCGAUGAUGACUUCCAUAUAUACAUUCCUUGGAAAGCUGAACAAAAUGAGUGAAAACUCUAUACUGUCAUCCUCGUCGAACUGAGGUCCA
+.(((((((.((((((.((((.............))))..............((((....))))......)))))).)))..........)))). (-21.52)
+>snoRNA_194
+UGGAUCGAUGAUGAGUCCCCAAAAAAAACAUUCCUUGGAAAAGCUGAACAAAAUGAGUGAAAACUCAUACCGUCAUUCUCAUCGGAACUGAGGUCCA
+.(((((..(((((((...((((............))))......(((.....((((((....))))))....)))..))))))).......))))). (-24.70)
+>snoRNA_195
+UGGAUCGAUGAUGACUUCCACAUAUACAUUCCUUGGAAAGCUGAACAAAAUGAGUGAAAACUCUAUACCGUCAUCCUCGUCGAACUGAGGUCCA
+.(((((((.((((((.((((.............))))..............((((....))))......)))))).)))..........)))). (-20.92)
+>snoRNA_196
+UGGAUCGAUGAUGACUUCCAUAUGUACAUUCCUUGGAAAGCUGAACAAAAUGAGUGAAAACUCUAUACCGUCAUCCUCGUCGAACUGAGGUCCA
+.(((((((.((((((.((((.............))))..............((((....))))......)))))).)))..........)))). (-21.82)
+>snoRNA_197
+UGGAUCGAUGAUGACCUCAAUACAUGCAUUCCUUGGAAAGCUGAACAAAAUGAGUGAAAACUCUAUACCGUCGUCCUCGUCAAACUGAGGUCCA
+.((((((((((.(((..(....((.((.(((....))).))))........((((....))))......)..))).))))).......))))). (-24.41)
+>snoRNA_198
+UGGAUCGAUGAUGACUUUUAUACAUGCAUUCCUUGGAAAGCUGAACAAAAUGAGUGAAAACUCUAUACCGUCAUCUUCGUUGAACUGAGGUCCA
+.(((((((.((((((.......((.((.(((....))).))))........((((....))))......)))))).)))..........)))). (-24.30)
+>snoRNA_199
+UGGAUCGAUGAUGACUUUAAAAUGGAUCUCAUCGGAAUCUGAACAAAAUGAGUGACCAAAUCACUUCUGUGCCACUUCUGUGAGCUGAGGUCCA
+.(((((..((((((..((......))..))))))...............((((((.....))))))....(((((....))).))...))))). (-21.50)
+>snoRNA_200
+UGGAUCGAUGAUGACUAUAAAAAAAAUGGAUCUCAUCGGAAUCUGAACAAAAUGAGUGACCAAAUCAUUUCUGUGCCACUUCUGUGAGCUGAGGUCCA
+.((((((((((.((((((.......)))).))))))))........(((((((((.........)))))).)))(((((....))).))....)))). (-21.40)
+>snoRNA_201
+UGGAUCGAUGAUGACUUAAAGAUUUAUCUAAUUUAAAUCUGAACAAAAUGAGUGACCAAAACACUUCUGUACCACUUCUGUGAGCUGAGGUCCA
+.(((((.............(((((((.......)))))))..(((....(((((.......))))).)))..(((....)))......))))). (-16.70)
+>snoRNA_202
+UGGAUCGAUGAUGACUUAAAAAAAUGGAAACCUUGGAAAUCUGAACAAAAUGAGUGACCAAGACACUUCUGUGAGCUGAGGUCCA
+.(((((..((.(.(((((.......(....).(..(....)..)......))))).).))...(((....)))......))))). (-15.40)
+>snoRNA_203
+UGGAUGGAUGACGACUUAAAAAUGAAUCUCGUUGGAAUCUGAGCAAAACGAGUGAGCAAACCACUUCUGUGCAGUUCUGUGAACUGAGGUCAA
+........((((..........((...((((((.............))))))....))...(((....)))((((((...))))))..)))). (-16.52)
+>snoRNA_204
+UGGAUCGAUGAUGAGUCCCCCAUAAAAACAUUCCUUGGAAAAGCUGAACAAAAUGAGUGAGAACUCAUACCGUCGUUCUCAUCGGAACUGAGGUCCA
+.(((((..(((((((..(..(.........(((....)))............((((((....))))))...)..)..))))))).......))))). (-23.60)
+>snoRNA_205
+UGGAUCGAUGAUGAGUCCCCCCAAAAAAACAUUCCUUGGAAAAGCUGAACAAAAUGAGUGAAAACUCAUACCGUCGUUCUCAGCGGAACUGAGGUCCA
+.(((.(((((.(.(((....((((...........))))....))).).....((((((....))))))..)))))..(((((.....))))).))). (-23.70)
+>snoRNA_206
+UGGAUCGAUGAUGAGUCCCCCAUAAAAACAUUCCUUGGAAAAGCUGAACAAAAUGAGUGAGAACUCAUACCGUCGUUCUCAUCAGAACUGAGGUCCA
+.(((((..(((((((..(..(.........(((....)))............((((((....))))))...)..)..))))))).......))))). (-24.30)
+>snoRNA_207
+UGGAUCGAUGAUGAGUCCUCCAAAAAAAACAUUCCUUGGAAAAGCUGAACAAAAUGAGUGAAAACUCAUACCGUCAUUCUCAUCGGAACUGAGGUCCA
+.(((((..(((((((...(((((............))))).....(((.....((((((....))))))....)))..))))))).......))))). (-26.10)
+>snoRNA_208
+UGGAUCGAUGAUGAGUCCUCCAAAAAAACAUUCCUUGGAAAAGCUGAACAAAAUGAGUGAGAACUCAUACCGUCGUUCUCAUCGGAACUGAGGUCCA
+.(((((..(((((((...(((((...........)))))......((.....((((((....))))))....))...))))))).......))))). (-24.10)
+>snoRNA_209
+GUGUUCAAUGAUGAUUUCUAUUUGUUUGCCUGAUUUCCUUUUGGAUAAUGAAGGCAUCUUUAGUCACUACCUCUUCUGAGACAC
+(((((((..(((((((..........(((((....(((....)))......))))).....))))).....))...))).)))) (-14.16)
+>snoRNA_210
+GCCUUUGCAGCUGAUGAUACAGCUUCUUUCCCCAUCAGAUCGACCCUGUUGAUCUCUACACUAUUGGCCAGUUUUGUCUGAUGCAUUGGC
+(((..(((.((((......))))..........((((((.(((..((((..((.........))..).)))..))))))))))))..))) (-24.60)
+>snoRNA_211
+GGUGCAGAUGAUGACACUGUAAAGCGACCAAAGUCUGAACAAAGUGAUUGGUACCUCGUUGUCUGAUGCACC
+((((((...((..((.((....))..(((((...((......))...))))).....))..))...)))))) (-20.20)
+>snoRNA_212
+GUUCAGAUGAUGAAUUUAACUGUUCAACUGCUGAAUGAUAACGGGCAUGAACUAAAACUUAAUUCUGACAGAG
+..(((((...(((.(((....(((((..((((...........)))))))))..))).)))..)))))..... (-10.70)
+>snoRNA_213
+GAUGUUAUGAUGAUGGGCGAAAUGUUCAACUGCUCUGAAGGGGCUGAAUGAAAAUGGCCUUUCUGAACAUC
+((((((.....((.((((.(....((((...((((.....))))....))))..).)))).))..)))))) (-19.20)
+>snoRNA_214
+AUGCGAUGAUGAGUGAAGUAGAGCCUGACCUGGUAUUGCCAUUGCUUCACUGUUGGCUUUGACCAGGGUAUGAUCUCUUAAUCUUCUCUCUGAGCUG
+..((......(((.((((.((((.....((((((...((((..((......))))))....)))))).......))))....)))).)))...)).. (-29.60)
+>snoRNA_215
+UCCCAAUGAUGAGUUGCCAUGCUAAUACUGAGCCACCAGGUAGGGCAGUGUUGCCCUGGUUUGGGUGCCAGUGAGUUUAACAAAACUUCUCACAUGAAGAUCUGAGGGG
+.(((........((((....(((..(((((.((..(((..((((((......))))).)..)))..)))))))))).))))....((((......))))......))). (-33.80)
+>snoRNA_216
+CCCCUGUGAUGAGUUGCCAUGCUAAUACGGAGACACCAGGUAGGGAGUUUUACCCUAACUUGGGUGUUGUUGAAAUAAACUCUUUCUCGUAAAUGCUGAGGGG
+(((((...(((......)))((...((((((((..((((((((((.......)))).)))))).....(((......)))..)))).))))...))..))))) (-28.80)
+>snoRNA_217
+GCUCUGUGAUGGAGCCCAUGCGUGUCAUCUGAGCCUCUGGCUUCCCUGCCAGUGCAGCCCUGGCAGUGUCCUACUUCCCAGGGCUGUUGUCUGCCUGGCGGGAAGGUCCUGGGCAAAGGAUCAGUCUUUGUACUCUGAGAGCAGACUA
+(((((..(((((.((....))...)))))...((((..(((((.((((((((.((((((((((.((((...))))..)))))))))).......)))))))).)))))..)))).(((((....)))))........)))))...... (-61.70)
+>snoRNA_218
+CACAAGCCUAUGAUGGUUAGUUAUCCCUGUCUGAAAAUCUGGACUGAGGGAAAUAAUCUAUUCUGAGGCUUA
+...((((((..((.(((((....(((((((((........))))..)))))..)))))...))..)))))). (-22.20)
+>snoRNA_219
+GCUGAGUCCAUGAUGAUUUCAAGUUAUCCCUGUCUGAAGGCAAAGAAAGGCCUUUCUGUGUGGAAUUUGAAUAUCUGAAACUCAGU
+(((((((....((((..(((((((..((((.....((((((........))))))....).))))))))))))))....))))))) (-24.90)
+>snoRNA_220
+GCUGAGCUGAGGAUGAUUUAAAGUUAUCCCUGUCUGAAAUGGUAUCUUUUGUGAGGAGGUCUGACUUGCUGAGGCUCAGC
+((((((((..(((((((.....)))))))..(((.((.......(((((...)))))..)).))).......)))))))) (-23.90)
+>snoRNA_221
+AAGUGAAAUGAUGGCAAUCAUCUUUCGGGACUGACCUGAAAUGAAGAGAAUACUCAUUGCUGAUCACUUG
+((((((.....((((((...(((((((((.....))))))).)).(((....))).)))))).)))))). (-17.70)
+>snoRNA_222
+GUGACUGUUCCUGGUAUUGAUUGCAUUUGUUAGUUGUACAGUGCAACCAUAGACAGUCACACACAUUAAAACAGAUGGUUCCUGCCGACAGGGUCUGUAUAGUUAUCAGAUUUUCUGUGCGAUGGCUCCAUACAUGU
+(((((((((..((((......((((((.((.......))))))))))))..)))))))))..........(((.((((..((...((((((((((((((....)).)))))..))))).))..))..))))...))) (-41.90)
+>snoRNA_223
+GUUUGAAUGAUGACUUUAAUUGUCGGAUACCCCUUCACUCCUUUUAUGAGUGAAACAUAAGAGUCUGACAAAC
+...................(((((((((.....(((((((.......)))))))........))))))))).. (-16.82)
+>snoRNA_224
+AGCUUAAUGAUGACUGUUUUUUUUGAUUGCUUGAAGCAAUGUGAAAAACACAUUUCACCGGCUCUGAAAGCU
+((((...(((....((((((((...(((((.....)))))..))))))))....)))..))))......... (-14.80)
+>snoRNA_225
+UUGUCUGGCAAUGAUGACCCACUUGCCCUCACUGAGAACAAAGUUCGGUAAUGAGAAUCUUUGUUAAUGGACUCAAGUUCUGAGCCAGACA
+.((((((((..(((.(..........).)))...(((((..((((((.(((..((....))..))).))))))...)))))..)))))))) (-25.50)
+>snoRNA_226
+UUGUCUGGCAAUGAUGACCCACUUGCCCUCACUGAGAACAAAGUUCGGUAAUGAGAAUCUUUGUUAAUGGACUCAAGUUCUGAGCCAGACA
+.((((((((..(((.(..........).)))...(((((..((((((.(((..((....))..))).))))))...)))))..)))))))) (-25.50)
+>snoRNA_227
+GGCCUGCUGUGAUGACAUUCCAAUUAAAGCACGUGUUAGACUGCUGACGCGGGUGAUGCGAACUGGAGUCUGAGCCUGCC
+(((..(((..(((..(((((((......((.((((((((....)))))))).))..)).))).))..)))..)))..))) (-24.40)
+>snoRNA_228
+CCCCUAUCUCUCAUGAUGAACACAUAUGCCUCUGAGCUGCUGUGAUUUCUGGCUUCAAAGUAAACGCUCUGAAGAAGAGAUGGGG
+.((((((((((.........((((...((......))...))))........(((((.(((....))).))))).)))))))))) (-26.50)
+>snoRNA_229
+UGUAAAUGAUGACUUCACUUUUUUCCCCAUCAGAUCGACAAUGCUGACGUCUUAUAUUUUGCCAGUUAGUUCUGAUACA
+.(((..(((((................)))))......((..((((((................))))))..)).))). ( -9.88)
+>snoRNA_230
+GGGGUGUGCUCAGAGCAGGGGGCCCAAAGAAUGGCUCCUCUGUUUACAACACACCCAACAGGAAUCUGGGGUCAUUGUGAUGAGGGCGUCAAACUUGUGGCUUCCCUAUGAACAAACGUCCCCCAACACCU
+.(((((((....((((((((((((........))).)))))))))....)))))))...(((.....((((.(.((((....((((.((((......))))..))))....))))..).)))).....))) (-52.30)
+>snoRNA_231
+AGUUGUGGUGGUUUUCUUUUUGGCACAUUUGUUAAGUUUUCAAAUGGGCCUAACUCUGCCACAUAUAUAAUAUCGGAGAUGGCAAAGGCUUGUGACGGAGAUAUCUCUCUUAAGCCUUUCCUGCAUCAGAGAAUGGCUCCCACAUGU
+...(((((..(((((((((..(((.((((((.........)))))).)))...(((((...............)))))..((.(((((((((.((.(((....))).)).)))))))))))......)))))).)))..)))))... (-43.76)
+>snoRNA_232
+UUGCAUGUGGAAAUGUCUGCUUCUCAUUCCUUGGGAGCAGGAAUAUGUUCAUAACAUGCUACAUUAACAAAGGAGUUCUCAGGGCUGCCAACCUUCUAGUAAAGGUUGAGUGGUAGUAUAUUUCUCCAACAUAA
+..((((((.(((...((((((((.((.....))))))))))......)))...))))))............((((........((..((((((((......))))))).)..)).........))))....... (-42.13)
+>snoRNA_233
+AUCCUUUUGUAGUUCAUGAGCGUGAUGAUUGGGUGUUCAUACGCUUGUGUGAGAUGUGCCACCCUUGAACCUUGUUACGACGUGGGCACAUUACCCGUCUGACC
+..............((..((((((.(((........)))))))))..))...((((((((..(.((((((...))).))).)..))))))))............ (-27.40)
+>snoRNA_234
+UCACUGUGAUGAUGGUUUUCCAACAUUCGCAGUUUCCACCAGAAAGGUUUUCCUUAGUGUUGGGUAAACCUUCCUUGGAUGUCUGAGUGAG
+..(((((((((.(((....))).)).)))))))...(((((((.((((((.(((.......))).))))))((....))..)))).))).. (-27.80)
+>snoRNA_235
+UCACUAUGAUGAUUGGUUGCCAGACAUUCGCAGUUUCCACCAGAAAUGUUUUUCCUUAUGUUGGCCAGUUCUUCCUUGGAUGUCUGAGUGAG
+................(..((((((((((...(((((.....)))))......((.......)).............))))))))).)..). (-17.20)
+>snoRNA_236
+CUUCGAUGAAGAGAUGAUGACGAGUCUGACUUGGGGAUGUUCUCUUUGCCCAGGUGGCCUACUCUGUGCUGCGUUCUGUGGCACAGUUUAAAGAGCCCUGGUUGAAGUAAUUUCCUAAAGAUGACUUAGAGGCAUUUGUCUGAGAAGG
+((((...((..(((((.....(((((...(((.((((.(((..((((..(((((..((((...((((((..(.....)..)))))).....)).)))))))..)))).))).)))).)))..))))).....))))).))...)))). (-49.00)
+>snoRNA_237
+CUUCAGUGAUGACACGAUGACGAGUCAGAAAGGUCACGUCCUGCUCUUGGUCCUUGUCAGUGCCAUGUUCUGUGGUGCUGUGCACGAGUUCCUUUGGCAGAAGUGUCCUAUUUAUUGAUCGAUUUAGAGGCAUUUGUCUGAGAAGG
+..(((((((((((.((....)).))))...(((.(((...(((((...((..((((((((..((((.....))))..)))...)))))..))...)))))..))).)))..)))))))....((((((.(....).)))))).... (-47.40)
+>snoRNA_238
+UUGCAAUGAUGUCGUAAUUUGCGUCUUACUCUGUUCUCAGCGACAGUUGCCUGCUGUCAGUAAGCUGGUACAGAAGGUUGACGAAAAUUCUUACUGAGCAA
+.(((.(((....)))(((((.((((...((((((.(.((((((((((.....)))))).....))))).)))).))...)))).)))))........))). (-26.80)
+>snoRNA_239
+CAGUAGUGAUGAAAUUCCACUUCAUUGGUCCGUGUUUCUGAACCACAUGAUUUUCUCGGAUGUUCUGAUG
+(((....((((((.......)))))).(((((.(..((((.....)).))....).)))))...)))... (-10.20)
+>snoRNA_240
+UCAAAAUGAUGAGAUUCCACUUAAUUGGUCCGUGUUUCUGAAACACAUGAUAUUUGUGGAAAUUCUGACU
+..........(((.((((((.......(((.(((((.....)))))..)))....)))))).)))..... (-14.10)
+>snoRNA_241
+UUGUUAUGAUGAGAUUCCACUUAAGGUCCGUGUUUCUGAAACAAAUGAUUUUGUGGAAGUUCUGAUU
+.......(((.(((((((((..((((((..((((.....))))...))))))))))))..))).))) (-14.60)
+>snoRNA_242
+UGGAUAUGAUGACUGAUUACCUGAGAAAUAAUUGAUGAAAUCUCAAGAAAAUUCCUCUAGAUAGUCAAGUUCUGAUCCAG
+(((((.....(((((((((.(((((.(((..((((.(....)))))....))).))).)).))))).))))...))))). (-16.80)
+>snoRNA_243
+GCUGAAUGAUGAUAUCCCACUAACUGAGCAGUCAGUAGUUGGUCCUUUGGUUGCAUAUGAUGCGAUAAUUGUUUCAAGACGGGACUGAUGGCAGC
+((((..................(((((....))))).((..((((....(((((((...)))))))....(((....))).))))..))..)))) (-23.10)
+>snoRNA_244
+UCCCAAUGAAGAAACUUUCACAUGUCUUACUCUCUGUCCUAGUCCCAGAGCCUGUAAAGGUGAACCCACUGGGACUGGCUGGGGGAGAAGAGGAAGAUUUGUUCCAGAAGGAACUGUCUGAGGGAU
+((((..(((((....)))))..(.((((.((((((...((((((((((.((((....)))).......))))))))))...)))))))))).).((((..(((((....))))).))))..)))). (-47.90)
+>snoRNA_245
+GUCUUCUCAUUGAGCUCCUUUCUGUCUAUCAGUGGCAGUUUAUGGAUUCGCACGAGAAGAAGAGAGAAUUCACAGAACUAGCAUUAUUUUACCUUCUGUCUUUACAGAGGUAUAUUUAGCUGUAUUGUGAGACAUUC
+.(((((((..((((.(((...(((((.......))))).....)))))))...)))))))........(((((((.((.(((.......(((((.((((....)))))))))......))))).)))))))...... (-39.82)
+>snoRNA_246
+UGCAGAUGAUGUAAAAGAAUAUUUGCUAUCUGAGAGAUGGUGAUGACAUUUUAAACCACCAAGAUCGCUGAUGCA
+..((((((..(((((......))))))))))).....(((((..............))))).....((....)). (-13.64)
+>snoRNA_247
+UUCCUAUGAUGAGGACCUUUUCACAGACCUGUACUGAGCUCCGUGAGGAUAAAUAACUCUGAGGAGA
+(((((.....(((...(((...(((....)))...))).(((....))).......)))..))))). (-14.50)
+>snoRNA_248
+CUACGGGGAUGAUUUUACGAACUGAACUCUCUCUUUCUGAUGGAUUAGUGGAGAAAACAGAAAAUUCUGAGUAGC
+((((.........................(((((..((((....)))).)))))...((((....)))).)))). (-12.50)
+>snoRNA_249
+ACUCCAUGAUGAACACAAAAUGACAAGCAUAUGGCUGAACUUUCAAGUGAUGUCAUCUUACUACUGAGAAGU
+.(((...(((((.(((.........(((.....)))..........)))...)))))........))).... ( -9.71)
+>snoRNA_250
+GUCAGAUGAUUUGAAUUGAUAAGCUGAUGUUCUGUGAGGUACAAAAGUUAAUAGCAUGUUAGAGUUCUGAUGGCA
+((((((...(((((..((...((((..(((.((....)).)))..)))).....))..)))))..)))))).... (-13.90)
+>snoRNA_251
+UUUCUAUGAUGAAUCAAACUAGCUCACUAUGACCGACAGUGAAAAUACAUGAACACCUGAGAAAC
+(((((....((..(((.......(((((.........))))).......))).))....))))). ( -5.54)
+>snoRNA_252
+GUUUGUGAUGACUUACAUGGAAUCUCGUUCGGCUGAUGACUUGCUGUUGAGACUCUGAAAUCUGAUUUUC
+...(((((....))))).(((.(((((..((((.........)))).))))).))).............. (-13.40)
+>snoRNA_253
+CUCACCAGUGAUGAGUUGAAUACCGCCCCAGUCUGAUCAAUGUGUGACUGAAAGGUAUUUUCUGAGCUGUG
+.....((((...((...(((((((....(((((............)))))...)))))))))...)))).. (-17.50)
+>snoRNA_254
+GUCAGUGAUGAGCAACAUUCACCAUCUUUCGUUUGAGUCUCACGGCCAUGAGAUCAACCCCAUGCACCGCUCUGAGA
+....((((((.....)).))))...............(((((.(((((((.(......).))))....))).))))) (-12.60)
+>snoRNA_255
+AUUGGUGAUGAGCAACAAUCACCAUCUUUCGUUUGAGUCUCAUGGCCAUGAGACCAACCCCAUGCACUGCUCUGAGA
+..(((((((........)))))))........(((.(((((((....)))))))))).................... (-19.90)
+>snoRNA_256
+GGCCGGUGAUGAGAACUUCUCCCACUCACAUUCGAGUUUCCCGACCAUGAGAUGACUCCACAUGCACUACCAUCUGAGGCCAC
+((((.((((.(((.....)))....))))....(((((((.(......).)).)))))...................)))).. (-18.10)
+>snoRNA_257
+CGUCCAUGAUGUUCCGCAACUACCUACAUUGUUUGAUCCUCAUGAAAGCAGCACUGGCUGAGACGC
+(((((((((.(.((.((((.........))))..)).).)))))....((((....)))).)))). (-12.80)
+>snoRNA_258
+GGCAGAUGAUGUCCUUAUCUCACGAUGGUCUGCGGAUGUCCCUGUGGGAAUGGCGACAAUGCCAAUGGCUUAGCUGAUGCCAGGAG
+((((.....((((((..(((((((..((.(.......).)).)))))))..)).)))).))))..((((.........)))).... (-25.40)
+>snoRNA_259
+UGGCAGAUGAUGUUUGUUUUCACGAUGGUCUUCAGAUGCCCACGUGGGCACUGCUGAGAAAGCCACUUGGUAAAACUGAUGCCGGAAA
+.((((......((((....(((.(.((((.(((((.(((((....)))))...)))))...))))).)))..))))...))))..... (-27.00)
+>snoRNA_260
+UUGCAAUGAUGUGAAUCUCUCACUGAAUUCAACCUUGAAGUGCGAAUCCAUGAGCUUUUUAACCCUGAGCAA
+(((((.....((((.....))))....((((....)))).)))))........((((.........)))).. (-10.80)
+>snoRNA_261
+GUUGCAGUGAUGUAAAAUUUCUUGGCCUGAAAUUACUGUGAAGAGUAAAACCGAGCUUUUUAACACUGAGU
+....(((((......((((((.......))))))....((((((((........)))))))).)))))... (-14.20)
+>snoRNA_262
+UUGCCAAUGAUGGUUAAGAAUUUCUUCACCUGAAUAAACCAUGUGGUCAGCAUUGCAUCUGAGGCAAA
+(((((......(((.(((.....))).)))..........(((..((....))..)))....))))). (-14.70)
+>snoRNA_263
+AUUCGUGAUGACUGAUCAUUUCUUCACUUUGACCAGAUGUCUACUGAAGAAAGCCUGCGUCUGAGG
+.((((.((((...(....((((((((....(((.....)))...)))))))).)...)))))))). (-14.60)
+>snoRNA_264
+UUCUCGUGAUGAAAACUCUGUCCAGUUCUGCUACUGAAGGGAGAGAGAUGAGAGCCUUUUAGGCUGAGGAA
+(((((..........((((.(((..(((.......))).))).)))).....((((.....))))))))). (-21.60)
+>snoRNA_265
+UCUCAGUGAUGAAAACUUUGUCCAGUUCUGCUACUGACAGUAAGUGAAGAUAAAGUGUGUCUGAGGAGA
+((((...((((...((((((((((.((((((....).))).)).))..)))))))).))))....)))) (-17.40)
+>snoRNA_266
+UGGGAAGUGAUGACACCUGUGACUGUUGAUGUGGAACUGAUUUAUCGCGUAUUCGUACUGGCUGAUCCUG
+.((((.(((((((.....((..(..(....)..).))....)))))))......((....))...)))). (-10.40)
+>snoRNA_267
+AAUGAUGGAAAAAUCAUUAUUGGAAAAGAAUGACAUGAACAAAGGAACCACUGAAGUG
+((((((......))))))..............................(((....))) ( -4.50)
+>snoRNA_268
+GUGCAUAUGAUGGAAAAGUUUUAAUCUCCUGACACUUGUGAUGUCUUCAAAGGAACCACUGAUGCAC
+((((((....(((....(((..........))).(((.(((.....))).)))..)))...)))))) (-12.10)
+>snoRNA_269
+CACAGAUGAUGAACUUAUUGACGGGCGGACAGAAACUGUGUGCUGAUUGUCACGUUCUGAUU
+..........((((....(((((((((.((((...)))).))))...))))).))))..... (-14.60)
+>snoRNA_270
+CCUGGAUGAUGAUAAGCAAAUGCUGACUGAACAUGAAGGUCUUAAUUAGCUCUAACUGACUAA
+(((..(((......(((....))).......)))..)))......((((.((.....)))))) ( -8.22)
+>snoRNA_271
+GGUCAAUGAUGUGUUGGCAUGUAUUAUCUGAAUCUAUUGCUGAUGUGUAAUAACACUUUAGCUCUAGAAUUACUCUGAGACCU
+((((....(((((....)))))......(((.((((..(((((.((((....)))).)))))..)))).)))......)))). (-21.90)
+>snoRNA_272
+GGUCAAUGAUGUAAUGGCAUGUAUUAGCUGAAUCUAAAGUUGAUGUGAGUUCUAAAAUUACACUGAGACCU
+((((...(.(((((((((.(..(((((((........)))))))..).))).....)))))))...)))). (-15.40)
+>snoRNA_273
+GGUCAAUGAUGAGUUGGCAUGUAUUCUGAAUCUAAAGUUGAUUAUUACUACUUUAGCUCUAGAAUUACUCUGAGACCU
+((((......((((........((((((...(((((((...........)))))))...)))))).))))...)))). (-15.70)
+>snoRNA_274
+GUAGGGUGAUGAAAAAGAAUCCUUAGGCGUGGUUGUGGCCGUCUUGGUCACCUGUGUGCCACUUGCCAAUGCAAGGACUUGUCAUAGUUACACUGACU
+((.(((((((......((.((((...(((((((.(((((((.(..((...)).))).)))))..))).)))).)))).))......))))).)).)). (-27.70)
+>snoRNA_275
+UAAUGAUUCUGCCAAAUGAAAUAUAAUGAUAUCACUGUAAAACCGUUCCAUUUUGAUUCUGAGGU
+..........(((....(((.((.((((....................)))).)).)))...))) ( -2.95)
+>snoRNA_276
+AGUGAUGAUGACCCCAGGUAACUCUUGAGUGUGUCGCUGAUGCCAUCACCGCAGCGCUCUGACC
+.(((.(((((.(..((((..(((....)))....).)))..).))))).)))............ (-12.60)
+>snoRNA_277
+UGCUCUGAUGAAAUCACUAAUAGGAAGUGCCGUCAGAAGCGAUAACUGACGAAGACUACUCCUGUCUGAUU
+.(((((((((....((((.......)))).)))))).)))............((((.......)))).... (-16.20)
+>snoRNA_278
+CUGAUGAUACUUGUAAUAGGAAGUGCCGUCAGAAGCGAUAACUGACGA
+((((((.(((((.(....).))))).))))))................ (-10.90)
+>snoRNA_279
+UAUCUGUGAUGAUCUUAUCCCGAACCUGAACUUCUGUUGAAAAAAAAAAACUUUUACGGAUCUGGCUUCUGAGAU
+...........((((((....(((((.((...(((((.(((..........))).))))))).)).))))))))) ( -9.10)
+>snoRNA_280
+UAAUCAAUGAUGAAACCUAUCCCGAAGCUGAUAACCUGAAGAAAAAUAAGUACGGAUUCGGCUUCUGAGAU
+..................((((.((((((((...((.................))..)))))))).).))) (-12.33)
+>snoRNA_281
+GUUGCAUGAUGAAUAAAAUCAAAUCACCAUCUUUCGGCUGAGUUCGUGAUGGAUUUGCUUUUUUCUGAUU
+..........(((.((((.(((((..(((((...(((......))).)))))))))).)))))))..... (-11.20)
+>snoRNA_282
+GGGAAUGAUGAUUUCACAGACUAGAGUCUCCGAUGCUGGUCAUGAUGUCAAAACUAAGUUCUGA
+.(((((..((((.(((..((((((.(((...))).)))))).))).)))).......))))).. (-14.80)
+>snoRNA_283
+AUGCUAUGAUGACAUCCAUAUGGUUUCGCUGCUGGCUGAGUUUCAGAGAUGACACCUUUCUCUUGGCUGUCUGAGCAU
+(((((.....((((.(((...(((.(((((.((((.......)))))).))).))).......))).))))..))))) (-19.80)
+>snoRNA_284
+UGGCGAUGAGGAGGUACCUAUUGUGUUGAGUAACGGUGAUAAUUUUAUACGCUAUUCUGAGCC
+..(((((.(((.....))))))))(((.((.((..((((((....))).)))..)))).))). (-11.00)
+>snoRNA_285
+GUGUAUGAUGACAACUCGGUAAUGCUGCAUACUCCCGAGUGCGCGGUGGGGAAGCCAACCUUGGAGAGCUGAGC
+..............((((((...(((((.((((....)))).))))).((....))...........)))))). (-19.20)
+>snoRNA_286
+CCACAAUGAUGGCAAUAUUUUUCGUCAACAGCAGUUCACCUAGUGAGUGUUGAGACUCUGGGUCUGAGUGA
+.(((..((((((.((....)))))))).(((((.(((((...)))))))))).(((.....)))...))). (-15.50)
+>snoRNA_287
+UGGAGGUGAUGAACUGUCUGAGCCUGACCUUGUAGAAUGGAGGCAAAAAAACUGAUUUAAUGAGCCUGAUCC
+...(((((((.....)))...((((..((.........))))))...................))))..... (-10.10)
+>snoRNA_288
+CUGCAGUGAUGACUUUCUUAGGACACCUUUGGAUUUACCGUGAAAAUUAAUAAAUUCUGAGCAGC
+((((.(((....((.....))..)))....(((((((..((....))...)))))))...)))). ( -9.00)
+>snoRNA_289
+CUGCGAUGAUGGCAUUUCUUAGGACACCUUUGGAUUAAUAAUGAAAACAACUACUCUCUGAGCAGC
+((((...((.((...(((..(((...)))..))).......((....))....)).))...)))). ( -7.60)
+>snoRNA_290
+CCUUCUAUGAUGAUUUUAUCAAAAUGACUUUCGUUCUUCUGAGUUUGCUGAAGCCACAUUUAGGUACUGAGAAGG
+.......(((((....)))))..............(((((.(((...(((((......)))))..))).))))). (-14.20)
+>snoRNA_291
+UAUUCCUCACUGAUGAGUACGUUCUGACUUUCGUUCUUCUGAGUUUGCUGAAGCCAGAUGCAAUUUCUGAGAAGG
+.....((((..(((..(((...((((.((((.((.((....))...)).)))).))))))).)))..)))).... (-13.20)
+>snoRNA_292
+AGUCUGUGAUGAAUUGCUUUGACUUCUGACACCUCGUAUGAAAACUGCACGUGCAGUCUGAUUAUUUAGCAAGACUGAGGCUU
+((((.(..(....)..)...)))).......((((........(((((....)))))((((....)))).......))))... (-15.50)
+>snoRNA_293
+GCUAUGAUGAAUUUGAUUGCAUUGAUCGUCUGACAUGAUAAUGUAUUUUUGUCCUCUAAGAAGUUCUGAGCUU
+(((.....((((((((.(((((((.((((.....))))))))))).))............))))))..))).. (-10.20)
+>snoRNA_294
+UCUCAGUGAUGUAAUUCCAAUAGAUCCUUCUGACCCUCCACUGUGGACUCAAUAGCAGGGAGAUGAAGAGGACAGUGACUGAGAGA
+(((((((.((.....(((..((((....))))...((((.((((..........)))))))).......)))..)).))))))).. (-25.70)
+>snoRNA_295
+GUGCAAUGAUGUAUUUUAUUCAACACAUCAUUCUGAAAGAACGUGUGGAAAACUAAUGACUGAGCACA
+((((.(((((((.((......)).)))))))..........(((.(((....)))))).....)))). (-11.30)
+>snoRNA_296
+ACUCUCUCGGCUCUGCAUAGUUGCACUUGGCUUCACCCGUGUGACUUUCGUAACGGGGAGAGAGAGAAAAGAUCUCCUCAGGACCUCGGAUGGGCCUUACUGUGGCCUCUCUUUCCUUGAGGGGUGCAACAGGC
+.(((((((.(((.((((....))))...)))....(((((...((....)).)))))..)))))))....(..((((((((((....(((.(((((.......))))).))).))).)))))))..)....... (-52.00)
+>snoRNA_297
+UCAGCCACCCGCCACUGCACCUGACCAGGUCUCUGUUGGCUGGUGCAAUCCAGUGGUGAGCUGAUAGUAAACCCCAGCUUAGGAAACAGGGUUGUUCUUCAUGUGGAUGACUCUGUGCCGAAAGCAUGGGAACAGCC
+((((((((((.....((((((.(.((((.......))))).)))))).....).)))).)))))........((((((((.((..(((((((..(((.......)))..))))))).))..)))).))))....... (-54.70)
+>snoRNA_298
+GUGCAAACUCGAUCACUAGCUCUGCGUGAUGUGGCAGAAGCGAAGGGAACCAGGUUUGCAAAAGUAACUGUGGUGAUGGAAAUGUGUUAGCCUCAGACACUACUGAGGUGGUUCUUUCUAUCCUAGUACAGUC
+.(((((((..(.((.((.(((((((........)))).)))..)).))..)..)))))))......((((((.(((((((((.(.....(((((((......)))))))....)))))))))..).)))))). (-44.30)
+>snoRNA_299
+AUCCAAGGUGAUUCCCUCUCCAAGGGGACAUCAGUGCCUCUCAGGAAAGUAGCAGCUUGGAAUAGAAUCUGGCAUGCCUAAGGCCUUUGGGGAACUGGGAUGCUUAUUUCCUCUGCCUUCCUUGGCUGCCCACAUGG
+.((((((.((.....((.(((.(((((((....)).)))))..))).))...)).)))))).........((((.(((.(((((....((((((.((((...)))).)))))).)))))....)))))))....... (-46.00)
+>snoRNA_300
+AUUGCACCUAAACCCAAGAAUCACUGUUUCUUAUAGCGGUGGUUUAAACAGAGGUGCAAACAGCAAGCGGAUCUUGUCGCCUUUGGGGGGCUGUGGCCGUGCCCCUCAAAGUGAAUUUGGAGGUUCCACAACU
+.((((((((........(((((((((((......)))))))))))......)))))))).......(.(((((((.((((.((((((((((.........)))))))))))))).....))))))))...... (-51.14)
+>snoRNA_301
+AAAGCAGGUUGCAAUUACAGUGCUUCAUUUUGUGGAAGUACUGCCAUUAUCCUGCUGAAAGAAAAGCCGUGUUAAUCAUUUUUGAUUUUGCCUUUAUGAGGGUAAAAUCAUGACAGAUUGACAUGGACAAUU
+..((((((....(((..(((((((((........)))))))))..)))..)))))).........((((((((((((.....((((((((((((....)))))))))))).....))))))))))).).... (-50.50)
+>snoRNA_302
+CCGCAGCCAAUUAAGCCGACUGAGUUCCUUUCCUCAUGGGGACCCAGUGUGCGAUGGCUGCACACAGCAGCUUCCUUGGUAGUGUACGCAGCCUGUUGGUUGUAUGGGUUGCUCUAAGGGACCUUGGAGACAGGC
+(((((((((((...((..((((.((((((........)))))).))))..))...(((((((((((.(((.....))).).))))..)))))).)))))))))..)).((((((((((....))))))).))).. (-52.50)
+>snoRNA_303
+CUCCUGCAUCCGAAAGUGAUCAUAGGCUGCCUGUGCCUAGGUCAUUGAUAGUGCAGGGAGAGGAACGCUGAAAGAGGUUGUCCCCGUGUUUGGAGGGUCCACCCUAUCCCAUCCGAACCCUGAAGCUUUCACACAACU
+.((((((((.....(((((((.(((((.......))))))))))))....))))))))....(((.(((...((.((......))..((((((((((..........))).))))))).))..))).)))........ (-46.30)
+>snoRNA_304
+UCCCUGUAUUCGAAAGUGAUCGUGGGCUGCCUUUGCCCUGGUCAUUGAUAGUGCAGGGAGAGGAAUCAAUGAAAGCGCUUCCCCGUGUUUGAAGGGUCCACUCCUAUCCCUUCCAAACUCUGGAGCUUUCGUACAUGC
+((((((((((....((((((((.((((.......))))))))))))...)))))))))).........((((((((.....((.(.((((((((((...........))))).))))).).)).))))))))...... (-53.70)
+>snoRNA_305
+CCCCUGCAUUCGAAAGUGAUCAUGAGCUGCCCGUGCCCUGGUCAUUGGUAGUGCAGGGAGAGGAACUGCCGAGAGCACUUCCCCGUGUUUGGAGGGUCCACUCCUGUCUCUUCCAAACCCUGGAGCUUUCCCACACCU
+.(((((((((....((((((((.(.((.......))).))))))))...)))))))))..(((...((..((((((...(((..(.((((((((((..((....))..)))))))))))..))))))))).))..))) (-49.90)
+>snoRNA_306
+CACCUGUAUUCGAAAGUGAUCGUGGGCUGCCUGUGCCCUGGUCAUUGAUAGUGCAGGGAAAGAAAUCGCGGAAAGUGCUUCCCCGUGUUUGGAGGGUCCGCUCCUGUCCCUUUCAAACUCUGGAGCUUUCUCACACCU
+..((((((((....((((((((.((((.......))))))))))))...))))))))............(((((((...(((..(.((((((((((..((....))..)))))))))).).))))))))))....... (-49.30)
+>snoRNA_307
+CUGCGAAUAUUCUCGCUGUUCUGAUUUUGUAAUAGUCAGGACAGGCUAAACAUUCGCUAUAUUAAGACCAUGCAUGUGUCCCCAAACCUAGUUCUUUCCCUAGGUCUGGUUUUAUAAAUGCUGGUGAUAAAC
+..((((((.......(((((((((((.......))))))))))).......))))))....(((..((((.((((.(((..(((.((((((........)))))).)))....))).))))))))..))).. (-40.84)
+>snoRNA_308
+AAUAAGUGAUGAAAAAAGUUUCGGUCCCAGAUGAUGGCCAGUGAUAACAACAUUUUUCUGAUGUU
+..........((((((.(((...((((((.....))).....)))...))).))))))....... ( -7.60)
+>snoRNA_309
+AAUGAAUGAUGACAAAAUGUUUCAGUCCCAAAUGAUACAUACUGAUUAUACCAUUAUAUUUAUCCUGACAUUCCU
+...(((((........((((.(((........))).))))..(((.((((....)))).)))......))))).. ( -8.30)
+>snoRNA_310
+CUGCCUCUGAUGAAGCCUGUGUUGGUAGGGACAUCUGAGAGUAAUGAUGAAUGCCAACCGCUCUGAUGGUGG
+(..((((....((.((..(.(((((((....((((..........))))..)))))))))))).)).))..) (-17.80)
+>snoRNA_311
+AGCCUGUGAUGCUUUAAGAGUAGUGGACAGAAGGGAUUUCUGAAAUUCUAUUCUGAGGCU
+..........((((((.((((((....((((((...)))))).....)))))))))))). (-15.40)
+>snoRNA_312
+GCCACAAUGAUGACAGUUUAUUUGCUACUCUUGAGUGCUAGAAUGAUGAGGAUCUUAACCACCAUUAUCUUAACUGAGGC
+(((.((....)).(((((.....((.(((....))))).(((.(((((..(........)..)))))))).))))).))) (-11.80)
+>snoRNA_313
+AGAUACUAUGAUGGUUGCAUAGUUCAGCAGAUUUAAUCAUGAAGAGAUGUACUAUCUGUCUGAUGUAUCU
+((((((....(((....)))...(((((((((.....(((......)))....))))).)))).)))))) (-15.30)
+>snoRNA_314
+GUGUAAUGAUGUUGAUCAAAUGUCUGACCUGAAAUGAGCAUGUAGACAAAGGUAACACUGAAGAA
+((((..((((....))))..((((((.(.((.......)).)))))))......))))....... (-10.40)
+>snoRNA_315
+UACUGUUAGUGAUGAUUUUAAAAUUAAAGCAGAUGGGAAUCUCUCUGAGAAAGAAAAUGGAGAUUAAUCUUAAACUGAAACAGUA
+(((((((.((..(((((....)))))..)).(((...(((((((((.....))).....)))))).))).........))))))) (-15.20)
+>snoRNA_316
+AUCGUCAGGUGGGAUAAUCCUUACCUGUUCCUCCUCCGGAGGGCAGAUUAGAACAUGAUGAUUGGAGAUGCAUGAAACGUGAUUAACGUCUCUGCGUAAUCAGGACUUGCAACACCCUGAUUGCUCCUGUCUGAUU
+...((((((..(((...(((....((((.(((((...)))))))))((((.....))))....)))...(((.((.((((.....)))).)))))(((((((((...........))))))))))))..)))))). (-42.80)
+>snoRNA_317
+GAUACAAUGAUGAUAACAUAGUUCAGCAGACUAACGCUGAUGAGCAAUAUUAAGUCUUUCGCUCCUAUCUGAUGUAUC
+((((((..((((..........(((((........))))).((((...............)))).))))...)))))) (-16.46)
+>snoRNA_318
+CAGAAUACAUGAUGAUCUCAAUCCAACUUGAACUCUCUCACUGAUUACUUGAUGACAAUAAAAUAUCUGAUAUUCUG
+(((((((((.((((...((((......))))......(((..((....))..)))........)))))).))))))) ( -9.50)
+>snoRNA_319
+ACAGCACAAAUGAUGAAUAACAAAGGGACUUAAUACUGAAACCUGAUGUUACAUUGUAGUGUGCUGAUGUGCUGU
+.(((((((.(..(((..(((((..(((..(((....)))..)))..))))))))..)..)))))))......... (-20.30)
+>snoRNA_320
+GCCAAAUGAUGUUUAUUUGAAACAGGAGCACCUCAGUGCAAGGACGACUCUUAUCUAUCACCCAUGACUGAUGGCU
+((((.....(((((.....)))))........(((((.((.((..((..........))..)).))))))))))). (-13.60)
+>snoRNA_321
+GCUGUUCGUUGAUGAGGCUCAGAGUGAGCGCUGGGUACAGCGCCCGAAUCGGACAGUGUAGAACCAUUCUCUACUGCCUUCCUUCUGAGAACAGC
+(((((((...((.(((((..((((((.((((((....))))))(((...)))............)))))).....)))))...))...))))))) (-35.00)
+>snoRNA_322
+GCUGUUCAGUGAUGAGGCCUGGAAUGUGCGCUGGGCACAGCGCCCGAGACAGACUGCGGAACCGUUCCUUGUUGCCUUCCUUCUGAGAACAGC
+(((((((...((.(((((..((((((.((((((....))))))(((((.....)).)))...)))))).....)))))...))...))))))) (-36.80)
+>snoRNA_323
+GCCAUAUGAUGUUUUCUUUUCGAAAGGUGAGCGCUUUGCGCAGUGAUGACCCUCAUCUAUCACCCUUGACUGAUGGCU
+(((((..((.....))...((((..(((((((((...))))...((((.....))))..))))).))))...))))). (-22.10)
+>snoRNA_324
+GAUCACGGUGAUGGCUGACCAGGGCUCCCUGACCUAUACAGGCCUCUGCUAUGGGGGUGAUGGCCAGUCCUGGUGUCUGAGUGAUU
+((((((...(((.....(((((((((((.(.((((...(((((....))).)).)))).).))..))))))))))))...)))))) (-31.60)
+>snoRNA_325
+UGGCCGAUGAUGACGAGACCACUGCGCAAUCUGAGUUCUGGGAACCAGGUGAUGGAGUAUGUUCUGAGAACAGACUGAGGCCG
+.((((...............(((.((..(((((.((((...)))))))))..)).)))....((((....))))....)))). (-23.40)
+>snoRNA_326
+UGGGAGGCUGAUACACAAAUUGGGCUGAAAUACUGCUCUACUUGUCACCAUGCCUCCCUAGAAUAAACUGCCUUUUGAUGACCGGGACGAAUUGAGUGAAAUCGUAACGGACAGAUACGGGGCAGACAGAU
+.(((((((......((((...((((.........))))...))))......))))))).........((((((..((.((.(((..((((.((.....)).))))..))).))..))..))))))...... (-43.70)
+>snoRNA_327
+CAGGCUGUGAUGAUUGGCGCAGGGGUACGGACCUCAGCUGAGUCAUGGGAGCUGAAUGUAUGUGUUUCUCCUUUGUCCUGCAUGUGGCAGGCUGAUGGGGAGCACUUACAUGAGACUGUUGCCUCAAUCUGAGCCUG
+((((((.....((((((.((((.(((.......((((((..........))))))(((((.(((((((((.((.(.(((((.....)))))).)).))))))))).)))))...))).)))).))))))..)))))) (-53.90)
+>snoRNA_328
+GCGGUGAUGACCCCAACAUGCCAUCUGAGUGUCGGUGCUGAAAUCCAGAGGCUGUUUCUGAGC
+..(((....)))..((((.(((.((((..(.(((....))).)..)))))))))))....... (-14.90)
+>snoRNA_329
+CCUGGUGAUGACAGAUGGCAUUGUCAGCCAAUCCCCAAGUGGGAGUGAGGACAUGUCCUGCAAUUCUGAAGG
+(((...((((.(((..(((((.(((...((.((((.....)))).))..)))))))))))))..))...))) (-19.70)
+>snoRNA_330
+CCUGGUGAUGACAGACGACAUUGUCAGCCAAUCCCCAUGUGGUAGUGAGGACAUGUCCUGCAGUUCUGAAGG
+(((...((((.(((..(((((.(((.....((..((....))..))...)))))))))))))..))...))) (-15.60)
+>snoRNA_331
+UUGCCCGAUGAUUAUAAAAAGACGCGUUAUUAAGAGGACUUUAUGCUGGAGUUCUUGACGUUUUUCUCUCUUUUCUAUACUUCUUUUUCUUUCUUUGAAUGUCCAGCGUCCUGUGAGCGAAGAUUAUGAGAUAUGAGGGCAA
+.(((((...((.((((((((((.(((((.....(((((((((.....)))))))))))))).......)))))).))))..))..((((..((((((....(((((....))).)).))))))....)))).....))))). (-31.30)
+>snoRNA_332
+UGGCCUUUAUCAAAGCUGCAGCUGCUUCCAUGUAGCUGCUGUGGUCAAAAAGAAGCCAAGAGUGACAGUUUUCCUUGAUGGUCAUAGUUCUGUUUGCUGUAACUGAUCUGCAAGAUUUUGGGAAAAUACCAUU
+((((((((......((.((((((((......)))))))).))......))))..))))..((((...((((((((....((((.(((.((.(((......))).)).)))...))))..))))))))..)))) (-35.90)
+>snoRNA_333
+CCUCCUUUUCUUGGCGGGGAUCGGGCUUGUGGUGCCGCUCCCCGUAAUGUACGGAGGAAGAGGGAAAGGGCUCUGGCCCCCUCGGCGUCAUGUCUUCGGUGCUGGCGGCUUCCCAUCCGCUGGUUCUAUCCUCAAACGCCGGGACACCG
+(((((....(...(((((((.(((((.....)).))).)))))))...)...)))))....((....((((....)))).((((((((..((.....((.((..((((........))))..)).)).....)).))))))))...)). (-63.20)
+>snoRNA_334
+GGGUGCAAAUGAUGCAUAUGUUAGCGACCAAAGCCUGAUCUUUGCUGAUUAGUCAUAAUUAACUGACUGCACCC
+((((((.......(((...((((((.......).)))))...))).....(((((........))))))))))) (-20.30)
+>snRNA_1
+AGCUUUGCGCAGUGGCAGUAUCGUAGCCAAUGAGGUUUAUCCGAGGCGCGAUUAUUGCUAAUUGAAAACUUUUCCCAAUACCCCGCCAUGACGACUUGAAAUAUAGUCGGCAUUGGCAAUUUUUGACAGUCUCUACGGAGACUG
+.((.....))..((((((((((((.(((.....((.....))..))))))).))))))))........................((((((.(((((........))))).)).)))).........(((((((....))))))) (-45.60)
+>snRNA_2
+AGCUUUGCGCAGUGGCAGUAUCGUAGCCAAUGAGGUCUAUCCGAGGCGCGAUUAUUGCUAAUUGAAAACUUUUCCCAAUACCCCGCCGUGACGACUUGCAAUAUAGUCGGCACUGGCAAUUUUUGACAGUCUCUACGGAGACUG
+.((.....))..((((((((((((.(((.....((.....))..))))))).))))))))........................((((((.(((((........))))).))).))).........(((((((....))))))) (-47.00)
+>snRNA_3
+AUACUCUGGUUUCUCUUCAGAUCGCAUAAAUCUUUCGCCUUUUACUAAAGAUUUCCGUGGAGAGGAACAACUCUGAGUCUUAACCCAAUUUUUUGAGGCCUUGCUUUGGCAAGGCUA
+..((((..(((((((((((...((...((((((((.(.......).)))))))).)))))))))))))......))))..................((((((((....)))))))). (-34.00)
+>snRNA_4
+GCUCUGGUUUCUCUUCAAAUCGUAUAAAUCUUUCGCCUUUUACUAAAGAUUUCCGUGGAGAGAAACCGUUUUGAGUUUCAAGCAAAUUUUUUGAAGCCCU
+.....((((((((((((...((...((((((((.(.......).)))))))).)))))))))))))).......((((((((.......))))))))... (-26.80)
+>snRNA_5
+ACUCUGGUUUCUCUUCAAAUCGUAUAAAUCUUUCGCCUUUUACUAAAGAUUUCCGUGGAGAGAAACGAGUGUGAGUCUGAAACCAAUUUUUUGAGGCCUUGCGUUUCUUAGCAGGGCUU
+((.((.(((((((((((...((...((((((((.(.......).)))))))).))))))))))))).)).)).....................(((((((((........))))))))) (-36.40)
+>snRNA_6
+AUCUCUGGUUUCUCUUCAUAACGAAUAAAUCUUUCGCCUUUUACUAAAGAUUUCCGUGGAGAAAAACAACUAUGAGUUUAUGGUUAAAUUUUUUGAAGUCUUGCCUAGGCAAGGCU
+.......((((.(((((((..((((.......)))).((((....))))......))))))).))))..(...(((((((....)))))))...).((((((((....)))))))) (-26.30)
+>snRNA_7
+GUGCUCGCUUCGGCAGCACAUAUACUAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGUGCAAGGAUGACAUGCAAAUUCGUGAAGCAUUCCAUAUUUUU
+(((((.((....))))))).......((((((((((.(...((..(((.....(((((...(((.....)))....)))))...))).))...).))))).))))). (-29.00)
+>snRNA_8
+GUGCUCGCUUCGGCAGCACAUACACUAAAAUUGGAACGAUACAGAGAAGAUUAUCAUGGCCCCUGCACAGGGAUGACACGCAAAUUCGUGAAGCGUUCCAUAUUUUU
+(((((.((....))))))).......((((((((((((......................((((....))))....((((......))))...))))))).))))). (-32.20)
+>snRNA_9
+GUGCUCGCUUCGGCAGCACAUAUACUAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCGCAAGGAUGACACGCAAAUUCGUGAAGCGUUCCAUAUUUUU
+(((((.((....))))))).......((((((((((((...((..(((.....((.((...(((.....)))....)).))...))).))...))))))).))))). (-30.40)
+>snRNA_10
+GUGCUCACUUCGGCAGCACAUAUACUAAAAAUUGGAACGAUACAGAGAAGAUUAUCAUGGCCCCUGUGCAAGGAUGACACGCAAAUUCGUGAAGCGUUCCAUAUUUUU
+(((((..(....).))))).......(((((((((((((............(((((...((......))...)))))((((......))))...))))))).)))))) (-26.70)
+>snRNA_11
+GUGCUCGCUUCGGCAGCACAUAUACUAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCGCAAGGAUGACAUGCAAAUUCGUGAAGCGUUCCAUAUUUUU
+(((((.((....))))))).......((((((((((((...((..(((.....(((((...(((.....)))....)))))...))).))...))))))).))))). (-34.70)
+>snRNA_12
+GUGCUCACUUCGGCAGCACAUAUACUAACAUUGGAACGACACAGAGAAGAUUAGCAUGGCCCCUGUGCAAGGAUGACACGCAAAUUCAUGAAGCGUUCCAUAUUUUU
+(((((..(....).)))))............(((((((...((..(((.....((.((...(((.....)))....)).))...))).))...)))))))....... (-25.10)
+>snRNA_13
+GUGCUCGCUUCGGCAGCACAUGUACUAAAAUUAGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCGCAAGGAUGACACGCAAAUUCGUGAAGCAUUCCAUAUUUUU
+(((((.((....)))))))..((.(((....))).))........((((((..(((.(....))))....(((((.((((......))))...)))))...)))))) (-23.70)
+>snRNA_14
+GUGCUCGCUUCGGCAGCACAUAUACUAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCGCAAGGAUGACACGCAAAUUCGUGAAGCGUUCCAUAUUU
+(((((.((....)))))))............(((((((...((..(((.....((.((...(((.....)))....)).))...))).))...)))))))..... (-30.00)
+>snRNA_15
+GUGCUCGCUUCGGCAGCACAUAUACUAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGUGCAAGGAUGACACGCAAAUUCGUGAAGCGUUCCAUAUUUUU
+(((((.((....))))))).......((((((((((((...............((((((...))))))........((((......))))...))))))).))))). (-31.40)
+>snRNA_16
+GUGCUCGCUUCGGCAGCACAUAUACUAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCUGCGCAAGGAUGACACGCAAGUUUGUGAAGCGUUCCAUGUUUUU
+(((((.((....))))))).......((((((((((((...((.(((...((.((.((..(((.....)))....)).)))).))).))...))))))).))))). (-30.90)
+>snRNA_17
+GUGCUCACUUCGGCAGCACAUAUACUAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCGCAAGGAUGACACGCAAAUUCGUGAAGCAUUCCAUAUUUUU
+(((((..(....).))))).......((((((((((.(...((..(((.....((.((...(((.....)))....)).))...))).))...).))))).))))). (-20.00)
+>snRNA_18
+GUGCUUGCUUUGGCAGCACAUAUACUAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCGCAAGGAUGACACGCAAAUUUGUGAAGCGUUCCAUAUUUUU
+(((((.((....))))))).......((((((((((((...((....(((((.((.((...(((.....)))....)).)).))))).))...))))))).))))). (-27.80)
+>snRNA_19
+GUGCUCGCUUCGGCAGCACAUAUACUAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGAGCAAGGAUGACACGCAAAUUCGUGAAGCGUUCCAUAUUUUU
+(((((.((....))))))).......((((((((((((...((..(((.....((.((...(((.....)))....)).))...))).))...))))))).))))). (-30.40)
+>snRNA_20
+GUGCUCACUUCGGCAGCACAUAUACUAAAAUUGGAAUGAUACAGAGAAGAUUAGUAUGGCCCCUGUGCAAGGAUGACACGCAAAUUCGUGAAGCGUUCCAUAUUUUU
+(((((..(....).))))).......((((((((((((...((..(((.....(..((...(((.....)))....))..)...))).))...))))))).))))). (-22.90)
+>snRNA_21
+GUGCUCGCUUUGGCAGUACAUAUACUAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCACAAGGAUGACAUGCAAAUUCGUGAAGCGUUCCAUAUUUUU
+(((((.((....))))))).......((((((((((((...((..(((.....(((((...(((.....)))....)))))...))).))...))))))).))))). (-29.70)
+>snRNA_22
+GUGCUCACUUCGGCAGCACAUAUACUAAAAUAGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCACAAGGAUGACACACAAAUUCGUGAAGUGUUCCAUAUUUUU
+(((((..(....).))))).......((((((((((((...............(((.(....))))............(((......)))...)))))).)))))). (-22.00)
+>snRNA_23
+GUGCUCGCUUCAGCAGCACAUAUACUAAAAUUGGAACGAUACAGAGAAGAUUAACGUGGCCCCUGAGCAAGGAUGACACGCAAAUUCGUGAAGCGUUCCAUAUUUUU
+(((((.((....))))))).......((((((((((((...((..(((......((((...(((.....)))....))))....))).))...))))))).))))). (-29.40)
+>snRNA_24
+GUGCUCGCUUCGGCAGCACAUAUUCUAAAAUUGGAACGAUACAGAGAAGAUUAGUAUGACCCCUGCGCAAGGAUGACACGCAAAUUCAUGAAGCGUUCCAUACU
+(((((.((....)))))))............(((((((...((..(((.....(..((...(((.....)))....))..)...))).))...))))))).... (-27.70)
+>snRNA_25
+GUGCUCUCUUCAGCAGCACAUAUACUAAAAUUGGAAUGAUACAGAGAAGAUUAGCAUGGCCCCUGUGCAAGGAUGACACGCAAAUUCGUGAAGUGUUCCAUAUU
+(((((((....)).)))))............((((((................((((((...))))))........((((......))))....)))))).... (-21.20)
+>snRNA_26
+GUGCUCCCCUCCGCAGCACAUAUACUAAAAUUGGAACGUUACAGAGAAGAUUAGCAUGGCCCCUGCGCAAGGAUGACAUGCAAAUUCGUGAAGCGUUCCAUAUUUUU
+(((((.(.....).))))).......((((((((((((((.((..(((.....(((((...(((.....)))....)))))...))).)).))))))))).))))). (-30.90)
+>snRNA_27
+UGCUUGCUUCGGCAGCACAUAUACUAAAAUUGCAACAAUACAGAGAAGAUUAGCAUGGCCCCUGCGCAAGGAUGACACGCAAAUUCAUGAAGUGUUCCAUAUUU
+((((.((....)))))).........................(.(((.(((..(((((....((((...........))))...))))).))).))))...... (-18.30)
+>snRNA_28
+UGCUUGCUUCGGCAGCACAUAUACUAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCGCAAGGAUGACAUGCAAAUUCGUGAAGCGUUCCAUAUUUUU
+((((.((....))))))........((((((((((((...((..(((.....(((((...(((.....)))....)))))...))).))...))))))).))))). (-30.80)
+>snRNA_29
+GUGCUCGCUUCGGCAGCACAUAUACUAAAAUUGUAACGAUACAGAGAAGAUUAGCAUGGCCCCCGCGCAAGGAUGACACGCAAAUUCGUGAAGCAUUCCAUAUAUUU
+(((((.((....)))))))...........(((((....))))).........((.(((...))).))..(((((.((((......))))...)))))......... (-24.30)
+>snRNA_30
+GUGCUCGCUUCAGCAGCACAUAUACUAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCGCAAGGAUGACACGCAAAUUCGUGAAGCGUUCCAUAUUUUU
+(((((.((....))))))).......((((((((((((...((..(((.....((.((...(((.....)))....)).))...))).))...))))))).))))). (-27.30)
+>snRNA_31
+GUGCUCGCUUCAGCAGCACAUAUACUAAAAUUGGAAUGCUACAGAGAAGAUUAGCAUGGCCCCUGCGCAAGGAUGGCACGCAAAUUCGUGAAGCGUUCCAUAUUU
+(((((.((....)))))))............(((((((((.((..(((.....((...((((((.....)))..)))..))...))).)).)))))))))..... (-33.70)
+>snRNA_32
+GUGCUCGCUUUGGCAGCACAUAUACUAAAAUUGGAAUGAUACAGAGAAGAUUAGCAUGGCCCCUGCGCAAGGAGGACAUGCAAAUUCGUGAAGCGUUCCAUAUUUUU
+(((((.((....))))))).......((((((((((((...((..(((.....(((((...(((.(....).))).)))))...))).))...))))))).))))). (-34.70)
+>snRNA_33
+GUGCUCGCUCCGGCAGCACAUAUACUAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCGCAAGGAUGACACGCAAAUUCGUGAAGCGUUCCAUAUUUUU
+(((((.((....))))))).......((((((((((((...((..(((.....((.((...(((.....)))....)).))...))).))...))))))).))))). (-27.40)
+>snRNA_34
+GUGCUUGCUUCGGCAGCACAUAUACUAAAAUUGGAACAAUACAGAGAAGAUUAGCAUGGCCCCUGCACAAGGAUGACAUGCAAAUUCAUGAAGCGUUCCAUAUUUUU
+(((((.((....))))))).......(((((((((((..(.((..(((.....(((((...(((.....)))....)))))...))).)).)..)))))).))))). (-30.80)
+>snRNA_35
+GUGCUUGCUUCGGCAGCACAUAUACUAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCUUGCGCAAGGAUGACACGCAAAUUCGUGAAGCGUUCCAUAUUUUU
+(((((.((....))))))).......((((((((((((...((..(((.....((.((..((((....))))....)).))...))).))...))))))).))))). (-30.80)
+>snRNA_36
+GUGCUCGCUUCGGCAGCACAUAUACUAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCGCAAGGAUGACACGCAAAUUCGUGAAGCGUUCCAUAUUUU
+(((((.((....))))))).......((((((((((((...((..(((.....((.((...(((.....)))....)).))...))).))...))))))).))))) (-30.30)
+>snRNA_37
+GUGCUCGCUUCAGCAGCACAUAUACUAAAAUACGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCGCAAGGAUGACACGCAAAUUCGUGAAGCGUUCCAUAUUUUU
+(((((.((....))))))).......((((((.(((((...((..(((.....((.((...(((.....)))....)).))...))).))...)))))..)))))). (-23.10)
+>snRNA_38
+GUGCUCACUUCAGCAGCACAUAUACUAAAAUUGGAACGAUACAGAGAAGAUUAGUAUGGCCCCUGCGCAAGGAUGACAUGCAAAUUCGUGAAGUGUUCCAUAUU
+((((((......).)))))............(((((((...((..(((.....(((((...(((.....)))....)))))...))).))...))))))).... (-24.40)
+>snRNA_39
+GUGCUCGCUUCGGCAGCACAUAUACUAAAAUUGGAACGAUAAAGAGAAGAUUAGCAUGGCCCCUGUGCAAGGAUGACAUGCAAAUUCGUGAAGCAUUCUAUAUUUUU
+(((((.((....))))))).......((((((((((.(.......(((.....(((((...(((.....)))....)))))...)))......).))))).))))). (-26.02)
+>snRNA_40
+GUGCUCGCUUUGGCAGCACAUGUACUAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCUUGUGCAAGGAUGACACGCAAAUUCGUGAAGCGUUCCAUAUUUUU
+(((((.((....))))))).......((((((((((((...((..(((.....((.((..((((....))))....)).))...))).))...))))))).))))). (-27.80)
+>snRNA_41
+GUGCUUGCUUCGGCUGCACAUAUACUAAAAUUAGAAUGAUACAGAGAAGAUUAGCAUGGCCCCUGCACAAGGAUGACACGCAAAUUCGUGAAGCGUUCCAUAUUUUU
+((((..((....)).)))).......(((((..(((((...((..(((.....((.((...(((.....)))....)).))...))).))...)))))...))))). (-22.20)
+>snRNA_42
+GUGCUCGCUUCAGCAGCACAUAUACUAAAAUUGGAACGAUACAGGGAAGAUUAGCAUGGCCCCUGCGCAAGGAUGACACGCAAAUUCAUUAAGCAUUCCAUAUUUUU
+(((((.((....))))))).......((((((((((.....(((((..............))))).((...(((((.........)))))..)).))))).))))). (-24.34)
+>snRNA_43
+GUGCUCGCCUCAGCAGCACAUAUACUAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCGCAAGGAUGACAUGCAGAUUCGUGAAGCGUUCCAUAUUUUU
+(((((.((....))))))).......((((((((((((...((..(((.....(((((...(((.....)))....)))))...))).))...))))))).))))). (-30.90)
+>snRNA_44
+GUGCUCGCUUCGGCAGCACAUAUAGUAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGUCCCCUGUGCAAGGAUGACAUGCAAAUUCGUGAAGUGUUCCAUAUUUUU
+(((((.((....))))))).......((((((((((((...((..(((.....(((((((.(((.....)))..)))))))...))).))...))))))).))))). (-37.00)
+>snRNA_45
+GCAGUGUUACAGCUCUUUUAGAAUUUGUCUAGUAGGCUUUCUGGCUUUUUACCGGAAAGCCCCU
+.................(((((.....)))))..((((((((((.......))))))))))... (-17.40)
+>snRNA_46
+AACCAUCCUUUUCUUGGGGUUGCGCUACUGUCCAAUGAGCGCAUAGUGAGGGCAGUACUGCUAACGCCUGAACAACACACCCGCAUCAACUAGAGCUUUUGCUUUAUUUUGGUGCAAUUUUUGGAAAAAU
+.....(((..(((..((.((((((.((((((((.....((.....))..)))))))).))).))).)).)))..........(((((((.((((((....))))))..))))))).......)))..... (-40.30)
+>snRNA_47
+GUGUUGUACAAAAGGAGAGAAGGUUAGCACUCCCCUUGACAAGGAUGGAAGAGGCCCUUGGGCCUGACAACAUGCAUAUGGUUAAGGCAUUGCCACCUACUUCGUGGCAUCCAACCAUCGUUUUU
+(((((((....((((.(((...(....).))).))))..............(((((....))))).)))))))....((((((..((...((((((.......)))))).))))))))....... (-37.50)
+>snRNA_48
+GUGUUGUAUGAAAGGAGAGAAGGUUAGCACUCCCCUUGACAAGGAUGGAAGCGGCCCUCGGGCCUGACAACACGCAUACGGUUAAGGCAUUGCCACCUACUUCGUGGCAUCUAACCAUCGUUUUU
+(((((((.....(((...((.((((.((..((((((.....)))..))).)))))).))...))).)))))))......(((((.((...((((((.......)))))))))))))......... (-37.80)
+>snRNA_49
+GUGUUGUAUUAAAGGAGAGAAGGUUAGCACUCCCUUUGACAAGGAUGGAAGAGGCCCUUGGGCCUGACAACACGCAUACGGUUAAGGCAUUACCACCUACUUCGUGGGAUCUAACCAUCGUUUUU
+(((((((.(((((((.(((...(....).))))))))))............(((((....))))).)))))))......(((((.((.....)).(((((...)))))...)))))......... (-37.50)
+>snRNA_50
+GUGUUGUAUGAAAGGGGAGAAGGUUAGUACUCCCCUUGACAAGGAUGGAAGAGGCCCUCAGGCCUGACAACACACAUACGGUUAAGGCAUUGCCACCUAGUUCGUGGCAUCUAACUAUCGUUUUU
+(((((((.((.((((((((..........))))))))..))..........(((((....))))).)))))))....(((((........((((((.......)))))).......))))).... (-41.66)
+>snRNA_51
+UGUUGUAUGAAAGGAGAGAAGGUUAGCACUUCCCUUGGCAAGGUUGGAAGAGGCCCUCAGGCCUGACAACAUGCAUAUGGUUAAGGCAUUGCCACCUACUUCGUGGCAUCUAACCAUCGUU
+.............(((.((((.......)))).))).(((..((((....(((((....)))))..)))).)))..(((((((.((...((((((.......))))))))))))))).... (-34.90)
+>snRNA_52
+AAAAAGGGCUUCUGUCGUGAGUGGCACACGUAGGGCAACUCGAUUGCUCUGCGUGCGGAAUCGACAUCAAGAGAUUUCGGAAGCAUAAUUUUUUGGUAUUUGGGCAGCUGGUGAUCGUUGGUCCCGGCGCCCUUU
+((((((.(((((((((.(((((.((.((((((((((((.....)))))))))))).)....).)).)))...))...)))))))....)))))).......((((.(((((.(((.....))))))))))))... (-51.40)
+>snRNA_53
+AUGCCUUAAACUUAUGAGUAAGGAAAAUAACGAUUCGGGGUGACGCCCGAAUCCUCACUGCUAAUGUGAGACGAAUUUUUGAGCGGGUAAAGGUCGCCCUCAAGGUGACCCGCCUACUUUGCGGGAUGCCUGGGAGUUGCGAUCUGCCCG
+...(((((..(....)..)))))........((((((((......))))))))(((((.......))))).............(((((..(((((((.(((.(((((.(((((.......))))).)))))..)))..)))))))))))) (-58.50)
+>tRNA_1
+GGGGGUGUAGAUCAGUGGUAGGGCGCACGCUUAGCAUGCAUGAGGCCCUGGGUCAAUCCCCAGCACCUCCA
+((((((((...........(((((.((.((.......)).))..)))))(((......))).)))))))). (-29.70)
+>tRNA_2
+GGGGGAUUAGCUCAAAUGGUAGAGCGCUCGCUUAGCAUGCGAGAGGUAGCGGGAUCGAUGCCCGCAUCCUCCA
+((((((...((((........)))).(((((.......))))).....(((((.......))))).)))))). (-32.30)
+>tRNA_3
+GGGGAAUUAGCUCAAGUGGUAGAGCGCUUGCUUAGCAUGCAAGAGGUAGUGGGAUCAAUGCCCACAUUCUCCA
+((((((...((((........)))).(((((.......))))).....(((((.......))))).)))))). (-26.60)
+>tRNA_4
+GGGGAAUUAGCUCAAGUGGUAGAGCGCUUGCUUAGCAUGCAAGAGGUAGUGGGAUCGAUGCCCACAUUCUCCA
+((((((...((((........)))).(((((.......))))).....(((((.......))))).)))))). (-26.60)
+>tRNA_5
+GGGGAAUUAGCUCAAGUGGUAGAGCGCUUGCUUAGCACGCAAGAGGUAGUGGGAUCGAUGCCCACAUUCUCCA
+((((((.((.(((..(((((.((((....)))).)).)))..))).))(((((.......))))).)))))). (-26.90)
+>tRNA_6
+GGGGAAUUAGCUCAAGCGGUAGAGCGCUUGCUUAGCAUGCAAGAGGUAGUGGGAUCGAUGCCCACAUUCUCCA
+((((((...((((........)))).(((((.......))))).....(((((.......))))).)))))). (-26.60)
+>tRNA_7
+GGGGAAUUGGCUCAAGCGGUAGAGCGCUUGCUUAGCAUGCAAGAGGUAGCAGGAUCGACGCCUGCACUCUCCA
+(((((.....(((..(((((.((((....)))).)).)))..)))...(((((.......)))))..))))). (-25.90)
+>tRNA_8
+GGGGGAUUAGCUCAAGCGGUAGGGUGCCUGCUUAGCAUGCAAGAGGUAGCAGGAUCGACGCCUGCAUUCUCCA
+((((((...(((.(((((((.....))).)))))))............(((((.......))))).)))))). (-25.70)
+>tRNA_9
+GGGGGUGUAGCUCAGUGGUAGAGCGCGUGCUUAGCAUGUACGAGGUCCCGGGUUCAAUCCCCGGCACCUCCA
+(((((((..((((.......)))).(((((.......))))).....(((((.......)))))))))))). (-30.20)
+>tRNA_10
+GGGGGUGUAGCUCAGUGGUAGAGCGCGUGCUUAGCAUGCACGAGGCCCUGGGUUCAAUCCCCAGCACCUCCA
+(((((((((((((((.(((...(.((((((...)))))).)...)))))))))).........)))))))). (-35.00)
+>tRNA_11
+GGGGGUGUAGCUCAGUGGUAGAGCGCGUGCUUAGCAUGCACGAGGCCCCGGGUUCAAUCCCUGGCACCUCCA
+((((((((........(((...(.((((((...)))))).)...)))..(((......)))..)))))))). (-31.40)
+>tRNA_12
+GGGGGUGUAGCUCAGUGGUAGAGCGCGUGCUUAGCAUGCACGAGGCCCCGGGUUCAAUCCCCGGCACCUCCA
+(((((((..((((.......)))).(((((.......))))).....(((((.......)))))))))))). (-32.20)
+>tRNA_13
+GGGGGUAUAGCUCAGCGGUAGAGCGCGUGCUUAGCAUGCACGAGGUCCUGGGUUCAAUCCCCAAUACCUCCA
+((((((..(((((((.....((.(.(((((.......))))).).)))))))))..)))))).......... (-28.00)
+>tRNA_14
+GGGGGUAUAGCUCAGUGGUAGAGCGCGUGCUUAGCAUGCACGAGGUCCUGGGUUCGAUCCCCAGUACCUCCA
+(((((((..((((.......)))).(((((.......))))).....(((((.......)))))))))))). (-29.40)
+>tRNA_15
+GGGGAUGUAGCUCAGUGGUAGAGCGCAUGCUUAGCAUGCAUGAGGUCCCGGGUUCGAUCCCCAGCAUCUCCA
+((((((((.((((.......))))((((((...))))))..........(((......)))..)))))))). (-27.60)
+>tRNA_16
+GGGGAAUUAGCUCAGGCGGUAGAGCGCUCGCUUAGCAUGCGAGAGGUAGCGGGAUCGACGCCCGCAUUCUCCA
+((((((...((((........)))).(((((.......))))).....(((((.......))))).)))))). (-29.90)
+>tRNA_17
+GGGGAAUUAGCUCAAAUGGUAGAGCGCUCGCUUAGCAUGCGAGAGGUAGCGGGAUCGAUGCCCGCAUUCUCCA
+((((((...((((........)))).(((((.......))))).....(((((.......))))).)))))). (-29.90)
+>tRNA_18
+GGGGAAUUAGCCCAAGUGGUAGAGCGCUUGCUUAGCAUGCAAGAGGUAGUGGGAUCGAUGCCCACAUUCUCCA
+((((((...((((..(((((.((((....)))).)).)))..).))).(((((.......))))).)))))). (-23.50)
+>tRNA_19
+GGGGAAUUAGCGCAAGUGGUAGAGUGCUUGCUUAGCAUGCAAGAGGUAGUGGGAUCGAUGCCCACAUUCUCCA
+((((((...((((((((........))))))...))............(((((.......))))).)))))). (-23.80)
+>tRNA_20
+GGGGGAUUAGCUCAAGCGGUAGAGCGCCUGCUUAGCAUGCAAGAGGUAGCAGGAUCGAUGCCUGCAUUCUCCA
+((((((.((.(((..(((((.((((....)))).)).)))..))).))(((((.......))))).)))))). (-26.10)
+>tRNA_21
+GGGGAAUUAGCUCAAGCGGUAGAGCGCUCCCUUAGCAUGCGAGAGGUAGCGGGAUCGACGCCCCCAUUCUCUA
+(((((....((((........))))..)))))........((((((..(((.......)))..))..)))).. (-22.60)
+>tRNA_22
+GGGGAAUUAGCUCAAGUGGUAGAGCGCUCGCUUAGCAUGCGAGAGGUAGUGGGAUCGAUGCCCGCAUUCUCCA
+((((((...((((........)))).(((((.......))))).....(((((.......))))).)))))). (-28.00)
+>tRNA_23
+GGGGAUGUAGCUCAGUGGUAGAGCGCGCGCUUCGCAUGUGUGAGGUCCCGGGUUCAAUCCCCGGCAUCUCCA
+(((((((..((((.......))))....(((((((....))))))).(((((.......)))))))))))). (-30.40)
+>tRNA_24
+GGGGAUGUAGCUCAGUGGUAGAGCGCAUGCUUCGCAUGUAUGAGGUCCCGGGUUCGAUCCCCGGCAUCUCCA
+(((((((...((((...(..((((....))))..).....))))...(((((.......)))))))))))). (-28.00)
+>tRNA_25
+GGGGGUGUAGCUCAGUGGUAGAGCGCGUGCUUCGCAUGUACGAGGCCCCGGGUUCGACCCCCGGCUCCUCCA
+(((((...((((..(.(((.((((.((.((((((......))))))..)).)))).))))..))))))))). (-31.80)
+>tRNA_26
+GGGGGUGUAGAUCAGUGGUAGAGCGCAUGCUUCGCAUGUACGAGGUCCCUGGUUCAAUCCCUGGUACCUCCA
+((((((....(((((.(((.((((.((.((((((......))))))...)))))).))).))))))))))). (-26.60)
+>tRNA_27
+GGGGAUGUAGCUCAGUGGUAGAGCGCAUGCUUCGCAUGUAUGAGGCCCCGGGUUCGAUCCCCGGCAUCUCCA
+(((((((..((((.......))))....((((((......)))))).(((((.......)))))))))))). (-28.00)
+>tRNA_28
+GGGGAUGUAGCUCAGUGGUAGAGCGCAUGCUUUGCAUGUAUGAGGCCCCGGGUUCGAUCCCCGGCAUCUCCA
+(((((((...((((...(((((((....))))))).....))))...(((((.......)))))))))))). (-30.60)
+>tRNA_29
+GGGGAUGUAGCUCAGUGGUAGAGCGCAUGCUUUGCAUGUAUGAGGUCCCGGGUUCGAUCCCCGGCAUCUCCA
+(((((((...((((...(((((((....))))))).....))))...(((((.......)))))))))))). (-30.60)
+>tRNA_30
+GGGGGUGUAGCUCAGUGGUAGAGCGCAUGCUUUGCAUGUAUGAGGCCUCGGGUUCGAUCCCCGACACCUCCA
+(((((((...((((...(((((((....))))))).....))))...(((((.......)))))))))))). (-31.00)
+>tRNA_31
+GGGGGUGUAGCUCAGUGGUAGAGCGCAUGCUUUGCAUGUAUGAGGCCUCGGUUCGAUCCCCGACACCUCCA
+(((((((...((((...(((((((....))))))).....))))...((((........))))))))))). (-28.00)
+>tRNA_32
+GGGGGUGUAGCUCAGUGGUAGAGCGCAUGCUUUGCAUGUAUGAGGUCCCGGGUUCGAUCCCCGGCACCUCCA
+(((((((...((((...(((((((....))))))).....))))...(((((.......)))))))))))). (-32.60)
+>tRNA_33
+GGGGGUGUAGCUCAGUGGUAGAGCACAUGCUUUGCAUGUGUGAGGCCCCGGGUUCGAUCCCCGGCACCUCCA
+(((((((.........(((...((((((((...))))))))...)))(((((.......)))))))))))). (-34.00)
+>tRNA_34
+GGGGGUGUAGCUCAGUGGUAGAGCGGAUGCUUUGCAUGUAUGAGACUUUGGGUUGGAUCCCCAGCACCUCCA
+((((((((..((((...(((((((....))))))).....)))).....(((......)))..)))))))). (-30.60)
+>tRNA_35
+GGGGAUGUAGCUCAGUGGUAGAGCGCAUGCUUUGCACGUAUGAGGCCCCGGGUUCAAUCCCCGGCAUCUCCA
+(((((((...((((...(((((((....))))))).....))))...(((((.......)))))))))))). (-30.60)
+>tRNA_36
+GGGCCAGUGGCGCAAUGGAUAACGCGUCUGACUACGGAUCAGAAGAUUCUAGGUUCGACUCCUGGCUGGCUCG
+(((((((((((((..........)))))......(((((((((....))).)))))).......)))))))). (-27.20)
+>tRNA_37
+GGGCCAGUGGCGCAAUGGAUAACGCGUCUGACUACGGAUCAGAAGAUUCCAGGUUCGACUCCUGGCUGGCUCG
+(((((((..(((..........))).((((((....).))))).....(((((.......)))))))))))). (-26.80)
+>tRNA_38
+GGCCGCGUGGCCUAAUGGAUAAGGCGUCUGAUUCCGGAUCAGAAGAUUGAGGGUUCGAGUCCCUUCGUGGUCG
+(((((((..((((........)))).(((((((...))))))).....(((((.......)))))))))))). (-27.10)
+>tRNA_39
+GACCCAGUGGCCUAAUGGAUAAGGCAUCAGCCUCCGGAGCUGGGGAUUGUGGGUUCGAGUCCCAUCUGGGUCG
+(((((((.(((....((((...(((....)))))))..))).((((((.((....))))))))..))))))). (-29.50)
+>tRNA_40
+GCCCCAGUGGCCUAAUGGAUAAGGCAUUGGCCUCCUAAGCCAGGGAUUGUGGGUUCGAGUCCCAUCUGGGGUG
+(((((((.(((.....(((...(((....))))))...))).((((((.((....))))))))..))))))). (-30.40)
+>tRNA_41
+GCCCCGGUGGCCUAAUGGAUAAGGCAUUGGCCUCCUAAGCCAGGGAUUGUGGGUUCGAGUCCCACCCGGGGUA
+(((((((.(((.....(((...(((....))))))...))).((((((.((....))))))))..))))))). (-32.10)
+>tRNA_42
+GCCCCAGUGGCCUGAUGGAUAAGGUACUGGCCUCCUAAGCCAGGGAUUGUGGGUUCGAGUUCCACCUGGGGUA
+(((((((..((((........)))).(((((.......))))).....(((((.......)))))))))))). (-28.30)
+>tRNA_43
+GCCCCAGUGGCCUAAUGGAUAAGGCACUGGCCUCCUAAGCCAGGGAUUGUGGGUUCGAGUCCCACCUGGGGUA
+(((((((..((((........)))).(((((.......))))).....(((((.......)))))))))))). (-31.60)
+>tRNA_44
+GCCCCAGUGGCCUAAUGGAUAAGGCACUGGCCUCCUAAGCCAGGGAUUGUGGGUUCGAGUCCCACCUGGGGUG
+(((((((..((((........)))).(((((.......))))).....(((((.......)))))))))))). (-31.60)
+>tRNA_45
+GACCACGUGGCCUAAUGGAUAAGGCGUCUGACUUCGGAUCAGAAGAUUGAGGGUUCGAAUCCCUUCGUGGUUA
+(((((((..((((........)))).((((((....).))))).....(((((.......)))))))))))). (-26.90)
+>tRNA_46
+GACCACGUGGCCUAAUGGAUAAGGCGUCUGACUUCGGAUCAGAAGAUUGAGGGUUCGAAUCCCUCCGUGGUUA
+(((((((..((((........)))).((((((....).))))).....(((((.......)))))))))))). (-28.30)
+>tRNA_47
+GACCACGUGGCCUAAUGGAUAAGGCGUCUGACUUCGGAUCAGAAGAUUGAGGGUUCGAAUCCCUUCGUGGUUG
+(((((((..((((........)))).((((((....).))))).....(((((.......)))))))))))). (-26.90)
+>tRNA_48
+GGCCGUGUGGCCUAAUGGAUAAGGCGUCUGACUUCGGAUCAAAAGAUUGCAGGUUUGAGUUCUGCCACGGUCG
+(((((((..((((........))))...((((....).))).......(((((.......)))))))))))). (-23.50)
+>tRNA_49
+GGCCGCGUGGCCUAAUGGAUAAGGCGUCUGACUUCGGAUCAGAAGAUUGCAGGUUCGAGUCCUGCCGCGGUCG
+(((((((..((((........)))).((((((....).))))).....(((((.......)))))))))))). (-31.60)
+>tRNA_50
+GACCGCGUGGCCUAAUGGAUAAGGCGUCUGACUUCGGAUCAGAAGAUUGAGGGUUCGAGUCCCUUCGUGGUCG
+(((((((..((((........)))).((((((....).))))).....(((((.......)))))))))))). (-29.10)
+>tRNA_51
+GGCUCCGUGGCGCAAUGGAUAGCGCAUUGGACUUCUAGAGGCUGAAGGCAUUCAAAGGUUCCGGGUUCGAGUCCCGGCGGAGUCG
+((((((((.((((........))))...((((((...(((.(((.((.(.......).)).))).)))))))))..)))))))). (-33.20)
+>tRNA_52
+GUCUCUGUGGCGCAAUGGACGAGCGCGCUGGACUUCUAAUCCAGAGGUUCCGGGUUCGAGUCCCGGCAGAGAUG
+((((((((.(......((((..(.((.((((((((((.....))))).))))))).)..))))).)))))))). (-30.80)
+>tRNA_53
+GGCUCUGUGGCGCAAUGGAUAGCGCAUUGGACUUCUAGCCUAAAUCAAGAGAUUCAAAGGUUGCGGGUUCGAGUCCCUCCAGAGUCG
+(((((((..((((........)))).(((((((..((((((.((((....))))...))))))..))))))).......))))))). (-32.60)
+>tRNA_54
+GGCUCUGUGGCGCAAUGGAUAGCGCAUUGGACUUCUAGCUGAGCCUAGUGUGGUCAUUCAAAGGUUGUGGGUUCGAGUCCCACCAGAGUCG
+(((((((..((((........))))...((((((..(.((((((((((((....))))...))))).))).)..))))))...))))))). (-32.30)
+>tRNA_55
+GGCUCUGUGGCGCAAUGGAUAGCGCAUUGGACUUCUAGAUAGUUAGAGAAAUUCAAAGGUUGUGGGUUCGAGUCCCACCAGAGUCG
+(((((((..((((........)))).(((((.((((..(....)..)))).))))).....(((((.......)))))))))))). (-27.90)
+>tRNA_56
+GGCUCUGUGGCGCAAUGGAUAGCGCAUUGGACUUCUAGUGACGAAUAGAGCAAUUCAAAGGUUGUGGGUUCGAAUCCCACCAGAGUCG
+(((((((((((((........)))((((((....)))))).(((((...(((((......)))))..)))))....))).))))))). (-28.80)
+>tRNA_57
+GUCUCUGUGGCGCAAUCGGUCAGAGCGUUCGGCUAUUAACCGAACGGUGAGUAGUUCAAGACCACCCAGGGACG
+(((((((.((.......((((....(((((((.......))))))).((((...)))).)))).))))))))). (-26.10)
+>tRNA_58
+GUCUCUGUGGCGCCAUCGGUUAGUGCCUUCGGCUGUUUGAACCGAAAGGCUGGUGGUUCAAGCCCACCCAGAGAUG
+(((((((.((.(((...(((....)))...))).((((((((((.........))))))))))...))))))))). (-29.70)
+>tRNA_59
+GUCUCUGUGGCGCAAUCGGUUAGCGCGUUCGGCUGUUAACCGAAAGGUUGGUGGUUCGAUCCCACCCAGGGACG
+(((((((..((((.........))))..(((((..((((((....))))))..).)))).......))))))). (-32.30)
+>tRNA_60
+GUCUCUGUGGUGCAAUCGGUUAGCGCGUUCGGCUGUUAACCAUAAGGUUGGUGGUUAGAGACCACCCAGGGACG
+(((((((..........(((((((((.....)).)))))))........(((((((...)))))))))))))). (-29.10)
+>tRNA_61
+GUCUCUGUGGCGCAAUCGGUUAGCGCGUUCGGCUGUUAACCGAAAGAUUGGUGGUUCGAGCCCACCCAGGGACG
+((((((((((.((..(((((((((((.....)).)))))))))..((........))..))))))..)))))). (-30.50)
+>tRNA_62
+GUCUCUGUGGCGCAAUCGGUUAGCGCGUUUGACUGUUAACUGAAAGGUUGGUGGUGCAAGCCCAUCCAGGGAUG
+(((((((..((((.........))))(((((((..((((((....))))))..)).))))).....))))))). (-27.10)
+>tRNA_63
+GUCUCUGUGGCGCAAUCGGCUAGCGCGUUUGGCUGUUAACUAAAAGGUUGGUGGUUCGAACCCACCCAGAGGCG
+(((((((..((((.........))))(((((((..((((((....))))))..).)))))).....))))))). (-26.50)
+>tRNA_64
+AUCUCCGUGGAGCAAUUGGUUAGCGCGUUCGGCCGUUAACCGGAAAGUUGGUGGUUCGAGCCUACCCAGGGACG
+...(((.(((.((.........))..(((((((((..(((......)))..))).))))))....))).))).. (-23.00)
+>tRNA_65
+GUCUCUGUGGUGCAAUCGGUUAGCGCGUUCCGCUGUUAACCGAAAGCUUGGUGGUUCGAGCCCACCCAGGGAUG
+(((((((.((((...((((((((((((...))).)))))))))..((((((....)))))).))))))))))). (-35.80)
+>tRNA_66
+GUCUCUGUGGCGCAAUCGGUUAGCGCGUUCGGCUGUUAACUGAAAGGUUAGUGGUUCGAGCCCACCCGGGGACG
+(((((((..((((.........))))(((((((..((((((....))))))..).)))))).....))))))). (-30.30)
+>tRNA_67
+AUCUCCGUGGAGCAAUUGGUUAGCGCGUUCGGCUGUUAACCGGAAAGUUGGUGGUUCGAGCCUACCCAGGGACG
+...(((.(((..((((((((((((((.....)).))))))))....))))..(((....)))...))).))).. (-22.50)
+>tRNA_68
+GUCUCUGUGGCGCAAUGGGUUAGCGCGUUCGGCUGUUAACCGAAAGGUUGGUGGUUCGAGCCCAUCCAGGGACG
+(((((((..((((.........))))(((((((..((((((....))))))..).)))))).....))))))). (-34.20)
+>tRNA_69
+GUCUCUGUGGUGCAAUCGGUUAGCGCGUUCGGCUGUUAACCAUAAGGUUGGUGGUUACAGACCACCCAGGGACG
+(((((((..........(((((((((.....)).)))))))........(((((((...)))))))))))))). (-29.10)
+>tRNA_70
+GUCUCUGUGGCGCAAUCGGUUAGCGCGUUCGGCUGUUAACUGAAAGGUUGGUGGUUCGAGCCCACCCAGGGACG
+(((((((..((((.........))))(((((((..((((((....))))))..).)))))).....))))))). (-30.60)
+>tRNA_71
+GUCUCUGUGGUGCAAUCGGUUAGCGCGUUCCGCUGUUAACCGAAAGCUUGGUGGUUUGAGCCCACCCAGGGAUG
+(((((((.((((...((((((((((((...))).)))))))))..(((..(....)..))).))))))))))). (-34.50)
+>tRNA_72
+GUCUCUGUGGCGUAGUCGGUUAGCGCGUUCGGCUGUUAACCGAAAAGUUGGUGGUUCGAGCCCACCCAGGAACG
+((..(((..((....(((((((((((.....)).)))))))))...)).(((((.......))))))))..)). (-26.10)
+>tRNA_73
+GUCUCUGUGGCGCAAUCGGUUAGCGCAUUCGGCUGUUAACCGAAAGGUUGGUGGUUCGAGCCCACCCAGGGACG
+(((((((..((((.........)))).((((((..((((((....))))))..).)))))......))))))). (-32.60)
+>tRNA_74
+GUCUCUGUGGCGCAAUCGGUUAGCGCGUUCGGCUGUUAACCGAAAGGUUGGUGGUUCGAGCCCACCCAGGGACG
+(((((((..((((.........))))(((((((..((((((....))))))..).)))))).....))))))). (-34.20)
+>tRNA_75
+GUCUCUGUGGCGCAAUCGGCUAGCGCGUUUGGCUGUUAACUAAAAGGUUGGCGGUUCGAACCCACCCAGAGGCG
+(((((((..((((.........))))(((((((((((((((....))))))))).)))))).....))))))). (-29.40)
+>tRNA_76
+UACUCGUUAGUAUAGUGGUGCGUAUCCCCGUCUGUCACGCGGGAGAGCGGGGUUCGCUCUCCCGACGGGGAG
+.........((((....))))...((((((((........(((((((((.....))))))))))))))))). (-34.00)
+>tRNA_77
+UCCUCGUUAGUAUAGUGGUGAGUAUCCCCGCCUGUCACGCGGGAGACCGGGGUUCGAUUCCCCGACGGGGAG
+((((((((........((.((((..(((((((((.....))))....)))))....)))).)))))))))). (-27.70)
+>tRNA_78
+UUCUUGUUAAUAUAGUGGUGAGUAUUCCCACCUGUCAUGCGGGAGACGGGGUUCAAUUCCCUGAUGGGGAG
+..((..(((......)))..))..(((((.((((.....))))...(((((.......)))))..))))). (-20.60)
+>tRNA_79
+UCCUCAUCAGUAUAGUGGUGAGUAUCCCCGCCUGUCACGCGGGAGACUGGGGUUCGAUUCCCUGAGGAGGAG
+(((((.(((.......((.((((..(((((((((.....))))....)))))....))))))))).))))). (-24.71)
+>tRNA_80
+UCCUCGUUAGUAUAGUGGUGAGUGUCCCCGUCUGUCACGCGGGAGACCGGGGUUCGAUUCCCCGACGGGGAG
+..((((..(......)..))))..((((((((........((....))((((.......)))))))))))). (-28.10)
+>tRNA_81
+UCCUCGUUAGUAUGGUGGUGAGUAUCCCUGCCUGUCACGCGGGAGACCGGGGUUCGAUUCCCCAACGGGGAG
+(((((((.....(((.((.......(((((((((.....))))....))))).......)))))))))))). (-25.84)
+>tRNA_82
+UCCUUGUUAGUAUAGUGGUGAGUGUUUCUGCCUGUCAUGUGGAGACUGGAGUUUGAGUCCCCAACAGGGAG
+((((((((......(((..(.((......)).)..)))..((.((((........)))))).)))))))). (-17.80)
+>tRNA_83
+UCCUCGUUAGUAUAGUGGUUAGUAUCCCCGCCUGUCACGCGGGAGACCGGGGUUCAAUUCCCCGACGGGGAG
+(((((((.................(((((((.......))))).)).(((((.......)))))))))))). (-26.70)
+>tRNA_84
+GGGGGUAUAGCUCAGGUGGUAGAGCAUUUGACUGCAGAUCAAGAGGUCCCCGGUUCAAAUCCGGGUGCCCCCU
+((((((((.((((........)))).((((((((..((((....))))..))).))))).....)))))))). (-29.30)
+>tRNA_85
+GGGGGUAUAGCUCAGGGGUAGAGCAUUUGACUGCAGAUCAAGAGGUCCCUGGUUCAAAUCCAGGUGCCCCCU
+((((((((.((((.......)))).((((((((..((((....))))..))).))))).....)))))))). (-26.70)
+>tRNA_86
+GGGGGUGUAGCUCAGUGGUAGAGCAUUUGACUGCAGAUCAAGAGGUCCCUGGUUCAAAUCCAGGUGCCCCCU
+((((((....(((..((((...(((......)))..)))).)))...(((((.......))))).)))))). (-26.90)
+>tRNA_87
+GGGGGUAUAGCUCAGUGGUAGAGCAUUUGACUGCAGAUCAAGAGGUCCCCGGUUCAAAUCCGGGUGCCCCCU
+((((((((.((((.......)))).((((((((..((((....))))..))).))))).....)))))))). (-29.00)
+>tRNA_88
+GGGGGCAUAGCUCAGUGGUAGAGCAUUUGACUGCAGAUCAAGAGGUCCCUGGUUCAAAUCCAGGUGCCCCCU
+((((((....(((..((((...(((......)))..)))).)))...(((((.......))))).)))))). (-29.30)
+>tRNA_89
+GGGGGUAUAGCUCAGGGGUAGAGCACUUGACUGCAGAUCAAGAAGUCCUUGGUUCAAAUCCAGGUGCCCCCU
+((((((((.((((.......))))...........(((((((.....))))))).........)))))))). (-25.60)
+>tRNA_90
+GGGCGUAUAGCUCAGGGGUAGAGCAUUUGACUGCAGAUCAAGAGGUCCCCAGUUCAAAUCUGGGUGCCCACU
+((((.....))))..(((((.((.(((((((((..((((....))))..))).))))))))...)))))... (-23.90)
+>tRNA_91
+GGGGGUAUAGCUCAGGGGUAGAGCAUUUGACUGCAGAUCAAGAGGUCUCUGGUUCAAAUCCAGGUGCCCCCU
+((((((((.((((.......)))).((((((((.(((((....))))).))).))))).....)))))))). (-28.70)
+>tRNA_92
+GGGCGUAUAGCUCAGGGGUAGAGCAUUUGACUGCAGAUCAAGAGGUCCCCAGUUCAAAUCUGGGUGCCCCCU
+((((.....)))).((((((.((.(((((((((..((((....))))..))).))))))))...)))))).. (-26.30)
+>tRNA_93
+GGGGGUAUAGCUCACAGGUAGAGCAUUUGACUGCAGAUCAAGAGGUCCCCGGUUCAAAUCUGGGUGCCCCCU
+((((((((.((((.......)))).((((((((..((((....))))..))).))))).....)))))))). (-29.00)
+>tRNA_94
+GGGGAUAUAGCUCAGGGGUAGAGCAUUUGACUGCAGAUCAAGAGGUCCCCGGUUCAAAUCCGGGUGCCCCCC
+((((.....((((.......)))).((((((....).))))).((..(((((.......)))))..)))))) (-25.30)
+>tRNA_95
+GGGGGUAUAGCUUAGGGGUAGAGCAUUUGACUGCAGAUCAAAAGGUCCCUGGUUCAAAUCCAGGUGCCCCUU
+(((((((..((((...(((...(((......)))..)))...)))).(((((.......)))))))))))). (-22.10)
+>tRNA_96
+GGGGGUAUAGCUCAGGGGUAGAGCAUUUGACUGCAAAUCAAGAGGUCCCUGAUUCAAAUCCAGGUGCCCCCU
+((((((((...((((((.....(((......)))..(((....)))))))))...........)))))))). (-23.94)
+>tRNA_97
+GGGGGUAUAGCUCACAGGUAGAGCAUUUGACUGCAGAUCAAGAGGUCCCCGGUUCAAAUCCGGUUACUCCCU
+(((((((..((((.......)))).((((((((..((((....))))..))).)))))......))))))). (-24.50)
+>tRNA_98
+GGGGGUAUAGCUCAGGGGUAGAGCACUUGACUGCAGAUCAAGAGGUCCCUGGUUCAAAUCCAGGUGCCCCCU
+(((((((..((((.......)))).((((((....).))))).....(((((.......)))))))))))). (-28.20)
+>tRNA_99
+GGGGGUAUAGCUUAGCGGUAGAGCAUUUGACUGCAGAUCAAGAGGUCCCCGGUUCAAAUCCGGGUGCCCCCU
+(((((((.......(((((..........))))).((((....))))(((((.......)))))))))))). (-27.20)
+>tRNA_100
+GGGGGUAUAGCUCAGGGGUAGAGCAUUUGACUGCAGAUCAAGAGGUCCCUGGUUCAAAUCCAGGUGCCCCCC
+((((((((.((((.......)))).((((((((..((((....))))..))).))))).....)))))))). (-26.30)
+>tRNA_101
+GGGGGUAUAGUUCAGGGGUAGAGCAUUUGACUGCAGAUCAAGAGGUCCCUGGUUCAAAUCCAGGUGCCCCCU
+((((((((.......((((.((((....((((.(.......).))))....))))..))))..)))))))). (-24.40)
+>tRNA_102
+GGGGGUAUAGCUCAGGGGUAGAGCAUUUGACUGCAGAUCAAGAGGUCCCCAGUUCAAAUCUGGGUGCCCCCU
+((((((((.((((.......)))).((((((((..((((....))))..))).))))).....)))))))). (-29.70)
+>tRNA_103
+GGGGGUAUAGCUCAGGGGUAGAGCAUUUGACUGCAGAUCAAGAGGUCCCCGGUUCAAAUCCGGGUGCCCCCU
+((((((((.((((.......)))).((((((((..((((....))))..))).))))).....)))))))). (-29.00)
+>tRNA_104
+GGGGGUAUAGCUCAGUGGGUAGAGCAUUUGACUGCAGAUCAAGAGGUCCCCGGUUCAAAUCCGGGUGCCCCCU
+((((((((.((((........)))).((((((((..((((....))))..))).))))).....)))))))). (-29.30)
+>tRNA_105
+GGGGGUAUAGCUCAGUGGUAGAGCAUUUGACUGCAGAUCAAGAGGUCCCUGGUUCAAAUCCGGGUGCCCCCU
+((((((((.((((.......)))).((((((((..((((....))))..))).))))).....)))))))). (-26.70)
+>tRNA_106
+GGGGGUAUAGCUCAGGGGUAGAGCAUUUGACUGCAGAUCAAGAAGUCCCCGGUUCAAAUCCGGGUGCCCCCU
+(((((((..((((.......))))....((((...........))))(((((.......)))))))))))). (-27.80)
+>tRNA_107
+GGGGGUAGGGCUCAGGGAUAGAGCAUUUGACUGCAGAUCAAGAGGUCCCCGGUUCGAAUCUAGGUGCCCCCU
+(((((((..((((.......)))).((((((((..((((....))))..))).)))))......))))))). (-27.20)
+>tRNA_108
+GGUUCCAUGGUGUAAUGGUGAGCACUUUGGACUCUGAAUACAGUGAUCAGAGUUCAAGUCUCACUGGGACCU
+(((((((..........(((((.((((.(((((((((.........))))))))))))))))))))))))). (-30.40)
+>tRNA_109
+GGUUCCAUGGUGUAAUGGUGAGCACUCUGGACUCUGAAUCCAGCGAUCCGAGUUCGAGUCUCGGUGGAACCU
+((((((((..........((((.((((.((((((.((.((....)))).)))))))))))))))))))))). (-27.20)
+>tRNA_110
+GGUUCCAUGGUGUAAUGGUGACCACUUUGGACUCUGAAUACAGUGAUCAGAGUUCAAGUCUCACUGGAACCU
+(((((((..(((....(....)...((((((((((((.........))))))))))))...)))))))))). (-26.90)
+>tRNA_111
+GGUUCCAUGGUGUAAUGGUAAGCACUCUGGACUCUGAAUCCAGCCAUCUGAGUUCGAGUCUCUGUGGAACCU
+((((((((.((((........))))...((((((.(((..(((....)))..)))))))))..)))))))). (-28.10)
+>tRNA_112
+GGUUCCAUGGUGUAAUGGUAAGCACUCUGGACUCUGAAUCCAGCGAUCCGAGUUCGAGUCUCGGUGGAACCU
+((((((((.((((........))))...((((((.(((..(........)..)))))))))..)))))))). (-25.10)
+>tRNA_113
+GGUUCCAUGGUGUAAUGGUUAGCACUCUGGACUCUGAAUCCAGCGAUCCGAGUUCAAAUCUCGGUGGAACCU
+((((((((.(......((((.(.((((.((((.(((....))).).))))))).).)))).).)))))))). (-25.60)
+>tRNA_114
+GGUUCCAUGGUGUAAUGGUUAGCACUCUGGACUCUGAAUCCGGUAAUCCGAGUUCAAAUCUCGGUGGAACCU
+((((((((.(......((((.(.((((.(((..(((....)))...))))))).).)))).).)))))))). (-24.20)
+>tRNA_115
+GGCCCCAUGGUGUAAUGGUCAGCACUCUGGACUCUGAAUCCAGCGAUCCGAGUUCAAAUCUCGGUGGGACCC
+((.(((((.((((........))))..(((((((.((.((....)))).))))))).......))))).)). (-21.70)
+>tRNA_116
+GGUUCCAUGGUGUAAUGGUUAGCACUCUGGACUCUGAAUCCAGCGAUCCGAGUUCAAGUCUCGGUGGAACCU
+((((((((.((((........))))..(((((((.((.((....)))).))))))).......)))))))). (-24.70)
+>tRNA_117
+GGUUCCAUGGUGUAAUGGUAAGCACCCUGGACUCUGAAUCCAGCAACCAGAGUUCCAGUCUCAGCGUGGACCU
+(((.(((((.((....(((....)))((((((((((...........))))).)))))...)).)))))))). (-25.40)
+>tRNA_118
+GACCAUGUGGCCUAAGGGAAAAGACAUCUCACUUUGGGUCAGAAGAUUGAGGGUUCAAGUCCUUUCAUGGUCA
+(((((((((((((((((((.........)).)))))))))).......(((((......))))).))))))). (-25.70)
+>tRNA_119
+GGUCCCAUGGUGUAAUGGUUAGCACUCUGGACUUUGAAUCCAGCAAUCCGAGUUCGAAUCUCGGUGGGACCU
+((((((..(((((........)))))(((((.......)))))....(((((.......))))).)))))). (-26.90)
+>tRNA_120
+GGCCCCAUGGUGUAAUGGUUAGCACUCUGGACUUUGAAUCCAGCGAUCCGAGUUCAAAUCUCGGUGGGACCU
+((.(((..(((((........)))))(((((.......)))))....(((((.......))))).))).)). (-21.90)
+>tRNA_121
+GGUCCCAUGGUGUAAUGGUUAGCACUCUGGGCUUUGAAUCCAGCAAUCCGAGUUCGAAUCUUGGUGGGACCU
+((((((..(((((........)))))(..((.((((((..(........)..)))))).))..).)))))). (-24.80)
+>tRNA_122
+GGUCCCAUGGUGUAAUGGUUAGCACUCUGGACUUUGAAUCCAGCGAUCCGAGUUCAAAUCUCGGUGGGACCU
+((((((..(((((........)))))(((((.......)))))....(((((.......))))).)))))). (-26.90)
+>tRNA_123
+UCCCUGGUGGUCUAGUGGUUAGGAUUCGGCGCUCUCACCGCCGCGGCCCGGGUUCGAUUCCCGGUCAGGGAA
+((((.((((((..((((.(........).))))...))))))..((((.(((.......))))))).)))). (-28.20)
+>tRNA_124
+CCCCUGGUGGUCUAUCGGUUAGGAUUCAGACCUCUCACCACUGCUACCCAUGCUCGAUUCCUGGUCAGGGAA
+.((((((.((...((((((..((...(((...........)))...))...)).)))).))...)))))).. (-17.90)
+>tRNA_125
+UCCUUGAUGUCUAGUGGUUAGGAUUUGGUGCUCUCACUGCAGCAGCCUGGGUUCAUUUCUCAGUCAGGGAA
+((((((((....((((((((((...((.(((.......))).)).)))))..))))).....)))))))). (-23.20)
+>tRNA_126
+CCCCUGGUGGUCUAGUGCUUAGGAUUCGGUGCUCUCACCGCUGCUGCCUGCGUUCGAUUCCCGGUCAGGGAA
+(((((((..(((.(((((...((...(((((....)))))...))....))))).)))..))))...))).. (-23.50)
+>tRNA_127
+CCCCGGGUGGUGUAGUGGAUGGGAUUUGGCGCUCUCACCACCAUGGCCCGGAUUUGAUUCCCGGUCAGGGAA
+..((((((.(((..((((.(((((........)))))))))))).))))))......(((((.....))))) (-32.40)
+>tRNA_128
+CCCUGUGGUCUAGUGGUUAGGAGUUGGUGCUUUCGUCAUGACAGCCCAGGUUCAAUUCCUGGUUAGAGA
+..((.(((.((((..(((.(((.((((.(((.((.....)).))))))).))))))..))))))).)). (-21.20)
+>tRNA_129
+UCCCUGGUGGUCUAGUGGCUAGGAUUCGGCGCUUUCACCGCCGCGGCCCGGGUUCGAUUCCCGGCCAGGGAA
+((((.((((((..((((.(........).))))...))))))..((((.(((.......))))))).)))). (-34.00)
+>tRNA_130
+UCCCUGGUAGUCUAGUGGCUAAAGUUUGGCGCUUUCACCGCCGGGACUGGUUGAUUCCAGAUCAGGGGA
+((((((((..((..((((..(((((.....)))))..))))..)).((((......)))))))))))). (-24.70)
+>tRNA_131
+UCCCUGGUGGUCUAGUGGCUAGGAUUCGGCGCUUUCACCGCCUGCAGCUCGAGUUCGAUUCCUGGUCAGGGAA
+(((((((....((((.((...(((((((((((...........)).)).)))))))...))))))))))))). (-25.40)
+>tRNA_132
+UCCCUGGUGGUCUAGUGGCUAGGAUUCGGCGCUUUCACCGCCGCGGCCCGGGUUCGAUUCCCGGUCAGGGAA
+((((.((((((..((((.(........).))))...))))))..((((.(((.......))))))).)))). (-31.30)
+>tRNA_133
+UCCCAUAUGGUCUAGCGGUUAGGAUUCCUGGUUUUCACCCAGGUGGCCCGGGUUCGACUCCCGGUAUGGGAA
+((((((((((((.(((..(..((...(((((.......)))))...))..)))).))))....)))))))). (-25.90)
+>tRNA_134
+GCCUGUGGUCUAGUGGUUAGAAUUCAGUGUUUUCAGUGCUCUAGUCCAGGUUCAAUUCCUGGUCAGGGA
+(((((...(((((...)))))...))).))........((((.(.(((((.......))))).))))). (-17.50)
+>tRNA_135
+UCCCACAUGGUCUAGCGGUUAGGAUUCCUGGUUUUCACCCAGGCGGCCCGGGUUCGACUCCCGGUGUGGGAA
+((((((...((((.(.(((.(((((.....))))).))))))))...(((((.......))))).)))))). (-27.70)
+>tRNA_136
+ACCCUGUGGUCUAGUGGCUAAGACUUUGUGCUUUCAUUGCUGCAUCCUAGGUUCAAUUCCCAGUCAGGGAA
+.((((((((((....))))).(((((.((((..........))))...)))))...........))))).. (-16.50)
+>tRNA_137
+GCAUUGGUGGUUCAGUGGUAGAAUUCUCGCCUCCCACGCGGGAGACCCGGGUUCAAUUCCCGGCCAAUGCA
+((((((((.(....(..((.((((((..(.(((((....))))).)..)))))).))..)).)))))))). (-27.50)
+>tRNA_138
+GCCUUGGUGGUGCAGUGGUAGAAUUCUCGCCUCCCACGUGGGAGACCCGGGUUCAAUUCCCGGCCAAUGCA
+(((.....)))(((.(((............(((((....)))))..(((((.......)))))))).))). (-25.50)
+>tRNA_139
+GCGUUGGUGGUUUAGUGGUAGAAUUCUCGCCUCCCAUGCGGGAGACCCGGGUUCAAUUCCCGGCCACUGCA
+((...(((((((..(..((.((((((..(.(((((....))))).)..)))))).))..).))))))))). (-23.80)
+>tRNA_140
+GCGCCGCUGGUGUAGUGGUAUCAUGCAAGAUUCCCAUUCUUGCGACCCGGGUUCGAUUCCCGGGCGGCGCA
+(((((((................(((((((.......)))))))..(((((.......)))))))))))). (-32.90)
+>tRNA_141
+GCAUUGGUGGUUCAAUGGUAGAAUUCUCGCCUCCCACGCAGGAGACCCAGGUUCGAUUCCUGGCCAAUGCA
+(((((((.(((((.......))))).....((((......))))..(((((.......)))))))))))). (-22.10)
+>tRNA_142
+GCAUGGGUGGUUCAGUGGUAGAAUUCUCGCCUGCCACGCGGGAGGCCCGGGUUCGAUUCCCGGCCCAUGCA
+((((((((......(((((((.........))))))).((((((...((....)).)))))))))))))). (-33.00)
+>tRNA_143
+GCAUAGGUGGUUCAGUGGUAGAAUUCUUGCCUGCCACGCAGGAGGCCCAGGUUUGAUUCCUGGCCCAUGCA
+((((..(((((.....(((((.....))))).)))))......((((.(((.......))))))).)))). (-25.00)
+>tRNA_144
+GCAUUGGUGGUUCAGUGGUAGAAUUCUCGCCUGCCACGCGGGAGGCCCGGGUUCGAUUCCCGGCCAAUGCA
+((((((((......(((((((.........))))))).((((((...((....)).)))))))))))))). (-30.60)
+>tRNA_145
+GCAUGGGUGAUUCAGUGGUAGAAUUUUCACCUGCCAUGCAGGAGGUCCAGGUUCAUUUCCUGGCCUAUGCA
+((((((((......(((((((.........))))))).((((((((........)))))))))))))))). (-27.70)
+>tRNA_146
+GCAUUGGUGGUUCAGUGGUAGAAUUCUCGCCUGCCAUGCGGGCGGCCGGGCUUCGAUUCCUGGCCAAUGCA
+((((((((....(((..((.(((..((.(((.(((.....)))))).))..))).))..))))))))))). (-30.40)
+>tRNA_147
+GCAUUGGUGGUUCAGUGGUAGAAUUCUCGCCUGCCACGCGGGAGGCCCGGGUUUGAUUCCCGGCCAGUGCA
+((((((((......(((((((.........))))))).((((((((....))....)))))))))))))). (-30.10)
+>tRNA_148
+GCGUUGGUGGUAUAGUGGUGAGCAUAGCUGCCUUCCAAGCAGUUGACCCGGGUUCGAUUCCCGGCCAACGCA
+(((((((.................(((((((.......)))))))..(((((.......)))))))))))). (-27.60)
+>tRNA_149
+GCGUUGGUGGUAUAGUGGUGAGCAUAGUUGCCUUCCAAGCAGUUGACCCGGGCUCGAUUCCCGCCCAACGCA
+((((((((((.....(((...(((....)))...)))...(((((((....).)))))).))).))))))). (-23.90)
+>tRNA_150
+GCGUUGGUGGUAUAGUGGUAAGCAUAGCUGCCUUCCAAGCAGUUGACCCGGGUUCGAUUCCCGGCCAACGCA
+(((((((.................(((((((.......)))))))..(((((.......)))))))))))). (-27.60)
+>tRNA_151
+GCGUUGGUGGUAUAGUGGUUAGCAUAGCUGCCUUCCAAGCAGUUGACCCGGGUUCGAUUCCCGGCCAACGCA
+((((((((........(((((((...(((........))).))))))).(((.......))).)))))))). (-28.30)
+>tRNA_152
+GCCGUGAUCGUAUAGUGGUUAGUACUCUGCGUUGUGGCCGCAGCAACCUCGGUUCGAAUCCGAGUCACGGCA
+(((((((.......(((((((..((.....))..)))))))......(((((.......)))))))))))). (-28.00)
+>tRNA_153
+GCCAUGAUCGUAUAGUGGUUAGUACUCUGCGCUGUGGCCGCAGCAACCUCGGUUCGAAUCCGAGUCACGGCA
+(((.(((..(((.((((.....)))).)))(((((....)))))...(((((.......)))))))).))). (-22.50)
+>tRNA_154
+GCAGUGACUGUAUAGUGGUUAGCACUCUGUGUUGUGGCCACAGCAACCAUGGUUCAAAUCUGAGUCAUGACA
+((((...))))...(((((((((((...))))))..)))))......((((..(((....)))..))))... (-20.30)
+>tRNA_155
+GGCCGGUUAGCUCAGUUGGUUAGAGCGUGGUGCUAAUAACGCCAAGGUCGCGGGUUCGAUCCCCGUACGGGCCA
+(((..((((((((((((......))).))).))))))...)))..(((((((((.......)))))...)))). (-26.30)
+>tRNA_156
+GGCCGGUUAGCUCAGUUGGUCAGAGCGUGGUGCUAAUAACGCCAAGGUCGCGGGUUCGAUCCCCGUACGGGCCA
+(((..((((((((((((......))).))).))))))...)))..(((((((((.......)))))...)))). (-26.30)
+>tRNA_157
+GGCUGGUUAGUUCAGUUGGUUAGAGCGUGGUGCUAAUAACGCCAAGGUCGUGGGUUCGAUCCCCAUAUCGGCCA
+(((..((((((((((((......))).))).))))))...)))..(((((((((.......))))...))))). (-23.40)
+>tRNA_158
+GGCCGGUUAGCUCAGUCGGCUAGAGCGUGGUGCUAAUAACGCCAAGGUCGCGGGUUCGAUCCCCGUACGGGCCA
+((((.((..((((((....)).)))).(((((.......))))).....(((((.......))))))).)))). (-27.90)
+>tRNA_159
+GGCCGGUUAGCUCAGUUGGUUAGAGCGUGGUGCUAAUAACGCCAAGGUCGCGGGUUCGAUCCCCGUACUGGCCA
+(((((((..((((.........)))).(((((.......))))).....(((((.......)))))))))))). (-28.10)
+>tRNA_160
+GGCUGGUUAGCUCAGUUGGUUAGAGCGUGGUGCUAAUAACGCCAAGGUCGCGGGUUCGAUCCCCGUACUGGCCA
+(((..((((((((((((......))).))).))))))...)))..(((((((((.......)))))...)))). (-26.30)
+>tRNA_161
+GGCCGGUUAGCUCAGUUGGUUAGAGCGUGGUGCUAAUAACGCUAAGGUCGCGGGUUCGAUCCCCGUACUGGCCA
+(((((((..((((.........)))).(((((.......))))).....(((((.......)))))))))))). (-25.80)
+>tRNA_162
+GGCCGGUUAGCUCAGUUGGUUAGAGCGUGGCGCUAAUAACGCCAAGGUCGCGGGUUCGAUCCCCGUACGGGCCA
+((((.((..((((.........)))).(((((.......))))).....(((((.......))))))).)))). (-27.90)
+>tRNA_163
+GGCCGGUUAGCUCAGUUGGUUAGAGCGUGGUGCUAAUAACGCCAAGGUCGCGGGUUCGAACCCCGUACGGGCCA
+(((..((((((((((((......))).))).))))))...)))..(((((((((.......)))))...)))). (-26.30)
+>tRNA_164
+GGCCGGUUAGCUCAGUUGGUAAGAGCGUGGUGCUGAUAACACCAAGGUCGCGGGCUCGACUCCCGCACCGGCCA
+((((((...((((.........)))).(((((.......))))).....(((((.......))))).)))))). (-32.10)
+>tRNA_165
+GCUCCAGUGGCGCAAUCGGUUAGCGCGCGGUACUUAUACAGCAGUACAUGCAGAGCAAUGCCGAGGUUGUGAGUUCGAGCCUCACCUGGAGCA
+(((((((.((((((((((((..((..((((((((........))))).)))...))...)))))..))))........)))....))))))). (-33.60)
+>tRNA_166
+GCUCCAGUGGCGCAAUCGGUUAGCGCGCGGUACUUAUAUGGCAGUAUGUGUGCGAGUGAUGCCGAGGUUGUGAGUUCGAGCCUCACCUGGAGCA
+(((((((.(((...((((.((.(((((((.((((........))))))))))))).)))))))((((((.((....))))))))..))))))). (-38.90)
+>tRNA_167
+GCUCCAGUGGCGCAAUCGGUUAGCGCGCGGUACUUAUACAACAGUAUAUGUGCGGGUGAUGCCGAGGUUGUGAGUUCGAGCCUCACCUGGAGCA
+(((((((.((((((((((((...(((.(.((((.(((((....))))).)))).))))..)))))..))))........)))....))))))). (-38.30)
+>tRNA_168
+GCUCCAGUGGCGCAAUCGGUUAGCGCGCGGUACUUAUAAGACAGUGCACCUGUGAGCAAUGCCGAGGUUGUGAGUUCAAGCCUCACCUGGAGCA
+((((((((((.((..(((((..((.(((.(((((........)))))....))).))...))))).....((....)).)).))).))))))). (-34.00)
+>tRNA_169
+GCUCCAGUGGCGCAAUCGGUUAGCGCGCGGUACUUAUAUGACAGUGCGAGCGGAGCAAUGCCGAGGUUGUGAGUUCGAUCCUCACCUGGAGCA
+(((((((.((((...((.((...(((((.((.(......))).))))).)).))....))))(((((((......))).))))..))))))). (-35.90)
+>tRNA_170
+GGGCCAGUGGCUCAAUGGAUAAUGCGUCUGACUAAGAAUCAGAAGAUUCCAGCCUUGACUCCUGGCUGGCUCA
+((((((((((.((((((((.....(.(((((.......))))).)..))))...))))..))..)))))))). (-24.20)
+>tRNA_171
+GGUAGCAUGGCUGAGUGGUCUAAGAUUCUGAAUUAAGUCUCCAGUCUCUUUGGGGGCGUGGUUUUCAAUCCCACCGCUGCUA
+((((((..((((....))))...((((..((((((.((((((((.....)))))))).))))))..)))).....)))))). (-27.70)
+>tRNA_172
+GGUAGCGUGGCCGAGCGGUCUAAGGCGCUGGAUUAAGGCUCCAGUCUCUUCGGAGGCGUGGGUUCGAAUCCCACCGCUGCCA
+(((((((.((((....)))).........(((((..(((.((((((((....))))).))))))..)))))...))))))). (-38.70)
+>tRNA_173
+GGUAGCGUGGCCGAGCGGUCUAAGGCGCUGGAUUAAGGCUCCAGUCUCUUCGGGGGCGUGGGUUCGAAUCCCACCGCUGCCA
+(((((((.((((....)))).........(((((..(((.((((((((....))))).))))))..)))))...))))))). (-37.80)
+>tRNA_174
+GGUAGCGUGGCCGAGCGGUCUAAGGCGCUGGAUUAAGGCUCCAGUCUCUUCGGGGGCGUGGGUUCAAAUCCCACCGCUGCCA
+(((((((.((((....)))).........(((((..(((.((((((((....))))).))))))..)))))...))))))). (-36.80)
+>tRNA_175
+GGUAGCGUGGCCGAGUGGUCUAAGACGCUGGAUUAAGGCUCCAGUCUCUUCGGGGGCGUGGGUUUGAAUCCCACCGCUGCCA
+(((((((.((((....)))).........(((((.((((.((((((((....))))).))))))).)))))...))))))). (-37.10)
+>tRNA_176
+GGUAGGGUGGCCGAGCGGUCUAAGGCACUGUAUUAAGACUCCAGUCUCUUCAGAGGCAUGGGUUUGAAUCCCACUGCUGCCA
+((((((((((....((((((....).)))))....((((.((((((((....))))).))))))).....))))).))))). (-30.00)
+>tRNA_177
+GUCAGGAUGGCCGAGUGGUCUAAGGCGCCAGACUCAAGGUAAGCACCUUGCCUGCGGGCUUUCUGGUCUCCGGAUGGAGGCGUGGGUUCGAAUCCCACUUCUGACA
+((((((...(((...(.((((..((.(((((((((.(((((((...)))))))..)))...))))))))..)))).).)))(((((.......))))).)))))). (-41.80)
+>tRNA_178
+GUCAGGAUGGCCGAGUGGUCUAAGGCGCCAGACUCAAGCUUGGCUUCCUCGUGUUGAGGAUUCUGGUCUCCAAUGGAGGCGUGGGUUCGAAUCCCACUUCUGACA
+((((((..(((((((((((((........)))))...))))))))(((((.....))))).....((((((...))))))(((((.......))))).)))))). (-41.60)
+>tRNA_179
+GUCAGGAUGGCCGAGUGGUCUAAGGCGCCAGACUCAAGCUAAGCUUCCUCCGCGGUGGGGAUUCUGGUCUCCAAUGGAGGCGUGGGUUCGAAUCCCACUUCUGACA
+((((((..(((..((((((((........)))))...)))..))).((((((...(((((((....))))))).)))))).(((((.......))))).)))))). (-41.00)
+>tRNA_180
+GUCAGGAUGGCCGAGUGGUCUAAGGCGCCAGACUCAAGCUUACUGCUUCCUGUGUUCGGGUCUUCUGGUCUCCGUAUGGAGGCGUGGGUUCGAAUCCCACUUCUGACA
+((((((..((((....)))).(((((.((..((.(((((.....)))...)).))..)))))))...((((((....))))))(((((.......))))).)))))). (-38.00)
+>tRNA_181
+GUCAGGAUGGCCGAGUGGUCUAAGGCGCCAGACUCAAGUUGCUACUUCCCAGGUUUGGGGCUUCUGGUCUCCGCAUGGAGGCGUGGGUUCGAAUCCCACUUCUGACA
+((((((....(((.((((.(((((((.(((((((.((((....))))....))))))).)))).)))...)))).)))....(((((.......))))).)))))). (-41.80)
+>tRNA_182
+GCCUCCUUAGUGCAGUAGGUAGCGCAUCAGUCUCAAAAUCUGAAUGGUCCUGAGUUCAAGCCUCAGAGGGGGCA
+((((((((.((((........))))......((((..(((.....)))..))))...........)))))))). (-23.90)
+>tRNA_183
+GUCAGGAUGGCCGAGCGGUCUAAGGCGCUGCGUUCAGGUCGCAGUCUCCCCUGGAGGCGUGGGUUCGAAUCCCACUCCUGACA
+(((((((.((((..(((((.......))))).....))))...((((((...))))))(((((.......)))))))))))). (-35.20)
+>tRNA_184
+GGCAGUGGAGUUUAGUGGUUAAGGACCUGCUCAGACAUCACAGGUAGGUAGAUCUGGGUUCAAACCCUAGCCCUGGCA
+(.(((.((....(((.((((...((...(((((((((((.......))).).))))))))).))))))).))))).). (-21.00)
+>tRNA_185
+GUCAGGAUGGCCGAGCGGUCUAAGGCGCUGCGUUCAGGUCGCAGUCUCCCCUGGAGGCGUGGGUUCGAAUCCCACUUCUGACA
+((((((..((((..(((((.......))))).....))))...((((((...))))))(((((.......))))).)))))). (-32.40)
+>tRNA_186
+ACUCAUUUGGCUGAGUGGUUAAGGCAUUGGACUUAAGAUCCAAUGGAGUAGUGGCUGUGUGGGUUUAAACCCCACUACUGGUA
+(((((......)))))........((((((((....).))))))).((((((((.......(((....))))))))))).... (-22.91)
+>tRNA_187
+ACCGGGAUGGCCGAGUGGUUAAGGCGUUGGACUUAAGAUCCAAUGGGCUGGUGCCCGCGUGGGUUCGAACCCCACUCUCGGUA
+(((((((..(((..........)))..(((..((..((((((.(((((....)))))..))))))..))..))).))))))). (-31.70)
+>tRNA_188
+ACCGGGAUGGCUGAGUGGUUAAGGCGUUGGACUUAAGAUCCAAUGGACAGGUGUCCGCGUGGGUUCGAGCCCCACUCCCGGUA
+(((((((.......((((....(((.(((((((((........(((((....)))))..))))))))))))))))))))))). (-32.01)
+>tRNA_189
+ACCAGGAUGGCCGAGUGGUUAAGGCGUUGGACUUAAGAUCCAAUGGACAUAUGUCCGCGUGGGUUCGAACCCCACUCCUGGUA
+(((((((..(((..........)))..(((..((..((((((.(((((....)))))..))))))..))..))).))))))). (-30.90)
+>tRNA_190
+ACCAGAAUGGCCGAGUGGUUAAGGCGUUGGACUUAAGAUCCAAUGGAUUCAUAUCCGCGUGGGUUCGAACCCCACUUCUGGUA
+(((((((..(((..........)))..(((..((..((((((.(((((....)))))..))))))..))..))).))))))). (-26.40)
+>tRNA_191
+GGUAGUGUGGCCGAGCGGUCUAAGGCGCUGGAUUUAGGCUCCAGUCUCUUCGGGGGCGUGGGUUCGAAUCCCACCACUGCCA
+(((((((.((((....)))).........((((((..((.((((((((....))))).)))))..))))))...))))))). (-38.40)
+>tRNA_192
+GGUAGCGUGGCCGAGUGGUCUAAGGCGCUGGAUUUAGGCUCCAGUCAUUUCGAUGGCGUGGGUUCGAAUCCCACCGCUGCCA
+(((((((.((((....)))).........((((((..((.((((((((....))))).)))))..))))))...))))))). (-34.30)
+>tRNA_193
+GGUAGCGUGGCCGAGCGGUCUAAGGCGCUGGAUUUAGGCUCCAGUCUCUUCGGAGGCGUGGGUUCGAAUCCCACCGCUGCCA
+(((((((.((((....)))).........((((((..((.((((((((....))))).)))))..))))))...))))))). (-40.80)
+>tRNA_194
+GCCCGGCUAGCUCAGUCGGUAGAGCAUGAGACUCUUAAUCUCAGGGUCGUGGGUUCGAGCCCCACGUUGGGCG
+(((((((..((((........))))....((((((.......))))))..((((....))))...))))))). (-29.60)
+>tRNA_195
+GCCCAGCUAGCUCAGUCGGUAGAGCAUGAGACUCUUAAUCUCAGGGUCAUGGGUUUGAGCCCCACGUUUGGUG
+(((.(((..((((........))))....((((((.......))))))..((((....))))...))).))). (-21.50)
+>tRNA_196
+GCCCGACUACCUCAGUCGGUGGAGCAUGGGACUCUUCAUCCCAGGGUUGUGGGUUCGAGCCCCACAUUGGGCA
+(((((((((((......)))))....((((.(((.....((((......))))...))).))))..)))))). (-29.30)
+>tRNA_197
+AACCGAAUAGCUUAGUUGAUGAAGCGUGAGACUCUUAAUCUCAGGGUAGUGGGUUCAAGCCCCACAUUGGACA
+.(((.....((((........)))).(((((.......))))).))).(((((.......)))))........ (-17.60)
+>tRNA_198
+GCCCGGCUAGCUCAGUCGGUAGAGCAUGGGACUCUUAAUCCCAGGGUCGUGGGUUCGAGCCCCACGUUGGGCG
+(((((((..((((........)))).((((.(((.....((((......))))...))).)))).))))))). (-32.10)
+>tRNA_199
+GCCUGGCUAGCUCAGUCGGCAAAGCAUGAGACUCUUAAUCUCAGGGUCGUGGGCUCGAGCUCCAUGUUGGGCG
+(((..((.(((((((((.((...((.(((((.......)))))..)).)).)))).)))))....))..))). (-30.10)
+>tRNA_200
+GCCCGGCUAGCUCAGUCGGUAGAGCAUGGGACUCUUAAUCUCAGGGUCGUGGGUUCGAGCCCCACGUUGGGCG
+(((((((..((((........))))....((((((.......))))))..((((....))))...))))))). (-29.40)
+>tRNA_201
+GCCCGGCUAGCUCAGUCGAUAGAGCAUGAGACUCUUAAUCUCAGGGUCGUGGGUUCGAGCCGCACGUUGGGCG
+(((((((..((((........))))..((((.......)))).((.(((......))).))....))))))). (-28.00)
+>tRNA_202
+GCCCGGCUAGCUCAGUCGGUAGAGCAUGAGACCCUUAAUCUCAGGGUCGUGGGUUCGAGCCCCACGUUGGGCG
+(((((((..((((........))))....((((((.......))))))..((((....))))...))))))). (-32.60)
+>tRNA_203
+GACGAGCUAGCUCAGUCGGUAGAGCAUGGGACUCUUAAUCCCAGGGUCGUGGGUUUGAGCCCCAUGUUGGGCA
+((((((....))).))).((..((((((((.(((.....((((......))))...))).))))))))..)). (-30.00)
+>tRNA_204
+GCCCAGCUAGCUCAGUCGGUAGAGCAUAAGACUCUUAAUCUCAGGGUUGUGGAUUCGUGCCCCAUGCUGGGUG
+(((((((..((((........))))....((.((((((((....))))).))).)).........))))))). (-24.00)
+>tRNA_205
+CUGCAGCUAGCUCAGUCGGUAGAGCAUGAGACUCUUAAUCUCAGGGUCAUGGGUUCGUGCCCCAUGUUGGGUG
+...((.(((((......((((((((....((((((.......))))))....)))).))))....))))).)) (-20.60)
+>tRNA_206
+GCCCGGAUAGCUCAGUCGGUAGAGCAUCAGACUUUUAAUCUGAGGGUCCAGGGUUCAAGUCCCUGUUCGGGCG
+(((((((..((((........))))....(((((((.....)))))))(((((.......)))))))))))). (-28.30)
+>tRNA_207
+GCCCGGAGAGCUCAGUGGGUAGAGCAUCAGACUUUUAAUCUGAGGGUCCAGGGUUCAAGUCCUCGUUCGGGCA
+(((((((..((((........))))....(((((....((((......))))....)))))....))))))). (-26.30)
+>tRNA_208
+ACCUGGGUAGCUCAGUAGGUAGAACAUCAGACUUUUAAUCUGAGGGUCUAGGGUUCAAGUCCCUGUCCAGGCG
+.(((((..((.......((..((((...((((((((.....))))))))...))))....))))..))))).. (-22.41)
+>tRNA_209
+GCCUGGAUAGCUCAGUUGGUAGAACAUCAGACUUUUAAUCUGACGGUGCAGGGUUCAAGUCCCUGUUCAGGCG
+((((((((((....(((.....)))....(((((....((((......))))....))))).)))))))))). (-23.40)
+>tRNA_210
+GCCUGGAUAGCUCAGUCGGUAGAGCAUCAGACUUUUAAUCUGAGGGUCCAGGGUUCAAGUCCCUGUUCAGGCG
+(((((((..((((........))))....(((((((.....)))))))(((((.......)))))))))))). (-26.80)
+>tRNA_211
+GCCUGGGUAGCUCAGUCGGUAGAGCAUCAGACUUUUAAUCUGAGGGUCCAGGGUUCAAGUCCCUGUCCAGGCG
+((((((...((((........))))....(((((((.....)))))))(((((.......))))).)))))). (-29.10)
+>tRNA_212
+GCCCACGUAGCUCAAUGGUCAGAGCGUGCGGCUUUUAACCGCAAGGAAGGCUGCGAGUUCGACCCUCGCCGUGGGCU
+(((((((..((.....((((.((((.(((((((((...((....))))))))))).))))))))...))))))))). (-40.60)
+>tRNA_213
+GCCUGGAUAGCUCAGUUGGUAGAGCAUCAGACUUUUAAUCUGAGGGUCCAGGGUUCAAGUCCCUGUUCAGGCG
+(((((((..((((........))))....(((((((.....)))))))(((((.......)))))))))))). (-26.80)
+>tRNA_214
+GCCCGGAUAGCUCAGUCGGUAGAGCAUCAGACUUUUAAUCUGAGGGUCCGGGGUUCAAGUCCCUGUUCGGGCG
+((((((((.((((........))))....(((((((.....))))))).((((......)))).)))))))). (-28.30)
+>tRNA_215
+ACCCAGAUAGCUCAGUCAGUAGAGCAUCAGACUUUUAAUCUGAGGGUCCAAGGUUCAUGUCCCUUUUUGGGUG
+(((((((..((((........))))....(((((((.....))))))).((((........))))))))))). (-20.00)
+>tRNA_216
+GCCUGGAUAGCUCAGUUGGUAGAGCAUCAGACUUUUAAUCUGAGGGUCCAGGGUUCAAGUCCCUGUUCAGGCA
+(((((((..((((........))))....(((((((.....)))))))(((((.......)))))))))))). (-26.80)
+>tRNA_217
+ACCUGGGUAGCUUAGUUGGUAGAGCAUUGGACUUUUAAUUUGAGGGCCCAGGUUUCAAGUCCCUGUUUGGGUG
+((((((((..(((((.....(((((....).))))....))))).)))))))).......(((.....))).. (-22.00)
+>tRNA_218
+ACCCUGUGGUACAGGGGCUAAUAUGCUGGGCCUUUACCACUUCAGCCCAGGUUCGAUUCCUGGUCAGGGAA
+.((((((((((.((((.(((......))).))))))))))......(((((.......)))))..)))).. (-28.50)
+>tRNA_219
+AGCAGAGUGGCGCAGCGGAAGCGUGCUGGGCCCAUAACCCAGAGGUCGAUGGAUCGAAACCAUCCUCUGCUA
+(((((((.(((((.((....))))))).(..((((.(((....)))..))))..).........))))))). (-29.50)
+>tRNA_220
+GCCCUCUUAGCGCAGCUGGCAGCGCGUCAGUCUCAUAAUCUGAAGGUCCUGAGUUCAAGCCUCAGAGAGGGCA
+((((((((((.((.((((((.....))))))((((..(((....)))..)))).....))))..)))))))). (-28.40)
+>tRNA_221
+GCCCUCUUAGCGCAGCGGGCAGCGCGUCAGUCUCAUAAUCUGAAGGUCCUGAGUUCGAGCCUCAGAGAGGGCA
+((((((...((((........)))).............(((((.((..(.......)..))))))))))))). (-27.70)
+>tRNA_222
+AGCAGAGUGGCGCAGCGGAAGCGUGCUGGGCCCAUAACCCAGAGGUCGAUGGAUCUAAACCAUCCUCUGCUA
+(((((((.(((((.((....)))))))((..((((.(((....)))..))))..))........))))))). (-29.40)
+>tRNA_223
+GCCUCCUUAGCGCAGUAGGCAGCGCGUCAGUCUCAUAAUCUGAAGGUCCUGAGUUCGAACCUCAGAGGGGGCA
+((((((((.((((........)))).((...((((..(((....)))..))))...))......)))))))). (-26.40)
+>tRNA_224
+GCCCUCUUAGUGCAGCUGGCAGCGCGUCAGUUUCAUAAUCUGAAAGUCCUGAGUUCAAGCCUCAGAGAGGGCA
+((((((...(((.(((((((.....))))))).)))............(((((.......))))).)))))). (-28.10)
+>tRNA_225
+GCCUCGUUAGCGCAGUAGGUAGCGCGUCAGUCUCAUAAUCUGAAGGUCGUGAGUUCGAUCCUCACACGGGGCA
+(((((((..((((........))))...............(((.(((((......))))).))).))))))). (-25.90)
+>tRNA_226
+AGCAGAGUGGUGCAGUGGAAGCAUACCUAUGGGCCCAUAACCCAGAGGUUGAUGGAUGGAAACCAUCCUCUGCUA
+(((((((..((((.......))))((((.((((.......)))).)))).(((((.(....))))))))))))). (-26.40)
+>tRNA_227
+GCCCUCUUAGCGCAGUGGGCAGCGCGUCAGUCUCAUAAUCUGAAGGUCCUGAGUUCGAGCCUCAGAGAGGGCA
+((((((...((((........)))).............(((((.((..(.......)..))))))))))))). (-27.70)
+>tRNA_228
+GCCUCGUUAGCGCAGUAGGCAGCGCGUCAGUCUCAUAAUCUGAAGGUCGUGAGUUCGAGCCUCACACGGGGCA
+(((((((..((((........)))).((...((((..(((....)))..))))...)).......))))))). (-26.00)
+>tRNA_229
+GCCGAAAUAGCUCAAUUGGGAGAGUGUUAGACUGAAGAUCUUCUGCAGGUCUCUGGUUCAAUUCCGGGUUUCGACA
+..((((((..(((....))).((((....((((..((((((.....))))))..))))..))))...))))))... (-17.20)
+>tRNA_230
+GCCAAAAUUGCUCAGUUGGGAGAGCGUUAGACUGAAGAUCUAAAGGUCCCUGGUUCGAUCCCGGGUUUCACCA
+.........((((........)))).((((((....).))))).((((((.((......)).)))....))). (-15.70)
+>tRNA_231
+GCCGAAAUAGCUCAGUUGGGAGAGCGUUAGACUGAAGAUCUAAAGGUCCCUGGUUCGAUCCCGGGUUUCGGCA
+((((((((.......((((((...((...(((((..((((....))))..))))))).)))))))))))))). (-24.11)
+>tRNA_232
+GCCGAAAUAGCUCAGUUGGGAGAGCGUUAGACCGAAGAUCUUAAAGGUCCCUGGUUCAAUCCCGGGUUUCGGCA
+((((((((.((((........))))....(((((..((((.....))))..))))).........)))))))). (-25.60)
+>tRNA_233
+GCCGAGAUAGCUCAGUUGGGAGAGCGUUAGACUGAAGAUCUAAAGGUCCCUGGUUCAAUCCCGGGUUUCGGCA
+(((((((..((((........)))).((((((....).)))))....(((.((......)).)))))))))). (-23.10)
+>tRNA_234
+GCUGAAAUAGCUCAGUUGGGAGAGCGUUAGACUGAAGAUCUUAAAGUUCCCUGGUUCAACCCUGGGUUUCAGCC
+((((((...(((((((..((.((((...((((....).)))....))))))..).......)))))))))))). (-21.91)
+>tRNA_235
+GCCGAAAUAGCUCAGUUGGGAGAGCGUUAGACUGAAGAUCUAAAGGUCCCUGGUUCAAUCCCGGGUUUCGGCA
+(((((((..((((........)))).((((((....).)))))....(((.((......)).)))))))))). (-23.00)
+>tRNA_236
+GGCUCGUUGGUCUAGGGGUAUGAUUCUCGCUUAGGGUGCGAGAGGUCCCGGGUUCAAAUCCCGGACGAGCCC
+((((((((.......(((.....(((((((.......)))))))..)))(((.......))).)))))))). (-30.80)
+>tRNA_237
+GGCUCGUUGGUCUAGGGGUGUGGUUCUCGCUUAGGGACCACAGGGACAAGCCCGGGAGACCCAAGAGGUCCCGGGUUCAAAUCCCGGACGAGCCC
+(((((((((((((..(((((.......)))))..)))))...((((..(((((((((...((....)))))))))))....)))).)))))))). (-49.00)
+>tRNA_238
+GGCUCGUUGGUCUAGGGGUAUGAUUCUCGCUUAGGAUGCGAGAGGUCCCGGGUUCAAAUCCCGGACGAGCCC
+((((((((.......(((.....(((((((.......)))))))..)))(((.......))).)))))))). (-30.80)
+>tRNA_239
+GGCUCGUUGGUCUAGGGGUAUGAUUCUCGCUUCGGGUGCGAGAGGUCCCGGGUUCAAAUCCCGGACGAGCCC
+((((((((.......(((.....(((((((.......)))))))..)))(((.......))).)))))))). (-30.80)
+>tRNA_240
+GGCUCGUUGGUCUAGGGGUAUGAUUCUCGCUUCGGGUGUGAGAGGUCCCGGGUUCAAAUCCCGGACGAGCCC
+((((((((.......(((.....(((((((.......)))))))..)))(((.......))).)))))))). (-28.90)
+>tRNA_241
+GGCUCGUUGGUCUAGGGGUAUGAUUCUCGCUUUGGGUGCGAGAGGUCCCGGGUUCAAAUCCCGGACGAGCCC
+((((((((.......(((.....(((((((.......)))))))..)))(((.......))).)))))))). (-30.80)
+>tRNA_242
+GGCUCGUUGGUCUAGGGGUAUGAUUCUCGGUUUGGGUCCGAGAGGUCCCGGGUUCAAAUCCCGGACGAGCCC
+((((((((......(((((.(((..(((.....(((.((....)).)))))).))).))))).)))))))). (-32.70)
+>tRNA_243
+GGCUCGUUGGUCUAGUGGUAUGAUUCUCGCUUUGGGUGCGAGAGGUCCCGGGUUCAAAUCCCGGACGAGCCC
+(((((((................(((((((.......)))))))...(((((.......)))))))))))). (-29.80)
+>tRNA_244
+GCCCGGAUGAUCCUCAGUGGUCUGGGGUGCAGGCUUCAAACCUGUAGCUGUCUAGCGACAGAGUGGUUCAAUUCCACCUUUCGGGC
+(((((((....((((((....))))))((((((.......)))))).(((((....))))).((((.......))))..))))))) (-33.40)
+>tRNA_245
+GUAGUCGUGGCCGAGUGGUUAAGGCGAUGGACUAGAAAUCCAUUGGGGUCUCCCCGCGCAGGUUCGAAUCCUGCCGACUACG
+(((((((..(((..........))).(((((.......))))).((((...))))..(((((.......)))))))))))). (-29.00)
+>tRNA_246
+GUAGUCGUGGCCGAGUGGUUAAGGCGAUGGACUAGAAAUCCAUUGGGGUUUCCCCACGCAGGUUCGAAUCCUGCCGACUACG
+(((((((..(((..........)))..(((....(((((((....))))))).))).(((((.......)))))))))))). (-29.10)
+>tRNA_247
+GUAGUCGUGGCCGAGUGGUUAAGGUGAUGGACUAGAAACCCAUUGGGGUCUCCCCGCGCAGGUUCGAAUCCUGCCGACUACG
+((((((.(((((....)))))....(((((.........)))))((((...))))..(((((.......))))).)))))). (-27.40)
+>tRNA_248
+GUAGUCGUGGCCGAGUGGUUAAGGCGAUGGACUAGAAAUCCAUUGGGGUUUCCCCGCGCAGGUUCGAAUCCUGCCGACUACG
+(((((((..(((..........))).(((((.......))))).((((...))))..(((((.......)))))))))))). (-29.00)
+>tRNA_249
+GGGUGUAUGGCUCAGGGGUAGAGAAUUUGACUAGAGAUCAAGAGGUCCCUGGUUCAAAUCCAGGUGCCCCCU
+((((.....)))).((((((..(.((((((((((.((((....)))).)))).)))))).)...)))))).. (-24.50)
+>tRNA_250
+UGAGUUGUAGCUGAGUGGUUAAGGCAACGAGCUAGAAAUUCGUUGGUUUCUCUCUGUGCAGGUUUGAAUCCUGCUAAUUAUG
+...((..(((((....)))))..))...(((..((((((......)))))))))...(((((.......)))))........ (-18.80)
+>tRNA_251
+GCUGUGAUGGCCGAGUGGUUAAGGCGUUGGACUCGAAAUCCAAUGGGGUCUCCCCGCGCAGGUUCAAAUCCUGCUCACAGCG
+(((((((..(((..........))).(((((.......))))).((((...))))..(((((.......)))))))))))). (-30.50)
+>tRNA_252
+GCUGUGAUGGCCGAGUGGUUAAGGUGUUGGACUCGAAAUCCAAUGGGGGUUCCCCGCGCAGGUUCAAAUCCUGCUCACAGCG
+((((((.(((((....)))))....((((((.......)))))).(((....)))..(((((.......))))).)))))). (-30.70)
+>tRNA_253
+GUCACGGUGGCCGAGUGGUUAAGGCGUUGGACUCGAAAUCCAAUGGGGUUUCCCCGCACAGGUUCGAAUCCUGUUCGUGACG
+(((((((..(((..........)))...(((.(((((......(((((...)))))......))))).)))...))))))). (-30.20)
+>tRNA_254
+GCUGUGAUGGCCGAGUGGUUAAGGCGUUGGACUCGAAAUCCAAUGGGGUCUCCCCGCGCAGGUUCGAAUCCUGCUCACAGCG
+(((((((..(((..........)))...(((.(((((......(((((...)))))......))))).)))...))))))). (-31.60)
+>tRNA_255
+GACGAGGUGGCCGAGUGGUUAAGGCGAUGGACUGCUAAUCCAUUGUGCUCUGCACGCGUGGGUUCGAAUCCCACCCUCGUCG
+(((((((..((.((((.......((((((((.......)))))))))))).))....(((((.......)))))))))))). (-33.71)
+>tRNA_256
+GACGAGGUGGCCGAGUGGUUAAGGCGAUGGACUGCUAAUCCAUUGUGCUCUGCACGCGUGGGUUCGAAUCCCACCUUCGUCG
+(((((((((((((.(((((..((((((((((.......)))))))).))..)).))).))).........))))).))))). (-31.60)
+>tRNA_257
+GACGAGGUGGCCGAGUGGUUAAGGCGAUGGACUGCUAAUCCAUUGUGCUCUGCACACGUGGGUUCGAAUCCCAUCCUCGUCG
+(((((((..((.((((.......((((((((.......)))))))))))).))....(((((.......)))))))))))). (-32.41)
+>tRNA_258
+GACGAGGUGGCCGAGUGGUUAAGGCGAUGGACUGCUAAUCCAUUGUGCUCUGCACGCGUGGGUUCGAAUCCCAUCCUCGUCG
+(((((((..((.((((.......((((((((.......)))))))))))).))....(((((.......)))))))))))). (-32.41)
+>tRNA_259
+GGAGAGGCCUGGCCGAGUGGUUAAGGCGAUGGACUGCUAAUCCAUUGUGCUCUGCACGCGUGGGUUCGAAUCCCAUCCUCGUCG
+(..(((((((((((....)))).))))(((((....(.((((((((((((...))))).))))))).)....))))))))..). (-28.00)
+>tRNA_260
+GACGAGGUGGCCGAGUGGUUAAGGCGAUGGACUGCUAAUCCAUUGUGCUUUGCACGCGUGGGUUCGAAUCCCAUCCUCGUCG
+(((((((((((((.(((((.(((((((((((.......)))))))).))).)).))).))).........))).))))))). (-32.30)
+>tRNA_261
+GUAGUCGUGGCCGAGUGGUUAAGGCGAUGGACUUGAAAUCCAUUGGGGUUUCCCCGCGCAGGUUCGAAUCCUGCCGACUACG
+((((((.(((((....))))).((((..(((.(((((......(((((...)))))......))))).))))))))))))). (-29.50)
+>tRNA_262
+GUAGUCGUGGCCGAGUGGUUAAGGCGAUGGACUUGAAAUCCAUUGGGGUUUCCCCGCGCAGGUUCGAAUCCUGUCGGCUACG
+.....(((((((((..((.....(((.(((....(((((((....))))))).))))))..........))..))))))))) (-29.56)
+>tRNA_263
+GUAGUCGUGGCCGAGUGGUUAAGGCGAUGGACUUGAAAUCCAUUGGGGUCUCCCCGCGCAGGUUCGAAUCCUGCCGACUACG
+((((((.(((((....))))).((((..(((.(((((......(((((...)))))......))))).))))))))))))). (-29.50)
+>tRNA_264
+GCAGCGAUGGCCGAGUGGUUAAGGCGUUGGACUUGAAAUCCAAUGGGGUCUCCCCGCGCAGGUUCGAACCCUGCUCGCUGCG
+(((((((.((((....)))).(((..(((((((((........(((((...)))))..)))))))))..)))..))))))). (-32.10)
+>tRNA_265
+GGCCCUGUGGCUUAGCUGGUCAAAGCGCCUGUCUAGUAAACAGGAGAUCCUGGGUUCGAAUCCCAGCGGGGCCU
+((((((((((....(((((.((.......)).)))))...((((....))))..........))).))))))). (-29.30)
+>tRNA_266
+GGCUUCGUGGCUUAGCUGGUUAAAGCGCCUGUCUAGUAAACAGGAGAUCCUGGGUUCGAAUCCCAGCGAGGCCU
+(((((((.......(((......))).(((((.......))))).....(((((.......)))))))))))). (-26.20)
+>tRNA_267
+GGCUCCGUAGCUUAGUUGGUUAAAGCGCCUGUCUAGUAAACAGGAGAUCCUGGGUUCGACUCCCAGCGGGGCCU
+(((((((..((((.........)))).(((((.......))))).....(((((.......)))))))))))). (-27.00)
+>tRNA_268
+GGCUCCGUGGCUUAGCUGGUUAAAGCGCCUGUCUAGUAAACAGGAGAUCCUGGGUUCGAAUCCCAGCGGGGCCU
+(((((((.......(((......))).(((((.......))))).....(((((.......)))))))))))). (-28.00)
+>tRNA_269
+GGCGCCGUGGCUUAGUUGGUUAAAGCGCCUGUCUAGUAAACAGGAGAUCCUGGGUUCGAAUCCCAGCGGUGCCU
+(((((((..((((.........)))).(((((.......))))).....(((((.......)))))))))))). (-27.10)
+>tRNA_270
+GGCGCCGUGGCUUAGCUGGUUAAAGCGCCUGUCUAGUAAACAGGAGAUCCUGGGUUCGAAUCCCAGCGGUGCCU
+(((((((.......(((......))).(((((.......))))).....(((((.......)))))))))))). (-28.30)
+>tRNA_271
+AGCACCAUGGCUUAGCUGGUUAAAGCACCUGUCUAGUAAACAGGAGAUCCUGAGUUUCAAUUCCAAUGGUGCCU
+.(((((((.(((..((.(((......))).))..)))...((((....)))).............))))))).. (-22.30)
+>tRNA_272
+GGCCCUGUAGCUCAGCGGUUGGAGCGCUGGUCUCGUAAACCUAGGGGUCGUGAGUUCAAAUCUCACCAGGGCCU
+(((((((..((((...((((.((((....).)))...))))...)))).(((((.......)))))))))))). (-28.60)
+>tRNA_273
+GGCUCUGUGGCUUAGUUGGCUAAAGCGCCUGUCUCGUAAACAGGAGAUCCUGGGUUCGAAUCCCAGCGGGGCCU
+((((((((((.......(((......)))....(((.(..((((....))))..).)))...))).))))))). (-28.00)
+>tRNA_274
+GGCUCUAUGGCUUAGUUGGUUAAAGCGCCUGUCUCGUAAACAGGAGAUCCUGGGUUCGACUCCCAGUGGGGCCU
+((((((((((...((((((.......(((((((((........)))))...)))))))))).))).))))))). (-24.81)
+>tRNA_275
+GGCAGAGUGGUGCAGCGGAAGCGUGCUGGGCCCGUAACCCAGAGGUCAAUGGAUCGAAGCCAUCCUUGGCUA
+(((.(((.(((((.((....))...(((((.......))))).((((....))))...).))))))).))). (-23.80)
+>tRNA_276
+GGCGCGGUGGCCAAGUGGUAAGGCGUCGGUCUCGUAAACCGAAGAUCACGGGUUCGAACCCCGUCCGUGCCU
+(((((((..(((.........))).(((((.......))))).....(((((.......)))))))))))). (-27.60)
+>tRNA_277
+GGCGCGGUGGCCAAGUGGUAAGGCGUCGGUCUCGUAAACCGAAGAUCGCGGGUUCGAACCCCGUCCGUGCCU
+(((((((..(((.........))).(((((.......))))).....(((((.......)))))))))))). (-27.90)
+>tRNA_278
+GGCUCCAUAGCUCAGUGGUUAGAGCACUGGUCUUGUAAACCAGGGGUCGCGAGUUCGAUCCUCGCUGGGGCCU
+((((((...((((........)))).(((((.......))))).....(((((.......))))).)))))). (-29.40)
+>tRNA_279
+GGCUCCAUAGCUCAGGGGUUAGAGCACUGGUCUUGUAAACCAGGGUCGCGAGUUCAAAUCUCGCUGGGGCCU
+((((((...((((........)))).(((((.......)))))....(((((.......))))).)))))). (-29.90)
+>tRNA_280
+GGCUCUAUGGCUUAGUUGGUUAAAGCGCCUGUCUUGUAAACAGGAGAUCCUGGGUUCGAAUCCCAGUAGAGCCU
+(((((((.(((...(((......))))))..(((((....)))))....(((((.......)))))))))))). (-25.40)
+>tRNA_281
+GGCCCUAUAGCUCAGGGGUUAGAGCACUGGUCUUGUAAACCAGGGGUCGCGAGUUCAAAUCUCGCUGGGGCCU
+((((((...((((........)))).(((((.......))))).....(((((.......))))).)))))). (-30.20)
+>tRNA_282
+GGCUCCAUAGCUCAGGGGUUAGAGCACUGGUCUUGUAAACCAGGGGUCGCGAGUUCAAAUCUCGCUGGGGCCU
+((((((...((((........)))).(((((.......))))).....(((((.......))))).)))))). (-29.90)
+>tRNA_283
+GGCUCCAUAGCUCAGGGGUUAGAGCGCUGGUCUUGUAAACCAGGGGUCGCGAGUUCAAUUCUCGCUGGGGCCU
+((((((...((((........)))).(((((.......))))).....(((((.......))))).)))))). (-29.90)
+>tRNA_284
+GACCUCGUGGCGCAACGGUAGCGCGUCUGACUCCAGAUCAGAAGGUUGCGUGUUCAAAUCACGUCGGGGUCA
+(((((((..((((.......)))).((((((....).))))).....(((((.......)))))))))))). (-26.00)
+>tRNA_285
+GACCUCGUGGCGCAACGGCAGCGCGUCUGACUCCAGAUCAGAAGGUUGCGUGUUCAAAUCACGUCGGGGUCA
+(((((((..((((.......)))).((((((....).))))).....(((((.......)))))))))))). (-26.00)
+>tRNA_286
+GGCAGAGGAGGGUGCAGUUGGCAGCCUGUCCAAGUCCAGCACGGUUGGAGCACAGGAUUUAGAAUGGGAUGGUCCUGGGUUCAAACCCCAGCUGCGCCC
+.........((((((((((((((((((((.........))).)))))((((.(((((((...........))))))).)))).....)))))))))))) (-40.50)
+>tRNA_287
+GGAAGGAUGGGGCCAAGCUGGAAAGCCUGUGGGCUCCACAGUCAUGUGCCUGGGUUCAAUUCCCAGUUCUGCAU
+.((..(.(((((((..(((....))).....))))))))..))..(((((((((.......)))))....)))) (-28.00)
+>tRNA_288
+GACCUCGUGGCGCAACGGUAGCGCGUCUGACUCCAGAUCAGAAGGCUGCGUGUUCGAAUCACGUCGGGGUCA
+(((((((((.((.(((((((((.(.((((((....).))))).)))))).)))))).....)).))))))). (-28.60)
+>tRNA_289
+GGCCUCGUGGCGCAACGGUAGCGCGUCUGACUCCAGAUCAGAAGGUUGCGUGUUCAAAUCACGUCGGGGUCA
+(((((((..((((.......)))).((((((....).))))).....(((((.......)))))))))))). (-25.40)
+>tRNA_290
+GACCUCGUGGCGCAAUGGUAGCGCGUCUGACUCCAGAUCAGAAGGUUGCGUGUUCAAGUCACGUCGGGGUCA
+(((((((..((((.......)))).((((((....).))))).....(((((.......)))))))))))). (-26.00)
+>tRNA_291
+CCUUCAAUAGUUCAGCUGGUAGAGCAGAGGACUAUAGCUACUUCCUCAGUAGGAGACGUCCUUAGGUUGCUGGUUCGAUUCCAGCUUGAAGGA
+((((((.......((((((..((((.((((((.....(((((.....))))).....)))))).........))))....)))))))))))). (-29.51)
+>tRNA_292
+CCUUCGAUAGCUCAGUUGGUAGAGCGGAGGACUGUAGUGGAUAGGGCGUGGCAAUCCUUAGGUCGCUGGUUCGAUUCCGGCUCGAAGGA
+(((((((..((((........)))).(((((.(((..((.......))..))).))))).....(((((.......)))))))))))). (-29.50)
+>tRNA_293
+CCUUCGAUAGCUCAGUUGGUAGAGCGGAGGACUGUAGUUGGCUGUGUCCUUAGACAUCCUUAGGUCGCUGGUUCGAAUCCGGCUCGAAGGA
+(((((((..((((........)))).(((((.(((....((......))....)))))))).....(((((.......)))))))))))). (-29.60)
+>tRNA_294
+CUUUCGAUAGCUCAGUUGGUAGAGCGGAGGACUGUAGGUUCAUUAAACUAAGGCAUCCUUAGGUCGCUGGUUCGAAUCCGGCUCGAAGGA
+(((((((..((((........))))...((((.....))))......((((((...))))))...(((((.......)))))))))))). (-27.30)
+>tRNA_295
+CCUUCGAUAGCUCAGUUGGUAGAGCGGAGGACUGUAGGCUCAUUAAGCAAGGUAUCCUUAGGUCGCUGGUUCGAAUCCGGCUCGGAGGA
+(((((((..((((........)))).(((((......(((.....)))......))))).....(((((.......)))))))))))). (-28.10)
+>tRNA_296
+CCUUCGAUAGCUCAGCUGGUAGAGCGGAGGACUGUAGGGGUUUGAAUGUGGUCAUCCUUAGGUCGCUGGUUCGAAUCCGGCUCGGAGGA
+(((((((...(((.(((.....))).)))........(((((((((((((..(.......)..)))..))))))))))...))))))). (-32.40)
+>tRNA_297
+GGGGGUAUAGCUCAGGGCUAGAGCUUUUUGACUGUAGAGCAAGAGGUCCCUGGUUCAAAUCCAGGUUCUCCCU
+(((((..((((.....))))..((((((((.((....)))))))))).(((((.......)))))..))))). (-24.70)
+>tRNA_298
+CCUUCGAUAGCUCAGCUGGUAGAGCGGAGGACUGUAGCUACUUCCUCAGCAGGAGACAUCCUUAGGUCGCUGGUUCGAUUCCGGCUCGAAGGA
+(((((((.......(((((..((((.(((((..((....)).)))))..(((..(((........))).)))))))....)))))))))))). (-32.01)
+>tRNA_299
+CCUUCGAUAGCUCAGCUGGUAGAGCGGAGGACUGUAGGCGCGCGCCCGUGGCCAUCCUUAGGUCGCUGGUUCGAUUCCGGCUCGAAGGA
+(((((((...(((.(((.....))).))).......((..((.(((.((((((.......)))))).))).))...))...))))))). (-33.90)
+>tRNA_300
+UCUUCAAUAGCUCAGCUGGUAGAGCGGAGGACUGUAGGUGCACGCCCGUGGCCAUUCUUAGGUGCUGGUUUGAUUCCGACUUGGAGAG
+(((((((...(((.(((.....))).))).......((..((.(((.(((.((.......))))).))).))...))...))))))). (-22.70)
+>tRNA_301
+CCUUCGAUAGCUCAGCUGGUAGAGCGGAGGACUGUAGUACUUAAUGUGUGGUCAUCCUUAGGUCGCUGGUUCGAUUCCGGCUCGAAGGA
+(((((((..((((........)))).(((((.((.(.(((.......))).)))))))).....(((((.......)))))))))))). (-28.50)
+>tRNA_302
+CCUUCGAUAGCUCAGCUGGUAGAGCGGAGGACUGUAGAUUGUACAGACAUUUGCGGACAUCCUUAGGUCGCUGGUUCGAUUCCGGCUCGAAGGA
+(((((((..((((........)))).(((((((((((((.((....))))))))))...))))).....(((((.......)))))))))))). (-32.60)
+>tRNA_303
+CCUUCGAUAGCUCAGCUGGUAGAGCGGAGGACUGUAGACUGCGGAAACGUUUGUGGACAUCCUUAGGUCGCUGGUUCAAUUCCGGCUCGAAGGA
+(((((((..((((........)))).(((((.(((..((.(((....)))..))..)))))))).....(((((.......)))))))))))). (-36.20)
+>tRNA_304
+CCUUCGAUAGCUCAGCUGGUAGAGCGGAGGACUGUAGAUUGUAUAGACAUUUGCGGACAUCCUUAGGUCGCUGGUUCGAUUCCAGCUCGAAGGA
+(((((((..((((........)))).(((((((((((((.((....))))))))))...))))).....(((((.......)))))))))))). (-33.30)
+>tRNA_305
+CCUUCGAUAGCUCAGCUGGUAGAGCGGAGGACUGUAGCCUGUAGAAACAUUUGUGGACAUCCUUAGGUCGCUGGUUCGAUUCCGGCUCGAAGGA
+(((((((..((((........)))).(((((.(((...(..((((....))))..))))))))).....(((((.......)))))))))))). (-29.40)
+>tRNA_306
+GUUUCCAUAGUGUACUGGUUAUCACAUUCACCUAACACGCGAAAGGUCCUUGGUUUGAAACCAGGCAGAAACA
+(((((.....(((.((((((.(((.....(((....((.(....)))....))).))))))))))))))))). (-17.20)
+>tRNA_307
+GUUUCCGUAGUGUAGUGGUUAUCACGUUCGCCUAACACGCGAAAGGUCCCCGGUUCGAAACCGGGCGGAAACA
+(((((((..((((...(((.(......).)))..)))).(....)...((((((.....))))))))))))). (-25.70)
+>tRNA_308
+GUUUCCGUAGUGUAGUGGUCAUCACGUUCGCCUAACACGCGAAAGGUCCCCGGUUCGAAACCGGGCGGAAACA
+(((((((..((((...(((.(......).)))..)))).(....)...((((((.....))))))))))))). (-25.70)
+>tRNA_309
+GUUUCCGUAGUGUAGUGGUUAUCACGUUUGCCUAACACGCGAAAGGUCCCCGGUUCGAAACCGGGCAGAAACA
+((((((((.((((...(((..........)))..))))))).......((((((.....))))))..))))). (-21.50)
+>tRNA_310
+GGGGGUGUAGCUCAGUGGUAGAGCGUAUGCUUAACAUUCAUGAGGCUCUGGGUUCGAUCCCCAGCACUUCCA
+(((((((...((((...((.((((....)))).)).....))))...(((((.......)))))))))))). (-24.50)
+>tRNA_311
+GUUUCCGUAGUGUAGUGGUUAUCACGUUCGCCUAACACGCGAAAGGUCCGCGGUUCGAAACCGGGCGGAAACA
+((((((((......((((..(((...(((((.......))))).)))))))(((.....)))..)))))))). (-23.00)
+>tRNA_312
+GUUUCCGUAGUGUAGUGGUUAUCACGUUCGCCUAACACGCGAAAGGUCCCUGGAUCAAAACCAGGCGGAAACA
+((((((((.......(((((......(((((.......))))).((((....))))..))))).)))))))). (-24.00)
+>tRNA_313
+GUUUCCGUAGUGUAGUGGUUAUCACGUUCGCCUCACACGCGUAAAGGUCCCCGGUUCGAAACCGGGCGGAAACA
+(((((((..((((.(.(((.(......).))).)))))...........((((((.....))))))))))))). (-26.10)
+>tRNA_314
+GUUUCCGUAGUGUAGUGGUUAUCACGUUCGCCUCACACGCGAAAGGUCCCCGGUUCGAAACUGGGCGGAAACA
+(((((((..((((.(.(((.(......).))).))))).(....)...((((((.....))))))))))))). (-24.40)
+>tRNA_315
+GCACUGGUGGUUCAGUGGUAGAAUUCUCGCCUCACACGCGGGACACCCGGGUUCAAUUCCCGGUCAAGGCA
+.((((((....)))))).......((((((.......))))))...(((((.......)))))........ (-22.80)
+>tRNA_316
+GUUUCUGUGGUGUAGUGGUUAUCAUGUUCGCCUCACACGAGAAAAGUCCCUGAUUCGAGACUGGGUGGGAACG
+(((((..(.((((.(.(((.(......).))).)))))......((((.(......).))))..)..))))). (-16.20)
+>tRNA_317
+GUUUCCGUAGUGUAGUGGUUAUCACGUUCGCCUCACACGCGAAAGGUCCCCGGUUCGAAACCGGGCGGAAACA
+(((((((..((((.(.(((.(......).))).))))).(....)...((((((.....))))))))))))). (-26.60)
+>tRNA_318
+GUUUCUGUAGUAUGGUGGUUAUCACGUUAGUCUCACACGUGAAAGGUCCCUGGUUCGAAACCAGGUGGAAACA
+((((((...............((((((.........))))))......((((((.....)))))).)))))). (-20.00)
+>tRNA_319
+UUUUCUGUAGUGUAGUUGUUAACACGUUCGCCUCACACGCUUAAAGUUCUCUGGUUGGAUACCAGAUGGAAAUG
+.(((((...((((.(..((.((....)).))..)))))...........((((((.....)))))).))))).. (-13.80)
+>tRNA_320
+GUUUCCGUAGUGUAGUGGUUAUUAUGUUCGCCUCACACGCGAAAAGUCCCCGGUUCGAAAUCAGGCGGGAACA
+((((((((.((((.(.(((.(......).))).))))).((((..(....)..)))).......)))))))). (-20.80)
+>tRNA_321
+GCUUCUGUAGUGUAGUGGUUAUCACGUUCGCCUCACACGCGAAAGGUCCCCGGUUCGAAACCGGGCAGAAGCA
+(((((((..((((.(.(((.(......).))).))))).(....)...((((((.....))))))))))))). (-27.50)
+>tRNA_322
+GUUUCCGUAGUGGAGUGGUUAUCACGUUCGCCUCACACGCGAAAGGUCCCCGGUUUGAAACCAGGCGGAAACA
+((((((((..((((.(((..(((...(((((.......))))).)))..))).)......))).)))))))). (-23.70)
+>tRNA_323
+GUUUCCGUAGUGUAGCGGUUAUCACAUUCGCCUCACACGCGAAAGGUCCCCGGUUCGAUCCCGGGCGGAAACA
+(((((((..(((..((((.........))))..)))...(....)...(((((.......)))))))))))). (-26.60)
+>tRNA_324
+GUUUCCGUGGUGUAGUGGUUAUCACAUUCGCCUUACACGCGAAAGGUCCUCGGGUCGAAACCGAGCGGAAACA
+(((((((..((((((.(((.(......).))))))))).(....)...(((((.......)))))))))))). (-25.50)
+>tRNA_325
+GGUUCCAUAGUGUAGUGGUUAUCACGUCUGCUUUACACGCAGAAGGUCCUGGGUUCGAGCCCCAGUGGAACCA
+((((((((........((..(((...(((((.......))))).))))).((((....))))..)))))))). (-25.40)
+>tRNA_326
+GGUUCCAUAGUGUAGUGGUUAUCACAUCUGCUUUACACGCAGAAGGUCCUGGGUUCAAGCCCCAGUGGAACCA
+((((((((......(((.....))).(((((.......))))).......((((....))))..)))))))). (-25.30)
+>tRNA_327
+GGUUCCAUAGUGUAGCGGUUAUCACGUCUGCUUUACACGCAGAAGGUCCUGGGUUCGAGCCCCAGUGGAACCA
+((((((((.(((((((((.........)))))..))))............((((....))))..)))))))). (-26.60)

@@ -28,6 +28,7 @@ def triplet_compare_fasta( set1files, set2files ):
 
     set1 = list()
     set2 = list()
+    ret = 0
 
     # leo el contenido de los archivos
     set1 = load_fasta(set1files)
@@ -45,38 +46,44 @@ def triplet_compare_fasta( set1files, set2files ):
         if set1[j][0] != set2[k][0]:
             print("{}: in set1 but not in set2".format(set1[j][0]))
             j = j+1
+            ret = ret + 1
             continue
 
         #seq_length
         if set1[j][5] != set2[k][5]:
             print("{}: SEQ_LENGTH differ! ({},{})".format(
                 set1[j][0],set1[j][5],set2[k][5]))
+            ret = ret + 1
 
         #gc_content
         if abs(set1[j][6]-set2[k][6]) > ERROR_THR:
             print("{}: GC_CONTENT differ! ({:.15g},{:.15g})".format(
                 set1[j][0],set1[j][6],set2[k][6]))
+            ret = ret + 1
 
         #basepair
         if set1[j][7] != set2[k][7]:
             print("{}: BASEPAIR differ! ({},{})".format(
                 set1[j][0],set1[j][7],set2[k][7]))
+            ret = ret + 1
 
         #free_energy
         if set1[j][4] and set2[k][4] and abs(set1[j][4]-set2[k][4]) > ERROR_THR:
             print("{}: FREE_ENERGY differ! ({:.15g},{:.15g})".format(
                 set1[j][0],set1[j][4],set2[k][4]))
+            ret = ret + 1
 
         #len_bp_ratio
         if abs(set1[j][8]-set2[k][8]) > ERROR_THR:
             print("{}: LEN_BP_RATIO differ! ({:.15g},{:.15g})".format(
                 set1[j][0],set1[j][8],set2[k][8]))
+            ret = ret + 1
 
         j = j+1
         k = k+1
 
-    print("compared {}/{} elements.".format(len(set1),len(set2)))
-
+    print("compared {}/{} elements: {} differences found.".format(len(set1),len(set2),ret))
+    return min(ret,1)
 
 
 
@@ -96,6 +103,8 @@ def triplet_validate_extra ( infile ):
     # leo el contenido de los archivos
     set1 = load_fasta(infile)
 
+    ret = 0
+
     j = -1
     while j < len(set1)-1:
         j = j+1
@@ -105,30 +114,35 @@ def triplet_validate_extra ( infile ):
         if re.match( mult_fmt, set1[j][3]):
             print("{}: multi-loop but still present in database!!!".format(
                 set1[j][0]))
+            ret = ret + 1
 
         #seq_length
         if set1[j][5] != xf["seq_length"]:
             print("{}: SEQ_LENGTH differ! ({},{})".format(
                 set1[j][0],set1[j][5],xf["seq_length"]))
+            ret = ret + 1
 
         #gc_content
         if abs(set1[j][6]-xf["gc_content"]) > ERROR_THR:
             print("{}: GC_CONTENT differ! ({:.15g},{:.15g})".format(
                 set1[j][0],set1[j][6],xf["gc_content"]))
+            ret = ret + 1
 
         #basepair
         if set1[j][7] != xf["basepair"]:
             print("{}: BASEPAIR differ! ({},{})".format(
                 set1[j][0],set1[j][7],xf["basepair"]))
+            ret = ret + 1
 
         #len_bp_ratio
         if abs(set1[j][8]-xf["len_bp_ratio"]) > ERROR_THR:
             print("{}: LEN_BP_RATIO differ! ({:.15g},{:.15g})".format(
                 set1[j][0],set1[j][9],xf["len_bp_ratio"]))
+            ret = ret + 1
 
 
-    print("validated {} elements.".format(j+1))
-
+    print("validated {} elements: {} issues found.".format(j+1,ret))
+    return min(ret,1)
 
 
 
@@ -146,6 +160,8 @@ def triplet_compare_svm ( file1, file2 ):
     str1 = ""
     str2 = ""
 
+    ret = 0
+
     if type(file1) is list:
         for f in file1:
             str1 += f.read()
@@ -161,7 +177,7 @@ def triplet_compare_svm ( file1, file2 ):
     # assert the number of vectors in each file is the same
     if len(str1.splitlines()) != len(str2.splitlines()):
         print("Files differ in size! Refusing to compare.")
-        return
+        return 1
 
     i = 0
     # for each line in both files ...
@@ -170,7 +186,7 @@ def triplet_compare_svm ( file1, file2 ):
         # assert the number of vector elements for the current line is the same
         if len(j.split()) != len(k.split()):
             print("Vector size invalid at line {}! Aborting.".format(i))
-            return
+            return 1
 
         for l,m in zip(j.split(),k.split()):
             n = re.split(libsvm_ent,l)
@@ -179,14 +195,16 @@ def triplet_compare_svm ( file1, file2 ):
             if int(n[1]) != int(o[1]):
                 print("line {}: differing position: {} vs {}".format(
                     i,n[1],o[1]))
+                ret = ret + 1
             if (float(n[2])-float(o[2])) > ERROR_THR:
                 print("line {}: differing value for elem {}: {} vs {}".format(
                     i,n[1],n[2],o[2]))
+                ret = ret + 1
 
         i = i+1
 
-    print("{} svm-format lines compared.".format(i))
-
+    print("{} svm-format lines compared: {} differences found.".format(i,ret))
+    return min(ret,1)
 
 
 
@@ -251,6 +269,7 @@ def mipred_compare ( file1, file2 ):
 
     str1 = ""
     str2 = ""
+    ret = 0
 
     if type(file1) is list:
         for f in file1:
@@ -273,7 +292,7 @@ def mipred_compare ( file1, file2 ):
     # assert the number of vectors in each file is the same
     if len(feats1) != len(feats2):
         print("Files differ in number of elements! Refusing to compare.")
-        return
+        return 1
 
     fieldnames = ("Len A C G U G+C A+U AA AC AG AU CA CC CG CU GA GC GG GU" +
                   " UA UC UG UU pb mfe").split()
@@ -288,13 +307,16 @@ def mipred_compare ( file1, file2 ):
                     r,fieldnames[c],feats1[r][c],feats2[r][c]))
                 print(feats1[r])
                 print(feats2[r])
+                ret = ret + 1
 
         # compare the last value (mfe)
         if (feats1[r][24]-feats2[r][24]) > ERROR_THR:
             print("entry {} feat mfe: differing value: {} vs {}".format(
                 r,feats1[r][24],feats2[r][24]))
+            ret = ret + 1
 
-    print("{} miPred entries compared.".format(len(feats1)))
+    print("{} miPred entries compared: {} errors found.".format(len(feats1),ret))
+    return min(ret,1)
 
 
 
@@ -404,7 +426,7 @@ def upred_compare ( file1, file2 ):
     # assert the number of vectors in each file is the same
     if len(feats1) != len(feats2):
         print("Files differ in number of elements! Refusing to compare.")
-        return
+        return 1
 
     num_feats = 10
     if len(feats1[0]) == 6 or len(feats2[0]) == 6:
@@ -412,14 +434,14 @@ def upred_compare ( file1, file2 ):
     elif len(feats1[0]) != 10 or len(feats2[0]) != 10:
         print("Invalid feature count ({}/{}). Please check input.".format(
             len(feats1[0]),len(feats2[0])))
-        return
+        return 1
 
     fieldnames = "MFEI1 MFEI4 dP |A-U|/L |G-C|/L |G-U|/L bp MFE %G+C L".split()
 
     mismatch = [0,0,0,0,0,0,0,0,0,0]
 
     feat_error = [1E-5, # mfei1
-                  1E-5, # mfei4
+                  5E-3, # mfei4
                   1E-4, # dP
                   ERROR_THR, # au/l
                   ERROR_THR, # gc/l
@@ -466,9 +488,10 @@ def upred_compare ( file1, file2 ):
             if mismatch[f] > 0:
                 print(" * feature {}: {} differences.".format(fieldnames[f],mismatch[f]))
         print(" "*60 + "VERIFY!!")
-    else:
-        print(" "*60 + "OK")
+        return 1
 
+    print(" "*60 + "OK")
+    return 0
 
 
 
@@ -495,6 +518,7 @@ def rnafold_clean (infile, outfile, diff=None):
     """
 
     mirbase_ids = []
+    ret = 0
     if diff:
         diffcontent = _opengzip(diff)
         for l in diffcontent.splitlines():
@@ -520,7 +544,9 @@ def rnafold_clean (infile, outfile, diff=None):
             outfile.write( l[1] + '\n' + l[2] + '\n' )
         else:
             sys.stderr.write("discarding entry {}: invalid sequence\n".format(l[0]))
+            ret = ret + 1
 
+    return min(ret,1)
 
 
 
@@ -667,34 +693,35 @@ def rnafold_compare( set1files, set2files ):
 
     if unmatched or seq_len or seq_cont or str_len or str_cont or mfe or mfeinvalid:
         print( " "*60 + "VERIFY!")
-    else:
-        print( " "*60 + "OK")
+        return 1
 
+    print( " "*60 + "OK")
+    return 0
 
 
 
 
 # wrappers para las funciones
 def wrap_triplet_compare_fasta (obj):
-    triplet_compare_fasta(obj.set1, obj.set2)
+    return triplet_compare_fasta(obj.set1, obj.set2)
 
 def wrap_triplet_compare_svm (obj):
-    triplet_compare_svm(obj.set1, obj.set2)
+    return triplet_compare_svm(obj.set1, obj.set2)
 
 def wrap_triplet_validate (obj):
-    triplet_validate_extra(obj.infile)
+    return triplet_validate_extra(obj.infile)
 
 def wrap_mipred_compare (obj):
-    mipred_compare(obj.set1, obj.set2)
+    return mipred_compare(obj.set1, obj.set2)
 
 def wrap_micropred_compare (obj):
-    upred_compare(obj.set1, obj.set2)
+    return upred_compare(obj.set1, obj.set2)
 
 def wrap_rnafold_compare (obj):
-    rnafold_compare(obj.set1, obj.set2)
+    return rnafold_compare(obj.set1, obj.set2)
 
 def wrap_rnafold_clean (obj):
-    rnafold_clean(obj.file, obj.outfile, obj.difffile)
+    return rnafold_clean(obj.file, obj.outfile, obj.difffile)
 
 
 parser = argparse.ArgumentParser( description='Feature extraction tests.',
@@ -823,4 +850,5 @@ if __name__ == "__main__":
     obj = parser.parse_args()
     if obj.verbose:
         verbosity = obj.verbose
-    obj.func(obj)
+    ret = obj.func(obj)
+    sys.exit(ret)

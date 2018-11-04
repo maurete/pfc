@@ -5,3 +5,7 @@ SRCDIFF=""
 CLS="0"
 SPECIES="-s hsa"
 MULTILOOP=""
+## species found in this dataset (for testing)
+TEST_SPECIES=" hsa"
+## entry count for each species (for testing)
+TEST_ENTRIES="2444"

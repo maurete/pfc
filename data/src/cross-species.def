@@ -5,3 +5,7 @@ SRCDIFF=""
 CLS="1"
 SPECIES=""
 MULTILOOP=""
+## species found in this dataset (for testing)
+TEST_SPECIES=" ath cbr cel dme dps dre ebv gga mmu osa rno"
+## entry count for each species (for testing)
+TEST_ENTRIES="75 73 110 71 71 6 5 13 36 96 25"

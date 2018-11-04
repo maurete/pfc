@@ -5,3 +5,7 @@ SRCDIFF="-d src/mirbase/21/miRNA.diff.gz"
 CLS="1"
 SPECIES=""
 MULTILOOP="-m"
+## species found in this dataset (for testing)
+TEST_SPECIES=" ame api ata ath atr bdi bfv bhv5 bma bol bra bta cel cfa chi cre crm cte dme dvi eca efu esi fru gga ggo gma gra gsa hbr hco hsa hvu lgi lva mml mmu mse nve oar ocu oha ola pin pmi ppc ppy pra prd psj ptr pxy rgl rno sja sko sly sma spu ssa ssc str tae tch tgu vvi xtr"
+## entry count for each species (for testing)
+TEST_ENTRIES="37 6 88 27 124 60 2 5 10 4 57 12 35 178 267 1 1 5 18 60 374 502 21 3 8 30 68 292 60 3 1 25 2 1 50 4 8 4 92 1 12 198 1 1 49 230 8 2 1 2 6 133 18 49 1 11 31 95 3 371 102 106 72 177 1 1 3"
