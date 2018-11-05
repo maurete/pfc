@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
-project(data)
+project(data NONE)
 set(DATASETS
   coding-tripletsvm-test
   coding-tripletsvm-train
