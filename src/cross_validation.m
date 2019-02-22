@@ -61,7 +61,8 @@ function [output,target,deriv,index,stat,models] = cross_validation(...
     end
 
     % Initialize pool for parallel computing
-    init_matlabpool();
+    ncores = init_parallel();
+    if isempty(ncores), ncores = 1; end
 
     % Return value for indicating error (if ~= 0)
     ret = 0;
@@ -80,95 +81,77 @@ function [output,target,deriv,index,stat,models] = cross_validation(...
     deriv  = nan(npart,ntrain*nargs);
     models = cell(npart,1);
 
+    % 'Done' flag
+    done = false;
+
+    % if octave
+    if exist('OCTAVE_VERSION') ~= 0
+        try
+            inner_handle = @(p)cross_validation_inner_loop(p, problem, feats, args, ftrain, fcls, xtrain, do_deriv, fclsderiv);
+            tmp = parcellfun(ncores,inner_handle,num2cell(1:npart), 'VerboseLevel', 0);
+            for p=1:npart
+                % Save results for this partition in pth row of output
+                output(p,tmp(p).validation_indexes) = tmp(p).predictions';
+                % Save pth model
+                models{p} = tmp(p).model;
+
+                gradtmp = nan(ntrain,nargs);
+                gradtmp(tmp(p).validation_indexes,:) = tmp(p).gradient;
+                % Save derivatives in pth row of deriv
+                deriv(p,:) = reshape(gradtmp,1,[]);
+
+                ret = any(tmp(p).status);
+            end
+            done = true;
+        catch ex
+        rethrow(ex)
+        warning(['Unable to invoke parcellfun. ', ...
+                 'Cross-validation will be run sequentially. ', ex.message])
+        end
+    end
+
     % Wrap the parfor in a try-catch statement for the case where the
     % Parallel Toolbox is unavailable
     try
         % For each partition
         parfor p = 1:npart
+            tmp = cross_validation_inner_loop(p, problem, feats, args, ftrain, fcls, xtrain, do_deriv, fclsderiv);
+            % Save results for this partition in pth row of output
+            outtmp = nan(ntrain,1);
+            outtmp(tmp.validation_indexes) = tmp.predictions';
+            output(p,:) = outtmp;
+            % Save pth model
+            models{p} = tmp.model;
 
-            trainset    = problem.traindata(part.train(:,p),feats);
-            valset      = problem.traindata(part.validation(:,p),feats);
-            trainlabels = problem.trainlabels(part.train(:,p));
-            vallabels   = problem.trainlabels(part.validation(:,p));
-
-            % Try training the model
-            try
-                % Do either classical training or x-training
-                if xtrain, model = ftrain(trainset, trainlabels, valset, vallabels, args);
-                else,      model = ftrain(trainset, trainlabels, args);
-                end
-                % Classify validation set
-                tmp = zeros(ntrain,1);
-                tmp(part.validation(:,p)) = fcls(model, valset);
-                % Save results for this partition in pth row of output
-                output(p,:) = tmp';
-                % Save pth model
-                models{p} = model;
-
-                if do_deriv
-                    % Find derivative of validation set
-                    tmp = nan(ntrain,nargs);
-                    tmp(part.validation(:,p),:) = fclsderiv(model, valset);
-                    % Save derivatives in pth row of deriv
-                    % This is as quirky as can be because we want it to be
-                    % parallellizable
-                    deriv(p,:) = reshape(tmp,1,[]);
-                end
-
-            catch e
-                % If training did not succeed for this partition
-                % because of divergence, set error flag but keep going
-                if any(strfind(e.identifier,'NoConvergence')) || ...
-                        any(strfind(e.identifier,'InvalidInput'))
-                    ret = 1;
-                else
-                    % Rethrow any other kind of error
-                    rethrow(e);
-                end
-            end
+            gradtmp = nan(ntrain,nargs);
+            gradtmp(tmp.validation_indexes,:) = tmp.gradient;
+            % Save derivatives in pth row of deriv
+            deriv(p,:) = reshape(gradtmp,1,[]);
         end
+        done = true;
     catch ex
-        % Try sequential for if parfor not available
+        if any(strfind(e.identifier,'NoConvergence')) || ...
+                any(strfind(e.identifier,'InvalidInput'))
+            % rethrow(ex);
+            warning('No convergence on SVM training!')
+        end
+        warning(['Unable to run parfor. ', ...
+                 'Cross-validation will be run sequentially. ', ex.message])
+    end
 
+    if ~done
+        % Run sequentially when parallel options failed
         for p = 1:npart
-            trainset    = problem.traindata(part.train(:,p),feats);
-            valset      = problem.traindata(part.validation(:,p),feats);
-            trainlabels = problem.trainlabels(part.train(:,p));
-            vallabels   = problem.trainlabels(part.validation(:,p));
+            tmp = cross_validation_inner_loop(p, problem, feats, args, ftrain, fcls, xtrain, do_deriv, fclsderiv);
+            % Save results for this partition in pth row of output
+            output(p,tmp.validation_indexes) = tmp.predictions';
+            % Save pth model
+            models{p} = tmp.model;
 
-            % Try training the model
-            try
-                % Do either classical training or x-training
-                if xtrain, model = ftrain(trainset, trainlabels, valset, vallabels, args);
-                else,      model = ftrain(trainset, trainlabels, args);
-                end
-                % Classify validation set
-                tmp = zeros(ntrain,1);
-                tmp(part.validation(:,p)) = fcls(model, valset);
-                % Save results for this partition in pth row of output
-                output(p,:) = tmp';
-                % Save pth model
-                models{p} = model;
-
-                if do_deriv
-                    % Find derivative of validation set
-                    tmp = nan(ntrain,nargs);
-                    tmp(part.validation(:,p),:) = fclsderiv(model, valset);
-                    % Save derivatives in pth row of deriv
-                    deriv(p,:) = reshape(tmp,1,[]);
-                end
-
-            catch e
-                % If training did not succeed for this partition
-                % because of divergence, set error flag but keep going
-                if any(strfind(e.identifier,'NoConvergence')) || ...
-                        any(strfind(e.identifier,'InvalidInput'))
-                    ret = 1;
-                else
-                    % Rethrow any other kind of error
-                    rethrow(e);
-                end
-            end
+            gradtmp = nan(ntrain,nargs);
+            gradtmp(tmp.validation_indexes,:) = tmp.gradient;
+            % Save derivatives in pth row of deriv
+            deriv(p,:) = reshape(gradtmp,1,[]);
         end
     end
 
