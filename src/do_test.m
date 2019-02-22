@@ -100,7 +100,8 @@ function results = do_test(test_name, classifier_set, feature_set, randseeds, ba
 
                 % Selección de modelo cronometrada
                 time = time_init();
-                [model,nt,params] = select_model(prob, features(i), clstype, msmethod, 'MLPNRepeats', mlprepeats);
+                [model,nt,params] = select_model(prob, features(i), clstype, msmethod, ...
+                                                 'MLPNRepeats', mlprepeats, 'SVMLib','libsvm');
                 time = time_tick(time,1);
 
                 % Clasificar el problema

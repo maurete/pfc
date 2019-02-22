@@ -23,8 +23,19 @@ function [err, deriv] = error_empirical(clsout, target)
     B = 0;
     params = [A B];
 
+    % detect nan input
+    if any(isnan(clsout))
+        warning('NaN inputs to error_empirical, expect invalid results.');
+    end
+
     % Try training the sigmoid on validation data
-    try, params = model_sigmoid_train(clsout, target, 200, 1e-6, true); end
+    try, params = model_sigmoid_train(clsout, target, 200, 1e-6, true);
+    catch ex, warning('failed invocation to model_sigmoid_train'); end
+
+    % params_alt = model_sigmoid_train_lin(clsout, target, 200, 1e-6, false);
+    % if sum(params-params_alt).^2 > 1
+    %     warning(sprintf('sigmoid params differ: [%f,%f] vs [%f,%f]',params,params_alt));
+    % end
 
     % Get posterior probabilities
     output = model_sigmoid(clsout, params);

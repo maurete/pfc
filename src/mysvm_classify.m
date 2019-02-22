@@ -25,9 +25,18 @@ function [labels,dec_values] = mysvm_classify(model,samples)
 
     if strncmpi(model.lib_, 'matlab', 6)
         % If matlab classifier selected, remove libsvm from path
-        if isempty(strfind(which('svmtrain'),'bioinfo')), rmpath(LIBSVM_DIR); end
-        assert(any(strfind(which('svmtrain'),'bioinfo')), ...
-               'mysvm_classify: failed to load Matlab bioinfo svmtrain.')
+        vrsion = version('-release');
+        if length(vrsion) == 0
+            error('Matlab not detected!')
+        elseif vrsion < 'R2013'
+            if isempty(strfind(which('svmtrain'),'bioinfo')), rmpath(LIBSVM_DIR); end
+            assert(any(strfind(which('svmtrain'),'bioinfo')), ...
+                   'mysvm_classify: failed to load Matlab bioinfo svmtrain.')
+        else
+            if isempty(strfind(which('svmtrain'),'toolbox/stats')), rmpath(LIBSVM_DIR); end
+            assert(any(strfind(which('svmtrain'),'toolbox/stats')), ...
+                   'mysvm_classify: failed to load Matlab Statistics Toolbox'' svmtrain.')
+        end
 
         % Classify with matlab
         labels = svmclassify(model,samples);
@@ -48,7 +57,6 @@ function [labels,dec_values] = mysvm_classify(model,samples)
     else
         % If svm library present in model is unknown, raise an error.
         error('Unknown SVM library found in model.')
-
     end
 
     % Don't compute decision values when not requested.

@@ -55,68 +55,91 @@ function model = mysvm_train(lib,kfun,samples,labels,boxconstraint,...
 
     if strncmpi(lib, 'matlab', 6)
         % If matlab classifier selected, remove libsvm from path
-        if isempty(strfind(which('svmtrain'),'bioinfo')), rmpath(LIBSVM_DIR); end
-        assert(any([strfind(which('svmtrain'),'bioinfo'),strfind(which('svmtrain'),'stats')]), ...
-               'mysvm_train: failed to load Matlab Bioinfo svmtrain.')
+        vrsion = version('-release');
+        if length(vrsion) == 0
+            error('Matlab not detected!')
+        elseif vrsion < 'R2013'
+            if isempty(strfind(which('svmtrain'),'bioinfo')), rmpath(LIBSVM_DIR); end
+            assert(any(strfind(which('svmtrain'),'bioinfo')), ...
+                   'mysvm_classify: failed to load Matlab bioinfo svmtrain.')
+        else
+            if isempty(strfind(which('svmtrain'),'toolbox/stats')), rmpath(LIBSVM_DIR); end
+            assert(any(strfind(which('svmtrain'),'toolbox/stats')), ...
+                   'mysvm_classify: failed to load Matlab Statistics Toolbox'' svmtrain.')
+        end
 
         % Kernel matrix size for SMO algorithm cache
         cache_size = 10000;
 
         % SMO options
-        smoopts = statset('MaxIter',50000);
+        smoopts = statset('MaxIter',100000);
 
-        % Train model and set kernel_function handle
-        if isa(kfun,'function_handle')
-            % kfun is already a function handle
-            model = svmtrain( samples, labels, ...
-                              'boxconstraint', boxconstraint, ...
-                              'autoscale', autoscale, ...
-                              'tolkkt', tolkkt, ...
-                              'options', smoopts, ...
-                              'kernelcachelimit', cache_size, ...
-                              'kernel_function', @(x,y) kfun(x,y,kfun_param));
-            kernel_function = kfun;
+        try
 
-        elseif isa(kfun,'char')
-            % Choose kernel function for known kernels
-            if strcmp(kfun, 'rbf')
-                % RBF kernel selected
+            % Train model and set kernel_function handle
+            if isa(kfun,'function_handle')
+                % kfun is already a function handle
                 model = svmtrain( samples, labels, ...
                                   'boxconstraint', boxconstraint, ...
                                   'autoscale', autoscale, ...
                                   'tolkkt', tolkkt, ...
                                   'options', smoopts, ...
                                   'kernelcachelimit', cache_size, ...
-                                  'kernel_function', @(x,y) kernel_rbf(x,y,kfun_param));
-                kernel_function = @kernel_rbf;
+                                  'kernel_function', @(x,y) kfun(x,y,kfun_param));
+                kernel_function = kfun;
 
-            elseif strcmp(kfun, 'linear')
-                % Linear kernel selected.
-                model = svmtrain( samples, labels, ...
-                                  'boxconstraint', boxconstraint, ...
-                                  'autoscale', autoscale, ...
-                                  'tolkkt', tolkkt, ...
-                                  'options', smoopts, ...
-                                  'kernelcachelimit', cache_size, ...
-                                  'kernel_function', @kernel_linear);
-                kernel_function = @kernel_linear;
+            elseif isa(kfun,'char')
+                % Choose kernel function for known kernels
+                if strcmp(kfun, 'rbf')
+                    % RBF kernel selected
+                    if numel(kfun_param) <1,error('Missing gamma parameter!'),end
+                    model = svmtrain( samples, labels, ...
+                                      'boxconstraint', boxconstraint, ...
+                                      'autoscale', autoscale, ...
+                                      'tolkkt', tolkkt, ...
+                                      'options', smoopts, ...
+                                      'kernelcachelimit', cache_size, ...
+                                      'kernel_function', @(x,y) kernel_rbf(x,y,kfun_param));
+                    kernel_function = @kernel_rbf;
 
-            else
-                % Kernel function name is unknown
-                error( 'mysvm_train: selected kernel not recognized: %s.\n', kfun );
+                elseif strcmp(kfun, 'linear')
+                    % Linear kernel selected.
+                    model = svmtrain( samples, labels, ...
+                                      'boxconstraint', boxconstraint, ...
+                                      'autoscale', autoscale, ...
+                                      'tolkkt', tolkkt, ...
+                                      'options', smoopts, ...
+                                      'kernelcachelimit', cache_size, ...
+                                      'kernel_function', @kernel_linear);
+                    kernel_function = @kernel_linear;
+
+                else
+                    % Kernel function name is unknown
+                    error( 'mysvm_train: selected kernel not recognized: %s.\n', kfun );
+                end
+
             end
 
-        end
+            % Set custom fields on output structure
+            model.sv_     = model.SupportVectors;
+            model.nsv_    = length(model.SupportVectorIndices);
+            model.svi_    = model.SupportVectorIndices;
+            model.alpha_  = model.Alpha;
+            model.bias_   = model.Bias;
+            model.lib_    = 'matlab';
+            model.tolkkt_ = tolkkt;
+            model.cache_  = cache_size;
 
-        % Set custom fields on output structure
-        model.sv_     = model.SupportVectors;
-        model.nsv_    = length(model.SupportVectorIndices);
-        model.svi_    = model.SupportVectorIndices;
-        model.alpha_  = model.Alpha;
-        model.bias_   = model.Bias;
-        model.lib_    = 'matlab';
-        model.tolkkt_ = tolkkt;
-        model.cache_  = cache_size;
+        catch e
+            if any(strfind(e.identifier,'NoConvergence')) || ...
+                    any(strfind(e.identifier,'InvalidInput'))
+                out.status = 1;
+                warning(e.message)
+            else
+                % Rethrow any other kind of error
+                rethrow(e);
+            end
+        end
 
     elseif strncmpi(lib, 'libsvm', 6)
         % If libsvm selected, assert it is loaded in path
@@ -143,6 +166,7 @@ function model = mysvm_train(lib,kfun,samples,labels,boxconstraint,...
             % Choose kernel function for known kernels
             if strcmp(kfun, 'rbf')
                 % RBF kernel selected
+                if numel(kfun_param) <1,error('Missing gamma parameter!'),end
                 model = svmtrain(labels,samples,[' -t 2 ', optstr, ...
                                     ' -g ', num2str(kfun_param)]);
                 kernel_function = @kernel_rbf;

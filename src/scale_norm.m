@@ -1,4 +1,4 @@
-function [scaled, factor, offset] = scale_norm ( data, factor, offset )
+function [scaled, factor, offset] = scale_norm ( data, factor, offset, inverse )
 %SCALE_NORM normalize feature vectors for dataset
 %
 %  [SCALED, FACTOR, OFFSET] = SCALE_NORM(DATA) normalizes each column of DATA
@@ -13,24 +13,29 @@ function [scaled, factor, offset] = scale_norm ( data, factor, offset )
 %  See also SCALE_SYM, SCALE_DATA.
 %
 
-    % compute standard deviation for every column
-    div = std(data,0,1);
-    div(div==0)=1;
-
-    % compute factor if not given
-    if nargin == 1
-        factor = 1./(div);
+    if nargin == 4
+        if inverse
+            scaled = data*diag(factor.^-1) + repmat(offset,size(data,1),1);
+            return
+        end
     end
 
-    % scale the data
-    scaled = data*diag(factor(:));
+    % compute factor if not given
+    if nargin <2
+
+        % compute standard deviation for every column
+        % for whatever reason doubling std enhances performance
+        div = 2*std(data,0,1);
+        div(div==0)=1;
+        factor = div.^(-1);
+    end
 
     % compute offset if not given
-    if nargin == 1
-        offset = -mean(scaled);
+    if nargin < 3
+        offset = -mean(data);
     end
 
     % apply offset
-    scaled = scaled + repmat(offset,size(data,1),1);
+    scaled = (data - repmat(offset,size(data,1),1))*diag(factor);
 
 end

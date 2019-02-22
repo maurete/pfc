@@ -22,8 +22,10 @@ function sigmoid_params = model_sigmoid_train(output,target,max_iter,tol,fail)
     if nargin < 4,      tol = 1e-10; end %
     if nargin < 3, max_iter = 200;   end
 
+    btarget = [target > 0];
+
     % initial parameters
-    sigmoid_params = [0, (sum(target<0)+1)/(sum(target>0)+1)];
+    sigmoid_params = [0, (sum(~btarget)+1)/(sum(btarget)+1)];
     % optimizer class
     rprop = opt_irpropplus(sigmoid_params);
     errhist = [];
@@ -31,7 +33,7 @@ function sigmoid_params = model_sigmoid_train(output,target,max_iter,tol,fail)
     % loop until convergence
     for i=1:max_iter
         [sigmoid_params, err] = rprop.optimize( ...
-            @model_sigmoid,[], sigmoid_params, @error_nll,[], output, target);
+            @model_sigmoid,[], sigmoid_params, @error_nll,[], output, btarget);
         % fix if A goes out of range
         if sigmoid_params(1) > 0, sigmoid_params(1) = 0; end
 
