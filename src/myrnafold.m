@@ -1,4 +1,4 @@
-function [structure,mfe] = myrnafold(sequence)
+function [structure,mfe,status] = myrnafold(sequence)
 %MYRNAFOLD Fold (find secondary structure of) given SEQUENCE.
 %
 %   [STRUCTURE,MFE] = MYRNAFOLD(SEQUENCE) tries to obtain MFE secondary
@@ -10,6 +10,7 @@ function [structure,mfe] = myrnafold(sequence)
 %     STRUCTURE is the resulting secondary structure string in dot-
 %     bracket notation.
 %     MFE is the resulting minimum free energy.
+%     STATUS = 0 means external RNAfold command was invoked.
 %
 %   See also RNAFOLD
 

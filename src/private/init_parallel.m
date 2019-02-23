@@ -9,10 +9,8 @@ function ncores = init_parallel(Nworkers)
     if length(vrsion) == 0
         % we're running octave            
         try
-            pkg load parallel
-            % following only tested on linux, requires bash-type system shell
-            [ret, out] = system('cat /proc/cpuinfo | egrep "^processor\s.*:" | wc -l');
-            ncores = sscanf (out, '%d');
+            if isempty(ver('parallel')),pkg load parallel, end
+            ncores = nproc;
         catch e
             fprintf('# could''nt load parallel package: %s\n', e.message);
         end
