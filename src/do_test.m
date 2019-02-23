@@ -181,6 +181,9 @@ function results = do_test(test_name, classifier_set, feature_set, randseeds, ba
 
     w_mcol = 3-isnan_gm-isnan_se-isnan_sp;
 
+    % print title
+    fprintf('\\section{TEST %s %s}\n',date,strjoin(classifiers,', '))
+
     % print classification performance table
 
     fprintf('\\begin{tabular}{ccr')
@@ -234,7 +237,7 @@ function results = do_test(test_name, classifier_set, feature_set, randseeds, ba
 
     % Print computational cost table
 
-    fprintf('\\begin{tabular}{ccr')
+    fprintf('\n\\begin{tabular}{ccr')
     for i=1:nc, fprintf('SS'), if i<nc, fprintf('c'), end, end
     fprintf('}\n\\toprule\n');
     fprintf('\\mrow{2}{*}{Problema} & \\mrow{2}{*}{Caracts.} & &\n')
@@ -265,7 +268,7 @@ function results = do_test(test_name, classifier_set, feature_set, randseeds, ba
         s_pp{k} = std(pp{k},0,3);
     end
 
-    fprintf('\\begin{tabular}{ccr')
+    fprintf('\n\\begin{tabular}{ccr')
     for i=1:nc, for j=1:np(i), fprintf('S'), end, if i<nc, fprintf('c'), end, end
     fprintf('}\n\\toprule\n');
     fprintf('\\mrow{2}{*}{Problema} & \\mrow{2}{*}{Caracts.} & &\n')
