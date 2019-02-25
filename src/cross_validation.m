@@ -130,8 +130,8 @@ function [output,target,deriv,index,stat,models] = cross_validation(...
         end
         done = true;
     catch ex
-        if any(strfind(e.identifier,'NoConvergence')) || ...
-                any(strfind(e.identifier,'InvalidInput'))
+        if any(strfind(ex.identifier,'NoConvergence')) || ...
+                any(strfind(ex.identifier,'InvalidInput'))
             % rethrow(ex);
             warning('No convergence on SVM training!')
         end

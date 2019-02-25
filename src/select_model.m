@@ -44,7 +44,8 @@ function [model,nt,params] = select_model(problem, feats, classifier, method, va
     if nargin < 3 || isempty(classifier), classifier = 'rbf'; end
     if nargin < 4 || isempty(method), method = 'rmb'; end
 
-    config; % load global config
+    try,config;end % load global config
+    if ~exist('LIBSVM_DIR','var'),LIBSVM_DIR='';end
 
     classifier = lower(classifier);
     method = lower(method);

@@ -26,21 +26,21 @@ function net = mlp_xtrain(input, target, ival, tval, hidden, method, ...
     if nargin < 4, tval = []; end
     if nargin < 3, ival = []; end
 
-    config; % Load global settings
+    try,config;end % Load global settings
 
     MAX_IT = 1e12;
 
-    % Works best when using [target, -target], but according to Matlab
-    % documentation this should be binary as in [target>0,target<0].
-    % target = [target,-target];
-    target = [target,-target];
-    tval   = [tval,-tval];
+    % two output neurons, positive and negative class
+    target = [target>0,target<0];
+    tval   = [tval>0,tval<0];
 
     if fann
+        assert(exist('FANN_DIR','var'), ...
+               'FANN_DIR not configured, please run setup.')
         % FANN selected
         if isempty(which('trainFann')), addpath(FANN_DIR); end
         assert(~isempty(which('trainFann')), ...
-               'mlp_xtrain: failed to load FANN fannTrain.')
+               'FATAL: failed to load FANN fannTrain.')
 
         net = createFann([size(input,2), hidden, size(target,2)],1);
 

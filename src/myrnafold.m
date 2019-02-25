@@ -14,7 +14,7 @@ function [structure,mfe,status] = myrnafold(sequence)
 %
 %   See also RNAFOLD
 
-    config; % Load global settings
+    try,config;end % Load global settings
 
     % RNAFold output secondary structure RE
     structure_fmt = '^\s*([.()]+)\s+\(([-0-9.]+)\)\s*$';
@@ -22,21 +22,23 @@ function [structure,mfe,status] = myrnafold(sequence)
     structure = [];
     mfe = [];
 
-    % First try invoking external RNAfold command
-    [status,output] = system([RNAFOLD_EXT_CMD,' <<< ',sequence]);
-    % Check command status
-    if status == 0
-        % Read lines from output strings
-        lines = strread(output,'%s','delimiter','\n');
-        % Capture groups from RE
-        groups = regexp(lines{2},structure_fmt, 'tokens');
-        % Save secondary structure
-        structure = groups{1}{1};
-        if length(groups{1}) > 1,
-            % Save minimum free energy
-            mfe = sscanf(groups{1}{2},'%f');
+    if exist('RNAFOLD_EXT_CMD','var')
+        % First try invoking external RNAfold command
+        [status,output] = system([RNAFOLD_EXT_CMD,' <<< ',sequence]);
+        % Check command status
+        if status == 0
+            % Read lines from output strings
+            lines = strread(output,'%s','delimiter','\n');
+            % Capture groups from RE
+            groups = regexp(lines{2},structure_fmt, 'tokens');
+            % Save secondary structure
+            structure = groups{1}{1};
+            if length(groups{1}) > 1,
+                % Save minimum free energy
+                mfe = sscanf(groups{1}{2},'%f');
+            end
+            return
         end
-        return
     end
 
     % As a fallback use matlab's rnafold

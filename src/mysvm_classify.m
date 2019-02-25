@@ -16,7 +16,8 @@ function [labels,dec_values] = mysvm_classify(model,samples)
 %
 %   See also MYSVM_TRAIN
 
-    config; % Load global settings
+    try,config;end % Load global settings
+    if ~exist('LIBSVM_DIR','var'),LIBSVM_DIR='';end
 
     % Validate input samples length
     assert(size(samples,2) == size(model.sv_,2), ...

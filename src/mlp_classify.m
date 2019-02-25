@@ -10,11 +10,13 @@ function out = mlp_classify(net, input, threshold)
 
     if nargin < 3 || isempty(threshold), threshold = 0.1; end
 
-    config; % Load global settings
+    try,config;end % Load global settings
 
     % Perform classification
     if isstruct(net)
         % libFANN case: assert libFANN functions are available
+        assert(exist('FANN_DIR','var'), ...
+               'FANN_DIR not configured, please run setup.')
         if isempty(which('testFann')), addpath(FANN_DIR); end
         assert(~isempty(which('testFann')), 'Failed to load libFANN.')
         % Compute outputs

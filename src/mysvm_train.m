@@ -35,7 +35,8 @@ function model = mysvm_train(lib,kfun,samples,labels,boxconstraint,...
     if nargin < 6 || isempty(kfun_param);     kfun_param     = [];    end
     if nargin < 5 || isempty(boxconstraint);  boxconstraint  = 1;     end
 
-    config; % Load global settings
+    try,config;end % Load global settings
+    if ~exist('LIBSVM_DIR','var'),LIBSVM_DIR='';end
 
     % fprintf('mysvm_train library %s, kernel %s\n',lib, kfun)
     % fprintf('mysvm_train trainset size %dx%d, labels %d\n',size(samples), numel(labels))

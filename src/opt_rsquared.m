@@ -20,7 +20,8 @@ function [obj,beta,idx,model] = opt_rsquared(K,tolkkt,cache_size)
     if nargin < 3, cache_size = 200; end
     if nargin < 2, tolkkt = 1e-6; end
 
-    config; % load libSVM path
+    try,config;end % load libSVM path
+    if ~exist('LIBSVM_DIR','var'),LIBSVM_DIR='';end
 
     % check wether to remove libsvm path from environment after execution
     rm_libsvm_path = false;
