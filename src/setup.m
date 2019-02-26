@@ -193,7 +193,7 @@ function setup
             % setenv('MATLABDIR',matlabroot)
             % system('make');
             system('sed -i "s/#/=/g" makeFann.m');
-            makeFann
+            try,makeFann,end
             cd(currentdir);
 
             [fann_ok,~] = check_fann;
