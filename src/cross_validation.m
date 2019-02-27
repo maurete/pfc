@@ -1,5 +1,5 @@
 function [output,target,deriv,index,stat,models] = cross_validation(...
-    problem, feats, ftrain, args, fcls, fclsderiv, xtrain)
+    problem, feats, ftrain, args, fcls, fclsderiv, xtrain, parallel)
 %CROSS_VALIDATION Perform cross-validation training on problem
 %
 %   [OUTPUT,TARGET,...] = CROSS_VALIDATION(PROBLEM,FEATS,FTRAIN,ARGS,FCLS)
@@ -48,6 +48,7 @@ function [output,target,deriv,index,stat,models] = cross_validation(...
 
     % Set default options
     do_deriv = false;
+    if nargin < 8,  parallel = true;  end
     if nargin < 7,    xtrain = false; end
     if nargin < 6, fclsderiv = false; end
     if nargin > 5 && isa(fclsderiv,'function_handle'), do_deriv = true; end
@@ -61,8 +62,10 @@ function [output,target,deriv,index,stat,models] = cross_validation(...
     end
 
     % Initialize pool for parallel computing
-    ncores = init_parallel();
-    if isempty(ncores), ncores = 1; end
+    if parallel
+        ncores = init_parallel();
+        if isempty(ncores), ncores = 1; end
+    end
 
     % Return value for indicating error (if ~= 0)
     ret = 0;
@@ -85,7 +88,7 @@ function [output,target,deriv,index,stat,models] = cross_validation(...
     done = false;
 
     % if octave
-    if exist('OCTAVE_VERSION') ~= 0
+    if parallel && exist('OCTAVE_VERSION') ~= 0
         try
             inner_handle = @(p)cross_validation_inner_loop(p, problem, feats, args, ftrain, fcls, xtrain, do_deriv, fclsderiv);
             tmp = parcellfun(ncores,inner_handle,num2cell(1:npart), 'VerboseLevel', 0);
@@ -112,7 +115,7 @@ function [output,target,deriv,index,stat,models] = cross_validation(...
 
     % Wrap the parfor in a try-catch statement for the case where the
     % Parallel Toolbox is unavailable
-    try
+    if parallel, try
         % For each partition
         parfor p = 1:npart
             tmp = cross_validation_inner_loop(p, problem, feats, args, ftrain, fcls, xtrain, do_deriv, fclsderiv);
@@ -137,7 +140,7 @@ function [output,target,deriv,index,stat,models] = cross_validation(...
         end
         warning(['Unable to run parfor. ', ...
                  'Cross-validation will be run sequentially. ', ex.message])
-    end
+    end, end
 
     if ~done
         % Run sequentially when parallel options failed
